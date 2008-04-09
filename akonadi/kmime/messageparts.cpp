@@ -18,32 +18,8 @@
     02110-1301, USA.
 */
 
-#ifndef AKONADI_MESSAGEPARTS_H
-#define AKONADI_MESSAGEPARTS_H
+#include "messageparts.h"
 
-#include "akonadi-kmime_export.h"
-
-#include <QtCore/QLatin1String>
-
-namespace Akonadi
-{
-  namespace MessagePart
-  {
-      /**
-        The part identifier for envelope parts.
-       */
-      AKONADI_KMIME_EXPORT extern const char* Envelope;
-
-      /**
-        The part identifier for the main body part.
-       */
-      AKONADI_KMIME_EXPORT extern const char* Body;
-
-      /**
-        The part identifier for the header part.
-      */
-      AKONADI_KMIME_EXPORT extern const char* Header;
-  }
-}
-
-#endif
+const char* Akonadi::MessagePart::Envelope = "ENVELOPE";
+const char* Akonadi::MessagePart::Body = "RFC822";
+const char* Akonadi::MessagePart::Header = "HEAD";
