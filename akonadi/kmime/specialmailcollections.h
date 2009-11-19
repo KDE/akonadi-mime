@@ -17,21 +17,16 @@
     02110-1301, USA.
 */
 
-#ifndef AKONADI_SPECIALCOLLECTIONS_H
-#define AKONADI_SPECIALCOLLECTIONS_H
+#ifndef AKONADI_SPECIALMAILCOLLECTIONS_H
+#define AKONADI_SPECIALMAILCOLLECTIONS_H
 
 #include "akonadi-kmime_export.h"
 
-#include <QtCore/QObject>
-
-#include "akonadi/collection.h"
-
-class KJob;
+#include "akonadi/specialcollections.h"
 
 namespace Akonadi {
 
-class AgentInstance;
-class SpecialCollectionsPrivate;
+class SpecialMailCollectionsPrivate;
 
 /**
   @short Interface to special collections such as inbox, outbox etc.
@@ -69,7 +64,7 @@ class SpecialCollectionsPrivate;
   @author Constantin Berzan <exit3219@gmail.com>
   @since 4.4
 */
-class AKONADI_KMIME_EXPORT SpecialCollections : public QObject
+class AKONADI_KMIME_EXPORT SpecialMailCollections : public SpecialCollections
 {
   Q_OBJECT
 
@@ -96,7 +91,7 @@ class AKONADI_KMIME_EXPORT SpecialCollections : public QObject
     /**
      * Returns the global SpecialCollections instance.
      */
-    static SpecialCollections *self();
+    static SpecialMailCollections *self();
 
     /**
      * Returns whether the given agent @p instance has a special collection of
@@ -132,41 +127,16 @@ class AKONADI_KMIME_EXPORT SpecialCollections : public QObject
      */
     Akonadi::Collection defaultCollection( Type type ) const;
 
-  Q_SIGNALS:
-    /**
-     * Emitted when the special collections for a resource have been changed
-     * (for example, some become available, or some become unavailable).
-     *
-     * @param instance The instance of the resource the collection belongs to.
-     */
-    void collectionsChanged( const Akonadi::AgentInstance &instance );
-
-    /**
-     * Emitted when the special collections for the default resource have
-     * been changed (for example, some become available, or some become unavailable).
-     */
-    void defaultCollectionsChanged();
-
   private:
     //@cond PRIVATE
-    friend class SpecialCollectionsRequestJob;
-    friend class SpecialCollectionsRequestJobPrivate;
-    friend class SpecialCollectionsPrivate;
+    friend class SpecialMailCollectionsPrivate;
 
-#if 1 // TODO do this only if building tests:
-    friend class SpecialCollectionsTesting;
-    friend class LocalFoldersTest;
-#endif
+    SpecialMailCollections( SpecialMailCollectionsPrivate *dd );
 
-    // singleton class; the only instance resides in sInstance->instance
-    SpecialCollections( SpecialCollectionsPrivate *dd );
-
-    SpecialCollectionsPrivate *const d;
-
-    Q_PRIVATE_SLOT( d, void collectionRemoved( Akonadi::Collection ) )
+    SpecialMailCollectionsPrivate *const d;
     //@endcond
 };
 
 } // namespace Akonadi
 
-#endif // AKONADI_SPECIALCOLLECTIONS_H
+#endif // AKONADI_SPECIALMAILCOLLECTIONS_H

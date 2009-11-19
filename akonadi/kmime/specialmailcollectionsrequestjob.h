@@ -17,38 +17,37 @@
     02110-1301, USA.
 */
 
-#ifndef AKONADI_SPECIALCOLLECTIONSREQUESTJOB_H
-#define AKONADI_SPECIALCOLLECTIONSREQUESTJOB_H
+#ifndef AKONADI_SPECIALMAILCOLLECTIONSREQUESTJOB_H
+#define AKONADI_SPECIALMAILCOLLECTIONSREQUESTJOB_H
 
 #include "akonadi-kmime_export.h"
 
-#include <akonadi/collection.h>
-#include <akonadi/kmime/specialcollections.h>
-#include <akonadi/transactionsequence.h>
+#include <akonadi/specialcollectionsrequestjob.h>
+#include <akonadi/kmime/specialmailcollections.h>
 
 namespace Akonadi {
 
-class SpecialCollectionsRequestJobPrivate;
+class SpecialMailCollectionsRequestJobPrivate;
 
 /**
- * @short A job to request SpecialCollections.
+ * @short A job to request SpecialMailCollections.
  *
- * Use this job to request the SpecialCollections you need. You can request both
- * default SpecialCollections and SpecialCollections in a given resource. The default
- * SpecialCollections resource is created when the first default SpecialCollection is
+ * Use this job to request the SpecialMailCollections you need. You can request both
+ * default SpecialMailCollections and SpecialMailCollections in a given resource. The default
+ * SpecialMailCollections resource is created when the first default SpecialCollection is
  * requested, but if a SpecialCollection in a custom resource is requested, this
  * job expects that resource to exist already.
  *
  * If the folders you requested already exist, this job simply succeeds.
  * Otherwise, it creates the required collections and registers them with
- * SpecialCollections.
+ * SpecialMailCollections.
  *
  * Example:
  *
  * @code
  *
- * SpecialCollectionsRequestJob *job = new SpecialCollectionsRequestJob( this );
- * job->requestDefaultCollection( SpecialCollections::Outbox );
+ * SpecialMailCollectionsRequestJob *job = new SpecialMailCollectionsRequestJob( this );
+ * job->requestDefaultCollection( SpecialMailCollections::Outbox );
  * connect( job, SIGNAL( result( KJob* ) ),
  *          this, SLOT( requestDone( KJob* ) ) );
  *
@@ -59,7 +58,7 @@ class SpecialCollectionsRequestJobPrivate;
  *   if ( job->error() )
  *     return;
  *
- *   SpecialCollectionsRequestJob *requestJob = qobject_cast<SpecialCollectionsRequestJob*>( job );
+ *   SpecialMailCollectionsRequestJob *requestJob = qobject_cast<SpecialMailCollectionsRequestJob*>( job );
  *
  *   const Collection collection = requestJob->collection();
  *   ...
@@ -70,7 +69,7 @@ class SpecialCollectionsRequestJobPrivate;
  * @author Constantin Berzan <exit3219@gmail.com>
  * @since 4.4
 */
-class AKONADI_KMIME_EXPORT SpecialCollectionsRequestJob : public TransactionSequence
+class AKONADI_KMIME_EXPORT SpecialMailCollectionsRequestJob : public SpecialCollectionsRequestJob
 {
   Q_OBJECT
 
@@ -78,47 +77,31 @@ class AKONADI_KMIME_EXPORT SpecialCollectionsRequestJob : public TransactionSequ
     /**
      * Creates a new special collections request job.
      */
-    explicit SpecialCollectionsRequestJob( QObject *parent = 0 );
+    explicit SpecialMailCollectionsRequestJob( QObject *parent = 0 );
 
     /**
      * Destroys the special collections request job.
      */
-    ~SpecialCollectionsRequestJob();
+    ~SpecialMailCollectionsRequestJob();
 
     /**
      * Requests a special collection of the given @p type in the default resource.
      */
-    void requestDefaultCollection( SpecialCollections::Type type );
+    void requestDefaultCollection( SpecialMailCollections::Type type );
 
     /**
      * Requests a special collection of the given @p type in the given resource @p instance.
      */
-    void requestCollection( SpecialCollections::Type type, const AgentInstance &instance );
-
-    /**
-     * Returns the requested collection.
-     */
-    Collection collection() const;
-
-  protected:
-    /* reimpl */
-    virtual void doStart();
-    /* reimpl */
-    virtual void slotResult( KJob *job );
+    void requestCollection( SpecialMailCollections::Type type, const AgentInstance &instance );
 
   private:
     //@cond PRIVATE
-    friend class SpecialCollectionsRequestJobPrivate;
+    friend class SpecialMailCollectionsRequestJobPrivate;
 
-    SpecialCollectionsRequestJobPrivate *const d;
-
-    Q_PRIVATE_SLOT( d, void lockResult( KJob* ) )
-    Q_PRIVATE_SLOT( d, void releaseLock() )
-    Q_PRIVATE_SLOT( d, void resourceScanResult( KJob* ) )
-    Q_PRIVATE_SLOT( d, void collectionCreateResult( KJob* ) )
+    SpecialMailCollectionsRequestJobPrivate *const d;
     //@endcond
 };
 
 } // namespace Akonadi
 
-#endif // AKONADI_SPECIALCOLLECTIONSREQUESTJOB_H
+#endif // AKONADI_SPECIALMAILCOLLECTIONSREQUESTJOB_H
