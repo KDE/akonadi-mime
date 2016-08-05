@@ -1,5 +1,5 @@
-maintainer: 
-description: Akonadi-Mime library
+maintainer: dvratil
+description: Akonadi Mime library
 tier: 3
 type: functional
 platforms:
@@ -12,3 +12,7 @@ libraries:
    cmake: "KF5::AkonadiMime"
 cmakename: KF5AkonadiMime
 
+public_lib: true
+group: kdepim
+platforms:
+    - name: Linux
