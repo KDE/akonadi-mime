@@ -381,7 +381,7 @@ public:
                     action->setText(i18n("Remove Important Mark"));
                     action->setChecked(true);
                 } else {
-                    action->setText(i18n("&Mark Mail as Important"));
+                    action->setText(i18n("&Mark Message as Important"));
                     action->setChecked(false);
                 }
                 action->setEnabled(true);
@@ -395,7 +395,7 @@ public:
                     action->setText(i18n("Remove Action Item Mark"));
                     action->setChecked(true);
                 } else {
-                    action->setText(i18n("&Mark Mail as Action Item"));
+                    action->setText(i18n("&Mark Message as Action Item"));
                     action->setChecked(false);
                 }
                 action->setEnabled(true);
