@@ -18,7 +18,7 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 
-set(PIM_VERSION "5.3.40")
+set(PIM_VERSION "5.3.80")
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
 set(AKONADI_VERSION "5.3.40")
 set(KF5_MIME_VERSION "5.3.40")
