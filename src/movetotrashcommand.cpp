@@ -94,7 +94,7 @@ void MoveToTrashCommand::moveMessages()
     }
 }
 
-void MoveToTrashCommand::slotMoveDone(const Result &result)
+void MoveToTrashCommand::slotMoveDone(Result result)
 {
     if (result == Failed) {
         emitResult(Failed);

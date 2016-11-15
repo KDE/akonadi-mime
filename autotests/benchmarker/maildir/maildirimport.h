@@ -25,7 +25,7 @@
 
 class MailDirImport : public MailDir
 {
-
+    Q_OBJECT
 public:
     MailDirImport(const QString &dir);
     void runTest() Q_DECL_OVERRIDE;

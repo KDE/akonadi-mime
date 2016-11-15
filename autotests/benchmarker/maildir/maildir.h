@@ -25,7 +25,7 @@
 
 class MailDir : public MakeTest
 {
-
+    Q_OBJECT
 public:
     MailDir(const QString &dir);
     MailDir();

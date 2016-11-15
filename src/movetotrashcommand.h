@@ -42,7 +42,7 @@ public:
 
 private Q_SLOTS:
     void slotFetchDone(KJob *job);
-    void slotMoveDone(const Result &result);
+    void slotMoveDone(Result result);
 
 private:
     void moveMessages();
