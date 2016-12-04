@@ -48,7 +48,6 @@
 #include <kactioncollection.h>
 
 #include <KLocalizedString>
-#include <KMessageBox>
 
 #include <QtCore/QPointer>
 #include <QItemSelectionModel>
