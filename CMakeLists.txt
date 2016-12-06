@@ -17,6 +17,8 @@ include(KDEInstallDirs)
 include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
+include(ECMCoverageOption)
+
 
 set(PIM_VERSION "5.4.40")
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
