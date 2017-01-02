@@ -35,8 +35,8 @@ class MoveToTrashCommand : public CommandBase
 {
     Q_OBJECT
 public:
-    MoveToTrashCommand(const QAbstractItemModel *model, const  Akonadi::Item::List &msgList, QObject *parent = Q_NULLPTR);
-    MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Collection::List &folders, QObject *parent = Q_NULLPTR);
+    MoveToTrashCommand(const QAbstractItemModel *model, const  Akonadi::Item::List &msgList, QObject *parent = nullptr);
+    MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Collection::List &folders, QObject *parent = nullptr);
 
     void execute() Q_DECL_OVERRIDE;
 

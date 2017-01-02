@@ -77,7 +77,7 @@ public:
      * @param actionCollection The action collection to operate on.
      * @param parent The parent widget.
      */
-    explicit StandardMailActionManager(KActionCollection *actionCollection, QWidget *parent = Q_NULLPTR);
+    explicit StandardMailActionManager(KActionCollection *actionCollection, QWidget *parent = nullptr);
 
     /**
      * Destroys the standard mail action manager.

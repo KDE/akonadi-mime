@@ -29,7 +29,7 @@ class AKONADI_MIME_EXPORT CommandBase : public QObject
     Q_OBJECT
 
 public:
-    explicit CommandBase(QObject *parent = Q_NULLPTR);
+    explicit CommandBase(QObject *parent = nullptr);
     virtual void execute() = 0;
 
     enum Result {
