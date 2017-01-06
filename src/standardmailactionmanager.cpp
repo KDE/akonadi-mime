@@ -448,20 +448,24 @@ public:
                 }
             }
         }
+        QAction *action = nullptr;
         if (isSystemFolder) {
-            if (mGenericManager->action(StandardActionManager::DeleteCollections)) {
-                mGenericManager->action(StandardActionManager::DeleteCollections)->setEnabled(false);
+            action = mGenericManager->action(StandardActionManager::DeleteCollections);
+            if (action) {
+                action->setEnabled(false);
             }
         }
 
-        if (mActions.contains(Akonadi::StandardMailActionManager::MoveToTrash)) {
-            mActions.value(Akonadi::StandardMailActionManager::MoveToTrash)->setEnabled(itemIsSelected && canDeleteItem);
+        action = mActions.value(Akonadi::StandardMailActionManager::MoveToTrash);
+        if (action) {
+            action->setEnabled(itemIsSelected && canDeleteItem);
         }
-        if (mActions.contains(Akonadi::StandardMailActionManager::RemoveDuplicates)) {
-            mActions.value(Akonadi::StandardMailActionManager::RemoveDuplicates)->setEnabled(canDeleteItem);
+        action = mActions.value(Akonadi::StandardMailActionManager::RemoveDuplicates);
+        if (action) {
+            action->setEnabled(canDeleteItem);
         }
 
-        QAction *action = mActions.value(Akonadi::StandardMailActionManager::MarkAllMailAsRead);
+        action = mActions.value(Akonadi::StandardMailActionManager::MarkAllMailAsRead);
         if (action) {
             action->setEnabled(enableMarkAllAsRead);
         }
@@ -927,11 +931,7 @@ void StandardMailActionManager::createAllActions()
 
 QAction *StandardMailActionManager::action(Type type) const
 {
-    if (d->mActions.contains(type)) {
-        return d->mActions.value(type);
-    }
-
-    return 0;
+    return d->mActions.value(type);
 }
 
 QAction *StandardMailActionManager::action(StandardActionManager::Type type) const
