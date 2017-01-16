@@ -42,7 +42,7 @@ public:
 
 MessageModel::MessageModel(QObject *parent)
     : ItemModel(parent)
-    , d(new Private())
+    , d(nullptr)
 {
     fetchScope().fetchPayloadPart(MessagePart::Envelope);
 }
