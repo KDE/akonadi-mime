@@ -110,8 +110,8 @@ void MakeTest::removeCollections()
     CollectionFetchJob *clj5 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj5->fetchScope().setResource(currentInstance.identifier());
     clj5->exec();
-    Collection::List list5 = clj5->collections();
-    foreach (const Collection &collection, list5) {
+    const Collection::List list5 = clj5->collections();
+    for (const Collection &collection : list5) {
         CollectionDeleteJob *cdj = new CollectionDeleteJob(collection, this);
         cdj->exec();
     }

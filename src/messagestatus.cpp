@@ -631,7 +631,7 @@ void Akonadi::MessageStatus::setStatusFromFlags(const QSet<QByteArray> &flags)
 {
     mStatus = StatusUnknown;
 
-    foreach (const QByteArray &flag, flags) {
+    for (const QByteArray &flag : flags) {
         const QByteArray &upperedFlag = flag.toUpper();
         if (upperedFlag ==  Akonadi::MessageFlags::Deleted) {
             setDeleted();

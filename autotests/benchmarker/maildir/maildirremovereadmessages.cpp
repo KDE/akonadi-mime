@@ -41,8 +41,8 @@ void MailDirRemoveReadMessages::runTest()
     CollectionFetchJob *clj4 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj4->fetchScope().setResource(currentInstance.identifier());
     clj4->exec();
-    Collection::List list4 = clj4->collections();
-    foreach (const Collection &collection, list4) {
+    const Collection::List list4 = clj4->collections();
+    for (const Collection &collection : list4) {
         ItemFetchJob *ifj = new ItemFetchJob(collection, this);
         ifj->exec();
         foreach (const Item &item, ifj->items()) {

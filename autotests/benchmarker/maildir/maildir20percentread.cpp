@@ -42,8 +42,8 @@ void MailDir20PercentAsRead::runTest()
     CollectionFetchJob *clj2 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj2->fetchScope().setResource(currentInstance.identifier());
     clj2->exec();
-    Collection::List list2 = clj2->collections();
-    foreach (const Collection &collection, list2) {
+    const Collection::List list2 = clj2->collections();
+    for (const Collection &collection : list2) {
         ItemFetchJob *ifj = new ItemFetchJob(collection, this);
         ifj->exec();
         Item::List itemlist = ifj->items();

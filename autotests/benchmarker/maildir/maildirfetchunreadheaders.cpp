@@ -45,8 +45,8 @@ void MailDirFetchUnreadHeaders::runTest()
     CollectionFetchJob *clj3 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj3->fetchScope().setResource(currentInstance.identifier());
     clj3->exec();
-    Collection::List list3 = clj3->collections();
-    foreach (const Collection &collection, list3) {
+    const Collection::List list3 = clj3->collections();
+    for (const Collection &collection : list3) {
         ItemFetchJob *ifj = new ItemFetchJob(collection, this);
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();

@@ -71,7 +71,7 @@ void EmptyTrashCommand::execute()
         trashFolder << trash;
 
         const Akonadi::AgentInstance::List lst = agentInstances();
-        foreach (const Akonadi::AgentInstance &type, lst) {
+        for (const Akonadi::AgentInstance &type : lst) {
             if (type.identifier().contains(IMAP_RESOURCE_IDENTIFIER)) {
                 if (type.status() == Akonadi::AgentInstance::Broken) {
                     continue;
@@ -177,7 +177,7 @@ bool EmptyTrashCommand::folderIsTrash(const Akonadi::Collection &col)
         return true;
     }
     const Akonadi::AgentInstance::List lst = agentInstances();
-    foreach (const Akonadi::AgentInstance &type, lst) {
+    for (const Akonadi::AgentInstance &type : lst) {
         if (type.status() == Akonadi::AgentInstance::Broken) {
             continue;
         }

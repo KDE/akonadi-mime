@@ -336,7 +336,7 @@ public:
             bool allMarkedAsUnread = true;
             bool allMarkedAsActionItem = true;
 
-            foreach (const Akonadi::Item &item, selectedItems) {
+            for (const Akonadi::Item &item : selectedItems) {
                 Akonadi::MessageStatus status;
                 status.setStatusFromFlags(item.flags());
                 if (!status.isImportant()) {
