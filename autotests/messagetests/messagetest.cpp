@@ -24,7 +24,7 @@
 #include <messageflags.h>
 using namespace KMime;
 
-QTEST_MAIN(MessageTest)
+QTEST_GUILESS_MAIN(MessageTest)
 
 void MessageTest::testCopyFlags()
 {
