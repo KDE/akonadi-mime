@@ -89,9 +89,6 @@ public:
       Reimplemented from QAbstractItemModel.
      */
     QStringList mimeTypes() const Q_DECL_OVERRIDE;
-private:
-    class Private;
-    Private *const d;
 };
 
 }

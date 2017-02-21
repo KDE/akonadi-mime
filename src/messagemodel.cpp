@@ -35,21 +35,14 @@ typedef KMime::Message::Ptr MessagePtr;
 
 using namespace Akonadi;
 
-class Q_DECL_HIDDEN Akonadi::MessageModel::Private
-{
-public:
-};
-
 MessageModel::MessageModel(QObject *parent)
     : ItemModel(parent)
-    , d(nullptr)
 {
     fetchScope().fetchPayloadPart(MessagePart::Envelope);
 }
 
 MessageModel::~MessageModel()
 {
-    delete d;
 }
 
 QStringList MessageModel::mimeTypes() const

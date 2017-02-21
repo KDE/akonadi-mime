@@ -121,8 +121,7 @@ Akonadi::Collection MoveToTrashCommand::trashCollectionFromResource(const Akonad
             //instead of relying on a resource's settings interface
             OrgKdeAkonadiImapSettingsInterface *iface = Util::createImapSettingsInterface(col.resource());
             if (iface->isValid()) {
-
-                trashCol =  Akonadi::Collection(iface->trashCollection());
+                trashCol = Akonadi::Collection(iface->trashCollection());
                 delete iface;
                 return trashCol;
             }

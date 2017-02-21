@@ -64,9 +64,9 @@ QByteArray MessageFolderAttribute::serialized() const
     QByteArray rv;
 
     if (d->isOutboundFolder) {
-        rv += "outbound";
+        rv = "outbound";
     } else {
-        rv += "inbound";
+        rv = "inbound";
     }
 
     return rv;

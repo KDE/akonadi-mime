@@ -57,9 +57,6 @@ static const char s_specialCollectionTypes[SpecialMailCollections::LastType][11]
 
 static const int s_numTypes = sizeof s_specialCollectionTypes / sizeof * s_specialCollectionTypes;
 
-//FIXME doesn't compile
-//BOOST_STATIC_ASSERT(s_numTypes == SpecialMailCollections::LastType);
-
 static inline QByteArray enumToType(SpecialMailCollections::Type value)
 {
     return s_specialCollectionTypes[value];
