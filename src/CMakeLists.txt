@@ -74,7 +74,6 @@ add_library(KF5::AkonadiMime ALIAS KF5AkonadiMime)
 # NOTE: The include directories remain 'akonadi/kmime' to be as SC as possible.
 target_include_directories(KF5AkonadiMime INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/Akonadi/KMime>")
 target_include_directories(KF5AkonadiMime PUBLIC "$<BUILD_INTERFACE:${Akonadi-Mime_SOURCE_DIR}/src;${Akonadi-Mime_BINARY_DIR}/src>")
-# TODO: Remove when kdepimlibs is split (and fix the broken includes in eg. mailtransport)
 target_include_directories(KF5AkonadiMime INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/akonadi/kmime>")
 
 target_link_libraries(KF5AkonadiMime
