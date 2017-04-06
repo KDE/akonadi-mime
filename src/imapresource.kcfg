@@ -20,6 +20,9 @@
       <label>Defines the encryption type to use</label>
       <default>SSL</default>
     </entry>
+    <entry name="OverrideEncryption" type="String">
+      <label>Override configured encryption mode</label>
+    </entry>
     <entry name="Authentication" type="Int">
       <label>Defines the authentication type to use</label>
       <default>1</default>
@@ -27,6 +30,9 @@
     <entry name="SubscriptionEnabled" type="Bool">
       <label>Defines if the server side subscription is enabled</label>
       <default>false</default>
+    </entry>
+    <entry name="SessionTimeout" type="Int">
+      <default>30</default>
     </entry>
   </group>
   <group name="cache">
@@ -56,12 +62,19 @@
        <label>Define which folder is used for trash</label>
        <default>-1</default>
     </entry>
+    <entry name="TrashCollectionMigrated" type="Bool">
+       <label>Define if the trash collection received the special attribute</label>
+       <default>false</default>
+    </entry>
     <entry name="UseDefaultIdentity" type="Bool">
        <label>Define if account uses the default identity</label>
        <default>true</default>
     </entry>
     <entry name="AccountIdentity" type="Int">
        <label>Identity account</label>
+    </entry>
+    <entry name="KnownMailBoxes" type="StringList">
+      <label>List of mailbox names reported by the server the last time</label>
     </entry>
   </group>
   <group name="idle">
@@ -80,14 +93,26 @@
     </entry>
     <entry name="SievePort" type="Int">
       <label>Define sieve port</label>
-      <default>2000</default>
+      <default>4190</default>
     </entry>
     <entry name="SieveAlternateUrl" type="String">
       <label>Define alternate URL</label>
     </entry>
+    <entry name="AlternateAuthentication" type="Int">
+      <label>Defines the authentication type to use for alternate server</label>
+      <default>1</default>
+    </entry>
     <entry name="SieveVacationFilename" type="String">
       <label>Define default sieve vacation filename</label>
       <default>kmail-vacation.siv</default>
+    </entry>
+    <entry name="SieveCustomUsername" type="String">
+      <label>Define username used from custom server sieve url</label>
+      <default></default>
+    </entry>
+    <entry name="SieveCustomAuthentification" type="String">
+      <label>Defines the type of identification used by custom sieve server</label>
+      <default>ImapUserPassword</default>
     </entry>
   </group>
 </kcfg>
