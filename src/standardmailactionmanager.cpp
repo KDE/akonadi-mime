@@ -421,7 +421,7 @@ public:
         bool canDeleteItem = true;
         bool isSystemFolder = false;
         if (collectionIsSelected) {
-            foreach (const Collection &collection, selectedCollections) {
+            for (const Collection &collection : qAsConst(selectedCollections)) {
                 if (collection.isValid()) {
                     const Akonadi::CollectionStatistics stats = collection.statistics();
                     if (!enableMarkAllAsRead) {
