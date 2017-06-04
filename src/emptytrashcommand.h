@@ -36,14 +36,14 @@ class EmptyTrashCommand : public CommandBase
 public:
     EmptyTrashCommand(const QAbstractItemModel *model, QObject *parent);
     EmptyTrashCommand(const Akonadi::Collection &folder, QObject *parent);
-    void execute() Q_DECL_OVERRIDE;
+    void execute() override;
 
 private Q_SLOTS:
     void slotExpungeJob(KJob *job);
     void slotDeleteJob(KJob *job);
 
 protected Q_SLOTS:
-    void emitResult(Result result) Q_DECL_OVERRIDE;
+    void emitResult(Result result) override;
 
 private:
     void expunge(const Akonadi::Collection &col);

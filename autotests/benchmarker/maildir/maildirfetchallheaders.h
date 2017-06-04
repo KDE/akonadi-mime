@@ -28,6 +28,6 @@ class MailDirFetchAllHeaders : public MailDir
 
 public:
     MailDirFetchAllHeaders();
-    void runTest() Q_DECL_OVERRIDE;
+    void runTest() override;
 };
 #endif

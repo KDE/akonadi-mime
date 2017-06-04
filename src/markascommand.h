@@ -40,7 +40,7 @@ public:
     MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const Akonadi::Item::List &msgList, bool invert = false, QObject *parent = nullptr);
     MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const Akonadi::Collection::List &folders, bool invert = false, bool recursive = false, QObject *parent = nullptr);
     ~MarkAsCommand();
-    void execute() Q_DECL_OVERRIDE;
+    void execute() override;
 
 private Q_SLOTS:
     void slotCollectionFetchDone(KJob *job);

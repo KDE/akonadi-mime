@@ -37,7 +37,7 @@ class AKONADI_MIME_EXPORT MoveCommand : public CommandBase
 public:
     MoveCommand(const Akonadi::Collection &destFolder, const Akonadi::Item::List &msgList, QObject *parent = nullptr);
     ~MoveCommand();
-    void execute() Q_DECL_OVERRIDE;
+    void execute() override;
 
 private Q_SLOTS:
     void slotMoveResult(KJob *job);

@@ -38,7 +38,7 @@ public:
     MoveToTrashCommand(const QAbstractItemModel *model, const  Akonadi::Item::List &msgList, QObject *parent = nullptr);
     MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Collection::List &folders, QObject *parent = nullptr);
 
-    void execute() Q_DECL_OVERRIDE;
+    void execute() override;
 
 private Q_SLOTS:
     void slotFetchDone(KJob *job);

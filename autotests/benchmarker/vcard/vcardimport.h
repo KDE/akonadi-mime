@@ -27,7 +27,7 @@ class VCardImport : public VCard
     Q_OBJECT
 public:
     VCardImport(const QString &dir);
-    void runTest() Q_DECL_OVERRIDE;
+    void runTest() override;
 };
 
 #endif
