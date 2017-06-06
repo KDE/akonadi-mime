@@ -22,7 +22,7 @@
 #ifndef AKONADI_KMIME_MESSAGESTATUS_H
 #define AKONADI_KMIME_MESSAGESTATUS_H
 
-#include <QtCore/QSet>
+#include <QSet>
 
 #include "akonadi-mime_export.h"
 

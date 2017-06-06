@@ -21,7 +21,7 @@
 #define MESSAGETEST_TEST_H
 
 #include <kmime/kmime_message.h>
-#include <QtCore/QObject>
+#include <QObject>
 
 class MessageTest : public QObject
 {

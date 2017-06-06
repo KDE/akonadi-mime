@@ -20,7 +20,7 @@
 #ifndef LOCALFOLDERSREQUESTJOBTEST_H
 #define LOCALFOLDERSREQUESTJOBTEST_H
 
-#include <QtCore/QObject>
+#include <QObject>
 
 /**
  */

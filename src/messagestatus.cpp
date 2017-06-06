@@ -24,7 +24,7 @@
 
 #include "messageflags.h"
 
-#include <QtCore/QString>
+#include <QString>
 
 /** The message status format. These can be or'd together.
     Note, that the StatusIgnored implies the

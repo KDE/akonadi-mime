@@ -20,8 +20,8 @@
 #ifndef LOCALFOLDERSTEST_H
 #define LOCALFOLDERSTEST_H
 
-#include <QtCore/QMap>
-#include <QtCore/QObject>
+#include <QMap>
+#include <QObject>
 
 /**
  */

@@ -25,7 +25,7 @@
 
 #include "messageparts.h"
 
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <QApplication>
 #include <QTimer>
 

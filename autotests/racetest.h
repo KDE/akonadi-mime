@@ -20,7 +20,7 @@
 #ifndef RACETEST_H
 #define RACETEST_H
 
-#include <QtCore/QObject>
+#include <QObject>
 #include <QList>
 
 class KProcess;

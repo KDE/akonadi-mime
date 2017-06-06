@@ -22,8 +22,8 @@
 
 #include "akonadi-mime_export.h"
 
-#include <QtCore/QString>
-#include <QtCore/QStringList>
+#include <QString>
+#include <QStringList>
 
 #include <attribute.h>
 

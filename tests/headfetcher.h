@@ -20,8 +20,8 @@
 #ifndef HEADFETCHER_H
 #define HEADFETCHER_H
 
-#include <QtCore/QObject>
-#include <QtCore/QTime>
+#include <QObject>
+#include <QTime>
 
 class HeadFetcher : public QObject
 {

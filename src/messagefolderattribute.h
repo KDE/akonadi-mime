@@ -24,7 +24,7 @@
 
 #include <attribute.h>
 
-#include <QtCore/QByteArray>
+#include <QByteArray>
 
 namespace Akonadi
 {

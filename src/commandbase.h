@@ -20,7 +20,7 @@
 #ifndef COMMANDBASE_H
 #define COMMANDBASE_H
 
-#include <QtCore/QObject>
+#include <QObject>
 #include "akonadi-mime_export.h"
 namespace Akonadi
 {
