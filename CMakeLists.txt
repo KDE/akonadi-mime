@@ -42,7 +42,7 @@ find_package(KF5ItemModels ${KF5_MIME_VERSION} CONFIG REQUIRED)
 
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 
-set( SHARED_MIME_INFO_MINIMUM_VERSION "0.40" )
+set( SHARED_MIME_INFO_MINIMUM_VERSION "1.0" )
 find_package( SharedMimeInfo REQUIRED )
 
 find_package(LibXslt)
