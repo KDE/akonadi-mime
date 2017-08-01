@@ -355,33 +355,24 @@ public:
             QAction *action = mActions.value(Akonadi::StandardMailActionManager::MarkMailAsRead);
             if (action) {
                 updateMarkAction(action, allMarkedAsRead);
-                if (allMarkedAsRead) {
-                    action->setEnabled(false);
-                } else {
-                    action->setEnabled(true);
-                }
+                action->setEnabled(!allMarkedAsRead);
             }
 
             action = mActions.value(Akonadi::StandardMailActionManager::MarkMailAsUnread);
             if (action) {
                 updateMarkAction(action, allMarkedAsUnread);
-                if (allMarkedAsUnread) {
-                    action->setEnabled(false);
-                } else {
-                    action->setEnabled(true);
-                }
+                action->setEnabled(!allMarkedAsUnread);
             }
 
             action = mActions.value(Akonadi::StandardMailActionManager::MarkMailAsImportant);
             if (action) {
                 action->setCheckable(true);
                 updateMarkAction(action, allMarkedAsImportant);
+                action->setChecked(allMarkedAsImportant);
                 if (allMarkedAsImportant) {
                     action->setText(i18n("Remove Important Mark"));
-                    action->setChecked(true);
                 } else {
                     action->setText(i18n("&Mark Message as Important"));
-                    action->setChecked(false);
                 }
                 action->setEnabled(true);
             }
@@ -390,12 +381,11 @@ public:
             if (action) {
                 action->setCheckable(true);
                 updateMarkAction(action, allMarkedAsActionItem);
+                action->setChecked(allMarkedAsActionItem);
                 if (allMarkedAsActionItem) {
                     action->setText(i18n("Remove Action Item Mark"));
-                    action->setChecked(true);
                 } else {
                     action->setText(i18n("&Mark Message as Action Item"));
-                    action->setChecked(false);
                 }
                 action->setEnabled(true);
             }
