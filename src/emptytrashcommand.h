@@ -52,10 +52,10 @@ private:
     Akonadi::Collection collectionFromId(Akonadi::Collection::Id id) const;
     bool folderIsTrash(const Akonadi::Collection &col);
 
-    const QAbstractItemModel *mModel;
+    const QAbstractItemModel *mModel = nullptr;
     Akonadi::Collection::Id the_trashCollectionFolder;
     Akonadi::Collection mFolder;
-    int mNumberOfTrashToEmpty;
+    int mNumberOfTrashToEmpty = 0;
 };
 }
 #endif // EMPTYTRASHCOMMAND_P_H

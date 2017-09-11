@@ -38,7 +38,7 @@ public:
     SpecialMailCollectionsPrivate();
     ~SpecialMailCollectionsPrivate();
 
-    SpecialMailCollections *mInstance;
+    SpecialMailCollections *mInstance = nullptr;
 };
 
 typedef SpecialMailCollectionsSettings Settings;

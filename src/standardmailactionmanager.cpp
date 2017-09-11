@@ -659,14 +659,14 @@ public:
         command->execute();
     }
 
-    KActionCollection *mActionCollection;
-    QWidget *mParentWidget;
-    StandardActionManager *mGenericManager;
-    QItemSelectionModel *mCollectionSelectionModel;
-    QItemSelectionModel *mItemSelectionModel;
+    KActionCollection *mActionCollection = nullptr;
+    QWidget *mParentWidget = nullptr;
+    StandardActionManager *mGenericManager = nullptr;
+    QItemSelectionModel *mCollectionSelectionModel = nullptr;
+    QItemSelectionModel *mItemSelectionModel = nullptr;
     QHash<StandardMailActionManager::Type, QAction *> mActions;
     QSet<StandardMailActionManager::Type> mInterceptedActions;
-    StandardMailActionManager *mParent;
+    StandardMailActionManager *mParent = nullptr;
 };
 
 StandardMailActionManager::StandardMailActionManager(KActionCollection *actionCollection, QWidget *parent)

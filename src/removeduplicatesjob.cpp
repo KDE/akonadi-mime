@@ -147,11 +147,11 @@ public:
     Akonadi::Collection::List mFolders;
     int mJobCount;
     Akonadi::Item::List mDuplicateItems;
-    bool mKilled;
-    Akonadi::Job *mCurrentJob;
+    bool mKilled = false;
+    Akonadi::Job *mCurrentJob = nullptr;
 
 private:
-    RemoveDuplicatesJob *mParent;
+    RemoveDuplicatesJob *mParent = nullptr;
 
 };
 

@@ -54,8 +54,8 @@ private:
     Akonadi::Collection::List mFolders;
     Akonadi::Item::List mMessages;
     Akonadi::Collection::Id the_trashCollectionFolder;
-    const QAbstractItemModel *mModel;
-    int mFolderListJobCount;
+    const QAbstractItemModel *mModel = nullptr;
+    int mFolderListJobCount = 0;
 };
 }
 #endif // MOVETOTRASHCOMMAND_H
