@@ -23,25 +23,19 @@
 
 #include <QApplication>
 #include <KAboutData>
-#include <KLocalizedString>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 
 int main(int argc, char *argv[])
 {
-    KAboutData aboutData(QStringLiteral("benchmarker"), i18n("Benchmarker"), QStringLiteral("1.0"));
-    aboutData.setShortDescription(i18n("benchmark application"));
     QApplication app(argc, argv);
     QCommandLineParser parser;
-    KAboutData::setApplicationData(aboutData);
     parser.addVersionOption();
     parser.addHelpOption();
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("maildir"), i18n("Path to maildir to be used as data source"), QStringLiteral("argument")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("vcarddir"), i18n("Path to vvcarddir to be used as data source"), QStringLiteral("argument")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("maildir"), QStringLiteral("Path to maildir to be used as data source"), QStringLiteral("argument")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("vcarddir"), QStringLiteral("Path to vvcarddir to be used as data source"), QStringLiteral("argument")));
 
-    aboutData.setupCommandLine(&parser);
     parser.process(app);
-    aboutData.processCommandLine(&parser);
 
     const QString maildir = parser.value(QStringLiteral("maildir"));
     const QString vcarddir = parser.value(QStringLiteral("vcarddir"));
