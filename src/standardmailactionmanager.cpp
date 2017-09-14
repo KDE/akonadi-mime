@@ -49,7 +49,6 @@
 
 #include <KLocalizedString>
 
-#include <QPointer>
 #include <QItemSelectionModel>
 
 using namespace Akonadi;

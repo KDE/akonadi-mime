@@ -26,7 +26,6 @@
 #include <collection.h>
 #include <item.h>
 
-#include <QList>
 #include "akonadi-mime_export.h"
 
 class KJob;

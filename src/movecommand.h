@@ -25,7 +25,6 @@
 #include <collection.h>
 #include <item.h>
 
-#include <QList>
 
 class KJob;
 namespace Akonadi

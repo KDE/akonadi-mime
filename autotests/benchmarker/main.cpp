@@ -22,7 +22,6 @@
 #include "testvcard.h"
 
 #include <QApplication>
-#include <KAboutData>
 #include <QCommandLineParser>
 #include <QCommandLineOption>
 
