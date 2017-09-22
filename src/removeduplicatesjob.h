@@ -71,9 +71,6 @@ protected:
 private:
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void slotFetchDone(KJob *job))
-    Q_PRIVATE_SLOT(d, void slotDeleteDone(KJob *job))
 };
 
 } /* namespace Akonadi */

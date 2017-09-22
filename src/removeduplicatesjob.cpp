@@ -48,7 +48,7 @@ public:
         Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(collection, mParent);
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         job->fetchScope().fetchFullPayload();
-        mParent->connect(job, SIGNAL(result(KJob*)), mParent, SLOT(slotFetchDone(KJob*)));
+        mParent->connect(job, &ItemFetchJob::result, mParent, [this](KJob *job) { slotFetchDone(job); });
         mCurrentJob = job;
 
         Q_EMIT mParent->description(mParent, i18n("Retrieving items..."));
@@ -130,7 +130,7 @@ public:
             } else {
                 Q_EMIT mParent->description(mParent, i18n("Removing duplicates..."));
                 Akonadi::ItemDeleteJob *delCmd = new Akonadi::ItemDeleteJob(mDuplicateItems, mParent);
-                mParent->connect(delCmd, SIGNAL(result(KJob*)), mParent, SLOT(slotDeleteDone(KJob*)));
+                mParent->connect(delCmd, &ItemDeleteJob::result, mParent, [this](KJob *job) { slotDeleteDone(job); });
             }
         }
     }
