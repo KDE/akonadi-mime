@@ -217,16 +217,6 @@ private:
     //@cond PRIVATE
     class Private;
     Private *const d;
-
-    Q_PRIVATE_SLOT(d, void updateActions())
-    Q_PRIVATE_SLOT(d, void slotMarkAs())
-    Q_PRIVATE_SLOT(d, void slotMarkAllAs())
-    Q_PRIVATE_SLOT(d, void slotMoveToTrash())
-    Q_PRIVATE_SLOT(d, void slotMoveAllToTrash())
-    Q_PRIVATE_SLOT(d, void slotRemoveDuplicates())
-    Q_PRIVATE_SLOT(d, void slotEmptyAllTrash())
-    Q_PRIVATE_SLOT(d, void slotEmptyTrash())
-    Q_PRIVATE_SLOT(d, void slotJobFinished(KJob *))
     //@endcond
 };
 

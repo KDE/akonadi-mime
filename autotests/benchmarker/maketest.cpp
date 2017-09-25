@@ -35,10 +35,10 @@ using namespace Akonadi;
 
 MakeTest::MakeTest()
 {
-    connect(AgentManager::self(), SIGNAL(instanceRemoved(Akonadi::AgentInstance)),
-            this, SLOT(instanceRemoved(Akonadi::AgentInstance)));
-    connect(AgentManager::self(), SIGNAL(instanceStatusChanged(Akonadi::AgentInstance)),
-            this, SLOT(instanceStatusChanged(Akonadi::AgentInstance)));
+    connect(AgentManager::self(), &AgentManager::instanceRemoved,
+            this, &MakeTest::instanceRemoved);
+    connect(AgentManager::self(), &AgentManager::instanceStatusChanged,
+            this, &MakeTest::instanceStatusChanged);
 }
 
 void MakeTest::createAgent(const QString &name)
