@@ -61,7 +61,7 @@ HeadFetcher::HeadFetcher(bool multipart)
     }
 
     qDebug() << "Took:" << timer.elapsed() << "ms.";
-    QTimer::singleShot(1000, this, SLOT(stop()));
+    QTimer::singleShot(1000, this, &HeadFetcher::stop);
 }
 
 void HeadFetcher::stop()
