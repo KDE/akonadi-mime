@@ -76,11 +76,8 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     QCommandLineParser parser;
     KAboutData::setApplicationData(aboutData);
-    parser.addVersionOption();
-    parser.addHelpOption();
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("multipart"), i18n("Run test on multipart data (default is singlepart).")));
 
-    //PORTING SCRIPT: adapt aboutdata variable if necessary
     aboutData.setupCommandLine(&parser);
     parser.process(app);
     aboutData.processCommandLine(&parser);
