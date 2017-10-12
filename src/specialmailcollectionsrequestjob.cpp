@@ -98,10 +98,10 @@ SpecialMailCollectionsRequestJob::~SpecialMailCollectionsRequestJob()
 
 void SpecialMailCollectionsRequestJob::requestDefaultCollection(SpecialMailCollections::Type type)
 {
-    return SpecialCollectionsRequestJob::requestDefaultCollection(enumToType(type));
+    SpecialCollectionsRequestJob::requestDefaultCollection(enumToType(type));
 }
 
 void SpecialMailCollectionsRequestJob::requestCollection(SpecialMailCollections::Type type, const AgentInstance &instance)
 {
-    return SpecialCollectionsRequestJob::requestCollection(enumToType(type), instance);
+    SpecialCollectionsRequestJob::requestCollection(enumToType(type), instance);
 }
