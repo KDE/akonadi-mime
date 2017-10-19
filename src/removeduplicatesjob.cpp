@@ -48,6 +48,7 @@ public:
         Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(collection, mParent);
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         job->fetchScope().fetchFullPayload();
+        job->fetchScope().setIgnoreRetrievalErrors(true);
         mParent->connect(job, &ItemFetchJob::result, mParent, [this](KJob *job) { slotFetchDone(job); });
         mCurrentJob = job;
 
