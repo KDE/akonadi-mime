@@ -35,7 +35,7 @@ public:
     Private(RemoveDuplicatesJob *parent)
         : mJobCount(0)
         , mKilled(false)
-        , mCurrentJob(0)
+        , mCurrentJob(nullptr)
         , mParent(parent)
     {
     }
