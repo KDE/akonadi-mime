@@ -59,8 +59,8 @@ public:
     Private(KActionCollection *actionCollection, QWidget *parentWidget, StandardMailActionManager *parent)
         : mActionCollection(actionCollection)
         , mParentWidget(parentWidget)
-        , mCollectionSelectionModel(0)
-        , mItemSelectionModel(0)
+        , mCollectionSelectionModel(nullptr)
+        , mItemSelectionModel(nullptr)
         , mParent(parent)
     {
         mGenericManager = new StandardActionManager(actionCollection, parentWidget);

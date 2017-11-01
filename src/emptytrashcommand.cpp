@@ -42,7 +42,7 @@ EmptyTrashCommand::EmptyTrashCommand(const QAbstractItemModel *model, QObject *p
 
 EmptyTrashCommand::EmptyTrashCommand(const Akonadi::Collection &folder, QObject *parent)
     : CommandBase(parent)
-    , mModel(0)
+    , mModel(nullptr)
     , the_trashCollectionFolder(-1)
     , mFolder(folder)
     , mNumberOfTrashToEmpty(0)

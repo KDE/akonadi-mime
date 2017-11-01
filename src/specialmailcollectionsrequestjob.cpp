@@ -59,7 +59,7 @@ static inline QByteArray enumToType(SpecialMailCollections::Type type)
 
 SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *parent)
     : SpecialCollectionsRequestJob(SpecialMailCollections::self(), parent)
-    , d(0)
+    , d(nullptr)
 {
     static QMap<QByteArray, QString> displayNameMap;
     displayNameMap.insert("local-mail", i18nc("local mail folder", "Local Folders"));

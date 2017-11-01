@@ -191,7 +191,7 @@ void MarkAsCommand::markMessages()
 
     d->mMarkJobCount++;
     if (itemsToModify.isEmpty()) {
-        slotModifyItemDone(0);   // pretend we did something
+        slotModifyItemDone(nullptr);   // pretend we did something
     } else {
         Akonadi::ItemModifyJob *modifyJob = new Akonadi::ItemModifyJob(itemsToModify, this);
         modifyJob->setIgnorePayload(true);
