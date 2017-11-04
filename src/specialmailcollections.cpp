@@ -55,7 +55,7 @@ static const char s_specialCollectionTypes[SpecialMailCollections::LastType][11]
     "templates"
 };
 
-static const int s_numTypes = sizeof s_specialCollectionTypes / sizeof * s_specialCollectionTypes;
+static const int s_numTypes = sizeof s_specialCollectionTypes / sizeof *s_specialCollectionTypes;
 
 static inline QByteArray enumToType(SpecialMailCollections::Type value)
 {

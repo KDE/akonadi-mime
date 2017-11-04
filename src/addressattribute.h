@@ -27,14 +27,11 @@
 
 #include <attribute.h>
 
-namespace MailTransport
-{
+namespace MailTransport {
 class Transport;
 }
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 /**
   Attribute storing the From, To, Cc, Bcc addresses of a message.
 
@@ -47,10 +44,7 @@ public:
     /**
       Creates a new AddressAttribute.
     */
-    explicit AddressAttribute(const QString &from = QString(),
-                              const QStringList &to = QStringList(),
-                              const QStringList &cc = QStringList(),
-                              const QStringList &bcc = QStringList());
+    explicit AddressAttribute(const QString &from = QString(), const QStringList &to = QStringList(), const QStringList &cc = QStringList(), const QStringList &bcc = QStringList());
     /**
       Destroys the AddressAttribute.
     */
@@ -108,9 +102,7 @@ public:
 private:
     class Private;
     Private *const d;
-
 };
-
 } // namespace Akonadi
 
 #endif // AKONADI_ADDRESSATTRIBUTE_H

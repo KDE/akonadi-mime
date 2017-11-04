@@ -22,8 +22,7 @@
 
 #include <QObject>
 #include "akonadi-mime_export.h"
-namespace Akonadi
-{
+namespace Akonadi {
 class AKONADI_MIME_EXPORT CommandBase : public QObject
 {
     Q_OBJECT

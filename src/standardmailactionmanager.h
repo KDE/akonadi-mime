@@ -34,9 +34,7 @@ class KJob;
 class QItemSelectionModel;
 class QWidget;
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 class Item;
 
 /**
@@ -219,7 +217,6 @@ private:
     Private *const d;
     //@endcond
 };
-
 }
 
 #endif

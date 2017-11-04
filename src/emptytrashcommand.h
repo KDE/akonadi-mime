@@ -27,8 +27,7 @@
 
 class QAbstractItemModel;
 class KJob;
-namespace Akonadi
-{
+namespace Akonadi {
 class EmptyTrashCommand : public CommandBase
 {
     Q_OBJECT

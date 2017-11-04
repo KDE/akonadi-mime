@@ -68,4 +68,3 @@ KMime::Message::Ptr MessageTest::readAndParseMail(const QString &mailFile) const
     msg->parse();
     return msg;
 }
-

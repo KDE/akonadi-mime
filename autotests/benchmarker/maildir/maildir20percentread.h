@@ -25,7 +25,6 @@
 
 class MailDir20PercentAsRead : public MailDir
 {
-
 public:
     MailDir20PercentAsRead();
     void runTest() override;

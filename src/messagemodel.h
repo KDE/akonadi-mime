@@ -29,9 +29,7 @@
 #  define AKONADI_IGNORE_DEPRECATED_WARNINGS
 #endif
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 /**
  * A flat self-updating message model.
  * @deprecated Subclass Akonadi::EntityTreeModel instead. An example can be seen in AkonadiConsole,
@@ -90,7 +88,6 @@ public:
      */
     QStringList mimeTypes() const override;
 };
-
 }
 
 #endif

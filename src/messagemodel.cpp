@@ -56,8 +56,8 @@ int MessageModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     if (collection().isValid()
-            && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
-            && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
+        && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
+        && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
         return 1;
     }
 
@@ -67,8 +67,8 @@ int MessageModel::rowCount(const QModelIndex &parent) const
 int MessageModel::columnCount(const QModelIndex &parent) const
 {
     if (collection().isValid()
-            && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
-            && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
+        && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
+        && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
         return 1;
     }
 
@@ -130,7 +130,7 @@ QVariant MessageModel::data(const QModelIndex &index, int role) const
         case Receiver:
             return msg->to()->asUnicodeString();
         case Date:
-            return msg->date()->dateTime()/*.dateTime()*/;
+            return msg->date()->dateTime() /*.dateTime()*/;
         case Size:
             return item.size();
         default:
@@ -142,10 +142,9 @@ QVariant MessageModel::data(const QModelIndex &index, int role) const
 
 QVariant MessageModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
-
     if (collection().isValid()
-            && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
-            && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
+        && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
+        && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
         return QVariant();
     }
 

@@ -28,9 +28,7 @@
 
 class QString;
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 //---------------------------------------------------------------------------
 /**
   @short Akonadi KMime Message Status.
@@ -428,7 +426,6 @@ public:
 private:
     quint32 mStatus;
 };
-
 } // namespace Akonadi
 
 #endif

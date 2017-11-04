@@ -28,7 +28,6 @@
 
 class MakeTest : public QObject
 {
-
     Q_OBJECT
 protected Q_SLOTS:
     void createAgent(const QString &name);

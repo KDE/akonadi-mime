@@ -34,12 +34,11 @@ class Akonadi::MarkAsCommandPrivate
 {
 public:
     MarkAsCommandPrivate()
-        : mMarkJobCount(0),
-          mFolderListJobCount(0),
-          mInvertMark(0),
-          mRecursive(false)
+        : mMarkJobCount(0)
+        , mFolderListJobCount(0)
+        , mInvertMark(0)
+        , mRecursive(false)
     {
-
     }
 
     Akonadi::Collection::List mFolders;
@@ -52,8 +51,8 @@ public:
 };
 
 MarkAsCommand::MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const Akonadi::Item::List &msgList, bool invert, QObject *parent)
-    : CommandBase(parent),
-      d(new Akonadi::MarkAsCommandPrivate())
+    : CommandBase(parent)
+    , d(new Akonadi::MarkAsCommandPrivate())
 {
     d->mInvertMark = invert;
     d->mMessages = msgList;
@@ -63,8 +62,8 @@ MarkAsCommand::MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const A
 }
 
 MarkAsCommand::MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const Akonadi::Collection::List &folders, bool invert, bool recursive, QObject *parent)
-    : CommandBase(parent),
-      d(new Akonadi::MarkAsCommandPrivate())
+    : CommandBase(parent)
+    , d(new Akonadi::MarkAsCommandPrivate())
 {
     d->mInvertMark = invert;
     d->mFolders = folders;
@@ -138,7 +137,7 @@ void MarkAsCommand::slotFetchDone(KJob *job)
 void MarkAsCommand::execute()
 {
     if (d->mRecursive && !d->mFolders.isEmpty()) {
-        if (KMessageBox::questionYesNo(qobject_cast<QWidget*>(parent()),
+        if (KMessageBox::questionYesNo(qobject_cast<QWidget *>(parent()),
                                        i18n("Are you sure you want to mark all messages in this folder and all its subfolders?"),
                                        i18n("Mark All Recursively")) == KMessageBox::Yes) {
             Akonadi::CollectionFetchJob *job = new Akonadi::CollectionFetchJob(d->mFolders.first());
@@ -212,4 +211,3 @@ void MarkAsCommand::slotModifyItemDone(KJob *job)
         emitResult(OK);
     }
 }
-

@@ -25,9 +25,7 @@
 
 #include <specialcollectionsrequestjob.h>
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 class SpecialMailCollectionsRequestJobPrivate;
 
 /**
@@ -102,7 +100,6 @@ private:
     SpecialMailCollectionsRequestJobPrivate *const d;
     //@endcond
 };
-
 } // namespace Akonadi
 
 #endif // AKONADI_SPECIALMAILCOLLECTIONSREQUESTJOB_H

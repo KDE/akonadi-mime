@@ -58,7 +58,7 @@ void MoveToTrashCommand::slotFetchDone(KJob *job)
 
     Akonadi::ItemFetchJob *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
 
-    mMessages =  fjob->items();
+    mMessages = fjob->items();
     moveMessages();
 
     if (mFolderListJobCount > 0) {
@@ -107,7 +107,7 @@ void MoveToTrashCommand::slotMoveDone(Result result)
 Akonadi::Collection MoveToTrashCommand::collectionFromId(Akonadi::Collection::Id id) const
 {
     const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(
-                                mModel, Akonadi::Collection(id));
+        mModel, Akonadi::Collection(id));
     return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 }
 
@@ -150,4 +150,3 @@ Akonadi::Collection MoveToTrashCommand::findTrashFolder(const Akonadi::Collectio
     }
     return Akonadi::Collection();
 }
-

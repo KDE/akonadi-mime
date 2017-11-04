@@ -23,9 +23,7 @@
 #include "akonadi-kmimeprivate_export.h"
 #include "specialmailcollections.h"
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 /**
   @internal
   Class that exposes SpecialMailCollections' private methods for use in unit tests.
@@ -42,7 +40,6 @@ public:
     int _t_knownResourceCount() const;
     int _t_knownFolderCount() const;
 };
-
 } // namespace Akonadi
 
 #endif // AKONADI_SPECIALMAILCOLLECTIONSTESTING_H

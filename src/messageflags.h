@@ -23,13 +23,11 @@
 
 #include "akonadi-mime_export.h"
 
-namespace KMime
-{
+namespace KMime {
 class Message;
 }
 
-namespace Akonadi
-{
+namespace Akonadi {
 class Item;
 
 /**
@@ -38,8 +36,7 @@ class Item;
  * This namespace contains identifiers of message flags that
  *  are used internally in the Akonadi server.
  */
-namespace MessageFlags
-{
+namespace MessageFlags {
 /**
  * The flag for a message being seen (i.e. opened by user).
  */

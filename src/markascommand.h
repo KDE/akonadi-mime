@@ -29,8 +29,7 @@
 #include "akonadi-mime_export.h"
 
 class KJob;
-namespace Akonadi
-{
+namespace Akonadi {
 class MarkAsCommandPrivate;
 class AKONADI_MIME_EXPORT MarkAsCommand : public CommandBase
 {

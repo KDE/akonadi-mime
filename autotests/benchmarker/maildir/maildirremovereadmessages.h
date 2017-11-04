@@ -25,7 +25,6 @@
 
 class MailDirRemoveReadMessages : public MailDir
 {
-
 public:
     MailDirRemoveReadMessages();
     void runTest() override;

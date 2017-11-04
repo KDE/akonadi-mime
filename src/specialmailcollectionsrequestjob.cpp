@@ -63,12 +63,12 @@ SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *pare
 {
     static QMap<QByteArray, QString> displayNameMap;
     displayNameMap.insert("local-mail", i18nc("local mail folder", "Local Folders"));
-    displayNameMap.insert("inbox", /*i18nc( "local mail folder",*/QStringLiteral("inbox"));
+    displayNameMap.insert("inbox", /*i18nc( "local mail folder",*/ QStringLiteral("inbox"));
     displayNameMap.insert("outbox", /*i18nc( "local mail folder",*/ QStringLiteral("outbox"));
-    displayNameMap.insert("sent-mail", /*i18nc( "local mail folder",*/QStringLiteral("sent-mail"));
-    displayNameMap.insert("trash", /*i18nc( "local mail folder", */QStringLiteral("trash"));
-    displayNameMap.insert("drafts", /*i18nc( "local mail folder", */QStringLiteral("drafts"));
-    displayNameMap.insert("templates", /*i18nc( "local mail folder", */QStringLiteral("templates"));
+    displayNameMap.insert("sent-mail", /*i18nc( "local mail folder",*/ QStringLiteral("sent-mail"));
+    displayNameMap.insert("trash", /*i18nc( "local mail folder", */ QStringLiteral("trash"));
+    displayNameMap.insert("drafts", /*i18nc( "local mail folder", */ QStringLiteral("drafts"));
+    displayNameMap.insert("templates", /*i18nc( "local mail folder", */ QStringLiteral("templates"));
 
     static QMap<QByteArray, QString> iconNameMap;
     iconNameMap.insert("local-mail", QStringLiteral("folder"));

@@ -25,7 +25,6 @@
 
 class MailDirFetchUnreadHeaders : public MailDir
 {
-
 public:
     MailDirFetchUnreadHeaders();
     void runTest() override;

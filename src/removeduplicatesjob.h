@@ -26,10 +26,7 @@
 
 #include "akonadi-mime_export.h"
 
-
-namespace Akonadi
-{
-
+namespace Akonadi {
 /**
  * @short Job that finds and removes duplicate messages in given collection
  *
@@ -72,7 +69,6 @@ private:
     class Private;
     Private *const d;
 };
-
 } /* namespace Akonadi */
 
 #endif // REMOVEDUPLICATESJOB_H

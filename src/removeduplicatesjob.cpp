@@ -30,7 +30,6 @@
 
 class Q_DECL_HIDDEN Akonadi::RemoveDuplicatesJob::Private
 {
-
 public:
     Private(RemoveDuplicatesJob *parent)
         : mJobCount(0)
@@ -49,7 +48,9 @@ public:
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         job->fetchScope().fetchFullPayload();
         job->fetchScope().setIgnoreRetrievalErrors(true);
-        mParent->connect(job, &ItemFetchJob::result, mParent, [this](KJob *job) { slotFetchDone(job); });
+        mParent->connect(job, &ItemFetchJob::result, mParent, [this](KJob *job) {
+            slotFetchDone(job);
+        });
         mCurrentJob = job;
 
         Q_EMIT mParent->description(mParent, i18n("Retrieving items..."));
@@ -131,7 +132,9 @@ public:
             } else {
                 Q_EMIT mParent->description(mParent, i18n("Removing duplicates..."));
                 Akonadi::ItemDeleteJob *delCmd = new Akonadi::ItemDeleteJob(mDuplicateItems, mParent);
-                mParent->connect(delCmd, &ItemDeleteJob::result, mParent, [this](KJob *job) { slotDeleteDone(job); });
+                mParent->connect(delCmd, &ItemDeleteJob::result, mParent, [this](KJob *job) {
+                    slotDeleteDone(job);
+                });
             }
         }
     }
@@ -153,7 +156,6 @@ public:
 
 private:
     RemoveDuplicatesJob *mParent = nullptr;
-
 };
 
 using namespace Akonadi;

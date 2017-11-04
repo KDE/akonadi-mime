@@ -62,7 +62,7 @@ void EmptyTrashCommand::execute()
         if (KMessageBox::warningContinueCancel(nullptr, text, title,
                                                KStandardGuiItem::cont(), KStandardGuiItem::cancel(),
                                                QStringLiteral("confirm_empty_trash"))
-                != KMessageBox::Continue) {
+            != KMessageBox::Continue) {
             emitResult(OK);
             return;
         }
@@ -97,7 +97,6 @@ void EmptyTrashCommand::execute()
         } else {
             emitResult(OK);
         }
-
     }
 }
 
@@ -131,7 +130,6 @@ void EmptyTrashCommand::slotExpungeJob(KJob *job)
     }
     Akonadi::ItemDeleteJob *jobDelete = new Akonadi::ItemDeleteJob(lstItem, this);
     connect(jobDelete, &Akonadi::ItemDeleteJob::result, this, &EmptyTrashCommand::slotDeleteJob);
-
 }
 
 void EmptyTrashCommand::slotDeleteJob(KJob *job)
@@ -147,9 +145,9 @@ Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
 {
     Akonadi::AgentInstance::List relevantInstances;
     foreach (const Akonadi::AgentInstance &instance, Akonadi::AgentManager::self()->instances()) {
-        if (instance.type().mimeTypes().contains(KMime::Message::mimeType()) &&
-                instance.type().capabilities().contains(QStringLiteral("Resource")) &&
-                !instance.type().capabilities().contains(QStringLiteral("Virtual"))) {
+        if (instance.type().mimeTypes().contains(KMime::Message::mimeType())
+            && instance.type().capabilities().contains(QStringLiteral("Resource"))
+            && !instance.type().capabilities().contains(QStringLiteral("Virtual"))) {
             relevantInstances << instance;
         }
     }
@@ -159,7 +157,7 @@ Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
 Akonadi::Collection EmptyTrashCommand::collectionFromId(Collection::Id id) const
 {
     const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(
-                                mModel, Akonadi::Collection(id));
+        mModel, Akonadi::Collection(id));
     return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 }
 

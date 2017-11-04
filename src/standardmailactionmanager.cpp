@@ -117,10 +117,12 @@ public:
         updateGenericAction(StandardActionManager::MoveToTrashRestoreItemAlternative);
         updateGenericAction(StandardActionManager::SynchronizeFavoriteCollections);
     }
+
     void updateGenericAction(StandardActionManager::Type type)
     {
         switch (type) {
-        case Akonadi::StandardActionManager::CreateCollection: {
+        case Akonadi::StandardActionManager::CreateCollection:
+        {
             QAction *act = mGenericManager->action(Akonadi::StandardActionManager::CreateCollection);
             act->setText(i18n("Add Folder..."));
             act->setWhatsThis(i18n("Add a new folder to the currently selected account."));
@@ -139,7 +141,7 @@ public:
                 i18n("Folder creation failed"));
             break;
         }
-        case Akonadi::StandardActionManager::CopyCollections: {
+        case Akonadi::StandardActionManager::CopyCollections:
             mGenericManager->setActionText(Akonadi::StandardActionManager::CopyCollections,
                                            ki18np("Copy Folder", "Copy %1 Folders"));
             mGenericManager->action(Akonadi::StandardActionManager::CopyCollections)->setWhatsThis(
@@ -150,7 +152,6 @@ public:
                 StandardActionManager::CollectionProperties, StandardActionManager::DialogTitle,
                 ki18nc("@title:window", "Properties of Folder %1"));
             break;
-        }
         case Akonadi::StandardActionManager::DeleteCollections:
             mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteCollections,
                                            ki18np("Delete Folder", "Delete %1 Folders"));
@@ -423,12 +424,12 @@ public:
                         canDeleteItem = collection.rights() & Akonadi::Collection::CanDeleteItem;
                     }
                     if (!isSystemFolder) {
-                        isSystemFolder = (collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Inbox) ||
-                                          collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox) ||
-                                          collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::SentMail) ||
-                                          collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Trash) ||
-                                          collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Drafts) ||
-                                          collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Templates));
+                        isSystemFolder = (collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Inbox)
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox)
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::SentMail)
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Trash)
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Drafts)
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Templates));
                     }
                     //We will not change after that.
                     if (enableMarkAllAsRead && enableMarkAllAsUnread && !canDeleteItem && isSystemFolder) {
@@ -619,7 +620,9 @@ public:
         }
 
         RemoveDuplicatesJob *job = new RemoveDuplicatesJob(collections, mParent);
-        connect(job, &RemoveDuplicatesJob::finished, mParent, [this](KJob *job) { slotJobFinished(job);});
+        connect(job, &RemoveDuplicatesJob::finished, mParent, [this](KJob *job) {
+            slotJobFinished(job);
+        });
     }
 
     void slotJobFinished(KJob *job)
@@ -684,9 +687,15 @@ void StandardMailActionManager::setCollectionSelectionModel(QItemSelectionModel 
     d->mCollectionSelectionModel = selectionModel;
     d->mGenericManager->setCollectionSelectionModel(selectionModel);
 
-    connect(selectionModel->model(), &QAbstractItemModel::rowsInserted, this, [this]() { d->updateActions(); });
-    connect(selectionModel->model(), &QAbstractItemModel::rowsRemoved, this, [this]() { d->updateActions(); });
-    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, [this]() { d->updateActions(); });
+    connect(selectionModel->model(), &QAbstractItemModel::rowsInserted, this, [this]() {
+        d->updateActions();
+    });
+    connect(selectionModel->model(), &QAbstractItemModel::rowsRemoved, this, [this]() {
+        d->updateActions();
+    });
+    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, [this]() {
+        d->updateActions();
+    });
 
     d->updateActions();
 }
@@ -696,10 +705,14 @@ void StandardMailActionManager::setItemSelectionModel(QItemSelectionModel *selec
     d->mItemSelectionModel = selectionModel;
     d->mGenericManager->setItemSelectionModel(selectionModel);
 
-    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, [this]() { d->updateActions(); });
+    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, [this]() {
+        d->updateActions();
+    });
 
     //to catch item modifications, listen to the model's dataChanged signal as well
-    connect(selectionModel->model(), &QAbstractItemModel::dataChanged, this, [this]() { d->updateActions(); });
+    connect(selectionModel->model(), &QAbstractItemModel::dataChanged, this, [this]() {
+        d->updateActions();
+    });
 
     d->updateActions();
 }
@@ -724,7 +737,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_as_read"), action);
         action->setData(QByteArray("R"));
         d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_R));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAs();
+        });
         break;
     case MarkMailAsUnread:
         action = new QAction(d->mParentWidget);
@@ -737,7 +752,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_as_unread"), action);
         d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_U));
         action->setData(QByteArray("U"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAs();
+        });
         break;
     case MarkMailAsImportant:
         action = new QAction(d->mParentWidget);
@@ -749,7 +766,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkMailAsImportant, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_as_important"), action);
         action->setData(QByteArray("G"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAs();
+        });
         break;
     case MarkMailAsActionItem:
         action = new QAction(d->mParentWidget);
@@ -761,7 +780,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkMailAsActionItem, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_as_action_item"), action);
         action->setData(QByteArray("K"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAs();
+        });
         break;
     case MarkAllMailAsRead:
         action = new QAction(d->mParentWidget);
@@ -773,7 +794,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkAllMailAsRead, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_all_as_read"), action);
         action->setData(QByteArray("R"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAllAs();});
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAllAs();
+        });
         break;
     case MarkAllMailAsReadRecursive:
         action = new QAction(d->mParentWidget);
@@ -785,7 +808,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkAllMailAsReadRecursive, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_all_as_read_recursive"), action);
         action->setData(QByteArray(":R"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAllAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAllAs();
+        });
         break;
     case MarkAllMailAsUnread:
         action = new QAction(d->mParentWidget);
@@ -797,7 +822,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkAllMailAsUnread, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_all_as_unread"), action);
         action->setData(QByteArray("U"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAllAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAllAs();
+        });
         break;
     case MarkAllMailAsImportant:
         action = new QAction(d->mParentWidget);
@@ -809,7 +836,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkAllMailAsImportant, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_all_as_important"), action);
         action->setData(QByteArray("G"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAllAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAllAs();
+        });
         break;
     case MarkAllMailAsActionItem:
         action = new QAction(d->mParentWidget);
@@ -821,7 +850,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkAllMailAsActionItem, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_all_as_action_item"), action);
         action->setData(QByteArray("K"));
-        connect(action, &QAction::triggered, this, [this]() { d->slotMarkAllAs(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMarkAllAs();
+        });
         break;
     case MoveToTrash:
         action = new QAction(d->mParentWidget);
@@ -832,7 +863,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         action->setWhatsThis(i18n("Move selected messages to the trash folder."));
         d->mActions.insert(MoveToTrash, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_move_to_trash"), action);
-        connect(action, &QAction::triggered, this, [this]() { d->slotMoveToTrash(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMoveToTrash();
+        });
         break;
     case MoveAllToTrash:
         action = new QAction(d->mParentWidget);
@@ -842,7 +875,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         action->setWhatsThis(i18n("Move all messages to the trash folder."));
         d->mActions.insert(MoveAllToTrash, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_move_all_to_trash"), action);
-        connect(action, &QAction::triggered, this, [this]() { d->slotMoveAllToTrash(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotMoveAllToTrash();
+        });
         break;
     case RemoveDuplicates:
         action = new QAction(d->mParentWidget);
@@ -852,7 +887,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_Asterisk));
         d->mActions.insert(RemoveDuplicates, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_remove_duplicates"), action);
-        connect(action, &QAction::triggered, this, [this]() { d->slotRemoveDuplicates(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotRemoveDuplicates();
+        });
         break;
     case EmptyAllTrash:
         action = new QAction(d->mParentWidget);
@@ -861,7 +898,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         action->setWhatsThis(i18n("Permanently delete all messages from all trash folders."));
         d->mActions.insert(EmptyAllTrash, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_empty_all_trash"), action);
-        connect(action, &QAction::triggered, this, [this]() { d->slotEmptyAllTrash(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotEmptyAllTrash();
+        });
         break;
     case EmptyTrash:
         action = new QAction(d->mParentWidget);
@@ -870,7 +909,9 @@ QAction *StandardMailActionManager::createAction(Type type)
         action->setWhatsThis(i18n("Permanently delete all messages from the trash folder."));
         d->mActions.insert(EmptyTrash, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_empty_trash"), action);
-        connect(action, &QAction::triggered, this, [this]() { d->slotEmptyTrash(); });
+        connect(action, &QAction::triggered, this, [this]() {
+            d->slotEmptyTrash();
+        });
         break;
     default:
         Q_ASSERT(false);   // should never happen

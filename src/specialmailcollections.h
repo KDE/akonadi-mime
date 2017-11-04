@@ -24,9 +24,7 @@
 
 #include <specialcollections.h>
 
-namespace Akonadi
-{
-
+namespace Akonadi {
 class SpecialMailCollectionsPrivate;
 
 /**
@@ -160,7 +158,6 @@ private:
     SpecialMailCollectionsPrivate *const d;
     //@endcond
 };
-
 } // namespace Akonadi
 
 #endif // AKONADI_SPECIALMAILCOLLECTIONS_H

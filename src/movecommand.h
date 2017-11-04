@@ -25,10 +25,8 @@
 #include <collection.h>
 #include <item.h>
 
-
 class KJob;
-namespace Akonadi
-{
+namespace Akonadi {
 class MoveCommandPrivate;
 class AKONADI_MIME_EXPORT MoveCommand : public CommandBase
 {

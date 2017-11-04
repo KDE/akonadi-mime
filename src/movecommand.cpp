@@ -29,17 +29,15 @@ class Akonadi::MoveCommandPrivate
 public:
     MoveCommandPrivate()
     {
-
     }
+
     Akonadi::Collection mDestFolder;
     Akonadi::Item::List mMessages;
 };
 
-MoveCommand::MoveCommand(const Akonadi::Collection &destFolder,
-                         const Akonadi::Item::List &msgList,
-                         QObject *parent)
-    : CommandBase(parent),
-      d(new Akonadi::MoveCommandPrivate())
+MoveCommand::MoveCommand(const Akonadi::Collection &destFolder, const Akonadi::Item::List &msgList, QObject *parent)
+    : CommandBase(parent)
+    , d(new Akonadi::MoveCommandPrivate())
 {
     d->mDestFolder = destFolder;
     d->mMessages = msgList;
@@ -75,4 +73,3 @@ void MoveCommand::slotMoveResult(KJob *job)
         emitResult(OK);
     }
 }
-

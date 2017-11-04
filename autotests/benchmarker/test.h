@@ -25,7 +25,6 @@
 
 class Test
 {
-
 protected:
     QList<MakeTest *> mListTest;
 

@@ -25,9 +25,7 @@
 
 /**
  */
-namespace Akonadi
-{
-
+namespace Akonadi {
 class LocalFoldersTest : public QObject
 {
     Q_OBJECT
@@ -58,7 +56,6 @@ private:
     QMap<QByteArray, QString> mDisplayNameMap;
     QMap<QByteArray, QString> mIconNameMap;
 };
-
 }
 
 #endif

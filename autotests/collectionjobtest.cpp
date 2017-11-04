@@ -69,7 +69,7 @@ static Collection findCol(const Collection::List &list, const QString &name)
 }
 
 // list compare which ignores the order
-template <class T> static void compareLists(const QList<T> &l1, const QList<T> &l2)
+template<class T> static void compareLists(const QList<T> &l1, const QList<T> &l2)
 {
     QCOMPARE(l1.count(), l2.count());
     foreach (const T entry, l1) {
@@ -77,7 +77,7 @@ template <class T> static void compareLists(const QList<T> &l1, const QList<T> &
     }
 }
 
-template <typename T> static T *extractAttribute(QList<Attribute *> attrs)
+template<typename T> static T *extractAttribute(QList<Attribute *> attrs)
 {
     T dummy;
     foreach (Attribute *attr, attrs) {
@@ -412,8 +412,8 @@ void CollectionJobTest::testIllegalDeleteFolder()
 void CollectionJobTest::testStatistics()
 {
     // empty folder
-    CollectionStatisticsJob *statistics =
-        new CollectionStatisticsJob(Collection(res1ColId), this);
+    CollectionStatisticsJob *statistics
+        = new CollectionStatisticsJob(Collection(res1ColId), this);
     AKVERIFYEXEC(statistics);
 
     CollectionStatistics s = statistics->statistics();
@@ -421,7 +421,7 @@ void CollectionJobTest::testStatistics()
     QCOMPARE(s.unreadCount(), 0ll);
 
     // folder with attributes and content
-    CollectionPathResolver *resolver = new CollectionPathResolver("res1/foo", this);;
+    CollectionPathResolver *resolver = new CollectionPathResolver("res1/foo", this);
     AKVERIFYEXEC(resolver);
     statistics = new CollectionStatisticsJob(Collection(resolver->collection()), this);
     AKVERIFYEXEC(statistics);
@@ -441,8 +441,8 @@ void CollectionJobTest::testModify_data()
 }
 
 #define RESET_COLLECTION_ID \
-    col.setId( uid ); \
-    if ( !rid.isEmpty() ) col.setRemoteId( rid )
+    col.setId(uid); \
+    if (!rid.isEmpty()) col.setRemoteId(rid)
 
 void CollectionJobTest::testModify()
 {

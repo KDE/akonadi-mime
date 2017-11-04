@@ -33,25 +33,25 @@
     So we can preserve the state when switching a
     thread to Ignored and back. */
 enum Status {
-    StatusUnknown =           0x00000000,
-    StatusUnread =            0x00000002, // deprecated
-    StatusRead =              0x00000004,
-    StatusDeleted =           0x00000010,
-    StatusReplied =           0x00000020,
-    StatusForwarded =         0x00000040,
-    StatusQueued =            0x00000080,
-    StatusSent =              0x00000100,
-    StatusFlag =              0x00000200, // flag means important
-    StatusWatched =           0x00000400,
-    StatusIgnored =           0x00000800, // forces isRead()
-    StatusToAct =             0x00001000,
-    StatusSpam =              0x00002000,
-    StatusHam =               0x00004000,
-    StatusHasAttachment =     0x00008000,
-    StatusHasInvitation =     0x00010000,
-    StatusSigned =            0x00020000,
-    StatusEncrypted =         0x00040000,
-    StatusHasError =          0x00080000
+    StatusUnknown = 0x00000000,
+    StatusUnread = 0x00000002,            // deprecated
+    StatusRead = 0x00000004,
+    StatusDeleted = 0x00000010,
+    StatusReplied = 0x00000020,
+    StatusForwarded = 0x00000040,
+    StatusQueued = 0x00000080,
+    StatusSent = 0x00000100,
+    StatusFlag = 0x00000200,              // flag means important
+    StatusWatched = 0x00000400,
+    StatusIgnored = 0x00000800,           // forces isRead()
+    StatusToAct = 0x00001000,
+    StatusSpam = 0x00002000,
+    StatusHam = 0x00004000,
+    StatusHasAttachment = 0x00008000,
+    StatusHasInvitation = 0x00010000,
+    StatusSigned = 0x00020000,
+    StatusEncrypted = 0x00040000,
+    StatusHasError = 0x00080000
 };
 
 Akonadi::MessageStatus::MessageStatus()
@@ -61,12 +61,12 @@ Akonadi::MessageStatus::MessageStatus()
 
 bool Akonadi::MessageStatus::operator==(const Akonadi::MessageStatus &other) const
 {
-    return (mStatus == other.mStatus);
+    return mStatus == other.mStatus;
 }
 
 bool Akonadi::MessageStatus::operator!=(const Akonadi::MessageStatus &other) const
 {
-    return (mStatus != other.mStatus);
+    return mStatus != other.mStatus;
 }
 
 bool Akonadi::MessageStatus::operator&(const Akonadi::MessageStatus &other) const
@@ -79,7 +79,7 @@ bool Akonadi::MessageStatus::operator&(const Akonadi::MessageStatus &other) cons
         return !(mStatus & StatusRead);
     }
 
-    return (mStatus & other.mStatus);
+    return mStatus & other.mStatus;
 }
 
 void Akonadi::MessageStatus::clear()
@@ -205,92 +205,92 @@ void Akonadi::MessageStatus::toggle(const Akonadi::MessageStatus &other)
 
 bool Akonadi::MessageStatus::isOfUnknownStatus() const
 {
-    return (mStatus == StatusUnknown);
+    return mStatus == StatusUnknown;
 }
 
 bool Akonadi::MessageStatus::isRead() const
 {
-    return ((mStatus & StatusRead) || (mStatus & StatusIgnored));
+    return (mStatus & StatusRead) || (mStatus & StatusIgnored);
 }
 
 bool Akonadi::MessageStatus::isDeleted() const
 {
-    return (mStatus & StatusDeleted);
+    return mStatus & StatusDeleted;
 }
 
 bool Akonadi::MessageStatus::isReplied() const
 {
-    return (mStatus & StatusReplied);
+    return mStatus & StatusReplied;
 }
 
 bool Akonadi::MessageStatus::isForwarded() const
 {
-    return (mStatus & StatusForwarded);
+    return mStatus & StatusForwarded;
 }
 
 bool Akonadi::MessageStatus::isQueued() const
 {
-    return (mStatus & StatusQueued);
+    return mStatus & StatusQueued;
 }
 
 bool Akonadi::MessageStatus::isSent() const
 {
-    return (mStatus & StatusSent);
+    return mStatus & StatusSent;
 }
 
 bool Akonadi::MessageStatus::isImportant() const
 {
-    return (mStatus & StatusFlag);
+    return mStatus & StatusFlag;
 }
 
 bool Akonadi::MessageStatus::isWatched() const
 {
-    return (mStatus & StatusWatched);
+    return mStatus & StatusWatched;
 }
 
 bool Akonadi::MessageStatus::isIgnored() const
 {
-    return (mStatus & StatusIgnored);
+    return mStatus & StatusIgnored;
 }
 
 bool Akonadi::MessageStatus::isToAct() const
 {
-    return (mStatus & StatusToAct);
+    return mStatus & StatusToAct;
 }
 
 bool Akonadi::MessageStatus::isSpam() const
 {
-    return (mStatus & StatusSpam);
+    return mStatus & StatusSpam;
 }
 
 bool Akonadi::MessageStatus::isHam() const
 {
-    return (mStatus & StatusHam);
+    return mStatus & StatusHam;
 }
 
 bool Akonadi::MessageStatus::hasAttachment() const
 {
-    return (mStatus & StatusHasAttachment);
+    return mStatus & StatusHasAttachment;
 }
 
 bool Akonadi::MessageStatus::hasInvitation() const
 {
-    return (mStatus & StatusHasInvitation);
+    return mStatus & StatusHasInvitation;
 }
 
 bool Akonadi::MessageStatus::isSigned() const
 {
-    return (mStatus & StatusSigned);
+    return mStatus & StatusSigned;
 }
 
 bool Akonadi::MessageStatus::isEncrypted() const
 {
-    return (mStatus & StatusEncrypted);
+    return mStatus & StatusEncrypted;
 }
 
 bool Akonadi::MessageStatus::hasError() const
 {
-    return (mStatus & StatusHasError);
+    return mStatus & StatusHasError;
 }
 
 void Akonadi::MessageStatus::setRead(bool read)
@@ -633,7 +633,7 @@ void Akonadi::MessageStatus::setStatusFromFlags(const QSet<QByteArray> &flags)
 
     for (const QByteArray &flag : flags) {
         const QByteArray &upperedFlag = flag.toUpper();
-        if (upperedFlag ==  Akonadi::MessageFlags::Deleted) {
+        if (upperedFlag == Akonadi::MessageFlags::Deleted) {
             setDeleted();
         } else if (upperedFlag == Akonadi::MessageFlags::Seen) {
             setRead();
@@ -657,9 +657,9 @@ void Akonadi::MessageStatus::setStatusFromFlags(const QSet<QByteArray> &flags)
             setWatched();
         } else if (upperedFlag == Akonadi::MessageFlags::Ignored) {
             setIgnored();
-        } else if (upperedFlag ==  Akonadi::MessageFlags::HasAttachment) {
+        } else if (upperedFlag == Akonadi::MessageFlags::HasAttachment) {
             setHasAttachment();
-        } else if (upperedFlag ==  Akonadi::MessageFlags::HasInvitation) {
+        } else if (upperedFlag == Akonadi::MessageFlags::HasInvitation) {
             setHasInvitation();
         } else if (upperedFlag == Akonadi::MessageFlags::Signed) {
             setSigned();

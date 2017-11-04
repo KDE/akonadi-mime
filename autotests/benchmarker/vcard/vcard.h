@@ -24,7 +24,6 @@
 
 class VCard : public MakeTest
 {
-
 public:
     VCard(const QString &dir);
     VCard();

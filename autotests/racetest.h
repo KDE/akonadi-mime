@@ -43,7 +43,6 @@ private Q_SLOTS:
 
 private:
     QList<KProcess *> procs;
-
 };
 
 #endif

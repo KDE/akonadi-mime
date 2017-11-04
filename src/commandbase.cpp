@@ -22,7 +22,6 @@ using namespace Akonadi;
 CommandBase::CommandBase(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void CommandBase::emitResult(Result value)
@@ -30,4 +29,3 @@ void CommandBase::emitResult(Result value)
     Q_EMIT result(value);
     deleteLater();
 }
-
