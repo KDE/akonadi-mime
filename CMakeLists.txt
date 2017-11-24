@@ -23,8 +23,8 @@ include(ECMCoverageOption)
 
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.6.80")
-set(KF5_MIME_VERSION "5.6.80")
+set(AKONADI_VERSION "5.6.90")
+set(KF5_MIME_VERSION "5.6.90")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
@@ -43,8 +43,8 @@ find_package(KF5ItemModels ${KF5_MIME_VERSION} CONFIG REQUIRED)
 
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 
-set( SHARED_MIME_INFO_MINIMUM_VERSION "1.0" )
-find_package( SharedMimeInfo REQUIRED )
+set( SharedMimeInfo_MINIMUM_VERSION "1.0" )
+find_package(SharedMimeInfo ${SharedMimeInfo_MINIMUM_VERSION} REQUIRED)
 
 find_package(LibXslt)
 set_package_properties(LibXslt PROPERTIES
