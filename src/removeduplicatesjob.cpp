@@ -183,7 +183,7 @@ RemoveDuplicatesJob::~RemoveDuplicatesJob()
 
 void RemoveDuplicatesJob::doStart()
 {
-    qCDebug(AKONADIMIME_LOG);
+    qCDebug(AKONADIMIME_LOG) << " void RemoveDuplicatesJob::doStart()";
 
     if (d->mFolders.isEmpty()) {
         qCWarning(AKONADIMIME_LOG) << "No collections to process";
