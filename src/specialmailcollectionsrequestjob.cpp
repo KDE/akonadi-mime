@@ -31,29 +31,21 @@ static inline QByteArray enumToType(SpecialMailCollections::Type type)
     switch (type) {
     case SpecialMailCollections::Root:
         return "local-mail";
-        break;
     case SpecialMailCollections::Inbox:
         return "inbox";
-        break;
     case SpecialMailCollections::Outbox:
         return "outbox";
-        break;
     case SpecialMailCollections::SentMail:
         return "sent-mail";
-        break;
     case SpecialMailCollections::Trash:
         return "trash";
-        break;
     case SpecialMailCollections::Drafts:
         return "drafts";
-        break;
     case SpecialMailCollections::Templates:
         return "templates";
-        break;
     case SpecialMailCollections::LastType: // fallthrough
     default:
         return QByteArray();
-        break;
     }
 }
 
