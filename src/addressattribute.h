@@ -48,7 +48,7 @@ public:
     /**
       Destroys the AddressAttribute.
     */
-    virtual ~AddressAttribute();
+    ~AddressAttribute() override;
 
     /* reimpl */
     AddressAttribute *clone() const override;

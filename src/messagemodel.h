@@ -61,7 +61,7 @@ public:
     /**
       Deletes the message model.
     */
-    virtual ~MessageModel();
+    ~MessageModel() override;
 
     /**
       Reimplemented from QAbstractItemModel.

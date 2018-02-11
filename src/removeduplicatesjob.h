@@ -59,7 +59,7 @@ public:
     /**
      * Destroys the job.
      */
-    virtual ~RemoveDuplicatesJob();
+    ~RemoveDuplicatesJob() override;
 
 protected:
     void doStart() override;
