@@ -63,6 +63,7 @@ add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 add_definitions(-DQT_NO_URL_CAST_FROM_STRING)
 
 add_subdirectory(src)
+add_subdirectory(serializers)
 
 if(BUILD_TESTING)
     add_subdirectory(autotests)
@@ -91,5 +92,7 @@ install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
     )
+
+install(FILES akonadi-mime.categories DESTINATION ${KDE_INSTALL_CONFDIR})
 
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

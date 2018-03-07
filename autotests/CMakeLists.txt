@@ -1,8 +1,16 @@
+include(ECMAddTests)
+
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Test Widgets)
 
 add_subdirectory(messagetests)
 
 set( EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR} )
+
+include_directories(
+    ${CMAKE_SOURCE_DIR}/serializers
+    ${CMAKE_BINARY_DIR}/serializers
+)
+
 
 macro(add_akonadi_isolated_test _source)
   get_filename_component(_targetName ${_source} NAME_WE)
@@ -46,3 +54,12 @@ if (KDEPIMLIBS_RUN_KDEPIMRUNTIME_ISOLATED_TESTS)
 endif()
 
 add_subdirectory(benchmarker)
+
+ecm_add_test(mailserializerplugintest.cpp ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
+    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt5::Test
+    TEST_NAME mailserializerplugintest
+)
+ecm_add_test(mailserializertest.cpp ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
+    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt5::Test
+    TEST_NAME mailserializertest
+)
