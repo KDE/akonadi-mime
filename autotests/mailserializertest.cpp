@@ -19,13 +19,19 @@
 
 #include "mailserializertest.h"
 
-#include "../serializers/akonadi_serializer_mail.cpp"
+#include "../serializers/akonadi_serializer_mail.h"
 #include "../src/messageflags.h"
+#include "../src/messageparts.h"
+
+#include <KMime/Message>
 
 #include <qtest.h>
 #include <QBuffer>
 
-QTEST_MAIN(MailSerializerTest)
+using namespace Akonadi;
+using namespace KMime;
+
+QTEST_GUILESS_MAIN(MailSerializerTest)
 
 void MailSerializerTest::testEnvelopeDeserialize_data()
 {

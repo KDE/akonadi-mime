@@ -25,7 +25,7 @@
 #include <QDebug>
 #include <QTest>
 
-QTEST_MAIN(MailSerializerPluginTest)
+QTEST_GUILESS_MAIN(MailSerializerPluginTest)
 
 using namespace Akonadi;
 using namespace KMime;

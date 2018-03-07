@@ -59,7 +59,9 @@ ecm_add_test(mailserializerplugintest.cpp ${CMAKE_BINARY_DIR}/serializers/akonad
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt5::Test
     TEST_NAME mailserializerplugintest
 )
-ecm_add_test(mailserializertest.cpp ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
+ecm_add_test(mailserializertest.cpp
+    ${CMAKE_SOURCE_DIR}/serializers/akonadi_serializer_mail.cpp
+    ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt5::Test
     TEST_NAME mailserializertest
 )
