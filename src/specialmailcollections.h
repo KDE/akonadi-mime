@@ -95,20 +95,20 @@ public:
      * Returns whether the given agent @p instance has a special collection of
      * the given @p type.
      */
-    bool hasCollection(Type type, const AgentInstance &instance) const;
+    Q_REQUIRED_RESULT bool hasCollection(Type type, const AgentInstance &instance) const;
 
     /**
      * Returns the special mail collection of the given @p type in the given agent
      * @p instance, or an invalid collection if such a collection is unknown.
      */
-    Akonadi::Collection collection(Type type, const AgentInstance &instance) const;
+    Q_REQUIRED_RESULT Akonadi::Collection collection(Type type, const AgentInstance &instance) const;
 
     /**
      * Returns the special collection type for a given collection, or empty if the collection
      * doesn't have a special type.
      * @since 4.11
      */
-    static Type specialCollectionType(const Akonadi::Collection &collection);
+    Q_REQUIRED_RESULT static Type specialCollectionType(const Akonadi::Collection &collection);
 
     /**
      * Registers the given @p collection as a special mail collection
@@ -119,7 +119,7 @@ public:
      * Registering a new collection of a previously registered type forgets the
      * old collection.
      */
-    bool registerCollection(Type type, const Akonadi::Collection &collection);
+    Q_REQUIRED_RESULT bool registerCollection(Type type, const Akonadi::Collection &collection);
 
     /**
      * Unregisters the given @p collection as a special mail collection
@@ -127,19 +127,19 @@ public:
      * The collection must be owned by a valid resource.
      * @since 4.12
      */
-    bool unregisterCollection(const Collection &collection);
+    Q_REQUIRED_RESULT bool unregisterCollection(const Collection &collection);
 
     /**
      * Returns whether the default resource has a special mail collection of
      * the given @p type.
      */
-    bool hasDefaultCollection(Type type) const;
+    Q_REQUIRED_RESULT bool hasDefaultCollection(Type type) const;
 
     /**
      * Returns the special mail collection of given @p type in the default
      * resource, or an invalid collection if such a collection is unknown.
      */
-    Akonadi::Collection defaultCollection(Type type) const;
+    Q_REQUIRED_RESULT Akonadi::Collection defaultCollection(Type type) const;
 
     void verifyI18nDefaultCollection(Type type);
 private Q_SLOTS:

@@ -174,13 +174,13 @@ public:
      * Returns the list of collections that are currently selected.
      * The list is empty if no collection is currently selected.
      */
-    Akonadi::Collection::List selectedCollections() const;
+    Q_REQUIRED_RESULT Akonadi::Collection::List selectedCollections() const;
 
     /**
      * Returns the list of items that are currently selected.
      * The list is empty if no item is currently selected.
      */
-    Akonadi::Item::List selectedItems() const;
+    Q_REQUIRED_RESULT Akonadi::Item::List selectedItems() const;
 
     /**
      * Sets the favorite collections model based on which the collection

@@ -96,92 +96,92 @@ public:
     /** Check for Unknown status.
         @return true if status is unknown.
     */
-    bool isOfUnknownStatus() const;
+    Q_REQUIRED_RESULT bool isOfUnknownStatus() const;
 
     /** Check for Read status. Note that ignored messages are read.
         @return true if status is read.
     */
-    bool isRead() const;
+    Q_REQUIRED_RESULT bool isRead() const;
 
     /** Check for Deleted status.
         @return true if status is deleted.
     */
-    bool isDeleted() const;
+    Q_REQUIRED_RESULT bool isDeleted() const;
 
     /** Check for Replied status.
         @return true if status is replied.
     */
-    bool isReplied() const;
+    Q_REQUIRED_RESULT bool isReplied() const;
 
     /** Check for Forwarded status.
         @return true if status is forwarded.
     */
-    bool isForwarded() const;
+    Q_REQUIRED_RESULT bool isForwarded() const;
 
     /** Check for Queued status.
         @return true if status is queued.
     */
-    bool isQueued() const;
+    Q_REQUIRED_RESULT bool isQueued() const;
 
     /** Check for Sent status.
         @return true if status is sent.
     */
-    bool isSent() const;
+    Q_REQUIRED_RESULT bool isSent() const;
 
     /** Check for Important status.
         @return true if status is important.
     */
-    bool isImportant() const;
+    Q_REQUIRED_RESULT bool isImportant() const;
 
     /** Check for Watched status.
         @return true if status is watched.
     */
-    bool isWatched() const;
+    Q_REQUIRED_RESULT bool isWatched() const;
 
     /** Check for Ignored status.
         @return true if status is ignored.
     */
-    bool isIgnored() const;
+    Q_REQUIRED_RESULT bool isIgnored() const;
 
     /** Check for ToAct status.
         @return true if status is action item.
     */
-    bool isToAct() const;
+    Q_REQUIRED_RESULT bool isToAct() const;
 
     /** Check for Spam status.
         @return true if status is spam.
     */
-    bool isSpam() const;
+    Q_REQUIRED_RESULT bool isSpam() const;
 
     /** Check for Ham status.
         @return true if status is not spam.
     */
-    bool isHam() const;
+    Q_REQUIRED_RESULT bool isHam() const;
 
     /** Check for Attachment status.
         @return true if status indicates an attachment.
     */
-    bool hasAttachment() const;
+    Q_REQUIRED_RESULT bool hasAttachment() const;
 
     /** Check for Invitation status.
         @return true if status indicates an invitation.
     */
-    bool hasInvitation() const;
+    Q_REQUIRED_RESULT bool hasInvitation() const;
 
     /** Check for Signed status.
         @return true if status is signed.
     */
-    bool isSigned() const;
+    Q_REQUIRED_RESULT bool isSigned() const;
 
     /** Check for Encrypted status.
         @return true if status is encrypted.
     */
-    bool isEncrypted() const;
+    Q_REQUIRED_RESULT bool isEncrypted() const;
 
     /** Check for error status.
         @return true if status indicates an error.
     */
-    bool hasError() const;
+    Q_REQUIRED_RESULT bool hasError() const;
 
     /* ----- setters ----------------------------------------------------- */
 
@@ -278,7 +278,7 @@ public:
      all integrity checks in the setter methods.
      @return The status encoded in bits.
      */
-    qint32 toQInt32() const;
+    Q_REQUIRED_RESULT qint32 toQInt32() const;
 
     /** Set the status as a whole e.g. for reading from an index.
         Don't manipulte the index via this value, this bypasses
@@ -293,7 +293,7 @@ public:
 
         @note This code is legacy for the KMail1 indexes
     */
-    QString statusStr() const;
+    Q_REQUIRED_RESULT QString statusStr() const;
 
     /** Set the status based on a string representation.
         @param aStr The status string to be analyzed.
@@ -307,7 +307,7 @@ public:
     /** Get the status as a whole e.g. for storage as IMAP flags.
         @return The status encoded in flags.
     */
-    QSet<QByteArray> statusFlags() const;
+    Q_REQUIRED_RESULT QSet<QByteArray> statusFlags() const;
 
     /** Set the status as a whole e.g. for reading from IMAP flags.
         @param flags set of flags for status as a whole
