@@ -1,3 +1,4 @@
+add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime5\")
 # generates a D-Bus interface description from a KConfigXT file
 macro(kcfg_generate_dbus_interface _kcfg _name)
     add_custom_command(
