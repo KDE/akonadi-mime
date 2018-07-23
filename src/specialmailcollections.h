@@ -119,7 +119,7 @@ public:
      * Registering a new collection of a previously registered type forgets the
      * old collection.
      */
-    Q_REQUIRED_RESULT bool registerCollection(Type type, const Akonadi::Collection &collection);
+    bool registerCollection(Type type, const Akonadi::Collection &collection);
 
     /**
      * Unregisters the given @p collection as a special mail collection
@@ -127,7 +127,7 @@ public:
      * The collection must be owned by a valid resource.
      * @since 4.12
      */
-    Q_REQUIRED_RESULT bool unregisterCollection(const Collection &collection);
+    bool unregisterCollection(const Collection &collection);
 
     /**
      * Returns whether the default resource has a special mail collection of
