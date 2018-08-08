@@ -16,6 +16,7 @@ target_link_libraries(akonadi_serializer_mail
     KF5::AkonadiCore
     KF5::AkonadiMime
     KF5::AkonadiPrivate
+    KF5::AkonadiSearch
 )
 install(TARGETS akonadi_serializer_mail
     DESTINATION ${KDE_INSTALL_PLUGINDIR}

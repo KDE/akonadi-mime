@@ -24,6 +24,7 @@ include(ECMCoverageOption)
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
 set(AKONADI_VERSION "5.9.40")
+set(AKONADISEARCH_VERSION "5.9.40")
 set(KF5_MIME_VERSION "5.9.40")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
@@ -42,6 +43,7 @@ find_package(KF5Mime ${KF5_MIME_VERSION} CONFIG REQUIRED)
 find_package(KF5ItemModels ${KF5_MIME_VERSION} CONFIG REQUIRED)
 
 find_package(KF5Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
+find_package(KF5AkonadiSearch ${AKONADISEARCH_VERSION} CONFIG REQUIRED)
 
 set( SharedMimeInfo_MINIMUM_VERSION "1.3" )
 find_package(SharedMimeInfo ${SharedMimeInfo_MINIMUM_VERSION} REQUIRED)
