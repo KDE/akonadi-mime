@@ -8,7 +8,7 @@ set(KF5_VERSION "5.53.0")
 
 find_package(ECM ${KF5_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
-set(QT_REQUIRED_VERSION "5.9.0")
+set(QT_REQUIRED_VERSION "5.10.0")
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
 include(ECMGeneratePriFile)
