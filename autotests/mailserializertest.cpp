@@ -25,7 +25,7 @@
 
 #include <KMime/Message>
 
-#include <qtest.h>
+#include <QTest>
 #include <QBuffer>
 
 using namespace Akonadi;
