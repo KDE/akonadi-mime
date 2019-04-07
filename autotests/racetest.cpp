@@ -82,7 +82,8 @@ void RaceTest::testMultipleProcesses()
         if (types.contains(instance.type())) {
             qDebug() << "Removing instance of type" << instance.type().identifier();
             AgentManager::self()->removeInstance(instance);
-            QTest::kWaitForSignal(AgentManager::self(), SIGNAL(instanceRemoved(Akonadi::AgentInstance)));
+            QSignalSpy removedSpy(AgentManager::self(), SIGNAL(instanceRemoved(Akonadi::AgentInstance)));
+            QVERIFY(removedSpy.wait());
         }
     }
     instances = AgentManager::self()->instances();
@@ -96,7 +97,7 @@ void RaceTest::testMultipleProcesses()
         qDebug() << "Starting process" << i + 1 << "of" << count;
         KProcess *proc = new KProcess;
         procs.append(proc);
-        proc->setProgram(REQUESTER_EXE);
+        proc->setProgram(QStringLiteral(REQUESTER_EXE));
         errorSpy[i] = new QSignalSpy(proc, SIGNAL(error(QProcess::ProcessError)));
         finishedSpy[i] = new QSignalSpy(proc, SIGNAL(finished(int,QProcess::ExitStatus)));
         proc->start();
@@ -170,4 +171,4 @@ void RaceTest::killZombies()
     }
 }
 
-QTEST_AKONADIMAIN(RaceTest, NoGUI)
+QTEST_AKONADIMAIN(RaceTest)

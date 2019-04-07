@@ -19,7 +19,7 @@
 
 #include "localfoldersrequestjobtest.h"
 
-#include "../../collectionpathresolver_p.h"
+#include "collectionpathresolver.h"
 
 #include <QSignalSpy>
 
@@ -33,13 +33,12 @@
 #include <collectionmodifyjob.h>
 #include <control.h>
 #include <qtest_akonadi.h>
-#include "../../specialcollectionattribute_p.h"
-#include "../../specialcollections_p.h"
+#include "specialcollectionattribute.h"
+#include "specialcollections.h"
 #include <specialmailcollections.h>
 #include <specialmailcollectionsrequestjob.h>
 #include <QStandardPaths>
-#include "../specialmailcollectionstesting_p.h"
-#include "../../specialcollectionshelperjobs_p.h"
+#include "../src/specialmailcollectionstesting_p.h"
 
 using namespace Akonadi;
 
@@ -73,7 +72,7 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
     QVERIFY(defSpy.isValid());
 
     // Initially the defaut maildir does not exist.
-    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + "local-mail"));
+    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
 
     // Request some default folders.
     {
@@ -91,7 +90,7 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
     }
 
     // The maildir should exist now.
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
 }
 
 void LocalFoldersRequestJobTest::testRequestWithDefaultResourceAlreadyExisting()
@@ -106,7 +105,7 @@ void LocalFoldersRequestJobTest::testRequestWithDefaultResourceAlreadyExisting()
     QVERIFY(defSpy.isValid());
 
     // Prerequisites (from testRequestWithNoDefaultResourceExisting()).
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
     QVERIFY(!smc->hasDefaultCollection(SpecialMailCollections::Inbox));
     QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));
     const Collection oldOutbox = smc->defaultCollection(SpecialMailCollections::Outbox);
@@ -145,7 +144,7 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     // Get our knut collection.
     Collection res1;
     {
-        CollectionPathResolver *resolver = new CollectionPathResolver("res1", this);
+        CollectionPathResolver *resolver = new CollectionPathResolver(QStringLiteral("res1"), this);
         QVERIFY(resolver->exec());
         res1 = Collection(resolver->collection());
         CollectionFetchJob *fjob = new CollectionFetchJob(res1, CollectionFetchJob::Base, this);
@@ -169,7 +168,7 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     }
 
     // Prerequisites (from the above two functions).
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
     QVERIFY(!smc->hasDefaultCollection(SpecialMailCollections::SentMail));
     QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));
     const Collection oldOutbox = smc->defaultCollection(SpecialMailCollections::Outbox);
@@ -196,4 +195,4 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     QCOMPARE(smc->collection(SpecialMailCollections::Outbox, AgentManager::self()->instance(res1.resource())), knutOutbox);
 }
 
-QTEST_AKONADIMAIN(LocalFoldersRequestJobTest, NoGUI)
+QTEST_AKONADIMAIN(LocalFoldersRequestJobTest)

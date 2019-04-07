@@ -20,7 +20,7 @@
 #ifndef AKONADI_SPECIALMAILCOLLECTIONSTESTING_P_H
 #define AKONADI_SPECIALMAILCOLLECTIONSTESTING_P_H
 
-#include "akonadi-kmimeprivate_export.h"
+#include "akonadi-mimeprivate_export.h"
 #include "specialmailcollections.h"
 
 namespace Akonadi {
@@ -29,7 +29,7 @@ namespace Akonadi {
   Class that exposes SpecialMailCollections' private methods for use in unit tests.
   HACK Is there a better way to do this?
 */
-class AKONADI_KMIME_TEST_EXPORT SpecialMailCollectionsTesting
+class AKONADI_MIME_TEST_EXPORT SpecialMailCollectionsTesting
 {
 public:
     static SpecialMailCollectionsTesting *_t_self();

@@ -19,9 +19,9 @@
 
 #include "localfolderstest.h"
 
-#include "../../collectionpathresolver_p.h"
-#include "../../dbusconnectionpool.h"
-#include "../specialmailcollectionssettings.h"
+#include "collectionpathresolver.h"
+#include "kdbusconnectionpool.h"
+#include "specialmailcollectionssettings.h"
 
 #include <QDBusConnectionInterface>
 #include <QFile>
@@ -34,14 +34,14 @@
 #include <collectionfetchjob.h>
 #include <collectionmodifyjob.h>
 #include <control.h>
+#include <KLocalizedString>
 #include <servermanager.h>
 #include <qtest_akonadi.h>
-#include "../../specialcollectionattribute_p.h"
-#include "../../specialcollections_p.h"
+#include "specialcollectionattribute.h"
+#include "specialcollections.h"
 #include <specialmailcollections.h>
 #include <QStandardPaths>
-#include "../specialmailcollectionstesting_p.h"
-#include "../../specialcollectionshelperjobs_p.h"
+#include "../src/specialmailcollectionstesting_p.h"
 
 using namespace Akonadi;
 
@@ -72,7 +72,7 @@ void LocalFoldersTest::initTestCase()
     QVERIFY(Control::start());
     QTest::qWait(1000);
 
-    CollectionPathResolver *resolver = new CollectionPathResolver("res1", this);
+    CollectionPathResolver *resolver = new CollectionPathResolver(QStringLiteral("res1"), this);
     QVERIFY(resolver->exec());
     res1 = Collection(resolver->collection());
 
@@ -91,13 +91,13 @@ void LocalFoldersTest::testLock()
     }
 
     // Initially not locked.
-    QVERIFY(!DBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+    QVERIFY(!KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
 
     // Get the lock.
     {
         GetLockJob *ljob = new GetLockJob(this);
         AKVERIFYEXEC(ljob);
-        QVERIFY(DBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+        QVERIFY(KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
     }
 
     // Getting the lock again should fail.
@@ -107,9 +107,9 @@ void LocalFoldersTest::testLock()
     }
 
     // Release the lock.
-    QVERIFY(DBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+    QVERIFY(KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
     releaseLock();
-    QVERIFY(!DBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+    QVERIFY(!KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
 }
 
 void LocalFoldersTest::testInitialState()
@@ -500,7 +500,7 @@ void LocalFoldersTest::testDefaultResourceJob()
     scmt->_t_setDefaultResourceId(QLatin1String("akonadi_maildir_resource"));
 
     // Initially the defaut maildir does not exist.
-    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
 
     // Run the job.
     Collection maildirRoot;
@@ -511,7 +511,7 @@ void LocalFoldersTest::testDefaultResourceJob()
 
         QVariantMap options;
         options.insert(QLatin1String("Name"), i18nc("local mail folder", "Local Folders"));
-        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -527,7 +527,7 @@ void LocalFoldersTest::testDefaultResourceJob()
     }
 
     // The maildir should exist now.
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
 
     // Create a LocalFolder in the default resource.
     Collection outbox;
@@ -551,7 +551,7 @@ void LocalFoldersTest::testDefaultResourceJob()
 
         QVariantMap options;
         options.insert(QLatin1String("Name"), i18nc("local mail folder", "Local Folders"));
-        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -569,7 +569,7 @@ void LocalFoldersTest::testDefaultResourceJob()
 void LocalFoldersTest::testRecoverDefaultResource()
 {
     // The maildirs should exist (created in testDefaultResourceJob).
-    const QString xdgPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/';
+    const QString xdgPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/');
     const QString rootPath = xdgPath + QLatin1String("local-mail");
     const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2") \
                                .arg(QLatin1String("local-mail"))
@@ -592,7 +592,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
 
         QVariantMap options;
         options.insert(QLatin1String("Name"), i18nc("local mail folder", "Local Folders"));
-        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + '/' + QLatin1String("local-mail")));
+        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -605,7 +605,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
 
         // Reorder the folders.
         if (folders.first().parentCollection() != Collection::root()) {
-            folders.swap(0, 1);
+            folders.move(1, 0);
         }
 
         // The first folder should be the Root.
@@ -626,4 +626,4 @@ void LocalFoldersTest::testRecoverDefaultResource()
     }
 }
 
-QTEST_AKONADIMAIN(LocalFoldersTest, NoGUI)
+QTEST_AKONADIMAIN(LocalFoldersTest)

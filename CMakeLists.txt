@@ -63,6 +63,12 @@ else()
    add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
 endif()
 
+if(BUILD_TESTING)
+    set(AKONADI_MIME_TEST_EXPORT AKONADI_MIME_EXPORT)
+endif()
+configure_file(akonadi-mimeprivate_export.h.in "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mimeprivate_export.h")
+include_directories(${CMAKE_CURRENT_BINARY_DIR})
+
 add_subdirectory(src)
 add_subdirectory(serializers)
 

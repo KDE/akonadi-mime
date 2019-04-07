@@ -29,11 +29,8 @@ typedef SpecialMailCollectionsSettings Settings;
 
 SpecialMailCollectionsTesting *SpecialMailCollectionsTesting::_t_self()
 {
-    static SpecialMailCollectionsTesting *instance = 0;
-    if (!instance) {
-        instance = new SpecialMailCollectionsTesting;
-    }
-    return instance;
+    static SpecialMailCollectionsTesting instance;
+    return &instance;
 }
 
 void SpecialMailCollectionsTesting::_t_setDefaultResourceId(const QString &resourceId)

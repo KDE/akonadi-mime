@@ -49,12 +49,9 @@ ecm_qt_declare_logging_category(akonadimime_SRCS HEADER akonadi_mime_debug.h IDE
 add_resource_iface(imapresource.kcfg
     org.kde.Akonadi.Imap.Settings ImapSettings)
 
-#REACTIVATE
-#if (KDE4_BUILD_TESTS)
-#    set(akonadimime_SRCS
-#        ${akonadimime_SRCS}
-#        specialmailcollectionstesting.cpp
-#    )
+# TODO: add the necessary API in SpecialCollections
+#if (BUILD_TESTING)
+#    list(APPEND akonadimime_SRCS specialmailcollectionstesting.cpp)
 #endif()
 
 kconfig_add_kcfg_files(akonadimime_SRCS
