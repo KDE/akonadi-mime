@@ -51,7 +51,8 @@ void MailDirFetchAllHeaders::runTest()
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();
         QString a;
-        foreach (const Item &item, ifj->items()) {
+        const auto items = ifj->items();
+        for (const Item &item : items) {
             a = item.payload<KMime::Message::Ptr>()->subject()->asUnicodeString();
         }
     }

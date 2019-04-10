@@ -45,7 +45,8 @@ void MailDirRemoveReadMessages::runTest()
     for (const Collection &collection : list4) {
         ItemFetchJob *ifj = new ItemFetchJob(collection, this);
         ifj->exec();
-        foreach (const Item &item, ifj->items()) {
+        const auto items = ifj->items();
+        for (const Item &item : items) {
             // delete read messages
             if (item.hasFlag("\\SEEN")) {
                 ItemDeleteJob *idj = new ItemDeleteJob(item, this);

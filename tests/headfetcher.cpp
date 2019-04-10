@@ -55,7 +55,8 @@ HeadFetcher::HeadFetcher(bool multipart)
         }
         ifj->exec();
         qDebug() << "  Listing" << ifj->items().count() << "item headers.";
-        foreach (const Item &item, ifj->items()) {
+        const auto items = ifj->items();
+        for (const Item &item : items) {
             qDebug() << item.payload<KMime::Message::Ptr>()->subject()->asUnicodeString();
         }
     }

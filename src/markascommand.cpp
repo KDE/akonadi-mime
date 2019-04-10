@@ -108,7 +108,8 @@ void MarkAsCommand::slotFetchDone(KJob *job)
 
     Akonadi::ItemFetchJob *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
     d->mMessages.clear();
-    foreach (const Akonadi::Item &item, fjob->items()) {
+    const auto items = fjob->items();
+    for (const Akonadi::Item &item : items) {
         Akonadi::MessageStatus status;
         status.setStatusFromFlags(item.flags());
         if (d->mInvertMark) {
@@ -170,7 +171,7 @@ void MarkAsCommand::markMessages()
     }
 
     Akonadi::Item::List itemsToModify;
-    foreach (const Akonadi::Item &it, d->mMessages) {
+    for (const Akonadi::Item &it : qAsConst(d->mMessages)) {
         Akonadi::Item item(it);
 
         // be careful to only change the flags we want to change, not to overwrite them

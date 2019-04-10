@@ -51,7 +51,8 @@ void MailDirFetchUnreadHeaders::runTest()
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();
         QString a;
-        foreach (const Item &item, ifj->items()) {
+        const auto items = ifj->items();
+        for (const Item &item : items) {
             // filter read messages
             if (!item.hasFlag("\\SEEN")) {
                 a = item.payload<KMime::Message::Ptr>()->subject()->asUnicodeString();

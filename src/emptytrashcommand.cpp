@@ -144,7 +144,8 @@ void EmptyTrashCommand::slotDeleteJob(KJob *job)
 Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
 {
     Akonadi::AgentInstance::List relevantInstances;
-    foreach (const Akonadi::AgentInstance &instance, Akonadi::AgentManager::self()->instances()) {
+    const auto instances = Akonadi::AgentManager::self()->instances();
+    for (const Akonadi::AgentInstance &instance : instances) {
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())
             && instance.type().capabilities().contains(QStringLiteral("Resource"))
             && !instance.type().capabilities().contains(QStringLiteral("Virtual"))) {
