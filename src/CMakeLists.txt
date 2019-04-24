@@ -144,5 +144,7 @@ install(FILES
 
 ## install the MIME type spec file for KDEPIM specific MIME types
 install(FILES x-vnd.kde.contactgroup.xml DESTINATION ${KDE_INSTALL_MIMEDIR})
-update_xdg_mimetypes(${KDE_INSTALL_MIMEDIR})
+if (NOT NO_REGENERATE_MIME)
+  update_xdg_mimetypes(${KDE_INSTALL_MIMEDIR})
+endif()  
 
