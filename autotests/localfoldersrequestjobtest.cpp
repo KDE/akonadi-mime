@@ -66,8 +66,8 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
@@ -99,8 +99,8 @@ void LocalFoldersRequestJobTest::testRequestWithDefaultResourceAlreadyExisting()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
@@ -136,8 +136,8 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 

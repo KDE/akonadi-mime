@@ -174,8 +174,8 @@ void LocalFoldersTest::testDefaultFolderRegistration()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
@@ -232,8 +232,8 @@ void LocalFoldersTest::testCustomFolderRegistration()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
@@ -290,8 +290,8 @@ void LocalFoldersTest::testCollectionDelete()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
@@ -344,8 +344,8 @@ void LocalFoldersTest::testBatchRegister()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    QSignalSpy spy(smc, SIGNAL(collectionsChanged(Akonadi::AgentInstance)));
-    QSignalSpy defSpy(smc, SIGNAL(defaultCollectionsChanged()));
+    QSignalSpy spy(smc, &SpecialMailCollections::collectionsChanged);
+    QSignalSpy defSpy(smc, &SpecialMailCollections::defaultCollectionsChanged);
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
