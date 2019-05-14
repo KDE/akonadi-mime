@@ -20,7 +20,6 @@ macro(add_akonadi_isolated_test _source)
   add_executable(${_targetName} ${_srcList})
   target_link_libraries(${_targetName}
     Qt5::Test
-    KF5::MailTransport
     KF5::Mime
     KF5::AkonadiMime
     Qt5::Widgets

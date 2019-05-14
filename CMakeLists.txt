@@ -20,8 +20,6 @@ include(KDECMakeSettings)
 include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 
-
-
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
 set(AKONADI_VERSION "5.11.1")
 set(KF5_MIME_VERSION "5.11.1")
@@ -33,9 +31,10 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     )
 
 ########### Find packages ###########
+find_package(KF5Codecs ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5ConfigWidgets ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5DBusAddons ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5KIO ${KF5_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF5Config ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5I18n ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5XmlGui ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5Mime ${KF5_MIME_VERSION} CONFIG REQUIRED)
