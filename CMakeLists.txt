@@ -21,8 +21,8 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMQtDeclareLoggingCategory)
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.11.1")
-set(KF5_MIME_VERSION "5.11.1")
+set(AKONADI_VERSION "5.11.2")
+set(KF5_MIME_VERSION "5.11.2")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
