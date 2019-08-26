@@ -147,8 +147,8 @@ Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
     const auto instances = Akonadi::AgentManager::self()->instances();
     for (const Akonadi::AgentInstance &instance : instances) {
         if (instance.type().mimeTypes().contains(KMime::Message::mimeType())
-            && instance.type().capabilities().contains(QStringLiteral("Resource"))
-            && !instance.type().capabilities().contains(QStringLiteral("Virtual"))) {
+            && instance.type().capabilities().contains(QLatin1String("Resource"))
+            && !instance.type().capabilities().contains(QLatin1String("Virtual"))) {
             relevantInstances << instance;
         }
     }

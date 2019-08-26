@@ -56,7 +56,7 @@ int MessageModel::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     if (collection().isValid()
-        && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
+        && !collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))
         && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
         return 1;
     }
@@ -67,7 +67,7 @@ int MessageModel::rowCount(const QModelIndex &parent) const
 int MessageModel::columnCount(const QModelIndex &parent) const
 {
     if (collection().isValid()
-        && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
+        && !collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))
         && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
         return 1;
     }
@@ -88,7 +88,7 @@ QVariant MessageModel::data(const QModelIndex &index, int role) const
         return QVariant();
     }
 
-    if (!collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))) {
+    if (!collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))) {
         if (role == Qt::DisplayRole) {
             return i18nc("@label", "This model can only handle email folders. The current collection holds mimetypes: %1",
                          collection().contentMimeTypes().join(QLatin1Char(',')));
@@ -143,7 +143,7 @@ QVariant MessageModel::data(const QModelIndex &index, int role) const
 QVariant MessageModel::headerData(int section, Qt::Orientation orientation, int role) const
 {
     if (collection().isValid()
-        && !collection().contentMimeTypes().contains(QStringLiteral("message/rfc822"))
+        && !collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))
         && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
         return QVariant();
     }
