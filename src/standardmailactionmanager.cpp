@@ -477,7 +477,7 @@ public:
             }
         } else {
             if (data.startsWith('!')) {
-                data = data.mid(1);
+                data.remove(0, 1);
             }
         }
         action->setData(data);
@@ -499,7 +499,7 @@ public:
         bool invert = false;
         if (typeStr.startsWith('!')) {
             invert = true;
-            typeStr = typeStr.mid(1);
+            typeStr.remove(0, 1);
         }
 
         Akonadi::MessageStatus targetStatus;
@@ -543,12 +543,12 @@ public:
         bool invert = false;
         if (typeStr.startsWith('!')) {
             invert = true;
-            typeStr = typeStr.mid(1);
+            typeStr.remove(0, 1);
         }
         bool recursive = false;
         if (typeStr.startsWith(':')) {
             recursive = true;
-            typeStr = typeStr.mid(1);
+            typeStr.remove(0, 1);
         }
 
         StandardMailActionManager::Type type = MarkAllMailAsRead;
