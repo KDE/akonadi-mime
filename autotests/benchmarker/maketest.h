@@ -24,7 +24,7 @@
 #include <agentmanager.h>
 #include <job.h>
 
-#include <QTime>
+#include <QElapsedTimer>
 
 class MakeTest : public QObject
 {
@@ -40,7 +40,7 @@ protected Q_SLOTS:
 protected:
     Akonadi::AgentInstance currentInstance;
     QString currentAccount;
-    QTime timer;
+    QElapsedTimer timer;
     bool done;
     void removeCollections();
     void removeResource();

@@ -21,7 +21,7 @@
 #define HEADFETCHER_H
 
 #include <QObject>
-#include <QTime>
+#include <QElapsedTimer>
 
 class HeadFetcher : public QObject
 {
@@ -31,7 +31,7 @@ public:
 private Q_SLOTS:
     void stop();
 private:
-    QTime timer;
+    QElapsedTimer timer;
 };
 
 #endif
