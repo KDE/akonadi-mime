@@ -57,7 +57,10 @@ set_package_properties(LibXslt PROPERTIES
 
 ########### Targets ###########
 
-add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
+   add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x060000)
+endif()
+
 add_definitions(-DQT_NO_FOREACH)
 
 if(BUILD_TESTING)
