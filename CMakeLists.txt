@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-set(PIM_VERSION "5.12.2")
+set(PIM_VERSION "5.12.3")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup
@@ -23,8 +23,8 @@ include(FeatureSummary)
 include(ECMQtDeclareLoggingCategory)
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.12.1")
-set(KF5_MIME_VERSION "5.12.1")
+set(AKONADI_VERSION "5.12.2")
+set(KF5_MIME_VERSION "5.12.2")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
