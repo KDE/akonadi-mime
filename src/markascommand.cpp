@@ -25,8 +25,8 @@
 #include <itemmodifyjob.h>
 #include <collectionfetchjob.h>
 
-#include <kmessagebox.h>
-#include <klocalizedstring.h>
+#include <KMessageBox>
+#include <KLocalizedString>
 
 using namespace Akonadi;
 

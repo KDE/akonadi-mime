@@ -45,7 +45,7 @@
 #include <kmime/kmime_message.h>
 
 #include <QAction>
-#include <kactioncollection.h>
+#include <KActionCollection>
 
 #include <KLocalizedString>
 
