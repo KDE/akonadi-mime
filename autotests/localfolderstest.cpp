@@ -20,9 +20,9 @@
 #include "localfolderstest.h"
 
 #include "collectionpathresolver.h"
-#include "kdbusconnectionpool.h"
 #include "specialmailcollectionssettings.h"
 
+#include <QDBusConnection>
 #include <QDBusConnectionInterface>
 #include <QFile>
 #include <QSignalSpy>
@@ -91,13 +91,13 @@ void LocalFoldersTest::testLock()
     }
 
     // Initially not locked.
-    QVERIFY(!KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+    QVERIFY(!QDBusConnection::sessionBus().interface()->isServiceRegistered(dbusName));
 
     // Get the lock.
     {
         GetLockJob *ljob = new GetLockJob(this);
         AKVERIFYEXEC(ljob);
-        QVERIFY(KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+        QVERIFY(QDBusConnection::sessionBus().interface()->isServiceRegistered(dbusName));
     }
 
     // Getting the lock again should fail.
@@ -107,9 +107,9 @@ void LocalFoldersTest::testLock()
     }
 
     // Release the lock.
-    QVERIFY(KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+    QVERIFY(QDBusConnection::sessionBus().interface()->isServiceRegistered(dbusName));
     releaseLock();
-    QVERIFY(!KDBusConnectionPool::threadConnection().interface()->isServiceRegistered(dbusName));
+    QVERIFY(!QDBusConnection::sessionBus().interface()->isServiceRegistered(dbusName));
 }
 
 void LocalFoldersTest::testInitialState()
