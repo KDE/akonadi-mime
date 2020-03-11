@@ -6,21 +6,13 @@ set(akonadi_serializer_mail_SRCS
     akonadi_serializer_mail.cpp
 )
 
-if (ECM_VERSION VERSION_LESS "5.68.0")
-    ecm_qt_declare_logging_category(akonadi_serializer_mail_SRCS
-        HEADER akonadi_serializer_mail_debug.h
-        IDENTIFIER AKONADI_SERIALIZER_MAIL_LOG
-        CATEGORY_NAME org.kde.pim.akonadi_serializer_mail
-    )
-else()
-    ecm_qt_declare_logging_category(akonadi_serializer_mail_SRCS
+ecm_qt_declare_logging_category(akonadi_serializer_mail_SRCS
         HEADER akonadi_serializer_mail_debug.h
         IDENTIFIER AKONADI_SERIALIZER_MAIL_LOG
         DESCRIPTION "akonadi-mime (akonadi_serializer_mail)"
         CATEGORY_NAME org.kde.pim.akonadi_serializer_mail
         EXPORT AKONADIMIME
     )
-endif()
 
 add_library(akonadi_serializer_mail MODULE ${akonadi_serializer_mail_SRCS})
 target_link_libraries(akonadi_serializer_mail
