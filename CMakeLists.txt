@@ -23,8 +23,8 @@ include(FeatureSummary)
 include(ECMQtDeclareLoggingCategory)
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.13.40")
-set(KF5_MIME_VERSION "5.13.40")
+set(AKONADI_VERSION "5.13.80")
+set(KF5_MIME_VERSION "5.13.80")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
@@ -58,7 +58,7 @@ set_package_properties(LibXslt PROPERTIES
 
 if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
    add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050e00)
-   add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x058000)
+   add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054400)
 endif()
 
 add_definitions(-DQT_NO_FOREACH)
