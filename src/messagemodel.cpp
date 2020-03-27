@@ -20,6 +20,7 @@
 #include "messagemodel.h"
 #include "messageparts.h"
 
+#include <entitytreemodel.h>
 #include <itemfetchscope.h>
 #include <monitor.h>
 #include <session.h>
@@ -35,83 +36,72 @@ typedef KMime::Message::Ptr MessagePtr;
 
 using namespace Akonadi;
 
-MessageModel::MessageModel(QObject *parent)
-    : ItemModel(parent)
-{
-    fetchScope().fetchPayloadPart(MessagePart::Envelope);
+namespace {
+
+struct HeaderName {
+    const char *desc;
+    const char *name;
+};
+constexpr std::array<HeaderName, 5> headers = {{
+    {I18NC_NOOP("@title:column, message (e.g. email) subject", "Subject")},
+    {I18NC_NOOP("@title:column, sender of message (e.g. email)", "Sender")},
+    {I18NC_NOOP("@title:column, receiver of message (e.g. email)", "Receiver")},
+    {I18NC_NOOP("@title:column, message (e.g. email) timestamp", "Date")},
+    {I18NC_NOOP("@title:column, message (e.g. email) size", "Size")}
+}};
+
 }
 
-MessageModel::~MessageModel()
+MessageModel::MessageModel(Monitor *monitor, QObject *parent)
+    : EntityTreeModel(monitor, parent)
 {
+    // Make sure we have an envelope
+    monitor->itemFetchScope().fetchPayloadPart(MessagePart::Envelope);
+    setCollectionFetchStrategy(InvisibleCollectionFetch);
 }
 
-QStringList MessageModel::mimeTypes() const
+int MessageModel::entityColumnCount(HeaderGroup group) const
 {
-    return QStringList()
-           << QStringLiteral("text/uri-list")
-           << QStringLiteral("message/rfc822");
+    if (group == EntityTreeModel::ItemListHeaders) {
+        return headers.size();
+    }
+
+    return EntityTreeModel::entityColumnCount(group);
 }
 
-int MessageModel::rowCount(const QModelIndex &parent) const
+QVariant MessageModel::entityData(const Item &item, int column, int role) const
 {
-    Q_UNUSED(parent);
-    if (collection().isValid()
-        && !collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))
-        && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
-        return 1;
+    if (!item.hasPayload<KMime::Message::Ptr>()) {
+        return {};
     }
 
-    return ItemModel::rowCount();
-}
-
-int MessageModel::columnCount(const QModelIndex &parent) const
-{
-    if (collection().isValid()
-        && !collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))
-        && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
-        return 1;
-    }
-
-    if (!parent.isValid()) {
-        return 5; // keep in sync with the column type enum
-    }
-
-    return 0;
-}
-
-QVariant MessageModel::data(const QModelIndex &index, int role) const
-{
-    if (!index.isValid()) {
-        return QVariant();
-    }
-    if (index.row() >= rowCount()) {
-        return QVariant();
-    }
-
-    if (!collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))) {
-        if (role == Qt::DisplayRole) {
-            return i18nc("@label", "This model can only handle email folders. The current collection holds mimetypes: %1",
-                         collection().contentMimeTypes().join(QLatin1Char(',')));
-        } else {
-            return QVariant();
-        }
-    }
-
-    Item item = itemForIndex(index);
-    if (!item.hasPayload<MessagePtr>()) {
-        return QVariant();
-    }
-    MessagePtr msg = item.payload<MessagePtr>();
+    const auto msg = item.payload<KMime::Message::Ptr>();
     if (role == Qt::DisplayRole) {
-        switch (index.column()) {
+        switch (column) {
         case Subject:
-            return msg->subject()->asUnicodeString();
+            if (msg->subject(false)) {
+                return msg->subject(false)->asUnicodeString();
+            } else {
+                return i18nc("@label Alternative text when email subject is missing", "(No subject)");
+            }
         case Sender:
-            return msg->from()->asUnicodeString();
+            if (msg->from(false)) {
+                return msg->from(false)->asUnicodeString();
+            } else {
+                return i18nc("@label Alternative text when email sender is missing", "(No sender)");
+            }
         case Receiver:
-            return msg->to()->asUnicodeString();
+            if (msg->to(false)) {
+                return msg->to(false)->asUnicodeString();
+            } else {
+                return i18nc("@label Alternative text when email recipient is missing", "(No receiver)");
+            }
         case Date:
-            return QLocale().toString(msg->date()->dateTime());
+            if (msg->date(false)) {
+                return QLocale().toString(msg->date()->dateTime());
+            } else {
+                return i18nc("@label Alternative text when email date/time is missing", "(No date)");
+            }
         case Size:
             if (item.size() == 0) {
                 return i18nc("@label No size available", "-");
@@ -122,7 +112,7 @@ QVariant MessageModel::data(const QModelIndex &index, int role) const
             return QVariant();
         }
     } else if (role == Qt::EditRole) {
-        switch (index.column()) {
+        switch (column) {
         case Subject:
             return msg->subject()->asUnicodeString();
         case Sender:
@@ -137,32 +127,15 @@ QVariant MessageModel::data(const QModelIndex &index, int role) const
             return QVariant();
         }
     }
-    return ItemModel::data(index, role);
+
+    return EntityTreeModel::entityData(item, column, role);
 }
 
-QVariant MessageModel::headerData(int section, Qt::Orientation orientation, int role) const
+QVariant MessageModel::entityHeaderData(int section, Qt::Orientation orientation, int role, HeaderGroup headerGroup) const
 {
-    if (collection().isValid()
-        && !collection().contentMimeTypes().contains(QLatin1String("message/rfc822"))
-        && collection().contentMimeTypes() != QStringList(QStringLiteral("inode/directory"))) {
-        return QVariant();
+    if (section >= 0 && static_cast<std::size_t>(section) < headers.size()) {
+        return i18nc(headers[section].desc, headers[section].name);
     }
 
-    if (orientation == Qt::Horizontal && role == Qt::DisplayRole) {
-        switch (section) {
-        case Subject:
-            return i18nc("@title:column, message (e.g. email) subject", "Subject");
-        case Sender:
-            return i18nc("@title:column, sender of message (e.g. email)", "Sender");
-        case Receiver:
-            return i18nc("@title:column, receiver of message (e.g. email)", "Receiver");
-        case Date:
-            return i18nc("@title:column, message (e.g. email) timestamp", "Date");
-        case Size:
-            return i18nc("@title:column, message (e.g. email) size", "Size");
-        default:
-            return QString();
-        }
-    }
-    return ItemModel::headerData(section, orientation, role);
+    return EntityTreeModel::entityHeaderData(section, orientation, role, headerGroup);
 }

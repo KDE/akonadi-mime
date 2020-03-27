@@ -22,20 +22,13 @@
 
 #include "akonadi-mime_export.h"
 
-#include <itemmodel.h>
-#include <job.h>
-
-#if defined(MAKE_AKONADI_KMIME_LIB)
-#  define AKONADI_IGNORE_DEPRECATED_WARNINGS
-#endif
+#include <AkonadiCore/EntityTreeModel>
 
 namespace Akonadi {
 /**
  * A flat self-updating message model.
- * @deprecated Subclass Akonadi::EntityTreeModel instead. An example can be seen in AkonadiConsole,
- *             have a look at AkonadiBrowserModel there.
  */
-class AKONADI_MIME_DEPRECATED_EXPORT MessageModel : public Akonadi::ItemModel
+class AKONADI_MIME_EXPORT MessageModel : public Akonadi::EntityTreeModel
 {
     Q_OBJECT
 
@@ -56,37 +49,17 @@ public:
 
       @param parent The parent object.
     */
-    explicit MessageModel(QObject *parent = nullptr);
+    explicit MessageModel(Monitor *monitor, QObject *parent = nullptr);
 
     /**
       Deletes the message model.
     */
-    ~MessageModel() override;
+    ~MessageModel() override = default;
 
-    /**
-      Reimplemented from QAbstractItemModel.
-     */
-    Q_REQUIRED_RESULT int rowCount(const QModelIndex &parent = QModelIndex()) const override;
-
-    /**
-      Reimplemented from QAbstractItemModel.
-     */
-    Q_REQUIRED_RESULT int columnCount(const QModelIndex &parent = QModelIndex()) const override;
-
-    /**
-      Reimplemented from QAbstractItemModel.
-     */
-    Q_REQUIRED_RESULT QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
-
-    /**
-      Reimplemented from QAbstractItemModel.
-     */
-    Q_REQUIRED_RESULT QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
-
-    /**
-      Reimplemented from QAbstractItemModel.
-     */
-    Q_REQUIRED_RESULT QStringList mimeTypes() const override;
+protected:
+    Q_REQUIRED_RESULT int entityColumnCount(HeaderGroup headerGroup) const override;
+    Q_REQUIRED_RESULT QVariant entityHeaderData(int section, Qt::Orientation orientation, int role, HeaderGroup headerGroup) const override;
+    Q_REQUIRED_RESULT QVariant entityData(const Item &item, int column, int role = Qt::DisplayRole) const override;
 };
 }
 
