@@ -37,10 +37,6 @@ public:
     EmptyTrashCommand(const Akonadi::Collection &folder, QObject *parent);
     void execute() override;
 
-private Q_SLOTS:
-    void slotExpungeJob(KJob *job);
-    void slotDeleteJob(KJob *job);
-
 protected Q_SLOTS:
     void emitResult(Result result) override;
 

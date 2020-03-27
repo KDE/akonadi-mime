@@ -76,14 +76,13 @@ void EmptyTrashCommand::execute()
                 if (type.status() == Akonadi::AgentInstance::Broken) {
                     continue;
                 }
-                OrgKdeAkonadiImapSettingsInterface *iface = Util::createImapSettingsInterface(type.identifier());
+                QScopedPointer<OrgKdeAkonadiImapSettingsInterface> iface{Util::createImapSettingsInterface(type.identifier())};
                 if (iface->isValid()) {
                     const int trashImap = iface->trashCollection();
                     if (trashImap != trash.id()) {
                         trashFolder << Akonadi::Collection(trashImap);
                     }
                 }
-                delete iface;
             }
         }
         mNumberOfTrashToEmpty = trashFolder.count();
@@ -103,42 +102,19 @@ void EmptyTrashCommand::execute()
 void EmptyTrashCommand::expunge(const Akonadi::Collection &col)
 {
     if (col.isValid()) {
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(col, this);
-        connect(job, &Akonadi::ItemFetchJob::result, this, &EmptyTrashCommand::slotExpungeJob);
+        Akonadi::ItemDeleteJob *jobDelete = new Akonadi::ItemDeleteJob(col, this);
+        connect(jobDelete, &Akonadi::ItemDeleteJob::result,
+                this, [this, jobDelete]() {
+                    if (jobDelete->error()) {
+                        Util::showJobError(jobDelete);
+                        emitResult(Failed);
+                    }
+                    emitResult(OK);
+                });
     } else {
-        qCDebug(AKONADIMIME_LOG) << " Try to expunge an invalid collection :" << col;
+        qCWarning(AKONADIMIME_LOG) << " Try to expunge an invalid collection :" << col;
         emitResult(Failed);
     }
-}
-
-void EmptyTrashCommand::slotExpungeJob(KJob *job)
-{
-    if (job->error()) {
-        Util::showJobError(job);
-        emitResult(Failed);
-        return;
-    }
-    Akonadi::ItemFetchJob *fjob = qobject_cast<Akonadi::ItemFetchJob *>(job);
-    if (!fjob) {
-        emitResult(Failed);
-        return;
-    }
-    const Akonadi::Item::List lstItem = fjob->items();
-    if (lstItem.isEmpty()) {
-        emitResult(OK);
-        return;
-    }
-    Akonadi::ItemDeleteJob *jobDelete = new Akonadi::ItemDeleteJob(lstItem, this);
-    connect(jobDelete, &Akonadi::ItemDeleteJob::result, this, &EmptyTrashCommand::slotDeleteJob);
-}
-
-void EmptyTrashCommand::slotDeleteJob(KJob *job)
-{
-    if (job->error()) {
-        Util::showJobError(job);
-        emitResult(Failed);
-    }
-    emitResult(OK);
 }
 
 Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
@@ -181,14 +157,12 @@ bool EmptyTrashCommand::folderIsTrash(const Akonadi::Collection &col)
             continue;
         }
         if (type.identifier().contains(IMAP_RESOURCE_IDENTIFIER)) {
-            OrgKdeAkonadiImapSettingsInterface *iface = Util::createImapSettingsInterface(type.identifier());
+            QScopedPointer<OrgKdeAkonadiImapSettingsInterface> iface{Util::createImapSettingsInterface(type.identifier())};
             if (iface->isValid()) {
                 if (iface->trashCollection() == col.id()) {
-                    delete iface;
                     return true;
                 }
             }
-            delete iface;
         }
     }
     return false;
