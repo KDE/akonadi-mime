@@ -32,6 +32,8 @@
 #include <QLocale>
 #include <KFormat>
 
+#include <array>
+
 typedef KMime::Message::Ptr MessagePtr;
 
 using namespace Akonadi;
