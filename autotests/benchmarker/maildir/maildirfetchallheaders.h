@@ -25,6 +25,7 @@
 
 class MailDirFetchAllHeaders : public MailDir
 {
+    Q_OBJECT
 public:
     MailDirFetchAllHeaders();
     void runTest() override;

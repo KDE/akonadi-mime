@@ -25,6 +25,7 @@
 
 class MailDir20PercentAsRead : public MailDir
 {
+    Q_OBJECT
 public:
     MailDir20PercentAsRead();
     void runTest() override;

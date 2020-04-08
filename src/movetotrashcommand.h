@@ -39,7 +39,7 @@ public:
 
 private Q_SLOTS:
     void slotFetchDone(KJob *job);
-    void slotMoveDone(Result result);
+    void slotMoveDone(Akonadi::CommandBase::Result result);
 
 private:
     void moveMessages();

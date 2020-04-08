@@ -24,6 +24,7 @@
 
 class VCard : public MakeTest
 {
+    Q_OBJECT
 public:
     VCard(const QString &dir);
     VCard();

@@ -38,7 +38,7 @@ public:
     void execute() override;
 
 protected Q_SLOTS:
-    void emitResult(Result result) override;
+    void emitResult(Akonadi::CommandBase::Result result) override;
 
 private:
     void expunge(const Akonadi::Collection &col);

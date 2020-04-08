@@ -25,6 +25,7 @@
 
 class MailDirRemoveReadMessages : public MailDir
 {
+    Q_OBJECT
 public:
     MailDirRemoveReadMessages();
     void runTest() override;

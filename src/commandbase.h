@@ -39,10 +39,10 @@ public:
     };
 
 Q_SIGNALS:
-    void result(Result);
+    void result(Akonadi::CommandBase::Result);
 
 protected Q_SLOTS:
-    virtual void emitResult(Result result);
+    virtual void emitResult(Akonadi::CommandBase::Result result);
 };
 }
 #endif // COMMANDBASE_H

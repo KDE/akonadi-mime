@@ -50,7 +50,7 @@ public:
     bool mRecursive;
 };
 
-MarkAsCommand::MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const Akonadi::Item::List &msgList, bool invert, QObject *parent)
+MarkAsCommand::MarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi::Item::List &msgList, bool invert, QObject *parent)
     : CommandBase(parent)
     , d(new Akonadi::MarkAsCommandPrivate())
 {
@@ -61,7 +61,7 @@ MarkAsCommand::MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const A
     d->mMarkJobCount = 0;
 }
 
-MarkAsCommand::MarkAsCommand(const Akonadi::MessageStatus &targetStatus, const Akonadi::Collection::List &folders, bool invert, bool recursive, QObject *parent)
+MarkAsCommand::MarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi::Collection::List &folders, bool invert, bool recursive, QObject *parent)
     : CommandBase(parent)
     , d(new Akonadi::MarkAsCommandPrivate())
 {

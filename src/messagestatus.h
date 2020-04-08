@@ -57,20 +57,20 @@ public:
         @return true if the stati are equal, false if different.
         @param other message status to compare with current object
     */
-    bool operator==(const MessageStatus &other) const;
+    bool operator==(MessageStatus other) const;
 
     /** Compare the status with that from another instance.
         @return true if the stati are equal, false if different.
         @param other message status to compare with current object
     */
-    bool operator!=(const MessageStatus &other) const;
+    bool operator!=(MessageStatus other) const;
 
     /** Check, if some of the flags in the status match
         with those flags from another instance.
         @return true if at least one flag is set in both stati.
         @param other message status to compare objects' flags
     */
-    bool operator&(const MessageStatus &other) const;
+    bool operator&(MessageStatus other) const;
 
     /** Clear all status flags, this resets to unknown. */
     void clear();
@@ -82,14 +82,14 @@ public:
         integrity of the resulting status.
         @param other message status to set
     */
-    void set(const MessageStatus &other);
+    void set(MessageStatus other);
 
     /** Toggle one or more stati described by another MessageStatus object.
         Internally the setters are used to ensure the integrity of the
         resulting status.
         @param other message status to toggle
     */
-    void toggle(const MessageStatus &other);
+    void toggle(MessageStatus other);
 
     /* ----- getters ----------------------------------------------------- */
 

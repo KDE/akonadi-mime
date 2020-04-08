@@ -59,17 +59,17 @@ Akonadi::MessageStatus::MessageStatus()
     mStatus = StatusUnknown;
 }
 
-bool Akonadi::MessageStatus::operator==(const Akonadi::MessageStatus &other) const
+bool Akonadi::MessageStatus::operator==(Akonadi::MessageStatus other) const
 {
     return mStatus == other.mStatus;
 }
 
-bool Akonadi::MessageStatus::operator!=(const Akonadi::MessageStatus &other) const
+bool Akonadi::MessageStatus::operator!=(Akonadi::MessageStatus other) const
 {
     return mStatus != other.mStatus;
 }
 
-bool Akonadi::MessageStatus::operator&(const Akonadi::MessageStatus &other) const
+bool Akonadi::MessageStatus::operator&(Akonadi::MessageStatus other) const
 {
     if (mStatus == StatusUnread) {
         return !(other.mStatus & StatusRead);
@@ -87,7 +87,7 @@ void Akonadi::MessageStatus::clear()
     mStatus = StatusUnknown;
 }
 
-void Akonadi::MessageStatus::set(const Akonadi::MessageStatus &other)
+void Akonadi::MessageStatus::set(Akonadi::MessageStatus other)
 {
     Q_ASSERT(!(other.mStatus & StatusUnread));
 
@@ -148,7 +148,7 @@ void Akonadi::MessageStatus::set(const Akonadi::MessageStatus &other)
     }
 }
 
-void Akonadi::MessageStatus::toggle(const Akonadi::MessageStatus &other)
+void Akonadi::MessageStatus::toggle(Akonadi::MessageStatus other)
 {
     Q_ASSERT(!(other.mStatus & StatusUnread));
 
