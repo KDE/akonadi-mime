@@ -34,6 +34,7 @@ set(akonadimime_SRCS
     messageparts.cpp
     messageflags.cpp
     messagestatus.cpp
+    newmailnotifierattribute.cpp
 
     commandbase.cpp
     util.cpp
@@ -110,6 +111,8 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
     MessageStatus
     MarkAsCommand
     MoveCommand
+    NewMailNotifierAttribute
+    Pop3ResourceAttribute
     RemoveDuplicatesJob
     SpecialMailCollections
     SpecialMailCollectionsDiscoveryJob
