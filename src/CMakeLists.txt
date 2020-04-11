@@ -35,6 +35,7 @@ set(akonadimime_SRCS
     messageflags.cpp
     messagestatus.cpp
     newmailnotifierattribute.cpp
+    pop3resourceattribute.cpp
 
     commandbase.cpp
     util.cpp

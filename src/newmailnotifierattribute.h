@@ -20,7 +20,7 @@
 #ifndef NEWMAILNOTIFIERATTRIBUTE_H
 #define NEWMAILNOTIFIERATTRIBUTE_H
 
-#include "akonadicore_export.h"
+#include "akonadi-mime_export.h"
 
 #include <AkonadiCore/Attribute>
 
@@ -30,7 +30,7 @@ namespace Akonadi
 {
 
 class NewMailNotifierAttributePrivate;
-class AKONADICORE_EXPORT NewMailNotifierAttribute : public Akonadi::Attribute
+class AKONADI_MIME_EXPORT NewMailNotifierAttribute : public Akonadi::Attribute
 {
 public:
     explicit NewMailNotifierAttribute();
