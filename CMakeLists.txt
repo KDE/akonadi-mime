@@ -62,6 +62,7 @@ if (EXISTS "${CMAKE_SOURCE_DIR}/.git")
 endif()
 
 add_definitions(-DQT_NO_FOREACH)
+add_definitions(-DQT_NO_KEYWORDS)
 
 if(BUILD_TESTING)
     set(AKONADI_MIME_TEST_EXPORT AKONADI_MIME_EXPORT)
