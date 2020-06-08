@@ -141,7 +141,7 @@ void MarkAsCommand::execute()
         if (KMessageBox::questionYesNo(qobject_cast<QWidget *>(parent()),
                                        i18n("Are you sure you want to mark all messages in this folder and all its subfolders?"),
                                        i18n("Mark All Recursively")) == KMessageBox::Yes) {
-            Akonadi::CollectionFetchJob *job = new Akonadi::CollectionFetchJob(d->mFolders.first());
+            Akonadi::CollectionFetchJob *job = new Akonadi::CollectionFetchJob(d->mFolders.constFirst());
             connect(job, &Akonadi::CollectionFetchJob::result, this, &MarkAsCommand::slotCollectionFetchDone);
         } else {
             emitResult(Canceled);

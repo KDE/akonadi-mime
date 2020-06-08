@@ -84,7 +84,7 @@ void MoveToTrashCommand::execute()
 
 void MoveToTrashCommand::moveMessages()
 {
-    Akonadi::Collection folder = mFolders[mFolderListJobCount];
+    const Akonadi::Collection folder = mFolders.at(mFolderListJobCount);
     if (folder.isValid()) {
         MoveCommand *moveCommand = new MoveCommand(findTrashFolder(folder), mMessages, this);
         connect(moveCommand, &MoveCommand::result, this, &MoveToTrashCommand::slotMoveDone);
