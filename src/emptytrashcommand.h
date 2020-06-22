@@ -26,7 +26,6 @@
 #include <collection.h>
 
 class QAbstractItemModel;
-class KJob;
 namespace Akonadi {
 class EmptyTrashCommand : public CommandBase
 {

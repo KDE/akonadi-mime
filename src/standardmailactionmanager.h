@@ -30,7 +30,6 @@
 
 class QAction;
 class KActionCollection;
-class KJob;
 class QItemSelectionModel;
 class QWidget;
 
