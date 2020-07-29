@@ -84,7 +84,6 @@ target_link_libraries(KF5AkonadiMime
     KF5::AkonadiWidgets
     KF5::KIOCore
     KF5::I18n
-    KF5::ConfigWidgets
     KF5::XmlGui
     )
 
