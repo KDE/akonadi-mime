@@ -52,7 +52,15 @@ public:
     {
         mGenericManager = new StandardActionManager(actionCollection, parentWidget);
 
-        mParent->connect(mGenericManager, &StandardActionManager::actionStateUpdated,
+        QObject::connect(mGenericManager, &StandardActionManager::selectionsChanged,
+                         mParent, [this](const Collection::List &selectedCollections,
+                                         const Collection::List &selectedFavoriteCollections,
+                                         const Item::List &selectedItems) {
+                             // Optimization: pass along the lists to avoid recalculating them here
+                             updateActions(selectedCollections, selectedFavoriteCollections, selectedItems);
+                         });
+
+        QObject::connect(mGenericManager, &StandardActionManager::actionStateUpdated,
                          mParent, &StandardMailActionManager::actionStateUpdated);
 
         mGenericManager->setMimeTypeFilter(QStringList() << KMime::Message::mimeType());
@@ -313,9 +321,16 @@ public:
     {
         const Akonadi::Item::List selectedItems = mGenericManager->selectedItems();
         const Akonadi::Collection::List selectedCollections = mGenericManager->selectedCollections();
+        updateActions(selectedCollections, {}, selectedItems);
+    }
 
-        bool itemIsSelected = !selectedItems.isEmpty();
-        bool collectionIsSelected = !selectedCollections.isEmpty();
+    void updateActions(const Collection::List &selectedCollections,
+                       const Collection::List &selectedFavoriteCollections,
+                       const Item::List &selectedItems)
+    {
+        Q_UNUSED(selectedFavoriteCollections);
+        const bool itemIsSelected = !selectedItems.isEmpty();
+        const bool collectionIsSelected = !selectedCollections.isEmpty();
 
         if (itemIsSelected) {
             bool allMarkedAsImportant = true;
@@ -680,9 +695,7 @@ void StandardMailActionManager::setCollectionSelectionModel(QItemSelectionModel 
     connect(selectionModel->model(), &QAbstractItemModel::rowsRemoved, this, [this]() {
         d->updateActions();
     });
-    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, [this]() {
-        d->updateActions();
-    });
+    // connecting to QItemSelectionModel::selectionChanged is done by mGenericManager
 
     d->updateActions();
 }
@@ -692,9 +705,7 @@ void StandardMailActionManager::setItemSelectionModel(QItemSelectionModel *selec
     d->mItemSelectionModel = selectionModel;
     d->mGenericManager->setItemSelectionModel(selectionModel);
 
-    connect(selectionModel, &QItemSelectionModel::selectionChanged, this, [this]() {
-        d->updateActions();
-    });
+    // connecting to QItemSelectionModel::selectionChanged is done by mGenericManager
 
     //to catch item modifications, listen to the model's dataChanged signal as well
     connect(selectionModel->model(), &QAbstractItemModel::dataChanged, this, [this]() {
