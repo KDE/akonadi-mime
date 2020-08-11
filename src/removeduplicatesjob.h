@@ -1,5 +1,5 @@
 /*
-    SPDX-FileCopyrightText: 2010 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
+    SPDX-FileCopyrightText: 2010 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@kdab.com>
     SPDX-FileCopyrightText: 2010 Andras Mantia <andras@kdab.com>
     SPDX-FileCopyrightText: 2012 Dan Vrátil <dvratil@redhat.com>
 

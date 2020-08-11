@@ -2,7 +2,7 @@
     This file is part of Akonadi Contact.
 
     Copyright (c) 2009 - 2010 Tobias Koenig <tokoe@kde.org>
-    SPDX-FileCopyrightText: 2010 Klarälvdalens Datakonsult AB, a KDAB Group company, info@kdab.com
+    SPDX-FileCopyrightText: 2010 Klarälvdalens Datakonsult AB, a KDAB Group company, <info@kdab.com>
     SPDX-FileCopyrightText: 2010 Andras Mantia <andras@kdab.com>
 
     SPDX-License-Identifier: LGPL-2.0-or-later
