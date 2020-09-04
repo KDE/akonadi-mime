@@ -34,7 +34,7 @@ private:
     Akonadi::Collection collectionFromId(Akonadi::Collection::Id id) const;
     bool folderIsTrash(const Akonadi::Collection &col);
 
-    const QAbstractItemModel *mModel = nullptr;
+    const QAbstractItemModel *const mModel;
     Akonadi::Collection::Id the_trashCollectionFolder;
     Akonadi::Collection mFolder;
     int mNumberOfTrashToEmpty = 0;

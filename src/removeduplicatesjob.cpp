@@ -20,10 +20,7 @@ class Q_DECL_HIDDEN Akonadi::RemoveDuplicatesJob::Private
 {
 public:
     Private(RemoveDuplicatesJob *parent)
-        : mCurrentJob(nullptr)
-        , mJobCount(0)
-        , mKilled(false)
-        , mParent(parent)
+        :mParent(parent)
     {
     }
 
@@ -139,11 +136,11 @@ public:
     Akonadi::Collection::List mFolders;
     Akonadi::Item::List mDuplicateItems;
     Akonadi::Job *mCurrentJob = nullptr;
-    int mJobCount;
+    int mJobCount = 0;
     bool mKilled = false;
 
 private:
-    RemoveDuplicatesJob *mParent = nullptr;
+    RemoveDuplicatesJob *const mParent;
 };
 
 using namespace Akonadi;

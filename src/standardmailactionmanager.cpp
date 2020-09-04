@@ -46,8 +46,6 @@ public:
     Private(KActionCollection *actionCollection, QWidget *parentWidget, StandardMailActionManager *parent)
         : mActionCollection(actionCollection)
         , mParentWidget(parentWidget)
-        , mCollectionSelectionModel(nullptr)
-        , mItemSelectionModel(nullptr)
         , mParent(parent)
     {
         mGenericManager = new StandardActionManager(actionCollection, parentWidget);
@@ -663,14 +661,14 @@ public:
         command->execute();
     }
 
-    KActionCollection *mActionCollection = nullptr;
-    QWidget *mParentWidget = nullptr;
+    KActionCollection *const mActionCollection;
+    QWidget *const mParentWidget;
     StandardActionManager *mGenericManager = nullptr;
     QItemSelectionModel *mCollectionSelectionModel = nullptr;
     QItemSelectionModel *mItemSelectionModel = nullptr;
     QHash<StandardMailActionManager::Type, QAction *> mActions;
     QSet<StandardMailActionManager::Type> mInterceptedActions;
-    StandardMailActionManager *mParent = nullptr;
+    StandardMailActionManager *const mParent;
 };
 
 StandardMailActionManager::StandardMailActionManager(KActionCollection *actionCollection, QWidget *parent)

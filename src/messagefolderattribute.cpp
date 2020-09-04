@@ -11,12 +11,7 @@ using namespace Akonadi;
 class Akonadi::MessageFolderAttribute::Private
 {
 public:
-    Private()
-        : isOutboundFolder(false)
-    {
-    }
-
-    bool isOutboundFolder;
+    bool isOutboundFolder = false;
 };
 
 MessageFolderAttribute::MessageFolderAttribute()

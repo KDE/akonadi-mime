@@ -22,20 +22,16 @@ class Akonadi::MarkAsCommandPrivate
 {
 public:
     MarkAsCommandPrivate()
-        : mMarkJobCount(0)
-        , mFolderListJobCount(0)
-        , mInvertMark(0)
-        , mRecursive(false)
     {
     }
 
     Akonadi::Collection::List mFolders;
     Akonadi::Item::List mMessages;
     Akonadi::MessageStatus mTargetStatus;
-    int mMarkJobCount;
-    int mFolderListJobCount;
-    int mInvertMark;
-    bool mRecursive;
+    int mMarkJobCount = 0;
+    int mFolderListJobCount = 0;
+    int mInvertMark = 0;
+    bool mRecursive = false;
 };
 
 MarkAsCommand::MarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi::Item::List &msgList, bool invert, QObject *parent)
