@@ -485,13 +485,14 @@ public:
 
     void slotMarkAs()
     {
-        const QAction *action = qobject_cast<QAction *>(mParent->sender());
-        Q_ASSERT(action);
-
         const Akonadi::Item::List items = mGenericManager->selectedItems();
         if (items.isEmpty()) {
             return;
         }
+
+        const QAction *action = qobject_cast<QAction *>(mParent->sender());
+        Q_ASSERT(action);
+
 
         QByteArray typeStr = action->data().toByteArray();
         qCDebug(AKONADIMIME_LOG) << "Mark mail as: " << typeStr;
@@ -526,16 +527,17 @@ public:
 
     void slotMarkAllAs()
     {
+        const Akonadi::Collection::List collections = mGenericManager->selectedCollections();
+        if (collections.isEmpty()) {
+            return;
+        }
+
         const QAction *action = qobject_cast<QAction *>(mParent->sender());
         Q_ASSERT(action);
 
         QByteArray typeStr = action->data().toByteArray();
         qCDebug(AKONADIMIME_LOG) << "Mark all as: " << typeStr;
 
-        const Akonadi::Collection::List collections = mGenericManager->selectedCollections();
-        if (collections.isEmpty()) {
-            return;
-        }
 
         Akonadi::MessageStatus targetStatus;
         targetStatus.setStatusFromStr(QLatin1String(typeStr));
