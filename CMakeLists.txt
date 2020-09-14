@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-set(PIM_VERSION "5.15.40")
+set(PIM_VERSION "5.15.41")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup

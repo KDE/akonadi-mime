@@ -483,18 +483,8 @@ public:
         action->setData(data);
     }
 
-    void slotMarkAs()
+    void markItemsAs(QByteArray typeStr, const Akonadi::Item::List &items, bool checkIntercept = true)
     {
-        const Akonadi::Item::List items = mGenericManager->selectedItems();
-        if (items.isEmpty()) {
-            return;
-        }
-
-        const QAction *action = qobject_cast<QAction *>(mParent->sender());
-        Q_ASSERT(action);
-
-
-        QByteArray typeStr = action->data().toByteArray();
         qCDebug(AKONADIMIME_LOG) << "Mark mail as: " << typeStr;
 
         bool invert = false;
@@ -517,7 +507,7 @@ public:
             type = MarkMailAsImportant;
         }
 
-        if (mInterceptedActions.contains(type)) {
+        if (mInterceptedActions.contains(type) && checkIntercept) {
             return;
         }
 
@@ -525,17 +515,23 @@ public:
         command->execute();
     }
 
-    void slotMarkAllAs()
+    void slotMarkAs()
     {
-        const Akonadi::Collection::List collections = mGenericManager->selectedCollections();
-        if (collections.isEmpty()) {
+        const Akonadi::Item::List items = mGenericManager->selectedItems();
+        if (items.isEmpty()) {
             return;
         }
-
         const QAction *action = qobject_cast<QAction *>(mParent->sender());
         Q_ASSERT(action);
 
-        QByteArray typeStr = action->data().toByteArray();
+
+        const QByteArray typeStr = action->data().toByteArray();
+
+        markItemsAs(typeStr, items, true);
+    }
+
+    void markAllItemsAs(QByteArray typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true)
+    {
         qCDebug(AKONADIMIME_LOG) << "Mark all as: " << typeStr;
 
 
@@ -564,12 +560,25 @@ public:
             type = MarkAllMailAsImportant;
         }
 
-        if (mInterceptedActions.contains(type)) {
+        if (mInterceptedActions.contains(type) && checkIntercept) {
             return;
         }
 
         MarkAsCommand *command = new MarkAsCommand(targetStatus, collections, invert, recursive, mParent);
         command->execute();
+    }
+
+    void slotMarkAllAs()
+    {
+        const Akonadi::Collection::List collections = mGenericManager->selectedCollections();
+        if (collections.isEmpty()) {
+            return;
+        }
+
+        const QAction *action = qobject_cast<QAction *>(mParent->sender());
+        Q_ASSERT(action);
+        const QByteArray typeStr = action->data().toByteArray();
+        markAllItemsAs(typeStr, collections, true);
     }
 
     void slotMoveToTrash()
@@ -1009,6 +1018,16 @@ void StandardMailActionManager::setCollectionPropertiesPageNames(const QStringLi
 Akonadi::StandardActionManager *StandardMailActionManager::standardActionManager() const
 {
     return d->mGenericManager;
+}
+
+void StandardMailActionManager::markItemsAs(const QByteArray &typeStr, const Item::List &items, bool checkIntercept)
+{
+    d->markItemsAs(typeStr, items, checkIntercept);
+}
+
+void StandardMailActionManager::markAllItemsAs(const QByteArray &typeStr, const Collection::List &collections, bool checkIntercept)
+{
+    d->markAllItemsAs(typeStr, collections, checkIntercept);
 }
 
 #include "moc_standardmailactionmanager.cpp"
