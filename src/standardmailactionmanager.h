@@ -192,6 +192,9 @@ public:
 
     void markItemsAs(const QByteArray &typeStr, const Akonadi::Item::List &items, bool checkIntercept = true);
     void markAllItemsAs(const QByteArray &typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true);
+
+    void setItems(const Item::List &selectedItems);
+
 Q_SIGNALS:
     /**
      * This signal is emitted whenever the action state has been updated.

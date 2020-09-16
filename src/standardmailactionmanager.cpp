@@ -322,14 +322,9 @@ public:
         updateActions(selectedCollections, {}, selectedItems);
     }
 
-    void updateActions(const Collection::List &selectedCollections,
-                       const Collection::List &selectedFavoriteCollections,
-                       const Item::List &selectedItems)
+    void updateActionsFromSelectedItems(const Item::List &selectedItems)
     {
-        Q_UNUSED(selectedFavoriteCollections);
         const bool itemIsSelected = !selectedItems.isEmpty();
-        const bool collectionIsSelected = !selectedCollections.isEmpty();
-
         if (itemIsSelected) {
             bool allMarkedAsImportant = true;
             bool allMarkedAsRead = true;
@@ -405,6 +400,16 @@ public:
                 action->setEnabled(false);
             }
         }
+    }
+
+    void updateActions(const Collection::List &selectedCollections,
+                       const Collection::List &selectedFavoriteCollections,
+                       const Item::List &selectedItems)
+    {
+        Q_UNUSED(selectedFavoriteCollections);
+        const bool itemIsSelected = !selectedItems.isEmpty();
+        const bool collectionIsSelected = !selectedCollections.isEmpty();
+        updateActionsFromSelectedItems(selectedItems);
 
         bool enableMarkAllAsRead = false;
         bool enableMarkAllAsUnread = false;
@@ -707,6 +712,11 @@ void StandardMailActionManager::setCollectionSelectionModel(QItemSelectionModel 
     // connecting to QItemSelectionModel::selectionChanged is done by mGenericManager
 
     d->updateActions();
+}
+
+void StandardMailActionManager::setItems(const Item::List &selectedItems)
+{
+    d->updateActionsFromSelectedItems(selectedItems);
 }
 
 void StandardMailActionManager::setItemSelectionModel(QItemSelectionModel *selectionModel)
