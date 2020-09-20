@@ -1,6 +1,7 @@
 [Misc]
 Name=Mail Serializer
 Name[ar]=مُسلسِل البريد
+Name[az]=Məktubların saxlanılması
 Name[bs]=Serializator maila
 Name[ca]=Serialitzador del correu
 Name[ca@valencia]=Serialitzador del correu
@@ -49,6 +50,7 @@ Name[zh_CN]=邮件序列转换器
 Name[zh_TW]=信件序列器
 Comment=An Akonadi serializer plugin for mail objects
 Comment[ar]=ملحقة سَلسَلة «أكونادي» لكائنات البريد
+Comment[az]=Akonadi üçün məktubların saxlanılması qoşması
 Comment[bs]=Akonadi dodatak serializatora za mail objekte
 Comment[ca]=Un connector de serialització de l'Akonadi per a objectes del correu
 Comment[ca@valencia]=Un connector de serialització de l'Akonadi per a objectes del correu
