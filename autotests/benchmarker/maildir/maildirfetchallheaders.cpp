@@ -6,7 +6,6 @@
 */
 
 #include "maildirfetchallheaders.h"
-#include "maildir.h"
 
 #include <QDebug>
 

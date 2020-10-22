@@ -6,7 +6,6 @@
 
 #include "specialmailcollectionsrequestjob.h"
 
-#include "specialmailcollections.h"
 
 #include <KLocalizedString>
 #include <QStandardPaths>

@@ -6,7 +6,6 @@
 */
 
 #include "maildirimport.h"
-#include "maildir.h"
 #include <QDebug>
 #include <QTest>
 

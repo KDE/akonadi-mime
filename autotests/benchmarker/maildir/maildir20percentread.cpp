@@ -6,7 +6,6 @@
 */
 
 #include "maildir20percentread.h"
-#include "maildir.h"
 
 #include <QDebug>
 

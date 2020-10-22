@@ -6,7 +6,6 @@
 */
 
 #include "maildirremovereadmessages.h"
-#include "maildir.h"
 #include <QDebug>
 
 #include <collectionfetchjob.h>

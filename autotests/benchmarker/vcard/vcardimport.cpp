@@ -5,7 +5,6 @@
 */
 
 #include "vcardimport.h"
-#include "vcard.h"
 #include <QTest>
 #include <QDebug>
 
