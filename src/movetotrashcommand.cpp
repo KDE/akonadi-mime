@@ -44,13 +44,13 @@ void MoveToTrashCommand::slotFetchDone(KJob *job)
         return;
     }
 
-    Akonadi::ItemFetchJob *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
+    auto *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
 
     mMessages = fjob->items();
     moveMessages();
 
     if (mFolderListJobCount > 0) {
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(mFolders[mFolderListJobCount - 1], parent());
+        auto *job = new Akonadi::ItemFetchJob(mFolders[mFolderListJobCount - 1], parent());
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         connect(job, &Akonadi::ItemFetchJob::result, this, &MoveToTrashCommand::slotFetchDone);
     }
@@ -59,7 +59,7 @@ void MoveToTrashCommand::slotFetchDone(KJob *job)
 void MoveToTrashCommand::execute()
 {
     if (!mFolders.isEmpty()) {
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(mFolders[mFolderListJobCount - 1], parent());
+        auto *job = new Akonadi::ItemFetchJob(mFolders[mFolderListJobCount - 1], parent());
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         connect(job, &Akonadi::ItemFetchJob::result, this, &MoveToTrashCommand::slotFetchDone);
     } else if (!mMessages.isEmpty()) {

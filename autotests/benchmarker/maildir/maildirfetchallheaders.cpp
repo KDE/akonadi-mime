@@ -33,7 +33,7 @@ void MailDirFetchAllHeaders::runTest()
     clj->exec();
     const Collection::List list = clj->collections();
     for (const Collection &collection : list) {
-        ItemFetchJob *ifj = new ItemFetchJob(collection, this);
+        auto *ifj = new ItemFetchJob(collection, this);
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();
         QString a;

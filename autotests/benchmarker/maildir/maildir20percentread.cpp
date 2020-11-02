@@ -30,13 +30,13 @@ void MailDir20PercentAsRead::runTest()
     clj2->exec();
     const Collection::List list2 = clj2->collections();
     for (const Collection &collection : list2) {
-        ItemFetchJob *ifj = new ItemFetchJob(collection, this);
+        auto *ifj = new ItemFetchJob(collection, this);
         ifj->exec();
         Item::List itemlist = ifj->items();
         for (int i = ifj->items().count() - 1; i >= 0; i -= 5) {
             Item item = itemlist[i];
             item.setFlag("\\SEEN");
-            ItemModifyJob *isj = new ItemModifyJob(item, this);
+            auto *isj = new ItemModifyJob(item, this);
             isj->exec();
         }
     }

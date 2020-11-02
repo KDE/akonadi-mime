@@ -70,7 +70,7 @@ void MarkAsCommand::slotCollectionFetchDone(KJob *job)
         return;
     }
 
-    Akonadi::CollectionFetchJob *fjob = static_cast<Akonadi::CollectionFetchJob *>(job);
+    auto *fjob = static_cast<Akonadi::CollectionFetchJob *>(job);
     d->mFolders += fjob->collections();
     d->mFolderListJobCount = d->mFolders.size();
 
@@ -90,7 +90,7 @@ void MarkAsCommand::slotFetchDone(KJob *job)
         return;
     }
 
-    Akonadi::ItemFetchJob *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
+    auto *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
     d->mMessages.clear();
     const auto items = fjob->items();
     for (const Akonadi::Item &item : items) {
@@ -113,7 +113,7 @@ void MarkAsCommand::slotFetchDone(KJob *job)
         markMessages();
     }
     if (d->mFolderListJobCount > 0) {
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
+        auto *job = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         connect(job, &Akonadi::ItemFetchJob::result, this, &MarkAsCommand::slotFetchDone);
     }
@@ -125,14 +125,14 @@ void MarkAsCommand::execute()
         if (KMessageBox::questionYesNo(qobject_cast<QWidget *>(parent()),
                                        i18n("Are you sure you want to mark all messages in this folder and all its subfolders?"),
                                        i18n("Mark All Recursively")) == KMessageBox::Yes) {
-            Akonadi::CollectionFetchJob *job = new Akonadi::CollectionFetchJob(d->mFolders.constFirst());
+            auto *job = new Akonadi::CollectionFetchJob(d->mFolders.constFirst());
             connect(job, &Akonadi::CollectionFetchJob::result, this, &MarkAsCommand::slotCollectionFetchDone);
         } else {
             emitResult(Canceled);
         }
     } else if (!d->mFolders.isEmpty()) {
         //yes, we go backwards, shouldn't matter
-        Akonadi::ItemFetchJob *job = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
+        auto *job = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         connect(job, &Akonadi::ItemFetchJob::result, this, &MarkAsCommand::slotFetchDone);
     } else if (!d->mMessages.isEmpty()) {
@@ -177,7 +177,7 @@ void MarkAsCommand::markMessages()
     if (itemsToModify.isEmpty()) {
         slotModifyItemDone(nullptr);   // pretend we did something
     } else {
-        Akonadi::ItemModifyJob *modifyJob = new Akonadi::ItemModifyJob(itemsToModify, this);
+        auto *modifyJob = new Akonadi::ItemModifyJob(itemsToModify, this);
         modifyJob->setIgnorePayload(true);
         modifyJob->disableRevisionCheck();
         connect(modifyJob, &Akonadi::ItemModifyJob::result, this, &MarkAsCommand::slotModifyItemDone);

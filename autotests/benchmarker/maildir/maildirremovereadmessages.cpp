@@ -29,13 +29,13 @@ void MailDirRemoveReadMessages::runTest()
     clj4->exec();
     const Collection::List list4 = clj4->collections();
     for (const Collection &collection : list4) {
-        ItemFetchJob *ifj = new ItemFetchJob(collection, this);
+        auto *ifj = new ItemFetchJob(collection, this);
         ifj->exec();
         const auto items = ifj->items();
         for (const Item &item : items) {
             // delete read messages
             if (item.hasFlag("\\SEEN")) {
-                ItemDeleteJob *idj = new ItemDeleteJob(item, this);
+                auto *idj = new ItemDeleteJob(item, this);
                 idj->exec();
             }
         }

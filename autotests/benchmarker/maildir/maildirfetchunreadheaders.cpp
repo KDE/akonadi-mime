@@ -33,7 +33,7 @@ void MailDirFetchUnreadHeaders::runTest()
     clj3->exec();
     const Collection::List list3 = clj3->collections();
     for (const Collection &collection : list3) {
-        ItemFetchJob *ifj = new ItemFetchJob(collection, this);
+        auto *ifj = new ItemFetchJob(collection, this);
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();
         QString a;

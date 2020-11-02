@@ -516,7 +516,7 @@ public:
             return;
         }
 
-        MarkAsCommand *command = new MarkAsCommand(targetStatus, items, invert, mParent);
+        auto *command = new MarkAsCommand(targetStatus, items, invert, mParent);
         command->execute();
     }
 
@@ -569,7 +569,7 @@ public:
             return;
         }
 
-        MarkAsCommand *command = new MarkAsCommand(targetStatus, collections, invert, recursive, mParent);
+        auto *command = new MarkAsCommand(targetStatus, collections, invert, recursive, mParent);
         command->execute();
     }
 
@@ -601,7 +601,7 @@ public:
             return;
         }
 
-        MoveToTrashCommand *command = new MoveToTrashCommand(mCollectionSelectionModel->model(), items, mParent);
+        auto *command = new MoveToTrashCommand(mCollectionSelectionModel->model(), items, mParent);
         command->execute();
     }
 
@@ -620,7 +620,7 @@ public:
             return;
         }
 
-        MoveToTrashCommand *command = new MoveToTrashCommand(mCollectionSelectionModel->model(), collections, mParent);
+        auto *command = new MoveToTrashCommand(mCollectionSelectionModel->model(), collections, mParent);
         command->execute();
     }
 
@@ -635,7 +635,7 @@ public:
             return;
         }
 
-        RemoveDuplicatesJob *job = new RemoveDuplicatesJob(collections, mParent);
+        auto *job = new RemoveDuplicatesJob(collections, mParent);
         connect(job, &RemoveDuplicatesJob::finished, mParent, [this](KJob *job) {
             slotJobFinished(job);
         });
@@ -654,7 +654,7 @@ public:
             return;
         }
 
-        EmptyTrashCommand *command = new EmptyTrashCommand(const_cast<QAbstractItemModel *>(mCollectionSelectionModel->model()), mParent);
+        auto *command = new EmptyTrashCommand(const_cast<QAbstractItemModel *>(mCollectionSelectionModel->model()), mParent);
         command->execute();
     }
 
@@ -673,7 +673,7 @@ public:
             return;
         }
 
-        EmptyTrashCommand *command = new EmptyTrashCommand(collections.first(), mParent);
+        auto *command = new EmptyTrashCommand(collections.first(), mParent);
         command->execute();
     }
 

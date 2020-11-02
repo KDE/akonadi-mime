@@ -155,7 +155,7 @@ void SpecialMailCollections::verifyI18nDefaultCollection(Type type)
         if (collection.hasAttribute<Akonadi::EntityDisplayAttribute>()) {
             if (collection.attribute<Akonadi::EntityDisplayAttribute>()->displayName() != defaultI18n) {
                 collection.attribute<Akonadi::EntityDisplayAttribute>()->setDisplayName(defaultI18n);
-                Akonadi::CollectionModifyJob *job = new Akonadi::CollectionModifyJob(collection, this);
+                auto *job = new Akonadi::CollectionModifyJob(collection, this);
                 connect(job, &Akonadi::CollectionModifyJob::result, this, &SpecialMailCollections::slotCollectionModified);
             }
         }

@@ -34,7 +34,7 @@ HeadFetcher::HeadFetcher(bool multipart)
     clj->exec();
     const Collection::List list = clj->collections();
     for (const Collection &collection : list) {
-        ItemFetchJob *ifj = new ItemFetchJob(collection, this);
+        auto *ifj = new ItemFetchJob(collection, this);
         if (multipart) {
             ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         } else {

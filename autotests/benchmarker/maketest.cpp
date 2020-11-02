@@ -31,7 +31,7 @@ void MakeTest::createAgent(const QString &name)
 {
     const AgentType type = AgentManager::self()->type(name);
 
-    AgentInstanceCreateJob *job = new AgentInstanceCreateJob(type);
+    auto *job = new AgentInstanceCreateJob(type);
     job->exec();
     currentInstance = job->instance();
 
@@ -98,7 +98,7 @@ void MakeTest::removeCollections()
     clj5->exec();
     const Collection::List list5 = clj5->collections();
     for (const Collection &collection : list5) {
-        CollectionDeleteJob *cdj = new CollectionDeleteJob(collection, this);
+        auto *cdj = new CollectionDeleteJob(collection, this);
         cdj->exec();
     }
     outputStats(QStringLiteral("removeallcollections"));

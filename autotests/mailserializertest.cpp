@@ -39,7 +39,7 @@ void MailSerializerTest::testEnvelopeDeserialize_data()
     QTest::newRow("v1 - no references")
         << 1
         << QByteArray(
-        "(\"Wed, 1 Feb 2006 13:37:19 UT\" \"IMPORTANT: Akonadi Test\" ((\"Tobias Koenig\" NIL \"tokoe\" \"kde.org\")) ((\"Tobias Koenig\" NIL \"tokoe\" \"kde.org\")) NIL ((\"Ingo Kloecker\" NIL \"kloecker\" \"kde.org\")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>)")
+        R"(("Wed, 1 Feb 2006 13:37:19 UT" "IMPORTANT: Akonadi Test" (("Tobias Koenig" NIL "tokoe" "kde.org")) (("Tobias Koenig" NIL "tokoe" "kde.org")) NIL (("Ingo Kloecker" NIL "kloecker" "kde.org")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>))")
         << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC)
         << QStringLiteral("IMPORTANT: Akonadi Test")
         << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
@@ -53,7 +53,7 @@ void MailSerializerTest::testEnvelopeDeserialize_data()
     QTest::newRow("v1 - with references")
         << 1
         << QByteArray(
-        "(\"Wed, 1 Feb 2006 13:37:19 UT\" \"IMPORTANT: Akonadi Test\" ((\"Tobias Koenig\" NIL \"tokoe\" \"kde.org\")) ((\"Tobias Koenig\" NIL \"tokoe\" \"kde.org\")) NIL ((\"Ingo Kloecker\" NIL \"kloecker\" \"kde.org\")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org> \"<{8888827e-77f4-489d-bf18-e805be96718c}@server.kde.org> <{9999927e-77f4-489d-bf18-e805be96718c}@server.kde.org>\")")
+        R"(("Wed, 1 Feb 2006 13:37:19 UT" "IMPORTANT: Akonadi Test" (("Tobias Koenig" NIL "tokoe" "kde.org")) (("Tobias Koenig" NIL "tokoe" "kde.org")) NIL (("Ingo Kloecker" NIL "kloecker" "kde.org")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org> "<{8888827e-77f4-489d-bf18-e805be96718c}@server.kde.org> <{9999927e-77f4-489d-bf18-e805be96718c}@server.kde.org>"))")
         << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC)
         << QStringLiteral("IMPORTANT: Akonadi Test")
         << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
@@ -116,7 +116,7 @@ void MailSerializerTest::testEnvelopeDeserialize()
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
 
-    SerializerPluginMail *serializer = new SerializerPluginMail();
+    auto *serializer = new SerializerPluginMail();
 
     // envelope
     QBuffer buffer;
@@ -205,7 +205,7 @@ void MailSerializerTest::testEnvelopeSerialize()
 
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
-    Message *msg = new Message();
+    auto *msg = new Message();
     msg->date()->setDateTime(date);
     msg->subject()->fromUnicodeString(subject, "UTF-8");
     msg->from()->fromUnicodeString(from, "UTF-8");
@@ -219,7 +219,7 @@ void MailSerializerTest::testEnvelopeSerialize()
     msg->references()->fromUnicodeString(references, "UTF-8");
     i.setPayload(KMime::Message::Ptr(msg));
 
-    SerializerPluginMail *serializer = new SerializerPluginMail();
+    auto *serializer = new SerializerPluginMail();
 
     // envelope
     QByteArray env;
@@ -240,11 +240,11 @@ void MailSerializerTest::testParts()
 {
     Item item;
     item.setMimeType(QStringLiteral("message/rfc822"));
-    KMime::Message *m = new Message;
+    auto *m = new Message;
     KMime::Message::Ptr msg(m);
     item.setPayload(msg);
 
-    SerializerPluginMail *serializer = new SerializerPluginMail();
+    auto *serializer = new SerializerPluginMail();
     QVERIFY(serializer->parts(item).isEmpty());
 
     msg->setHead("foo");
@@ -268,7 +268,7 @@ void MailSerializerTest::testHeaderFetch()
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
 
-    SerializerPluginMail *serializer = new SerializerPluginMail();
+    auto *serializer = new SerializerPluginMail();
 
     QByteArray headerData("From: David Johnson <david@usermode.org>\n"
                           "To: kde-commits@kde.org\n"
@@ -307,7 +307,7 @@ void MailSerializerTest::testMultiDeserialize()
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
 
-    SerializerPluginMail *serializer = new SerializerPluginMail();
+    auto *serializer = new SerializerPluginMail();
 
     QByteArray messageData("From: David Johnson <david@usermode.org>\n"
                            "To: kde-commits@kde.org\n"
