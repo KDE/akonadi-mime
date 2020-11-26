@@ -106,7 +106,7 @@ void LocalFoldersTest::testInitialState()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    Q_UNUSED(smct);
+    Q_UNUSED(smct)
 
     // No one has created the default resource.
     QVERIFY(sc->d->defaultResource().identifier().isEmpty());

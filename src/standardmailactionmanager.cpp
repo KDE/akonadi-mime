@@ -406,7 +406,7 @@ public:
                        const Collection::List &selectedFavoriteCollections,
                        const Item::List &selectedItems)
     {
-        Q_UNUSED(selectedFavoriteCollections);
+        Q_UNUSED(selectedFavoriteCollections)
         const bool itemIsSelected = !selectedItems.isEmpty();
         const bool collectionIsSelected = !selectedCollections.isEmpty();
         updateActionsFromSelectedItems(selectedItems);

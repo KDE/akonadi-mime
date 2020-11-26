@@ -40,7 +40,7 @@ void LocalFoldersRequestJobTest::initTestCase()
     SpecialMailCollectionsTesting *smct = SpecialMailCollectionsTesting::_t_self();
     Q_ASSERT(smc);
     Q_ASSERT(smct);
-    Q_UNUSED(smc);
+    Q_UNUSED(smc)
 
     // No one has created the default resource.  LF has no folders.
     QCOMPARE(smct->_t_knownResourceCount(), 0);

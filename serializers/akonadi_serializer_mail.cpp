@@ -59,7 +59,7 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hd
 template<typename T>
 static void parseAddrList(QDataStream &stream, T *hdr, int version, StringPool &pool)
 {
-    Q_UNUSED(version);
+    Q_UNUSED(version)
 
     hdr->clear();
     int count = 0;
