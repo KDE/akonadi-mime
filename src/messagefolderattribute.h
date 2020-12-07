@@ -34,7 +34,7 @@ public:
     /**
       Destructor.
     */
-    ~MessageFolderAttribute();
+    ~MessageFolderAttribute() override;
 
     /**
       Indicates if the folder is supposed to contain mostly outbound messages.
