@@ -753,7 +753,7 @@ QAction *StandardMailActionManager::createAction(Type type)
         d->mActions.insert(MarkMailAsRead, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_as_read"), action);
         action->setData(QByteArray("R"));
-        d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_R));
+        d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_R));
         connect(action, &QAction::triggered, this, [this]() {
             d->slotMarkAs();
         });
@@ -767,7 +767,7 @@ QAction *StandardMailActionManager::createAction(Type type)
         action->setWhatsThis(i18n("Mark selected messages as unread."));
         d->mActions.insert(MarkMailAsUnread, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_mark_as_unread"), action);
-        d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_U));
+        d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_U));
         action->setData(QByteArray("U"));
         connect(action, &QAction::triggered, this, [this]() {
             d->slotMarkAs();
@@ -901,7 +901,7 @@ QAction *StandardMailActionManager::createAction(Type type)
         action->setText(i18n("Remove &Duplicate Messages"));
         d->setHelpText(action, i18n("Remove duplicate messages."));
         action->setWhatsThis(i18n("Remove duplicate messages."));
-        d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL + Qt::Key_Asterisk));
+        d->mActionCollection->setDefaultShortcut(action, QKeySequence(Qt::CTRL | Qt::Key_Asterisk));
         d->mActions.insert(RemoveDuplicates, action);
         d->mActionCollection->addAction(QStringLiteral("akonadi_remove_duplicates"), action);
         connect(action, &QAction::triggered, this, [this]() {
