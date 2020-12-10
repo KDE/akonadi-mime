@@ -7,7 +7,6 @@ macro(ADD_AKONADIMIME_TEST)
     target_link_libraries(${_testName}
       KF5::Mime
       Qt5::Test
-      KF5::Codecs
       KF5::AkonadiCore
       KF5::AkonadiMime
     )
