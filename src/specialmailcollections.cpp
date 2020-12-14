@@ -44,7 +44,7 @@ static const char s_specialCollectionTypes[SpecialMailCollections::LastType][11]
 
 static const int s_numTypes = sizeof s_specialCollectionTypes / sizeof *s_specialCollectionTypes;
 
-static inline QByteArray enumToType(SpecialMailCollections::Type value)
+static inline QByteArray enumToByteArray(SpecialMailCollections::Type value)
 {
     return s_specialCollectionTypes[value];
 }
@@ -92,17 +92,17 @@ SpecialMailCollections *SpecialMailCollections::self()
 
 bool SpecialMailCollections::hasCollection(Type type, const AgentInstance &instance) const
 {
-    return SpecialCollections::hasCollection(enumToType(type), instance);
+    return SpecialCollections::hasCollection(enumToByteArray(type), instance);
 }
 
 Collection SpecialMailCollections::collection(Type type, const AgentInstance &instance) const
 {
-    return SpecialCollections::collection(enumToType(type), instance);
+    return SpecialCollections::collection(enumToByteArray(type), instance);
 }
 
 bool SpecialMailCollections::registerCollection(Type type, const Collection &collection)
 {
-    return SpecialCollections::registerCollection(enumToType(type), collection);
+    return SpecialCollections::registerCollection(enumToByteArray(type), collection);
 }
 
 bool SpecialMailCollections::unregisterCollection(const Collection &collection)
@@ -116,12 +116,12 @@ bool SpecialMailCollections::unregisterCollection(const Collection &collection)
 
 bool SpecialMailCollections::hasDefaultCollection(Type type) const
 {
-    return SpecialCollections::hasDefaultCollection(enumToType(type));
+    return SpecialCollections::hasDefaultCollection(enumToByteArray(type));
 }
 
 Collection SpecialMailCollections::defaultCollection(Type type) const
 {
-    return SpecialCollections::defaultCollection(enumToType(type));
+    return SpecialCollections::defaultCollection(enumToByteArray(type));
 }
 
 void SpecialMailCollections::verifyI18nDefaultCollection(Type type)
