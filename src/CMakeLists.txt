@@ -66,7 +66,7 @@ install(FILES
     )
 
 add_library(KF5AkonadiMime ${akonadimime_SRCS})
-if (COMPILE_WITH_CMAKE_SUPPORT)
+if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5AkonadiMime PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(KF5AkonadiMime BASE_NAME akonadi-mime)
