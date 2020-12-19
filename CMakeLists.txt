@@ -8,7 +8,7 @@ set(KF5_MIN_VERSION "5.77.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
-set(QT_REQUIRED_VERSION "5.13.0")
+set(QT_REQUIRED_VERSION "5.14.0")
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
