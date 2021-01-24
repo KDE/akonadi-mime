@@ -28,12 +28,12 @@ void MailDirFetchAllHeaders::runTest()
 {
     timer.start();
     qDebug() << "  Listing all headers of every folder.";
-    CollectionFetchJob *clj = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
+    auto clj = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj->fetchScope().setResource(currentInstance.identifier());
     clj->exec();
     const Collection::List list = clj->collections();
     for (const Collection &collection : list) {
-        auto *ifj = new ItemFetchJob(collection, this);
+        auto ifj = new ItemFetchJob(collection, this);
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();
         QString a;

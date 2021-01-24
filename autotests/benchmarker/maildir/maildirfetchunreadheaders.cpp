@@ -28,12 +28,12 @@ void MailDirFetchUnreadHeaders::runTest()
 {
     timer.start();
     qDebug() << "  Listing headers of unread messages of every folder.";
-    CollectionFetchJob *clj3 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
+    auto clj3 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj3->fetchScope().setResource(currentInstance.identifier());
     clj3->exec();
     const Collection::List list3 = clj3->collections();
     for (const Collection &collection : list3) {
-        auto *ifj = new ItemFetchJob(collection, this);
+        auto ifj = new ItemFetchJob(collection, this);
         ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         ifj->exec();
         QString a;

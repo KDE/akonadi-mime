@@ -116,7 +116,7 @@ void MailSerializerTest::testEnvelopeDeserialize()
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
 
-    auto *serializer = new SerializerPluginMail();
+    auto serializer = new SerializerPluginMail();
 
     // envelope
     QBuffer buffer;
@@ -205,7 +205,7 @@ void MailSerializerTest::testEnvelopeSerialize()
 
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
-    auto *msg = new Message();
+    auto msg = new Message();
     msg->date()->setDateTime(date);
     msg->subject()->fromUnicodeString(subject, "UTF-8");
     msg->from()->fromUnicodeString(from, "UTF-8");
@@ -219,7 +219,7 @@ void MailSerializerTest::testEnvelopeSerialize()
     msg->references()->fromUnicodeString(references, "UTF-8");
     i.setPayload(KMime::Message::Ptr(msg));
 
-    auto *serializer = new SerializerPluginMail();
+    auto serializer = new SerializerPluginMail();
 
     // envelope
     QByteArray env;
@@ -240,11 +240,11 @@ void MailSerializerTest::testParts()
 {
     Item item;
     item.setMimeType(QStringLiteral("message/rfc822"));
-    auto *m = new Message;
+    auto m = new Message;
     KMime::Message::Ptr msg(m);
     item.setPayload(msg);
 
-    auto *serializer = new SerializerPluginMail();
+    auto serializer = new SerializerPluginMail();
     QVERIFY(serializer->parts(item).isEmpty());
 
     msg->setHead("foo");
@@ -268,7 +268,7 @@ void MailSerializerTest::testHeaderFetch()
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
 
-    auto *serializer = new SerializerPluginMail();
+    auto serializer = new SerializerPluginMail();
 
     QByteArray headerData("From: David Johnson <david@usermode.org>\n"
                           "To: kde-commits@kde.org\n"
@@ -307,7 +307,7 @@ void MailSerializerTest::testMultiDeserialize()
     Item i;
     i.setMimeType(QStringLiteral("message/rfc822"));
 
-    auto *serializer = new SerializerPluginMail();
+    auto serializer = new SerializerPluginMail();
 
     QByteArray messageData("From: David Johnson <david@usermode.org>\n"
                            "To: kde-commits@kde.org\n"

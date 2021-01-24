@@ -88,7 +88,7 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
 
     KMime::Message::Ptr msg;
     if (!item.hasPayload()) {
-        auto *m = new  Message();
+        auto m = new Message();
         msg = KMime::Message::Ptr(m);
         item.setPayload(msg);
     } else {

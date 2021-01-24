@@ -21,7 +21,7 @@
 
 #include <array>
 
-typedef KMime::Message::Ptr MessagePtr;
+using MessagePtr = KMime::Message::Ptr;
 
 using namespace Akonadi;
 

@@ -88,7 +88,7 @@ void EmptyTrashCommand::execute()
 void EmptyTrashCommand::expunge(const Akonadi::Collection &col)
 {
     if (col.isValid()) {
-        auto *jobDelete = new Akonadi::ItemDeleteJob(col, this);
+        auto jobDelete = new Akonadi::ItemDeleteJob(col, this);
         connect(jobDelete, &Akonadi::ItemDeleteJob::result,
                 this, [this, jobDelete]() {
                     if (jobDelete->error()) {

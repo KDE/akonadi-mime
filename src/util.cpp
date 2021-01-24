@@ -23,7 +23,7 @@ void showJobError(KJob *job)
     assert(job);
     // we can be called from the KJob::kill, where we are no longer a KIO::Job
     // so better safe than sorry
-    auto *kiojob = qobject_cast<KIO::Job *>(job);
+    auto kiojob = qobject_cast<KIO::Job *>(job);
     if (kiojob && kiojob->uiDelegate()) {
         kiojob->uiDelegate()->showErrorMessage();
     } else {

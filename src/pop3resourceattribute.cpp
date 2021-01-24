@@ -27,7 +27,7 @@ Pop3ResourceAttribute::~Pop3ResourceAttribute() = default;
 
 Pop3ResourceAttribute *Pop3ResourceAttribute::clone() const
 {
-    auto *attr = new Pop3ResourceAttribute();
+    auto attr = new Pop3ResourceAttribute();
     attr->setPop3AccountName(pop3AccountName());
     return attr;
 }

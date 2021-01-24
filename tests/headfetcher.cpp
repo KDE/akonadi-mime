@@ -30,11 +30,11 @@ HeadFetcher::HeadFetcher(bool multipart)
     // fetch all headers from each folder
     timer.start();
     qDebug() << "Listing all headers of every folder, using" << (multipart ? "multi" : "single") << "part.";
-    CollectionFetchJob *clj = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
+    auto clj = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj->exec();
     const Collection::List list = clj->collections();
     for (const Collection &collection : list) {
-        auto *ifj = new ItemFetchJob(collection, this);
+        auto ifj = new ItemFetchJob(collection, this);
         if (multipart) {
             ifj->fetchScope().fetchPayloadPart(MessagePart::Envelope);
         } else {

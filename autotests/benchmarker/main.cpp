@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
     const QString maildir = parser.value(QStringLiteral("maildir"));
     const QString vcarddir = parser.value(QStringLiteral("vcarddir"));
 
-    auto *mailDirTest = new TestMailDir(maildir);
-    auto *vcardTest = new TestVCard(vcarddir);
+    auto mailDirTest = new TestMailDir(maildir);
+    auto vcardTest = new TestVCard(vcarddir);
 
     mailDirTest->runTests();
     vcardTest->runTests();

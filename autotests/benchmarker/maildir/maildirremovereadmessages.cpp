@@ -24,18 +24,18 @@ void MailDirRemoveReadMessages::runTest()
 {
     timer.start();
     qDebug() << "  Removing read messages from every folder.";
-    CollectionFetchJob *clj4 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
+    auto clj4 = new CollectionFetchJob(Collection::root(), CollectionFetchJob::Recursive);
     clj4->fetchScope().setResource(currentInstance.identifier());
     clj4->exec();
     const Collection::List list4 = clj4->collections();
     for (const Collection &collection : list4) {
-        auto *ifj = new ItemFetchJob(collection, this);
+        auto ifj = new ItemFetchJob(collection, this);
         ifj->exec();
         const auto items = ifj->items();
         for (const Item &item : items) {
             // delete read messages
             if (item.hasFlag("\\SEEN")) {
-                auto *idj = new ItemDeleteJob(item, this);
+                auto idj = new ItemDeleteJob(item, this);
                 idj->exec();
             }
         }

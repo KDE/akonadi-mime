@@ -29,7 +29,7 @@ public:
         Akonadi::Collection collection = mFolders.value(mJobCount - 1);
         qCDebug(AKONADIMIME_LOG) << "Processing collection" << collection.name() << "(" << collection.id() << ")";
 
-        auto *job = new Akonadi::ItemFetchJob(collection, mParent);
+        auto job = new Akonadi::ItemFetchJob(collection, mParent);
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         job->fetchScope().fetchFullPayload();
         job->fetchScope().setIgnoreRetrievalErrors(true);
@@ -58,7 +58,7 @@ public:
 
         Q_EMIT mParent->description(mParent, i18n("Searching for duplicates..."));
 
-        auto *fjob = static_cast<Akonadi::ItemFetchJob *>(job);
+        auto fjob = static_cast<Akonadi::ItemFetchJob *>(job);
         Akonadi::Item::List items = fjob->items();
 
         //find duplicate mails with the same messageid
@@ -116,7 +116,7 @@ public:
                 return;
             } else {
                 Q_EMIT mParent->description(mParent, i18n("Removing duplicates..."));
-                auto *delCmd = new Akonadi::ItemDeleteJob(mDuplicateItems, mParent);
+                auto delCmd = new Akonadi::ItemDeleteJob(mDuplicateItems, mParent);
                 mParent->connect(delCmd, &ItemDeleteJob::result, mParent, [this](KJob *job) {
                     slotDeleteDone(job);
                 });

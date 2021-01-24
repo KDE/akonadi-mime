@@ -28,7 +28,7 @@ NewMailNotifierAttribute::~NewMailNotifierAttribute() = default;
 
 NewMailNotifierAttribute *NewMailNotifierAttribute::clone() const
 {
-    auto *attr = new NewMailNotifierAttribute();
+    auto attr = new NewMailNotifierAttribute();
     attr->setIgnoreNewMail(ignoreNewMail());
     return attr;
 }
