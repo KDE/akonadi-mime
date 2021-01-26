@@ -14,7 +14,8 @@
 #include <collection.h>
 
 class QAbstractItemModel;
-namespace Akonadi {
+namespace Akonadi
+{
 class EmptyTrashCommand : public CommandBase
 {
     Q_OBJECT

@@ -12,16 +12,16 @@
 
 #include "messageparts.h"
 
-#include <QDebug>
 #include <QApplication>
+#include <QDebug>
 #include <QTimer>
 
 #include <kmime/kmime_message.h>
 
 #include <KAboutData>
 #include <KLocalizedString>
-#include <QCommandLineParser>
 #include <QCommandLineOption>
+#include <QCommandLineParser>
 
 using namespace Akonadi;
 

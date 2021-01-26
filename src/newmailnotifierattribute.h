@@ -15,7 +15,6 @@
 
 namespace Akonadi
 {
-
 class NewMailNotifierAttributePrivate;
 class AKONADI_MIME_EXPORT NewMailNotifierAttribute : public Akonadi::Attribute
 {

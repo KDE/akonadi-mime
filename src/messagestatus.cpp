@@ -21,16 +21,16 @@
     thread to Ignored and back. */
 enum Status {
     StatusUnknown = 0x00000000,
-    StatusUnread = 0x00000002,            // deprecated
+    StatusUnread = 0x00000002, // deprecated
     StatusRead = 0x00000004,
     StatusDeleted = 0x00000010,
     StatusReplied = 0x00000020,
     StatusForwarded = 0x00000040,
     StatusQueued = 0x00000080,
     StatusSent = 0x00000100,
-    StatusFlag = 0x00000200,              // flag means important
+    StatusFlag = 0x00000200, // flag means important
     StatusWatched = 0x00000400,
-    StatusIgnored = 0x00000800,           // forces isRead()
+    StatusIgnored = 0x00000800, // forces isRead()
     StatusToAct = 0x00001000,
     StatusSpam = 0x00002000,
     StatusHam = 0x00004000,

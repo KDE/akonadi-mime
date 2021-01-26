@@ -12,6 +12,10 @@
 
 #include <QDebug>
 
+#include "../src/specialmailcollectionstesting_p.h"
+#include "specialcollectionattribute.h"
+#include "specialcollections.h"
+#include <QStandardPaths>
 #include <agentinstance.h>
 #include <agentmanager.h>
 #include <collectioncreatejob.h>
@@ -20,12 +24,8 @@
 #include <collectionmodifyjob.h>
 #include <control.h>
 #include <qtest_akonadi.h>
-#include "specialcollectionattribute.h"
-#include "specialcollections.h"
 #include <specialmailcollections.h>
 #include <specialmailcollectionsrequestjob.h>
-#include <QStandardPaths>
-#include "../src/specialmailcollectionstesting_p.h"
 
 using namespace Akonadi;
 
@@ -70,7 +70,7 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
         QCOMPARE(spy.count(), 1);
         QCOMPARE(defSpy.count(), 1);
         QCOMPARE(smct->_t_knownResourceCount(), 1);
-        QCOMPARE(smct->_t_knownFolderCount(), 3);   // Outbox, Drafts, and Root.
+        QCOMPARE(smct->_t_knownFolderCount(), 3); // Outbox, Drafts, and Root.
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Drafts));
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Root));
@@ -100,13 +100,13 @@ void LocalFoldersRequestJobTest::testRequestWithDefaultResourceAlreadyExisting()
     // Request some default folders.
     {
         SpecialMailCollectionsRequestJob *rjob = new SpecialMailCollectionsRequestJob(this);
-        rjob->requestDefaultCollection(SpecialMailCollections::Outbox);   // Exists previously.
-        rjob->requestDefaultCollection(SpecialMailCollections::Inbox);   // Must be created.
+        rjob->requestDefaultCollection(SpecialMailCollections::Outbox); // Exists previously.
+        rjob->requestDefaultCollection(SpecialMailCollections::Inbox); // Must be created.
         AKVERIFYEXEC(rjob);
         QCOMPARE(spy.count(), 1);
         QCOMPARE(defSpy.count(), 1);
         QCOMPARE(smct->_t_knownResourceCount(), 1);
-        QCOMPARE(smct->_t_knownFolderCount(), 4);   // Inbox, Outbox, Drafts, and Root.
+        QCOMPARE(smct->_t_knownFolderCount(), 4); // Inbox, Outbox, Drafts, and Root.
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Inbox));
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Drafts));
@@ -163,12 +163,13 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     // Request some folders, both in our default resource and in the knut resource.
     {
         SpecialMailCollectionsRequestJob *rjob = new SpecialMailCollectionsRequestJob(this);
-        rjob->requestDefaultCollection(SpecialMailCollections::Outbox);   // Exists previously.
-        rjob->requestDefaultCollection(SpecialMailCollections::SentMail);   // Must be created.
-        rjob->requestCollection(SpecialMailCollections::Outbox, AgentManager::self()->instance(res1.resource()));     // Exists previously, but unregistered with LF.
-        rjob->requestCollection(SpecialMailCollections::SentMail, AgentManager::self()->instance(res1.resource()));     // Must be created.
+        rjob->requestDefaultCollection(SpecialMailCollections::Outbox); // Exists previously.
+        rjob->requestDefaultCollection(SpecialMailCollections::SentMail); // Must be created.
+        rjob->requestCollection(SpecialMailCollections::Outbox,
+                                AgentManager::self()->instance(res1.resource())); // Exists previously, but unregistered with LF.
+        rjob->requestCollection(SpecialMailCollections::SentMail, AgentManager::self()->instance(res1.resource())); // Must be created.
         AKVERIFYEXEC(rjob);
-        QCOMPARE(spy.count(), 2);   // Default resource and knut resource.
+        QCOMPARE(spy.count(), 2); // Default resource and knut resource.
         QCOMPARE(defSpy.count(), 1);
         QCOMPARE(smct->_t_knownResourceCount(), 2);
         QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));

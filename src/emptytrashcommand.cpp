@@ -6,18 +6,18 @@
 */
 
 #include "emptytrashcommand.h"
-#include "util_p.h"
 #include "imapsettings.h"
 #include "specialmailcollections.h"
+#include "util_p.h"
 
 #include "akonadi_mime_debug.h"
 #include <KLocalizedString>
 #include <KMessageBox>
 
-#include <entitytreemodel.h>
-#include <itemfetchjob.h>
-#include <itemdeletejob.h>
 #include <agentmanager.h>
+#include <entitytreemodel.h>
+#include <itemdeletejob.h>
+#include <itemfetchjob.h>
 #include <kmime/kmime_message.h>
 using namespace Akonadi;
 EmptyTrashCommand::EmptyTrashCommand(const QAbstractItemModel *model, QObject *parent)
@@ -42,11 +42,14 @@ void EmptyTrashCommand::execute()
         return;
     }
 
-    if (!mFolder.isValid()) {   //expunge all
+    if (!mFolder.isValid()) { // expunge all
         const QString title = i18n("Empty Trash");
         const QString text = i18n("Are you sure you want to empty the trash folders of all accounts?");
-        if (KMessageBox::warningContinueCancel(nullptr, text, title,
-                                               KStandardGuiItem::cont(), KStandardGuiItem::cancel(),
+        if (KMessageBox::warningContinueCancel(nullptr,
+                                               text,
+                                               title,
+                                               KStandardGuiItem::cont(),
+                                               KStandardGuiItem::cancel(),
                                                QStringLiteral("confirm_empty_trash"))
             != KMessageBox::Continue) {
             emitResult(OK);
@@ -89,14 +92,13 @@ void EmptyTrashCommand::expunge(const Akonadi::Collection &col)
 {
     if (col.isValid()) {
         auto jobDelete = new Akonadi::ItemDeleteJob(col, this);
-        connect(jobDelete, &Akonadi::ItemDeleteJob::result,
-                this, [this, jobDelete]() {
-                    if (jobDelete->error()) {
-                        Util::showJobError(jobDelete);
-                        emitResult(Failed);
-                    }
-                    emitResult(OK);
-                });
+        connect(jobDelete, &Akonadi::ItemDeleteJob::result, this, [this, jobDelete]() {
+            if (jobDelete->error()) {
+                Util::showJobError(jobDelete);
+                emitResult(Failed);
+            }
+            emitResult(OK);
+        });
     } else {
         qCWarning(AKONADIMIME_LOG) << " Try to expunge an invalid collection :" << col;
         emitResult(Failed);
@@ -108,8 +110,7 @@ Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
     Akonadi::AgentInstance::List relevantInstances;
     const auto instances = Akonadi::AgentManager::self()->instances();
     for (const Akonadi::AgentInstance &instance : instances) {
-        if (instance.type().mimeTypes().contains(KMime::Message::mimeType())
-            && instance.type().capabilities().contains(QLatin1String("Resource"))
+        if (instance.type().mimeTypes().contains(KMime::Message::mimeType()) && instance.type().capabilities().contains(QLatin1String("Resource"))
             && !instance.type().capabilities().contains(QLatin1String("Virtual"))) {
             relevantInstances << instance;
         }
@@ -119,8 +120,7 @@ Akonadi::AgentInstance::List EmptyTrashCommand::agentInstances()
 
 Akonadi::Collection EmptyTrashCommand::collectionFromId(Collection::Id id) const
 {
-    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(
-        mModel, Akonadi::Collection(id));
+    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(mModel, Akonadi::Collection(id));
     return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 }
 

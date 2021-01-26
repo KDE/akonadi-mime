@@ -7,8 +7,8 @@
 #ifndef HEADFETCHER_H
 #define HEADFETCHER_H
 
-#include <QObject>
 #include <QElapsedTimer>
+#include <QObject>
 
 class HeadFetcher : public QObject
 {
@@ -17,6 +17,7 @@ public:
     HeadFetcher(bool multipart);
 private Q_SLOTS:
     void stop();
+
 private:
     QElapsedTimer timer;
 };

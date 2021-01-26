@@ -7,13 +7,14 @@
 #ifndef __AKONADI_SERIALIZER_MAIL_H__
 #define __AKONADI_SERIALIZER_MAIL_H__
 
-#include <QObject>
 #include <QMutex>
+#include <QObject>
 
-#include <AkonadiCore/itemserializerplugin.h>
 #include <AkonadiCore/gidextractorinterface.h>
+#include <AkonadiCore/itemserializerplugin.h>
 
-namespace Akonadi {
+namespace Akonadi
+{
 /**
  * Levare QString implicit sharing to decrease memory consumption.
  *
@@ -29,6 +30,7 @@ public:
      * add the value to the pool and return it again.
      */
     QString sharedValue(const QString &value);
+
 private:
     QMutex m_mutex;
     QSet<QString> m_pool;
@@ -44,6 +46,7 @@ public:
     void serialize(const Item &item, const QByteArray &label, QIODevice &data, int &version) override;
     QSet<QByteArray> parts(const Item &item) const override;
     QString extractGid(const Item &item) const override;
+
 private:
     StringPool m_stringPool;
 };

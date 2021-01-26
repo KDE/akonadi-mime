@@ -7,13 +7,13 @@
 #include "akonadi_serializer_mail.h"
 #include "akonadi_serializer_mail_debug.h"
 
-#include <qplugin.h>
 #include <QDataStream>
+#include <qplugin.h>
 
 #include <KMime/Message>
 
-#include <AkonadiCore/Item>
 #include <Akonadi/KMime/MessageParts>
+#include <AkonadiCore/Item>
 #include <akonadi/private/imapparser_p.h>
 
 using namespace Akonadi;
@@ -30,16 +30,15 @@ QString StringPool::sharedValue(const QString &value)
     return value;
 }
 
-template<typename T>
-static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hdr, int version, StringPool &pool)
+template<typename T> static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hdr, int version, StringPool &pool)
 {
     hdr->clear();
     const int count = addrList.count();
     QVarLengthArray<QByteArray, 16> addr;
     for (int i = 0; i < count; ++i) {
-        ImapParser::parseParenthesizedList(addrList[ i ], addr);
+        ImapParser::parseParenthesizedList(addrList[i], addr);
         if (addr.count() != 4) {
-            qCWarning(AKONADI_SERIALIZER_MAIL_LOG) << "Error parsing envelope address field: " << addrList[ i ];
+            qCWarning(AKONADI_SERIALIZER_MAIL_LOG) << "Error parsing envelope address field: " << addrList[i];
             continue;
         }
         KMime::Types::Mailbox addrField;
@@ -56,8 +55,7 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hd
     }
 }
 
-template<typename T>
-static void parseAddrList(QDataStream &stream, T *hdr, int version, StringPool &pool)
+template<typename T> static void parseAddrList(QDataStream &stream, T *hdr, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -206,15 +204,12 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
     return true;
 }
 
-template<typename T>
-static void serializeAddrList(QDataStream &stream, T *hdr)
+template<typename T> static void serializeAddrList(QDataStream &stream, T *hdr)
 {
     const KMime::Types::Mailbox::List mb = hdr->mailboxes();
     stream << mb.size();
     for (const KMime::Types::Mailbox &mbox : mb) {
-        stream << mbox.name()
-               << mbox.addrSpec().localPart
-               << mbox.addrSpec().domain;
+        stream << mbox.name() << mbox.addrSpec().localPart << mbox.addrSpec().domain;
     }
 }
 
@@ -228,10 +223,7 @@ void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, 
     } else if (label == MessagePart::Envelope) {
         version = 2;
         QDataStream stream(&data);
-        stream << m->date()->dateTime()
-               << m->subject()->asUnicodeString()
-               << m->inReplyTo()->asUnicodeString()
-               << m->messageID()->asUnicodeString()
+        stream << m->date()->dateTime() << m->subject()->asUnicodeString() << m->inReplyTo()->asUnicodeString() << m->messageID()->asUnicodeString()
                << m->references()->asUnicodeString();
         serializeAddrList(stream, m->from());
         serializeAddrList(stream, m->sender());

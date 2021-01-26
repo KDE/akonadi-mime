@@ -10,7 +10,8 @@
 #include "akonadi-mimeprivate_export.h"
 #include "specialmailcollections.h"
 
-namespace Akonadi {
+namespace Akonadi
+{
 /**
   @internal
   Class that exposes SpecialMailCollections' private methods for use in unit tests.

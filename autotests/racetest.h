@@ -7,8 +7,8 @@
 #ifndef RACETEST_H
 #define RACETEST_H
 
-#include <QObject>
 #include <QList>
+#include <QObject>
 
 class KProcess;
 

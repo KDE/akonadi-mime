@@ -14,8 +14,8 @@
 #include <itemfetchscope.h>
 #include <itemmodifyjob.h>
 
-#include <kmime/kmime_message.h>
 #include "akonadi/kmime/messageparts.h"
+#include <kmime/kmime_message.h>
 
 #define WAIT_TIME 100
 

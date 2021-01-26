@@ -15,7 +15,8 @@
 
 class QString;
 
-namespace Akonadi {
+namespace Akonadi
+{
 //---------------------------------------------------------------------------
 /**
   @short Akonadi KMime Message Status.
@@ -173,9 +174,9 @@ public:
     /* ----- setters ----------------------------------------------------- */
 
     /**
-      * Set the status to read
-      * @param read new read status
-    */
+     * Set the status to read
+     * @param read new read status
+     */
     void setRead(bool read = true);
 
     /** Set the status for deleted.

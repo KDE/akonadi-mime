@@ -5,14 +5,14 @@
 */
 
 #include "specialmailcollections.h"
-#include "specialmailcollectionssettings.h"
 #include "akonadi_mime_debug.h"
+#include "specialmailcollectionssettings.h"
 
-#include <specialcollectionattribute.h>
-#include <entitydisplayattribute.h>
-#include <collectionmodifyjob.h>
 #include <agentinstance.h>
+#include <collectionmodifyjob.h>
+#include <entitydisplayattribute.h>
 #include <servermanager.h>
+#include <specialcollectionattribute.h>
 
 #include <KLocalizedString>
 #include <Kdelibs4ConfigMigrator>
@@ -32,15 +32,8 @@ typedef SpecialMailCollectionsSettings Settings;
 
 Q_GLOBAL_STATIC(SpecialMailCollectionsPrivate, sInstance)
 
-static const char s_specialCollectionTypes[SpecialMailCollections::LastType][11] = {
-    "local-mail",
-    "inbox",
-    "outbox",
-    "sent-mail",
-    "trash",
-    "drafts",
-    "templates"
-};
+static const char s_specialCollectionTypes[SpecialMailCollections::LastType][11] =
+    {"local-mail", "inbox", "outbox", "sent-mail", "trash", "drafts", "templates"};
 
 static const int s_numTypes = sizeof s_specialCollectionTypes / sizeof *s_specialCollectionTypes;
 

@@ -12,8 +12,8 @@
 
 #include <KMime/Message>
 
-#include <QTest>
 #include <QBuffer>
+#include <QTest>
 
 using namespace Akonadi;
 using namespace KMime;
@@ -39,62 +39,37 @@ void MailSerializerTest::testEnvelopeDeserialize_data()
     QTest::newRow("v1 - no references")
         << 1
         << QByteArray(
-        R"(("Wed, 1 Feb 2006 13:37:19 UT" "IMPORTANT: Akonadi Test" (("Tobias Koenig" NIL "tokoe" "kde.org")) (("Tobias Koenig" NIL "tokoe" "kde.org")) NIL (("Ingo Kloecker" NIL "kloecker" "kde.org")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>))")
-        << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC)
-        << QStringLiteral("IMPORTANT: Akonadi Test")
-        << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
-        << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
-        << QString()
-        << QStringLiteral("Ingo Kloecker <kloecker@kde.org>")
-        << QString() << QString() << QString()
-        << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>")
-        << QString();
+               R"(("Wed, 1 Feb 2006 13:37:19 UT" "IMPORTANT: Akonadi Test" (("Tobias Koenig" NIL "tokoe" "kde.org")) (("Tobias Koenig" NIL "tokoe" "kde.org")) NIL (("Ingo Kloecker" NIL "kloecker" "kde.org")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>))")
+        << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC) << QStringLiteral("IMPORTANT: Akonadi Test")
+        << QStringLiteral("Tobias Koenig <tokoe@kde.org>") << QStringLiteral("Tobias Koenig <tokoe@kde.org>") << QString()
+        << QStringLiteral("Ingo Kloecker <kloecker@kde.org>") << QString() << QString() << QString()
+        << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>") << QString();
 
     QTest::newRow("v1 - with references")
         << 1
         << QByteArray(
-        R"(("Wed, 1 Feb 2006 13:37:19 UT" "IMPORTANT: Akonadi Test" (("Tobias Koenig" NIL "tokoe" "kde.org")) (("Tobias Koenig" NIL "tokoe" "kde.org")) NIL (("Ingo Kloecker" NIL "kloecker" "kde.org")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org> "<{8888827e-77f4-489d-bf18-e805be96718c}@server.kde.org> <{9999927e-77f4-489d-bf18-e805be96718c}@server.kde.org>"))")
-        << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC)
-        << QStringLiteral("IMPORTANT: Akonadi Test")
-        << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
-        << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
-        << QString()
-        << QStringLiteral("Ingo Kloecker <kloecker@kde.org>")
-        << QString()
-        << QString()
-        << QString()
+               R"(("Wed, 1 Feb 2006 13:37:19 UT" "IMPORTANT: Akonadi Test" (("Tobias Koenig" NIL "tokoe" "kde.org")) (("Tobias Koenig" NIL "tokoe" "kde.org")) NIL (("Ingo Kloecker" NIL "kloecker" "kde.org")) NIL NIL NIL <{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org> "<{8888827e-77f4-489d-bf18-e805be96718c}@server.kde.org> <{9999927e-77f4-489d-bf18-e805be96718c}@server.kde.org>"))")
+        << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC) << QStringLiteral("IMPORTANT: Akonadi Test")
+        << QStringLiteral("Tobias Koenig <tokoe@kde.org>") << QStringLiteral("Tobias Koenig <tokoe@kde.org>") << QString()
+        << QStringLiteral("Ingo Kloecker <kloecker@kde.org>") << QString() << QString() << QString()
         << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>")
         << QStringLiteral("<{8888827e-77f4-489d-bf18-e805be96718c}@server.kde.org> <{9999927e-77f4-489d-bf18-e805be96718c}@server.kde.org>");
 
     QBuffer buffer;
     buffer.open(QIODevice::WriteOnly);
     QDataStream stream(&buffer);
-    stream << QDateTime(QDate(2015, 6, 29), QTime(23, 50, 10), Qt::UTC)
-           << QStringLiteral("Důležité: Testování Akonadi")
-           << QStringLiteral("<1234567.icameup@withthis>")
-           << QStringLiteral("<2849719.IhmDc3qecs@thor>")
-           << QStringLiteral("<1234567.icameup@withthis> <7654321.icameupwith@thistoo>")
-           << 1 << QStringLiteral("Daniel Vrátil") << QStringLiteral("dvratil") << QStringLiteral("kde.org")
-           << 1 << QStringLiteral("Daniel Vrátil") << QStringLiteral("dvratil") << QStringLiteral("kde.org")
-           << 0
-           << 1 << QStringLiteral("Volker Krause") << QStringLiteral("vkrause") << QStringLiteral("kde.org")
-           << 0
-           << 0;
+    stream << QDateTime(QDate(2015, 6, 29), QTime(23, 50, 10), Qt::UTC) << QStringLiteral("Důležité: Testování Akonadi")
+           << QStringLiteral("<1234567.icameup@withthis>") << QStringLiteral("<2849719.IhmDc3qecs@thor>")
+           << QStringLiteral("<1234567.icameup@withthis> <7654321.icameupwith@thistoo>") << 1 << QStringLiteral("Daniel Vrátil") << QStringLiteral("dvratil")
+           << QStringLiteral("kde.org") << 1 << QStringLiteral("Daniel Vrátil") << QStringLiteral("dvratil") << QStringLiteral("kde.org") << 0 << 1
+           << QStringLiteral("Volker Krause") << QStringLiteral("vkrause") << QStringLiteral("kde.org") << 0 << 0;
 
-    QTest::newRow("v2")
-        << 2
-        << buffer.data()
-        << QDateTime(QDate(2015, 6, 29), QTime(23, 50, 10), Qt::UTC)
-        << QStringLiteral("Důležité: Testování Akonadi")
-        << QStringLiteral("Daniel Vrátil <dvratil@kde.org>")
-        << QStringLiteral("Daniel Vrátil <dvratil@kde.org>")
-        << QString()     // reply to
-        << QStringLiteral("Volker Krause <vkrause@kde.org>")
-        << QString()     // cc
-        << QString()     // bcc
-        << QStringLiteral("<1234567.icameup@withthis>")
-        << QStringLiteral("<2849719.IhmDc3qecs@thor>")
-        << QStringLiteral("<1234567.icameup@withthis> <7654321.icameupwith@thistoo>");
+    QTest::newRow("v2") << 2 << buffer.data() << QDateTime(QDate(2015, 6, 29), QTime(23, 50, 10), Qt::UTC) << QStringLiteral("Důležité: Testování Akonadi")
+                        << QStringLiteral("Daniel Vrátil <dvratil@kde.org>") << QStringLiteral("Daniel Vrátil <dvratil@kde.org>") << QString() // reply to
+                        << QStringLiteral("Volker Krause <vkrause@kde.org>") << QString() // cc
+                        << QString() // bcc
+                        << QStringLiteral("<1234567.icameup@withthis>") << QStringLiteral("<2849719.IhmDc3qecs@thor>")
+                        << QStringLiteral("<1234567.icameup@withthis> <7654321.icameupwith@thistoo>");
 }
 
 void MailSerializerTest::testEnvelopeDeserialize()
@@ -162,30 +137,14 @@ void MailSerializerTest::testEnvelopeSerialize_data()
     QBuffer buffer;
     buffer.open(QIODevice::WriteOnly);
     QDataStream stream(&buffer);
-    stream << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC)
-           << QStringLiteral("IMPORTANT: Akonadi Test")
-           << QString()
-           << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>")
-           << QString()
-           << 1 << QStringLiteral("Tobias Koenig") << QStringLiteral("tokoe") << QStringLiteral("kde.org")
-           << 1 << QStringLiteral("Tobias Koenig") << QStringLiteral("tokoe") << QStringLiteral("kde.org")
-           << 0
-           << 1 << QStringLiteral("Ingo Kloecker") << QStringLiteral("kloecker") << QStringLiteral("kde.org")
-           << 0
-           << 0;
-    QTest::newRow("")
-        << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC)
-        << QStringLiteral("IMPORTANT: Akonadi Test")
-        << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
-        << QStringLiteral("Tobias Koenig <tokoe@kde.org>")
-        << QString()
-        << QStringLiteral("Ingo Kloecker <kloecker@kde.org>")
-        << QString()
-        << QString()
-        << QString()
-        << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>")
-        << QString()
-        << buffer.data();
+    stream << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC) << QStringLiteral("IMPORTANT: Akonadi Test") << QString()
+           << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>") << QString() << 1 << QStringLiteral("Tobias Koenig")
+           << QStringLiteral("tokoe") << QStringLiteral("kde.org") << 1 << QStringLiteral("Tobias Koenig") << QStringLiteral("tokoe")
+           << QStringLiteral("kde.org") << 0 << 1 << QStringLiteral("Ingo Kloecker") << QStringLiteral("kloecker") << QStringLiteral("kde.org") << 0 << 0;
+    QTest::newRow("") << QDateTime(QDate(2006, 2, 1), QTime(13, 37, 19), Qt::UTC) << QStringLiteral("IMPORTANT: Akonadi Test")
+                      << QStringLiteral("Tobias Koenig <tokoe@kde.org>") << QStringLiteral("Tobias Koenig <tokoe@kde.org>") << QString()
+                      << QStringLiteral("Ingo Kloecker <kloecker@kde.org>") << QString() << QString() << QString()
+                      << QStringLiteral("<{7b55527e-77f4-489d-bf18-e805be96718c}@server.kde.org>") << QString() << buffer.data();
 }
 
 void MailSerializerTest::testEnvelopeSerialize()
@@ -270,12 +229,13 @@ void MailSerializerTest::testHeaderFetch()
 
     auto serializer = new SerializerPluginMail();
 
-    QByteArray headerData("From: David Johnson <david@usermode.org>\n"
-                          "To: kde-commits@kde.org\n"
-                          "MIME-Version: 1.0\n"
-                          "Date: Sun, 01 Feb 2009 06:25:22 +0000\n"
-                          "Message-Id: <1233469522.741324.18468.nullmailer@svn.kde.org>\n"
-                          "Subject: [kde-doc-english] KDE/kdeutils/kcalc\n");
+    QByteArray headerData(
+        "From: David Johnson <david@usermode.org>\n"
+        "To: kde-commits@kde.org\n"
+        "MIME-Version: 1.0\n"
+        "Date: Sun, 01 Feb 2009 06:25:22 +0000\n"
+        "Message-Id: <1233469522.741324.18468.nullmailer@svn.kde.org>\n"
+        "Subject: [kde-doc-english] KDE/kdeutils/kcalc\n");
 
     QString expectedSubject = QStringLiteral("[kde-doc-english] KDE/kdeutils/kcalc");
     QString expectedFrom = QStringLiteral("David Johnson <david@usermode.org>");
@@ -309,14 +269,15 @@ void MailSerializerTest::testMultiDeserialize()
 
     auto serializer = new SerializerPluginMail();
 
-    QByteArray messageData("From: David Johnson <david@usermode.org>\n"
-                           "To: kde-commits@kde.org\n"
-                           "MIME-Version: 1.0\n"
-                           "Date: Sun, 01 Feb 2009 06:25:22 +0000\n"
-                           "Subject: [kde-doc-english] KDE/kdeutils/kcalc\n"
-                           "Content-Type: text/plain\n"
-                           "\n"
-                           "This is content");
+    QByteArray messageData(
+        "From: David Johnson <david@usermode.org>\n"
+        "To: kde-commits@kde.org\n"
+        "MIME-Version: 1.0\n"
+        "Date: Sun, 01 Feb 2009 06:25:22 +0000\n"
+        "Subject: [kde-doc-english] KDE/kdeutils/kcalc\n"
+        "Content-Type: text/plain\n"
+        "\n"
+        "This is content");
 
     QString expectedSubject = QStringLiteral("[kde-doc-english] KDE/kdeutils/kcalc");
     QString expectedFrom = QStringLiteral("David Johnson <david@usermode.org>");
@@ -339,15 +300,16 @@ void MailSerializerTest::testMultiDeserialize()
 
     buffer.close();
 
-    messageData = QByteArray("From: DIFFERENT CONTACT <DIFFERENTCONTACT@example.org>\n"
-                             "To: kde-commits@kde.org\n"
-                             "MIME-Version: 1.0\n"
-                             "Date: Sun, 01 Feb 2009 06:25:22 +0000\n"
-                             "Message-Id: <1233469522.741324.18468.nullmailer@svn.kde.org>\n"
-                             "Subject: [kde-doc-english] KDE/kdeutils/kcalc\n"
-                             "Content-Type: text/plain\n"
-                             "\r\n"
-                             "This is content");
+    messageData = QByteArray(
+        "From: DIFFERENT CONTACT <DIFFERENTCONTACT@example.org>\n"
+        "To: kde-commits@kde.org\n"
+        "MIME-Version: 1.0\n"
+        "Date: Sun, 01 Feb 2009 06:25:22 +0000\n"
+        "Message-Id: <1233469522.741324.18468.nullmailer@svn.kde.org>\n"
+        "Subject: [kde-doc-english] KDE/kdeutils/kcalc\n"
+        "Content-Type: text/plain\n"
+        "\r\n"
+        "This is content");
 
     buffer.setData(messageData);
     buffer.open(QIODevice::ReadOnly);

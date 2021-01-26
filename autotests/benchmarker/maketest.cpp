@@ -12,19 +12,17 @@
 #include <collectionfetchjob.h>
 #include <collectionfetchscope.h>
 
-#include <QDebug>
-#include <QTest>
 #include <QDBusConnection>
 #include <QDBusInterface>
+#include <QDebug>
+#include <QTest>
 
 using namespace Akonadi;
 
 MakeTest::MakeTest()
 {
-    connect(AgentManager::self(), &AgentManager::instanceRemoved,
-            this, &MakeTest::instanceRemoved);
-    connect(AgentManager::self(), &AgentManager::instanceStatusChanged,
-            this, &MakeTest::instanceStatusChanged);
+    connect(AgentManager::self(), &AgentManager::instanceRemoved, this, &MakeTest::instanceRemoved);
+    connect(AgentManager::self(), &AgentManager::instanceStatusChanged, this, &MakeTest::instanceStatusChanged);
 }
 
 void MakeTest::createAgent(const QString &name)
@@ -42,13 +40,16 @@ void MakeTest::createAgent(const QString &name)
         qDebug() << "  Created resource instance" << currentInstance.identifier();
     }
 
-    QTest::qWait(100); //fix this hack
+    QTest::qWait(100); // fix this hack
 }
 
 void MakeTest::configureDBusIface(const QString &name, const QString &dir)
 {
     auto configIface = new QDBusInterface(QLatin1String("org.freedesktop.Akonadi.Resource.") + currentInstance.identifier(),
-                                                     QStringLiteral("/Settings"), QLatin1String("org.kde.Akonadi.") + name + QLatin1String(".Settings"), QDBusConnection::sessionBus(), this);
+                                          QStringLiteral("/Settings"),
+                                          QLatin1String("org.kde.Akonadi.") + name + QLatin1String(".Settings"),
+                                          QDBusConnection::sessionBus(),
+                                          this);
 
     configIface->call(QStringLiteral("setPath"), dir);
     configIface->call(QStringLiteral("setReadOnly"), true);
@@ -67,10 +68,10 @@ void MakeTest::instanceRemoved(const AgentInstance &instance)
 
 void MakeTest::instanceStatusChanged(const AgentInstance &instance)
 {
-    //qDebug() << "agent status changed:" << agentIdentifier << status << message ;
+    // qDebug() << "agent status changed:" << agentIdentifier << status << message ;
     if (instance == currentInstance) {
         if (instance.status() == AgentInstance::Running) {
-            //qDebug() << "    " << message;
+            // qDebug() << "    " << message;
         }
         if (instance.status() == AgentInstance::Idle) {
             done = true;

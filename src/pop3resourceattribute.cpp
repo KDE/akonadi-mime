@@ -7,11 +7,10 @@
 #include "pop3resourceattribute.h"
 
 #include <QByteArray>
-#include <QIODevice>
 #include <QDataStream>
+#include <QIODevice>
 namespace Akonadi
 {
-
 class Pop3ResourceAttributePrivate
 {
 public:

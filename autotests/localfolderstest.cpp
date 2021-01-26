@@ -14,6 +14,11 @@
 #include <QFile>
 #include <QSignalSpy>
 
+#include "../src/specialmailcollectionstesting_p.h"
+#include "specialcollectionattribute.h"
+#include "specialcollections.h"
+#include <KLocalizedString>
+#include <QStandardPaths>
 #include <agentinstance.h>
 #include <agentmanager.h>
 #include <collectioncreatejob.h>
@@ -21,14 +26,9 @@
 #include <collectionfetchjob.h>
 #include <collectionmodifyjob.h>
 #include <control.h>
-#include <KLocalizedString>
-#include <servermanager.h>
 #include <qtest_akonadi.h>
-#include "specialcollectionattribute.h"
-#include "specialcollections.h"
+#include <servermanager.h>
 #include <specialmailcollections.h>
-#include <QStandardPaths>
-#include "../src/specialmailcollectionstesting_p.h"
 
 using namespace Akonadi;
 
@@ -545,7 +545,7 @@ void LocalFoldersTest::testDefaultResourceJob()
         resjob->setIconForTypeMap(mIconNameMap);
 
         AKVERIFYEXEC(resjob);
-        QCOMPARE(resourceId, resjob->resourceId());   // Did not mistakenly create another resource.
+        QCOMPARE(resourceId, resjob->resourceId()); // Did not mistakenly create another resource.
         const Collection::List folders = resjob->specialCollections();
         QCOMPARE(folders.count(), 2);
         QVERIFY(folders.contains(maildirRoot));
@@ -558,9 +558,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
     // The maildirs should exist (created in testDefaultResourceJob).
     const QString xdgPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/');
     const QString rootPath = xdgPath + QLatin1String("local-mail");
-    const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2") \
-                               .arg(QLatin1String("local-mail"))
-                               .arg(QLatin1String("outbox"));
+    const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2").arg(QLatin1String("local-mail")).arg(QLatin1String("outbox"));
     QVERIFY(QFile::exists(rootPath));
     QVERIFY(QFile::exists(outboxPath));
 
@@ -586,7 +584,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
         resjob->setIconForTypeMap(mIconNameMap);
 
         AKVERIFYEXEC(resjob);
-        QVERIFY(resjob->resourceId() != oldResourceId);   // Created another resource.
+        QVERIFY(resjob->resourceId() != oldResourceId); // Created another resource.
         Collection::List folders = resjob->specialCollections();
         QCOMPARE(folders.count(), 2);
 

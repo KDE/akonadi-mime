@@ -12,7 +12,8 @@
 
 /**
  */
-namespace Akonadi {
+namespace Akonadi
+{
 class LocalFoldersTest : public QObject
 {
     Q_OBJECT

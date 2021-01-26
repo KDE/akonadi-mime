@@ -7,12 +7,11 @@
 #include "newmailnotifierattribute.h"
 
 #include <QByteArray>
-#include <QIODevice>
 #include <QDataStream>
+#include <QIODevice>
 
 namespace Akonadi
 {
-
 class NewMailNotifierAttributePrivate
 {
 public:

@@ -6,14 +6,14 @@
 */
 
 #include "movetotrashcommand.h"
-#include "util_p.h"
-#include "movecommand.h"
 #include "imapsettings.h"
+#include "movecommand.h"
 #include "specialmailcollections.h"
+#include "util_p.h"
 
+#include <entitytreemodel.h>
 #include <itemfetchjob.h>
 #include <itemfetchscope.h>
-#include <entitytreemodel.h>
 using namespace Akonadi;
 MoveToTrashCommand::MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Collection::List &folders, QObject *parent)
     : CommandBase(parent)
@@ -94,19 +94,18 @@ void MoveToTrashCommand::slotMoveDone(Result result)
 
 Akonadi::Collection MoveToTrashCommand::collectionFromId(Akonadi::Collection::Id id) const
 {
-    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(
-        mModel, Akonadi::Collection(id));
+    const QModelIndex idx = Akonadi::EntityTreeModel::modelIndexForCollection(mModel, Akonadi::Collection(id));
     return idx.data(Akonadi::EntityTreeModel::CollectionRole).value<Akonadi::Collection>();
 }
 
 Akonadi::Collection MoveToTrashCommand::trashCollectionFromResource(const Akonadi::Collection &col)
 {
-    //NOTE(Andras): from kmail/kmkernel.cpp
+    // NOTE(Andras): from kmail/kmkernel.cpp
     Akonadi::Collection trashCol;
     if (col.isValid()) {
         if (col.resource().contains(IMAP_RESOURCE_IDENTIFIER)) {
-            //TODO: we really need some standard interface to query for special collections,
-            //instead of relying on a resource's settings interface
+            // TODO: we really need some standard interface to query for special collections,
+            // instead of relying on a resource's settings interface
             OrgKdeAkonadiImapSettingsInterface *iface = Util::createImapSettingsInterface(col.resource());
             if (iface->isValid()) {
                 trashCol = Akonadi::Collection(iface->trashCollection());

@@ -14,7 +14,8 @@
 
 #include <attribute.h>
 
-namespace Akonadi {
+namespace Akonadi
+{
 /**
   Attribute storing the From, To, Cc, Bcc addresses of a message.
 
@@ -27,7 +28,10 @@ public:
     /**
       Creates a new AddressAttribute.
     */
-    explicit AddressAttribute(const QString &from = QString(), const QStringList &to = QStringList(), const QStringList &cc = QStringList(), const QStringList &bcc = QStringList());
+    explicit AddressAttribute(const QString &from = QString(),
+                              const QStringList &to = QStringList(),
+                              const QStringList &cc = QStringList(),
+                              const QStringList &bcc = QStringList());
     /**
       Destroys the AddressAttribute.
     */
@@ -55,9 +59,9 @@ public:
     QStringList to() const;
 
     /**
-      * Sets the addresses of the "To: "receivers."
-      * @param to address of the receiver.
-      */
+     * Sets the addresses of the "To: "receivers."
+     * @param to address of the receiver.
+     */
     void setTo(const QStringList &to);
 
     /**
@@ -66,20 +70,20 @@ public:
     QStringList cc() const;
 
     /**
-      * Sets the addresses of the "Cc:" receivers."
-      * @param cc addresses of the recievers (CC)
-      */
+     * Sets the addresses of the "Cc:" receivers."
+     * @param cc addresses of the recievers (CC)
+     */
     void setCc(const QStringList &cc);
 
     /**
-      * Returns the addresses of the "Bcc:" receivers.
-    */
+     * Returns the addresses of the "Bcc:" receivers.
+     */
     QStringList bcc() const;
 
     /**
-    * Sets the addresses of the "Bcc:" receivers."
-    * @param bcc addresses of the recievers (CC)
-    */
+     * Sets the addresses of the "Bcc:" receivers."
+     * @param bcc addresses of the recievers (CC)
+     */
     void setBcc(const QStringList &bcc);
 
 private:

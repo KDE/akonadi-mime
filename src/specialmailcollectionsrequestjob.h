@@ -12,7 +12,8 @@
 
 #include <specialcollectionsrequestjob.h>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class SpecialMailCollectionsRequestJobPrivate;
 
 /**
@@ -54,7 +55,7 @@ class SpecialMailCollectionsRequestJobPrivate;
  *
  * @author Constantin Berzan <exit3219@gmail.com>
  * @since 4.4
-*/
+ */
 class AKONADI_MIME_EXPORT SpecialMailCollectionsRequestJob : public SpecialCollectionsRequestJob
 {
     Q_OBJECT

@@ -11,7 +11,8 @@
 
 #include <specialcollections.h>
 
-namespace Akonadi {
+namespace Akonadi
+{
 class SpecialMailCollectionsPrivate;
 
 /**
@@ -62,15 +63,15 @@ public:
      * the same type in the same resource.
      */
     enum Type {
-        Invalid = -1,    ///< An invalid special collection.
-        Root = 0,        ///< The root collection containing the local folders.
-        Inbox,           ///< The inbox collection.
-        Outbox,          ///< The outbox collection.
-        SentMail,        ///< The sent-mail collection.
-        Trash,           ///< The trash collection.
-        Drafts,          ///< The drafts collection.
-        Templates,       ///< The templates collection.
-        LastType         ///< @internal marker
+        Invalid = -1, ///< An invalid special collection.
+        Root = 0, ///< The root collection containing the local folders.
+        Inbox, ///< The inbox collection.
+        Outbox, ///< The outbox collection.
+        SentMail, ///< The sent-mail collection.
+        Trash, ///< The trash collection.
+        Drafts, ///< The drafts collection.
+        Templates, ///< The templates collection.
+        LastType ///< @internal marker
     };
 
     /**
@@ -131,6 +132,7 @@ public:
     void verifyI18nDefaultCollection(Type type);
 private Q_SLOTS:
     void slotCollectionModified(KJob *job);
+
 private:
     //@cond PRIVATE
     friend class SpecialMailCollectionsPrivate;

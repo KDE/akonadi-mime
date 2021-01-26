@@ -13,7 +13,6 @@ using namespace Akonadi;
 NewMailNotifierAttributeTest::NewMailNotifierAttributeTest(QObject *parent)
     : QObject(parent)
 {
-
 }
 
 void NewMailNotifierAttributeTest::shouldHaveDefaultValue()

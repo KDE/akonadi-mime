@@ -5,18 +5,19 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#include "util_p.h"
 #include "imapsettings.h"
+#include "util_p.h"
 
-#include <servermanager.h>
 #include <QDBusConnection>
+#include <servermanager.h>
 
-#include <assert.h>
 #include "akonadi_mime_debug.h"
-#include <KJobUiDelegate>
 #include <KIO/Job>
+#include <KJobUiDelegate>
+#include <assert.h>
 
-namespace Util {
+namespace Util
+{
 /// Helper to sanely show an error message for a job
 void showJobError(KJob *job)
 {
@@ -33,7 +34,7 @@ void showJobError(KJob *job)
 
 OrgKdeAkonadiImapSettingsInterface *createImapSettingsInterface(const QString &ident)
 {
-    //NOTE(Andras): from kmail/util.cpp
+    // NOTE(Andras): from kmail/util.cpp
     return new OrgKdeAkonadiImapSettingsInterface(Akonadi::ServerManager::agentServiceName(Akonadi::ServerManager::Resource, ident),
                                                   QStringLiteral("/Settings"),
                                                   QDBusConnection::sessionBus());

@@ -9,8 +9,8 @@
 #include "testvcard.h"
 
 #include <QApplication>
-#include <QCommandLineParser>
 #include <QCommandLineOption>
+#include <QCommandLineParser>
 
 int main(int argc, char *argv[])
 {
@@ -18,8 +18,12 @@ int main(int argc, char *argv[])
     QCommandLineParser parser;
     parser.addVersionOption();
     parser.addHelpOption();
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("maildir"), QStringLiteral("Path to maildir to be used as data source"), QStringLiteral("argument")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("vcarddir"), QStringLiteral("Path to vvcarddir to be used as data source"), QStringLiteral("argument")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("maildir"),
+                                        QStringLiteral("Path to maildir to be used as data source"),
+                                        QStringLiteral("argument")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("vcarddir"),
+                                        QStringLiteral("Path to vvcarddir to be used as data source"),
+                                        QStringLiteral("argument")));
 
     parser.process(app);
 

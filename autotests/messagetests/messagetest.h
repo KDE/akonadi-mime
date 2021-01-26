@@ -7,14 +7,15 @@
 #ifndef MESSAGETEST_TEST_H
 #define MESSAGETEST_TEST_H
 
-#include <kmime/kmime_message.h>
 #include <QObject>
+#include <kmime/kmime_message.h>
 
 class MessageTest : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
     void testCopyFlags();
+
 private:
     KMime::Message::Ptr readAndParseMail(const QString &mailFile) const;
 };

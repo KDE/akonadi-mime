@@ -8,8 +8,8 @@
 
 #include "removeduplicatesjob.h"
 #include "akonadi_mime_debug.h"
-#include <itemfetchjob.h>
 #include <itemdeletejob.h>
+#include <itemfetchjob.h>
 #include <itemfetchscope.h>
 
 #include <kmime/kmime_message.h>
@@ -20,7 +20,7 @@ class Q_DECL_HIDDEN Akonadi::RemoveDuplicatesJob::Private
 {
 public:
     Private(RemoveDuplicatesJob *parent)
-        :mParent(parent)
+        : mParent(parent)
     {
     }
 
@@ -61,10 +61,10 @@ public:
         auto fjob = static_cast<Akonadi::ItemFetchJob *>(job);
         Akonadi::Item::List items = fjob->items();
 
-        //find duplicate mails with the same messageid
-        //if duplicates are found, check the content as well to be sure they are the same
+        // find duplicate mails with the same messageid
+        // if duplicates are found, check the content as well to be sure they are the same
         QMap<QByteArray, uint> messageIds;
-        QMap<uint, QList<uint> > duplicates;
+        QMap<uint, QList<uint>> duplicates;
         QMap<uint, uint> bodyHashes;
         const int numberOfItems(items.size());
         for (int i = 0; i < numberOfItems; ++i) {
@@ -72,10 +72,10 @@ public:
             if (item.hasPayload<KMime::Message::Ptr>()) {
                 KMime::Message::Ptr message = item.payload<KMime::Message::Ptr>();
                 QByteArray idStr = message->messageID()->as7BitString(false);
-                //TODO: Maybe do some more check in case of idStr.isEmpty()
-                //like when the first message's body is different from the 2nd,
-                //but the 2nd is the same as the 3rd, etc.
-                //if ( !idStr.isEmpty() )
+                // TODO: Maybe do some more check in case of idStr.isEmpty()
+                // like when the first message's body is different from the 2nd,
+                // but the 2nd is the same as the 3rd, etc.
+                // if ( !idStr.isEmpty() )
                 {
                     if (messageIds.contains(idStr)) {
                         uint mainId = messageIds.value(idStr);
@@ -94,8 +94,8 @@ public:
             }
         }
 
-        QMap<uint, QList<uint> >::ConstIterator end(duplicates.constEnd());
-        for (QMap<uint, QList<uint> >::ConstIterator it = duplicates.constBegin(); it != end; ++it) {
+        QMap<uint, QList<uint>>::ConstIterator end(duplicates.constEnd());
+        for (QMap<uint, QList<uint>>::ConstIterator it = duplicates.constBegin(); it != end; ++it) {
             QList<uint>::ConstIterator dupEnd(it.value().constEnd());
             for (QList<uint>::ConstIterator dupIt = it.value().constBegin(); dupIt != dupEnd; ++dupIt) {
                 mDuplicateItems.append(items.value(*dupIt));

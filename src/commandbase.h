@@ -8,9 +8,10 @@
 #ifndef COMMANDBASE_H
 #define COMMANDBASE_H
 
-#include <QObject>
 #include "akonadi-mime_export.h"
-namespace Akonadi {
+#include <QObject>
+namespace Akonadi
+{
 class AKONADI_MIME_EXPORT CommandBase : public QObject
 {
     Q_OBJECT
@@ -19,12 +20,7 @@ public:
     explicit CommandBase(QObject *parent = nullptr);
     virtual void execute() = 0;
 
-    enum Result {
-        Undefined,
-        OK,
-        Canceled,
-        Failed
-    };
+    enum Result { Undefined, OK, Canceled, Failed };
 
 Q_SIGNALS:
     void result(Akonadi::CommandBase::Result);

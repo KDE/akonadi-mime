@@ -5,8 +5,8 @@
 */
 
 #include "messagetest.h"
-#include <QTest>
 #include <QFile>
+#include <QTest>
 #include <item.h>
 #include <messageflags.h>
 using namespace KMime;

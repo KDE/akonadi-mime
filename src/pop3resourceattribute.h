@@ -14,7 +14,6 @@
 
 namespace Akonadi
 {
-
 class Pop3ResourceAttributePrivate;
 class AKONADI_MIME_EXPORT Pop3ResourceAttribute : public Akonadi::Attribute
 {
@@ -32,6 +31,7 @@ public:
     void setPop3AccountName(const QString &accountName);
 
     bool operator==(const Pop3ResourceAttribute &other) const;
+
 private:
     friend class Pop3ResourceAttributePrivate;
     QScopedPointer<Pop3ResourceAttributePrivate> const d;

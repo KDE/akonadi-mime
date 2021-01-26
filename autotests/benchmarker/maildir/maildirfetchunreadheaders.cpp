@@ -14,8 +14,8 @@
 #include <itemfetchjob.h>
 #include <itemfetchscope.h>
 
-#include <kmime/kmime_message.h>
 #include "akonadi/kmime/messageparts.h"
+#include <kmime/kmime_message.h>
 
 using namespace Akonadi;
 

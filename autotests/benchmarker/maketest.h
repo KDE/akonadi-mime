@@ -32,6 +32,7 @@ protected:
     void removeCollections();
     void removeResource();
     virtual void runTest() = 0;
+
 public:
     MakeTest();
     void start();

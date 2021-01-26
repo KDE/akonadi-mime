@@ -6,7 +6,6 @@
 
 #include "specialmailcollectionsrequestjob.h"
 
-
 #include <KLocalizedString>
 #include <QStandardPaths>
 
@@ -60,7 +59,8 @@ SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *pare
     QVariantMap options;
     options.insert(QStringLiteral("Name"), displayNameMap.value("local-mail"));
     options.insert(QStringLiteral("TopLevelIsContainer"), true);
-    options.insert(QStringLiteral("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QLatin1String("local-mail")));
+    options.insert(QStringLiteral("Path"),
+                   QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QLatin1String("local-mail")));
 
     setDefaultResourceType(QStringLiteral("akonadi_maildir_resource"));
     setDefaultResourceOptions(options);

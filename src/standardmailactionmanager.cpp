@@ -14,8 +14,8 @@
 #include "emptytrashcommand.h"
 #include "markascommand.h"
 #include "movetotrashcommand.h"
-#include "specialmailcollections.h"
 #include "removeduplicatesjob.h"
+#include "specialmailcollections.h"
 #include "util_p.h"
 
 #include <agentfilterproxymodel.h>
@@ -28,11 +28,11 @@
 #include <mimetypechecker.h>
 #include <subscriptiondialog.h>
 
-#include <messagestatus.h>
 #include <kmime/kmime_message.h>
+#include <messagestatus.h>
 
-#include <QAction>
 #include <KActionCollection>
+#include <QAction>
 
 #include <KLocalizedString>
 
@@ -50,16 +50,16 @@ public:
     {
         mGenericManager = new StandardActionManager(actionCollection, parentWidget);
 
-        QObject::connect(mGenericManager, &StandardActionManager::selectionsChanged,
-                         mParent, [this](const Collection::List &selectedCollections,
-                                         const Collection::List &selectedFavoriteCollections,
-                                         const Item::List &selectedItems) {
-                             // Optimization: pass along the lists to avoid recalculating them here
-                             updateActions(selectedCollections, selectedFavoriteCollections, selectedItems);
-                         });
+        QObject::connect(
+            mGenericManager,
+            &StandardActionManager::selectionsChanged,
+            mParent,
+            [this](const Collection::List &selectedCollections, const Collection::List &selectedFavoriteCollections, const Item::List &selectedItems) {
+                // Optimization: pass along the lists to avoid recalculating them here
+                updateActions(selectedCollections, selectedFavoriteCollections, selectedItems);
+            });
 
-        QObject::connect(mGenericManager, &StandardActionManager::actionStateUpdated,
-                         mParent, &StandardMailActionManager::actionStateUpdated);
+        QObject::connect(mGenericManager, &StandardActionManager::actionStateUpdated, mParent, &StandardMailActionManager::actionStateUpdated);
 
         mGenericManager->setMimeTypeFilter(QStringList() << KMime::Message::mimeType());
         mGenericManager->setCapabilityFilter(QStringList() << QStringLiteral("Resource"));
@@ -114,192 +114,144 @@ public:
     void updateGenericAction(StandardActionManager::Type type)
     {
         switch (type) {
-        case Akonadi::StandardActionManager::CreateCollection:
-        {
+        case Akonadi::StandardActionManager::CreateCollection: {
             QAction *act = mGenericManager->action(Akonadi::StandardActionManager::CreateCollection);
             act->setText(i18n("Add Folder..."));
             act->setWhatsThis(i18n("Add a new folder to the currently selected account."));
             setHelpText(act, i18n("Add a new folder to the currently selected account."));
 
-            mGenericManager->setContextText(
-                StandardActionManager::CreateCollection, StandardActionManager::DialogTitle,
-                i18nc("@title:window", "New Folder"));
+            mGenericManager->setContextText(StandardActionManager::CreateCollection, StandardActionManager::DialogTitle, i18nc("@title:window", "New Folder"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::CreateCollection, StandardActionManager::ErrorMessageText,
-                ki18n("Could not create folder: %1"));
+            mGenericManager->setContextText(StandardActionManager::CreateCollection,
+                                            StandardActionManager::ErrorMessageText,
+                                            ki18n("Could not create folder: %1"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::CreateCollection, StandardActionManager::ErrorMessageTitle,
-                i18n("Folder creation failed"));
+            mGenericManager->setContextText(StandardActionManager::CreateCollection, StandardActionManager::ErrorMessageTitle, i18n("Folder creation failed"));
             break;
         }
         case Akonadi::StandardActionManager::CopyCollections:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::CopyCollections,
-                                           ki18np("Copy Folder", "Copy %1 Folders"));
-            mGenericManager->action(Akonadi::StandardActionManager::CopyCollections)->setWhatsThis(
-                i18n("Copy the selected folders to the clipboard."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CopyCollections),
-                        i18n("Copy the selected folders to the clipboard."));
-            mGenericManager->setContextText(
-                StandardActionManager::CollectionProperties, StandardActionManager::DialogTitle,
-                ki18nc("@title:window", "Properties of Folder %1"));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::CopyCollections, ki18np("Copy Folder", "Copy %1 Folders"));
+            mGenericManager->action(Akonadi::StandardActionManager::CopyCollections)->setWhatsThis(i18n("Copy the selected folders to the clipboard."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CopyCollections), i18n("Copy the selected folders to the clipboard."));
+            mGenericManager->setContextText(StandardActionManager::CollectionProperties,
+                                            StandardActionManager::DialogTitle,
+                                            ki18nc("@title:window", "Properties of Folder %1"));
             break;
         case Akonadi::StandardActionManager::DeleteCollections:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteCollections,
-                                           ki18np("Delete Folder", "Delete %1 Folders"));
-            mGenericManager->action(Akonadi::StandardActionManager::DeleteCollections)->setWhatsThis(
-                i18n("Delete the selected folders from the account."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::DeleteCollections),
-                        i18n("Delete the selected folders from the account."));
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteCollections, StandardActionManager::MessageBoxText,
-                ki18np("Do you really want to delete this folder and all its sub-folders?",
-                       "Do you really want to delete %1 folders and all their sub-folders?"));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteCollections, ki18np("Delete Folder", "Delete %1 Folders"));
+            mGenericManager->action(Akonadi::StandardActionManager::DeleteCollections)->setWhatsThis(i18n("Delete the selected folders from the account."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::DeleteCollections), i18n("Delete the selected folders from the account."));
+            mGenericManager->setContextText(StandardActionManager::DeleteCollections,
+                                            StandardActionManager::MessageBoxText,
+                                            ki18np("Do you really want to delete this folder and all its sub-folders?",
+                                                   "Do you really want to delete %1 folders and all their sub-folders?"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteCollections, StandardActionManager::MessageBoxTitle,
-                ki18ncp("@title:window", "Delete folder?", "Delete folders?"));
+            mGenericManager->setContextText(StandardActionManager::DeleteCollections,
+                                            StandardActionManager::MessageBoxTitle,
+                                            ki18ncp("@title:window", "Delete folder?", "Delete folders?"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteCollections, StandardActionManager::ErrorMessageText,
-                ki18n("Could not delete folder: %1"));
+            mGenericManager->setContextText(StandardActionManager::DeleteCollections,
+                                            StandardActionManager::ErrorMessageText,
+                                            ki18n("Could not delete folder: %1"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteCollections, StandardActionManager::ErrorMessageTitle,
-                i18n("Folder deletion failed"));
+            mGenericManager->setContextText(StandardActionManager::DeleteCollections, StandardActionManager::ErrorMessageTitle, i18n("Folder deletion failed"));
 
             break;
         case Akonadi::StandardActionManager::SynchronizeCollections:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::SynchronizeCollections,
-                                           ki18np("Update Folder", "Update Folders"));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::SynchronizeCollections, ki18np("Update Folder", "Update Folders"));
 
-            mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollections)->setWhatsThis(
-                i18n("Update the contents of the selected folders."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollections),
-                        i18n("Update the contents of the selected folders."));
+            mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollections)->setWhatsThis(i18n("Update the contents of the selected folders."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollections), i18n("Update the contents of the selected folders."));
             break;
         case Akonadi::StandardActionManager::CutCollections:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::CutCollections,
-                                           ki18np("Cut Folder", "Cut %1 Folders"));
-            mGenericManager->action(Akonadi::StandardActionManager::CutCollections)->setWhatsThis(
-                i18n("Cut the selected folders from the account."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CutCollections),
-                        i18n("Cut the selected folders from the account."));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::CutCollections, ki18np("Cut Folder", "Cut %1 Folders"));
+            mGenericManager->action(Akonadi::StandardActionManager::CutCollections)->setWhatsThis(i18n("Cut the selected folders from the account."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CutCollections), i18n("Cut the selected folders from the account."));
             break;
         case Akonadi::StandardActionManager::CollectionProperties:
-            mGenericManager->action(Akonadi::StandardActionManager::CollectionProperties)->setText(
-                i18n("Folder Properties"));
-            mGenericManager->action(Akonadi::StandardActionManager::CollectionProperties)->setWhatsThis(
-                i18n("Open a dialog to edit the properties of the selected folder."));
+            mGenericManager->action(Akonadi::StandardActionManager::CollectionProperties)->setText(i18n("Folder Properties"));
+            mGenericManager->action(Akonadi::StandardActionManager::CollectionProperties)
+                ->setWhatsThis(i18n("Open a dialog to edit the properties of the selected folder."));
             setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CollectionProperties),
                         i18n("Open a dialog to edit the properties of the selected folder."));
             break;
-        case  Akonadi::StandardActionManager::CopyItems:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::CopyItems,
-                                           ki18np("Copy Message", "Copy %1 Messages"));
-            mGenericManager->action(Akonadi::StandardActionManager::CopyItems)->setWhatsThis(
-                i18n("Copy the selected messages to the clipboard."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CopyItems),
-                        i18n("Copy the selected messages to the clipboard."));
+        case Akonadi::StandardActionManager::CopyItems:
+            mGenericManager->setActionText(Akonadi::StandardActionManager::CopyItems, ki18np("Copy Message", "Copy %1 Messages"));
+            mGenericManager->action(Akonadi::StandardActionManager::CopyItems)->setWhatsThis(i18n("Copy the selected messages to the clipboard."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CopyItems), i18n("Copy the selected messages to the clipboard."));
             break;
         case Akonadi::StandardActionManager::DeleteItems:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteItems,
-                                           ki18np("Delete Message", "Delete %1 Messages"));
-            mGenericManager->action(Akonadi::StandardActionManager::DeleteItems)->setWhatsThis(
-                i18n("Delete the selected messages from the folder."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::DeleteItems),
-                        i18n("Delete the selected messages from the folder."));
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteItems, StandardActionManager::MessageBoxText,
-                ki18np("Do you really want to delete the selected message?",
-                       "Do you really want to delete %1 messages?"));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteItems, ki18np("Delete Message", "Delete %1 Messages"));
+            mGenericManager->action(Akonadi::StandardActionManager::DeleteItems)->setWhatsThis(i18n("Delete the selected messages from the folder."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::DeleteItems), i18n("Delete the selected messages from the folder."));
+            mGenericManager->setContextText(StandardActionManager::DeleteItems,
+                                            StandardActionManager::MessageBoxText,
+                                            ki18np("Do you really want to delete the selected message?", "Do you really want to delete %1 messages?"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteItems, StandardActionManager::MessageBoxTitle,
-                ki18ncp("@title:window", "Delete Message?", "Delete Messages?"));
+            mGenericManager->setContextText(StandardActionManager::DeleteItems,
+                                            StandardActionManager::MessageBoxTitle,
+                                            ki18ncp("@title:window", "Delete Message?", "Delete Messages?"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageText,
-                ki18n("Could not delete message: %1"));
+            mGenericManager->setContextText(StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageText, ki18n("Could not delete message: %1"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageTitle,
-                i18n("Message deletion failed"));
+            mGenericManager->setContextText(StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageTitle, i18n("Message deletion failed"));
             break;
         case Akonadi::StandardActionManager::CutItems:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::CutItems,
-                                           ki18np("Cut Message", "Cut %1 Messages"));
-            mGenericManager->action(Akonadi::StandardActionManager::CutItems)->setWhatsThis(
-                i18n("Cut the selected message from the folder."));
-            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CutItems),
-                        i18n("Cut the selected message from the folder."));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::CutItems, ki18np("Cut Message", "Cut %1 Messages"));
+            mGenericManager->action(Akonadi::StandardActionManager::CutItems)->setWhatsThis(i18n("Cut the selected message from the folder."));
+            setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CutItems), i18n("Cut the selected message from the folder."));
             break;
         case Akonadi::StandardActionManager::CreateResource:
-            mGenericManager->action(Akonadi::StandardActionManager::CreateResource)->setText(
-                i18n("Add &Account..."));
-            mGenericManager->action(Akonadi::StandardActionManager::CreateResource)->setWhatsThis(
-                i18n("Add a new account<p>"
-                     "You will be presented with a dialog where you can select "
-                     "the type of the account that shall be added.</p>"));
-            mGenericManager->setContextText(
-                StandardActionManager::CreateResource, StandardActionManager::DialogTitle,
-                i18nc("@title:window", "Add Account"));
+            mGenericManager->action(Akonadi::StandardActionManager::CreateResource)->setText(i18n("Add &Account..."));
+            mGenericManager->action(Akonadi::StandardActionManager::CreateResource)
+                ->setWhatsThis(i18n("Add a new account<p>"
+                                    "You will be presented with a dialog where you can select "
+                                    "the type of the account that shall be added.</p>"));
+            mGenericManager->setContextText(StandardActionManager::CreateResource, StandardActionManager::DialogTitle, i18nc("@title:window", "Add Account"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::CreateResource, StandardActionManager::ErrorMessageText,
-                ki18n("Could not create account: %1"));
+            mGenericManager->setContextText(StandardActionManager::CreateResource,
+                                            StandardActionManager::ErrorMessageText,
+                                            ki18n("Could not create account: %1"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::CreateResource, StandardActionManager::ErrorMessageTitle,
-                i18n("Account creation failed"));
+            mGenericManager->setContextText(StandardActionManager::CreateResource, StandardActionManager::ErrorMessageTitle, i18n("Account creation failed"));
             break;
         case Akonadi::StandardActionManager::DeleteResources:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteResources,
-                                           ki18np("&Delete Account", "&Delete %1 Accounts"));
-            mGenericManager->action(Akonadi::StandardActionManager::DeleteResources)->setWhatsThis(
-                i18n("Delete the selected accounts<p>"
-                     "The currently selected accounts will be deleted, "
-                     "along with all the messages they contain.</p>"));
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteResources, StandardActionManager::MessageBoxText,
-                ki18np("Do you really want to delete this account?",
-                       "Do you really want to delete %1 accounts?"));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteResources, ki18np("&Delete Account", "&Delete %1 Accounts"));
+            mGenericManager->action(Akonadi::StandardActionManager::DeleteResources)
+                ->setWhatsThis(i18n("Delete the selected accounts<p>"
+                                    "The currently selected accounts will be deleted, "
+                                    "along with all the messages they contain.</p>"));
+            mGenericManager->setContextText(StandardActionManager::DeleteResources,
+                                            StandardActionManager::MessageBoxText,
+                                            ki18np("Do you really want to delete this account?", "Do you really want to delete %1 accounts?"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::DeleteResources, StandardActionManager::MessageBoxTitle,
-                ki18ncp("@title:window", "Delete Account?", "Delete Accounts?"));
+            mGenericManager->setContextText(StandardActionManager::DeleteResources,
+                                            StandardActionManager::MessageBoxTitle,
+                                            ki18ncp("@title:window", "Delete Account?", "Delete Accounts?"));
             break;
-        case  Akonadi::StandardActionManager::ResourceProperties:
-            mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)->setText(
-                i18n("Account Properties..."));
-            mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)->setWhatsThis(
-                i18n("Open a dialog to edit properties of the selected account."));
+        case Akonadi::StandardActionManager::ResourceProperties:
+            mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)->setText(i18n("Account Properties..."));
+            mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)
+                ->setWhatsThis(i18n("Open a dialog to edit properties of the selected account."));
             break;
         case Akonadi::StandardActionManager::SynchronizeResources:
-            mGenericManager->setActionText(Akonadi::StandardActionManager::SynchronizeResources,
-                                           ki18np("Update Account", "Update %1 Accounts"));
-            mGenericManager->action(Akonadi::StandardActionManager::SynchronizeResources)->setWhatsThis(
-                i18n("Updates the content of all folders of the selected accounts."));
+            mGenericManager->setActionText(Akonadi::StandardActionManager::SynchronizeResources, ki18np("Update Account", "Update %1 Accounts"));
+            mGenericManager->action(Akonadi::StandardActionManager::SynchronizeResources)
+                ->setWhatsThis(i18n("Updates the content of all folders of the selected accounts."));
             break;
         case Akonadi::StandardActionManager::SynchronizeCollectionsRecursive:
             mGenericManager->setActionText(Akonadi::StandardActionManager::SynchronizeCollectionsRecursive,
-                                           ki18np("Update This Folder and All Its Subfolders",
-                                                  "Update These Folders and All Their Subfolders"));
+                                           ki18np("Update This Folder and All Its Subfolders", "Update These Folders and All Their Subfolders"));
 
-            mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollectionsRecursive)->setWhatsThis(
-                i18n("Update the contents of the selected folders and all their subfolders."));
+            mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollectionsRecursive)
+                ->setWhatsThis(i18n("Update the contents of the selected folders and all their subfolders."));
             setHelpText(mGenericManager->action(Akonadi::StandardActionManager::SynchronizeCollectionsRecursive),
                         i18n("Update the contents of the selected folders and all their subfolders."));
             break;
         case Akonadi::StandardActionManager::Paste:
-            mGenericManager->setContextText(
-                StandardActionManager::Paste, StandardActionManager::ErrorMessageText,
-                ki18n("Could not paste message: %1"));
+            mGenericManager->setContextText(StandardActionManager::Paste, StandardActionManager::ErrorMessageText, ki18n("Could not paste message: %1"));
 
-            mGenericManager->setContextText(
-                StandardActionManager::Paste, StandardActionManager::ErrorMessageTitle,
-                i18n("Paste failed"));
+            mGenericManager->setContextText(StandardActionManager::Paste, StandardActionManager::ErrorMessageTitle, i18n("Paste failed"));
             break;
         default:
             break;
@@ -402,9 +354,7 @@ public:
         }
     }
 
-    void updateActions(const Collection::List &selectedCollections,
-                       const Collection::List &selectedFavoriteCollections,
-                       const Item::List &selectedItems)
+    void updateActions(const Collection::List &selectedCollections, const Collection::List &selectedFavoriteCollections, const Item::List &selectedItems)
     {
         Q_UNUSED(selectedFavoriteCollections)
         const bool itemIsSelected = !selectedItems.isEmpty();
@@ -436,7 +386,7 @@ public:
                                           || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Drafts)
                                           || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Templates));
                     }
-                    //We will not change after that.
+                    // We will not change after that.
                     if (enableMarkAllAsRead && enableMarkAllAsUnread && !canDeleteItem && isSystemFolder) {
                         break;
                     }
@@ -529,7 +479,6 @@ public:
         const QAction *action = qobject_cast<QAction *>(mParent->sender());
         Q_ASSERT(action);
 
-
         const QByteArray typeStr = action->data().toByteArray();
 
         markItemsAs(typeStr, items, true);
@@ -538,7 +487,6 @@ public:
     void markAllItemsAs(QByteArray typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true)
     {
         qCDebug(AKONADIMIME_LOG) << "Mark all as: " << typeStr;
-
 
         Akonadi::MessageStatus targetStatus;
         targetStatus.setStatusFromStr(QLatin1String(typeStr));
@@ -726,7 +674,7 @@ void StandardMailActionManager::setItemSelectionModel(QItemSelectionModel *selec
 
     // connecting to QItemSelectionModel::selectionChanged is done by mGenericManager
 
-    //to catch item modifications, listen to the model's dataChanged signal as well
+    // to catch item modifications, listen to the model's dataChanged signal as well
     connect(selectionModel->model(), &QAbstractItemModel::dataChanged, this, [this]() {
         d->updateActions();
     });
@@ -931,7 +879,7 @@ QAction *StandardMailActionManager::createAction(Type type)
         });
         break;
     default:
-        Q_ASSERT(false);   // should never happen
+        Q_ASSERT(false); // should never happen
         break;
     }
 

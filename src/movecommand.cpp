@@ -8,8 +8,8 @@
 #include "movecommand.h"
 #include "util_p.h"
 
-#include <itemmovejob.h>
 #include <itemdeletejob.h>
+#include <itemmovejob.h>
 using namespace Akonadi;
 
 class Akonadi::MoveCommandPrivate

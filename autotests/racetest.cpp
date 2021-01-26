@@ -6,14 +6,14 @@
 
 #include "racetest.h"
 
-#include <QDebug>
 #include <KProcess>
+#include <QDebug>
 
-#include <control.h>
 #include <agentinstance.h>
 #include <agentinstancecreatejob.h>
-#include <agenttype.h>
 #include <agentmanager.h>
+#include <agenttype.h>
+#include <control.h>
 #include <qtest_akonadi.h>
 //#include <localfolders.h>
 
@@ -29,15 +29,15 @@ using namespace Akonadi;
 void RaceTest::initTestCase()
 {
     QVERIFY(Control::start());
-    QTest::qWait(1000);   // give the MDA time to start so that we can kill it in peace
+    QTest::qWait(1000); // give the MDA time to start so that we can kill it in peace
     qRegisterMetaType<QProcess::ProcessError>();
     qRegisterMetaType<QProcess::ExitStatus>();
 }
 
 void RaceTest::testMultipleProcesses_data()
 {
-    QTest::addColumn<int>("count");   // how many processes to create
-    QTest::addColumn<int>("delay");   // number of ms to wait before starting next process
+    QTest::addColumn<int>("count"); // how many processes to create
+    QTest::addColumn<int>("delay"); // number of ms to wait before starting next process
 
     QTest::newRow("1-nodelay") << 1 << 0;
     QTest::newRow("2-nodelay") << 2 << 0;
@@ -86,7 +86,7 @@ void RaceTest::testMultipleProcesses()
         procs.append(proc);
         proc->setProgram(QStringLiteral(REQUESTER_EXE));
         errorSpy[i] = new QSignalSpy(proc, SIGNAL(error(QProcess::ProcessError)));
-        finishedSpy[i] = new QSignalSpy(proc, SIGNAL(finished(int,QProcess::ExitStatus)));
+        finishedSpy[i] = new QSignalSpy(proc, SIGNAL(finished(int, QProcess::ExitStatus)));
         proc->start();
         QTest::qWait(delay);
     }
@@ -108,8 +108,7 @@ void RaceTest::testMultipleProcesses()
                 finished++;
             }
         }
-        qDebug() << seconds << "seconds elapsed." << error << "processes error'd,"
-                 << finished << "processes finished.";
+        qDebug() << seconds << "seconds elapsed." << error << "processes error'd," << finished << "processes finished.";
 
         if (error + finished >= count) {
             break;

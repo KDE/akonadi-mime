@@ -9,12 +9,13 @@
 #ifndef REMOVEDUPLICATESJOB_H
 #define REMOVEDUPLICATESJOB_H
 
-#include <job.h>
 #include <collection.h>
+#include <job.h>
 
 #include "akonadi-mime_export.h"
 
-namespace Akonadi {
+namespace Akonadi
+{
 /**
  * @short Job that finds and removes duplicate messages in given collection
  *

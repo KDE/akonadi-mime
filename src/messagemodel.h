@@ -11,7 +11,8 @@
 
 #include <AkonadiCore/EntityTreeModel>
 
-namespace Akonadi {
+namespace Akonadi
+{
 /**
  * A flat self-updating message model.
  */

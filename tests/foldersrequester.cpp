@@ -6,11 +6,11 @@
 
 #include "foldersrequester.h"
 
-#include <QDebug>
-#include <KLocalizedString>
 #include <KAboutData>
+#include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
+#include <QDebug>
 #include <collection.h>
 #include <control.h>
 #include <specialmailcollections.h>
@@ -43,8 +43,7 @@ int main(int argc, char **argv)
 {
     QCommandLineParser parser;
 
-    KAboutData about(QStringLiteral("foldersrequester"),
-                     i18n("An app that requests LocalFolders"), QStringLiteral("0.1"));
+    KAboutData about(QStringLiteral("foldersrequester"), i18n("An app that requests LocalFolders"), QStringLiteral("0.1"));
 
     about.setupCommandLine(&parser);
     KAboutData::setApplicationData(about);

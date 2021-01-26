@@ -16,8 +16,8 @@
 
 #include <KLocalizedString>
 
-#include <QLocale>
 #include <KFormat>
+#include <QLocale>
 
 #include <array>
 
@@ -25,19 +25,17 @@ using MessagePtr = KMime::Message::Ptr;
 
 using namespace Akonadi;
 
-namespace {
-
+namespace
+{
 struct HeaderName {
     const char *desc;
     const char *name;
 };
-constexpr std::array<HeaderName, 5> headers = {{
-    {I18NC_NOOP("@title:column, message (e.g. email) subject", "Subject")},
-    {I18NC_NOOP("@title:column, sender of message (e.g. email)", "Sender")},
-    {I18NC_NOOP("@title:column, receiver of message (e.g. email)", "Receiver")},
-    {I18NC_NOOP("@title:column, message (e.g. email) timestamp", "Date")},
-    {I18NC_NOOP("@title:column, message (e.g. email) size", "Size")}
-}};
+constexpr std::array<HeaderName, 5> headers = {{{I18NC_NOOP("@title:column, message (e.g. email) subject", "Subject")},
+                                                {I18NC_NOOP("@title:column, sender of message (e.g. email)", "Sender")},
+                                                {I18NC_NOOP("@title:column, receiver of message (e.g. email)", "Receiver")},
+                                                {I18NC_NOOP("@title:column, message (e.g. email) timestamp", "Date")},
+                                                {I18NC_NOOP("@title:column, message (e.g. email) size", "Size")}}};
 
 }
 

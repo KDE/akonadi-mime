@@ -8,13 +8,14 @@
 #ifndef MOVECOMMAND_H
 #define MOVECOMMAND_H
 
-#include "commandbase.h"
 #include "akonadi-mime_export.h"
+#include "commandbase.h"
 #include <collection.h>
 #include <item.h>
 
 class KJob;
-namespace Akonadi {
+namespace Akonadi
+{
 class MoveCommandPrivate;
 class AKONADI_MIME_EXPORT MoveCommand : public CommandBase
 {

@@ -5,8 +5,8 @@
 */
 
 #include "vcardimport.h"
-#include <QTest>
 #include <QDebug>
+#include <QTest>
 
 #define WAIT_TIME 50
 

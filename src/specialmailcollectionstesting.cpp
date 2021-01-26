@@ -4,9 +4,9 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#include "specialmailcollectionstesting_p.h"
 #include "specialmailcollections.h"
 #include "specialmailcollectionssettings.h"
+#include "specialmailcollectionstesting_p.h"
 
 #include <specialcollections.h>
 
@@ -51,7 +51,7 @@ int SpecialMailCollectionsTesting::_t_knownFolderCount() const
     const SpecialCollectionsPrivate *d = static_cast<SpecialCollections *>(SpecialMailCollections::self())->d;
     int ret = 0;
 
-    QHashIterator<QString, QHash<QByteArray, Collection> > resourceIt(d->mFoldersForResource);
+    QHashIterator<QString, QHash<QByteArray, Collection>> resourceIt(d->mFoldersForResource);
     while (resourceIt.hasNext()) {
         resourceIt.next();
 

@@ -5,10 +5,10 @@
 */
 
 #include "testmaildir.h"
-#include "maildir/maildirimport.h"
-#include "maildir/maildirfetchallheaders.h"
 #include "maildir/maildir20percentread.h"
+#include "maildir/maildirfetchallheaders.h"
 #include "maildir/maildirfetchunreadheaders.h"
+#include "maildir/maildirimport.h"
 
 TestMailDir::TestMailDir(const QString &dir)
 {

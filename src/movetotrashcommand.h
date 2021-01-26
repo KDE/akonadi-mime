@@ -15,7 +15,8 @@
 
 class QAbstractItemModel;
 class KJob;
-namespace Akonadi {
+namespace Akonadi
+{
 class MoveToTrashCommand : public CommandBase
 {
     Q_OBJECT

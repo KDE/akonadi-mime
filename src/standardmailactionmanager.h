@@ -20,7 +20,8 @@ class KActionCollection;
 class QItemSelectionModel;
 class QWidget;
 
-namespace Akonadi {
+namespace Akonadi
+{
 class Item;
 
 /**
@@ -39,20 +40,20 @@ public:
      */
     enum Type {
         MarkMailAsRead = StandardActionManager::LastType + 1, ///< Marks a mail as read
-        MarkMailAsUnread,                                 ///< Marks a mail as unread
-        MarkMailAsImportant,                              ///< Marks a mail as important
-        MarkMailAsActionItem,                             ///< Marks a mail as action item
-        MarkAllMailAsRead,                                ///< Marks all mails in a folder as read.
-        MarkAllMailAsReadRecursive,                       ///< Marks all mails in a folder and its subfolders as read.
-        MarkAllMailAsUnread,                              ///< Marks all mails in a folder as unread.
-        MarkAllMailAsImportant,                           ///< Marks all mails in a folder as important
-        MarkAllMailAsActionItem,                          ///< Marks all mails in a folder as action item
-        MoveToTrash,                                      ///< Move all selected messages and folders to trash.
-        MoveAllToTrash,                                   ///< Move all messages of the current folder to trash.
-        RemoveDuplicates,                                 ///< Removes all duplicated messages.
-        EmptyAllTrash,                                    ///< Empties trash folders on all accounts
-        EmptyTrash,                                       ///< Empties the trash folder, if a trash folder was selected
-        LastType                                          ///< Marks last action.
+        MarkMailAsUnread, ///< Marks a mail as unread
+        MarkMailAsImportant, ///< Marks a mail as important
+        MarkMailAsActionItem, ///< Marks a mail as action item
+        MarkAllMailAsRead, ///< Marks all mails in a folder as read.
+        MarkAllMailAsReadRecursive, ///< Marks all mails in a folder and its subfolders as read.
+        MarkAllMailAsUnread, ///< Marks all mails in a folder as unread.
+        MarkAllMailAsImportant, ///< Marks all mails in a folder as important
+        MarkAllMailAsActionItem, ///< Marks all mails in a folder as action item
+        MoveToTrash, ///< Move all selected messages and folders to trash.
+        MoveAllToTrash, ///< Move all messages of the current folder to trash.
+        RemoveDuplicates, ///< Removes all duplicated messages.
+        EmptyAllTrash, ///< Empties trash folders on all accounts
+        EmptyTrash, ///< Empties the trash folder, if a trash folder was selected
+        LastType ///< Marks last action.
     };
 
     /**
