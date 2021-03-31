@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef MOVECOMMAND_H
-#define MOVECOMMAND_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 #include "commandbase.h"
@@ -32,4 +31,3 @@ private:
     MoveCommandPrivate *const d;
 };
 }
-#endif // MOVECOMMAND_H

@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef MARKASCOMMAND_H
-#define MARKASCOMMAND_H
+#pragma once
 
 #include "commandbase.h"
 #include "messagestatus.h"
@@ -39,4 +38,3 @@ private:
     MarkAsCommandPrivate *const d;
 };
 }
-#endif // MARKASCOMMAND_H

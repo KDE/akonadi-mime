@@ -6,8 +6,7 @@
 
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
-#ifndef AKONADI_KMIME_MESSAGESTATUS_H
-#define AKONADI_KMIME_MESSAGESTATUS_H
+#pragma once
 
 #include <QSet>
 
@@ -416,4 +415,3 @@ private:
 };
 } // namespace Akonadi
 
-#endif

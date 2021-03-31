@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAKETEST_H
-#define MAKETEST_H
+#pragma once
 
 #include <agentmanager.h>
 #include <job.h>
@@ -38,4 +37,3 @@ public:
     void start();
 };
 
-#endif

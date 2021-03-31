@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILDIRIMPORT_H
-#define MAILDIRIMPORT_H
+#pragma once
 
 #include "maildir.h"
 
@@ -17,4 +16,3 @@ public:
     MailDirImport(const QString &dir);
     void runTest() override;
 };
-#endif

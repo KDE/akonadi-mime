@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef COMMANDBASE_H
-#define COMMANDBASE_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 #include <QObject>
@@ -29,4 +28,3 @@ protected Q_SLOTS:
     virtual void emitResult(Akonadi::CommandBase::Result result);
 };
 }
-#endif // COMMANDBASE_H

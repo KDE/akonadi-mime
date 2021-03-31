@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef AKONADI_MESSAGEPARTS_H
-#define AKONADI_MESSAGEPARTS_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 
@@ -37,4 +36,3 @@ AKONADI_MIME_EXPORT extern const char Header[];
 }
 }
 
-#endif

@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef SPECIALMAILCOLLECTIONSDISCOVERYJOB_H
-#define SPECIALMAILCOLLECTIONSDISCOVERYJOB_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 
@@ -21,4 +20,3 @@ public:
 };
 }
 
-#endif /* SPECIALMAILCOLLECTIONSDISCOVERYJOB_H */

@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILDIRREMOVEREADMESSAGES_H
-#define MAILDIRREMOVEREADMESSAGES_H
+#pragma once
 
 #include "maildir.h"
 
@@ -17,4 +16,3 @@ public:
     MailDirRemoveReadMessages();
     void runTest() override;
 };
-#endif

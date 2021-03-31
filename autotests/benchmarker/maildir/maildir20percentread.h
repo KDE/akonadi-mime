@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILDIR20PERCENTREAD_H
-#define MAILDIR20PERCENTREAD_H
+#pragma once
 
 #include "maildir.h"
 
@@ -17,4 +16,3 @@ public:
     MailDir20PercentAsRead();
     void runTest() override;
 };
-#endif

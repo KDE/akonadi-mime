@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef TESTVCARD_H
-#define TESTVCARD_H
+#pragma once
 
 #include "test.h"
 
@@ -14,4 +13,3 @@ class TestVCard : public Test
 public:
     TestVCard(const QString &dir);
 };
-#endif

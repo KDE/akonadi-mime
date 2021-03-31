@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef RACETEST_H
-#define RACETEST_H
+#pragma once
 
 #include <QList>
 #include <QObject>
@@ -32,4 +31,3 @@ private:
     QList<KProcess *> procs;
 };
 
-#endif

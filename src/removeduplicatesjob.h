@@ -6,8 +6,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef REMOVEDUPLICATESJOB_H
-#define REMOVEDUPLICATESJOB_H
+#pragma once
 
 #include <collection.h>
 #include <job.h>
@@ -60,4 +59,3 @@ private:
 };
 } /* namespace Akonadi */
 
-#endif // REMOVEDUPLICATESJOB_H

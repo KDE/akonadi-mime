@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef HEADFETCHER_H
-#define HEADFETCHER_H
+#pragma once
 
 #include <QElapsedTimer>
 #include <QObject>
@@ -22,4 +21,3 @@ private:
     QElapsedTimer timer;
 };
 
-#endif

@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef TEST_H
-#define TEST_H
+#pragma once
 
 #include "maketest.h"
 
@@ -20,4 +19,3 @@ public:
     void runTests();
 };
 
-#endif

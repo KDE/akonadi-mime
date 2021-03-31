@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILDIR_H
-#define MAILDIR_H
+#pragma once
 
 #include "../maketest.h"
 
@@ -18,4 +17,3 @@ public:
     MailDir();
 };
 
-#endif

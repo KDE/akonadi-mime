@@ -5,8 +5,7 @@
  * SPDX-License-Identifier: LGPL-2.0-or-later
  */
 
-#ifndef AKONADI_MESSAGEFLAGS_H
-#define AKONADI_MESSAGEFLAGS_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 
@@ -141,4 +140,3 @@ AKONADI_MIME_EXPORT void copyMessageFlags(KMime::Message &from, Akonadi::Item &t
 }
 }
 
-#endif

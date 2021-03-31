@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef MOVETOTRASHCOMMAND_H
-#define MOVETOTRASHCOMMAND_H
+#pragma once
 
 #include "commandbase.h"
 
@@ -44,4 +43,3 @@ private:
     int mFolderListJobCount = 0;
 };
 }
-#endif // MOVETOTRASHCOMMAND_H

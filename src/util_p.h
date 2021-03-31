@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef UTIL_H
-#define UTIL_H
+#pragma once
 
 class OrgKdeAkonadiImapSettingsInterface;
 class KJob;
@@ -21,4 +20,3 @@ void showJobError(KJob *job);
 OrgKdeAkonadiImapSettingsInterface *createImapSettingsInterface(const QString &ident);
 }
 
-#endif // UTIL_H

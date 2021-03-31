@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef __AKONADI_SERIALIZER_MAIL_H__
-#define __AKONADI_SERIALIZER_MAIL_H__
+#pragma once
 
 #include <QMutex>
 #include <QObject>
@@ -52,4 +51,3 @@ private:
 };
 }
 
-#endif

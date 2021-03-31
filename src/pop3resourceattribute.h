@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef AKONADICORE_POP3RESOURCEATTRIBUTE_H
-#define AKONADICORE_POP3RESOURCEATTRIBUTE_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 #include <AkonadiCore/Attribute>
@@ -37,4 +36,3 @@ private:
     QScopedPointer<Pop3ResourceAttributePrivate> const d;
 };
 }
-#endif // AKONADICORE_POP3RESOURCEATTRIBUTE_H

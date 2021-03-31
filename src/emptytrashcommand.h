@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.1-or-later
 */
 
-#ifndef EMPTYTRASHCOMMAND_P_H
-#define EMPTYTRASHCOMMAND_P_H
+#pragma once
 
 #include "commandbase.h"
 
@@ -41,4 +40,3 @@ private:
     int mNumberOfTrashToEmpty = 0;
 };
 }
-#endif // EMPTYTRASHCOMMAND_P_H

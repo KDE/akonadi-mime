@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef TESTMAILDIR_H
-#define TESTMAILDIR_H
+#pragma once
 
 #include "test.h"
 
@@ -14,4 +13,3 @@ class TestMailDir : public Test
 public:
     TestMailDir(const QString &dir);
 };
-#endif

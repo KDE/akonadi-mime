@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef NEWMAILNOTIFIERATTRIBUTE_H
-#define NEWMAILNOTIFIERATTRIBUTE_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 
@@ -38,4 +37,3 @@ private:
 };
 }
 
-#endif // NEWMAILNOTIFIERATTRIBUTE_H

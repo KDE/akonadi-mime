@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef AKONADI_ADDRESSATTRIBUTE_H
-#define AKONADI_ADDRESSATTRIBUTE_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 
@@ -92,4 +91,3 @@ private:
 };
 } // namespace Akonadi
 
-#endif // AKONADI_ADDRESSATTRIBUTE_H

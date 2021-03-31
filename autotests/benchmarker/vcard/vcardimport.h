@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef VCARD_IMPORT_H
-#define VCARD_IMPORT_H
+#pragma once
 
 #include "vcard.h"
 
@@ -17,4 +16,3 @@ public:
     void runTest() override;
 };
 
-#endif

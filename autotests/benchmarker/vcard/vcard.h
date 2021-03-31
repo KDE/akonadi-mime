@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef VCARD_H
-#define VCARD_H
+#pragma once
 
 #include "../maketest.h"
 
@@ -17,4 +16,3 @@ public:
     VCard();
 };
 
-#endif

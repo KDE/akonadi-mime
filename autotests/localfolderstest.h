@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef LOCALFOLDERSTEST_H
-#define LOCALFOLDERSTEST_H
+#pragma once
 
 #include <QMap>
 #include <QObject>
@@ -46,4 +45,3 @@ private:
 };
 }
 
-#endif

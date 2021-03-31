@@ -5,8 +5,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef MAILDIRFETCHUNREADHEADERS_H
-#define MAILDIRFETCHUNREADHEADERS_H
+#pragma once
 
 #include "maildir.h"
 
@@ -17,4 +16,3 @@ public:
     MailDirFetchUnreadHeaders();
     void runTest() override;
 };
-#endif

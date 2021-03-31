@@ -4,8 +4,7 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#ifndef AKONADI_SPECIALMAILCOLLECTIONS_H
-#define AKONADI_SPECIALMAILCOLLECTIONS_H
+#pragma once
 
 #include "akonadi-mime_export.h"
 
@@ -149,4 +148,3 @@ private:
 };
 } // namespace Akonadi
 
-#endif // AKONADI_SPECIALMAILCOLLECTIONS_H
