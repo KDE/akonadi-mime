@@ -31,7 +31,7 @@ public:
     SpecialMailCollections *mInstance = nullptr;
 };
 
-typedef SpecialMailCollectionsSettings Settings;
+using Settings = SpecialMailCollectionsSettings;
 
 Q_GLOBAL_STATIC(SpecialMailCollectionsPrivate, sInstance)
 

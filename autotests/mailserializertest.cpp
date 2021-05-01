@@ -103,7 +103,7 @@ void MailSerializerTest::testEnvelopeDeserialize()
     }
     QVERIFY(i.hasPayload<KMime::Message::Ptr>());
 
-    KMime::Message::Ptr msg = i.payload<KMime::Message::Ptr>();
+    auto msg = i.payload<KMime::Message::Ptr>();
     QCOMPARE(msg->date()->dateTime(), date);
     QCOMPARE(msg->subject()->asUnicodeString(), subject);
     QCOMPARE(msg->from()->asUnicodeString(), from);
@@ -249,7 +249,7 @@ void MailSerializerTest::testHeaderFetch()
     serializer->deserialize(i, MessagePart::Header, buffer, 0);
     QVERIFY(i.hasPayload<KMime::Message::Ptr>());
 
-    KMime::Message::Ptr msg = i.payload<KMime::Message::Ptr>();
+    auto msg = i.payload<KMime::Message::Ptr>();
     QCOMPARE(msg->subject()->asUnicodeString(), expectedSubject);
     QCOMPARE(msg->from()->asUnicodeString(), expectedFrom);
     QCOMPARE(msg->to()->asUnicodeString(), expectedTo);
@@ -292,7 +292,7 @@ void MailSerializerTest::testMultiDeserialize()
     serializer->deserialize(i, MessagePart::Body, buffer, 0);
     QVERIFY(i.hasPayload<KMime::Message::Ptr>());
 
-    KMime::Message::Ptr msg = i.payload<KMime::Message::Ptr>();
+    auto msg = i.payload<KMime::Message::Ptr>();
     QCOMPARE(msg->subject()->asUnicodeString(), expectedSubject);
     QCOMPARE(msg->from()->asUnicodeString(), expectedFrom);
     QCOMPARE(msg->to()->asUnicodeString(), expectedTo);

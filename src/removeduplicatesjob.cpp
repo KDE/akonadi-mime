@@ -70,7 +70,7 @@ public:
         for (int i = 0; i < numberOfItems; ++i) {
             Akonadi::Item item = items.at(i);
             if (item.hasPayload<KMime::Message::Ptr>()) {
-                KMime::Message::Ptr message = item.payload<KMime::Message::Ptr>();
+                auto message = item.payload<KMime::Message::Ptr>();
                 QByteArray idStr = message->messageID()->as7BitString(false);
                 // TODO: Maybe do some more check in case of idStr.isEmpty()
                 // like when the first message's body is different from the 2nd,

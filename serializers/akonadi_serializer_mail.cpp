@@ -217,7 +217,7 @@ void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, 
 {
     version = 1;
 
-    KMime::Message::Ptr m = item.payload<KMime::Message::Ptr>();
+    auto m = item.payload<KMime::Message::Ptr>();
     if (label == MessagePart::Body) {
         data.write(m->encodedContent());
     } else if (label == MessagePart::Envelope) {
@@ -244,7 +244,7 @@ QSet<QByteArray> SerializerPluginMail::parts(const Item &item) const
         return set;
     }
 
-    KMime::Message::Ptr msg = item.payload<KMime::Message::Ptr>();
+    auto msg = item.payload<KMime::Message::Ptr>();
     if (!msg) {
         return set;
     }
@@ -264,7 +264,7 @@ QString SerializerPluginMail::extractGid(const Item &item) const
     if (!item.hasPayload<KMime::Message::Ptr>()) {
         return QString();
     }
-    const KMime::Message::Ptr msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<KMime::Message::Ptr>();
     KMime::Headers::MessageID *mid = msg->messageID(false);
     if (mid) {
         return mid->asUnicodeString();
