@@ -90,7 +90,7 @@ target_link_libraries(KF5AkonadiMime
     )
 
 set_target_properties(KF5AkonadiMime PROPERTIES
-    VERSION ${AKONADIMIME_VERSION_STRING}
+    VERSION ${AKONADIMIME_VERSION}
     SOVERSION ${AKONADIMIME_SOVERSION}
     EXPORT_NAME AkonadiMime
     )
