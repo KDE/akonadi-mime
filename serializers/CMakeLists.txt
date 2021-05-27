@@ -2,11 +2,12 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime5-serializer\")
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
-set(akonadi_serializer_mail_SRCS
+add_library(akonadi_serializer_mail MODULE)
+target_sources(akonadi_serializer_mail PRIVATE
     akonadi_serializer_mail.cpp
 )
 
-ecm_qt_declare_logging_category(akonadi_serializer_mail_SRCS
+ecm_qt_declare_logging_category(akonadi_serializer_mail
         HEADER akonadi_serializer_mail_debug.h
         IDENTIFIER AKONADI_SERIALIZER_MAIL_LOG
         DESCRIPTION "akonadi-mime (akonadi_serializer_mail)"
@@ -14,7 +15,6 @@ ecm_qt_declare_logging_category(akonadi_serializer_mail_SRCS
         EXPORT AKONADIMIME
     )
 
-add_library(akonadi_serializer_mail MODULE ${akonadi_serializer_mail_SRCS})
 target_link_libraries(akonadi_serializer_mail
     KF5::Mime
     KF5::AkonadiCore
