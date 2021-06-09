@@ -8,9 +8,9 @@
 */
 #pragma once
 
-#include <QSet>
-
 #include "akonadi-mime_export.h"
+#include <QDebug>
+#include <QSet>
 
 class QString;
 
@@ -415,3 +415,4 @@ private:
 };
 } // namespace Akonadi
 
+AKONADI_MIME_EXPORT QDebug operator<<(QDebug d, const Akonadi::MessageStatus &t);

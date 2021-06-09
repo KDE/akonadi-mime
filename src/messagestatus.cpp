@@ -787,3 +787,9 @@ const Akonadi::MessageStatus Akonadi::MessageStatus::statusHasError()
     st.setHasError();
     return st;
 }
+
+QDebug operator<<(QDebug d, const Akonadi::MessageStatus &t)
+{
+    d << "status " << t.statusStr();
+    return d;
+}
