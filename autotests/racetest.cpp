@@ -65,7 +65,7 @@ void RaceTest::testMultipleProcesses()
     types.append(AgentManager::self()->type(QLatin1String("akonadi_maildir_resource")));
     types.append(AgentManager::self()->type(QLatin1String("akonadi_maildispatcher_agent")));
     AgentInstance::List instances = AgentManager::self()->instances();
-    for (const AgentInstance &instance : qAsConst(instances)) {
+    for (const AgentInstance &instance : std::as_const(instances)) {
         if (types.contains(instance.type())) {
             qDebug() << "Removing instance of type" << instance.type().identifier();
             AgentManager::self()->removeInstance(instance);
@@ -74,7 +74,7 @@ void RaceTest::testMultipleProcesses()
         }
     }
     instances = AgentManager::self()->instances();
-    for (const AgentInstance &instance : qAsConst(instances)) {
+    for (const AgentInstance &instance : std::as_const(instances)) {
         QVERIFY(!types.contains(instance.type()));
     }
 

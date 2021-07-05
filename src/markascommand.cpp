@@ -156,7 +156,7 @@ void MarkAsCommand::markMessages()
     }
 
     Akonadi::Item::List itemsToModify;
-    for (const Akonadi::Item &it : qAsConst(d->mMessages)) {
+    for (const Akonadi::Item &it : std::as_const(d->mMessages)) {
         Akonadi::Item item(it);
 
         // be careful to only change the flags we want to change, not to overwrite them

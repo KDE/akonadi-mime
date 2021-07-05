@@ -366,7 +366,7 @@ public:
         bool canDeleteItem = true;
         bool isSystemFolder = false;
         if (collectionIsSelected) {
-            for (const Collection &collection : qAsConst(selectedCollections)) {
+            for (const Collection &collection : std::as_const(selectedCollections)) {
                 if (collection.isValid()) {
                     const Akonadi::CollectionStatistics stats = collection.statistics();
                     if (!enableMarkAllAsRead) {
