@@ -58,7 +58,7 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
     QVERIFY(spy.isValid());
     QVERIFY(defSpy.isValid());
 
-    // Initially the defaut maildir does not exist.
+    // Initially the default maildir does not exist.
     QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
 
     // Request some default folders.

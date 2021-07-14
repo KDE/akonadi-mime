@@ -17,7 +17,7 @@ namespace Akonadi
 /**
  * Levare QString implicit sharing to decrease memory consumption.
  *
- * This class is thread safe. Apparenlty required for usage in
+ * This class is thread safe. Apparently required for usage in
  * legacy KRes compat bridges.
  */
 class StringPool

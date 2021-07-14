@@ -70,7 +70,7 @@ public:
 
     /**
      * Sets the addresses of the "Cc:" receivers."
-     * @param cc addresses of the recievers (CC)
+     * @param cc addresses of the receivers (CC)
      */
     void setCc(const QStringList &cc);
 
@@ -81,7 +81,7 @@ public:
 
     /**
      * Sets the addresses of the "Bcc:" receivers."
-     * @param bcc addresses of the recievers (CC)
+     * @param bcc addresses of the receivers (CC)
      */
     void setBcc(const QStringList &bcc);
 
