@@ -24,8 +24,8 @@ include(KDEGitCommitHooks)
 include(ECMQtDeclareLoggingCategory)
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.17.80")
-set(KF5_MIME_VERSION "5.17.80")
+set(AKONADI_VERSION "5.17.90")
+set(KF5_MIME_VERSION "5.17.90")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
