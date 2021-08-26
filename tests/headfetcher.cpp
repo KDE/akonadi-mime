@@ -22,6 +22,9 @@
 #include <KLocalizedString>
 #include <QCommandLineOption>
 #include <QCommandLineParser>
+#include <chrono>
+
+using namespace std::chrono_literals;
 
 using namespace Akonadi;
 
@@ -49,7 +52,7 @@ HeadFetcher::HeadFetcher(bool multipart)
     }
 
     qDebug() << "Took:" << timer.elapsed() << "ms.";
-    QTimer::singleShot(1000, this, &HeadFetcher::stop);
+    QTimer::singleShot(1s, this, &HeadFetcher::stop);
 }
 
 void HeadFetcher::stop()
