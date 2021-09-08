@@ -7,10 +7,10 @@
 #include "messagemodel.h"
 #include "messageparts.h"
 
-#include <entitytreemodel.h>
-#include <itemfetchscope.h>
-#include <monitor.h>
-#include <session.h>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/Monitor>
+#include <Akonadi/Session>
+#include <akonadi/itemfetchscope.h>
 
 #include <kmime/kmime_message.h>
 

@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include <agentmanager.h>
-#include <job.h>
+#include <Akonadi/Job>
+#include <akonadi/agentmanager.h>
 
 #include <QElapsedTimer>
 

@@ -9,8 +9,8 @@
 #include <QMutex>
 #include <QObject>
 
-#include <AkonadiCore/gidextractorinterface.h>
-#include <AkonadiCore/itemserializerplugin.h>
+#include <Akonadi/GidExtractorInterface>
+#include <Akonadi/ItemSerializerPlugin>
 
 namespace Akonadi
 {

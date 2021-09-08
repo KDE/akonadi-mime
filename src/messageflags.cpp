@@ -7,7 +7,7 @@
 
 #include "messageflags.h"
 
-#include <item.h>
+#include <Akonadi/Item>
 #include <kmime/kmime_message.h>
 #include <kmime/kmime_util.h>
 

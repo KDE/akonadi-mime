@@ -8,7 +8,7 @@
 #include "specialmailcollectionssettings.h"
 #include "specialmailcollectionstesting_p.h"
 
-#include <specialcollections.h>
+#include <Akonadi/SpecialCollection>
 
 using namespace Akonadi;
 

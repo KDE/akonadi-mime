@@ -6,7 +6,7 @@
 
 #include "mailserializerplugintest.h"
 
-#include <AkonadiCore/Item>
+#include <Akonadi/Item>
 #include <KMime/Message>
 
 #include <QDebug>

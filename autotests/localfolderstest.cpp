@@ -17,17 +17,17 @@
 #include "../src/specialmailcollectionstesting_p.h"
 #include "specialcollectionattribute.h"
 #include "specialcollections.h"
+#include <Akonadi/CollectionCreateJob>
+#include <Akonadi/CollectionDeleteJob>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/CollectionModifyJob>
+#include <Akonadi/ServerManager>
 #include <KLocalizedString>
 #include <QStandardPaths>
-#include <agentinstance.h>
-#include <agentmanager.h>
-#include <collectioncreatejob.h>
-#include <collectiondeletejob.h>
-#include <collectionfetchjob.h>
-#include <collectionmodifyjob.h>
+#include <akonadi/agentinstance.h>
+#include <akonadi/agentmanager.h>
 #include <control.h>
 #include <qtest_akonadi.h>
-#include <servermanager.h>
 #include <specialmailcollections.h>
 
 using namespace Akonadi;

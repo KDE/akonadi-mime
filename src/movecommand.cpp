@@ -8,7 +8,7 @@
 #include "movecommand.h"
 #include "util_p.h"
 
-#include <itemdeletejob.h>
+#include <Akonadi/ItemDeleteJob>
 #include <itemmovejob.h>
 using namespace Akonadi;
 

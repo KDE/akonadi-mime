@@ -9,8 +9,8 @@
 
 #include "akonadi-mime_export.h"
 #include "commandbase.h"
-#include <collection.h>
-#include <item.h>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 class KJob;
 namespace Akonadi

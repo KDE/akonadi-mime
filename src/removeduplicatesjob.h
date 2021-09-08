@@ -8,8 +8,8 @@
 
 #pragma once
 
-#include <collection.h>
-#include <job.h>
+#include <Akonadi/Collection>
+#include <Akonadi/Job>
 
 #include "akonadi-mime_export.h"
 

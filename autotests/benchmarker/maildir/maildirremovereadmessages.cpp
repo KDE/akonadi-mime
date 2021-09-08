@@ -8,10 +8,10 @@
 #include "maildirremovereadmessages.h"
 #include <QDebug>
 
-#include <collectionfetchjob.h>
-#include <collectionfetchscope.h>
-#include <itemdeletejob.h>
-#include <itemfetchjob.h>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/CollectionFetchScope>
+#include <Akonadi/ItemDeleteJob>
+#include <Akonadi/ItemFetchJob>
 
 using namespace Akonadi;
 

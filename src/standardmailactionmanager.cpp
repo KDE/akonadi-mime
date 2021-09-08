@@ -18,13 +18,13 @@
 #include "specialmailcollections.h"
 #include "util_p.h"
 
-#include <agentfilterproxymodel.h>
-#include <agentinstance.h>
-#include <agentinstancecreatejob.h>
-#include <agentmanager.h>
-#include <agenttypedialog.h>
-#include <collectionstatistics.h>
-#include <entitytreemodel.h>
+#include <Akonadi/AgentFilterProxyModel>
+#include <Akonadi/AgentInstanceCreateJob>
+#include <Akonadi/AgentTypeDialog>
+#include <Akonadi/CollectionStatistics>
+#include <Akonadi/EntityTreeModel>
+#include <akonadi/agentinstance.h>
+#include <akonadi/agentmanager.h>
 #include <mimetypechecker.h>
 #include <subscriptiondialog.h>
 

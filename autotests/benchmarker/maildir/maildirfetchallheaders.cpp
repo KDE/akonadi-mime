@@ -9,10 +9,10 @@
 
 #include <QDebug>
 
-#include <collectionfetchjob.h>
-#include <collectionfetchscope.h>
-#include <itemfetchjob.h>
-#include <itemfetchscope.h>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/CollectionFetchScope>
+#include <Akonadi/ItemFetchJob>
+#include <akonadi/itemfetchscope.h>
 
 #include "akonadi/kmime/messageparts.h"
 #include <kmime/kmime_message.h>

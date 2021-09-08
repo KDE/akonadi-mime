@@ -8,7 +8,7 @@
 
 #include "akonadi-mime_export.h"
 
-#include <AkonadiCore/EntityTreeModel>
+#include <Akonadi/EntityTreeModel>
 
 namespace Akonadi
 {

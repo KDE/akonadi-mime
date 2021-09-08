@@ -7,10 +7,10 @@
 
 #include "test.h"
 
-#include <agentinstancecreatejob.h>
-#include <collectiondeletejob.h>
-#include <collectionfetchjob.h>
-#include <collectionfetchscope.h>
+#include <Akonadi/AgentInstanceCreateJob>
+#include <Akonadi/CollectionDeleteJob>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/CollectionFetchScope>
 
 #include <QDBusConnection>
 #include <QDBusInterface>

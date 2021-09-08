@@ -9,8 +9,8 @@
 
 #include "commandbase.h"
 
-#include <collection.h>
-#include <item.h>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 class QAbstractItemModel;
 class KJob;

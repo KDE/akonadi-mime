@@ -11,9 +11,9 @@
 #include "specialmailcollections.h"
 #include "util_p.h"
 
-#include <entitytreemodel.h>
-#include <itemfetchjob.h>
-#include <itemfetchscope.h>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/ItemFetchJob>
+#include <akonadi/itemfetchscope.h>
 using namespace Akonadi;
 MoveToTrashCommand::MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Collection::List &folders, QObject *parent)
     : CommandBase(parent)

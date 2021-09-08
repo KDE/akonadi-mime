@@ -14,10 +14,10 @@
 #include <KLocalizedString>
 #include <KMessageBox>
 
-#include <agentmanager.h>
-#include <entitytreemodel.h>
-#include <itemdeletejob.h>
-#include <itemfetchjob.h>
+#include <Akonadi/EntityTreeModel>
+#include <Akonadi/ItemDeleteJob>
+#include <Akonadi/ItemFetchJob>
+#include <akonadi/agentmanager.h>
 #include <kmime/kmime_message.h>
 using namespace Akonadi;
 EmptyTrashCommand::EmptyTrashCommand(const QAbstractItemModel *model, QObject *parent)

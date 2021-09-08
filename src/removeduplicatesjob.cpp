@@ -8,9 +8,9 @@
 
 #include "removeduplicatesjob.h"
 #include "akonadi_mime_debug.h"
-#include <itemdeletejob.h>
-#include <itemfetchjob.h>
-#include <itemfetchscope.h>
+#include <Akonadi/ItemDeleteJob>
+#include <Akonadi/ItemFetchJob>
+#include <akonadi/itemfetchscope.h>
 
 #include <kmime/kmime_message.h>
 

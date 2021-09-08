@@ -5,9 +5,9 @@
 */
 
 #include "messagetest.h"
+#include <Akonadi/Item>
 #include <QFile>
 #include <QTest>
-#include <item.h>
 #include <messageflags.h>
 using namespace KMime;
 

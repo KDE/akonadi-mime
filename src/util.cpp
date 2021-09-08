@@ -8,8 +8,8 @@
 #include "imapsettings.h"
 #include "util_p.h"
 
+#include <Akonadi/ServerManager>
 #include <QDBusConnection>
-#include <servermanager.h>
 
 #include "akonadi_mime_debug.h"
 #include <KIO/Job>

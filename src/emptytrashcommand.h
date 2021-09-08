@@ -9,8 +9,8 @@
 
 #include "commandbase.h"
 
-#include <agentinstance.h>
-#include <collection.h>
+#include <Akonadi/Collection>
+#include <akonadi/agentinstance.h>
 
 class QAbstractItemModel;
 namespace Akonadi

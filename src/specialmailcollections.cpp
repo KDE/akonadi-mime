@@ -8,11 +8,11 @@
 #include "akonadi_mime_debug.h"
 #include "specialmailcollectionssettings.h"
 
-#include <agentinstance.h>
-#include <collectionmodifyjob.h>
-#include <entitydisplayattribute.h>
-#include <servermanager.h>
-#include <specialcollectionattribute.h>
+#include <Akonadi/CollectionModifyJob>
+#include <Akonadi/ServerManager>
+#include <Akonadi/SpecialCollectionAttribute>
+#include <akonadi/agentinstance.h>
+#include <akonadi/entitydisplayattribute.h>
 
 #include <KLocalizedString>
 #include <kcoreaddons_version.h>

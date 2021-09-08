@@ -8,10 +8,10 @@
 #include "markascommand.h"
 #include "akonadi_mime_debug.h"
 #include "util_p.h"
-#include <collectionfetchjob.h>
-#include <itemfetchjob.h>
-#include <itemfetchscope.h>
-#include <itemmodifyjob.h>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemModifyJob>
+#include <akonadi/itemfetchscope.h>
 
 #include <KLocalizedString>
 #include <KMessageBox>

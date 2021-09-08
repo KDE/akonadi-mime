@@ -10,8 +10,8 @@
 #include "commandbase.h"
 #include "messagestatus.h"
 
-#include <collection.h>
-#include <item.h>
+#include <Akonadi/Collection>
+#include <Akonadi/Item>
 
 #include "akonadi-mime_export.h"
 

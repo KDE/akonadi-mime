@@ -7,12 +7,12 @@
 
 #include "maildir.h"
 
-#include <collectiondeletejob.h>
-#include <collectionfetchjob.h>
-#include <itemdeletejob.h>
-#include <itemfetchjob.h>
-#include <itemfetchscope.h>
-#include <itemmodifyjob.h>
+#include <Akonadi/CollectionDeleteJob>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/ItemDeleteJob>
+#include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemModifyJob>
+#include <akonadi/itemfetchscope.h>
 
 #include "akonadi/kmime/messageparts.h"
 #include <kmime/kmime_message.h>

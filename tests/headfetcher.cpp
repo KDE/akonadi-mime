@@ -6,9 +6,9 @@
 
 #include "headfetcher.h"
 
-#include <collectionfetchjob.h>
-#include <itemfetchjob.h>
-#include <itemfetchscope.h>
+#include <Akonadi/CollectionFetchJob>
+#include <Akonadi/ItemFetchJob>
+#include <akonadi/itemfetchscope.h>
 
 #include "messageparts.h"
 

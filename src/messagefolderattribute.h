@@ -8,7 +8,7 @@
 
 #include "akonadi-mime_export.h"
 
-#include <attribute.h>
+#include <akonadi/attribute.h>
 
 #include <QByteArray>
 

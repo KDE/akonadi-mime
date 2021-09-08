@@ -29,7 +29,7 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.18.40")
+set(AKONADI_VERSION "5.18.41")
 set(KF5_MIME_VERSION "5.18.40")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
