@@ -12,7 +12,7 @@
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QDebug>
-#include <control.h>
+#include <akonadi/control.h>
 #include <specialmailcollections.h>
 #include <specialmailcollectionsrequestjob.h>
 

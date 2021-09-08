@@ -22,8 +22,8 @@
 #include <QStandardPaths>
 #include <akonadi/agentinstance.h>
 #include <akonadi/agentmanager.h>
+#include <akonadi/qtest_akonadi.h>
 #include <control.h>
-#include <qtest_akonadi.h>
 #include <specialmailcollections.h>
 #include <specialmailcollectionsrequestjob.h>
 

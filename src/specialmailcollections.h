@@ -8,7 +8,7 @@
 
 #include "akonadi-mime_export.h"
 
-#include <specialcollections.h>
+#include <akonadi/specialcollections.h>
 
 namespace Akonadi
 {

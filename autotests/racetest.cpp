@@ -10,11 +10,11 @@
 #include <QDebug>
 
 #include <Akonadi/AgentInstanceCreateJob>
-#include <agenttype.h>
+#include <Akonadi/AgentType>
 #include <akonadi/agentinstance.h>
 #include <akonadi/agentmanager.h>
+#include <akonadi/qtest_akonadi.h>
 #include <control.h>
-#include <qtest_akonadi.h>
 //#include <localfolders.h>
 
 #define TIMEOUT_SECONDS 20

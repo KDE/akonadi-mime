@@ -25,8 +25,8 @@
 #include <Akonadi/EntityTreeModel>
 #include <akonadi/agentinstance.h>
 #include <akonadi/agentmanager.h>
-#include <mimetypechecker.h>
-#include <subscriptiondialog.h>
+#include <akonadi/mimetypechecker.h>
+#include <akonadi/subscriptiondialog.h>
 
 #include <kmime/kmime_message.h>
 #include <messagestatus.h>
