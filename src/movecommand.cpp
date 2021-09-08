@@ -9,7 +9,7 @@
 #include "util_p.h"
 
 #include <Akonadi/ItemDeleteJob>
-#include <itemmovejob.h>
+#include <Akonadi/ItemMoveJob>
 using namespace Akonadi;
 
 class Akonadi::MoveCommandPrivate
