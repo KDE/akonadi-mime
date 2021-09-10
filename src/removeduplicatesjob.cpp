@@ -10,7 +10,7 @@
 #include "akonadi_mime_debug.h"
 #include <Akonadi/ItemDeleteJob>
 #include <Akonadi/ItemFetchJob>
-#include <akonadi/itemfetchscope.h>
+#include <Akonadi/ItemFetchScope>
 
 #include <kmime/kmime_message.h>
 

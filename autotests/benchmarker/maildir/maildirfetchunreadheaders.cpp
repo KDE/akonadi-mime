@@ -12,7 +12,7 @@
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/CollectionFetchScope>
 #include <Akonadi/ItemFetchJob>
-#include <akonadi/itemfetchscope.h>
+#include <Akonadi/ItemFetchScope>
 
 #include "akonadi/kmime/messageparts.h"
 #include <kmime/kmime_message.h>

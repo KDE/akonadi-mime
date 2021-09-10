@@ -11,7 +11,7 @@
 #include <QString>
 #include <QStringList>
 
-#include <akonadi/attribute.h>
+#include <Akonadi/Attribute>
 
 namespace Akonadi
 {

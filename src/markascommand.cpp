@@ -10,8 +10,8 @@
 #include "util_p.h"
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/ItemModifyJob>
-#include <akonadi/itemfetchscope.h>
 
 #include <KLocalizedString>
 #include <KMessageBox>

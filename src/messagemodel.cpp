@@ -8,9 +8,9 @@
 #include "messageparts.h"
 
 #include <Akonadi/EntityTreeModel>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/Monitor>
 #include <Akonadi/Session>
-#include <akonadi/itemfetchscope.h>
 
 #include <kmime/kmime_message.h>
 

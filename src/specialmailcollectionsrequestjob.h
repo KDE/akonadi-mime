@@ -9,7 +9,7 @@
 #include "akonadi-mime_export.h"
 #include "specialmailcollections.h"
 
-#include <akonadi/specialcollectionsrequestjob.h>
+#include <Akonadi/SpecialCollectionsRequestJob>
 
 namespace Akonadi
 {

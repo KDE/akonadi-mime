@@ -8,7 +8,7 @@
 
 #include <QDataStream>
 
-#include <akonadi/attributefactory.h>
+#include <Akonadi/AttributeFactory>
 
 using namespace Akonadi;
 

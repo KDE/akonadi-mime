@@ -11,8 +11,8 @@
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemDeleteJob>
 #include <Akonadi/ItemFetchJob>
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/ItemModifyJob>
-#include <akonadi/itemfetchscope.h>
 
 #include "akonadi/kmime/messageparts.h"
 #include <kmime/kmime_message.h>

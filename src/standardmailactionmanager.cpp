@@ -19,13 +19,13 @@
 #include "util_p.h"
 
 #include <Akonadi/AgentFilterProxyModel>
+#include <Akonadi/AgentInstance>
 #include <Akonadi/AgentInstanceCreateJob>
+#include <Akonadi/AgentManager>
 #include <Akonadi/AgentTypeDialog>
 #include <Akonadi/CollectionStatistics>
 #include <Akonadi/EntityTreeModel>
-#include <akonadi/agentinstance.h>
-#include <akonadi/agentmanager.h>
-#include <akonadi/mimetypechecker.h>
+#include <Akonadi/MimeTypeChecker>
 #include <akonadi/subscriptiondialog.h>
 
 #include <kmime/kmime_message.h>

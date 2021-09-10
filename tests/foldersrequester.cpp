@@ -7,12 +7,12 @@
 #include "foldersrequester.h"
 
 #include <Akonadi/Collection>
+#include <Akonadi/Control>
 #include <KAboutData>
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QDebug>
-#include <akonadi/control.h>
 #include <specialmailcollections.h>
 #include <specialmailcollectionsrequestjob.h>
 

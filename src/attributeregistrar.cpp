@@ -6,7 +6,7 @@
 
 #include "messagefolderattribute.h"
 
-#include <akonadi/attributefactory.h>
+#include <Akonadi/AttributeFactory>
 
 #ifndef KDELIBS_STATIC_LIBS
 namespace

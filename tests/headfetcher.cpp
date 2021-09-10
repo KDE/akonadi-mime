@@ -8,7 +8,7 @@
 
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemFetchJob>
-#include <akonadi/itemfetchscope.h>
+#include <Akonadi/ItemFetchScope>
 
 #include "messageparts.h"
 

@@ -15,13 +15,13 @@
 #include "../src/specialmailcollectionstesting_p.h"
 #include "specialcollectionattribute.h"
 #include "specialcollections.h"
+#include <Akonadi/AgentInstance>
+#include <Akonadi/AgentManager>
 #include <Akonadi/CollectionCreateJob>
 #include <Akonadi/CollectionDeleteJob>
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/CollectionModifyJob>
 #include <QStandardPaths>
-#include <akonadi/agentinstance.h>
-#include <akonadi/agentmanager.h>
 #include <akonadi/qtest_akonadi.h>
 #include <control.h>
 #include <specialmailcollections.h>

@@ -7,7 +7,7 @@
 #pragma once
 
 #include "akonadi-mime_export.h"
-#include <akonadi/attribute.h>
+#include <Akonadi/Attribute>
 
 #include <QScopedPointer>
 

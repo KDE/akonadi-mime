@@ -9,10 +9,10 @@
 #include <KProcess>
 #include <QDebug>
 
+#include <Akonadi/AgentInstance>
 #include <Akonadi/AgentInstanceCreateJob>
+#include <Akonadi/AgentManager>
 #include <Akonadi/AgentType>
-#include <akonadi/agentinstance.h>
-#include <akonadi/agentmanager.h>
 #include <akonadi/qtest_akonadi.h>
 #include <control.h>
 //#include <localfolders.h>
