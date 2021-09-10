@@ -20,11 +20,11 @@
 
 #include <Akonadi/AgentFilterProxyModel>
 #include <Akonadi/AgentInstanceCreateJob>
+#include <Akonadi/AgentTypeDialog>
 #include <Akonadi/CollectionStatistics>
 #include <Akonadi/EntityTreeModel>
 #include <akonadi/agentinstance.h>
 #include <akonadi/agentmanager.h>
-#include <akonadi/agenttypedialog.h>
 #include <akonadi/mimetypechecker.h>
 #include <akonadi/subscriptiondialog.h>
 

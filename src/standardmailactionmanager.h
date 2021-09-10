@@ -10,7 +10,7 @@
 
 #include "akonadi-mime_export.h"
 
-#include <akonadi/standardactionmanager.h>
+#include <Akonadi/StandardActionManager>
 
 #include <QObject>
 
