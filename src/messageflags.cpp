@@ -8,8 +8,8 @@
 #include "messageflags.h"
 
 #include <Akonadi/Item>
-#include <kmime/kmime_message.h>
-#include <kmime/kmime_util.h>
+#include <KMime/KMimeMessage>
+#include <KMime/Util>
 
 const char Akonadi::MessageFlags::Seen[] = "\\SEEN";
 const char Akonadi::MessageFlags::Deleted[] = "\\DELETED";

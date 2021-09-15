@@ -12,7 +12,7 @@
 #include <Akonadi/Monitor>
 #include <Akonadi/Session>
 
-#include <kmime/kmime_message.h>
+#include <KMime/KMimeMessage>
 
 #include <KLocalizedString>
 

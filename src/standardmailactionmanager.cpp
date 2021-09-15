@@ -28,7 +28,7 @@
 #include <Akonadi/MimeTypeChecker>
 #include <akonadi/subscriptiondialog.h>
 
-#include <kmime/kmime_message.h>
+#include <KMime/KMimeMessage>
 #include <messagestatus.h>
 
 #include <KActionCollection>

@@ -15,7 +15,7 @@
 #include <Akonadi/ItemModifyJob>
 
 #include "akonadi/kmime/messageparts.h"
-#include <kmime/kmime_message.h>
+#include <KMime/KMimeMessage>
 
 #define WAIT_TIME 100
 

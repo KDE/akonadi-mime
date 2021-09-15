@@ -7,7 +7,7 @@
 #include "specialmailcollectionsdiscoveryjob.h"
 #include "specialmailcollections.h"
 
-#include <kmime/kmime_message.h>
+#include <KMime/KMimeMessage>
 
 #include <QStringList>
 
