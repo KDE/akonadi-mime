@@ -18,19 +18,21 @@ using namespace Akonadi;
 class AddressAttribute::Private
 {
 public:
+    bool mDSN = false;
     QString mFrom;
     QStringList mTo;
     QStringList mCc;
     QStringList mBcc;
 };
 
-AddressAttribute::AddressAttribute(const QString &from, const QStringList &to, const QStringList &cc, const QStringList &bcc)
+AddressAttribute::AddressAttribute(const QString &from, const QStringList &to, const QStringList &cc, const QStringList &bcc, bool dsn)
     : d(new Private)
 {
     d->mFrom = from;
     d->mTo = to;
     d->mCc = cc;
     d->mBcc = bcc;
+    d->mDSN = dsn;
 }
 
 AddressAttribute::~AddressAttribute()
@@ -40,7 +42,7 @@ AddressAttribute::~AddressAttribute()
 
 AddressAttribute *AddressAttribute::clone() const
 {
-    return new AddressAttribute(d->mFrom, d->mTo, d->mCc, d->mBcc);
+    return new AddressAttribute(d->mFrom, d->mTo, d->mCc, d->mBcc, d->mDSN);
 }
 
 QByteArray AddressAttribute::type() const
@@ -58,6 +60,7 @@ QByteArray AddressAttribute::serialized() const
     serializer << d->mTo;
     serializer << d->mCc;
     serializer << d->mBcc;
+    serializer << d->mDSN;
     return serializedData;
 }
 
@@ -69,6 +72,9 @@ void AddressAttribute::deserialize(const QByteArray &data)
     deserializer >> d->mTo;
     deserializer >> d->mCc;
     deserializer >> d->mBcc;
+    if (!deserializer.atEnd()) {
+        deserializer >> d->mDSN;
+    }
 }
 
 QString AddressAttribute::from() const
@@ -109,6 +115,16 @@ QStringList AddressAttribute::bcc() const
 void AddressAttribute::setBcc(const QStringList &bcc)
 {
     d->mBcc = bcc;
+}
+
+bool AddressAttribute::deliveryStatusNotification() const
+{
+    return d->mDSN;
+}
+
+void AddressAttribute::setDeliveryStatusNotification(bool b)
+{
+    d->mDSN = b;
 }
 
 // Register the attribute when the library is loaded.

@@ -30,22 +30,23 @@ public:
     explicit AddressAttribute(const QString &from = QString(),
                               const QStringList &to = QStringList(),
                               const QStringList &cc = QStringList(),
-                              const QStringList &bcc = QStringList());
+                              const QStringList &bcc = QStringList(),
+                              bool dsn = false);
     /**
       Destroys the AddressAttribute.
     */
     ~AddressAttribute() override;
 
     /* reimpl */
-    AddressAttribute *clone() const override;
-    QByteArray type() const override;
-    QByteArray serialized() const override;
+    Q_REQUIRED_RESULT AddressAttribute *clone() const override;
+    Q_REQUIRED_RESULT QByteArray type() const override;
+    Q_REQUIRED_RESULT QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
     /**
       Returns the address of the sender.
     */
-    QString from() const;
+    Q_REQUIRED_RESULT QString from() const;
 
     /**
       Sets the address of the sender.
@@ -55,7 +56,7 @@ public:
     /**
       Returns the addresses of the "To:" receivers.
     */
-    QStringList to() const;
+    Q_REQUIRED_RESULT QStringList to() const;
 
     /**
      * Sets the addresses of the "To: "receivers."
@@ -66,7 +67,7 @@ public:
     /**
       Returns the addresses of the "Cc:" receivers.
     */
-    QStringList cc() const;
+    Q_REQUIRED_RESULT QStringList cc() const;
 
     /**
      * Sets the addresses of the "Cc:" receivers."
@@ -77,13 +78,16 @@ public:
     /**
      * Returns the addresses of the "Bcc:" receivers.
      */
-    QStringList bcc() const;
+    Q_REQUIRED_RESULT QStringList bcc() const;
 
     /**
      * Sets the addresses of the "Bcc:" receivers."
      * @param bcc addresses of the receivers (CC)
      */
     void setBcc(const QStringList &bcc);
+
+    void setDeliveryStatusNotification(bool b);
+    Q_REQUIRED_RESULT bool deliveryStatusNotification() const;
 
 private:
     class Private;
