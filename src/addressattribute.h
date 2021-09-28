@@ -89,6 +89,8 @@ public:
     void setDeliveryStatusNotification(bool b);
     Q_REQUIRED_RESULT bool deliveryStatusNotification() const;
 
+    bool operator==(const AddressAttribute &other) const;
+
 private:
     class Private;
     Private *const d;
