@@ -113,9 +113,9 @@ void MarkAsCommand::slotFetchDone(KJob *job)
         markMessages();
     }
     if (d->mFolderListJobCount > 0) {
-        auto job = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
-        job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
-        connect(job, &Akonadi::ItemFetchJob::result, this, &MarkAsCommand::slotFetchDone);
+        auto fetchJob = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
+        fetchJob->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
+        connect(fetchJob, &Akonadi::ItemFetchJob::result, this, &MarkAsCommand::slotFetchDone);
     }
 }
 
