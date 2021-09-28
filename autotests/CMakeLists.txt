@@ -45,3 +45,8 @@ ecm_add_test(pop3resourceattributetest.cpp
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
     TEST_NAME pop3resourceattributetest
 )
+ecm_add_test(addressattributetest.cpp
+    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
+    TEST_NAME addressattributetest
+)
+
