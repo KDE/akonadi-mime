@@ -31,10 +31,7 @@ MoveCommand::MoveCommand(const Akonadi::Collection &destFolder, const Akonadi::I
     d->mMessages = msgList;
 }
 
-MoveCommand::~MoveCommand()
-{
-    delete d;
-}
+MoveCommand::~MoveCommand() = default;
 
 void MoveCommand::execute()
 {

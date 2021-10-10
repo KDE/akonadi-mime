@@ -9,7 +9,7 @@
 #include "akonadi-mime_export.h"
 #include <Akonadi/Attribute>
 
-#include <QScopedPointer>
+#include <memory>
 
 namespace Akonadi
 {
@@ -33,6 +33,6 @@ public:
 
 private:
     friend class Pop3ResourceAttributePrivate;
-    QScopedPointer<Pop3ResourceAttributePrivate> const d;
+    std::unique_ptr<Pop3ResourceAttributePrivate> const d;
 };
 }

@@ -15,6 +15,8 @@
 
 #include "akonadi-mime_export.h"
 
+#include <memory>
+
 class KJob;
 namespace Akonadi
 {
@@ -35,6 +37,7 @@ private Q_SLOTS:
 
 private:
     void markMessages();
-    MarkAsCommandPrivate *const d;
+
+    std::unique_ptr<MarkAsCommandPrivate> const d;
 };
 }

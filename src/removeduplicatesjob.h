@@ -13,6 +13,8 @@
 
 #include "akonadi-mime_export.h"
 
+#include <memory>
+
 namespace Akonadi
 {
 /**
@@ -55,7 +57,7 @@ protected:
 
 private:
     class Private;
-    Private *const d;
+    std::unique_ptr<Private> const d;
 };
 } /* namespace Akonadi */
 

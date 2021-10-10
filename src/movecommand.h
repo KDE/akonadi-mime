@@ -12,6 +12,8 @@
 #include <Akonadi/Collection>
 #include <Akonadi/Item>
 
+#include <memory>
+
 class KJob;
 namespace Akonadi
 {
@@ -28,6 +30,6 @@ private Q_SLOTS:
     void slotMoveResult(KJob *job);
 
 private:
-    MoveCommandPrivate *const d;
+    std::unique_ptr<MoveCommandPrivate> const d;
 };
 }

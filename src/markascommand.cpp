@@ -57,10 +57,7 @@ MarkAsCommand::MarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi:
     d->mRecursive = recursive;
 }
 
-MarkAsCommand::~MarkAsCommand()
-{
-    delete d;
-}
+MarkAsCommand::~MarkAsCommand() = default;
 
 void MarkAsCommand::slotCollectionFetchDone(KJob *job)
 {

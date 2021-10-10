@@ -25,10 +25,7 @@ MessageFolderAttribute::MessageFolderAttribute(const MessageFolderAttribute &oth
 {
 }
 
-MessageFolderAttribute::~MessageFolderAttribute()
-{
-    delete d;
-}
+MessageFolderAttribute::~MessageFolderAttribute() = default;
 
 QByteArray MessageFolderAttribute::type() const
 {

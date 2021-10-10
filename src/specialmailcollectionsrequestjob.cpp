@@ -11,6 +11,10 @@
 
 using namespace Akonadi;
 
+class Akonadi::SpecialMailCollectionsRequestJobPrivate
+{
+};
+
 static inline QByteArray enumToType(SpecialMailCollections::Type type)
 {
     switch (type) {

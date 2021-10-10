@@ -10,7 +10,7 @@
 
 #include <Akonadi/Attribute>
 
-#include <QScopedPointer>
+#include <memory>
 
 namespace Akonadi
 {
@@ -33,7 +33,7 @@ public:
 
 private:
     friend class NewMailNotifierAttributePrivate;
-    QScopedPointer<NewMailNotifierAttributePrivate> const d;
+    std::unique_ptr<NewMailNotifierAttributePrivate> const d;
 };
 }
 

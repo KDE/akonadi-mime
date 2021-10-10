@@ -11,6 +11,8 @@
 
 #include <Akonadi/SpecialCollectionsRequestJob>
 
+#include <memory>
+
 namespace Akonadi
 {
 class SpecialMailCollectionsRequestJobPrivate;
@@ -84,7 +86,7 @@ private:
     //@cond PRIVATE
     friend class SpecialMailCollectionsRequestJobPrivate;
 
-    SpecialMailCollectionsRequestJobPrivate *const d;
+    std::unique_ptr<SpecialMailCollectionsRequestJobPrivate> const d;
     //@endcond
 };
 } // namespace Akonadi

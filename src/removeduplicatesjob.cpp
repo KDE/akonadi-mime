@@ -161,10 +161,7 @@ RemoveDuplicatesJob::RemoveDuplicatesJob(const Akonadi::Collection::List &folder
     d->mJobCount = d->mFolders.length();
 }
 
-RemoveDuplicatesJob::~RemoveDuplicatesJob()
-{
-    delete d;
-}
+RemoveDuplicatesJob::~RemoveDuplicatesJob() = default;
 
 void RemoveDuplicatesJob::doStart()
 {

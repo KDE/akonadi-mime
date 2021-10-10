@@ -641,10 +641,7 @@ StandardMailActionManager::StandardMailActionManager(KActionCollection *actionCo
 {
 }
 
-StandardMailActionManager::~StandardMailActionManager()
-{
-    delete d;
-}
+StandardMailActionManager::~StandardMailActionManager() = default;
 
 void StandardMailActionManager::setCollectionSelectionModel(QItemSelectionModel *selectionModel)
 {

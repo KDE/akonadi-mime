@@ -35,10 +35,7 @@ AddressAttribute::AddressAttribute(const QString &from, const QStringList &to, c
     d->mDSN = dsn;
 }
 
-AddressAttribute::~AddressAttribute()
-{
-    delete d;
-}
+AddressAttribute::~AddressAttribute() = default;
 
 AddressAttribute *AddressAttribute::clone() const
 {
