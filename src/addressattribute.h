@@ -17,6 +17,8 @@
 
 namespace Akonadi
 {
+class AddressAttributePrivate;
+
 /**
   Attribute storing the From, To, Cc, Bcc addresses of a message.
 
@@ -94,8 +96,7 @@ public:
     bool operator==(const AddressAttribute &other) const;
 
 private:
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<AddressAttributePrivate> const d;
 };
 } // namespace Akonadi
 

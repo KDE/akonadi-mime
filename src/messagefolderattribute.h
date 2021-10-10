@@ -16,6 +16,8 @@
 
 namespace Akonadi
 {
+class MessageFolderAttributePrivate;
+
 /**
   Message folder information. Used eg. by mail clients to decide how to display the content of such collections
   @since 4.4
@@ -59,8 +61,7 @@ public:
     void deserialize(const QByteArray &data) override;
 
 private:
-    class Private;
-    std::unique_ptr<Private> const d;
+    std::unique_ptr<MessageFolderAttributePrivate> const d;
 };
 }
 

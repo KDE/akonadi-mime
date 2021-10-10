@@ -16,10 +16,10 @@
 
 #include <KLocalizedString>
 
-class Q_DECL_HIDDEN Akonadi::RemoveDuplicatesJob::Private
+class Akonadi::RemoveDuplicatesJobPrivate
 {
 public:
-    Private(RemoveDuplicatesJob *parent)
+    explicit RemoveDuplicatesJobPrivate(RemoveDuplicatesJob *parent)
         : mParent(parent)
     {
     }
@@ -147,7 +147,7 @@ using namespace Akonadi;
 
 RemoveDuplicatesJob::RemoveDuplicatesJob(const Akonadi::Collection &folder, QObject *parent)
     : Job(parent)
-    , d(new Private(this))
+    , d(new RemoveDuplicatesJobPrivate(this))
 {
     d->mJobCount = 1;
     d->mFolders << folder;
@@ -155,7 +155,7 @@ RemoveDuplicatesJob::RemoveDuplicatesJob(const Akonadi::Collection &folder, QObj
 
 RemoveDuplicatesJob::RemoveDuplicatesJob(const Akonadi::Collection::List &folders, QObject *parent)
     : Job(parent)
-    , d(new Private(this))
+    , d(new RemoveDuplicatesJobPrivate(this))
 {
     d->mFolders = folders;
     d->mJobCount = d->mFolders.length();

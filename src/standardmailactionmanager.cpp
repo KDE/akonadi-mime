@@ -40,10 +40,10 @@
 
 using namespace Akonadi;
 
-class Q_DECL_HIDDEN StandardMailActionManager::Private
+class Akonadi::StandardMailActionManagerPrivate
 {
 public:
-    Private(KActionCollection *actionCollection, QWidget *parentWidget, StandardMailActionManager *parent)
+    StandardMailActionManagerPrivate(KActionCollection *actionCollection, QWidget *parentWidget, StandardMailActionManager *parent)
         : mActionCollection(actionCollection)
         , mParentWidget(parentWidget)
         , mParent(parent)
@@ -65,7 +65,7 @@ public:
         mGenericManager->setCapabilityFilter(QStringList() << QStringLiteral("Resource"));
     }
 
-    ~Private()
+    ~StandardMailActionManagerPrivate()
     {
         delete mGenericManager;
     }
@@ -451,15 +451,15 @@ public:
         Akonadi::MessageStatus targetStatus;
         targetStatus.setStatusFromStr(QLatin1String(typeStr));
 
-        StandardMailActionManager::Type type = MarkMailAsRead;
+        StandardMailActionManager::Type type = StandardMailActionManager::MarkMailAsRead;
         if (typeStr == "U") {
-            type = MarkMailAsUnread;
+            type = StandardMailActionManager::MarkMailAsUnread;
             targetStatus.setRead(true);
             invert = true;
         } else if (typeStr == "K") {
-            type = MarkMailAsActionItem;
+            type = StandardMailActionManager::MarkMailAsActionItem;
         } else if (typeStr == "G") {
-            type = MarkMailAsImportant;
+            type = StandardMailActionManager::MarkMailAsImportant;
         }
 
         if (mInterceptedActions.contains(type) && checkIntercept) {
@@ -502,15 +502,15 @@ public:
             typeStr.remove(0, 1);
         }
 
-        StandardMailActionManager::Type type = MarkAllMailAsRead;
+        StandardMailActionManager::Type type = StandardMailActionManager::MarkAllMailAsRead;
         if (typeStr == "U") {
-            type = MarkAllMailAsUnread;
+            type = StandardMailActionManager::MarkAllMailAsUnread;
             targetStatus.setRead(true);
             invert = true;
         } else if (typeStr == "K") {
-            type = MarkAllMailAsActionItem;
+            type = StandardMailActionManager::MarkAllMailAsActionItem;
         } else if (typeStr == "G") {
-            type = MarkAllMailAsImportant;
+            type = StandardMailActionManager::MarkAllMailAsImportant;
         }
 
         if (mInterceptedActions.contains(type) && checkIntercept) {
@@ -584,7 +584,7 @@ public:
         }
 
         auto job = new RemoveDuplicatesJob(collections, mParent);
-        connect(job, &RemoveDuplicatesJob::finished, mParent, [this](KJob *job) {
+        QObject::connect(job, &RemoveDuplicatesJob::finished, mParent, [this](KJob *job) {
             slotJobFinished(job);
         });
     }
@@ -637,7 +637,7 @@ public:
 
 StandardMailActionManager::StandardMailActionManager(KActionCollection *actionCollection, QWidget *parent)
     : QObject(parent)
-    , d(new Private(actionCollection, parent, this))
+    , d(new StandardMailActionManagerPrivate(actionCollection, parent, this))
 {
 }
 

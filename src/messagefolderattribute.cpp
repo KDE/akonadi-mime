@@ -8,20 +8,20 @@
 
 using namespace Akonadi;
 
-class Akonadi::MessageFolderAttribute::Private
+class Akonadi::MessageFolderAttributePrivate
 {
 public:
     bool isOutboundFolder = false;
 };
 
 MessageFolderAttribute::MessageFolderAttribute()
-    : d(new Private)
+    : d(new MessageFolderAttributePrivate)
 {
 }
 
 MessageFolderAttribute::MessageFolderAttribute(const MessageFolderAttribute &other)
     : Attribute(other)
-    , d(new Private(*(other.d)))
+    , d(new MessageFolderAttributePrivate(*(other.d)))
 {
 }
 

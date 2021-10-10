@@ -24,6 +24,7 @@ class QWidget;
 namespace Akonadi
 {
 class Item;
+class StandardMailActionManagerPrivate;
 
 /**
  * @short Manages emails specific actions for collection and item views.
@@ -207,8 +208,8 @@ Q_SIGNALS:
 
 private:
     //@cond PRIVATE
-    class Private;
-    std::unique_ptr<Private> const d;
+    friend class StandardMailActionManagerPrivate;
+    std::unique_ptr<StandardMailActionManagerPrivate> const d;
     //@endcond
 };
 }

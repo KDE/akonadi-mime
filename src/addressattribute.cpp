@@ -15,7 +15,7 @@ using namespace Akonadi;
 /**
   @internal
 */
-class AddressAttribute::Private
+class Akonadi::AddressAttributePrivate
 {
 public:
     bool mDSN = false;
@@ -26,7 +26,7 @@ public:
 };
 
 AddressAttribute::AddressAttribute(const QString &from, const QStringList &to, const QStringList &cc, const QStringList &bcc, bool dsn)
-    : d(new Private)
+    : d(new AddressAttributePrivate)
 {
     d->mFrom = from;
     d->mTo = to;

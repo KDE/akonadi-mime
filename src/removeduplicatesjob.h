@@ -17,6 +17,8 @@
 
 namespace Akonadi
 {
+class RemoveDuplicatesJobPrivate;
+
 /**
  * @short Job that finds and removes duplicate messages in given collection
  *
@@ -56,8 +58,8 @@ protected:
     bool doKill() override;
 
 private:
-    class Private;
-    std::unique_ptr<Private> const d;
+    friend class RemoveDuplicatesJobPrivate;
+    std::unique_ptr<RemoveDuplicatesJobPrivate> const d;
 };
 } /* namespace Akonadi */
 
