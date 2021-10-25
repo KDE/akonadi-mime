@@ -70,7 +70,7 @@ public:
     /**
      * Destroys the special mail collections request job.
      */
-    ~SpecialMailCollectionsRequestJob();
+    ~SpecialMailCollectionsRequestJob() override;
 
     /**
      * Requests a special mail collection of the given @p type in the default resource.

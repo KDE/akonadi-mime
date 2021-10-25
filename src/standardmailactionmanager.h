@@ -69,7 +69,7 @@ public:
     /**
      * Destroys the standard mail action manager.
      */
-    ~StandardMailActionManager();
+    ~StandardMailActionManager() override;
 
     /**
      * Sets the collection selection model based on which the collection
