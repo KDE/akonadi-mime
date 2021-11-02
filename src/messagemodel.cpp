@@ -7,7 +7,6 @@
 #include "messagemodel.h"
 #include "messageparts.h"
 
-#include <Akonadi/EntityTreeModel>
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/Monitor>
 #include <Akonadi/Session>
