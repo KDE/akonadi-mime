@@ -44,6 +44,28 @@ set(akonadimime_SRCS
     movecommand.cpp
     movetotrashcommand.cpp
     standardmailactionmanager.cpp
+
+    messagestatus.h
+    util_p.h
+    emptytrashcommand.h
+    specialmailcollectionsrequestjob.h
+    movecommand.h
+    newmailnotifierattribute.h
+    specialmailcollectionstesting_p.h
+    standardmailactionmanager.h
+    messagefolderattribute.h
+    removeduplicatesjob.h
+    movetotrashcommand.h
+    specialmailcollectionsdiscoveryjob.h
+    messageflags.h
+    pop3resourceattribute.h
+    addressattribute.h
+    markascommand.h
+    messagemodel.h
+    commandbase.h
+    specialmailcollections.h
+    metatype.h
+    messageparts.h
     )
 
 ecm_qt_declare_logging_category(akonadimime_SRCS HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)

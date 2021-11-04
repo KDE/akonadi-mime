@@ -4,7 +4,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 add_library(akonadi_serializer_mail MODULE)
 target_sources(akonadi_serializer_mail PRIVATE
-    akonadi_serializer_mail.cpp
+    akonadi_serializer_mail.cpp akonadi_serializer_mail.h
 )
 
 ecm_qt_declare_logging_category(akonadi_serializer_mail
