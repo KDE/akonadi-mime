@@ -4,7 +4,7 @@ set(PIM_VERSION "5.19.40")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup
-set(KF5_MIN_VERSION "5.87.0")
+set(KF5_MIN_VERSION "5.88.0")
 
 find_package(ECM ${KF5_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
@@ -33,8 +33,8 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.18.80")
-set(KF5_MIME_VERSION "5.18.80")
+set(AKONADI_VERSION "5.19.40")
+set(KF5_MIME_VERSION "5.19.40")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
