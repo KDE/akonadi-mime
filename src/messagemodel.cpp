@@ -18,10 +18,10 @@
 #include <KFormat>
 #include <QLocale>
 
-#include "ki18n_version.h"
 #include <array>
+#include <ki18n_version.h>
 #if KI18N_VERSION >= QT_VERSION_CHECK(5, 89, 0)
-#include <klazylocalizedstring.h>
+#include <KLazyLocalizedString>
 #undef I18NC_NOOP
 #define I18NC_NOOP kli18nc
 #endif
