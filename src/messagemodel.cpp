@@ -105,7 +105,7 @@ QVariant MessageModel::entityData(const Item &item, int column, int role) const
                 return KFormat().formatByteSize(item.size());
             }
         default:
-            return QVariant();
+            return {};
         }
     } else if (role == Qt::EditRole) {
         switch (column) {
@@ -120,7 +120,7 @@ QVariant MessageModel::entityData(const Item &item, int column, int role) const
         case Size:
             return item.size();
         default:
-            return QVariant();
+            return {};
         }
     }
 

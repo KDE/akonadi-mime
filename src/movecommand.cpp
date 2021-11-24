@@ -15,9 +15,7 @@ using namespace Akonadi;
 class Akonadi::MoveCommandPrivate
 {
 public:
-    MoveCommandPrivate()
-    {
-    }
+    MoveCommandPrivate() = default;
 
     Akonadi::Collection mDestFolder;
     Akonadi::Item::List mMessages;

@@ -34,7 +34,7 @@ static inline QByteArray enumToType(SpecialMailCollections::Type type)
         return "templates";
     case SpecialMailCollections::LastType: // fallthrough
     default:
-        return QByteArray();
+        return {};
     }
 }
 
@@ -74,9 +74,7 @@ SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *pare
     setIconForTypeMap(iconNameMap);
 }
 
-SpecialMailCollectionsRequestJob::~SpecialMailCollectionsRequestJob()
-{
-}
+SpecialMailCollectionsRequestJob::~SpecialMailCollectionsRequestJob() = default;
 
 void SpecialMailCollectionsRequestJob::requestDefaultCollection(SpecialMailCollections::Type type)
 {

@@ -21,9 +21,7 @@ using namespace Akonadi;
 class Akonadi::MarkAsCommandPrivate
 {
 public:
-    MarkAsCommandPrivate()
-    {
-    }
+    MarkAsCommandPrivate() = default;
 
     Akonadi::Collection::List mFolders;
     Akonadi::Item::List mMessages;

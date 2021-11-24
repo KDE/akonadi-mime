@@ -135,5 +135,5 @@ Akonadi::Collection MoveToTrashCommand::findTrashFolder(const Akonadi::Collectio
     if (folder != col) {
         return col;
     }
-    return Akonadi::Collection();
+    return {};
 }

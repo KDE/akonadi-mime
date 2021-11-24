@@ -262,7 +262,7 @@ QSet<QByteArray> SerializerPluginMail::parts(const Item &item) const
 QString SerializerPluginMail::extractGid(const Item &item) const
 {
     if (!item.hasPayload<KMime::Message::Ptr>()) {
-        return QString();
+        return {};
     }
     const auto msg = item.payload<KMime::Message::Ptr>();
     KMime::Headers::MessageID *mid = msg->messageID(false);
@@ -271,7 +271,7 @@ QString SerializerPluginMail::extractGid(const Item &item) const
     } else if (KMime::Headers::Base *uid = msg->headerByType("X-Akonotes-UID")) {
         return uid->asUnicodeString();
     }
-    return QString();
+    return {};
 }
 
 #include "moc_akonadi_serializer_mail.cpp"
