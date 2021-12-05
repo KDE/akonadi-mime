@@ -1,3 +1,5 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: BSD-3-Clause
 add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime5-serializer\")
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
