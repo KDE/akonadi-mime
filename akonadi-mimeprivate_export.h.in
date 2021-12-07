@@ -1,3 +1,6 @@
-
+/*
+    SPDX-FileCopyrightText: none
+    SPDX-License-Identifier: LGPL-2.0-or-later
+*/
 #include "akonadi-mime_export.h"
 #define AKONADI_MIME_TEST_EXPORT @AKONADI_MIME_TEST_EXPORT@
