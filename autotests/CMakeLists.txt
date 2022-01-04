@@ -39,15 +39,15 @@ ecm_add_test(mailserializertest.cpp
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt::Test
     TEST_NAME mailserializertest
 )
-ecm_add_test(newmailnotifierattributetest.cpp
+ecm_add_test(newmailnotifierattributetest.cpp newmailnotifierattributetest.h
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
     TEST_NAME newmailnotifierattributetest
 )
-ecm_add_test(pop3resourceattributetest.cpp
+ecm_add_test(pop3resourceattributetest.cpp pop3resourceattributetest.h
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
     TEST_NAME pop3resourceattributetest
 )
-ecm_add_test(addressattributetest.cpp
+ecm_add_test(addressattributetest.cpp addressattributetest.h
     LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
     TEST_NAME addressattributetest
 )

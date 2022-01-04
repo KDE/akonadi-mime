@@ -4,8 +4,7 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Test Widgets)
 
 set( EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR} )
 
-set( requester_srcs foldersrequester.cpp foldersrequester.h)
-add_executable( requester "${requester_srcs}" )
+add_executable( requester foldersrequester.cpp foldersrequester.h )
 target_link_libraries( requester KF5::AkonadiMime KF5::I18n Qt::Widgets )
 
 # convenience macro to add akonadi demo application
