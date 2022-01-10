@@ -109,7 +109,7 @@ install(EXPORT KF5AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FI
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5} COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF} COMPONENT Devel
     )
 
 ecm_qt_install_logging_categories(
