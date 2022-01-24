@@ -26,7 +26,7 @@
 #include <Akonadi/CollectionStatistics>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/MimeTypeChecker>
-#include <akonadi/subscriptiondialog.h>
+#include <Akonadi/SubscriptionDialog>
 
 #include <KMime/KMimeMessage>
 #include <messagestatus.h>
