@@ -15,8 +15,7 @@
 #include <Akonadi/SpecialCollectionAttribute>
 
 #include <KLocalizedString>
-#include <kcoreaddons_version.h>
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
 #include <Kdelibs4ConfigMigrator>
 #endif
 
@@ -67,7 +66,7 @@ SpecialMailCollectionsPrivate::~SpecialMailCollectionsPrivate()
 
 static KCoreConfigSkeleton *getConfig(const QString &filename)
 {
-#if KCOREADDONS_VERSION < QT_VERSION_CHECK(6, 0, 0)
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
     Kdelibs4ConfigMigrator migrate(QStringLiteral("specialmailcollection"));
     migrate.setConfigFiles(QStringList() << filename);
     migrate.migrate();

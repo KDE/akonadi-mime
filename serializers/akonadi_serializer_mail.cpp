@@ -8,6 +8,7 @@
 #include "akonadi_serializer_mail_debug.h"
 
 #include <QDataStream>
+#include <QIODevice>
 #include <qplugin.h>
 
 #include <KMime/Message>

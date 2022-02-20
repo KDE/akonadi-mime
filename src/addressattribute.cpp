@@ -7,6 +7,7 @@
 #include "addressattribute.h"
 
 #include <QDataStream>
+#include <QIODevice>
 
 #include <Akonadi/AttributeFactory>
 
