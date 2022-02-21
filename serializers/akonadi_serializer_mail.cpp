@@ -6,6 +6,7 @@
 
 #include "akonadi_serializer_mail.h"
 #include "akonadi_serializer_mail_debug.h"
+#include "messageparts.h"
 
 #include <QDataStream>
 #include <QIODevice>
@@ -14,7 +15,6 @@
 #include <KMime/Message>
 
 #include <Akonadi/Item>
-#include <Akonadi/KMime/MessageParts>
 #include <akonadi/private/imapparser_p.h>
 
 using namespace Akonadi;

@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 
-set(PIM_VERSION "5.19.40")
+set(PIM_VERSION "5.19.41")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup
@@ -111,7 +111,7 @@ install(EXPORT KF5AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FI
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF} COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/AkonadiMime COMPONENT Devel
     )
 
 ecm_qt_install_logging_categories(

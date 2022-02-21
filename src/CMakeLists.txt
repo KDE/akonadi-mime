@@ -97,10 +97,8 @@ generate_export_header(KF5AkonadiMime BASE_NAME akonadi-mime)
 
 add_library(KF5::AkonadiMime ALIAS KF5AkonadiMime)
 
-# NOTE: The include directories remain 'akonadi/kmime' to be as SC as possible.
-target_include_directories(KF5AkonadiMime INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/Akonadi/KMime>")
+target_include_directories(KF5AkonadiMime INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/AkonadiMime>")
 target_include_directories(KF5AkonadiMime PUBLIC "$<BUILD_INTERFACE:${Akonadi-Mime_SOURCE_DIR}/src;${Akonadi-Mime_BINARY_DIR}/src>")
-target_include_directories(KF5AkonadiMime INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/akonadi/kmime>")
 
 target_link_libraries(KF5AkonadiMime
     PUBLIC
@@ -145,25 +143,25 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
     SpecialMailCollectionsRequestJob
     StandardMailActionManager
     REQUIRED_HEADERS AkonadiMime_HEADERS
-    PREFIX Akonadi/KMime
+    PREFIX Akonadi
     )
 
 install(FILES
     ${AkonadiMime_CamelCase_HEADERS}
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/Akonadi/KMime
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/AkonadiMime/Akonadi
     COMPONENT Devel
     )
 
 install(FILES
     ${AkonadiMime_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_export.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/akonadi/kmime
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/AkonadiMime/akonadi
     COMPONENT Devel
     )
 
 ecm_generate_pri_file(BASE_NAME AkonadiMime
     LIB_NAME KF5AkonadiMime
-    DEPS "AkonadiCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/Akonadi/KMime
+    DEPS "AkonadiCore" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/AkonadiMime
     )
 
 install(FILES
