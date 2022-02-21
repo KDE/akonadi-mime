@@ -14,7 +14,7 @@
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/ItemModifyJob>
 
-#include "akonadi/kmime/messageparts.h"
+#include "akonadi/messageparts.h"
 #include <KMime/KMimeMessage>
 
 #define WAIT_TIME 100
