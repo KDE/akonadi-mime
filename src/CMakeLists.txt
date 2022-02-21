@@ -15,10 +15,9 @@ endmacro()
 
 macro(add_resource_iface _kcfgFile _ifaceName _className)
     kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
-    string(TOLOWER ${_className} _codeFile)
     set_source_files_properties( ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml PROPERTIES INCLUDE "metatype.h")
     qt_add_dbus_interface(akonadimime_SRCS
-        ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_codeFile} ${_className}
+        ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_className}
         )
 endmacro()
 
@@ -73,7 +72,7 @@ set(akonadimime_SRCS
 ecm_qt_declare_logging_category(akonadimime_SRCS HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)
 
 add_resource_iface(imapresource.kcfg
-    org.kde.Akonadi.Imap.Settings ImapSettings)
+    org.kde.Akonadi.Imap.Settings imapsettings)
 
 # TODO: add the necessary API in SpecialCollections
 #if (BUILD_TESTING)
