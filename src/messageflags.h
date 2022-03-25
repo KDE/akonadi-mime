@@ -139,4 +139,3 @@ AKONADI_MIME_EXPORT extern const char Ham[];
 AKONADI_MIME_EXPORT void copyMessageFlags(KMime::Message &from, Akonadi::Item &to);
 }
 }
-

@@ -15,4 +15,3 @@ public:
     VCardImport(const QString &dir);
     void runTest() override;
 };
-

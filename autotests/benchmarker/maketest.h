@@ -36,4 +36,3 @@ public:
     MakeTest();
     void start();
 };
-

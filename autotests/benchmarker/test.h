@@ -18,4 +18,3 @@ public:
     void addTest(MakeTest *test);
     void runTests();
 };
-

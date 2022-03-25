@@ -35,4 +35,3 @@ AKONADI_MIME_EXPORT extern const char Body[];
 AKONADI_MIME_EXPORT extern const char Header[];
 }
 }
-

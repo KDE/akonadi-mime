@@ -49,4 +49,3 @@ protected:
     Q_REQUIRED_RESULT QVariant entityData(const Item &item, int column, int role = Qt::DisplayRole) const override;
 };
 }
-

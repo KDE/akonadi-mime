@@ -99,4 +99,3 @@ private:
     std::unique_ptr<AddressAttributePrivate> const d;
 };
 } // namespace Akonadi
-

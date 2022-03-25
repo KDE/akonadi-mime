@@ -16,4 +16,3 @@ public:
     MailDir(const QString &dir);
     MailDir();
 };
-

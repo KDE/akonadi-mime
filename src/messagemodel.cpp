@@ -18,9 +18,9 @@
 #include <KFormat>
 #include <QLocale>
 
+#include <KLazyLocalizedString>
 #include <array>
 #include <ki18n_version.h>
-#include <KLazyLocalizedString>
 
 using MessagePtr = KMime::Message::Ptr;
 

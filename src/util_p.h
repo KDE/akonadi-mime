@@ -19,4 +19,3 @@ void showJobError(KJob *job);
 
 OrgKdeAkonadiImapSettingsInterface *createImapSettingsInterface(const QString &ident);
 }
-

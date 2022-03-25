@@ -64,4 +64,3 @@ private:
     std::unique_ptr<MessageFolderAttributePrivate> const d;
 };
 }
-

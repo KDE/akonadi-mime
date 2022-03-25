@@ -62,4 +62,3 @@ private:
     std::unique_ptr<RemoveDuplicatesJobPrivate> const d;
 };
 } /* namespace Akonadi */
-

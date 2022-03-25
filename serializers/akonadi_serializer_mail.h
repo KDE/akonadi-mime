@@ -50,4 +50,3 @@ private:
     StringPool m_stringPool;
 };
 }
-

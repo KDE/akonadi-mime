@@ -28,4 +28,3 @@ public:
 private Q_SLOTS:
     void requestResult(KJob *job);
 };
-

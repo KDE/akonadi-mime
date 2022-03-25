@@ -31,7 +31,8 @@ QString StringPool::sharedValue(const QString &value)
     return value;
 }
 
-template<typename T> static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hdr, int version, StringPool &pool)
+template<typename T>
+static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hdr, int version, StringPool &pool)
 {
     hdr->clear();
     const int count = addrList.count();
@@ -56,7 +57,8 @@ template<typename T> static void parseAddrList(const QVarLengthArray<QByteArray,
     }
 }
 
-template<typename T> static void parseAddrList(QDataStream &stream, T *hdr, int version, StringPool &pool)
+template<typename T>
+static void parseAddrList(QDataStream &stream, T *hdr, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -205,7 +207,8 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
     return true;
 }
 
-template<typename T> static void serializeAddrList(QDataStream &stream, T *hdr)
+template<typename T>
+static void serializeAddrList(QDataStream &stream, T *hdr)
 {
     const KMime::Types::Mailbox::List mb = hdr->mailboxes();
     stream << mb.size();

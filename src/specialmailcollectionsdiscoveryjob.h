@@ -19,4 +19,3 @@ public:
     explicit SpecialMailCollectionsDiscoveryJob(QObject *parent = nullptr);
 };
 }
-

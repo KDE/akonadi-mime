@@ -18,4 +18,3 @@ private Q_SLOTS:
 private:
     KMime::Message::Ptr readAndParseMail(const QString &mailFile) const;
 };
-

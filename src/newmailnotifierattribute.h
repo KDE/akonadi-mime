@@ -36,4 +36,3 @@ private:
     std::unique_ptr<NewMailNotifierAttributePrivate> const d;
 };
 }
-

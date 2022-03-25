@@ -28,4 +28,3 @@ public:
     int _t_knownFolderCount() const;
 };
 } // namespace Akonadi
-
