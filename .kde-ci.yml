@@ -9,4 +9,4 @@ Dependencies:
     'pim/kmime' : '@same'
 
 Options:
-  require-passing-tests-on: [ 'Linux', 'FreeBSD', 'Windows' ]      
+  require-passing-tests-on: [ 'Linux', 'FreeBSD' ]      
