@@ -71,18 +71,18 @@ public:
             Akonadi::Item item = items.at(i);
             if (item.hasPayload<KMime::Message::Ptr>()) {
                 auto message = item.payload<KMime::Message::Ptr>();
-                QByteArray idStr = message->messageID()->as7BitString(false);
+                const QByteArray idStr = message->messageID()->as7BitString(false);
                 // TODO: Maybe do some more check in case of idStr.isEmpty()
                 // like when the first message's body is different from the 2nd,
                 // but the 2nd is the same as the 3rd, etc.
                 // if ( !idStr.isEmpty() )
                 {
                     if (messageIds.contains(idStr)) {
-                        uint mainId = messageIds.value(idStr);
+                        const uint mainId = messageIds.value(idStr);
                         if (!bodyHashes.contains(mainId)) {
                             bodyHashes.insert(mainId, qHash(items.value(mainId).payload<KMime::Message::Ptr>()->encodedContent()));
                         }
-                        uint hash = qHash(message->encodedContent());
+                        const uint hash = qHash(message->encodedContent());
                         qCDebug(AKONADIMIME_LOG) << idStr << bodyHashes.value(mainId) << hash;
                         if (bodyHashes.value(mainId) == hash) {
                             duplicates[mainId].append(i);
