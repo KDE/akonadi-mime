@@ -65,26 +65,26 @@ QVariant MessageModel::entityData(const Item &item, int column, int role) const
     if (role == Qt::DisplayRole) {
         switch (column) {
         case Subject:
-            if (msg->subject(false)) {
-                return msg->subject(false)->asUnicodeString();
+            if (auto s = msg->subject(false)) {
+                return s->asUnicodeString();
             } else {
                 return i18nc("@label Alternative text when email subject is missing", "(No subject)");
             }
         case Sender:
-            if (msg->from(false)) {
-                return msg->from(false)->asUnicodeString();
+            if (auto s = msg->from(false)) {
+                return s->asUnicodeString();
             } else {
                 return i18nc("@label Alternative text when email sender is missing", "(No sender)");
             }
         case Receiver:
-            if (msg->to(false)) {
-                return msg->to(false)->asUnicodeString();
+            if (auto s = msg->to(false)) {
+                return s->asUnicodeString();
             } else {
                 return i18nc("@label Alternative text when email recipient is missing", "(No receiver)");
             }
         case Date:
-            if (msg->date(false)) {
-                return QLocale().toString(msg->date()->dateTime());
+            if (auto s = msg->date(false)) {
+                return QLocale().toString(s->dateTime());
             } else {
                 return i18nc("@label Alternative text when email date/time is missing", "(No date)");
             }
