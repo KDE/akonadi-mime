@@ -36,6 +36,26 @@ namespace Akonadi
 */
 class AKONADI_MIME_EXPORT MessageStatus
 {
+    Q_GADGET
+    Q_PROPERTY(bool isOfUnknownStatus READ isOfUnknownStatus CONSTANT)
+    Q_PROPERTY(bool isRead READ isRead WRITE setRead CONSTANT)
+    Q_PROPERTY(bool isDeleted READ isDeleted WRITE setDeleted CONSTANT)
+    Q_PROPERTY(bool isReplied READ isReplied WRITE setReplied CONSTANT)
+    Q_PROPERTY(bool isForwarded READ isForwarded WRITE setForwarded CONSTANT)
+    Q_PROPERTY(bool isQueued READ isQueued WRITE setQueued CONSTANT)
+    Q_PROPERTY(bool isSent READ isSent WRITE setSent CONSTANT)
+    Q_PROPERTY(bool isImportant READ isImportant WRITE setImportant CONSTANT)
+    Q_PROPERTY(bool isWatched READ isWatched WRITE setWatched CONSTANT)
+    Q_PROPERTY(bool isIgnored READ isIgnored WRITE setIgnored CONSTANT)
+    Q_PROPERTY(bool isSpam READ isSpam WRITE setSpam CONSTANT)
+    Q_PROPERTY(bool isHam READ isHam WRITE setHam CONSTANT)
+    Q_PROPERTY(bool isToAct READ isToAct WRITE setToAct CONSTANT)
+    Q_PROPERTY(bool hasAttachment READ hasAttachment WRITE setHasAttachment CONSTANT)
+    Q_PROPERTY(bool hasInvitation READ hasInvitation WRITE setHasInvitation CONSTANT)
+    Q_PROPERTY(bool isEncrypted READ isEncrypted WRITE setEncrypted CONSTANT)
+    Q_PROPERTY(bool isSigned READ isSigned WRITE setSigned CONSTANT)
+    Q_PROPERTY(bool hasError READ hasError WRITE setHasError CONSTANT)
+
 public:
     /** Constructor - sets status initially to unknown. */
     MessageStatus();
