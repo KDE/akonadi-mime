@@ -45,6 +45,8 @@ set(akonadimime_SRCS
     movecommand.cpp
     movetotrashcommand.cpp
     standardmailactionmanager.cpp
+    markascommandhelper_p.h
+    markascommandhelper.cpp
 
     messagestatus.h
     util_p.h
