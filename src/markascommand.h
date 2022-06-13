@@ -30,13 +30,11 @@ public:
     ~MarkAsCommand() override;
     void execute() override;
 
-private Q_SLOTS:
+private:
     void slotCollectionFetchDone(KJob *job);
     void slotFetchDone(KJob *job);
     void slotHelperDone(Result result);
     void slotModifyItemDone();
-
-private:
     void markMessages();
 
     std::unique_ptr<MarkAsCommandPrivate> const d;

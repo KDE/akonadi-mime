@@ -26,10 +26,8 @@ public:
     ~MoveCommand() override;
     void execute() override;
 
-private Q_SLOTS:
-    void slotMoveResult(KJob *job);
-
 private:
+    void slotMoveResult(KJob *job);
     std::unique_ptr<MoveCommandPrivate> const d;
 };
 }

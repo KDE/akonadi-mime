@@ -57,6 +57,7 @@ void MarkAsCommandHelper::slotModifyItemDone(KJob *job)
     if (job && job->error()) {
         qCDebug(AKONADIMIME_LOG) << " Error trying to set item status:" << job->errorText();
         emitResult(Akonadi::CommandBase::Failed);
+        // FIXME ? continue or not if error ?
         deleteLater();
     } else {
         if (mIndex > mItemsToModify.count()) {

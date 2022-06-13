@@ -26,10 +26,10 @@ public:
     void execute() override;
 
 private Q_SLOTS:
-    void slotFetchDone(KJob *job);
     void slotMoveDone(Akonadi::CommandBase::Result result);
 
 private:
+    void slotFetchDone(KJob *job);
     void moveMessages();
     Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
     Akonadi::Collection trashCollectionFolder();
