@@ -10,6 +10,10 @@
 #include <Akonadi/ItemModifyJob>
 
 using namespace Akonadi;
+namespace
+{
+static int sNumberMaxElement = 500;
+}
 MarkAsCommandHelper::MarkAsCommandHelper(QObject *parent)
     : QObject{parent}
 {
@@ -19,15 +23,23 @@ MarkAsCommandHelper::~MarkAsCommandHelper() = default;
 
 void MarkAsCommandHelper::start()
 {
-    if (!mItemsToModify.isEmpty()) {
-        auto modifyJob = new Akonadi::ItemModifyJob(mItemsToModify, this);
-        modifyJob->setIgnorePayload(true);
-        modifyJob->disableRevisionCheck();
-        connect(modifyJob, &Akonadi::ItemModifyJob::result, this, &MarkAsCommandHelper::slotModifyItemDone);
-    } else {
+    if (mItemsToModify.isEmpty()) {
         emitResult(Akonadi::CommandBase::OK);
         deleteLater();
+    } else {
+        mIndex = 0;
+        modifyMessages();
     }
+}
+
+void MarkAsCommandHelper::modifyMessages()
+{
+    auto listElement = mItemsToModify.mid(mIndex, qMin(mIndex + sNumberMaxElement, mItemsToModify.count()));
+    mIndex += sNumberMaxElement;
+    auto modifyJob = new Akonadi::ItemModifyJob(listElement, this);
+    modifyJob->setIgnorePayload(true);
+    modifyJob->disableRevisionCheck();
+    connect(modifyJob, &Akonadi::ItemModifyJob::result, this, &MarkAsCommandHelper::slotModifyItemDone);
 }
 
 const Akonadi::Item::List &MarkAsCommandHelper::itemsToModify() const
@@ -45,8 +57,15 @@ void MarkAsCommandHelper::slotModifyItemDone(KJob *job)
     if (job && job->error()) {
         qCDebug(AKONADIMIME_LOG) << " Error trying to set item status:" << job->errorText();
         emitResult(Akonadi::CommandBase::Failed);
+        deleteLater();
     } else {
-        emitResult(Akonadi::CommandBase::OK);
+        if (mIndex > mItemsToModify.count()) {
+            qCDebug(AKONADIMIME_LOG) << " finish";
+            emitResult(Akonadi::CommandBase::OK);
+            deleteLater();
+        } else {
+            // Modify more messages
+            modifyMessages();
+        }
     }
-    deleteLater();
 }

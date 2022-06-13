@@ -23,11 +23,14 @@ public:
     void setItemsToModify(const Akonadi::Item::List &newItemsToModify);
 
     void start();
+
 Q_SIGNALS:
     void emitResult(Akonadi::CommandBase::Result result);
 
 private:
+    void modifyMessages();
     void slotModifyItemDone(KJob *job);
     Akonadi::Item::List mItemsToModify;
+    int mIndex = 0;
 };
 }
