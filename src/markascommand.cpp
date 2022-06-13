@@ -7,6 +7,7 @@
 
 #include "markascommand.h"
 #include "akonadi_mime_debug.h"
+#include "markascommandhelper_p.h"
 #include "util_p.h"
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemFetchJob>
@@ -173,23 +174,26 @@ void MarkAsCommand::markMessages()
 
     d->mMarkJobCount++;
     if (itemsToModify.isEmpty()) {
-        slotModifyItemDone(nullptr); // pretend we did something
+        slotModifyItemDone(); // pretend we did something
     } else {
-        auto modifyJob = new Akonadi::ItemModifyJob(itemsToModify, this);
-        modifyJob->setIgnorePayload(true);
-        modifyJob->disableRevisionCheck();
-        connect(modifyJob, &Akonadi::ItemModifyJob::result, this, &MarkAsCommand::slotModifyItemDone);
+        auto helper = new Akonadi::MarkAsCommandHelper(this);
+        helper->setItemsToModify(itemsToModify);
+        connect(helper, &Akonadi::MarkAsCommandHelper::emitResult, this, &MarkAsCommand::slotHelperDone);
+        helper->start();
     }
 }
 
-void MarkAsCommand::slotModifyItemDone(KJob *job)
+void MarkAsCommand::slotHelperDone(Akonadi::CommandBase::Result result)
 {
     d->mMarkJobCount--;
-    // NOTE(Andras): from kmail/kmmcommands, KMSetStatusCommand
-    if (job && job->error()) {
-        qCDebug(AKONADIMIME_LOG) << " Error trying to set item status:" << job->errorText();
+    if (result == Akonadi::CommandBase::Failed) {
         emitResult(Failed);
     }
+    slotModifyItemDone();
+}
+
+void MarkAsCommand::slotModifyItemDone()
+{
     if (d->mMarkJobCount == 0 && d->mFolderListJobCount == 0) {
         emitResult(OK);
     }

@@ -33,7 +33,8 @@ public:
 private Q_SLOTS:
     void slotCollectionFetchDone(KJob *job);
     void slotFetchDone(KJob *job);
-    void slotModifyItemDone(KJob *job);
+    void slotHelperDone(Result result);
+    void slotModifyItemDone();
 
 private:
     void markMessages();
