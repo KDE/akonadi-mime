@@ -19,7 +19,12 @@ public:
     explicit CommandBase(QObject *parent = nullptr);
     virtual void execute() = 0;
 
-    enum Result { Undefined, OK, Canceled, Failed };
+    enum Result {
+        Undefined,
+        OK,
+        Canceled,
+        Failed,
+    };
 
 Q_SIGNALS:
     void result(Akonadi::CommandBase::Result);
