@@ -35,6 +35,7 @@ void MarkAsCommandHelper::start()
 void MarkAsCommandHelper::modifyMessages()
 {
     auto listElement = mItemsToModify.mid(mIndex, qMin(mIndex + sNumberMaxElement, mItemsToModify.count()));
+    // qDebug() << " mIndex " << mIndex << "listElement . count  " << listElement.count();
     mIndex += sNumberMaxElement;
     auto modifyJob = new Akonadi::ItemModifyJob(listElement, this);
     modifyJob->setIgnorePayload(true);
@@ -57,16 +58,13 @@ void MarkAsCommandHelper::slotModifyItemDone(KJob *job)
     if (job && job->error()) {
         qCDebug(AKONADIMIME_LOG) << " Error trying to set item status:" << job->errorText();
         emitResult(Akonadi::CommandBase::Failed);
-        // FIXME ? continue or not if error ?
+    }
+    if (mIndex > mItemsToModify.count()) {
+        qCDebug(AKONADIMIME_LOG) << " finish";
+        emitResult(Akonadi::CommandBase::OK);
         deleteLater();
     } else {
-        if (mIndex > mItemsToModify.count()) {
-            qCDebug(AKONADIMIME_LOG) << " finish";
-            emitResult(Akonadi::CommandBase::OK);
-            deleteLater();
-        } else {
-            // Modify more messages
-            modifyMessages();
-        }
+        // Modify more messages
+        modifyMessages();
     }
 }
