@@ -52,3 +52,8 @@ ecm_add_test(addressattributetest.cpp addressattributetest.h
     TEST_NAME addressattributetest
 )
 
+ecm_add_test(mdnstateattributetest.cpp mdnstateattributetest.h
+    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt${QT_MAJOR_VERSION}::Test
+    TEST_NAME mdnstateattributetest
+)
+

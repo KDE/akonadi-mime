@@ -69,6 +69,9 @@ set(akonadimime_SRCS
     specialmailcollections.h
     metatype.h
     messageparts.h
+
+    mdnstateattribute.h
+    mdnstateattribute.cpp
     )
 
 ecm_qt_declare_logging_category(akonadimime_SRCS HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)
@@ -129,6 +132,7 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
 
     AddressAttribute
     CommandBase
+    MDNStateAttribute
     MessageFlags
     MessageFolderAttribute
     MessageModel
