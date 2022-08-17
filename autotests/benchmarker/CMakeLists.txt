@@ -24,11 +24,11 @@ add_executable(akonadi_benchmarker ${benchmarker_SRCS})
 target_link_libraries(akonadi_benchmarker
   KF5::AkonadiMime
   KF5::Mime
-  Qt${QT_MAJOR_VERSION}::Test
+  Qt::Test
   KF5::AkonadiCore
   KF5::I18n
-  Qt${QT_MAJOR_VERSION}::Widgets
-  Qt${QT_MAJOR_VERSION}::DBus
+  Qt::Widgets
+  Qt::DBus
 )
 
 install(TARGETS akonadi_benchmarker ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
