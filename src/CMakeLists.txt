@@ -123,7 +123,7 @@ set_target_properties(KF5AkonadiMime PROPERTIES
 
 install(TARGETS
     KF5AkonadiMime
-    EXPORT KF5AkonadiMimeTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KF5AkonadiMimeTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 

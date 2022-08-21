@@ -31,4 +31,4 @@ target_link_libraries(akonadi_benchmarker
   Qt::DBus
 )
 
-install(TARGETS akonadi_benchmarker ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS akonadi_benchmarker ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
