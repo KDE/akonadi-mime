@@ -1,0 +1,761 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Xosé <xosecalvo@gmail.com>, 2011, 2013.
+# Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013, 2015, 2016.
+# Marce Villarino <mvillarino@kde-espana.org>, 2014.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2017-11-03 17:49+0100\n"
+"Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
+"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"Language: gl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Baleirar o lixo"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Seguro que quere baleirar os cartafoles do lixo de todas as contas?"
+
+#: markascommand.cpp:121
+#, kde-format
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr ""
+"Seguro que quere marcar todas as mensaxes deste cartafol e de todos os seus "
+"subcartafoles?"
+
+#: markascommand.cpp:122
+#, kde-format
+msgid "Mark All Recursively"
+msgstr "Marcar todo recursivamente"
+
+#: markascommand.cpp:123
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Marcalo todo como lido"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Asunto"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Remitente"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Destinatario"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Data"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Tamaño"
+
+#: messagemodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "@title:column, message (e.g. email) subject"
+#| msgid "Subject"
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "Asunto"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr ""
+
+#: messagemodel.cpp:83
+#, fuzzy, kde-format
+#| msgctxt "@title:column, receiver of message (e.g. email)"
+#| msgid "Receiver"
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "Destinatario"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr ""
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Obtendo os elementos…"
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Buscando duplicados…"
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Retirando duplicados…"
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "entrada"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "saída"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "correo enviado"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "lixo"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "borradores"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "modelos"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Cartafoles locais"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Engadir un cartafol…"
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Engadir un cartafol novo á conta seleccionada."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Novo cartafol"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Non se puido crear o cartafol: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Fallou a creación do cartafol"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Copiar o cartafol"
+msgstr[1] "Copiar %1 cartafoles"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Copiar os cartafoles escollidos no portapapeis."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Propiedades do cartafol %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Eliminar o cartafol"
+msgstr[1] "Eliminar %1 cartafoles"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Eliminar da conta os cartafoles escollidos."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] ""
+"Seguro que quere eliminar este cartafol e todos os seus subcartafoles?"
+msgstr[1] ""
+"Seguro que quere eliminar este %1 cartafoles e todos os seus subcartafoles?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Eliminar o cartafol?"
+msgstr[1] "Eliminar estes cartafoles?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Non se puido eliminar o cartafol: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Fallou a eliminación do cartafol"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Actualizar o cartafol"
+msgstr[1] "Actualizar os cartafoles"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "Actualizar o contido dos cartafoles escollidos."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Recortar o cartafol"
+msgstr[1] "Recortar os %1 cartafoles"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Recortar da conta os cartafoles escollidos."
+
+#: standardmailactionmanager.cpp:172
+#, kde-format
+msgid "Folder Properties"
+msgstr "Propiedades do cartafol"
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr "Abrir un diálogo para editar as propiedades do cartafol seleccionado."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Copiar a mensaxe"
+msgstr[1] "Copiar %1 mensaxes"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "Copiar as mensaxes seleccionadas no portapapeis."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Eliminar a mensaxe"
+msgstr[1] "Eliminar %1 mensaxes"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "Eliminar do cartafol as mensaxes seleccionadas."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Seguro que quere eliminar a mensaxe escollida?"
+msgstr[1] "Seguro que quere eliminar estas %1 mensaxes?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Eliminar a mensaxe?"
+msgstr[1] "Eliminar as mensaxes?"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Non se puido eliminar a mensaxe: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Fallou a eliminación da mensaxe"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Recortar a mensaxe"
+msgstr[1] "Recortar %1 mensaxes"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "Recortar do cartafol as mensaxes escollidas."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Eng&adir unha conta…"
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Engadir unha conta nova<p>Aparece un diálogo no que se pode escoller o tipo "
+"de conta que se desexa engadir.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Engadir unha conta"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Non se puido crear conta: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Fallou a creación da conta"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "&Eliminar a conta"
+msgstr[1] "&Eliminar %1 contas"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Eliminar as contas escollidas<p>Hanse eliminar as contas seleccionadas, "
+"xunto con todo o correo que conteñan.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Seguro que quere eliminar esta conta?"
+msgstr[1] "Seguro que quere eliminar estas %1 contas?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Eliminar esta conta?"
+msgstr[1] "Eliminar estas contas?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Propiedades da conta…"
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr "Abrir un diálogo para editar as propiedades da conta escollida."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Actualizar a conta"
+msgstr[1] "Actualizar %1 contas"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Actualiza o contido de todos os cartafoles das contas escollidas."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Actualizar este cartafol e todos os seus subcartafoles"
+msgstr[1] "Actualizar estes cartafoles e todos os seus subcartafoles"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr ""
+"Actualizar o contido dos cartafoles seleccionados e dos seus subcartafoles."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Non se puido pegar a mensaxe: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Pegar fallou."
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Retirar a marca de importante"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "&Marcar a mensaxe como importante"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Retirar a marca de elemento de acción"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "&Marcar a mensaxe como elemento de acción"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "&Marcar a mensaxe como lida"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Marcar como lido"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Marcar como lidas as mensaxes seleccionadas."
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "&Marcar a mensaxe como non lida"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Marcar como non lido"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Marcar como non lidas as mensaxes seleccionadas."
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Marcar como importante"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Marcar como importantes as mensaxes seleccionadas."
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Marcar como elemento de acción"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Marcar como elementos de acción as mensaxes seleccionadas."
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "M&arcar todo o correo como lido"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Marcalo todo como lido"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Marcar todas mensaxes como lidas."
+
+#: standardmailactionmanager.cpp:766
+#, kde-format
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Marcar tod&as as mensaxes como lidas recursivamente"
+
+#: standardmailactionmanager.cpp:767
+#, kde-format
+msgid "Mark All as Read Recursively"
+msgstr "Marcalas todas como lidas recursivamente"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, kde-format
+msgid "Mark all messages as read recursively."
+msgstr "Marcar todas as mensaxes recursivamente como lidas."
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "M&arcar todas as mensaxes como non lidas"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Marcalo todo como non lido"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Marcar todas as mensaxes como non lidas."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "M&arcar todas as mensaxes como importantes"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Marcalo todo como importante"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Marcar todas as mensaxes como importantes."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Marcalo todo como elementos de acción"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "M&arcar todas as mensaxes como elementos de acción"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Marcar todas as mensaxes como elementos de acción."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Dei&tar no lixo"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Mover as mensaxes escollidas ao cartafol do lixo."
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Dei&tar todo no lixo"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Mover todas as mensaxes ao cartafol do lixo."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "Retirar as mensaxes &duplicadas"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Retirar as mensaxes duplicadas."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Baleirar &todos os cartafoles do lixo"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr ""
+"Eliminar permanentemente todas as mensaxes eliminadas de todos os cartafoles "
+"de lixo."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "&Baleirar o lixo"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr ""
+"Eliminar permanentemente todas as mensaxes eliminadas do cartafol de lixo."
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Este modelo só pode xestionar os cartafoles de correo. A colección actual "
+#~ "contén estes tipos mime: %1"
+
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "&Marcar o correo como importante"
+
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "&Marcar o correo como elemento de acción"
+
+#, fuzzy
+#~| msgid "Cut Email"
+#~| msgid_plural "Cut %1 Emails"
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "Recortar a mensaxe"
+
+#~ msgid "IMAP server"
+#~ msgstr "Servidor de IMAP"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "Designa o porto no que se executa o servizo de IMAP"
+
+#~ msgid "Username"
+#~ msgstr "Nome de usuario"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Designa o tipo de cifrado que se quere empregar"
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Designa o tipo de autenticación que se quere empregar"
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Establece se se activa a subscrición do lado do servidor"
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr ""
+#~ "Establece se se gravan localmente todos os datos de IMAP todo o tempo"
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Establece se está activada a verificación a intervalos."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Intervalo de comprobación en minutos"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Establece se tamén se obteñen as anotacións, ACL e información sobre a "
+#~ "cota das\n"
+#~ "             caixas de correo ao obter a lista de caixas de correo."
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Establece se se emite automaticamente a orde de supresión; se non "
+#~ "deberíase\n"
+#~ "             disparar manualmente mediante a interface D-Bus."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "Establecer o cartafol que se emprega para o lixo"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Indicar se a conta emprega a identidade por omisión"
+
+#~ msgid "Identity account"
+#~ msgstr "Conta da identidade"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "Ruta RID á caixa de correo cuxos cambios se desexa vixiar"
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Establecer se o servidor admite sieve"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr ""
+#~ "Establecer se se reutiliza a configuración do servidor e do inicio de "
+#~ "sesión"
+
+#~ msgid "Define sieve port"
+#~ msgstr "Asignar o porto de sieve"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Asignar un URL alternativo"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "Definir o nome de ficheiro de vacacións de sieve por omisión"
+
+#~ msgid "Id of the resource containing the default special collections."
+#~ msgstr ""
+#~ "Identificador do recurso que contén as coleccións especiais por omisión."
+
+#~ msgid ""
+#~ "Id of the maildir resource containing the default special collections."
+#~ msgstr ""
+#~ "Identificador do recurso de directorios de correo que contén as "
+#~ "coleccións especiais por omisión."
+
+#~ msgid "Copy Email"
+#~ msgid_plural "Copy %1 Emails"
+#~ msgstr[0] "Copiar o correo"
+#~ msgstr[1] "Copiar %1 mensaxes"

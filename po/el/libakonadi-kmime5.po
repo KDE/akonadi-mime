@@ -1,0 +1,762 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Dimitrios Glentadakis <dglent@gmail.com>, 2012.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2014.
+# Stelios <sstavra@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2020-06-02 19:40+0300\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 18.12.3\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Άδειασμα απορριμμάτων"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr ""
+"Επιθυμείτε πραγματικά να αδειάσετε το φάκελο των απορριμμάτων για όλους τους "
+"λογαριασμούς;"
+
+#: markascommand.cpp:121
+#, kde-format
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr ""
+"Είστε βέβαιοι ότι θέλετε να σημειώσετε όλα τα μηνύματα σε αυτόν το φάκελο "
+"και σε όλους τους υποφακέλους;"
+
+#: markascommand.cpp:122
+#, kde-format
+msgid "Mark All Recursively"
+msgstr "Να σημειωθούν όλα αναδρομικά"
+
+#: markascommand.cpp:123
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Σημείωση όλων ως αναγνωσμένα"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Θέμα"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Αποστολέας"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Παραλήπτης"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Ημερομηνία"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Μέγεθος"
+
+#: messagemodel.cpp:71
+#, kde-format
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "(Χωρίς θέμα)"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr "(Χωρίς αποστολέα)"
+
+#: messagemodel.cpp:83
+#, kde-format
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "(Χωρίς παραλήπτη)"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr "(Χωρίς δεδομένα)"
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Ανάκτηση αντικειμένων..."
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Αναζήτηση για αντίγραφα..."
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Αφαίρεση αντιγράφων..."
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "εισερχόμενα"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "εξερχόμενα"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "απεσταλμένα"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "απορρίμματα"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "προσχέδια"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "πρότυπα"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Τοπικοί φάκελοι"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Προσθήκη φακέλου..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Προσθήκη ενός νέου φακέλου στον επιλεγμένο λογαριασμό."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Νέος φάκελος"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Αδύνατη η δημιουργία του φακέλου: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Η δημιουργία του φακέλου απέτυχε"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Αντιγραφή φακέλου"
+msgstr[1] "Αντιγραφή %1 φακέλων"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Αντιγραφή των επιλεγμένων φακέλων στο πρόχειρο."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Ιδιότητες του φακέλου %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Διαγραφή φακέλου"
+msgstr[1] "Διαγραφή %1 φακέλων"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Διαγραφή των επιλεγμένων φακέλων από το λογαριασμό."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] ""
+"Επιθυμείτε πραγματικά τη διαγραφή του φακέλου και των υποφακέλων του;"
+msgstr[1] ""
+"Επιθυμείτε πραγματικά τη διαγραφή %1 φακέλων και των υποφακέλων τους;"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Διαγραφή του φακέλου;"
+msgstr[1] "Διαγραφή των φακέλων;"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Αδύνατη η διαγραφή του φακέλου: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Η διαγραφή του φακέλου απέτυχε"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Ενημέρωση φακέλου"
+msgstr[1] "Ενημέρωση φακέλων"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "Ενημέρωση των περιεχομένων των επιλεγμένων φακέλων."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Αποκοπή φακέλου"
+msgstr[1] "Αποκοπή %1 φακέλων"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Αποκοπή των επιλεγμένων φακέλων από το λογαριασμό."
+
+#: standardmailactionmanager.cpp:172
+#, kde-format
+msgid "Folder Properties"
+msgstr "Ιδιότητες φακέλου"
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr ""
+"Άνοιγμα ενός διαλόγου για την επεξεργασία των ιδιοτήτων του επιλεγμένου "
+"φακέλου."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Αντιγραφή μηνύματος"
+msgstr[1] "Αντιγραφή %1 μηνυμάτων"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "Αντιγραφή των επιλεγμένων μηνυμάτων στο πρόχειρο."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Διαγραφή μηνύματος"
+msgstr[1] "Διαγραφή %1 μηνυμάτων"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "Διαγραφή των επιλεγμένων μηνυμάτων από τον φάκελο."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Επιθυμείτε πραγματικά τη διαγραφή του επιλεγμένου μηνύματος;"
+msgstr[1] "Επιθυμείτε πραγματικά τη διαγραφή %1 μηνυμάτων;"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Διαγραφή μηνύματος;"
+msgstr[1] "Διαγραφή των μηνυμάτων;"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Αδυναμία διαγραφής του μηνύματος: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Η διαγραφή του μηνύματος απέτυχε"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Αποκοπή μηνύματος"
+msgstr[1] "Αποκοπή %1 μηνυμάτων"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "Αποκοπή των επιλεγμένων μηνυμάτων από τον φάκελο."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Προσ&θήκη λογαριασμού..."
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Προσθήκη ενός νέου λογαριασμού<p>Θα εμφανιστεί ένας διάλογος στον οποίο "
+"μπορείτε να επιλέξετε τον τύπο του λογαριασμού που θα προστεθεί.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Προσθήκη λογαριασμού"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Αδύνατη η δημιουργία του λογαριασμού: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Η δημιουργία του λογαριασμού απέτυχε"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "Δια&γραφή λογαριασμού"
+msgstr[1] "Δια&γραφή %1 λογαριασμών"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Διαγραφή των επιλεγμένων λογαριασμών<p>Οι επιλεγμένοι λογαριασμοί θα "
+"διαγραφούν, μαζί με όλα μηνύματά που περιέχουν.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Επιθυμείτε πραγματικά τη διαγραφή του λογαριασμού;"
+msgstr[1] "Επιθυμείτε πραγματικά τη διαγραφή %1 λογαριασμών;"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Διαγραφή του λογαριασμού;"
+msgstr[1] "Διαγραφή των λογαριασμών;"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Ιδιότητες λογαριασμού..."
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr ""
+"Άνοιγμα ενός διαλόγου για την επεξεργασία των ιδιοτήτων του επιλεγμένου "
+"λογαριασμού."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Ενημέρωση λογαριασμού"
+msgstr[1] "Ενημέρωση %1 λογαριασμών"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr ""
+"Ενημέρωση του περιεχομένου όλων των φακέλων των επιλεγμένων λογαριασμών."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Ενημέρωση αυτού του φακέλου και όλων των υποφακέλων του"
+msgstr[1] "Ενημέρωση αυτών των φακέλων και όλων των υποφακέλων τους"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr ""
+"Ενημέρωση των περιεχομένων των επιλεγμένων φακέλων και όλων των υποφακέλων "
+"τους."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Αδυναμία επικόλλησης του μηνύματος: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Η επικόλληση απέτυχε"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Αφαίρεση της σημείωσης σημαντικό"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "Σημείωση μηνύματος ως &σημαντικό"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Αφαίρεση της σημείωσης για ενέργεια"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "Σημείωση μηνύματος για &ενέργεια"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "Σημείωση μηνύματος ως &αναγνωσμένο"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Σημείωση ως αναγνωσμένο"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Σημείωση των επιλεγμένων μηνυμάτων ως αναγνωσμένα."
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "Σημείωση μηνύματος ως &μη αναγνωσμένο"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Σημείωση ως μη αναγνωσμένο"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Σημείωση των επιλεγμένων μηνυμάτων ως μη αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Σημείωση ως σημαντικό"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Σημείωση των επιλεγμένων μηνυμάτων ως σημαντικά."
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Σημείωση για ενέργεια"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Σημείωση των επιλεγμένων μηνυμάτων για ενέργεια."
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "Σημείωση &όλων των μηνυμάτων ως αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Σημείωση όλων ως αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Σημείωση όλων των μηνυμάτων ως αναγνωσμένα."
+
+#: standardmailactionmanager.cpp:766
+#, kde-format
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Να σημειωθούν όλ&α τα μηνύματα αναδρομικά ως αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:767
+#, kde-format
+msgid "Mark All as Read Recursively"
+msgstr "Να σημειωθούν όλα αναδρομικά ως αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, kde-format
+msgid "Mark all messages as read recursively."
+msgstr "Να σημειωθούν όλα τα μηνύματα αναδρομικά ως αναγνωσμένα."
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "Σημείωση &όλων των μηνυμάτων ως μη αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Σημείωση όλων ως μη αναγνωσμένα"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Σημείωση όλων των μηνυμάτων ως μη αναγνωσμένα."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "Σημείωση όλων των μηνυμάτων ως &σημαντικά"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Σημείωση όλων ως σημαντικά"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Σημείωση όλων των μηνυμάτων ως σημαντικά."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Σημείωση όλων για ενέργεια"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "Σημείωση &όλων των μηνυμάτων για ενέργεια"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Σημείωση όλων των μηνυμάτων για ενέργεια."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Μετακίνηση στα α&πορρίμματα"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Μετακίνηση των επιλεγμένων μηνυμάτων στα απορρίμματα."
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Μετακίνηση όλων στα α&πορρίμματα"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Μετακίνηση όλων των μηνυμάτων στα απορρίμματα."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "Αφαίρεση &διπλών μηνυμάτων"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Αφαίρεση διπλών μηνυμάτων."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Άδειασμα όλων των φακέλων απορριμάτων"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr ""
+"Μόνιμη διαγραφή όλων των μηνυμάτων από όλους τους φακέλους απορριμάτων."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "Ά&δειασμα απορριμμάτων"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Μόνιμη διαγραφή όλων των μηνυμάτων από τον φάκελο απορριμάτων."
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Αυτό το μοντέλο μπορεί να διαχειριστεί μόνο φακέλους αλληλογραφίας. Η "
+#~ "τρέχουσα συλλογή διατηρεί τους τύπους αρχείων: %1"
+
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "Σημείωση μηνύματος ως &σημαντικό"
+
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "Σημείωση μηνύματος για &ενέργεια"
+
+#, fuzzy
+#~| msgid "Cut Email"
+#~| msgid_plural "Cut %1 Emails"
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "Αποκοπή μηνύματος"
+
+#~ msgid "IMAP server"
+#~ msgstr "Εξυπηρετητής IMAP"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "Καθορίζει την θύρα που εκτελείται η υπηρεσία IMAP"
+
+#~ msgid "Username"
+#~ msgstr "Όνομα χρήστη"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Καθορίζει τον τύπο κρυπτογράφησης που θα χρησιμοποιηθεί"
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Καθορίζει τον τύπο ταυτοποίησης που θα χρησιμοποιηθεί"
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Καθορίζει αν η εγγραφή είναι ενεργοποιημένη στον εξυπηρετητή"
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr "Καθορίζει αν όλα τα δεδομένα του IMAP θα αποθηκεύονται τοπικά"
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Καθορίζει αν ο τακτικός έλεγχος είναι ενεργοποιημένος."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Χρονικό διάστημα ελέγχου (σε λεπτά)"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Καθορίζει αν οι σημειώσεις, οι ACL και οι πληροφορίες σχετικές με τη "
+#~ "χρήση\n"
+#~ "             χώρου των γραμματοκιβωτίων θα πρέπει να ανακτηθούν όταν\n"
+#~ "             εισαχθούν τα γραμματοκιβώτια."
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Καθορίζει αν τα διαγραμμένα μηνύματα εξαλείφονται οριστικά. Διαφορετικά\n"
+#~ "η ενέργεια αυτή θα γίνεται χειροκίνητα μέσω της διασύνδεσης D-Bus."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "Καθορίζει ποιος φάκελος χρησιμοποιείται για απορρίμματα"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Καθορίζει αν ο λογαριασμός χρησιμοποιεί την προεπιλεγμένη ταυτότητα"
+
+#~ msgid "Identity account"
+#~ msgstr "Λογαριασμός ταυτότητας"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "Διαδρομή RID στο γραμματοκιβώτιο για παρακολούθηση αλλαγών"
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Καθορίζει αν η ο εξυπηρετητής υποστηρίζει sieve"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr ""
+#~ "Καθορίζει αν επαναχρησιμοποιούμε τη διαμόρφωση υπολογιστή και στοιχείων "
+#~ "εισόδου"
+
+#~ msgid "Define sieve port"
+#~ msgstr "Καθορισμός θύρας sieve"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Καθορισμός εναλλακτικού URL"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "Καθορισμός προεπιλεγμένου ονόματος αρχείου διακοπών sieve"
+
+#~ msgid "Id of the resource containing the default special collections."
+#~ msgstr ""
+#~ "Αναγνωριστικό του πόρου που περιέχει τις προκαθορισμένες ειδικές συλλογές."
+
+#~ msgid ""
+#~ "Id of the maildir resource containing the default special collections."
+#~ msgstr ""
+#~ "Αναγνωριστικό του πόρου «maildir» που περιέχει τις προκαθορισμένες "
+#~ "ειδικές συλλογές."
+
+#~ msgid "Copy Email"
+#~ msgid_plural "Copy %1 Emails"
+#~ msgstr[0] "Αντιγραφή μηνύματος"
+#~ msgstr[1] "Αντιγραφή %1 μηνυμάτων"

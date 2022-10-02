@@ -1,0 +1,768 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2014, 2020.
+# Balázs Úr <urbalazs@gmail.com>, 2012, 2013.
+# Kristof Kiszel <kiszel.kristof@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2021-11-06 11:41+0100\n"
+"Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.08.3\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Kuka ürítése"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Biztos, hogy ki akarja üríteni az összes fiók kukáját?"
+
+#: markascommand.cpp:121
+#, kde-format
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr ""
+"Biztosan szeretné megjelölni az összes üzenetet ebben a mappában és "
+"almappáiban?"
+
+#: markascommand.cpp:122
+#, kde-format
+msgid "Mark All Recursively"
+msgstr "Összes megjelölése rekurzívan"
+
+#: markascommand.cpp:123
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Összes megjelölése"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Tárgy"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Feladó"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Címzett"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Dátum"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Méret"
+
+#: messagemodel.cpp:71
+#, kde-format
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "(Nincs tárgy)"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr "(Nincs feladó)"
+
+#: messagemodel.cpp:83
+#, kde-format
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "(Nincs címzett)"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr "(Nincs dátum)"
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Elemek letöltése…"
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Másolatok keresése…"
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Másolatok eltávolítása…"
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "bejövő"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "kimenő"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "elküldött"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "kuka"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "piszkozatok"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "sablonok"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Helyi mappák"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Mappa hozzáadása…"
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Új mappa hozzáadása a kijelölt felhasználói fiókhoz."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Új mappa"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "A mappa nem hozható létre: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "A mappa létrehozása nem sikerült"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Mappa másolása"
+msgstr[1] "%1 mappa másolása"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "A kijelölt mappák másolása a vágólapra."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "A(z) %1 mappa tulajdonságai"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Mappa törlése"
+msgstr[1] "%1 mappa törlése"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "A kijelölt mappák törlése a felhasználói fiókból."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] "Biztos, hogy törölni akarja ezt a mappát és az almappáját?"
+msgstr[1] ""
+"Biztos, hogy törölni akarja a(z) %1 mappát és az összes almappáikat?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Törli a mappát?"
+msgstr[1] "Törli a mappákat?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "A mappa nem törölhető: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Nem sikerült törölni a mappát"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Mappa frissítése"
+msgstr[1] "Mappák frissítése"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "A kijelölt mappák tartalmának frissítése."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Mappa kivágása"
+msgstr[1] "%1 mappa kivágása"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "A kijelölt mappák kivágása a felhasználói fiókból."
+
+#: standardmailactionmanager.cpp:172
+#, kde-format
+msgid "Folder Properties"
+msgstr "Mappatulajdonságok"
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr ""
+"Párbeszédablak megnyitása a kijelölt mappa tulajdonságainak szerkesztéséhez."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Üzenet másolása"
+msgstr[1] "%1 üzenet másolása"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "A kijelölt üzenetek másolása a vágólapra."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Üzenet törlése"
+msgstr[1] "%1 üzenet törlése"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "A kijelölt üzenetek törlése a mappából."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Biztosan törli a kijelölt üzenetet?"
+msgstr[1] "Biztosan törli a(z) %1 üzenetet?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Törli az üzenetet?"
+msgstr[1] "Törli az üzeneteket?"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Az üzenet nem törölhető: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Nem sikerült törölni az üzenetet"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Üzenet kivágása"
+msgstr[1] "%1 üzenet kivágása"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "A kijelölt üzenet kivágása a mappából."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Felhasználói fiók hozzá&adása…"
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Új felhasználói fiók hozzáadása<p>A megjelenő párbeszédablakban "
+"kiválaszthatja a hozzáadandó felhasználói fiók típusát.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Felhasználói fiók hozzáadása"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Nem hozható létre a felhasználói fiók: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Nem sikerült létrehozni a felhasználói fiókot"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "Felhasználói fiók &törlése"
+msgstr[1] "%1 felhasználói fiók &törlése"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"A kijelölt felhasználói fiókok törlése<p>A jelenleg kijelölt felhasználói "
+"fiókok, és az összes bennük található üzenet törölve lesz.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Biztos, hogy törölni akarja ezt a felhasználói fiókot?"
+msgstr[1] "Biztos, hogy törölni akarja a(z) %1 felhasználói fiókot?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Törli a fiókot?"
+msgstr[1] "Törli a fiókokat?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Felhasználói fiók tulajdonságai…"
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr ""
+"Párbeszédablak megnyitása a kijelölt felhasználói fiók tulajdonságainak "
+"szerkesztéséhez."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Felhasználói fiók frissítése"
+msgstr[1] "%1 felhasználói fiók frissítése"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "A kijelölt felhasználói fiók összes mappája tartalmának frissítése."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "A mappa és minden almappájának frissítése"
+msgstr[1] "A mappák és minden almappájuk frissítése"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr "A kijelölt mappák és azok almappái tartalmának frissítése."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Nem lehet beilleszteni az üzenetet: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Sikertelen beillesztés"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "A fontos jelölés eltávolítása"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "Üzenet &megjelölése fontosként"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "A teendő jelölés eltávolítása"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "Üzenet &megjelölése teendőként"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "Üzenet &megjelölése olvasottként"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Megjelölés olvasottként"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "A kijelölt üzenetek megjelölése olvasottként."
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "Üzenet &megjelölése olvasatlanként"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Megjelölés olvasatlanként"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "A kijelölt üzenetek megjelölése olvasatlanként."
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Megjelölés fontosként"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "A kijelölt üzenetek megjelölése fontosként."
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Megjelölés teendőként"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "A kijelölt üzenetek megjelölése teendőként."
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "Ö&sszes üzenet megjelölése olvasottként"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Összes megjelölése olvasottként"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Összes üzenet megjelölése olvasottként."
+
+#: standardmailactionmanager.cpp:766
+#, kde-format
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Ö&sszes üzenet megjelölése olvasottként rekurzívan"
+
+#: standardmailactionmanager.cpp:767
+#, kde-format
+msgid "Mark All as Read Recursively"
+msgstr "Összes megjelölése olvasottként rekurzívan"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, kde-format
+msgid "Mark all messages as read recursively."
+msgstr "Összes üzenet megjelölése olvasottként rekurzívan."
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "Ö&sszes üzenet megjelölése olvasatlanként"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Összes megjelölése olvasatlanként"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Összes üzenet megjelölése olvasatlanként."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "Ö&sszes üzenet megjelölése fontosként"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Összes megjelölése fontosként"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Összes üzenet megjelölése fontosként."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Összes megjelölése teendőként"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "Ö&sszes üzenet megjelölése teendőként"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Összes üzenet megjelölése teendőként."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Áthelyezés a &Kukába"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "A kijelölt üzenetek áthelyezése a kuka mappába."
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Összes áthelyezése a &kukába"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Összes üzenet áthelyezése a kuka mappába."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "&Kettőzött üzenetek eltávolítása"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Kettőzött üzenetek eltávolítása."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Az összes &kuka mappa ürítése"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Összes üzenet végleges törlése minden kuka mappából."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "Kuka ü&rítése"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Összes üzenet végleges törlése a kuka mappából."
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Ez a modell csak e-mailmappák kezelésére alkalmas. A jelenlegi gyűjtemény "
+#~ "MIME-típusokat tartalmaz: %1"
+
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "Levél &megjelölése fontosként"
+
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "Levél &megjelölése teendőként"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Kiszel Kristóf"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "ulysses@kubuntu.org"
+
+#~ msgid "An app that requests LocalFolders"
+#~ msgstr "Helyi mappát kérő alkalmazás"
+
+#~ msgid "Headfetcher"
+#~ msgstr "Fejlécletöltő"
+
+#~ msgid "header fetching application"
+#~ msgstr "Fejlécletöltő alkalmazás"
+
+#~ msgid "Run test on multipart data (default is singlepart)."
+#~ msgstr "Teszt futtatása többrészes adaton (alapértelmezés: egyrészes)."
+
+#~ msgid "IMAP server"
+#~ msgstr "IMAP-kiszolgáló"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "Megadja a portot, amelyen az IMAP-szolgáltatás futP"
+
+#~ msgid "Username"
+#~ msgstr "Felhasználónév"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Megadja a használandó titkosítási típust"
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Megadja a használandó hitelesítési típust"
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Megadja, hogy a szerveroldali feliratkozás engedélyezett-e"
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr ""
+#~ "Megadja, hogy szükséges-e az összes IMAP adat folyamatos, helyi "
+#~ "gyorsítótárban tartása"
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Megadja, hogy az időszakonkénti ellenőrzés engedélyezett-e."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Ellenőrzés ennyi percenként"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Megadja, hogy az e-mailfiókok listázásakor szükséges-e az adott fiókhoz "
+#~ "tartozó\n"
+#~ "             megjegyzések, ACL-ek és kvótainformációk fogadása."
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Megadja, hogy a törlés parancs végrehajtható-e automatikusan,\n"
+#~ "             vagy manuálisan kell kiadni a D-Bus felületen keresztül."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "A kukának használt mappa megadása"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Az alapértelmezett identitás használata a felhasználói fiókkal"
+
+#~ msgid "Identity account"
+#~ msgstr "Identitásfiók"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "Az e-mailfiók RID elérési útvonala változások figyeléséhez"
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Megadja, hogy van-e sieve támogatás a kiszolgálón"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr ""
+#~ "Megadja, hogy a kiszolgáló- és bejelentkezési beállítások "
+#~ "újrafelhasználhatóak-e"
+
+#~ msgid "Define sieve port"
+#~ msgstr "A sieve port megadása"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Alternatív URL megadása"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "Megadja az alapértelmezett sieve vakációüzenet-fájl nevét"
+
+#~ msgid "Id of the resource containing the default special collections."
+#~ msgstr ""
+#~ "Az alapértelmezett speciális gyűjteményeket tartalmazó erőforrás "
+#~ "azonosítója."
+
+#~ msgid ""
+#~ "Id of the maildir resource containing the default special collections."
+#~ msgstr ""
+#~ "Az alapértelmezett speciális gyűjteményeket tartalmazó maildir erőforrás "
+#~ "azonosítója."
+
+#~ msgid "Copy Email"
+#~ msgid_plural "Copy %1 Emails"
+#~ msgstr[0] "E-mail másolása"
+#~ msgstr[1] "%1 e-mail másolása"

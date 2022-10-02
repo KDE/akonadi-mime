@@ -1,0 +1,640 @@
+# Translation of libakonadi-kmime5 to Norwegian Nynorsk
+#
+# Karl Ove Hufthammer <karl@huftis.org>, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: akonadi-mime\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2022-06-19 14:07+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.04.2\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Tøm papirkorga"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Er du sikker på at du vil tømma papirkorga på alle kontoane?"
+
+#: markascommand.cpp:121
+#, kde-format
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr ""
+"Er du sikker på at du vil merkja alle meldingane i denne mappa og "
+"undermappene?"
+
+#: markascommand.cpp:122
+#, kde-format
+msgid "Mark All Recursively"
+msgstr "Merk alle rekursivt"
+
+#: markascommand.cpp:123
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Merk alle"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Emne"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Avsendar"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Mottakar"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Dato"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Storleik"
+
+#: messagemodel.cpp:71
+#, kde-format
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "(Utan emne)"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr "(Utan avsendar)"
+
+#: messagemodel.cpp:83
+#, kde-format
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "(Utan mottakar)"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr "(Utan dato)"
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "–"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Hentar element …"
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Søkjer etter duplikatar …"
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Fjernar duplikatar …"
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "innboks"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "utboks"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "send e-post"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "papirkorg"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "utkast"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "malar"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Lokale mapper"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Legg til mappe …"
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Legg ny mappe til den valde kontoen."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Ny mappe"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Klarte ikkje oppretta mappe: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Klarte ikkje oppretta mappe"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Kopier mappe"
+msgstr[1] "Kopier %1 mapper"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Kopier dei merkt mappene til utklippstavla."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Eigenskapar til mappa %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Slett mappe"
+msgstr[1] "Slett %1 mapper"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Slettar dei merkte mappene frå kontoen."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] "Er du sikker på at du vil sletta mappa og alle undermappene hennar?"
+msgstr[1] ""
+"Er du sikker på at du vil sletta %1 mapper og alle undermappene deira?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Sletta mappa?"
+msgstr[1] "Sletta mappene?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Klarte ikkje sletta mappe: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Klarte ikkje sletta mappe"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Oppdater mappe"
+msgstr[1] "Oppdater mapper"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "Oppdater innhaldet til dei merkte mappene."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Klipp ut mappa"
+msgstr[1] "Klipp ut %1 mapper"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Klipp ut dei merkte mappene frå kontoen."
+
+#: standardmailactionmanager.cpp:172
+#, kde-format
+msgid "Folder Properties"
+msgstr "Mappeeigenskapar"
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr "Opnar eit vindauge for å redigera eigenskapane til mappa."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Kopier melding"
+msgstr[1] "Kopier %1 meldingar"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "Kopier dei merkte meldingane til utklippstavla."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Slett melding"
+msgstr[1] "Slett %1 meldingar"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "Slettar dei merkte meldingane frå kontoen."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Er du sikker på at du vil sletta meldinga?"
+msgstr[1] "Er du sikker på at du vil sletta %1 meldingar?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Sletta meldinga?"
+msgstr[1] "Sletta meldingane?"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Klarte ikkje sletta melding: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Klarte ikkje sletta melding"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Klipp ut melding"
+msgstr[1] "Klipp ut %1 meldingar"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "Klipp ut meldinga frå mappa."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Legg til &konto …"
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Legg til ny konto<p>Du vil få opp eit vindauge der du kan velja kva type "
+"konto som skal leggjast til.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Legg til konto"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Klarte ikkje leggja til konto: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Klarte ikkje leggja til konto"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "&Slett konto"
+msgstr[1] "&Slett %1 kontoar"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Slett dei merkte kontoane<p>Dei merkte kontoane vert sletta, saman med "
+"meldingane på kontoane.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Er du sikker på at du vil sletta denne kontoen?"
+msgstr[1] "Er du sikker på at du vil sletta desse %1 kontoane?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Sletta kontoen?"
+msgstr[1] "Sletta kontoane?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Kontoeigenskapar …"
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr "Opnar eit vindauge for å redigera eigenskapane til kontoen."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Oppdater konto"
+msgstr[1] "Oppdater %1 kontoar"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Oppdater innhaldet til alle mapper på dei valde kontoane."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Oppdater mappa og alle undermappene hennar"
+msgstr[1] "Oppdater mappene og alle undermappene deira"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr "Oppdaterer innhaldet til dei merkte mappene og alle undermapper."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Klarte ikkje lima inn melding: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Klarte ikkje lima inn"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Fjern viktig-merke"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "&Merk melding som viktig"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Fjern handlingselement-merke"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "&Merk melding som handlingselement"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "&Merk melding som lesen"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Merk som lesen"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Merk meldinga som lesen."
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "&Merk melding som ulesen"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Merk som ulesen"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Merk meldinga som ulesen."
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Merk som viktig"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Merk merkte meldingar som viktige."
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Merk som handlingselement"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Merk merkte meldingar som handlingselement."
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "Merk &alle meldingar som lesne"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Merk alle som lesne"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Merk alle meldingar som lesne."
+
+#: standardmailactionmanager.cpp:766
+#, kde-format
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Merk &alle meldingar rekursivt som lesne"
+
+#: standardmailactionmanager.cpp:767
+#, kde-format
+msgid "Mark All as Read Recursively"
+msgstr "Merk alle rekursivt som lesne"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, kde-format
+msgid "Mark all messages as read recursively."
+msgstr "Merk alle meldingar rekursivt som lesne."
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "Merk alle meldingar som ulesne."
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Merk alle som ulesne"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Merk alle meldingar som ulesne."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "Merk &alle meldingar som viktige"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Merk alle som viktige"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Merk alle meldingar som viktige."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Merk alle som handlingselement"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "Merk &alle meldingar som handlingselement"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Merk alle meldingar som handlingselement."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Flytt til &papirkorga"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Flytt merkte meldingar til papirkorgmappa."
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Flytt alle til &papirkorga"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Flytt alle meldingane til papirkorgmappa."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "Fjern &duplikatmeldingar"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Fjern duplikatmeldingar."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Tøm alle &papirkorgmapper"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Slett alle meldingar frå alle papirkorger for alltid."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "&Tøm papirkorga"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Slett alle meldingar frå papirkorga for alltid."

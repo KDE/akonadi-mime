@@ -1,0 +1,750 @@
+# Irish translation of libakonadi-kmime
+# Copyright (C) 2011 This_file_is_part_of_KDE
+# This file is distributed under the same license as the libakonadi-kmime package.
+# Kevin Scannell <kscanne@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: libakonadi-kmime\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2011-12-28 12:28-0500\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Folmhaigh an Bruscar"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr ""
+
+#: markascommand.cpp:121
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this folder and all its sub-folders?"
+#| msgid_plural ""
+#| "Do you really want to delete %1 folders and all their sub-folders?"
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr ""
+"An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh in éineacht le "
+"gach fofhillteán atá ann?"
+
+#: markascommand.cpp:122
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All Recursively"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: markascommand.cpp:123
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr ""
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr ""
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr ""
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr ""
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr ""
+
+#: messagemodel.cpp:71
+#, kde-format
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr ""
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr ""
+
+#: messagemodel.cpp:83
+#, kde-format
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr ""
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr ""
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr ""
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr ""
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr ""
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr ""
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr ""
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr ""
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr ""
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr ""
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr ""
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr ""
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Cuir Fillteán Leis..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr ""
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Fillteán Nua"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Níorbh fhéidir an fillteán a chruthú: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Theip ar chruthú an fhillteáin"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr ""
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Airíonna Fhillteán %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Scrios Fillteán"
+msgstr[1] "Scrios %1 Fhillteán"
+msgstr[2] "Scrios %1 Fhillteán"
+msgstr[3] "Scrios %1 bhFillteán"
+msgstr[4] "Scrios %1 Fillteán"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr ""
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] ""
+"An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh in éineacht le "
+"gach fofhillteán atá ann?"
+msgstr[1] ""
+"An bhfuil tú cinnte gur mian leat an %1 fhillteán a scriosadh in éineacht le "
+"gach fofhillteán atá iontu?"
+msgstr[2] ""
+"An bhfuil tú cinnte gur mian leat na %1 fhillteán a scriosadh in éineacht le "
+"gach fofhillteán atá iontu?"
+msgstr[3] ""
+"An bhfuil tú cinnte gur mian leat na %1 bhfillteán a scriosadh in éineacht "
+"le gach fofhillteán atá iontu?"
+msgstr[4] ""
+"An bhfuil tú cinnte gur mian leat na %1 fillteán a scriosadh in éineacht le "
+"gach fofhillteán atá iontu?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Scrios an fillteán?"
+msgstr[1] "Scrios na fillteáin?"
+msgstr[2] "Scrios na fillteáin?"
+msgstr[3] "Scrios na fillteáin?"
+msgstr[4] "Scrios na fillteáin?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Níorbh fhéidir an fillteán a scriosadh: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Theip ar scriosadh an fhillteáin"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] ""
+msgstr[1] ""
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr ""
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Gearr an Fillteán"
+msgstr[1] "Gearr %1 Fhillteán"
+msgstr[2] "Gearr %1 Fhillteán"
+msgstr[3] "Gearr %1 bhFillteán"
+msgstr[4] "Gearr %1 Fillteán"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr ""
+
+#: standardmailactionmanager.cpp:172
+#, fuzzy, kde-format
+#| msgid "Folder Properties..."
+msgid "Folder Properties"
+msgstr "Airíonna an Fhillteáin..."
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr ""
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr ""
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr ""
+
+#: standardmailactionmanager.cpp:189
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this account?"
+#| msgid_plural "Do you really want to delete %1 accounts?"
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "An bhfuil tú cinnte gur mhaith leat an cuntas seo a scriosadh?"
+msgstr[1] "An bhfuil tú cinnte gur mhaith leat an %1 chuntas seo a scriosadh?"
+msgstr[2] "An bhfuil tú cinnte gur mhaith leat na %1 chuntas seo a scriosadh?"
+msgstr[3] "An bhfuil tú cinnte gur mhaith leat na %1 gcuntas seo a scriosadh?"
+msgstr[4] "An bhfuil tú cinnte gur mhaith leat na %1 cuntas seo a scriosadh?"
+
+#: standardmailactionmanager.cpp:193
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Delete folder?"
+#| msgid_plural "Delete folders?"
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Scrios an fillteán?"
+msgstr[1] "Scrios na fillteáin?"
+msgstr[2] "Scrios na fillteáin?"
+msgstr[3] "Scrios na fillteáin?"
+msgstr[4] "Scrios na fillteáin?"
+
+#: standardmailactionmanager.cpp:195
+#, fuzzy, kde-format
+#| msgid "Could not delete folder: %1"
+msgid "Could not delete message: %1"
+msgstr "Níorbh fhéidir an fillteán a scriosadh: %1"
+
+#: standardmailactionmanager.cpp:197
+#, fuzzy, kde-format
+#| msgid "Folder deletion failed"
+msgid "Message deletion failed"
+msgstr "Theip ar scriosadh an fhillteáin"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr ""
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr ""
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr ""
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Níorbh fhéidir cuntas a chruthú: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Theip ar chuntas a chruthú"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "&Scrios Cuntas"
+msgstr[1] "&Scrios %1 Chuntas"
+msgstr[2] "&Scrios %1 Chuntas"
+msgstr[3] "&Scrios %1 gCuntas"
+msgstr[4] "&Scrios %1 Cuntas"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "An bhfuil tú cinnte gur mhaith leat an cuntas seo a scriosadh?"
+msgstr[1] "An bhfuil tú cinnte gur mhaith leat an %1 chuntas seo a scriosadh?"
+msgstr[2] "An bhfuil tú cinnte gur mhaith leat na %1 chuntas seo a scriosadh?"
+msgstr[3] "An bhfuil tú cinnte gur mhaith leat na %1 gcuntas seo a scriosadh?"
+msgstr[4] "An bhfuil tú cinnte gur mhaith leat na %1 cuntas seo a scriosadh?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Cuntas a Scriosadh?"
+msgstr[1] "Cuntais a Scriosadh?"
+msgstr[2] "Cuntais a Scriosadh?"
+msgstr[3] "Cuntais a Scriosadh?"
+msgstr[4] "Cuntais a Scriosadh?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr ""
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr ""
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr ""
+
+#: standardmailactionmanager.cpp:244
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this folder and all its sub-folders?"
+#| msgid_plural ""
+#| "Do you really want to delete %1 folders and all their sub-folders?"
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] ""
+"An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh in éineacht le "
+"gach fofhillteán atá ann?"
+msgstr[1] ""
+"An bhfuil tú cinnte gur mian leat an %1 fhillteán a scriosadh in éineacht le "
+"gach fofhillteán atá iontu?"
+msgstr[2] ""
+"An bhfuil tú cinnte gur mian leat na %1 fhillteán a scriosadh in éineacht le "
+"gach fofhillteán atá iontu?"
+msgstr[3] ""
+"An bhfuil tú cinnte gur mian leat na %1 bhfillteán a scriosadh in éineacht "
+"le gach fofhillteán atá iontu?"
+msgstr[4] ""
+"An bhfuil tú cinnte gur mian leat na %1 fillteán a scriosadh in éineacht le "
+"gach fofhillteán atá iontu?"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this folder and all its sub-folders?"
+#| msgid_plural ""
+#| "Do you really want to delete %1 folders and all their sub-folders?"
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr ""
+"An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh in éineacht le "
+"gach fofhillteán atá ann?"
+
+#: standardmailactionmanager.cpp:252
+#, fuzzy, kde-format
+#| msgid "Could not create folder: %1"
+msgid "Could not paste message: %1"
+msgstr "Níorbh fhéidir an fillteán a chruthú: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Theip ar ghreamú"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr ""
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr ""
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr ""
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr ""
+
+#: standardmailactionmanager.cpp:694
+#, fuzzy, kde-format
+#| msgid "Mark as Read"
+msgid "&Mark Message as Read"
+msgstr "Marcáil \"Léite\""
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Marcáil \"Léite\""
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark selected messages as read."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:709
+#, fuzzy, kde-format
+#| msgid "Mark as Read"
+msgid "&Mark Message as Unread"
+msgstr "Marcáil \"Léite\""
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr ""
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark selected messages as unread."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr ""
+
+#: standardmailactionmanager.cpp:726
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark selected messages as important."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr ""
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, fuzzy, kde-format
+#| msgid "Move message to trashcan"
+msgid "Mark selected messages as action items."
+msgstr "Cuir an teachtaireacht sa bhruscar"
+
+#: standardmailactionmanager.cpp:752
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark &All Messages as Read"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark all messages as read."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:766
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:767
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All as Read Recursively"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark all messages as read recursively."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:780
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark &All Messages as Unread"
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr ""
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark all messages as unread."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr ""
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr ""
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark all messages as important."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr ""
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr ""
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark all messages as action items."
+msgstr "Marcáil Uile mar \"Léite\""
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr ""
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, fuzzy, kde-format
+#| msgid "Move message to trashcan"
+msgid "Move selected messages to the trash folder."
+msgstr "Cuir an teachtaireacht sa bhruscar"
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr ""
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, fuzzy, kde-format
+#| msgid "Move message to trashcan"
+msgid "Move all messages to the trash folder."
+msgstr "Cuir an teachtaireacht sa bhruscar"
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr ""
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr ""
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Folmhaigh Gach Fillteán &Bruscair"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, fuzzy, kde-format
+#| msgid "Move message to trashcan"
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Cuir an teachtaireacht sa bhruscar"
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "Fol&mhaigh an Bruscar"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, fuzzy, kde-format
+#| msgid "Move message to trashcan"
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Cuir an teachtaireacht sa bhruscar"
+
+#~ msgid "IMAP server"
+#~ msgstr "Freastalaí IMAP"
+
+#~ msgid "Username"
+#~ msgstr "Ainm an Úsáideora"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Sainmhíníonn sé seo an cineál criptiúcháin"
+
+#, fuzzy
+#~| msgid "Defines the encryption type to use"
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Sainmhíníonn sé seo an cineál criptiúcháin"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Roghnaigh URL malartach"

@@ -1,0 +1,818 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sergiu Bivol <sergiu@cip.md>, 2011, 2013.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2013-01-12 09:29+0200\n"
+"Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Golește gunoiul"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Sigur doriți să goliți dosarele cu gunoi pentru toate conturile?"
+
+#: markascommand.cpp:121
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this folder and all its sub-folders?"
+#| msgid_plural ""
+#| "Do you really want to delete %1 folders and all their sub-folders?"
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr "Sigur doriți să ștergeți acest dosar și toate subdosarele sale?"
+
+#: markascommand.cpp:122
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All Recursively"
+msgstr "Marchează tot ca citit"
+
+#: markascommand.cpp:123
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Marchează tot ca citit"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Subiect"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Expeditor"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Destinatar"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Dată"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Dimensiune"
+
+#: messagemodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "@title:column, message (e.g. email) subject"
+#| msgid "Subject"
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "Subiect"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr ""
+
+#: messagemodel.cpp:83
+#, fuzzy, kde-format
+#| msgctxt "@title:column, receiver of message (e.g. email)"
+#| msgid "Receiver"
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "Destinatar"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr ""
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Se obțin elementele..."
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Se caută duplicate..."
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Se elimină duplicatele..."
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "intrare"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "ieșire"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "trimise"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "gunoi"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "ciorne"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "șabloane"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Dosare locale"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Adăugare dosar..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Adaugă un nou dosar la contul ales momentan."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Dosar nou"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Dosarul nu poate fi creat: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Crearea dosarului a eșuat"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Copiază dosar"
+msgstr[1] "Copiază %1 dosare"
+msgstr[2] "Copiază %1 de dosare"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Copiază dosarele alese în clipboard."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Proprietățile dosarului %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Șterge dosarul"
+msgstr[1] "Șterge %1 dosare"
+msgstr[2] "Șterge %1 de dosare"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Șterge dosarele alese din cont."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] "Sigur doriți să ștergeți acest dosar și toate subdosarele sale?"
+msgstr[1] "Sigur doriți să ștergeți %1 dosare și toate subdosarele lor?"
+msgstr[2] "Sigur doriți să ștergeți %1 de dosare și toate subdosarele lor?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Ștergeți dosarul?"
+msgstr[1] "Ștergeți dosarele?"
+msgstr[2] "Ștergeți dosarele?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Dosarul nu poate fi șters: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Ștergerea dosarului a eșuat"
+
+#: standardmailactionmanager.cpp:161
+#, fuzzy, kde-format
+#| msgid "Update Folder"
+#| msgid_plural "Update Folders"
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Actualizează dosar"
+msgstr[1] "Actualizează %1 dosare"
+msgstr[2] "Actualizează %1 de dosare"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, fuzzy, kde-format
+#| msgid "Update the content of the selected folders."
+msgid "Update the contents of the selected folders."
+msgstr "Actualizează conținutul dosarelor alese."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Taie dosarul"
+msgstr[1] "Taie %1 dosare"
+msgstr[2] "Taie %1 de dosare"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Taie dosarele alese din cont."
+
+#: standardmailactionmanager.cpp:172
+#, fuzzy, kde-format
+#| msgid "Folder Properties..."
+msgid "Folder Properties"
+msgstr "Proprietăți dosar..."
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr "Deschide un dialog pentru modificarea proprietăților dosarului ales."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, fuzzy, kde-format
+#| msgid "Copy the selected emails to the clipboard."
+msgid "Copy the selected messages to the clipboard."
+msgstr "Copiază scrisorile alese în clipboard."
+
+#: standardmailactionmanager.cpp:184
+#, fuzzy, kde-format
+#| msgid "Delete Email"
+#| msgid_plural "Delete %1 Emails"
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Șterge scrisoarea"
+msgstr[1] "Șterge %1 scrisori"
+msgstr[2] "Șterge %1 de scrisori"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, fuzzy, kde-format
+#| msgid "Delete the selected emails from the folder."
+msgid "Delete the selected messages from the folder."
+msgstr "Șterge scrisorile alese din dosar."
+
+#: standardmailactionmanager.cpp:189
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete the selected email?"
+#| msgid_plural "Do you really want to delete %1 emails?"
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Sigur doriți să ștergeți scrisoarea aleasă?"
+msgstr[1] "Sigur doriți să ștergeți %1 scrisori?"
+msgstr[2] "Sigur doriți să ștergeți %1 de scrisori?"
+
+#: standardmailactionmanager.cpp:193
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Delete Email?"
+#| msgid_plural "Delete Emails?"
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Se șterge scrisoarea?"
+msgstr[1] "Se șterg scrisorile?"
+msgstr[2] "Se șterg scrisorile?"
+
+#: standardmailactionmanager.cpp:195
+#, fuzzy, kde-format
+#| msgid "Could not delete email: %1"
+msgid "Could not delete message: %1"
+msgstr "Nu s-a putut șterge scrisoarea: %1"
+
+#: standardmailactionmanager.cpp:197
+#, fuzzy, kde-format
+#| msgid "Email deletion failed"
+msgid "Message deletion failed"
+msgstr "Ștergerea scrisorii a eșuat"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, fuzzy, kde-format
+#| msgid "Cut the selected emails from the folder."
+msgid "Cut the selected message from the folder."
+msgstr "Taie scrisorile alese din dosar."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "&Adăugare cont..."
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Adaugă un cont nou<p>Vi se va prezenta un dialog în care să alegeți tipul de "
+"cont care trebuie adăugat.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Adaugă cont"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Contul nu poate fi creat: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Crearea contului a eșuat"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "Ș&terge contul"
+msgstr[1] "Ș&terge %1 conturi"
+msgstr[2] "Ș&terge %1 de conturi"
+
+#: standardmailactionmanager.cpp:221
+#, fuzzy, kde-format
+#| msgid ""
+#| "Delete the selected accounts<p>The currently selected accounts will be "
+#| "deleted, along with all the emails they contain.</p>"
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Șterge conturile alese<p>Conturile alese acum vor fi șterse împreună cu "
+"toate scrisorile pe care le conțin.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Sigur doriți să ștergeți acest cont?"
+msgstr[1] "Sigur doriți să ștergeți %1 conturi?"
+msgstr[2] "Sigur doriți să ștergeți %1 de conturi?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Se șterge contul?"
+msgstr[1] "Se șterg conturile?"
+msgstr[2] "Se șterg conturile?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Proprietăți cont..."
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr "Deschide un dialog pentru modificarea proprietăților contului ales."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Actualizează contul"
+msgstr[1] "Actualizează %1 conturi"
+msgstr[2] "Actualizează %1 de conturi"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Actualizează conținutul tuturor dosarelor din conturile alese."
+
+#: standardmailactionmanager.cpp:244
+#, fuzzy, kde-format
+#| msgid "Update folder and its subfolders"
+#| msgid_plural "Update folders and their subfolders"
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Actualizează dosarul și subdosarele acestuia"
+msgstr[1] "Actualizează dosarul și subdosarele acestuia"
+msgstr[2] "Actualizează dosarul și subdosarele acestuia"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, fuzzy, kde-format
+#| msgid "Update the content of the selected folders and their subfolders."
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr "Actualizează conținutul dosarelor alese și al subdosarelor acestora."
+
+#: standardmailactionmanager.cpp:252
+#, fuzzy, kde-format
+#| msgid "Could not paste email: %1"
+msgid "Could not paste message: %1"
+msgstr "Scrisoarea nu a putut fi lipită: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Lipirea a eșuat"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Elimină semnul „Important”"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, fuzzy, kde-format
+#| msgid "&Mark Mail as Important"
+msgid "&Mark Message as Important"
+msgstr "&Marchează scrisoarea ca importantă"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Elimină semnul „Element de acțiune”"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, fuzzy, kde-format
+#| msgid "&Mark Mail as Action Item"
+msgid "&Mark Message as Action Item"
+msgstr "&Marchează scrisoarea ca element de acțiune"
+
+#: standardmailactionmanager.cpp:694
+#, fuzzy, kde-format
+#| msgid "&Mark Mail as Read"
+msgid "&Mark Message as Read"
+msgstr "&Marchează scrisoarea ca citită"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Marchează ca citit"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark selected messages as read."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:709
+#, fuzzy, kde-format
+#| msgid "&Mark Mail as Unread"
+msgid "&Mark Message as Unread"
+msgstr "&Marchează scrisoarea ca necitită"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Marchează ca necitit"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark selected messages as unread."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Marchează ca important"
+
+#: standardmailactionmanager.cpp:726
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark selected messages as important."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Marchează ca element de acțiune"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark selected messages as action items."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:752
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Read"
+msgid "Mark &All Messages as Read"
+msgstr "Marchează to&ate scrisorile ca citite"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Marchează tot ca citit"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark all messages as read."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:766
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Read"
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Marchează to&ate scrisorile ca citite"
+
+#: standardmailactionmanager.cpp:767
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All as Read Recursively"
+msgstr "Marchează tot ca citit"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark all messages as read recursively."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:780
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Unread"
+msgid "Mark &All Messages as Unread"
+msgstr "Marchează to&ate scrisorile ca necitite"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Marchează tot ca necitit"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Mark all messages as unread."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:794
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Important"
+msgid "Mark &All Messages as Important"
+msgstr "Marchează to&ate scrisorile ca importante"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Marchează tot ca important"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Important"
+msgid "Mark all messages as important."
+msgstr "Marchează to&ate scrisorile ca importante"
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Marchează tot ca element de acțiune"
+
+#: standardmailactionmanager.cpp:808
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Action Item"
+msgid "Mark &All Messages as Action Item"
+msgstr "Marchează to&ate scrisorile ca elemente de acțiune"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, fuzzy, kde-format
+#| msgid "Mark &All Mails as Action Item"
+msgid "Mark all messages as action items."
+msgstr "Marchează to&ate scrisorile ca elemente de acțiune"
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Mu&tă la gunoi"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Move selected messages to the trash folder."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Mu&tă tot la gunoi"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, fuzzy, kde-format
+#| msgid "Move message to trashcan"
+msgid "Move all messages to the trash folder."
+msgstr "Mută mesajul în coșul de gunoi"
+
+#: standardmailactionmanager.cpp:846
+#, fuzzy, kde-format
+#| msgid "Remove &Duplicate Mails"
+msgid "Remove &Duplicate Messages"
+msgstr "Elimină scrisorile &duplicate"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, fuzzy, kde-format
+#| msgid "Remove &Duplicate Mails"
+msgid "Remove duplicate messages."
+msgstr "Elimină scrisorile &duplicate"
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Golește &toate dosarele cu gunoi"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "&Golește gunoiul"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, fuzzy, kde-format
+#| msgid "Mark selected messages as read"
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Marchează mesajul ales ca fiind citit"
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Acest model poate manipula numai dosare cu poștă electronică. Colecția "
+#~ "actuală conține tipuri mime: %1"
+
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "&Marchează scrisoarea ca importantă"
+
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "&Marchează scrisoarea ca element de acțiune"
+
+#, fuzzy
+#~| msgid "Cut Email"
+#~| msgid_plural "Cut %1 Emails"
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "Taie scrisoarea"
+
+#~ msgid "IMAP server"
+#~ msgstr "Server IMAP"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "Definește portul pe care rulează serviciul IMAP"
+
+#~ msgid "Username"
+#~ msgstr "Utilizator"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Definește tipul de criptare care trebuie utilizat"
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Definește tipul de autentificare care trebuie utilizat"
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Definește dacă abonarea rezidentă pe server este activată"
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr ""
+#~ "Definește dacă toate datele IMAP trebuiesc prestocate local tot timpul"
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Definește dacă verificarea la interval e activată."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Intervalul de verificare, în minute"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Definește dacă informațiile cutiilor poștale despre adnotări, ACL-uri și "
+#~ "cotă\n"
+#~ "             trebuiesc de asemenea preluate la enumerarea cutiilor "
+#~ "poștale."
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Definește dacă comanda de înlăturare se emite automat, altfel aceasta "
+#~ "trebuie\n"
+#~ "             declanșată manual prin interfața D-Bus."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "Definește care dosar se folosește pentru gunoi"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Definește dacă contul folosește identitatea implicită"
+
+#~ msgid "Identity account"
+#~ msgstr "Cont de identitate"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "Calea RID către cutia poștală de urmărit pentru modificări"
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Definește dacă serverul susține Sieve"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr ""
+#~ "Definește dacă se refolosesc configurațiile pentru gazdă și autentificare"
+
+#~ msgid "Define sieve port"
+#~ msgstr "Definește portul Sieve"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Definește URL-ul alternativ"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "Definește fișierul implicit cu vacanțe Sieve"
+
+#~ msgid "Id of the resource containing the default special collections."
+#~ msgstr "Identificatorul resursei ce conține colecțiile speciale implicite."
+
+#~ msgid ""
+#~ "Id of the maildir resource containing the default special collections."
+#~ msgstr ""
+#~ "Identificatorul resursei maildir ce conține colecțiile speciale implicite."
+
+#~ msgid "Copy Email"
+#~ msgid_plural "Copy %1 Emails"
+#~ msgstr[0] "Copiază scrisoarea"
+#~ msgstr[1] "Copiază %1 scrisori"
+#~ msgstr[2] "Copiază %1 de scrisori"

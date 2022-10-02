@@ -1,0 +1,736 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sairan Kikkarin <sairan@computer.org>, 2011, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2013-07-11 04:17+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.2\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Шелегін босату"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Барлық тіркелгілердегі Өшірілгендер шелектерін тазаламақсыз ба?"
+
+#: markascommand.cpp:121
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this folder and all its sub-folders?"
+#| msgid_plural ""
+#| "Do you really want to delete %1 folders and all their sub-folders?"
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr "Шынымен %1 қапшықты, олардын ішіндегісімен бірге, өшірмексіз бе?"
+
+#: markascommand.cpp:122
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All Recursively"
+msgstr "Барлығын оқылған деп белгілеу"
+
+#: markascommand.cpp:123
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Барлығын оқылған деп белгілеу"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Тақырыбы"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Жіберуші"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Алушы"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Қашанғы"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Өлшемі"
+
+#: messagemodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "@title:column, message (e.g. email) subject"
+#| msgid "Subject"
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "Тақырыбы"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr ""
+
+#: messagemodel.cpp:83
+#, fuzzy, kde-format
+#| msgctxt "@title:column, receiver of message (e.g. email)"
+#| msgid "Receiver"
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "Алушы"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr ""
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Аталымдарды өндіріп алу"
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Қайталанғандарды іздеу"
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Қайталанғандарды өшіру..."
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "кіріс"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "шығыс"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "жіберілгендер"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "өшірілгндер"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "бітпегендер"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "үлгілер"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Жергілікті қапшықтар"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Қапшықты қосу..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Таңдалған тіркелгіге жаңа қапшығын қосу."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Жаңа қапшық"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Қапшық құрылмады: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Қапшықты құру жаңылысы"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "%1 қапшықты көшіріп алу"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Таңдалған қапшықтарын алмасу буферіне көшіріп алу."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "%1 қапшығының қасиеттері"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "%1 қапшықты өшіру"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Тіркелгінің таңдалған қапшықтарын өшіру"
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] "Шынымен %1 қапшықты, олардын ішіндегісімен бірге, өшірмексіз бе?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Қапшықтар өшірілсін бе?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Мынау қапшығын өшіруі болмады: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Қапшықты өшіру жаңылысы"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Қапшықт(ард)ы жаңарту"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "Таңдалған қапшықтарының мазмұнын жаңарту."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "%1 қапшықты қиып алу"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Тіркелгінің таңдалған қапшықтарын қиып алу"
+
+#: standardmailactionmanager.cpp:172
+#, fuzzy, kde-format
+#| msgid "Folder Properties..."
+msgid "Folder Properties"
+msgstr "Қапшықтың қасиеттері..."
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr "Таңдалған қапшықтың қасиеттерін өзгертетін диалогты ашу."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "%1 хатты көшшірмелеу"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "Таңдалған хаттарды алмасу буферіне көшіріп алу."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "%1 хатты өшіру"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "Капшықтан таңдалған хатарды өшіру."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Шынымен %1 хатты өшірмексіз бе?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Хаттар өшірілсін бе?"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Мынау хаттың өшіруі болмады: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Хатты өшіру жаңылысы"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "%1 хатты кесіп алу"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "Қапшықтан таңдалған хаттарды қиып алу."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Тіркелгіні қ&осу.."
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Жаңа тіркелгіні қосу<p>Қосылатын тіркелгінің түрін таңдайтын диалогы "
+"ұсынылады.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Тіркелгіні қосу"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Тіркелгі құрылмады: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Тіркелгіні құру жаңылысы"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "%1 тіркелгіні өшіру"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Таңдалған тіркелгілерін өшіру<p>Таңдалған тіркелгілер, бүкіл ішіндегі "
+"хаттарымен бірге жойылады.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Шынымен %1 тіркелгіні өшірмексіз бе?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Тіркелгілер өшірілсін бе?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Тіркелгінің қа&сиеттері..."
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr "Таңдалған тіркелгінің қасиеттерін өзгертетін диалогты ашу."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "%1 тіркелгіні жаңарту"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Таңдалған тіркелгілерінің бүкіл қапшықтар ішіндегісін жаңарту."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Қапшықт(ард)ы, ішкі қапшықтарымен қоса, жаңарту"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr ""
+"Таңдалған қапшықтарының мазмұнын, бүкіл ішкі қапшықтарыдағысымен қоса, "
+"жаңарту."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Хат орналастырылмады: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Орналастыру жаңылысы"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Хаттың маңыздық белгісін жою"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "Хатты маңызды деп &белгілеу"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Амал күтетін деген белгісін өшіру"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "Хатты амал күтетін деп &белгілеу"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "Хатты оқылған деп &белгілеу"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Таңдалған хаттарды оқылған деп белгілеу."
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "Хатты оқылмаған деп &белгілеу"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Оқылмаған деп белгілеу"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Таңдалған хаттарды оқылмаған деп белгілеу."
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Маңызды деп белгілеу"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Таңдалған хаттарды маңызды деп белгілеу."
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Амал күтетін деп белгілеу"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Таңдалған хаттарды амал күтетін деп белгілеу."
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "&Бүкіл хаттарды оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Барлығын оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Бүкіл хаттарды оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:766
+#, fuzzy, kde-format
+#| msgid "Mark &All Messages as Read"
+msgid "Mark &All Messages as Read Recursively"
+msgstr "&Бүкіл хаттарды оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:767
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All as Read Recursively"
+msgstr "Барлығын оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, fuzzy, kde-format
+#| msgid "Mark all messages as read."
+msgid "Mark all messages as read recursively."
+msgstr "Бүкіл хаттарды оқылған деп белгілеу"
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "&Бүкіл хатарды оқылмаған деп белгілеу"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Барлығын оқылмаған деп белгілеу"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Бүкіл хаттарды оқылмаған деп белгілеу."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "&Бүкіл хатарды маңызды деп белгілеу"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Барлығын маңызды деп белгілеу"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Бүкіл хатарды маңызды деп белгілеу."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Барлығын амал күтетін деп белгілеу"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "&Бүкіл хатарды амал күтетін деп белгілеу"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Бүкіл хатарды амал күтетін деп белгілеу."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "&Шелекке тастау"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Таңдалған хаттарды шелекке тастау"
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Барлығын Шелекке тастау"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Бүкіл хаттарды өшірілгендерге тастау."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "Қ&айталанатын хаттарды өшіру"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Қайталанатын хаттарды өшіру."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Барлық &Шелектерін тазалау"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Бүкіл хаттарды бүкіл шелектерден мүлдем өшіру."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "Шелегін б&осату"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Бүкіл хаттарды шелегінен мүлдем өшіру."
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Бұл үлгіcі тек қана эл.пошта қапшықтарымен айналасады. Назардағы жинақта "
+#~ "келесі MIME түрлері бар: %1"
+
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "Хатты маңызды деп белгілеу"
+
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "Хатты амал күтетін деп &белгілеу"
+
+#, fuzzy
+#~| msgid "Cut Email"
+#~| msgid_plural "Cut %1 Emails"
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "%1 эл.хатты қиып алу"
+
+#~ msgid "IMAP server"
+#~ msgstr "IMAP сервері"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "IMAP қызметі істейтін портын анықтайды"
+
+#~ msgid "Username"
+#~ msgstr "Пайдаланушы"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Қолданатын шифрлау әдісін анықтайды"
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Қолданатын аутентификациялау әдісін анықтайды"
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Сервер жағынан жазылуын рұқсаттығын анықтайды"
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr "IMAP деректерін ылғи кэштеуін керегін анықтайды"
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Мезгіллі тексеріс керектігін анықтайды."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Тексеріс аралығы (минут)"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Пошта жәшіктер тізімделгенде аңдатпалар, қатынауды басқару тізімдер,\n"
+#~ "             квота мәліметтері де алынуы керектігін анықтайды."
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Өшіріп тастау командасы автоматты түрде берілетінің анықтайды,\n"
+#~ "             әйтпесе, ол D-Bus интерфейсі арқылы, қолмен жасалады."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "Өшірілгендерді сақтауға арналған қапшықты анықтайды"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Тіркелгі әдетті іс-әлпетін қолданатынын анықтайды"
+
+#~ msgid "Identity account"
+#~ msgstr "Іс-әлпетінің тіркелгісі"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "Өзгерістерін бақылайтын пошта жәшігінің RID жолы"
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Сервер sieve тілін таниды ма, жоқ па, анықтайды"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr "Хост пен жүйеге кіру баптауын қайта қолдануы керегін анықтайды"
+
+#~ msgid "Define sieve port"
+#~ msgstr "Sieve портын анықтау"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Басқа URL-ді анықтау"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "sieve босату файлының атауын анықтайды"
+
+#~ msgid "Id of the resource containing the default special collections."
+#~ msgstr "Әдеттегі арнаулы жинақтарын сақтайтын дерек көзінің идентификаторы."
+
+#~ msgid ""
+#~ "Id of the maildir resource containing the default special collections."
+#~ msgstr "Әдеттегі арнаулы жинақтарын сақтайтын maildir идентификаторы."
+
+#~ msgid "Copy Email"
+#~ msgid_plural "Copy %1 Emails"
+#~ msgstr[0] "%1 эл.хатты көшірмелеу"

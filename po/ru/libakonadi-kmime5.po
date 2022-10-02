@@ -1,0 +1,793 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Alexander Potashev <aspotashev@gmail.com>, 2010, 2011, 2012, 2015, 2016, 2017.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+# Александр Яворский <yavorsky.a@t-rosta.com>, 2018.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2021-12-03 11:19+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.08.3\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Очистка корзины"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Очистить корзины всех почтовых ящиков?"
+
+#: markascommand.cpp:121
+#, kde-format
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr "Отметить все письма в этой папке и всех её вложенных папках?"
+
+#: markascommand.cpp:122
+#, kde-format
+msgid "Mark All Recursively"
+msgstr "Отметить все рекурсивно"
+
+#: markascommand.cpp:123
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Отметить все"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Тема"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Отправитель"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Получатель"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Дата"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Размер"
+
+#: messagemodel.cpp:71
+#, kde-format
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "(Тема отсуствует)"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr "(Отправитель отсутствует)"
+
+#: messagemodel.cpp:83
+#, kde-format
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "(Получатель отсутствует)"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr "(Дата отсутствует)"
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "—"
+
+# BUGME: are these always email messages? --aspotashev
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Получение писем..."
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Поиск дубликатов..."
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Удаление дубликатов..."
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "Входящие"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "Исходящие"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "Отправленные"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "Корзина"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "Черновики"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "Шаблоны"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Локальные папки"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "&Создать папку..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Создать новую папку в выбранном почтовом ящике."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Создание папки"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Не удалось создать папку: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Ошибка создания папки"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Копировать %1 папку"
+msgstr[1] "Копировать %1 папки"
+msgstr[2] "Копировать %1 папок"
+msgstr[3] "Копировать папку"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Копировать выбранные папки в буфер обмена."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Свойства папки %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Удалить %1 папку"
+msgstr[1] "Удалить %1 папки"
+msgstr[2] "Удалить %1 папок"
+msgstr[3] "Удалить папку"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Удалить выбранные папки из почтового ящика."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] "Удалить %1 папку и все вложенные папки?"
+msgstr[1] "Удалить %1 папки и все вложенные папки?"
+msgstr[2] "Удалить %1 папок и все вложенные папки?"
+msgstr[3] "Удалить эту папку и все вложенные папки?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Удаление папок"
+msgstr[1] "Удаление папок"
+msgstr[2] "Удаление папок"
+msgstr[3] "Удаление папки"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Не удалось удалить папку: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Ошибка удаления папки"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Обновить папки"
+msgstr[1] "Обновить папки"
+msgstr[2] "Обновить папки"
+msgstr[3] "Обновить папку"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "Обновить содержимое выбранных папок."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Вырезать %1 папку"
+msgstr[1] "Вырезать %1 папки"
+msgstr[2] "Вырезать %1 папок"
+msgstr[3] "Вырезать папку"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Вырезать выбранные папки из почтового ящика."
+
+#: standardmailactionmanager.cpp:172
+#, kde-format
+msgid "Folder Properties"
+msgstr "Свойства папки"
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr "Открыть окно со свойствами папки."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Копировать %1 письмо"
+msgstr[1] "Копировать %1 письма"
+msgstr[2] "Копировать %1 писем"
+msgstr[3] "Копировать письмо"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "Копировать выбранные письма в буфер обмена."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Удалить %1 письмо"
+msgstr[1] "Удалить %1 письма"
+msgstr[2] "Удалить %1 писем"
+msgstr[3] "Удалить письмо"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "Удалить выбранные письма из папки."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Удалить %1 выбранное письмо?"
+msgstr[1] "Удалить %1 выбранных письма?"
+msgstr[2] "Удалить %1 выбранных писем?"
+msgstr[3] "Удалить выбранное письмо?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Удаление писем"
+msgstr[1] "Удаление писем"
+msgstr[2] "Удаление писем"
+msgstr[3] "Удаление письма"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Удалить письмо не получилось: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Ошибка удаления письма"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Вырезать %1 письмо"
+msgstr[1] "Вырезать %1 письма"
+msgstr[2] "Вырезать %1 писем"
+msgstr[3] "Вырезать письмо"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "Вырезать выбранные письма из папки."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Добавить почтовый &ящик..."
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Добавить новый почтовый ящик<p>Будет открыто диалоговое окно, в котором "
+"можно выбрать тип добавляемого почтового ящика.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Добавление почтового ящика"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Не удалось создать учётную запись почтового ящика: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Не удалось добавить почтовый ящик"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "У&далить %1 почтовый ящик"
+msgstr[1] "У&далить %1 почтовых ящика"
+msgstr[2] "У&далить %1 почтовых ящиков"
+msgstr[3] "У&далить почтовый ящик"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Удалить выбранные почтовые ящики.<p>Выбранные учётные записи почтовых ящиков "
+"будут удалены вместе со всеми содержащимися в них письмами.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Удалить %1 учётную запись почтовых ящиков?"
+msgstr[1] "Удалить %1 учётных записи почтовых ящиков?"
+msgstr[2] "Удалить %1 учётных записей почтовых ящиков?"
+msgstr[3] "Удалить эту учётную запись почтового ящика?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Удаление почтовых ящиков"
+msgstr[1] "Удаление почтовых ящиков"
+msgstr[2] "Удаление почтовых ящиков"
+msgstr[3] "Удаление почтового ящика"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Свойства почтового ящика..."
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr "Открыть окно со свойствами почтового ящика."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Обновить %1 почтовый ящик"
+msgstr[1] "Обновить %1 почтовых ящика"
+msgstr[2] "Обновить %1 почтовых ящиков"
+msgstr[3] "Обновить почтовый ящик"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Обновить содержимое всех папок в выбранных почтовых ящиках."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Обновить эти папки и все их вложенные папки"
+msgstr[1] "Обновить эти папки и все их вложенные папки"
+msgstr[2] "Обновить эти папки и все их вложенные папки"
+msgstr[3] "Обновить эту папку и все её вложенные папки"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr "Обновить содержимое выбранных папок и всех их вложенных папок."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Не удалось вставить письмо: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Ошибка вставки"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Снять отметку о &важности"
+
+# Неизвестно, сколько выделено писем (одно или несколько). --aspotashev
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "Отметить письма как &важные"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Снять с контроля"
+
+# Неизвестно, сколько выделено писем (одно или несколько). --aspotashev
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "Отметить письма как «на &контроле»"
+
+# Неизвестно, сколько выделено писем (одно или несколько). --aspotashev
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "Отметить письма как &прочитанные"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Отметить как прочитанные"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Отметить выбранные письма как прочитанные."
+
+# Неизвестно, сколько выделено писем (одно или несколько). --aspotashev
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "Отметить письма как &непрочитанные"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Отметить как непрочитанные"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Отметить выбранные письма как прочитанные"
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Отметить как важные"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Отметить выбранные письма как прочитанные"
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Отметить как «на контроле»"
+
+# BUGME: please add "action items" to Russian glossary. --aspotashev
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Отметить выбранные письма как записи «на контроле»"
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "Отметить в&се письма как прочитанные"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Отметить все как прочитанные"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Отметить все письма как прочитанные."
+
+#: standardmailactionmanager.cpp:766
+#, kde-format
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Отметить в&се письма как прочитанные рекурсивно"
+
+#: standardmailactionmanager.cpp:767
+#, kde-format
+msgid "Mark All as Read Recursively"
+msgstr "Отметить все как прочитанные рекурсивно"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, kde-format
+msgid "Mark all messages as read recursively."
+msgstr "Отметить все письма как прочитанные рекурсивно."
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "Отметить все письма как н&епрочитанные"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Отметить все как непрочитанные"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Отметить все письма как непрочитанные."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "Отметить &все письма как важные"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Отметить все как важные"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Отметить все письма как важные."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Отметить все как «на контроле»"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "Отметить все письма как «на контроле»"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Отметить все письма как «на контроле»."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "У&далить в корзину"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Перенести выбранные письма в корзину."
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Уд&алить все в корзину"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Перенести все письма в корзину."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "Удалить &дубликаты писем"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Удалить дублирующиеся письма."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Очистить &все корзины"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Навсегда удалить все письма из всех папок-корзин."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "О&чистить корзину"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Навсегда удалить все письма из этой папки-корзины."
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Эта модель предназначена только для почтовых папок. Текущая коллекция "
+#~ "содержит следующие типы MIME: %1"
+
+# Неизвестно, сколько выделено писем (одно или несколько). --aspotashev
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "Отметить письма как &важные"
+
+# Неизвестно, сколько выделено писем (одно или несколько). --aspotashev
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "Отметить письма как на &контроле"
+
+#~ msgid "IMAP server"
+#~ msgstr "Сервер IMAP"
+
+#~ msgid "Defines the port the IMAP service is running on"
+#~ msgstr "Порт, на котором работает служба IMAP"
+
+#~ msgid "Username"
+#~ msgstr "Имя пользователя"
+
+#~ msgid "Defines the encryption type to use"
+#~ msgstr "Тип используемого шифрования"
+
+#~ msgid "Defines the authentication type to use"
+#~ msgstr "Тип используемой аутентификации"
+
+#~ msgid "Defines if the server side subscription is enabled"
+#~ msgstr "Поддержка подписки на сервере"
+
+#~ msgid "Defines if all the IMAP data should be cached locally all the time"
+#~ msgstr "Кэшировать данные, получаемые с сервера IMAP, постоянно"
+
+#~ msgid "Defines if interval checking is enabled."
+#~ msgstr "Периодическая проверка включена."
+
+#~ msgid "Check interval in minutes"
+#~ msgstr "Интервал между проверками, минут"
+
+#~ msgid ""
+#~ "Defines if the annotations, ACLs and quota information of mailboxes "
+#~ "should\n"
+#~ "             also be retrieved when the mailboxes get listed."
+#~ msgstr ""
+#~ "Определяет, будут ли аннотации, ACL и информация о квоте затребована\n"
+#~ "при обращении к почтовому ящику."
+
+#~ msgid ""
+#~ "Defines if the expunge command is issued automatically, otherwise it "
+#~ "should be\n"
+#~ "             triggered manually through the D-Bus interface."
+#~ msgstr ""
+#~ "Определяет, будет ли команда полного удаления запущена автоматически или\n"
+#~ "вызвана вручную через интерфейс D-Bus."
+
+#~ msgid "Define which folder is used for trash"
+#~ msgstr "Папка, используемая как корзина"
+
+#~ msgid "Define if account uses the default identity"
+#~ msgstr "Почтовый ящик использует профиль по умолчанию"
+
+# BUGME: -> "Account identity" --aspotashev
+#~ msgid "Identity account"
+#~ msgstr "Профиль, используемый для почтового ящика"
+
+#~ msgid "RID path to the mailbox to watch for changes"
+#~ msgstr "Путь RID к почтовому ящику для отслеживания изменений"
+
+#~ msgid "Define if server supports sieve"
+#~ msgstr "Поддержка сервером Sieve"
+
+#~ msgid "Define if we reuse host and login configuration"
+#~ msgstr ""
+#~ "Использовать те же параметры сервера и аутентификации, что и для IMAP"
+
+#~ msgid "Define sieve port"
+#~ msgstr "Порт Sieve"
+
+#~ msgid "Define alternate URL"
+#~ msgstr "Альтернативный адрес URL для Sieve"
+
+#~ msgid "Define default sieve vacation filename"
+#~ msgstr "Имя файла стандартного фильтра для уведомлений об отсутствии"
+
+#~ msgid "Id of the resource containing the default special collections."
+#~ msgstr ""
+#~ "Идентификатор источника данных, содержащего стандартные "
+#~ "специализированные папки."
+
+#~ msgid ""
+#~ "Id of the maildir resource containing the default special collections."
+#~ msgstr ""
+#~ "Идентификатор источника данных Maildir, содержащего стандартные "
+#~ "специализированные папки."
+
+#~ msgid "Copy Email"
+#~ msgid_plural "Copy %1 Emails"
+#~ msgstr[0] "Копировать %1 письмо"
+#~ msgstr[1] "Копировать %1 письма"
+#~ msgstr[2] "Копировать %1 писем"
+#~ msgstr[3] "Копировать письмо"
+
+#~ msgid "Cut Email"
+#~ msgid_plural "Cut %1 Emails"
+#~ msgstr[0] "Вырезать %1 письмо"
+#~ msgstr[1] "Вырезать %1 письма"
+#~ msgstr[2] "Вырезать %1 писем"
+#~ msgstr[3] "Вырезать письмо"

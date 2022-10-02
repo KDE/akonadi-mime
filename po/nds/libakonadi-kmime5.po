@@ -1,0 +1,689 @@
+# translation of libakonadi-kmime.po to Low Saxon
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Manfred Wiese <m.j.wiese@web.de>, 2010, 2011.
+# Sönke Dibbern <s_dibbern@web.de>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libakonadi-kmime\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"PO-Revision-Date: 2014-08-14 00:08+0200\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Affalltünn leddig maken"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr ""
+"Büst Du seker, wat Du de Affalltünnen vun all Kontos leddig maken wullt?"
+
+#: markascommand.cpp:121
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete this folder and all its sub-folders?"
+#| msgid_plural ""
+#| "Do you really want to delete %1 folders and all their sub-folders?"
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr "Wullt Du dissen Orner un all sien Ünnerornern redig wegdoon?"
+
+#: markascommand.cpp:122
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All Recursively"
+msgstr "Allens as leest markeren"
+
+#: markascommand.cpp:123
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Allens as leest markeren"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Bedraap"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Senner"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Adressaat"
+
+#: messagemodel.cpp:37
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Datum"
+
+#: messagemodel.cpp:38
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Grött"
+
+#: messagemodel.cpp:71
+#, fuzzy, kde-format
+#| msgctxt "@title:column, message (e.g. email) subject"
+#| msgid "Subject"
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "Bedraap"
+
+#: messagemodel.cpp:77
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr ""
+
+#: messagemodel.cpp:83
+#, fuzzy, kde-format
+#| msgctxt "@title:column, receiver of message (e.g. email)"
+#| msgid "Receiver"
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "Adressaat"
+
+#: messagemodel.cpp:89
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr ""
+
+#: messagemodel.cpp:93
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Indrääg warrt haalt..."
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Bi to söken na Dubbels ..."
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Bi to Dubbels wegmaken..."
+
+#: specialmailcollections.cpp:130
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "Postingang"
+
+#: specialmailcollections.cpp:133
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "Postutgang"
+
+#: specialmailcollections.cpp:136
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "Loosstüert"
+
+#: specialmailcollections.cpp:139
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "Affalltünn"
+
+#: specialmailcollections.cpp:142
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "Nich fardige"
+
+#: specialmailcollections.cpp:145
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "Vörlagen"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Lokale Ornern"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Orner tofögen..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Dat opstunns utsöchte Konto en nieg Orner tofögen"
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Nieg Orner"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Orner \"%1\" lett sik nich opstellen."
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Opstellen vun den Orner fehlslaan"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Orner koperen"
+msgstr[1] "%1 Ornern koperen"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "De utsöchten Ornern na de Twischenaflaag koperen"
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Egenschappen vun Orner \"%1\""
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Orner wegmaken"
+msgstr[1] "%1 Ornern wegmaken"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "De utsöchten Ornern ut dat Konto wegmaken"
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] "Wullt Du dissen Orner un all sien Ünnerornern redig wegdoon?"
+msgstr[1] "Wullt Du disse %1 Ornern un all ehr Ünnerornern redig wegdoon?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Orner wegmaken?"
+msgstr[1] "Ornern wegmaken?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Orner \"%1\" lett sik nich wegmaken."
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Wegmaken vun den Orner fehlslaan"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Orner opfrischen"
+msgstr[1] "Ornern opfrischen"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "De utsöchten Ornern ehr Inholt opfrischen."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Orner knippen"
+msgstr[1] "%1 Ornern knippen"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "De utsöchten Ornern ut dat Konto knippen"
+
+#: standardmailactionmanager.cpp:172
+#, fuzzy, kde-format
+#| msgid "Folder Properties..."
+msgid "Folder Properties"
+msgstr "Orner-Egenschappen..."
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr ""
+"En Dialoog opmaken, mit den sik de Egenschappen vun den utsöchten Orner "
+"bewerken laat."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Naricht koperen"
+msgstr[1] "%1 Narichten koperen"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "De utsöchten Narichten na de Twischenaflaag koperen"
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Naricht wegdoon"
+msgstr[1] "%1 Narichten wegdoon"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "De utsöchten Narichten ut den Orner wegmaken"
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Wullt Du de utsöchten Naricht redig wegdoon?"
+msgstr[1] "Wullt Du de utsöchten %1 Narichten redig wegdoon?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Naricht wegdoon?"
+msgstr[1] "Narichten wegdoon?"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Naricht lett sik nich wegdoon: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Narichten laat sik nich wegdoon"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Naricht knippen"
+msgstr[1] "%1 Narichten knippen"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "De utsöchten Narichten ut den Orner knippen"
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "Konto &tofögen..."
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"En nieg Konto tofögen<p>Binnen en nieg Dialoog kannst Du den Typ angeven, "
+"den dat niege Konto hebben schall.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Konto tofögen"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Konto \"%1\" lett sik nich opstellen."
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Konto lett sik nich opstellen."
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "Konto &wegmaken"
+msgstr[1] "%1 Kontos &wegmaken"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"De utsöchten Kontos wegdoon<p>De opstunns utsöchten Kontos un all de "
+"Narichten dor binnen warrt wegdaan.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Wullt Du dit Konto redig wegmaken?"
+msgstr[1] "Wullt Du disse %1 Kontos redig wegmaken?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Konto wegmaken?"
+msgstr[1] "Kontos wegmaken?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Konto-Egenschappen..."
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr ""
+"En Dialoog opmaken, mit den sik de Egenschappen vun dat utsöchte Konto "
+"bewerken laat."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Konto opfrischen"
+msgstr[1] "%1 Kontos opfrischen"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Frischt all utsöcht Kalennerornern ehr Inholden op."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Dissen Orner un all sien Ünnerornern opfrischen"
+msgstr[1] "Disse Ornern un all ehr Ünnerornern opfrischen"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr "Den Inholt vun de utsöchten Ornern un all ehr Ünnerornern opfrischen"
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Naricht lett sik nich infögen: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Infögen fehlslaan"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Wichtig-Mark wegmaken"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "Naricht as wichtig &markeren"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Akschoon-Mark wegmaken"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "Naricht för Akschoon &markeren"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "Naricht as Leest &markeren"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "As Leest markeren"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Utsöcht Narichten as al leest markeren"
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "Naricht as nich leest &markeren"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "As nich leest markeren"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Utsöcht Narichten as nich leest markeren"
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "As wichtig markeren"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Utsöcht Narichten as wichtig markeren"
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "För Akschoon markeren"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Utsöcht Narichten för Akschoon markeren"
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "&All Narichten as leest markeren"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Allens as leest markeren"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "All Narichten as leest markeren"
+
+#: standardmailactionmanager.cpp:766
+#, fuzzy, kde-format
+#| msgid "Mark &All Messages as Read"
+msgid "Mark &All Messages as Read Recursively"
+msgstr "&All Narichten as leest markeren"
+
+#: standardmailactionmanager.cpp:767
+#, fuzzy, kde-format
+#| msgid "Mark All as Read"
+msgid "Mark All as Read Recursively"
+msgstr "Allens as leest markeren"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, fuzzy, kde-format
+#| msgid "Mark all messages as read."
+msgid "Mark all messages as read recursively."
+msgstr "All Narichten as leest markeren"
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "&All Nettbreven as nich leest markeren"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Allens as nich leest &markeren"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "All Narichten as nich leest markeren"
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "&All Narichten as wichtig markeren"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Allens as wichtig markeren"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "All Narichten as wichtig markeren."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Allens för Akschoon markeren"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "&All Narichten för Akschoon markeren"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "All Narichten för Akschoon markeren"
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Na &Affalltünn"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Utsöcht Narichten na de Affalltünn verschuven"
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "All na &Affalltünn"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Alkl Narichten na de Affalltünn verschuven"
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "&Dubbelt Narichten wegmaken"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Dubbelt Narichten wegmaken"
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "All &Affallornern leddig maken"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr "All Narichten duerhaftig ut all Affalltünnen wegmaken"
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "Affalltünn &leddig maken"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "All Narichten duerhaftig ut de Affalltünn wegmaken"
+
+#~ msgctxt "@label"
+#~ msgid ""
+#~ "This model can only handle email folders. The current collection holds "
+#~ "mimetypes: %1"
+#~ msgstr ""
+#~ "Disse Datenstruktuur kann bloots mit Nettpost-Ornern üm. De aktuelle "
+#~ "Sammeln bargt de MIME-Typen: %1"
+
+#~ msgid "&Mark Mail as Important"
+#~ msgstr "Nettbreef as wichtig &markeren"
+
+#~ msgid "&Mark Mail as Action Item"
+#~ msgstr "Nettbreef för Akschoon &markeren"
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Sönke Dibbern"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "s_dibbern@web.de"
+
+#~ msgid "An app that requests LocalFolders"
+#~ msgstr "En Lüttprogramm, dat lokaal Ornern anfraagt"
+
+#~ msgid "Headfetcher"
+#~ msgstr "Kopphaler"
+
+#~ msgid "header fetching application"
+#~ msgstr "Kopphaalprogramm"
+
+#~ msgid "Run test on multipart data (default is singlepart)."
+#~ msgstr "Test för Mehrdeel-Daten utföhren (Standard is Enkeldeel)."
