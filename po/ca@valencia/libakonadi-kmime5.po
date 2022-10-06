@@ -344,7 +344,7 @@ msgstr "Retalla els missatges seleccionats de la carpeta."
 #: standardmailactionmanager.cpp:205
 #, kde-format
 msgid "Add &Account..."
-msgstr "&Afig un compte..."
+msgstr "Afi&g un compte..."
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
