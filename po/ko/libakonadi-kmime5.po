@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2021-11-11 23:16+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,19 +27,19 @@ msgstr "휴지통 비우기"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "모든 계정의 휴지통 폴더를 비우시겠습니까?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
 msgstr "이 폴더와 모든 하위 폴더의 메시지를 표시하시겠습니까?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "재귀적으로 모두 표시"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

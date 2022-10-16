@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2022-04-07 17:47+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -26,7 +26,7 @@ msgstr "Vyprázdniť kôš"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Naozaj chcete vyprázdniť priečinky koša zo všetkých účtov?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -35,12 +35,12 @@ msgstr ""
 "Naozaj chcete označiť všetky správy v tomto priečinku a všetkých jeho "
 "podpriečinkoch?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Označiť všetko rekurzívne"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

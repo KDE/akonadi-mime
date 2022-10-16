@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2020-09-17 13:50+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@linux.org.tw>\n"
@@ -29,19 +29,19 @@ msgstr "清空垃圾桶"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "你確定要將所有帳號的垃圾桶清空嗎？"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
 msgstr "確定標記此資料夾以及其子資料夾中的所有信件？"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "遞迴標記已讀"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"

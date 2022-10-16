@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2022-01-11 18:27+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -29,7 +29,7 @@ msgstr "أفرغ المهملات"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "أتريد حقًّا إفراغ مجلدات المهملات لكلّ الحسابات؟"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -38,12 +38,12 @@ msgstr ""
 "هل أنت متأكد من أنك تريد وضع علامة على كافة الرسائل الموجودة في هذا المجلد "
 "وجميع مجلداته الفرعية؟"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "علّم الكلّ تكرارياً"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

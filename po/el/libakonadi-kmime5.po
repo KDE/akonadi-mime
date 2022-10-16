@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2020-06-02 19:40+0300\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Επιθυμείτε πραγματικά να αδειάσετε το φάκελο των απορριμμάτων για όλους τους "
 "λογαριασμούς;"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -40,12 +40,12 @@ msgstr ""
 "Είστε βέβαιοι ότι θέλετε να σημειώσετε όλα τα μηνύματα σε αυτόν το φάκελο "
 "και σε όλους τους υποφακέλους;"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Να σημειωθούν όλα αναδρομικά"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"

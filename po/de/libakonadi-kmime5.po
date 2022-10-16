@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2022-02-20 10:21+0100\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgstr "Papierkorb leeren"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Sind Sie sicher, dass Sie den Papierkorb aller Konten leeren möchten?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -36,12 +36,12 @@ msgstr ""
 "Möchten Sie alle Nachrichten in diesem Ordner und allen seinen Unterordnern "
 "wirklich markieren?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Alle rekursiv markieren"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

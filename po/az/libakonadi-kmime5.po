@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2022-07-03 14:28+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgstr "Səbəti Boşaltmaq"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Bütün hesabların səbətlərini boşaltmaq istədiyinizə əminsiniz?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -36,12 +36,12 @@ msgstr ""
 "Bu qovluğun və onun alt qovluqlarındakı bütün ismarıcları işarələmək "
 "istədiyinizə əminsiniz?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Hamısını rekursiv olaraq işarələyin"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

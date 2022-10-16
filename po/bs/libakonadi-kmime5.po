@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepimlibs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-29 00:47+0000\n"
+"POT-Creation-Date: 2022-10-16 00:47+0000\n"
 "PO-Revision-Date: 2013-10-18 20:27+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -31,7 +31,7 @@ msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
 "Da li ste sigurni da želite isprazniti direktorije sa smećem za sve račune?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:127
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this folder and all its sub-folders?"
 #| msgid_plural ""
@@ -42,13 +42,13 @@ msgid ""
 msgstr ""
 "Želite li zaista da obrišete %1 direktorij i sve njihove poddirektorije?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:128
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All Recursively"
 msgstr "Označi sve kao pročitano"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:129
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"
