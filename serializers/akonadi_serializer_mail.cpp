@@ -211,7 +211,7 @@ template<typename T>
 static void serializeAddrList(QDataStream &stream, T *hdr)
 {
     const KMime::Types::Mailbox::List mb = hdr->mailboxes();
-    stream << mb.size();
+    stream << (qint32)mb.size();
     for (const KMime::Types::Mailbox &mbox : mb) {
         stream << mbox.name() << mbox.addrSpec().localPart << mbox.addrSpec().domain;
     }
