@@ -644,11 +644,3 @@ msgstr "Buida la &paperera"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Suprimeix permanentment tots els missatges de la carpeta paperera."
-
-#~ msgctxt "@label"
-#~ msgid ""
-#~ "This model can only handle email folders. The current collection holds "
-#~ "mimetypes: %1"
-#~ msgstr ""
-#~ "Aquest model només pot gestionar carpetes de correu. La col·lecció actual "
-#~ "conté els tipus MIME: %1"
