@@ -612,7 +612,7 @@ msgstr "Mou-ho tot a la &paperera"
 #: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
 #, kde-format
 msgid "Move all messages to the trash folder."
-msgstr "Mou tots els missatges a la carpeta paperera."
+msgstr "Mou tots els missatges cap a la carpeta paperera."
 
 #: standardmailactionmanager.cpp:846
 #, kde-format
