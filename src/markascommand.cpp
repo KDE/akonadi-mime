@@ -15,7 +15,6 @@
 
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <kwidgetsaddons_version.h>
 
 using namespace Akonadi;
 
@@ -118,21 +117,12 @@ void MarkAsCommand::slotFetchDone(KJob *job)
 void MarkAsCommand::execute()
 {
     if (d->mRecursive && !d->mFolders.isEmpty()) {
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
         if (KMessageBox::questionTwoActions(qobject_cast<QWidget *>(parent()),
-#else
-        if (KMessageBox::questionYesNo(qobject_cast<QWidget *>(parent()),
-
-#endif
                                             i18n("Are you sure you want to mark all messages in this folder and all its subfolders?"),
                                             i18n("Mark All Recursively"),
                                             KGuiItem(i18nc("@action:button", "Mark All")),
                                             KStandardGuiItem::cancel())
-#if KWIDGETSADDONS_VERSION >= QT_VERSION_CHECK(5, 100, 0)
             == KMessageBox::ButtonCode::PrimaryAction) {
-#else
-            == KMessageBox::Yes) {
-#endif
             auto job = new Akonadi::CollectionFetchJob(d->mFolders.constFirst());
             connect(job, &Akonadi::CollectionFetchJob::result, this, &MarkAsCommand::slotCollectionFetchDone);
         } else {
