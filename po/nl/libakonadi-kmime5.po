@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2021-11-06 09:33+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -27,19 +27,19 @@ msgstr "Prullenbak legen"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Wilt u de prullenbak van alle accounts legen?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
 msgstr "Wilt u alle berichten in deze map en al haar submappen markeren?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Alles recursief markeren"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

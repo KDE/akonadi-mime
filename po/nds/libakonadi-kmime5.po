@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2014-08-14 00:08+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -30,7 +30,7 @@ msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
 "Büst Du seker, wat Du de Affalltünnen vun all Kontos leddig maken wullt?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this folder and all its sub-folders?"
 #| msgid_plural ""
@@ -40,13 +40,13 @@ msgid ""
 "subfolders?"
 msgstr "Wullt Du dissen Orner un all sien Ünnerornern redig wegdoon?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All Recursively"
 msgstr "Allens as leest markeren"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"

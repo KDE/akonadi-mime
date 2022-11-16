@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
-"PO-Revision-Date: 2022-11-14 17:42+0100\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
+"PO-Revision-Date: 2022-11-15 10:05+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -32,7 +32,7 @@ msgstr "Izprazni smeti"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Ali res želite izprazniti mape s smetmi za vse račune?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -41,12 +41,12 @@ msgstr ""
 "Ali ste prepričani, da želite označiti vsa sporočila v tej mapi in vseh "
 "njenih podmapah?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Označi vsa rekurzivno"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

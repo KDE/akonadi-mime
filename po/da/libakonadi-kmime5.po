@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2022-02-08 19:45+0100\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -27,7 +27,7 @@ msgstr "Tøm papirkurv"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Vil du virkelig tømme papirkurvsmapperne for alle konti?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -35,12 +35,12 @@ msgid ""
 msgstr ""
 "Vil du virkelig markere alle breve i denne mappe og alle dens undermapper?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Markér alle rekursivt"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

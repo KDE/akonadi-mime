@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2021-11-06 05:46+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -30,7 +30,7 @@ msgstr "Спорожнити смітник"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Ви дійсно хочете спорожнити смітники всіх облікових записів?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -38,12 +38,12 @@ msgid ""
 msgstr ""
 "Ви справді бажаєте позначити усі повідомлення у цій теці і всіх її підтеках?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Позначити усі рекурсивно"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

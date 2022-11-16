@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2011-12-28 12:28-0500\n"
 "Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
 "Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
@@ -27,7 +27,7 @@ msgstr "Folmhaigh an Bruscar"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this folder and all its sub-folders?"
 #| msgid_plural ""
@@ -39,13 +39,13 @@ msgstr ""
 "An bhfuil tú cinnte gur mian leat an fillteán seo a scriosadh in éineacht le "
 "gach fofhillteán atá ann?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All Recursively"
 msgstr "Marcáil Uile mar \"Léite\""
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"

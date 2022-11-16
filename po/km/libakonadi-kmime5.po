@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2012-07-11 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -29,7 +29,7 @@ msgstr "សម្អាត​ធុង​សំរាម"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "តើ​អ្នក​ពិតជា​ចង់​សម្អាត​ថត​ធុង​សំរាម​នៃ​គណនី​ទាំងអស់​ឬ ?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this folder and all its sub-folders?"
 #| msgid_plural ""
@@ -39,13 +39,13 @@ msgid ""
 "subfolders?"
 msgstr "តើ​អ្នក​ពិតជា​ចង់​លុប​ថត %1 និង​ថត​រង​ទាំងអស់​របស់​វា​ឬ ?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All Recursively"
 msgstr "សម្គាល់​ទាំងអស់​ថា​បាន​អាន"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"

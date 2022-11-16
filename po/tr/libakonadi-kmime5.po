@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepimlibs-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2022-04-15 13:40+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -33,7 +33,7 @@ msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
 "Tüm hesaplardaki çöp klasörlerini boşaltmak istediğinizden emin misiniz?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -42,12 +42,12 @@ msgstr ""
 "Bu klasör ve tüm alt klasörlerdeki tüm iletileri imlemek istediğinizden emin "
 "misiniz?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, kde-format
 msgid "Mark All Recursively"
 msgstr "Tümünü Özyineli İmle"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"

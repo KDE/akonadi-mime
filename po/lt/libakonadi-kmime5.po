@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-10-16 00:47+0000\n"
+"POT-Creation-Date: 2022-11-16 00:47+0000\n"
 "PO-Revision-Date: 2015-12-29 23:01+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -32,7 +32,7 @@ msgstr "Išvalyti šiukšlinę"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Ar tikrai norite ištuštinti šiukšlines visų paskyrų?"
 
-#: markascommand.cpp:127
+#: markascommand.cpp:121
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this folder and all its sub-folders?"
 #| msgid_plural ""
@@ -42,13 +42,13 @@ msgid ""
 "subfolders?"
 msgstr "Ar tikrai norite šalinti šį aplanką ir visus jo poaplankius?"
 
-#: markascommand.cpp:128
+#: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All Recursively"
 msgstr "Žymėti viską &skaityta"
 
-#: markascommand.cpp:129
+#: markascommand.cpp:123
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"
