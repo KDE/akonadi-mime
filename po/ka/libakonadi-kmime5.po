@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:47+0000\n"
-"PO-Revision-Date: 2022-09-12 10:59+0200\n"
+"PO-Revision-Date: 2022-11-26 07:18+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -27,6 +27,8 @@ msgstr "ნაგვის დაცარიელება"
 #, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
+"დარწმუნებული ბრძანდებით, რომ გნებავთ, გაასუფთაოთ ყველა ანგარიშის სანაგვე "
+"საქაღალდე?"
 
 #: markascommand.cpp:127
 #, kde-format
@@ -34,6 +36,8 @@ msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
 msgstr ""
+"დარწმუნებული ბრძანდებით, რომ გნებავთ, მონიშნოთ ამ საქაღალდეში და მის "
+"ქვესაქაღალდეებში მყოფი ყველა შეტყობინება?"
 
 #: markascommand.cpp:128
 #, kde-format
@@ -166,7 +170,7 @@ msgstr "საქაღალდის დამატება…"
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
 msgid "Add a new folder to the currently selected account."
-msgstr ""
+msgstr "ამჟამად მონიშნული ანგარიშისთვის საქაღალდის დამატება."
 
 #: standardmailactionmanager.cpp:123
 #, kde-format
@@ -212,15 +216,15 @@ msgstr[1] "%1 საქაღალდის წაშლა"
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
 #, kde-format
 msgid "Delete the selected folders from the account."
-msgstr ""
+msgstr "მონიშნული საქაღალდეები წაშლა ანგარიშიდან."
 
 #: standardmailactionmanager.cpp:146
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
 "Do you really want to delete %1 folders and all their sub-folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "მართლა გნებავთ, წაშალოთ ეს საქაღალდე და ყველა მისი ქვეყსაქაღალდე?"
+msgstr[1] "მართლა გნებავთ, წაშალოთ %1 საქაღალდე და ყველა მისი ქვეყსაქაღალდე?"
 
 #: standardmailactionmanager.cpp:151
 #, kde-format
@@ -346,6 +350,8 @@ msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr ""
+"ახალი ანგარიშის დამატება <p> გავხსნით ფანჯარას, სადაც შეგიძლიათ აირჩიოთ "
+"დასამატებელი ანგარიშის ტიპი.</p>"
 
 #: standardmailactionmanager.cpp:210
 #, kde-format
@@ -376,6 +382,8 @@ msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr ""
+"მონიშნული ანგარიშების წაშლა<p> წაიშლება მონიშნული ანგარიშები, მათში მყოფი "
+"შეტყობინებების ჩათვლით </p>"
 
 #: standardmailactionmanager.cpp:226
 #, kde-format
@@ -400,7 +408,7 @@ msgstr "ანგარიშის თვისებები..."
 #: standardmailactionmanager.cpp:235
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
-msgstr ""
+msgstr "მონიშნული ანგარიშის თვისებების ჩასწორების ფანჯრის გახსნა."
 
 #: standardmailactionmanager.cpp:238
 #, kde-format
@@ -424,7 +432,7 @@ msgstr[1] "საქაღალდისა და მისი ქვესა
 #: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
-msgstr ""
+msgstr "მონიშნული საქაღალდისა და მისი ქვესაქაღალდეების შემცველობის განახლება."
 
 #: standardmailactionmanager.cpp:252
 #, kde-format
@@ -449,12 +457,12 @@ msgstr "შეტყობინების მნიშვნელოვნ�
 #: standardmailactionmanager.cpp:333
 #, kde-format
 msgid "Remove Action Item Mark"
-msgstr ""
+msgstr "ქმედების ჩანაწერის ნიშნის მოცილება"
 
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
 #, kde-format
 msgid "&Mark Message as Action Item"
-msgstr ""
+msgstr "შეტყობინების, როგორც ქმედების ჩანაწერის მონიშვნა"
 
 #: standardmailactionmanager.cpp:694
 #, kde-format
@@ -499,12 +507,12 @@ msgstr "მონიშნული შეტყობინებების �
 #: standardmailactionmanager.cpp:739
 #, kde-format
 msgid "Mark as Action Item"
-msgstr ""
+msgstr "ქმედების ჩანაწერად მონიშვნა"
 
 #: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
 #, kde-format
 msgid "Mark selected messages as action items."
-msgstr ""
+msgstr "მონიშნული შეტყობინებების ქმედების ჩანაწერებად მონიშვნა."
 
 #: standardmailactionmanager.cpp:752
 #, kde-format
@@ -569,17 +577,17 @@ msgstr "ყველა შეტყობინების მნიშვნ�
 #: standardmailactionmanager.cpp:807
 #, kde-format
 msgid "Mark All as Action Item"
-msgstr ""
+msgstr "ყველას ქმედების ჩანაწერად მონიშვნა"
 
 #: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark &All Messages as Action Item"
-msgstr ""
+msgstr "&ყველას ქმედების ჩანაწერად მონიშვნა"
 
 #: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark all messages as action items."
-msgstr ""
+msgstr "ყველას ქმედების ჩანაწერად მონიშვნა."
 
 #: standardmailactionmanager.cpp:822
 #, kde-format
