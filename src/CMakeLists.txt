@@ -74,7 +74,6 @@ set(akonadimime_SRCS
     mdnstateattribute.cpp
     )
 
-ecm_qt_declare_logging_category(akonadimime_SRCS HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)
 
 add_resource_iface(imapresource.kcfg
     org.kde.Akonadi.Imap.Settings imapsettings)
@@ -94,6 +93,7 @@ install(FILES
     )
 
 add_library(KF5AkonadiMime ${akonadimime_SRCS})
+ecm_qt_declare_logging_category(KF5AkonadiMime HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)
 if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KF5AkonadiMime PROPERTIES UNITY_BUILD ON)
 endif()
