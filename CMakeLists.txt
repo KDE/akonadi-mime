@@ -71,7 +71,7 @@ set_package_properties(LibXslt PROPERTIES
 ########### Targets ###########
 
 ecm_set_disabled_deprecation_versions(QT 5.15.2
-     KF 5.101.0
+     KF 5.102.0
 )
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
