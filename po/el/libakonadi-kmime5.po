@@ -3,13 +3,13 @@
 #
 # Dimitrios Glentadakis <dglent@gmail.com>, 2012.
 # Dimitris Kardarakos <dimkard@gmail.com>, 2014.
-# Stelios <sstavra@gmail.com>, 2020.
+# Stelios <sstavra@gmail.com>, 2020, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:47+0000\n"
-"PO-Revision-Date: 2020-06-02 19:40+0300\n"
+"PO-Revision-Date: 2022-12-29 16:43+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 18.12.3\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -46,11 +46,10 @@ msgid "Mark All Recursively"
 msgstr "Να σημειωθούν όλα αναδρομικά"
 
 #: markascommand.cpp:129
-#, fuzzy, kde-format
-#| msgid "Mark All as Read"
+#, kde-format
 msgctxt "@action:button"
 msgid "Mark All"
-msgstr "Σημείωση όλων ως αναγνωσμένα"
+msgstr "Σημείωση όλων"
 
 #: messagemodel.cpp:34
 msgctxt "@title:column, message (e.g. email) subject"
