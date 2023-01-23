@@ -9,7 +9,7 @@ Dependencies:
     'pim/kmime' : '@same'
 
 - 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Windows/Qt6']
-   'require':
+  'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'pim/akonadi' : '@latest-kf6'
     'pim/kmime' : '@latest-kf6'
