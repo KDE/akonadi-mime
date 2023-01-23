@@ -26,7 +26,7 @@ target_link_libraries(akonadi_benchmarker
   KF5::Mime
   Qt::Test
   KF5::AkonadiCore
-  KF5::I18n
+  KF${KF_MAJOR_VERSION}::I18n
   Qt::Widgets
   Qt::DBus
 )
