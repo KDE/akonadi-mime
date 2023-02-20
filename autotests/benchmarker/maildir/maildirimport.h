@@ -13,6 +13,6 @@ class MailDirImport : public MailDir
 {
     Q_OBJECT
 public:
-    MailDirImport(const QString &dir);
+    explicit MailDirImport(const QString &dir);
     void runTest() override;
 };

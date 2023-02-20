@@ -13,7 +13,7 @@ class HeadFetcher : public QObject
 {
     Q_OBJECT
 public:
-    HeadFetcher(bool multipart);
+    explicit HeadFetcher(bool multipart);
 private Q_SLOTS:
     void stop();
 

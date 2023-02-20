@@ -11,5 +11,5 @@
 class TestMailDir : public Test
 {
 public:
-    TestMailDir(const QString &dir);
+    explicit TestMailDir(const QString &dir);
 };

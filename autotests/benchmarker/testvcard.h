@@ -11,5 +11,5 @@
 class TestVCard : public Test
 {
 public:
-    TestVCard(const QString &dir);
+    explicit TestVCard(const QString &dir);
 };

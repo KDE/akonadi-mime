@@ -38,7 +38,7 @@ public:
      * @param folder The folder where to search for duplicates
      * @param parent The parent object
      */
-    RemoveDuplicatesJob(const Akonadi::Collection &folder, QObject *parent = nullptr);
+    explicit RemoveDuplicatesJob(const Akonadi::Collection &folder, QObject *parent = nullptr);
 
     /**
      * Creates a new job that will remove duplicates in all @p folders.

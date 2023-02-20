@@ -17,20 +17,20 @@
 using namespace Akonadi;
 MoveToTrashCommand::MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Collection::List &folders, QObject *parent)
     : CommandBase(parent)
+    , mFolders(folders)
+    , the_trashCollectionFolder(-1)
+    , mModel(model)
+    , mFolderListJobCount(mFolders.size())
 {
-    the_trashCollectionFolder = -1;
-    mFolders = folders;
-    mModel = model;
-    mFolderListJobCount = mFolders.size();
 }
 
 MoveToTrashCommand::MoveToTrashCommand(const QAbstractItemModel *model, const Akonadi::Item::List &msgList, QObject *parent)
     : CommandBase(parent)
+    , mMessages(msgList)
+    , the_trashCollectionFolder(-1)
+    , mModel(model)
+    , mFolderListJobCount(0)
 {
-    the_trashCollectionFolder = -1;
-    mMessages = msgList;
-    mModel = model;
-    mFolderListJobCount = 0;
 }
 
 void MoveToTrashCommand::slotFetchDone(KJob *job)
