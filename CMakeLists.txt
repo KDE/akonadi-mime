@@ -117,7 +117,7 @@ install(FILES
     COMPONENT Devel
     )
 
-install(EXPORT KPim${KF_MAJOR_VERSION}AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}AkonadiMimeTargets.cmake NAMESPACE KF5::)
+install(EXPORT KPim${KF_MAJOR_VERSION}AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}AkonadiMimeTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h

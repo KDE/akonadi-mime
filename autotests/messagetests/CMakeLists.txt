@@ -10,7 +10,7 @@ macro(ADD_AKONADIMIME_TEST)
       KPim${KF_MAJOR_VERSION}::Mime
       Qt::Test
       KF5::AkonadiCore
-      KF5::AkonadiMime
+      KPim${KF_MAJOR_VERSION}::AkonadiMime
     )
     set_target_properties(${_testName} PROPERTIES COMPILE_FLAGS -DTEST_DATA_DIR="\\"${CMAKE_CURRENT_SOURCE_DIR}/\\"" )
     ecm_mark_as_test(${_testName})

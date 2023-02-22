@@ -99,6 +99,7 @@ if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 generate_export_header(KPim${KF_MAJOR_VERSION}AkonadiMime BASE_NAME akonadi-mime)
 
+add_library(KPim${KF_MAJOR_VERSION}::AkonadiMime ALIAS KPim${KF_MAJOR_VERSION}AkonadiMime)
 add_library(KF5::AkonadiMime ALIAS KPim${KF_MAJOR_VERSION}AkonadiMime)
 
 target_include_directories(KPim${KF_MAJOR_VERSION}AkonadiMime INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/AkonadiMime>")
