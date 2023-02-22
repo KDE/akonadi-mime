@@ -108,7 +108,7 @@ target_link_libraries(KF5AkonadiMime
     PUBLIC
     KF5::AkonadiCore
     PRIVATE
-    KF5::Mime
+    KPim${KF_MAJOR_VERSION}::Mime
     KF5::AkonadiWidgets
     KF${KF_MAJOR_VERSION}::KIOCore
     KF${KF_MAJOR_VERSION}::I18n

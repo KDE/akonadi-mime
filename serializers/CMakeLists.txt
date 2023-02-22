@@ -18,7 +18,7 @@ ecm_qt_declare_logging_category(akonadi_serializer_mail
     )
 
 target_link_libraries(akonadi_serializer_mail
-    KF5::Mime
+    KPim${KF_MAJOR_VERSION}::Mime
     KF5::AkonadiCore
     KF5::AkonadiMime
     KF5::AkonadiPrivate

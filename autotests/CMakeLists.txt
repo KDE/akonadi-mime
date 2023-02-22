@@ -30,13 +30,13 @@ add_definitions( -DREQUESTER_EXE="${requester_exe_string}" )
 add_subdirectory(benchmarker)
 
 ecm_add_test(mailserializerplugintest.cpp ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KPim${KF_MAJOR_VERSION}::Mime Qt::Test
     TEST_NAME mailserializerplugintest
 )
 ecm_add_test(mailserializertest.cpp
     ${CMAKE_SOURCE_DIR}/serializers/akonadi_serializer_mail.cpp
     ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KF5::Mime Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KPim${KF_MAJOR_VERSION}::Mime Qt::Test
     TEST_NAME mailserializertest
 )
 ecm_add_test(newmailnotifierattributetest.cpp newmailnotifierattributetest.h
