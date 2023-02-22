@@ -12,7 +12,7 @@ macro(add_akonadimime_demo _source)
   set(_test ${_source})
   get_filename_component(_name ${_source} NAME_WE)
   add_executable(${_name} ${_test})
-  target_link_libraries(${_name}  KF5AkonadiMime KPim${KF_MAJOR_VERSION}::Mime KF5::AkonadiCore KF${KF_MAJOR_VERSION}::I18n Qt::Widgets)
+  target_link_libraries(${_name}  KPim${KF_MAJOR_VERSION}AkonadiMime KPim${KF_MAJOR_VERSION}::Mime KF5::AkonadiCore KF${KF_MAJOR_VERSION}::I18n Qt::Widgets)
 endmacro()
 
 # demo applications

@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: none
+# SPDX-License-Identifier: BSD-3-Clause
+
+@PACKAGE_INIT@
+include(CMakeFindDependencyMacro)
+find_dependency(KF5Akonadi "@AKONADI_VERSION@")
+
+if (@AKONADIMIME_KF5_COMPAT@)
+    message(WARNING "\n"
+                    "************* DEPRECATION WARNING *************\n"
+		    "Using find_package(KF5AkonadiMime) and KF5::AkonadiMime targets is deprecated. "
+		    "Please use find_package(KPim@KF_MAJOR_VERSION@AkonadiMime) and KPim@KF_MAJOR_VERSION@::AkonadiMime instead. This backwards "
+                    "compatibility will be removed in the next major version.\n"
+                    "***********************************************\n")
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/KPim@KF_MAJOR_VERSION@AkonadiMimeTargets.cmake")
