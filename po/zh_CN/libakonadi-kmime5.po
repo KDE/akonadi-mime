@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-10-16 00:47+0000\n"
-"PO-Revision-Date: 2023-02-15 11:07\n"
+"PO-Revision-Date: 2023-02-24 12:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -602,7 +602,7 @@ msgstr "清空全部垃圾文件夹(&T)"
 #: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
-msgstr "从所有废件箱永久删除所有信件。"
+msgstr "从所有废件箱彻底删除所有信件。"
 
 #: standardmailactionmanager.cpp:869
 #, kde-format
@@ -612,4 +612,4 @@ msgstr "清空废件夹(&M)"
 #: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
-msgstr "从废件箱永久删除所有信件。"
+msgstr "从废件箱彻底删除所有信件。"
