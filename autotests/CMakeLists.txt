@@ -30,30 +30,30 @@ add_definitions( -DREQUESTER_EXE="${requester_exe_string}" )
 add_subdirectory(benchmarker)
 
 ecm_add_test(mailserializerplugintest.cpp ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KPim${KF_MAJOR_VERSION}::Mime Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KPim${KF_MAJOR_VERSION}::AkonadiCore KPim${KF_MAJOR_VERSION}::AkonadiPrivate KPim${KF_MAJOR_VERSION}::Mime Qt::Test
     TEST_NAME mailserializerplugintest
 )
 ecm_add_test(mailserializertest.cpp
     ${CMAKE_SOURCE_DIR}/serializers/akonadi_serializer_mail.cpp
     ${CMAKE_BINARY_DIR}/serializers/akonadi_serializer_mail_debug.cpp
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore KF5::AkonadiPrivate KPim${KF_MAJOR_VERSION}::Mime Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KPim${KF_MAJOR_VERSION}::AkonadiCore KPim${KF_MAJOR_VERSION}::AkonadiPrivate KPim${KF_MAJOR_VERSION}::Mime Qt::Test
     TEST_NAME mailserializertest
 )
 ecm_add_test(newmailnotifierattributetest.cpp newmailnotifierattributetest.h
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KPim${KF_MAJOR_VERSION}::AkonadiCore Qt::Test
     TEST_NAME newmailnotifierattributetest
 )
 ecm_add_test(pop3resourceattributetest.cpp pop3resourceattributetest.h
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KPim${KF_MAJOR_VERSION}::AkonadiCore Qt::Test
     TEST_NAME pop3resourceattributetest
 )
 ecm_add_test(addressattributetest.cpp addressattributetest.h
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KPim${KF_MAJOR_VERSION}::AkonadiCore Qt::Test
     TEST_NAME addressattributetest
 )
 
 ecm_add_test(mdnstateattributetest.cpp mdnstateattributetest.h
-    LINK_LIBRARIES KF5::AkonadiMime KF5::AkonadiCore Qt::Test
+    LINK_LIBRARIES KF5::AkonadiMime KPim${KF_MAJOR_VERSION}::AkonadiCore Qt::Test
     TEST_NAME mdnstateattributetest
 )
 

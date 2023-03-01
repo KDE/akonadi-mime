@@ -19,9 +19,9 @@ ecm_qt_declare_logging_category(akonadi_serializer_mail
 
 target_link_libraries(akonadi_serializer_mail
     KPim${KF_MAJOR_VERSION}::Mime
-    KF5::AkonadiCore
+    KPim${KF_MAJOR_VERSION}::AkonadiCore
     KPim${KF_MAJOR_VERSION}::AkonadiMime
-    KF5::AkonadiPrivate
+    KPim${KF_MAJOR_VERSION}::AkonadiPrivate
 )
 install(TARGETS akonadi_serializer_mail
     DESTINATION ${KDE_INSTALL_PLUGINDIR}

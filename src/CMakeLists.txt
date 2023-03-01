@@ -107,10 +107,10 @@ target_include_directories(KPim${KF_MAJOR_VERSION}AkonadiMime PUBLIC "$<BUILD_IN
 
 target_link_libraries(KPim${KF_MAJOR_VERSION}AkonadiMime
     PUBLIC
-    KF5::AkonadiCore
+    KPim${KF_MAJOR_VERSION}::AkonadiCore
     PRIVATE
     KPim${KF_MAJOR_VERSION}::Mime
-    KF5::AkonadiWidgets
+    KPim${KF_MAJOR_VERSION}::AkonadiWidgets
     KF${KF_MAJOR_VERSION}::KIOCore
     KF${KF_MAJOR_VERSION}::I18n
     KF${KF_MAJOR_VERSION}::XmlGui

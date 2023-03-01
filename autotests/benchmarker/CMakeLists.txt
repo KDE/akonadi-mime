@@ -25,7 +25,7 @@ target_link_libraries(akonadi_benchmarker
   KPim${KF_MAJOR_VERSION}::AkonadiMime
   KPim${KF_MAJOR_VERSION}::Mime
   Qt::Test
-  KF5::AkonadiCore
+  KPim${KF_MAJOR_VERSION}::AkonadiCore
   KF${KF_MAJOR_VERSION}::I18n
   Qt::Widgets
   Qt::DBus
