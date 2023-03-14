@@ -5,7 +5,7 @@ find_package(Qt${QT_MAJOR_VERSION} ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPON
 set( EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR} )
 
 add_executable( requester foldersrequester.cpp foldersrequester.h )
-target_link_libraries( requester KF5::AkonadiMime KF${KF_MAJOR_VERSION}::I18n Qt::Widgets )
+target_link_libraries( requester KPim${KF_MAJOR_VERSION}::AkonadiMime KF${KF_MAJOR_VERSION}::I18n Qt::Widgets )
 
 # convenience macro to add akonadi demo application
 macro(add_akonadimime_demo _source)
