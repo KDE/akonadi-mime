@@ -105,6 +105,16 @@ endif()
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}AkonadiMime")
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KPim${KF_MAJOR_VERSION}AkonadiMime_QCH
+        FILE KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake\")")
+endif()
+
 set(AKONADIMIME_KF5_COMPAT FALSE)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAkonadiMimeConfig.cmake.in"
@@ -136,15 +146,6 @@ ecm_qt_install_logging_categories(
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
 
-if (BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KPim${KF_MAJOR_VERSION}AkonadiMime_QCH
-        FILE KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake\")")
-endif()
 if (BUILD_WITH_COMPAT_LIBS)
 if (QT_MAJOR_VERSION STREQUAL "5")
 ##
