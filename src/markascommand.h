@@ -31,11 +31,11 @@ public:
     void execute() override;
 
 private:
-    void slotCollectionFetchDone(KJob *job);
-    void slotFetchDone(KJob *job);
-    void slotHelperDone(Result result);
-    void slotModifyItemDone();
-    void markMessages();
+    AKONADI_MIME_NO_EXPORT void slotCollectionFetchDone(KJob *job);
+    AKONADI_MIME_NO_EXPORT void slotFetchDone(KJob *job);
+    AKONADI_MIME_NO_EXPORT void slotHelperDone(Result result);
+    AKONADI_MIME_NO_EXPORT void slotModifyItemDone();
+    AKONADI_MIME_NO_EXPORT void markMessages();
 
     std::unique_ptr<MarkAsCommandPrivate> const d;
 };

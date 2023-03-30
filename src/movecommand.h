@@ -27,7 +27,7 @@ public:
     void execute() override;
 
 private:
-    void slotMoveResult(KJob *job);
+    AKONADI_MIME_NO_EXPORT void slotMoveResult(KJob *job);
     std::unique_ptr<MoveCommandPrivate> const d;
 };
 }
