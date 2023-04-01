@@ -72,6 +72,27 @@ set(akonadimime_SRCS
 
     mdnstateattribute.h
     mdnstateattribute.cpp
+    dispatcherinterface.cpp
+    dispatchmodeattribute.cpp
+    errorattribute.cpp
+    transportattribute.cpp
+    sentactionattribute.cpp
+    sentbehaviourattribute.cpp
+    messagequeuejob.cpp
+    outboxactions.cpp
+    filteractionjob.cpp
+
+    filteractionjob_p.h
+    errorattribute.h
+    outboxactions_p.h
+    dispatcherinterface_p.h
+    sentbehaviourattribute.h
+    messagequeuejob.h
+    sentactionattribute.h
+    transportattribute.h
+    dispatchmodeattribute.h
+    dispatcherinterface.h
+
     )
 
 
@@ -147,6 +168,15 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
     SpecialMailCollectionsDiscoveryJob
     SpecialMailCollectionsRequestJob
     StandardMailActionManager
+    DispatcherInterface
+    MessageQueueJob
+    TransportAttribute
+    SentBehaviourAttribute
+    DispatchModeAttribute
+    ErrorAttribute
+    SentActionAttribute
+
+
     REQUIRED_HEADERS AkonadiMime_HEADERS
     PREFIX Akonadi
     )
