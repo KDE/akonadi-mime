@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:47+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2010-09-24 20:38+0530\n"
 "Last-Translator: Rajesh Ranjan <rajesh672@gmail.com>\n"
 "Language-Team: Maithili <bhashaghar@googlegroups.com>\n"
@@ -105,6 +105,21 @@ msgstr ""
 msgctxt "@label No size available"
 msgid "-"
 msgstr "-"
+
+#: messagequeuejob.cpp:58
+#, kde-format
+msgid "Empty message."
+msgstr ""
+
+#: messagequeuejob.cpp:65
+#, kde-format
+msgid "Message has no recipients."
+msgstr ""
+
+#: messagequeuejob.cpp:72
+#, kde-format
+msgid "Message has invalid sent-mail folder."
+msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format

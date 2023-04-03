@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:47+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2013-01-12 09:29+0200\n"
 "Last-Translator: Sergiu Bivol <sergiu@ase.md>\n"
 "Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
@@ -108,6 +108,22 @@ msgstr ""
 msgctxt "@label No size available"
 msgid "-"
 msgstr "-"
+
+#: messagequeuejob.cpp:58
+#, fuzzy, kde-format
+#| msgid "Remove &Duplicate Mails"
+msgid "Empty message."
+msgstr "Elimină scrisorile &duplicate"
+
+#: messagequeuejob.cpp:65
+#, kde-format
+msgid "Message has no recipients."
+msgstr ""
+
+#: messagequeuejob.cpp:72
+#, kde-format
+msgid "Message has invalid sent-mail folder."
+msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format

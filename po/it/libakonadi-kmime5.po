@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:47+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2021-11-23 23:18+0100\n"
 "Last-Translator: Luigi Toscano <luigi.toscano@tiscali.it>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -102,6 +102,23 @@ msgstr "(senza data)"
 msgctxt "@label No size available"
 msgid "-"
 msgstr "-"
+
+#: messagequeuejob.cpp:58
+#, fuzzy, kde-format
+#| msgid "Copy Message"
+#| msgid_plural "Copy %1 Messages"
+msgid "Empty message."
+msgstr "Copia messaggio"
+
+#: messagequeuejob.cpp:65
+#, kde-format
+msgid "Message has no recipients."
+msgstr ""
+
+#: messagequeuejob.cpp:72
+#, kde-format
+msgid "Message has invalid sent-mail folder."
+msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format

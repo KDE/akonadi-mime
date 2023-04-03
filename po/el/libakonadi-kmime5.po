@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-16 00:47+0000\n"
+"POT-Creation-Date: 2023-04-03 00:46+0000\n"
 "PO-Revision-Date: 2022-12-29 16:43+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -105,6 +105,23 @@ msgstr "(Χωρίς δεδομένα)"
 msgctxt "@label No size available"
 msgid "-"
 msgstr "-"
+
+#: messagequeuejob.cpp:58
+#, fuzzy, kde-format
+#| msgid "Copy Message"
+#| msgid_plural "Copy %1 Messages"
+msgid "Empty message."
+msgstr "Αντιγραφή μηνύματος"
+
+#: messagequeuejob.cpp:65
+#, kde-format
+msgid "Message has no recipients."
+msgstr ""
+
+#: messagequeuejob.cpp:72
+#, kde-format
+msgid "Message has invalid sent-mail folder."
+msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
