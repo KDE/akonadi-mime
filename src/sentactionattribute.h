@@ -10,9 +10,9 @@
 #include "akonadi-mime_export.h"
 
 #include <Akonadi/Attribute>
+#include <QList>
 #include <QSharedDataPointer>
 #include <QVariant>
-#include <QVector>
 
 #include <memory>
 
@@ -51,7 +51,7 @@ public:
         /**
          * Describes a list of sent actions.
          */
-        using List = QVector<Action>;
+        using List = QList<Action>;
 
         /**
          * Creates a new invalid action.

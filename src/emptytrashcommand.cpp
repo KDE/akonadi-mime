@@ -56,7 +56,7 @@ void EmptyTrashCommand::execute()
             return;
         }
         Akonadi::Collection trash = trashCollectionFolder();
-        QVector<Akonadi::Collection> trashFolder;
+        QList<Akonadi::Collection> trashFolder;
         trashFolder << trash;
 
         const Akonadi::AgentInstance::List lst = agentInstances();
