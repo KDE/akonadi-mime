@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:46+0000\n"
-"PO-Revision-Date: 2021-11-09 18:48+0000\n"
+"PO-Revision-Date: 2023-04-03 09:39+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -100,21 +100,19 @@ msgid "-"
 msgstr "-"
 
 #: messagequeuejob.cpp:58
-#, fuzzy, kde-format
-#| msgid "Copy Message"
-#| msgid_plural "Copy %1 Messages"
+#, kde-format
 msgid "Empty message."
-msgstr "Copiar a Mensagem"
+msgstr "A mensagem está vazia."
 
 #: messagequeuejob.cpp:65
 #, kde-format
 msgid "Message has no recipients."
-msgstr ""
+msgstr "A mensagem não tem destinatários."
 
 #: messagequeuejob.cpp:72
 #, kde-format
 msgid "Message has invalid sent-mail folder."
-msgstr ""
+msgstr "A mensagem tem uma pasta 'enviado' inválida."
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
