@@ -6,14 +6,11 @@ set(PIM_VERSION "5.23.41")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup
-set(KF_MIN_VERSION "5.105.0")
+set(KF_MIN_VERSION "5.240.0")
 
 find_package(ECM ${KF_MIN_VERSION} CONFIG REQUIRED)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
-set(QT_REQUIRED_VERSION "5.15.2")
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_REQUIRED_VERSION "6.4.0")
-endif()
+set(QT_REQUIRED_VERSION "6.4.0")
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
@@ -34,13 +31,7 @@ include(ECMQtDeclareLoggingCategory)
 include(ECMDeprecationSettings)
 include(ECMAddQch)
 
-if (QT_MAJOR_VERSION STREQUAL "6")
-    set(QT_MIN_VERSION "6.4.0")
-    set(KF_MIN_VERSION "5.240.0")
-    set(KF_MAJOR_VERSION "6")
-else()
-    set(KF_MAJOR_VERSION "5")
-endif()
+set(KF_MAJOR_VERSION "6")
 
 option(BUILD_WITH_COMPAT_LIBS "Generate compat cmake file (Set at false will allow to co-install lib)" ON)
 
@@ -53,18 +44,18 @@ set(KPIM_MIME_VERSION "5.23.40")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
-    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeConfigVersion.cmake"
-    SOVERSION 5
+    PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfigVersion.cmake"
+    SOVERSION 6
     )
 
 ########### Find packages ###########
-find_package(KF${KF_MAJOR_VERSION}KIO ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}XmlGui ${KF_MIN_VERSION} CONFIG REQUIRED)
-find_package(KPim${KF_MAJOR_VERSION}Mime ${KPIM_MIME_VERSION} CONFIG REQUIRED)
-find_package(KF${KF_MAJOR_VERSION}ItemModels ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6KIO ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF6XmlGui ${KF_MIN_VERSION} CONFIG REQUIRED)
+find_package(KPim6Mime ${KPIM_MIME_VERSION} CONFIG REQUIRED)
+find_package(KF6ItemModels ${KF_MIN_VERSION} CONFIG REQUIRED)
 
-find_package(KPim${KF_MAJOR_VERSION}Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
+find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 
 set( SharedMimeInfo_MINIMUM_VERSION "1.3" )
 find_package(SharedMimeInfo ${SharedMimeInfo_MINIMUM_VERSION} REQUIRED)
@@ -104,36 +95,36 @@ if(BUILD_TESTING)
 endif()
 
 ########### CMake Config Files ###########
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim${KF_MAJOR_VERSION}AkonadiMime")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6AkonadiMime")
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KPim${KF_MAJOR_VERSION}AkonadiMime_QCH
-        FILE KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake
+        TARGETS KPim6AkonadiMime_QCH
+        FILE KPim6AkonadiMimeQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6AkonadiMimeQchTargets.cmake\")")
 endif()
 
-set(AKONADIMIME_KF5_COMPAT FALSE)
+set(AKONADIMIME_KF6_COMPAT FALSE)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAkonadiMimeConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
     )
 
 install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeConfig.cmake"
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeConfigVersion.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfig.cmake"
+    "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
     )
 
-install(EXPORT KPim${KF_MAJOR_VERSION}AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim${KF_MAJOR_VERSION}AkonadiMimeTargets.cmake NAMESPACE KPim${KF_MAJOR_VERSION}::)
+install(EXPORT KPim6AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6AkonadiMimeTargets.cmake NAMESPACE KPim6::)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
-    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim${KF_MAJOR_VERSION}/AkonadiMime COMPONENT Devel
+    DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime COMPONENT Devel
     )
 
 ecm_qt_install_logging_categories(
@@ -146,43 +137,4 @@ ecm_qt_install_logging_categories(
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)
 ki18n_install(po)
 
-if (BUILD_WITH_COMPAT_LIBS)
-if (QT_MAJOR_VERSION STREQUAL "5")
-##
-# TODO: Backwards compatiblity. Remove in next major version
-##
-set(CMAKECONFIG_INSTALL_DIR_KF5 "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5AkonadiMime")
-set(AKONADIMIME_KF5_COMPAT TRUE)
-configure_package_config_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/KPimAkonadiMimeConfig.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5AkonadiMimeConfig.cmake"
-    INSTALL_DESTINATION ${CMAKECONFIG_INSTALL_DIR_KF5}
-)
-
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KF5AkonadiMimeConfig.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    COMPONENT Devel
-)
-install(FILES
-    "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeConfigVersion.cmake"
-    RENAME "KF5AkonadiMimeConfigVersion.cmake"
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    COMPONENT Devel
-)
-install(EXPORT KPim${KF_MAJOR_VERSION}AkonadiMimeTargets
-    DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-    FILE KPim${KF_MAJOR_VERSION}AkonadiMimeTargets.cmake
-    NAMESPACE KF5::
-)
-
-if (BUILD_QCH)
-    install(FILES
-        "${CMAKE_CURRENT_BINARY_DIR}/KPim${KF_MAJOR_VERSION}AkonadiMimeQchTargets.cmake"
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR_KF5}"
-        COMPONENT Devel
-    )
-endif()
-endif()
-endif()
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)

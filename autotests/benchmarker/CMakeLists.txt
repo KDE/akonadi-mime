@@ -22,11 +22,11 @@ set(benchmarker_SRCS
 add_executable(akonadi_benchmarker ${benchmarker_SRCS})
 
 target_link_libraries(akonadi_benchmarker
-  KPim${KF_MAJOR_VERSION}::AkonadiMime
-  KPim${KF_MAJOR_VERSION}::Mime
+  KPim6::AkonadiMime
+  KPim6::Mime
   Qt::Test
-  KPim${KF_MAJOR_VERSION}::AkonadiCore
-  KF${KF_MAJOR_VERSION}::I18n
+  KPim6::AkonadiCore
+  KF6::I18n
   Qt::Widgets
   Qt::DBus
 )

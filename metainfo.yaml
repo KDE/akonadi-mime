@@ -10,8 +10,8 @@ deprecated: false
 release: false
 libraries:
  - qmake: AkonadiMime
-   cmake: "KF5::AkonadiMime"
-cmakename: KF5AkonadiMime
+   cmake: "KPim6::AkonadiMime"
+cmakename: KPim6AkonadiMime
 
 public_lib: true
 group: kdepim
