@@ -104,7 +104,6 @@ if (BUILD_QCH)
     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6AkonadiMimeQchTargets.cmake\")")
 endif()
 
-set(AKONADIMIME_KF6_COMPAT FALSE)
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAkonadiMimeConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfig.cmake"
