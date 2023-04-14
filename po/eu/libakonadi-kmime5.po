@@ -1,16 +1,16 @@
 # Translation for libakonadi-kmime5.po to Euskara/Basque (eu).
-# Copyright (C) 2020, This file is copyright:
+# Copyright (C) 2020-2023 This file is copyright:
 # This file is distributed under the same license as the akonadi-mime package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@euskalnet.net>.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2020, 2021.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2020, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:46+0000\n"
-"PO-Revision-Date: 2021-12-28 19:46+0100\n"
+"PO-Revision-Date: 2023-04-13 22:50+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -106,21 +106,19 @@ msgid "-"
 msgstr "-"
 
 #: messagequeuejob.cpp:58
-#, fuzzy, kde-format
-#| msgid "Copy Message"
-#| msgid_plural "Copy %1 Messages"
+#, kde-format
 msgid "Empty message."
-msgstr "Kopiatu mezua"
+msgstr "Mezua hutsik."
 
 #: messagequeuejob.cpp:65
 #, kde-format
 msgid "Message has no recipients."
-msgstr ""
+msgstr "Mezuak ez du hartzailerik."
 
 #: messagequeuejob.cpp:72
 #, kde-format
 msgid "Message has invalid sent-mail folder."
-msgstr ""
+msgstr "Mezuak «bidalitako-posta» karpeta baliogabea du."
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
