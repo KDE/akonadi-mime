@@ -124,7 +124,7 @@ set_target_properties(KPim${KF_MAJOR_VERSION}AkonadiMime PROPERTIES
 
 install(TARGETS
     KPim${KF_MAJOR_VERSION}AkonadiMime
-    EXPORT KPim${KF_MAJOR_VERSION}AkonadiMimeTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS}
+    EXPORT KPim${KF_MAJOR_VERSION}AkonadiMimeTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
     )
 
 
