@@ -28,7 +28,7 @@ void showJobError(KJob *job)
     if (kiojob && kiojob->uiDelegate()) {
         kiojob->uiDelegate()->showErrorMessage();
     } else {
-        qCWarning(AKONADIMIME_LOG) << "There is no GUI delegate set for a kjob, and it failed with error:" << job->errorString();
+        qCWarning(AKONADIMIME_LOG) << "Job: " << job << "There is no GUI delegate set for a kjob, and it failed with error:" << job->errorString();
     }
 }
 
