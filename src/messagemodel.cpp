@@ -20,8 +20,6 @@
 
 #include <KLazyLocalizedString>
 #include <array>
-#include <ki18n_version.h>
-
 using MessagePtr = KMime::Message::Ptr;
 
 using namespace Akonadi;
