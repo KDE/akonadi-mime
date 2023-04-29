@@ -1,23 +1,24 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Xosé <xosecalvo@gmail.com>, 2011, 2013.
 # Adrian Chaves Fernandez <adriyetichaves@gmail.com>, 2013, 2015, 2016.
 # Marce Villarino <mvillarino@kde-espana.org>, 2014.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-03 00:46+0000\n"
-"PO-Revision-Date: 2017-11-03 17:49+0100\n"
+"PO-Revision-Date: 2023-04-28 20:21+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Galician <kde-i18n-doc@kde.org>\n"
+"Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -44,11 +45,10 @@ msgid "Mark All Recursively"
 msgstr "Marcar todo recursivamente"
 
 #: markascommand.cpp:123
-#, fuzzy, kde-format
-#| msgid "Mark All as Read"
+#, kde-format
 msgctxt "@action:button"
 msgid "Mark All"
-msgstr "Marcalo todo como lido"
+msgstr "Marcalo todo"
 
 #: messagemodel.cpp:34
 msgctxt "@title:column, message (e.g. email) subject"
@@ -76,32 +76,28 @@ msgid "Size"
 msgstr "Tamaño"
 
 #: messagemodel.cpp:71
-#, fuzzy, kde-format
-#| msgctxt "@title:column, message (e.g. email) subject"
-#| msgid "Subject"
+#, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
-msgstr "Asunto"
+msgstr "(sen asunto)"
 
 #: messagemodel.cpp:77
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
-msgstr ""
+msgstr "(sen remite)"
 
 #: messagemodel.cpp:83
-#, fuzzy, kde-format
-#| msgctxt "@title:column, receiver of message (e.g. email)"
-#| msgid "Receiver"
+#, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
-msgstr "Destinatario"
+msgstr "(sen destino)"
 
 #: messagemodel.cpp:89
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
-msgstr ""
+msgstr "(sen data)"
 
 #: messagemodel.cpp:93
 #, kde-format
@@ -110,21 +106,19 @@ msgid "-"
 msgstr "-"
 
 #: messagequeuejob.cpp:58
-#, fuzzy, kde-format
-#| msgid "Copy Message"
-#| msgid_plural "Copy %1 Messages"
+#, kde-format
 msgid "Empty message."
-msgstr "Copiar a mensaxe"
+msgstr "A mensaxe está baleira."
 
 #: messagequeuejob.cpp:65
 #, kde-format
 msgid "Message has no recipients."
-msgstr ""
+msgstr "A mensaxe non ten destinos."
 
 #: messagequeuejob.cpp:72
 #, kde-format
 msgid "Message has invalid sent-mail folder."
-msgstr ""
+msgstr "O cartafol de saída da mensaxe é incorrecto."
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
