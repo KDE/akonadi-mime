@@ -42,3 +42,5 @@ void MailDirRemoveReadMessages::runTest()
     }
     outputStats(QStringLiteral("removereaditems"));
 }
+
+#include "moc_maildirremovereadmessages.cpp"

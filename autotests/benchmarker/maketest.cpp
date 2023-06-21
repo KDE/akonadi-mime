@@ -115,3 +115,5 @@ void MakeTest::start()
 {
     runTest();
 }
+
+#include "moc_maketest.cpp"

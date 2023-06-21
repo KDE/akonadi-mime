@@ -26,3 +26,5 @@ void VCardImport::runTest()
     }
     outputStats(QStringLiteral("import"));
 }
+
+#include "moc_vcardimport.cpp"

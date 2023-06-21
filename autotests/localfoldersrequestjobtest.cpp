@@ -184,3 +184,5 @@ void LocalFoldersRequestJobTest::testMixedRequest()
 }
 
 QTEST_AKONADIMAIN(LocalFoldersRequestJobTest)
+
+#include "moc_localfoldersrequestjobtest.cpp"

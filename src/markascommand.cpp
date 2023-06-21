@@ -197,3 +197,5 @@ void MarkAsCommand::slotModifyItemDone()
         emitResult(OK);
     }
 }
+
+#include "moc_markascommand.cpp"

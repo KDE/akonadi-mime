@@ -158,3 +158,5 @@ void RaceTest::killZombies()
 }
 
 QTEST_AKONADIMAIN(RaceTest)
+
+#include "moc_racetest.cpp"

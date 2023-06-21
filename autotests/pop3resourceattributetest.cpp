@@ -55,3 +55,5 @@ void Pop3ResourceAttributeTest::shouldCloneAttribute()
 }
 
 QTEST_MAIN(Pop3ResourceAttributeTest)
+
+#include "moc_pop3resourceattributetest.cpp"

@@ -137,3 +137,5 @@ Akonadi::Collection MoveToTrashCommand::findTrashFolder(const Akonadi::Collectio
     }
     return {};
 }
+
+#include "moc_movetotrashcommand.cpp"

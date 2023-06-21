@@ -166,3 +166,5 @@ SpecialMailCollections::Type SpecialMailCollections::specialCollectionType(const
         return typeToEnum(collection.attribute<SpecialCollectionAttribute>()->collectionType());
     }
 }
+
+#include "moc_specialmailcollections.cpp"

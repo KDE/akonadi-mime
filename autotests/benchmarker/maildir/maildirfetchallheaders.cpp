@@ -44,3 +44,5 @@ void MailDirFetchAllHeaders::runTest()
     }
     outputStats(QStringLiteral("fullheaderlist"));
 }
+
+#include "moc_maildirfetchallheaders.cpp"

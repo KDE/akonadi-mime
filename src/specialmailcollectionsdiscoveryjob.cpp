@@ -17,3 +17,5 @@ SpecialMailCollectionsDiscoveryJob::SpecialMailCollectionsDiscoveryJob(QObject *
     : SpecialCollectionsDiscoveryJob(SpecialMailCollections::self(), QStringList() << KMime::Message::mimeType(), parent)
 {
 }
+
+#include "moc_specialmailcollectionsdiscoveryjob.cpp"

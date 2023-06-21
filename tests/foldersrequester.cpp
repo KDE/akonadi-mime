@@ -55,3 +55,5 @@ int main(int argc, char **argv)
     new Requester();
     return app.exec();
 }
+
+#include "moc_foldersrequester.cpp"

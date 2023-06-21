@@ -79,3 +79,5 @@ void MailSerializerPluginTest::testMessageIntegrity()
     qDebug() << "serialized data:" << data;
     QCOMPARE(data, serialized);
 }
+
+#include "moc_mailserializerplugintest.cpp"

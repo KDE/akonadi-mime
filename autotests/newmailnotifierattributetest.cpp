@@ -58,3 +58,5 @@ void NewMailNotifierAttributeTest::shouldHaveType()
 }
 
 QTEST_MAIN(NewMailNotifierAttributeTest)
+
+#include "moc_newmailnotifierattributetest.cpp"

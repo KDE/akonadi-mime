@@ -27,3 +27,5 @@ void MailDirImport::runTest()
     }
     outputStats(QStringLiteral("import"));
 }
+
+#include "moc_maildirimport.cpp"

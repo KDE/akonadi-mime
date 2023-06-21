@@ -32,3 +32,5 @@ MailDir::MailDir()
     : MakeTest()
 {
 }
+
+#include "moc_maildir.cpp"

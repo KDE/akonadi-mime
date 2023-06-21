@@ -325,3 +325,5 @@ void MailSerializerTest::testMultiDeserialize()
 
     delete serializer;
 }
+
+#include "moc_mailserializertest.cpp"

@@ -612,3 +612,5 @@ void LocalFoldersTest::testRecoverDefaultResource()
 }
 
 QTEST_AKONADIMAIN(LocalFoldersTest)
+
+#include "moc_localfolderstest.cpp"

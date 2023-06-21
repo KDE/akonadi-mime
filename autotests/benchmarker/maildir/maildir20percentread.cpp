@@ -42,3 +42,5 @@ void MailDir20PercentAsRead::runTest()
     }
     outputStats(QStringLiteral("mark20percentread"));
 }
+
+#include "moc_maildir20percentread.cpp"

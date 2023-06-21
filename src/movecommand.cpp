@@ -56,3 +56,5 @@ void MoveCommand::slotMoveResult(KJob *job)
         emitResult(OK);
     }
 }
+
+#include "moc_movecommand.cpp"

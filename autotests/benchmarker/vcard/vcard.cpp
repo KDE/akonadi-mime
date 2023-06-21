@@ -17,3 +17,5 @@ VCard::VCard()
     : MakeTest()
 {
 }
+
+#include "moc_vcard.cpp"

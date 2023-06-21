@@ -50,3 +50,5 @@ void MDNStateAttributeTest::shouldCloneAttribute()
 }
 
 QTEST_MAIN(MDNStateAttributeTest)
+
+#include "moc_mdnstateattributetest.cpp"

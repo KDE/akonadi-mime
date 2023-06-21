@@ -123,3 +123,5 @@ QVariant MessageModel::entityHeaderData(int section, Qt::Orientation orientation
 
     return EntityTreeModel::entityHeaderData(section, orientation, role, headerGroup);
 }
+
+#include "moc_messagemodel.cpp"

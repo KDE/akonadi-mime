@@ -162,3 +162,5 @@ void EmptyTrashCommand::emitResult(Result value)
         deleteLater();
     }
 }
+
+#include "moc_emptytrashcommand.cpp"

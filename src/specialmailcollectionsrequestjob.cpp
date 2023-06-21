@@ -85,3 +85,5 @@ void SpecialMailCollectionsRequestJob::requestCollection(SpecialMailCollections:
 {
     SpecialCollectionsRequestJob::requestCollection(enumToType(type), instance);
 }
+
+#include "moc_specialmailcollectionsrequestjob.cpp"

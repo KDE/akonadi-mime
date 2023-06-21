@@ -47,3 +47,5 @@ void MailDirFetchUnreadHeaders::runTest()
     }
     outputStats(QStringLiteral("unreadheaderlist"));
 }
+
+#include "moc_maildirfetchunreadheaders.cpp"

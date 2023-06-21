@@ -68,3 +68,5 @@ void MarkAsCommandHelper::slotModifyItemDone(KJob *job)
         modifyMessages();
     }
 }
+
+#include "moc_markascommandhelper_p.cpp"

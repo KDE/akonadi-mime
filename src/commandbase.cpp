@@ -17,3 +17,5 @@ void CommandBase::emitResult(Result value)
     Q_EMIT result(value);
     deleteLater();
 }
+
+#include "moc_commandbase.cpp"

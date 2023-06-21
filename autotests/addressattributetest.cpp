@@ -35,3 +35,5 @@ void AddressAttributeTest::shouldDeserializeValues()
     result.deserialize(ba);
     QVERIFY(attr == result);
 }
+
+#include "moc_addressattributetest.cpp"
