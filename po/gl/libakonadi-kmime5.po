@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-16 00:47+0000\n"
-"PO-Revision-Date: 2023-06-17 13:47+0200\n"
+"PO-Revision-Date: 2023-06-24 10:34+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -353,7 +353,7 @@ msgid ""
 "the type of the account that shall be added.</p>"
 msgstr ""
 "Engadir unha conta nova<p>Aparece un diálogo no que se pode escoller o tipo "
-"de conta que se desexa engadir.</p>"
+"de conta que se quere engadir.</p>"
 
 #: standardmailactionmanager.cpp:210
 #, kde-format
