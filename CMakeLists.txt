@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 
-set(PIM_VERSION "5.23.41")
+set(PIM_VERSION "5.23.80")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup
@@ -48,8 +48,8 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
-set(AKONADI_VERSION "5.23.40")
-set(KPIM_MIME_VERSION "5.23.40")
+set(AKONADI_VERSION "5.23.80")
+set(KPIM_MIME_VERSION "5.23.80")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
