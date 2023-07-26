@@ -137,4 +137,4 @@ private:
     //@endcond
 };
 }
-Q_DECLARE_TYPEINFO(Akonadi::SentActionAttribute::Action, Q_MOVABLE_TYPE);
+Q_DECLARE_TYPEINFO(Akonadi::SentActionAttribute::Action, Q_RELOCATABLE_TYPE);
