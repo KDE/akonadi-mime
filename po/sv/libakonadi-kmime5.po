@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:46+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2023-07-30 10:37+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -47,56 +47,56 @@ msgctxt "@action:button"
 msgid "Mark All"
 msgstr "Markera alla"
 
-#: messagemodel.cpp:34
+#: messagemodel.cpp:32
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "Rubrik"
 
-#: messagemodel.cpp:35
+#: messagemodel.cpp:33
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "Avsändare"
 
-#: messagemodel.cpp:36
+#: messagemodel.cpp:34
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "Mottagare"
 
-#: messagemodel.cpp:37
+#: messagemodel.cpp:35
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "Datum"
 
-#: messagemodel.cpp:38
+#: messagemodel.cpp:36
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "Storlek"
 
-#: messagemodel.cpp:71
+#: messagemodel.cpp:69
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "(ingen rubrik)"
 
-#: messagemodel.cpp:77
+#: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr "(ingen avsändare)"
 
-#: messagemodel.cpp:83
+#: messagemodel.cpp:81
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "(ingen mottagare)"
 
-#: messagemodel.cpp:89
+#: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(inget datum)"
 
-#: messagemodel.cpp:93
+#: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
@@ -132,37 +132,37 @@ msgstr "Söker efter dubbletter..."
 msgid "Removing duplicates..."
 msgstr "Ta bort dubbletter..."
 
-#: specialmailcollections.cpp:130
+#: specialmailcollections.cpp:122
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "inkorg"
 
-#: specialmailcollections.cpp:133
+#: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "utkorg"
 
-#: specialmailcollections.cpp:136
+#: specialmailcollections.cpp:128
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "skickat"
 
-#: specialmailcollections.cpp:139
+#: specialmailcollections.cpp:131
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "papperskorg"
 
-#: specialmailcollections.cpp:142
+#: specialmailcollections.cpp:134
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "utkast"
 
-#: specialmailcollections.cpp:145
+#: specialmailcollections.cpp:137
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"

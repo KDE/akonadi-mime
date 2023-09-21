@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:46+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2023-04-13 22:50+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -50,56 +50,56 @@ msgctxt "@action:button"
 msgid "Mark All"
 msgstr "Markatu guztiak"
 
-#: messagemodel.cpp:34
+#: messagemodel.cpp:32
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "Gaia"
 
-#: messagemodel.cpp:35
+#: messagemodel.cpp:33
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "Bidaltzailea"
 
-#: messagemodel.cpp:36
+#: messagemodel.cpp:34
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "Hartzailea"
 
-#: messagemodel.cpp:37
+#: messagemodel.cpp:35
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "Data"
 
-#: messagemodel.cpp:38
+#: messagemodel.cpp:36
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "Neurria"
 
-#: messagemodel.cpp:71
+#: messagemodel.cpp:69
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "(Gairik ez)"
 
-#: messagemodel.cpp:77
+#: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr "(Bidaltzailerik ez)"
 
-#: messagemodel.cpp:83
+#: messagemodel.cpp:81
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "(Hartzailerik ez)"
 
-#: messagemodel.cpp:89
+#: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(Datarik ez)"
 
-#: messagemodel.cpp:93
+#: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
@@ -135,37 +135,37 @@ msgstr "Bikoiztutakoen bila..."
 msgid "Removing duplicates..."
 msgstr "Bikoiztutakoak kentzen..."
 
-#: specialmailcollections.cpp:130
+#: specialmailcollections.cpp:122
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "sarrerako ontzia"
 
-#: specialmailcollections.cpp:133
+#: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "irteerako ontzia"
 
-#: specialmailcollections.cpp:136
+#: specialmailcollections.cpp:128
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "bidalitako-posta"
 
-#: specialmailcollections.cpp:139
+#: specialmailcollections.cpp:131
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "zakarrontzia"
 
-#: specialmailcollections.cpp:142
+#: specialmailcollections.cpp:134
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "zirriborroak"
 
-#: specialmailcollections.cpp:145
+#: specialmailcollections.cpp:137
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"

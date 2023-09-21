@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:46+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -48,32 +48,32 @@ msgctxt "@action:button"
 msgid "Mark All"
 msgstr ""
 
-#: messagemodel.cpp:34
+#: messagemodel.cpp:32
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "تېما"
 
-#: messagemodel.cpp:35
+#: messagemodel.cpp:33
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "يوللىغۇچى"
 
-#: messagemodel.cpp:36
+#: messagemodel.cpp:34
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "قوبۇللىغۇچى"
 
-#: messagemodel.cpp:37
+#: messagemodel.cpp:35
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "چېسلا"
 
-#: messagemodel.cpp:38
+#: messagemodel.cpp:36
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "چوڭلۇقى"
 
-#: messagemodel.cpp:71
+#: messagemodel.cpp:69
 #, fuzzy, kde-format
 #| msgctxt "@title:column, message (e.g. email) subject"
 #| msgid "Subject"
@@ -81,13 +81,13 @@ msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "تېما"
 
-#: messagemodel.cpp:77
+#: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr ""
 
-#: messagemodel.cpp:83
+#: messagemodel.cpp:81
 #, fuzzy, kde-format
 #| msgctxt "@title:column, receiver of message (e.g. email)"
 #| msgid "Receiver"
@@ -95,13 +95,13 @@ msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "قوبۇللىغۇچى"
 
-#: messagemodel.cpp:89
+#: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr ""
 
-#: messagemodel.cpp:93
+#: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
@@ -137,37 +137,37 @@ msgstr ""
 msgid "Removing duplicates..."
 msgstr ""
 
-#: specialmailcollections.cpp:130
+#: specialmailcollections.cpp:122
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "خەتدان"
 
-#: specialmailcollections.cpp:133
+#: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "يوللاش ساندۇقى"
 
-#: specialmailcollections.cpp:136
+#: specialmailcollections.cpp:128
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "يوللانغان"
 
-#: specialmailcollections.cpp:139
+#: specialmailcollections.cpp:131
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "ئەخلەتخانا"
 
-#: specialmailcollections.cpp:142
+#: specialmailcollections.cpp:134
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "دەسلەپكى نۇسخا"
 
-#: specialmailcollections.cpp:145
+#: specialmailcollections.cpp:137
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"

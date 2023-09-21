@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-03 00:46+0000\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
 "PO-Revision-Date: 2023-04-21 23:10+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -45,56 +45,56 @@ msgctxt "@action:button"
 msgid "Mark All"
 msgstr "모두 표시"
 
-#: messagemodel.cpp:34
+#: messagemodel.cpp:32
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "제목"
 
-#: messagemodel.cpp:35
+#: messagemodel.cpp:33
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "보낸 사람"
 
-#: messagemodel.cpp:36
+#: messagemodel.cpp:34
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "받는 사람"
 
-#: messagemodel.cpp:37
+#: messagemodel.cpp:35
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "날짜"
 
-#: messagemodel.cpp:38
+#: messagemodel.cpp:36
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "크기"
 
-#: messagemodel.cpp:71
+#: messagemodel.cpp:69
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "(제목 없음)"
 
-#: messagemodel.cpp:77
+#: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr "(보낸 사람 없음)"
 
-#: messagemodel.cpp:83
+#: messagemodel.cpp:81
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "(받는 사람 없음)"
 
-#: messagemodel.cpp:89
+#: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(날짜 없음)"
 
-#: messagemodel.cpp:93
+#: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
@@ -130,37 +130,37 @@ msgstr "중복 항목 검사 중..."
 msgid "Removing duplicates..."
 msgstr "중복 항목 삭제 중..."
 
-#: specialmailcollections.cpp:130
+#: specialmailcollections.cpp:122
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "받은 편지함"
 
-#: specialmailcollections.cpp:133
+#: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "보낼 편지함"
 
-#: specialmailcollections.cpp:136
+#: specialmailcollections.cpp:128
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "보낸 편지함"
 
-#: specialmailcollections.cpp:139
+#: specialmailcollections.cpp:131
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "휴지통"
 
-#: specialmailcollections.cpp:142
+#: specialmailcollections.cpp:134
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "임시 보관함"
 
-#: specialmailcollections.cpp:145
+#: specialmailcollections.cpp:137
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
