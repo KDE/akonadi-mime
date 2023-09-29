@@ -1,0 +1,656 @@
+# translation of libakonadi-kmime5.pot to Esperanto
+# Copyright (C) 2014 Free Software Foundation, Inc.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2023.
+#
+# Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: akonadi-mime\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"PO-Revision-Date: 2023-09-28 22:13+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: emptytrashcommand.cpp:46
+#, kde-format
+msgid "Empty Trash"
+msgstr "Malplenigi Rubujon"
+
+#: emptytrashcommand.cpp:47
+#, kde-format
+msgid "Are you sure you want to empty the trash folders of all accounts?"
+msgstr "Ĉu vi certas, ke vi volas malplenigi la rubujojn de ĉiuj kontoj?"
+
+#: markascommand.cpp:121
+#, kde-format
+msgid ""
+"Are you sure you want to mark all messages in this folder and all its "
+"subfolders?"
+msgstr ""
+"Ĉu vi certas, ke vi volas marki ĉiujn mesaĝojn en ĉi tiu dosierujo kaj ĉiuj "
+"ĝiaj subdosierujoj?"
+
+#: markascommand.cpp:122
+#, kde-format
+msgid "Mark All Recursively"
+msgstr "Marki Ĉiujn Rekursie"
+
+#: markascommand.cpp:123
+#, kde-format
+msgctxt "@action:button"
+msgid "Mark All"
+msgstr "Marki Ĉiujn"
+
+#: messagemodel.cpp:32
+msgctxt "@title:column, message (e.g. email) subject"
+msgid "Subject"
+msgstr "Temo"
+
+#: messagemodel.cpp:33
+msgctxt "@title:column, sender of message (e.g. email)"
+msgid "Sender"
+msgstr "Sendanto"
+
+#: messagemodel.cpp:34
+msgctxt "@title:column, receiver of message (e.g. email)"
+msgid "Receiver"
+msgstr "Ricevanto"
+
+#: messagemodel.cpp:35
+msgctxt "@title:column, message (e.g. email) timestamp"
+msgid "Date"
+msgstr "Dato"
+
+#: messagemodel.cpp:36
+msgctxt "@title:column, message (e.g. email) size"
+msgid "Size"
+msgstr "Grandeco"
+
+#: messagemodel.cpp:69
+#, kde-format
+msgctxt "@label Alternative text when email subject is missing"
+msgid "(No subject)"
+msgstr "(Neniu temo)"
+
+#: messagemodel.cpp:75
+#, kde-format
+msgctxt "@label Alternative text when email sender is missing"
+msgid "(No sender)"
+msgstr "(Neniu sendinto)"
+
+#: messagemodel.cpp:81
+#, kde-format
+msgctxt "@label Alternative text when email recipient is missing"
+msgid "(No receiver)"
+msgstr "(Neniu ricevanto)"
+
+#: messagemodel.cpp:87
+#, kde-format
+msgctxt "@label Alternative text when email date/time is missing"
+msgid "(No date)"
+msgstr "(Neniu dato)"
+
+#: messagemodel.cpp:91
+#, kde-format
+msgctxt "@label No size available"
+msgid "-"
+msgstr "-"
+
+#: messagequeuejob.cpp:58
+#, kde-format
+msgid "Empty message."
+msgstr "Malplena mesaĝo."
+
+#: messagequeuejob.cpp:65
+#, kde-format
+msgid "Message has no recipients."
+msgstr "Mesaĝo ne havas ricevantojn."
+
+#: messagequeuejob.cpp:72
+#, kde-format
+msgid "Message has invalid sent-mail folder."
+msgstr "Mesaĝo havas nevalidan dosierujon de senditaj retpoŝtoj."
+
+#: removeduplicatesjob.cpp:41
+#, kde-format
+msgid "Retrieving items..."
+msgstr "Prenante erojn..."
+
+#: removeduplicatesjob.cpp:59
+#, kde-format
+msgid "Searching for duplicates..."
+msgstr "Serĉante duplikatojn..."
+
+#: removeduplicatesjob.cpp:118
+#, kde-format
+msgid "Removing duplicates..."
+msgstr "Forigante duplikatojn..."
+
+#: specialmailcollections.cpp:122
+#, kde-format
+msgctxt "local mail folder"
+msgid "inbox"
+msgstr "enirkesto"
+
+#: specialmailcollections.cpp:125
+#, kde-format
+msgctxt "local mail folder"
+msgid "outbox"
+msgstr "elirkesto"
+
+#: specialmailcollections.cpp:128
+#, kde-format
+msgctxt "local mail folder"
+msgid "sent-mail"
+msgstr "sendita-poŝto"
+
+#: specialmailcollections.cpp:131
+#, kde-format
+msgctxt "local mail folder"
+msgid "trash"
+msgstr "rubujo"
+
+#: specialmailcollections.cpp:134
+#, kde-format
+msgctxt "local mail folder"
+msgid "drafts"
+msgstr "malnetoj"
+
+#: specialmailcollections.cpp:137
+#, kde-format
+msgctxt "local mail folder"
+msgid "templates"
+msgstr "ŝablonoj"
+
+#: specialmailcollectionsrequestjob.cpp:46
+#, kde-format
+msgctxt "local mail folder"
+msgid "Local Folders"
+msgstr "Lokaj Dosierujoj"
+
+#: standardmailactionmanager.cpp:119
+#, kde-format
+msgid "Add Folder..."
+msgstr "Aldoni Dosierujon..."
+
+#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#, kde-format
+msgid "Add a new folder to the currently selected account."
+msgstr "Aldoni novan dosierujon al la nun elektita konto."
+
+#: standardmailactionmanager.cpp:123
+#, kde-format
+msgctxt "@title:window"
+msgid "New Folder"
+msgstr "Nova Dosierujo"
+
+#: standardmailactionmanager.cpp:127
+#, kde-format
+msgid "Could not create folder: %1"
+msgstr "Ne eblis krei dosierujon: %1"
+
+#: standardmailactionmanager.cpp:129
+#, kde-format
+msgid "Folder creation failed"
+msgstr "Kreado de dosierujoj malsukcesis"
+
+#: standardmailactionmanager.cpp:133
+#, kde-format
+msgid "Copy Folder"
+msgid_plural "Copy %1 Folders"
+msgstr[0] "Kopii Dosierujon"
+msgstr[1] "Kopii %1 Dosierujojn"
+
+#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#, kde-format
+msgid "Copy the selected folders to the clipboard."
+msgstr "Kopii la elektitajn dosierujojn al la tondujo."
+
+#: standardmailactionmanager.cpp:138
+#, kde-format
+msgctxt "@title:window"
+msgid "Properties of Folder %1"
+msgstr "Proprecoj de Dosierujo %1"
+
+#: standardmailactionmanager.cpp:141
+#, kde-format
+msgid "Delete Folder"
+msgid_plural "Delete %1 Folders"
+msgstr[0] "Forigi Dosierujon"
+msgstr[1] "Forigi %1 Dosierujojn"
+
+#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#, kde-format
+msgid "Delete the selected folders from the account."
+msgstr "Forigi la elektitajn dosierujojn de la konto."
+
+#: standardmailactionmanager.cpp:146
+#, kde-format
+msgid "Do you really want to delete this folder and all its sub-folders?"
+msgid_plural ""
+"Do you really want to delete %1 folders and all their sub-folders?"
+msgstr[0] ""
+"Ĉu vi vere volas forigi tiun dosierujon kaj ĉiujn ĝiajn subdosierujojn?"
+msgstr[1] ""
+"Ĉu vi vere volas forigi %1 dosierujojn kaj ĉiujn iliajn subdosierujojn?"
+
+#: standardmailactionmanager.cpp:151
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete folder?"
+msgid_plural "Delete folders?"
+msgstr[0] "Ĉu Forigi dosierujon?"
+msgstr[1] "Ĉu Forigi dosierujojn?"
+
+#: standardmailactionmanager.cpp:155
+#, kde-format
+msgid "Could not delete folder: %1"
+msgstr "Ne eblis forigi dosierujon: %1"
+
+#: standardmailactionmanager.cpp:157
+#, kde-format
+msgid "Folder deletion failed"
+msgstr "Forigo de dosierujo malsukcesis"
+
+#: standardmailactionmanager.cpp:161
+#, kde-format
+msgid "Update Folder"
+msgid_plural "Update Folders"
+msgstr[0] "Ĝisdatigi Dosierujon"
+msgstr[1] "Ĝisdatigi Dosierujojn"
+
+#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#, kde-format
+msgid "Update the contents of the selected folders."
+msgstr "Ĝisdatigi la enhavon de la elektitaj dosierujoj."
+
+#: standardmailactionmanager.cpp:167
+#, kde-format
+msgid "Cut Folder"
+msgid_plural "Cut %1 Folders"
+msgstr[0] "Tondi Dosierujon"
+msgstr[1] "Tondi %1 Dosierujojn"
+
+#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#, kde-format
+msgid "Cut the selected folders from the account."
+msgstr "Tondi la elektitajn dosierujojn el la konto."
+
+#: standardmailactionmanager.cpp:172
+#, kde-format
+msgid "Folder Properties"
+msgstr "Dosierujaj Proprecoj"
+
+#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#, kde-format
+msgid "Open a dialog to edit the properties of the selected folder."
+msgstr "Malfermi dialogon por redakti la ecojn de la elektita dosierujo."
+
+#: standardmailactionmanager.cpp:179
+#, kde-format
+msgid "Copy Message"
+msgid_plural "Copy %1 Messages"
+msgstr[0] "Kopii Mesaĝon"
+msgstr[1] "Kopii %1 Mesaĝojn"
+
+#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#, kde-format
+msgid "Copy the selected messages to the clipboard."
+msgstr "Kopii la elektitajn mesaĝojn al la tondujo."
+
+#: standardmailactionmanager.cpp:184
+#, kde-format
+msgid "Delete Message"
+msgid_plural "Delete %1 Messages"
+msgstr[0] "Forigi Mesaĝon"
+msgstr[1] "Forigi %1 Mesaĝojn"
+
+#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#, kde-format
+msgid "Delete the selected messages from the folder."
+msgstr "Forigi la elektitajn mesaĝojn el la dosierujo."
+
+#: standardmailactionmanager.cpp:189
+#, kde-format
+msgid "Do you really want to delete the selected message?"
+msgid_plural "Do you really want to delete %1 messages?"
+msgstr[0] "Ĉu vi vere volas forigi la elektitan mesaĝon?"
+msgstr[1] "Ĉu vi vere volas forigi %1 mesaĝojn?"
+
+#: standardmailactionmanager.cpp:193
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Message?"
+msgid_plural "Delete Messages?"
+msgstr[0] "Ĉu Forigi Mesaĝon?"
+msgstr[1] "Ĉu Forigi Mesaĝojn?"
+
+#: standardmailactionmanager.cpp:195
+#, kde-format
+msgid "Could not delete message: %1"
+msgstr "Ne eblis forigi mesaĝon: %1"
+
+#: standardmailactionmanager.cpp:197
+#, kde-format
+msgid "Message deletion failed"
+msgstr "Mesaĝa forigo malsukcesis"
+
+#: standardmailactionmanager.cpp:200
+#, kde-format
+msgid "Cut Message"
+msgid_plural "Cut %1 Messages"
+msgstr[0] "Tondi Mesaĝon"
+msgstr[1] "Tondi %1 Mesaĝojn"
+
+#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#, kde-format
+msgid "Cut the selected message from the folder."
+msgstr "Tondi la elektitan mesaĝon el la dosierujo."
+
+#: standardmailactionmanager.cpp:205
+#, kde-format
+msgid "Add &Account..."
+msgstr "&Aldoni Konton..."
+
+#: standardmailactionmanager.cpp:207
+#, kde-format
+msgid ""
+"Add a new account<p>You will be presented with a dialog where you can select "
+"the type of the account that shall be added.</p>"
+msgstr ""
+"Aldoni novan konton<p>Al vi estos prezentita dialogo kie vi povas elekti la "
+"tipon de la konto kiu estos aldonata.</p>"
+
+#: standardmailactionmanager.cpp:210
+#, kde-format
+msgctxt "@title:window"
+msgid "Add Account"
+msgstr "Aldoni Konton"
+
+#: standardmailactionmanager.cpp:214
+#, kde-format
+msgid "Could not create account: %1"
+msgstr "Ne eblis krei konton: %1"
+
+#: standardmailactionmanager.cpp:216
+#, kde-format
+msgid "Account creation failed"
+msgstr "Kreado de konto malsukcesis"
+
+#: standardmailactionmanager.cpp:219
+#, kde-format
+msgid "&Delete Account"
+msgid_plural "&Delete %1 Accounts"
+msgstr[0] "&Forigi Konton"
+msgstr[1] "&Forigi %1 Kontojn"
+
+#: standardmailactionmanager.cpp:221
+#, kde-format
+msgid ""
+"Delete the selected accounts<p>The currently selected accounts will be "
+"deleted, along with all the messages they contain.</p>"
+msgstr ""
+"Forigu la elektitajn kontojn<p>La nuntempe elektitaj kontoj estos forigitaj, "
+"kune kun ĉiuj mesaĝoj kiujn ili enhavas.</p>"
+
+#: standardmailactionmanager.cpp:226
+#, kde-format
+msgid "Do you really want to delete this account?"
+msgid_plural "Do you really want to delete %1 accounts?"
+msgstr[0] "Ĉu vi vere volas forigi la konton?"
+msgstr[1] "Ĉu vi vere volas forigi %1 kontojn?"
+
+#: standardmailactionmanager.cpp:230
+#, kde-format
+msgctxt "@title:window"
+msgid "Delete Account?"
+msgid_plural "Delete Accounts?"
+msgstr[0] "Ĉu Forigi Konton?"
+msgstr[1] "Ĉu Forigi Kontojn?"
+
+#: standardmailactionmanager.cpp:233
+#, kde-format
+msgid "Account Properties..."
+msgstr "Kontaj Proprecoj..."
+
+#: standardmailactionmanager.cpp:235
+#, kde-format
+msgid "Open a dialog to edit properties of the selected account."
+msgstr "Malfermi dialogon por redakti ecojn de la elektita konto."
+
+#: standardmailactionmanager.cpp:238
+#, kde-format
+msgid "Update Account"
+msgid_plural "Update %1 Accounts"
+msgstr[0] "Ĝisdatigi Konton"
+msgstr[1] "Ĝisdatigi %1 Kontojn"
+
+#: standardmailactionmanager.cpp:240
+#, kde-format
+msgid "Updates the content of all folders of the selected accounts."
+msgstr "Ĝisdatigas la enhavon de ĉiuj dosierujoj de la elektitaj kontoj."
+
+#: standardmailactionmanager.cpp:244
+#, kde-format
+msgid "Update This Folder and All Its Subfolders"
+msgid_plural "Update These Folders and All Their Subfolders"
+msgstr[0] "Ĝisdatigi Ĉi tiun Konton kaj Ĉiujn Ĝiajn Subdosierujojn"
+msgstr[1] "Ĝisdatigi Ĉi Kontojn kaj Ĉiujn Iliajn Subdosierujojn"
+
+#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#, kde-format
+msgid "Update the contents of the selected folders and all their subfolders."
+msgstr ""
+"Ĝisdatigi la enhavon de la elektitaj dosierujoj kaj ĉiuj iliaj subdosierujoj."
+
+#: standardmailactionmanager.cpp:252
+#, kde-format
+msgid "Could not paste message: %1"
+msgstr "Ne eblis alglui mesaĝon: %1"
+
+#: standardmailactionmanager.cpp:254
+#, kde-format
+msgid "Paste failed"
+msgstr "Alglui malsukcesis"
+
+#: standardmailactionmanager.cpp:320
+#, kde-format
+msgid "Remove Important Mark"
+msgstr "Forigi Gravan Markon"
+
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#, kde-format
+msgid "&Mark Message as Important"
+msgstr "&Marki Mesaĝon kiel Grava"
+
+#: standardmailactionmanager.cpp:333
+#, kde-format
+msgid "Remove Action Item Mark"
+msgstr "Forigi Ago-Ero Markon"
+
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#, kde-format
+msgid "&Mark Message as Action Item"
+msgstr "&Marki Mesaĝon kiel Ago-Ero"
+
+#: standardmailactionmanager.cpp:694
+#, kde-format
+msgid "&Mark Message as Read"
+msgstr "&Marki Mesaĝon kiel Legita"
+
+#: standardmailactionmanager.cpp:695
+#, kde-format
+msgid "Mark as Read"
+msgstr "Marki kiel Legita"
+
+#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#, kde-format
+msgid "Mark selected messages as read."
+msgstr "Marki elektitajn mesaĝojn kiel legitajn."
+
+#: standardmailactionmanager.cpp:709
+#, kde-format
+msgid "&Mark Message as Unread"
+msgstr "&Marki Mesaĝon kiel Nelegita"
+
+#: standardmailactionmanager.cpp:710
+#, kde-format
+msgid "Mark as Unread"
+msgstr "Marki kiel Nelegita"
+
+#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#, kde-format
+msgid "Mark selected messages as unread."
+msgstr "Marki elektitajn mesaĝojn kiel nelegitaj."
+
+#: standardmailactionmanager.cpp:725
+#, kde-format
+msgid "Mark as Important"
+msgstr "Marki kiel Grava"
+
+#: standardmailactionmanager.cpp:726
+#, kde-format
+msgid "Mark selected messages as important."
+msgstr "Marki elektitajn mesaĝojn kiel gravaj."
+
+#: standardmailactionmanager.cpp:739
+#, kde-format
+msgid "Mark as Action Item"
+msgstr "Marki kiel Ago-Ero"
+
+#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#, kde-format
+msgid "Mark selected messages as action items."
+msgstr "Marki elektitajn mesaĝojn kiel agadaĵojn."
+
+#: standardmailactionmanager.cpp:752
+#, kde-format
+msgid "Mark &All Messages as Read"
+msgstr "Marki Ĉiujn Mes&aĝojn kiel Legita"
+
+#: standardmailactionmanager.cpp:753
+#, kde-format
+msgid "Mark All as Read"
+msgstr "Marki Ĉion kiel Legita"
+
+#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#, kde-format
+msgid "Mark all messages as read."
+msgstr "Marki ĉiujn mesaĝojn kiel legitajn."
+
+#: standardmailactionmanager.cpp:766
+#, kde-format
+msgid "Mark &All Messages as Read Recursively"
+msgstr "Marki Ĉiujn Mes&aĝojn kiel Legitaj Rekurse"
+
+#: standardmailactionmanager.cpp:767
+#, kde-format
+msgid "Mark All as Read Recursively"
+msgstr "Marki Ĉion kiel Legita Rekursie"
+
+#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#, kde-format
+msgid "Mark all messages as read recursively."
+msgstr "Marki ĉiujn mesaĝojn kiel legitaj rekursie."
+
+#: standardmailactionmanager.cpp:780
+#, kde-format
+msgid "Mark &All Messages as Unread"
+msgstr "Marki &Ĉiujn Mesaĝojn kiel Nelegitaj"
+
+#: standardmailactionmanager.cpp:781
+#, kde-format
+msgid "Mark All as Unread"
+msgstr "Marki Ĉion kiel Nelegita"
+
+#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#, kde-format
+msgid "Mark all messages as unread."
+msgstr "Marku ĉiujn mesaĝojn kiel nelegitaj."
+
+#: standardmailactionmanager.cpp:794
+#, kde-format
+msgid "Mark &All Messages as Important"
+msgstr "Marki Ĉiujn Mes&aĝojn kiel Gravajn"
+
+#: standardmailactionmanager.cpp:795
+#, kde-format
+msgid "Mark All as Important"
+msgstr "Marki Ĉion kiel Grava"
+
+#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#, kde-format
+msgid "Mark all messages as important."
+msgstr "Marku ĉiujn mesaĝojn kiel gravaj."
+
+#: standardmailactionmanager.cpp:807
+#, kde-format
+msgid "Mark All as Action Item"
+msgstr "Marki Ĉion kiel Ago-Ero"
+
+#: standardmailactionmanager.cpp:808
+#, kde-format
+msgid "Mark &All Messages as Action Item"
+msgstr "Marki Ĉiujn Mes&aĝojn kiel Agadon"
+
+#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#, kde-format
+msgid "Mark all messages as action items."
+msgstr "Marki ĉiujn mesaĝojn kiel agadaĵojn."
+
+#: standardmailactionmanager.cpp:822
+#, kde-format
+msgid "Move to &Trash"
+msgstr "Movi al &Rubo"
+
+#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#, kde-format
+msgid "Move selected messages to the trash folder."
+msgstr "Movi elektitajn mesaĝojn al la rubujo."
+
+#: standardmailactionmanager.cpp:835
+#, kde-format
+msgid "Move All to &Trash"
+msgstr "Movi Ĉion al &Rubujo"
+
+#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#, kde-format
+msgid "Move all messages to the trash folder."
+msgstr "Movi ĉiujn mesaĝojn al la rubujo."
+
+#: standardmailactionmanager.cpp:846
+#, kde-format
+msgid "Remove &Duplicate Messages"
+msgstr "Forigi Duoblaj Mesaĝoj"
+
+#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#, kde-format
+msgid "Remove duplicate messages."
+msgstr "Forigi duplikatajn mesaĝojn."
+
+#: standardmailactionmanager.cpp:858
+#, kde-format
+msgid "Empty All &Trash Folders"
+msgstr "Malplenigi Ĉiujn &Rubdosierujojn"
+
+#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#, kde-format
+msgid "Permanently delete all messages from all trash folders."
+msgstr "Porĉiame forigi ĉiujn mesaĝojn el ĉiuj rubujoj."
+
+#: standardmailactionmanager.cpp:869
+#, kde-format
+msgid "E&mpty Trash"
+msgstr "&Malplenigi Rubujon"
+
+#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#, kde-format
+msgid "Permanently delete all messages from the trash folder."
+msgstr "Konstante forigi ĉiujn mesaĝojn el la rubujo."
