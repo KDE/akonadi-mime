@@ -196,7 +196,7 @@ msgstr "Novo cartafol"
 #: standardmailactionmanager.cpp:127
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr "Non se puido crear o cartafol: %1"
+msgstr "Non foi posíbel crear o cartafol: %1"
 
 #: standardmailactionmanager.cpp:129
 #, kde-format
@@ -254,7 +254,7 @@ msgstr[1] "Eliminar estes cartafoles?"
 #: standardmailactionmanager.cpp:155
 #, kde-format
 msgid "Could not delete folder: %1"
-msgstr "Non se puido eliminar o cartafol: %1"
+msgstr "Non foi posíbel eliminar o cartafol: %1"
 
 #: standardmailactionmanager.cpp:157
 #, kde-format
@@ -337,7 +337,7 @@ msgstr[1] "Eliminar as mensaxes?"
 #: standardmailactionmanager.cpp:195
 #, kde-format
 msgid "Could not delete message: %1"
-msgstr "Non se puido eliminar a mensaxe: %1"
+msgstr "Non foi posíbel eliminar a mensaxe: %1"
 
 #: standardmailactionmanager.cpp:197
 #, kde-format
@@ -379,7 +379,7 @@ msgstr "Engadir unha conta"
 #: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Could not create account: %1"
-msgstr "Non se puido crear conta: %1"
+msgstr "Non foi posíbel crear conta: %1"
 
 #: standardmailactionmanager.cpp:216
 #, kde-format
@@ -455,7 +455,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:252
 #, kde-format
 msgid "Could not paste message: %1"
-msgstr "Non se puido pegar a mensaxe: %1"
+msgstr "Non foi posíbel pegar a mensaxe: %1"
 
 #: standardmailactionmanager.cpp:254
 #, kde-format
