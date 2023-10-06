@@ -44,8 +44,8 @@ public:
     ~MessageModel() override = default;
 
 protected:
-    Q_REQUIRED_RESULT int entityColumnCount(HeaderGroup headerGroup) const override;
-    Q_REQUIRED_RESULT QVariant entityHeaderData(int section, Qt::Orientation orientation, int role, HeaderGroup headerGroup) const override;
-    Q_REQUIRED_RESULT QVariant entityData(const Item &item, int column, int role = Qt::DisplayRole) const override;
+    [[nodiscard]] int entityColumnCount(HeaderGroup headerGroup) const override;
+    [[nodiscard]] QVariant entityHeaderData(int section, Qt::Orientation orientation, int role, HeaderGroup headerGroup) const override;
+    [[nodiscard]] QVariant entityData(const Item &item, int column, int role = Qt::DisplayRole) const override;
 };
 }

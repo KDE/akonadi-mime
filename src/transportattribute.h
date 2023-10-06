@@ -48,7 +48,7 @@ public:
       Returns the transport id to use for sending this message.
       @see TransportManager.
     */
-    Q_REQUIRED_RESULT int transportId() const;
+    [[nodiscard]] int transportId() const;
 
     /**
       Sets the transport id to use for sending this message.

@@ -44,7 +44,7 @@ public:
     /**
      * Returns the i18n'ed error message.
      */
-    Q_REQUIRED_RESULT QString message() const;
+    [[nodiscard]] QString message() const;
 
     /**
      * Sets the i18n'ed error message.
@@ -53,8 +53,8 @@ public:
 
     /* reimpl */
     ErrorAttribute *clone() const override;
-    Q_REQUIRED_RESULT QByteArray type() const override;
-    Q_REQUIRED_RESULT QByteArray serialized() const override;
+    [[nodiscard]] QByteArray type() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
 private:

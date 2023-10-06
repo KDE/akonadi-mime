@@ -82,20 +82,20 @@ public:
      * Returns whether the given agent @p instance has a special collection of
      * the given @p type.
      */
-    Q_REQUIRED_RESULT bool hasCollection(Type type, const AgentInstance &instance) const;
+    [[nodiscard]] bool hasCollection(Type type, const AgentInstance &instance) const;
 
     /**
      * Returns the special mail collection of the given @p type in the given agent
      * @p instance, or an invalid collection if such a collection is unknown.
      */
-    Q_REQUIRED_RESULT Akonadi::Collection collection(Type type, const AgentInstance &instance) const;
+    [[nodiscard]] Akonadi::Collection collection(Type type, const AgentInstance &instance) const;
 
     /**
      * Returns the special collection type for a given collection, or empty if the collection
      * doesn't have a special type.
      * @since 4.11
      */
-    Q_REQUIRED_RESULT static Type specialCollectionType(const Akonadi::Collection &collection);
+    [[nodiscard]] static Type specialCollectionType(const Akonadi::Collection &collection);
 
     /**
      * Registers the given @p collection as a special mail collection
@@ -120,13 +120,13 @@ public:
      * Returns whether the default resource has a special mail collection of
      * the given @p type.
      */
-    Q_REQUIRED_RESULT bool hasDefaultCollection(Type type) const;
+    [[nodiscard]] bool hasDefaultCollection(Type type) const;
 
     /**
      * Returns the special mail collection of given @p type in the default
      * resource, or an invalid collection if such a collection is unknown.
      */
-    Q_REQUIRED_RESULT Akonadi::Collection defaultCollection(Type type) const;
+    [[nodiscard]] Akonadi::Collection defaultCollection(Type type) const;
 
     void verifyI18nDefaultCollection(Type type);
 private Q_SLOTS:

@@ -19,7 +19,7 @@ public:
     explicit MarkAsCommandHelper(QObject *parent = nullptr);
     ~MarkAsCommandHelper() override;
 
-    Q_REQUIRED_RESULT const Akonadi::Item::List &itemsToModify() const;
+    [[nodiscard]] const Akonadi::Item::List &itemsToModify() const;
     void setItemsToModify(const Akonadi::Item::List &newItemsToModify);
 
     void start();

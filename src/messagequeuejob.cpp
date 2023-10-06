@@ -45,7 +45,7 @@ public:
       Returns true if this message has everything it needs and is ready to be
       sent.
     */
-    Q_REQUIRED_RESULT bool validate() const;
+    [[nodiscard]] bool validate() const;
 
     // slot
     void outboxRequestResult(KJob *job);

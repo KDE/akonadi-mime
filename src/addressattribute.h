@@ -42,15 +42,15 @@ public:
     ~AddressAttribute() override;
 
     /* reimpl */
-    Q_REQUIRED_RESULT AddressAttribute *clone() const override;
-    Q_REQUIRED_RESULT QByteArray type() const override;
-    Q_REQUIRED_RESULT QByteArray serialized() const override;
+    [[nodiscard]] AddressAttribute *clone() const override;
+    [[nodiscard]] QByteArray type() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
     /**
       Returns the address of the sender.
     */
-    Q_REQUIRED_RESULT QString from() const;
+    [[nodiscard]] QString from() const;
 
     /**
       Sets the address of the sender.
@@ -60,7 +60,7 @@ public:
     /**
       Returns the addresses of the "To:" receivers.
     */
-    Q_REQUIRED_RESULT QStringList to() const;
+    [[nodiscard]] QStringList to() const;
 
     /**
      * Sets the addresses of the "To: "receivers."
@@ -71,7 +71,7 @@ public:
     /**
       Returns the addresses of the "Cc:" receivers.
     */
-    Q_REQUIRED_RESULT QStringList cc() const;
+    [[nodiscard]] QStringList cc() const;
 
     /**
      * Sets the addresses of the "Cc:" receivers."
@@ -82,7 +82,7 @@ public:
     /**
      * Returns the addresses of the "Bcc:" receivers.
      */
-    Q_REQUIRED_RESULT QStringList bcc() const;
+    [[nodiscard]] QStringList bcc() const;
 
     /**
      * Sets the addresses of the "Bcc:" receivers."
@@ -91,7 +91,7 @@ public:
     void setBcc(const QStringList &bcc);
 
     void setDeliveryStatusNotification(bool b);
-    Q_REQUIRED_RESULT bool deliveryStatusNotification() const;
+    [[nodiscard]] bool deliveryStatusNotification() const;
 
     bool operator==(const AddressAttribute &other) const;
 
