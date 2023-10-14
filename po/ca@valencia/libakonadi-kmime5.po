@@ -612,7 +612,7 @@ msgstr "Marca tots els missatges com a elements d'acció."
 #: standardmailactionmanager.cpp:822
 #, kde-format
 msgid "Move to &Trash"
-msgstr "Mou a la &paperera"
+msgstr "Mou cap a dins de la &paperera"
 
 #: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
 #, kde-format
