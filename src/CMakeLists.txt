@@ -9,7 +9,6 @@ macro(kcfg_generate_dbus_interface _kcfg _name)
         ${KF5Akonadi_DATA_DIR}/kcfg2dbus.xsl
         ${_kcfg}
         > ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
-        ${_kcfg}
         )
 endmacro()
 
