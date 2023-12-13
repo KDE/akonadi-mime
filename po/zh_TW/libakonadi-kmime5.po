@@ -4,13 +4,13 @@
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2012, 2013.
 # pan93412 <pan93412@gmail.com>, 2019.
 # Jeff Huang <s8321414@gmail.com>, 2020.
-# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
+# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-12-09 18:51+0900\n"
+"PO-Revision-Date: 2023-12-13 03:18+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.01.80\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -440,7 +440,7 @@ msgstr "貼上失敗"
 #: standardmailactionmanager.cpp:320
 #, kde-format
 msgid "Remove Important Mark"
-msgstr "移除重要標示"
+msgstr "移除重要標記"
 
 #: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
 #, kde-format
@@ -450,7 +450,7 @@ msgstr "將郵件標為重要(&M)"
 #: standardmailactionmanager.cpp:333
 #, kde-format
 msgid "Remove Action Item Mark"
-msgstr "移除動作項目標示"
+msgstr "移除動作項目標記"
 
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
 #, kde-format
@@ -480,7 +480,7 @@ msgstr "將郵件標為未讀(&M)"
 #: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "Mark as Unread"
-msgstr "標示為未讀"
+msgstr "標記為未讀"
 
 #: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
 #, kde-format
@@ -490,7 +490,7 @@ msgstr "標記選擇的信件為未讀。"
 #: standardmailactionmanager.cpp:725
 #, kde-format
 msgid "Mark as Important"
-msgstr "標示為重要"
+msgstr "標記為重要"
 
 #: standardmailactionmanager.cpp:726
 #, kde-format
@@ -500,7 +500,7 @@ msgstr "標記選擇的信件為重要。"
 #: standardmailactionmanager.cpp:739
 #, kde-format
 msgid "Mark as Action Item"
-msgstr "標示為動作項目"
+msgstr "標記為動作項目"
 
 #: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
 #, kde-format
