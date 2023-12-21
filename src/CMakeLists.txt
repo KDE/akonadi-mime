@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
-add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime5\")
+add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime6\")
 # generates a D-Bus interface description from a KConfigXT file
 macro(kcfg_generate_dbus_interface _kcfg _name)
     add_custom_command(
