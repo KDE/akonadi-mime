@@ -1,34 +1,44 @@
+# translation of libakonadi-kmime.po to Français
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Joëlle Cornavin <jcornavin@laposte.net>, 2010, 2011.
+# Ludovic Grossard <grossard@kde.org>, 2012, 2014.
+# Geoffray Levasseur <geoffray.levasseurbrandin@numericable.fr>, 2013.
+# xavier <xavier.besnard@kde.org>, 2013, 2021.
+# Vincent Pinon <vpinon@kde.org>, 2017.
+# Simon Depiets <sdepiets@gmail.com>, 2020.
+# Xavier BESNARD <xavier.besnard@kde.org>, 2023.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: akonadi-mime\n"
+"Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2023-12-22 05:30+0100\n"
-"Last-Translator: KDE Francophone <kde-francophone@kde.org>\n"
-"Language-Team: KDE Francophone <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2023-04-04 16:43+0200\n"
+"Last-Translator: Xavier BESNARD <xavier.besnard@kde.org>\n"
+"Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 22.12.3\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgid "Empty Trash"
 msgstr "Vider la corbeille"
 
 #: emptytrashcommand.cpp:47
-#, fuzzy, kde-format
-#| msgid "Are you sure you want to empty the trash folders of all accounts?"
+#, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Voulez-vous vraiment vider les corbeilles de tous les comptes ?"
 
 #: markascommand.cpp:121
-#, fuzzy, kde-format
-#| msgid ""
-#| "Are you sure you want to mark all messages in this folder and all its "
-#| "subfolders?"
+#, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
@@ -37,266 +47,201 @@ msgstr ""
 "sous-dossiers ?"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgid "Mark All Recursively"
 msgstr "Tout marquer récursivement"
 
 #: markascommand.cpp:123
-#, fuzzy, kde-format
-#| msgctxt "@action:button"
-#| msgid "Mark All"
+#, kde-format
 msgctxt "@action:button"
 msgid "Mark All"
 msgstr "Tout marquer"
 
 #: messagemodel.cpp:32
-#, fuzzy
-#| msgctxt "@title:column, message (e.g. email) subject"
-#| msgid "Subject"
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "Objet"
 
 #: messagemodel.cpp:33
-#, fuzzy
-#| msgctxt "@title:column, sender of message (e.g. email)"
-#| msgid "Sender"
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "Expéditeur"
 
 #: messagemodel.cpp:34
-#, fuzzy
-#| msgctxt "@title:column, receiver of message (e.g. email)"
-#| msgid "Receiver"
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "Destinataire"
 
 #: messagemodel.cpp:35
-#, fuzzy
-#| msgctxt "@title:column, message (e.g. email) timestamp"
-#| msgid "Date"
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "Date"
 
 #: messagemodel.cpp:36
-#, fuzzy
-#| msgctxt "@title:column, message (e.g. email) size"
-#| msgid "Size"
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "Taille"
 
 #: messagemodel.cpp:69
-#, fuzzy, kde-format
-#| msgctxt "@label Alternative text when email subject is missing"
-#| msgid "(No subject)"
+#, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "(pas de sujet)"
 
 #: messagemodel.cpp:75
-#, fuzzy, kde-format
-#| msgctxt "@label Alternative text when email sender is missing"
-#| msgid "(No sender)"
+#, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr "(pas d'expéditeur)"
 
 #: messagemodel.cpp:81
-#, fuzzy, kde-format
-#| msgctxt "@label Alternative text when email recipient is missing"
-#| msgid "(No receiver)"
+#, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "(pas de destinataire)"
 
 #: messagemodel.cpp:87
-#, fuzzy, kde-format
-#| msgctxt "@label Alternative text when email date/time is missing"
-#| msgid "(No date)"
+#, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(pas de date)"
 
 #: messagemodel.cpp:91
-#, fuzzy, kde-format
-#| msgctxt "@label No size available"
-#| msgid "-"
+#, kde-format
 msgctxt "@label No size available"
 msgid "-"
 msgstr "-"
 
 #: messagequeuejob.cpp:58
-#, fuzzy, kde-format
-#| msgid "Empty message."
+#, kde-format
 msgid "Empty message."
 msgstr "Message vide."
 
 #: messagequeuejob.cpp:65
-#, fuzzy, kde-format
-#| msgid "Message has no recipients."
+#, kde-format
 msgid "Message has no recipients."
 msgstr "Le message ne possède aucun destinataire."
 
 #: messagequeuejob.cpp:72
-#, fuzzy, kde-format
-#| msgid "Message has invalid sent-mail folder."
+#, kde-format
 msgid "Message has invalid sent-mail folder."
 msgstr "Le message possède un dossier non valable d'envoi de messagerie."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items..."
 msgstr "Réception des éléments..."
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates..."
 msgstr "Recherche de doublons..."
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates..."
 msgstr "Suppression des doublons..."
 
 #: specialmailcollections.cpp:122
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "inbox"
+#, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "boîte de réception"
 
 #: specialmailcollections.cpp:125
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "outbox"
+#, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "boîte d'envoi"
 
 #: specialmailcollections.cpp:128
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "sent-mail"
+#, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "messages envoyés"
 
 #: specialmailcollections.cpp:131
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "trash"
+#, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "corbeille"
 
 #: specialmailcollections.cpp:134
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "drafts"
+#, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "brouillons"
 
 #: specialmailcollections.cpp:137
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "templates"
+#, kde-format
 msgctxt "local mail folder"
 msgid "templates"
 msgstr "modèles"
 
 #: specialmailcollectionsrequestjob.cpp:46
-#, fuzzy, kde-format
-#| msgctxt "local mail folder"
-#| msgid "Local Folders"
+#, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"
 msgstr "Dossiers locaux"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder..."
 msgstr "Ajouter un dossier..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
-#, fuzzy, kde-format
-#| msgid "Add a new folder to the currently selected account."
+#, kde-format
 msgid "Add a new folder to the currently selected account."
 msgstr "Ajoute un nouveau dossier au compte actuellement sélectionné."
 
 #: standardmailactionmanager.cpp:123
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "New Folder"
+#, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nouveau dossier"
 
 #: standardmailactionmanager.cpp:127
-#, fuzzy, kde-format
-#| msgid "Could not create folder: %1"
+#, kde-format
 msgid "Could not create folder: %1"
 msgstr "Impossible de créer le dossier : %1"
 
 #: standardmailactionmanager.cpp:129
-#, fuzzy, kde-format
-#| msgid "Folder creation failed"
+#, kde-format
 msgid "Folder creation failed"
 msgstr "La création du dossier a échoué"
 
 #: standardmailactionmanager.cpp:133
-#, fuzzy, kde-format
-#| msgid "Copy Folder"
-#| msgid_plural "Copy %1 Folders"
+#, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
 msgstr[0] "Copier un dossier"
 msgstr[1] "Copier %1 dossiers"
 
 #: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
-#, fuzzy, kde-format
-#| msgid "Copy the selected folders to the clipboard."
+#, kde-format
 msgid "Copy the selected folders to the clipboard."
 msgstr "Copie les dossiers sélectionnés dans le presse-papier."
 
 #: standardmailactionmanager.cpp:138
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Properties of Folder %1"
+#, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "Propriétés du dossier %1"
 
 #: standardmailactionmanager.cpp:141
-#, fuzzy, kde-format
-#| msgid "Delete Folder"
-#| msgid_plural "Delete %1 Folders"
+#, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
 msgstr[0] "Supprimer un dossier"
 msgstr[1] "Supprimer %1 dossiers"
 
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
-#, fuzzy, kde-format
-#| msgid "Delete the selected folders from the account."
+#, kde-format
 msgid "Delete the selected folders from the account."
 msgstr "Supprimer du compte les dossiers sélectionnés."
 
 #: standardmailactionmanager.cpp:146
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete this folder and all its sub-folders?"
-#| msgid_plural ""
-#| "Do you really want to delete %1 folders and all their sub-folders?"
+#, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
 "Do you really want to delete %1 folders and all their sub-folders?"
@@ -306,10 +251,7 @@ msgstr[1] ""
 "Voulez-vous vraiment supprimer %1 dossiers et tous leurs sous-dossiers ?"
 
 #: standardmailactionmanager.cpp:151
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Delete folder?"
-#| msgid_plural "Delete folders?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
 msgid_plural "Delete folders?"
@@ -317,105 +259,84 @@ msgstr[0] "Supprimer un dossier ?"
 msgstr[1] "Supprimer des dossiers ?"
 
 #: standardmailactionmanager.cpp:155
-#, fuzzy, kde-format
-#| msgid "Could not delete folder: %1"
+#, kde-format
 msgid "Could not delete folder: %1"
 msgstr "Impossible de supprimer un dossier : %1"
 
 #: standardmailactionmanager.cpp:157
-#, fuzzy, kde-format
-#| msgid "Folder deletion failed"
+#, kde-format
 msgid "Folder deletion failed"
 msgstr "La suppression du dossier a échoué"
 
 #: standardmailactionmanager.cpp:161
-#, fuzzy, kde-format
-#| msgid "Update Folder"
-#| msgid_plural "Update Folders"
+#, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
 msgstr[0] "Mettre à jour le dossier"
 msgstr[1] "Mettre à jour des dossiers"
 
 #: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
-#, fuzzy, kde-format
-#| msgid "Update the contents of the selected folders."
+#, kde-format
 msgid "Update the contents of the selected folders."
 msgstr "Met à jour le contenu des dossiers sélectionnés."
 
 #: standardmailactionmanager.cpp:167
-#, fuzzy, kde-format
-#| msgid "Cut Folder"
-#| msgid_plural "Cut %1 Folders"
+#, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
 msgstr[0] "Copier un dossier"
 msgstr[1] "Copier %1 dossiers"
 
 #: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
-#, fuzzy, kde-format
-#| msgid "Cut the selected folders from the account."
+#, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "Coupe du compte les dossiers sélectionnés."
 
 #: standardmailactionmanager.cpp:172
-#, fuzzy, kde-format
-#| msgid "Folder Properties"
+#, kde-format
 msgid "Folder Properties"
 msgstr "Propriétés du dossier"
 
 #: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
-#, fuzzy, kde-format
-#| msgid "Open a dialog to edit the properties of the selected folder."
+#, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr ""
 "Ouvrir une boîte de dialogue pour modifier les propriétés du dossier "
 "sélectionné."
 
 #: standardmailactionmanager.cpp:179
-#, fuzzy, kde-format
-#| msgid "Copy Message"
-#| msgid_plural "Copy %1 Messages"
+#, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "Copier le message"
 msgstr[1] "Copier %1 messages"
 
 #: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
-#, fuzzy, kde-format
-#| msgid "Copy the selected messages to the clipboard."
+#, kde-format
 msgid "Copy the selected messages to the clipboard."
 msgstr "Copie les messages sélectionnés dans le presse-papier."
 
 #: standardmailactionmanager.cpp:184
-#, fuzzy, kde-format
-#| msgid "Delete Message"
-#| msgid_plural "Delete %1 Messages"
+#, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
 msgstr[0] "Effacer un message"
 msgstr[1] "Supprimer %1 messages"
 
 #: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
-#, fuzzy, kde-format
-#| msgid "Delete the selected messages from the folder."
+#, kde-format
 msgid "Delete the selected messages from the folder."
 msgstr "Supprime du dossier les messages sélectionnés."
 
 #: standardmailactionmanager.cpp:189
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete the selected message?"
-#| msgid_plural "Do you really want to delete %1 messages?"
+#, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
 msgstr[0] "Voulez-vous vraiment supprimer le message sélectionné ?"
 msgstr[1] "Voulez-vous vraiment supprimer %1 messages ?"
 
 #: standardmailactionmanager.cpp:193
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Delete Message?"
-#| msgid_plural "Delete Messages?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
 msgid_plural "Delete Messages?"
@@ -423,43 +344,34 @@ msgstr[0] "Supprimer le message ?"
 msgstr[1] "Supprimer les messages ?"
 
 #: standardmailactionmanager.cpp:195
-#, fuzzy, kde-format
-#| msgid "Could not delete message: %1"
+#, kde-format
 msgid "Could not delete message: %1"
 msgstr "Impossible de supprimer un message : %1"
 
 #: standardmailactionmanager.cpp:197
-#, fuzzy, kde-format
-#| msgid "Message deletion failed"
+#, kde-format
 msgid "Message deletion failed"
 msgstr "La suppression du message a échoué"
 
 #: standardmailactionmanager.cpp:200
-#, fuzzy, kde-format
-#| msgid "Cut Message"
-#| msgid_plural "Cut %1 Messages"
+#, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "Couper un message"
 msgstr[1] "Couper %1 messages"
 
 #: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
-#, fuzzy, kde-format
-#| msgid "Cut the selected message from the folder."
+#, kde-format
 msgid "Cut the selected message from the folder."
 msgstr "Coupe du dossier les messages sélectionnés."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgid "Add &Account..."
+#, kde-format
 msgid "Add &Account..."
 msgstr "&Ajouter un compte..."
 
 #: standardmailactionmanager.cpp:207
-#, fuzzy, kde-format
-#| msgid ""
-#| "Add a new account<p>You will be presented with a dialog where you can "
-#| "select the type of the account that shall be added.</p>"
+#, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
@@ -468,39 +380,30 @@ msgstr ""
 "vous pouvez sélectionner le type du compte devant être ajouté.</p>"
 
 #: standardmailactionmanager.cpp:210
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "Ajouter un compte"
 
 #: standardmailactionmanager.cpp:214
-#, fuzzy, kde-format
-#| msgid "Could not create account: %1"
+#, kde-format
 msgid "Could not create account: %1"
 msgstr "Impossible de créer un compte : %1"
 
 #: standardmailactionmanager.cpp:216
-#, fuzzy, kde-format
-#| msgid "Account creation failed"
+#, kde-format
 msgid "Account creation failed"
 msgstr "La création du compte a échoué"
 
 #: standardmailactionmanager.cpp:219
-#, fuzzy, kde-format
-#| msgid "&Delete Account"
-#| msgid_plural "&Delete %1 Accounts"
+#, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
 msgstr[0] "&Supprimer un compte"
 msgstr[1] "&Supprimer %1 comptes"
 
 #: standardmailactionmanager.cpp:221
-#, fuzzy, kde-format
-#| msgid ""
-#| "Delete the selected accounts<p>The currently selected accounts will be "
-#| "deleted, along with all the messages they contain.</p>"
+#, kde-format
 msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
@@ -509,19 +412,14 @@ msgstr ""
 "seront supprimés, ainsi que tous les messages qu'ils contiennent.</p>"
 
 #: standardmailactionmanager.cpp:226
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete this account?"
-#| msgid_plural "Do you really want to delete %1 accounts?"
+#, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
 msgstr[0] "Voulez-vous vraiment supprimer ce compte ?"
 msgstr[1] "Voulez-vous vraiment supprimer %1 comptes ?"
 
 #: standardmailactionmanager.cpp:230
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Delete Account?"
-#| msgid_plural "Delete Accounts?"
+#, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
@@ -529,294 +427,244 @@ msgstr[0] "Supprimer le compte ?"
 msgstr[1] "Supprimer les comptes ?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties..."
 msgstr "Propriétés du compte..."
 
 #: standardmailactionmanager.cpp:235
-#, fuzzy, kde-format
-#| msgid "Open a dialog to edit properties of the selected account."
+#, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr ""
 "Ouvre une boîte de dialogue pour modifier les propriétés du compte "
 "sélectionné."
 
 #: standardmailactionmanager.cpp:238
-#, fuzzy, kde-format
-#| msgid "Update Account"
-#| msgid_plural "Update %1 Accounts"
+#, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
 msgstr[0] "Mettre à jour un compte"
 msgstr[1] "Mettre à jour %1 comptes"
 
 #: standardmailactionmanager.cpp:240
-#, fuzzy, kde-format
-#| msgid "Updates the content of all folders of the selected accounts."
+#, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr "Met à jour le contenu de tous les dossiers des comptes sélectionnés."
 
 #: standardmailactionmanager.cpp:244
-#, fuzzy, kde-format
-#| msgid "Update This Folder and All Its Subfolders"
-#| msgid_plural "Update These Folders and All Their Subfolders"
+#, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
 msgstr[0] "Mettre à jour ce dossier et tous ses sous-dossiers"
 msgstr[1] "Mettre à jour ces dossiers et tous leurs sous-dossiers"
 
 #: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
-#, fuzzy, kde-format
-#| msgid ""
-#| "Update the contents of the selected folders and all their subfolders."
+#, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr ""
 "Met à jour le contenu des dossiers sélectionnés et tous leurs sous-dossiers."
 
 #: standardmailactionmanager.cpp:252
-#, fuzzy, kde-format
-#| msgid "Could not paste message: %1"
+#, kde-format
 msgid "Could not paste message: %1"
 msgstr "Impossible de coller un message : %1"
 
 #: standardmailactionmanager.cpp:254
-#, fuzzy, kde-format
-#| msgid "Paste failed"
+#, kde-format
 msgid "Paste failed"
 msgstr "Le collage a échoué"
 
 #: standardmailactionmanager.cpp:320
-#, fuzzy, kde-format
-#| msgid "Remove Important Mark"
+#, kde-format
 msgid "Remove Important Mark"
 msgstr "Retirer la marque « Important »"
 
 #: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
-#, fuzzy, kde-format
-#| msgid "&Mark Message as Important"
+#, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Marquer le message comme « Important »"
 
 #: standardmailactionmanager.cpp:333
-#, fuzzy, kde-format
-#| msgid "Remove Action Item Mark"
+#, kde-format
 msgid "Remove Action Item Mark"
 msgstr "Retirer la marque « Action à effectuer »"
 
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
-#, fuzzy, kde-format
-#| msgid "&Mark Message as Action Item"
+#, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Marque le message comme « Action à effectuer »"
 
 #: standardmailactionmanager.cpp:694
-#, fuzzy, kde-format
-#| msgid "&Mark Message as Read"
+#, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Marquer le message comme « Lu »"
 
 #: standardmailactionmanager.cpp:695
-#, fuzzy, kde-format
-#| msgid "Mark as Read"
+#, kde-format
 msgid "Mark as Read"
 msgstr "Marquer comme « Lu »"
 
 #: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
-#, fuzzy, kde-format
-#| msgid "Mark selected messages as read."
+#, kde-format
 msgid "Mark selected messages as read."
 msgstr "Marquer les messages sélectionnés comme « Lu »."
 
 #: standardmailactionmanager.cpp:709
-#, fuzzy, kde-format
-#| msgid "&Mark Message as Unread"
+#, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Marquer le message comme « Non lu »"
 
 #: standardmailactionmanager.cpp:710
-#, fuzzy, kde-format
-#| msgid "Mark as Unread"
+#, kde-format
 msgid "Mark as Unread"
 msgstr "Marquer comme « Non lu »"
 
 #: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
-#, fuzzy, kde-format
-#| msgid "Mark selected messages as unread."
+#, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Marquer les messages sélectionnés comme « Non lu »"
 
 #: standardmailactionmanager.cpp:725
-#, fuzzy, kde-format
-#| msgid "Mark as Important"
+#, kde-format
 msgid "Mark as Important"
 msgstr "Marquer comme « Important »"
 
 #: standardmailactionmanager.cpp:726
-#, fuzzy, kde-format
-#| msgid "Mark selected messages as important."
+#, kde-format
 msgid "Mark selected messages as important."
 msgstr "Marquer les messages sélectionnés comme « Important »"
 
 #: standardmailactionmanager.cpp:739
-#, fuzzy, kde-format
-#| msgid "Mark as Action Item"
+#, kde-format
 msgid "Mark as Action Item"
 msgstr "Marquer comme « Action à effectuer »"
 
 #: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
-#, fuzzy, kde-format
-#| msgid "Mark selected messages as action items."
+#, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Marquer les messages sélectionnés comme « Action à effectuer »"
 
 #: standardmailactionmanager.cpp:752
-#, fuzzy, kde-format
-#| msgid "Mark &All Messages as Read"
+#, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Marquer tous les mess&ages comme « Lu »"
 
 #: standardmailactionmanager.cpp:753
-#, fuzzy, kde-format
-#| msgid "Mark All as Read"
+#, kde-format
 msgid "Mark All as Read"
 msgstr "Tout marquer comme « Lu »"
 
 #: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
-#, fuzzy, kde-format
-#| msgid "Mark all messages as read."
+#, kde-format
 msgid "Mark all messages as read."
 msgstr "Marquer tous les messages comme « Lu »."
 
 #: standardmailactionmanager.cpp:766
-#, fuzzy, kde-format
-#| msgid "Mark &All Messages as Read Recursively"
+#, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Marquer tous les mess&ages comme « Lu » récursivement"
 
 #: standardmailactionmanager.cpp:767
-#, fuzzy, kde-format
-#| msgid "Mark All as Read Recursively"
+#, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Tout marquer comme « Lu » récursivement"
 
 #: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
-#, fuzzy, kde-format
-#| msgid "Mark all messages as read recursively."
+#, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Marquer tous les messages comme « Lu » récursivement."
 
 #: standardmailactionmanager.cpp:780
-#, fuzzy, kde-format
-#| msgid "Mark &All Messages as Unread"
+#, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "M&arquer tous les messages comme « Non lu »"
 
 #: standardmailactionmanager.cpp:781
-#, fuzzy, kde-format
-#| msgid "Mark All as Unread"
+#, kde-format
 msgid "Mark All as Unread"
 msgstr "Tout marquer comme « Non lu »"
 
 #: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
-#, fuzzy, kde-format
-#| msgid "Mark all messages as unread."
+#, kde-format
 msgid "Mark all messages as unread."
 msgstr "Marquer tous les messages comme « Non lu »."
 
 #: standardmailactionmanager.cpp:794
-#, fuzzy, kde-format
-#| msgid "Mark &All Messages as Important"
+#, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "M&arquer tous les messages comme « Important »"
 
 #: standardmailactionmanager.cpp:795
-#, fuzzy, kde-format
-#| msgid "Mark All as Important"
+#, kde-format
 msgid "Mark All as Important"
 msgstr "Tout marquer comme « Important »"
 
 #: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
-#, fuzzy, kde-format
-#| msgid "Mark all messages as important."
+#, kde-format
 msgid "Mark all messages as important."
 msgstr "Marquer tous les messages comme « Important »."
 
 #: standardmailactionmanager.cpp:807
-#, fuzzy, kde-format
-#| msgid "Mark All as Action Item"
+#, kde-format
 msgid "Mark All as Action Item"
 msgstr "Tout marquer comme « Action à effectuer »"
 
 #: standardmailactionmanager.cpp:808
-#, fuzzy, kde-format
-#| msgid "Mark &All Messages as Action Item"
+#, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "M&arquer tous les messages comme « Action à effectuer »"
 
 #: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
-#, fuzzy, kde-format
-#| msgid "Mark all messages as action items."
+#, kde-format
 msgid "Mark all messages as action items."
 msgstr "Marquer tous les messages comme « Action à effectuer »."
 
 #: standardmailactionmanager.cpp:822
-#, fuzzy, kde-format
-#| msgid "Move to &Trash"
+#, kde-format
 msgid "Move to &Trash"
 msgstr "Me&ttre à la corbeille"
 
 #: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
-#, fuzzy, kde-format
-#| msgid "Move selected messages to the trash folder."
+#, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Déplace les messages sélectionnés dans la corbeille."
 
 #: standardmailactionmanager.cpp:835
-#, fuzzy, kde-format
-#| msgid "Move All to &Trash"
+#, kde-format
 msgid "Move All to &Trash"
 msgstr "Tout me&ttre à la corbeille"
 
 #: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
-#, fuzzy, kde-format
-#| msgid "Move all messages to the trash folder."
+#, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Déplace tous les messages dans la corbeille."
 
 #: standardmailactionmanager.cpp:846
-#, fuzzy, kde-format
-#| msgid "Remove &Duplicate Messages"
+#, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Supprimer les messages &dupliqués"
 
 #: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
-#, fuzzy, kde-format
-#| msgid "Remove duplicate messages."
+#, kde-format
 msgid "Remove duplicate messages."
 msgstr "Supprimer les messages dupliqués."
 
 #: standardmailactionmanager.cpp:858
-#, fuzzy, kde-format
-#| msgid "Empty All &Trash Folders"
+#, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Vider &toutes les corbeilles"
 
 #: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
-#, fuzzy, kde-format
-#| msgid "Permanently delete all messages from all trash folders."
+#, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Effacer définitivement tous les messages de toutes les corbeilles."
 
 #: standardmailactionmanager.cpp:869
-#, fuzzy, kde-format
-#| msgid "E&mpty Trash"
+#, kde-format
 msgid "E&mpty Trash"
 msgstr "V&ider une corbeille"
 
 #: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
-#, fuzzy, kde-format
-#| msgid "Permanently delete all messages from the trash folder."
+#, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Efface définitivement tous les messages de la corbeille."
 
