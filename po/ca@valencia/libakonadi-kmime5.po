@@ -214,7 +214,7 @@ msgstr[1] "Copia %1 carpetes"
 #: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
-msgstr "Copia les carpetes seleccionades al porta-retalls."
+msgstr "Copia les carpetes seleccionades a dins del porta-retalls."
 
 #: standardmailactionmanager.cpp:138
 #, kde-format
@@ -305,7 +305,7 @@ msgstr[1] "Copia %1 missatges"
 #: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
-msgstr "Copia els missatges seleccionats al porta-retalls."
+msgstr "Copia els missatges seleccionats a dins del porta-retalls."
 
 #: standardmailactionmanager.cpp:184
 #, kde-format
@@ -622,7 +622,7 @@ msgstr "Mou els missatges seleccionats cap a la carpeta paperera."
 #: standardmailactionmanager.cpp:835
 #, kde-format
 msgid "Move All to &Trash"
-msgstr "Mou-ho tot a la &paperera"
+msgstr "Mou-ho tot cap a dins de la &paperera"
 
 #: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
 #, kde-format
