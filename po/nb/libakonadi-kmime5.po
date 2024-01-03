@@ -1,4 +1,4 @@
-# Translation of libakonadi-kmime5 to Norwegian Bokmål
+# Translation of libakonadi-kmime6 to Norwegian Bokmål
 #
 # Bjørn Steensrud <bjornst@skogkatt.homelinux.org>, 2010, 2012, 2013, 2014.
 msgid ""
