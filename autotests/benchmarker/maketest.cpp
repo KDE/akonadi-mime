@@ -45,9 +45,9 @@ void MakeTest::createAgent(const QString &name)
 
 void MakeTest::configureDBusIface(const QString &name, const QString &dir)
 {
-    auto configIface = new QDBusInterface(QLatin1String("org.freedesktop.Akonadi.Resource.") + currentInstance.identifier(),
+    auto configIface = new QDBusInterface(QLatin1StringView("org.freedesktop.Akonadi.Resource.") + currentInstance.identifier(),
                                           QStringLiteral("/Settings"),
-                                          QLatin1String("org.kde.Akonadi.") + name + QLatin1String(".Settings"),
+                                          QLatin1StringView("org.kde.Akonadi.") + name + QLatin1String(".Settings"),
                                           QDBusConnection::sessionBus(),
                                           this);
 
@@ -81,7 +81,7 @@ void MakeTest::instanceStatusChanged(const AgentInstance &instance)
 
 void MakeTest::outputStats(const QString &description)
 {
-    output(description + QLatin1String("\t\t") + currentAccount + QLatin1String("\t\t") + QString::number(timer.elapsed()) + QLatin1Char('\n'));
+    output(description + QLatin1StringView("\t\t") + currentAccount + QLatin1String("\t\t") + QString::number(timer.elapsed()) + QLatin1Char('\n'));
 }
 
 void MakeTest::output(const QString &message)

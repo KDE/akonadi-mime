@@ -449,7 +449,7 @@ public:
         }
 
         Akonadi::MessageStatus targetStatus;
-        targetStatus.setStatusFromStr(QLatin1String(typeStr));
+        targetStatus.setStatusFromStr(QLatin1StringView(typeStr));
 
         StandardMailActionManager::Type type = StandardMailActionManager::MarkMailAsRead;
         if (typeStr == "U") {
@@ -489,7 +489,7 @@ public:
         qCDebug(AKONADIMIME_LOG) << "Mark all as: " << typeStr;
 
         Akonadi::MessageStatus targetStatus;
-        targetStatus.setStatusFromStr(QLatin1String(typeStr));
+        targetStatus.setStatusFromStr(QLatin1StringView(typeStr));
 
         bool invert = false;
         if (typeStr.startsWith('!')) {

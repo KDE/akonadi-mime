@@ -62,8 +62,8 @@ void RaceTest::testMultipleProcesses()
     // Remove all maildir instances (at most 1 really) and MDAs (which use LocalFolders).
     // (This is to ensure that one of *our* instances is the main instance.)
     AgentType::List types;
-    types.append(AgentManager::self()->type(QLatin1String("akonadi_maildir_resource")));
-    types.append(AgentManager::self()->type(QLatin1String("akonadi_maildispatcher_agent")));
+    types.append(AgentManager::self()->type(QLatin1StringView("akonadi_maildir_resource")));
+    types.append(AgentManager::self()->type(QLatin1StringView("akonadi_maildispatcher_agent")));
     AgentInstance::List instances = AgentManager::self()->instances();
     for (const AgentInstance &instance : std::as_const(instances)) {
         if (types.contains(instance.type())) {

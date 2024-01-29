@@ -64,7 +64,7 @@ SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *pare
     options.insert(QStringLiteral("Name"), displayNameMap.value("local-mail"));
     options.insert(QStringLiteral("TopLevelIsContainer"), true);
     options.insert(QStringLiteral("Path"),
-                   QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QLatin1String("local-mail")));
+                   QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QLatin1StringView("local-mail")));
 
     setDefaultResourceType(QStringLiteral("akonadi_maildir_resource"));
     setDefaultResourceOptions(options);

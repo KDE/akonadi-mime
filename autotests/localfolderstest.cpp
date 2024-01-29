@@ -48,13 +48,13 @@ void LocalFoldersTest::initTestCase()
     mDisplayNameMap.insert("drafts", i18nc("local mail folder", "drafts"));
     mDisplayNameMap.insert("templates", i18nc("local mail folder", "templates"));
 
-    mIconNameMap.insert("local-mail", QLatin1String("folder"));
-    mIconNameMap.insert("inbox", QLatin1String("mail-folder-inbox"));
-    mIconNameMap.insert("outbox", QLatin1String("mail-folder-outbox"));
-    mIconNameMap.insert("sent-mail", QLatin1String("mail-folder-sent"));
-    mIconNameMap.insert("trash", QLatin1String("user-trash"));
-    mIconNameMap.insert("drafts", QLatin1String("document-properties"));
-    mIconNameMap.insert("templates", QLatin1String("document-new"));
+    mIconNameMap.insert("local-mail", QLatin1StringView("folder"));
+    mIconNameMap.insert("inbox", QLatin1StringView("mail-folder-inbox"));
+    mIconNameMap.insert("outbox", QLatin1StringView("mail-folder-outbox"));
+    mIconNameMap.insert("sent-mail", QLatin1StringView("mail-folder-sent"));
+    mIconNameMap.insert("trash", QLatin1StringView("user-trash"));
+    mIconNameMap.insert("drafts", QLatin1StringView("document-properties"));
+    mIconNameMap.insert("templates", QLatin1StringView("document-new"));
 
     QVERIFY(Control::start());
     QTest::qWait(1000);
@@ -127,7 +127,7 @@ void LocalFoldersTest::testRegistrationErrors()
 
     // A valid collection that can be registered.
     Collection outbox;
-    outbox.setName(QLatin1String("my_outbox"));
+    outbox.setName(QLatin1StringView("my_outbox"));
     outbox.setParentCollection(res1);
     outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
     outbox.setResource(res1.resource());
@@ -177,7 +177,7 @@ void LocalFoldersTest::testDefaultFolderRegistration()
 
     // Manually create an Outbox collection.
     Collection outbox;
-    outbox.setName(QLatin1String("my_outbox"));
+    outbox.setName(QLatin1StringView("my_outbox"));
     outbox.setParentCollection(res1);
     outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
     CollectionCreateJob *cjob = new CollectionCreateJob(outbox, this);
@@ -232,7 +232,7 @@ void LocalFoldersTest::testCustomFolderRegistration()
 
     // Manually create an Outbox collection.
     Collection outbox;
-    outbox.setName(QLatin1String("my_outbox"));
+    outbox.setName(QLatin1StringView("my_outbox"));
     outbox.setParentCollection(res1);
     outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
     CollectionCreateJob *cjob = new CollectionCreateJob(outbox, this);
@@ -290,7 +290,7 @@ void LocalFoldersTest::testCollectionDelete()
 
     // Manually create an Outbox collection.
     Collection outbox;
-    outbox.setName(QLatin1String("my_outbox"));
+    outbox.setName(QLatin1StringView("my_outbox"));
     outbox.setParentCollection(res1);
     outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
     CollectionCreateJob *cjob = new CollectionCreateJob(outbox, this);
@@ -344,7 +344,7 @@ void LocalFoldersTest::testBatchRegister()
 
     // Manually create an Outbox collection.
     Collection outbox;
-    outbox.setName(QLatin1String("my_outbox"));
+    outbox.setName(QLatin1StringView("my_outbox"));
     outbox.setParentCollection(res1);
     outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
     CollectionCreateJob *cjob = new CollectionCreateJob(outbox, this);
@@ -353,7 +353,7 @@ void LocalFoldersTest::testBatchRegister()
 
     // Manually create a Drafts collection.
     Collection drafts;
-    drafts.setName(QLatin1String("my_drafts"));
+    drafts.setName(QLatin1StringView("my_drafts"));
     drafts.setParentCollection(res1);
     drafts.addAttribute(new SpecialCollectionAttribute("drafts"));
     cjob = new CollectionCreateJob(drafts, this);
@@ -425,7 +425,7 @@ void LocalFoldersTest::testResourceScan()
     // Manually create an Outbox collection.
     Collection outbox;
     {
-        outbox.setName(QLatin1String("my_outbox"));
+        outbox.setName(QLatin1StringView("my_outbox"));
         outbox.setParentCollection(res1);
         outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
         CollectionCreateJob *cjob = new CollectionCreateJob(outbox, this);
@@ -436,7 +436,7 @@ void LocalFoldersTest::testResourceScan()
     // Manually create a Drafts collection.
     Collection drafts;
     {
-        drafts.setName(QLatin1String("my_drafts"));
+        drafts.setName(QLatin1StringView("my_drafts"));
         drafts.setParentCollection(res1);
         drafts.addAttribute(new SpecialCollectionAttribute("drafts"));
         CollectionCreateJob *cjob = new CollectionCreateJob(drafts, this);
@@ -447,7 +447,7 @@ void LocalFoldersTest::testResourceScan()
     // Manually create a non-LocalFolder collection.
     Collection intruder;
     {
-        intruder.setName(QLatin1String("intruder"));
+        intruder.setName(QLatin1StringView("intruder"));
         intruder.setParentCollection(res1);
         CollectionCreateJob *cjob = new CollectionCreateJob(intruder, this);
         AKVERIFYEXEC(cjob);
@@ -484,21 +484,22 @@ void LocalFoldersTest::testResourceScan()
 void LocalFoldersTest::testDefaultResourceJob()
 {
     SpecialMailCollectionsTesting *scmt = SpecialMailCollectionsTesting::_t_self();
-    scmt->_t_setDefaultResourceId(QLatin1String("akonadi_maildir_resource"));
+    scmt->_t_setDefaultResourceId(QLatin1StringView("akonadi_maildir_resource"));
 
     // Initially the default maildir does not exist.
-    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
 
     // Run the job.
     Collection maildirRoot;
     QString resourceId;
     {
         DefaultResourceJob *resjob = new DefaultResourceJob(Settings::self(), this);
-        resjob->setDefaultResourceType(QLatin1String("akonadi_maildir_resource"));
+        resjob->setDefaultResourceType(QLatin1StringView("akonadi_maildir_resource"));
 
         QVariantMap options;
-        options.insert(QLatin1String("Name"), i18nc("local mail folder", "Local Folders"));
-        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+        options.insert(QLatin1StringView("Name"), i18nc("local mail folder", "Local Folders"));
+        options.insert(QLatin1StringView("Path"),
+                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -514,12 +515,12 @@ void LocalFoldersTest::testDefaultResourceJob()
     }
 
     // The maildir should exist now.
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
 
     // Create a LocalFolder in the default resource.
     Collection outbox;
     {
-        outbox.setName(QLatin1String("outbox"));
+        outbox.setName(QLatin1StringView("outbox"));
         outbox.setParentCollection(maildirRoot);
         outbox.addAttribute(new SpecialCollectionAttribute("outbox"));
         CollectionCreateJob *cjob = new CollectionCreateJob(outbox, this);
@@ -534,11 +535,12 @@ void LocalFoldersTest::testDefaultResourceJob()
     // Run the job again.
     {
         DefaultResourceJob *resjob = new DefaultResourceJob(Settings::self(), this);
-        resjob->setDefaultResourceType(QLatin1String("akonadi_maildir_resource"));
+        resjob->setDefaultResourceType(QLatin1StringView("akonadi_maildir_resource"));
 
         QVariantMap options;
-        options.insert(QLatin1String("Name"), i18nc("local mail folder", "Local Folders"));
-        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+        options.insert(QLatin1StringView("Name"), i18nc("local mail folder", "Local Folders"));
+        options.insert(QLatin1StringView("Path"),
+                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -557,8 +559,8 @@ void LocalFoldersTest::testRecoverDefaultResource()
 {
     // The maildirs should exist (created in testDefaultResourceJob).
     const QString xdgPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/');
-    const QString rootPath = xdgPath + QLatin1String("local-mail");
-    const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2").arg(QLatin1String("local-mail")).arg(QLatin1String("outbox"));
+    const QString rootPath = xdgPath + QLatin1StringView("local-mail");
+    const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2").arg(QLatin1StringView("local-mail")).arg(QLatin1String("outbox"));
     QVERIFY(QFile::exists(rootPath));
     QVERIFY(QFile::exists(outboxPath));
 
@@ -573,11 +575,12 @@ void LocalFoldersTest::testRecoverDefaultResource()
     // created in testDefaultResourceJob.
     {
         DefaultResourceJob *resjob = new DefaultResourceJob(Settings::self(), this);
-        resjob->setDefaultResourceType(QLatin1String("akonadi_maildir_resource"));
+        resjob->setDefaultResourceType(QLatin1StringView("akonadi_maildir_resource"));
 
         QVariantMap options;
-        options.insert(QLatin1String("Name"), i18nc("local mail folder", "Local Folders"));
-        options.insert(QLatin1String("Path"), QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+        options.insert(QLatin1StringView("Name"), i18nc("local mail folder", "Local Folders"));
+        options.insert(QLatin1StringView("Path"),
+                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -596,7 +599,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
         // The first folder should be the Root.
         {
             Collection col = folders[0];
-            QCOMPARE(col.name(), QLatin1String("Local Folders"));
+            QCOMPARE(col.name(), QLatin1StringView("Local Folders"));
             QVERIFY(col.hasAttribute<SpecialCollectionAttribute>());
             QCOMPARE(col.attribute<SpecialCollectionAttribute>()->collectionType(), QByteArray("local-mail"));
         }
@@ -604,7 +607,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
         // The second folder should be the Outbox.
         {
             Collection col = folders[1];
-            QCOMPARE(col.name(), QLatin1String("outbox"));
+            QCOMPARE(col.name(), QLatin1StringView("outbox"));
             QVERIFY(col.hasAttribute<SpecialCollectionAttribute>());
             QCOMPARE(col.attribute<SpecialCollectionAttribute>()->collectionType(), QByteArray("outbox"));
         }

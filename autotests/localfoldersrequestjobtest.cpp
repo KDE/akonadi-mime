@@ -59,7 +59,7 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
     QVERIFY(defSpy.isValid());
 
     // Initially the default maildir does not exist.
-    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+    QVERIFY(!QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
 
     // Request some default folders.
     {
@@ -77,7 +77,7 @@ void LocalFoldersRequestJobTest::testRequestWithNoDefaultResourceExisting()
     }
 
     // The maildir should exist now.
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
 }
 
 void LocalFoldersRequestJobTest::testRequestWithDefaultResourceAlreadyExisting()
@@ -92,7 +92,7 @@ void LocalFoldersRequestJobTest::testRequestWithDefaultResourceAlreadyExisting()
     QVERIFY(defSpy.isValid());
 
     // Prerequisites (from testRequestWithNoDefaultResourceExisting()).
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
     QVERIFY(!smc->hasDefaultCollection(SpecialMailCollections::Inbox));
     QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));
     const Collection oldOutbox = smc->defaultCollection(SpecialMailCollections::Outbox);
@@ -145,7 +145,7 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     // Create a LocalFolder in the knut resource.
     Collection knutOutbox;
     {
-        knutOutbox.setName(QLatin1String("my_outbox"));
+        knutOutbox.setName(QLatin1StringView("my_outbox"));
         knutOutbox.setParentCollection(res1);
         qDebug() << res1;
         knutOutbox.addAttribute(new SpecialCollectionAttribute("outbox"));
@@ -155,7 +155,7 @@ void LocalFoldersRequestJobTest::testMixedRequest()
     }
 
     // Prerequisites (from the above two functions).
-    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+    QVERIFY(QFile::exists(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
     QVERIFY(!smc->hasDefaultCollection(SpecialMailCollections::SentMail));
     QVERIFY(smc->hasDefaultCollection(SpecialMailCollections::Outbox));
     const Collection oldOutbox = smc->defaultCollection(SpecialMailCollections::Outbox);
