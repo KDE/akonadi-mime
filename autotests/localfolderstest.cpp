@@ -17,6 +17,7 @@
 #include "../src/specialmailcollectionstesting_p.h"
 #include "specialcollectionattribute.h"
 #include "specialcollections.h"
+#include "specialmailcollections.h"
 #include <Akonadi/AgentInstance>
 #include <Akonadi/AgentManager>
 #include <Akonadi/CollectionCreateJob>
@@ -28,7 +29,6 @@
 #include <QStandardPaths>
 #include <akonadi/qtest_akonadi.h>
 #include <control.h>
-#include <specialmailcollections.h>
 
 using namespace Akonadi;
 

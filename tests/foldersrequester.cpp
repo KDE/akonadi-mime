@@ -6,6 +6,8 @@
 
 #include "foldersrequester.h"
 
+#include "specialmailcollections.h"
+#include "specialmailcollectionsrequestjob.h"
 #include <Akonadi/Collection>
 #include <Akonadi/Control>
 #include <KAboutData>
@@ -13,8 +15,6 @@
 #include <QApplication>
 #include <QCommandLineParser>
 #include <QDebug>
-#include <specialmailcollections.h>
-#include <specialmailcollectionsrequestjob.h>
 
 using namespace Akonadi;
 

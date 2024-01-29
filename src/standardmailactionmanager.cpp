@@ -28,8 +28,8 @@
 #include <Akonadi/MimeTypeChecker>
 #include <Akonadi/SubscriptionDialog>
 
+#include "messagestatus.h"
 #include <KMime/KMimeMessage>
-#include <messagestatus.h>
 
 #include <KActionCollection>
 #include <QAction>

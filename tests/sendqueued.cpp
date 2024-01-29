@@ -8,12 +8,12 @@
 
 #include <QApplication>
 
+#include "filteractionjob_p.h"
 #include <Akonadi/Collection>
 #include <Akonadi/Control>
 #include <Akonadi/DispatcherInterface>
 #include <Akonadi/SpecialMailCollections>
 #include <Akonadi/SpecialMailCollectionsRequestJob>
-#include <filteractionjob_p.h>
 
 using namespace Akonadi;
 using namespace Akonadi;

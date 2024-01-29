@@ -5,10 +5,10 @@
 */
 
 #include "messagetest.h"
+#include "messageflags.h"
 #include <Akonadi/Item>
 #include <QFile>
 #include <QTest>
-#include <messageflags.h>
 using namespace KMime;
 
 QTEST_GUILESS_MAIN(MessageTest)
