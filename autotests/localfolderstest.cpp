@@ -499,7 +499,7 @@ void LocalFoldersTest::testDefaultResourceJob()
         QVariantMap options;
         options.insert(QLatin1StringView("Name"), i18nc("local mail folder", "Local Folders"));
         options.insert(QLatin1StringView("Path"),
-                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -540,7 +540,7 @@ void LocalFoldersTest::testDefaultResourceJob()
         QVariantMap options;
         options.insert(QLatin1StringView("Name"), i18nc("local mail folder", "Local Folders"));
         options.insert(QLatin1StringView("Path"),
-                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);
@@ -560,7 +560,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
     // The maildirs should exist (created in testDefaultResourceJob).
     const QString xdgPath = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/');
     const QString rootPath = xdgPath + QLatin1StringView("local-mail");
-    const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2").arg(QLatin1StringView("local-mail")).arg(QLatin1String("outbox"));
+    const QString outboxPath = xdgPath + QString::fromLatin1(".%1.directory/%2").arg(QLatin1StringView("local-mail")).arg(QLatin1StringView("outbox"));
     QVERIFY(QFile::exists(rootPath));
     QVERIFY(QFile::exists(outboxPath));
 
@@ -580,7 +580,7 @@ void LocalFoldersTest::testRecoverDefaultResource()
         QVariantMap options;
         options.insert(QLatin1StringView("Name"), i18nc("local mail folder", "Local Folders"));
         options.insert(QLatin1StringView("Path"),
-                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/local-mail")));
+                       QString(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1StringView("/local-mail")));
         resjob->setDefaultResourceOptions(options);
         resjob->setTypes(mDisplayNameMap.keys());
         resjob->setNameForTypeMap(mDisplayNameMap);

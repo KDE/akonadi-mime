@@ -42,7 +42,7 @@ void MessageTest::testCopyFlags()
 
 KMime::Message::Ptr MessageTest::readAndParseMail(const QString &mailFile) const
 {
-    QFile file(QLatin1StringView(TEST_DATA_DIR) + QLatin1String("/mails/") + mailFile);
+    QFile file(QLatin1StringView(TEST_DATA_DIR) + QLatin1StringView("/mails/") + mailFile);
     const bool ok = file.open(QIODevice::ReadOnly);
     if (!ok) {
         qWarning() << file.fileName() << "not found";
