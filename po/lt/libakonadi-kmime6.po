@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2015-12-29 23:01+0200\n"
+"PO-Revision-Date: 2024-02-05 23:44+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Poedit 3.0.1\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -30,30 +30,27 @@ msgstr "Išvalyti šiukšlinę"
 #: emptytrashcommand.cpp:47
 #, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
-msgstr "Ar tikrai norite ištuštinti šiukšlines visų paskyrų?"
+msgstr "Ar tikrai norite išvalyti visų paskyrų šiukšlinės aplankus?"
 
 #: markascommand.cpp:121
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete this folder and all its sub-folders?"
-#| msgid_plural ""
-#| "Do you really want to delete %1 folders and all their sub-folders?"
+#, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
-msgstr "Ar tikrai norite šalinti šį aplanką ir visus jo poaplankius?"
+msgstr ""
+"Ar tikrai norite žymėti visus el. laiškus šiame aplanke ir visuose jo "
+"poaplankiuose?"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All as Read"
+#, kde-format
 msgid "Mark All Recursively"
-msgstr "Žymėti viską &skaityta"
+msgstr "Žymėti visus kartu su poaplankiais"
 
 #: markascommand.cpp:123
-#, fuzzy, kde-format
-#| msgid "Mark All as Read"
+#, kde-format
 msgctxt "@action:button"
 msgid "Mark All"
-msgstr "Žymėti viską &skaityta"
+msgstr "Žymėti visus"
 
 #: messagemodel.cpp:32
 msgctxt "@title:column, message (e.g. email) subject"
@@ -81,32 +78,28 @@ msgid "Size"
 msgstr "Dydis"
 
 #: messagemodel.cpp:69
-#, fuzzy, kde-format
-#| msgctxt "@title:column, message (e.g. email) subject"
-#| msgid "Subject"
+#, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
-msgstr "Tema"
+msgstr "(Nėra temos)"
 
 #: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
-msgstr ""
+msgstr "(Nėra siuntėjo)"
 
 #: messagemodel.cpp:81
-#, fuzzy, kde-format
-#| msgctxt "@title:column, receiver of message (e.g. email)"
-#| msgid "Receiver"
+#, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
-msgstr "Gavėjas"
+msgstr "(Nėra gavėjo)"
 
 #: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
-msgstr ""
+msgstr "(Nėra datos)"
 
 #: messagemodel.cpp:91
 #, kde-format
@@ -115,21 +108,19 @@ msgid "-"
 msgstr "-"
 
 #: messagequeuejob.cpp:58
-#, fuzzy, kde-format
-#| msgid "Copy Message"
-#| msgid_plural "Copy %1 Messages"
+#, kde-format
 msgid "Empty message."
-msgstr "Kopijuoti laišką"
+msgstr "Tuščias laiškas."
 
 #: messagequeuejob.cpp:65
 #, kde-format
 msgid "Message has no recipients."
-msgstr ""
+msgstr "Laiške nėra gavėjų."
 
 #: messagequeuejob.cpp:72
 #, kde-format
 msgid "Message has invalid sent-mail folder."
-msgstr ""
+msgstr "Laiškas turi neteisingą išsiųstų laiškų aplanką."
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
@@ -150,37 +141,37 @@ msgstr "Šalinami dublikatai..."
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
-msgstr "gaunami"
+msgstr "Gaunami"
 
 #: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
-msgstr "siunčiami"
+msgstr "Išsiunčiami"
 
 #: specialmailcollections.cpp:128
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
-msgstr "išsiųsti laiškai"
+msgstr "Išsiųsti laiškai"
 
 #: specialmailcollections.cpp:131
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
-msgstr "šiukšlinė"
+msgstr "Šiukšlinė"
 
 #: specialmailcollections.cpp:134
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
-msgstr "juodraščiai"
+msgstr "Juodraščiai"
 
 #: specialmailcollections.cpp:137
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
-msgstr "šablonai"
+msgstr "Šablonai"
 
 #: specialmailcollectionsrequestjob.cpp:46
 #, kde-format
@@ -196,7 +187,7 @@ msgstr "Pridėti aplanką..."
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
 msgid "Add a new folder to the currently selected account."
-msgstr "Pridėti naują aplanką į dabar pasirinktą paskyrą."
+msgstr "Pridėti naują aplanką į šiuo metu pasirinktą paskyrą."
 
 #: standardmailactionmanager.cpp:123
 #, kde-format
@@ -226,7 +217,7 @@ msgstr[3] "Kopijuoti %1 aplanką"
 #: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
-msgstr "Kopijuoti parinktus aplankus į iškarpinę."
+msgstr "Kopijuoti pažymėtus aplankus į iškarpinę."
 
 #: standardmailactionmanager.cpp:138
 #, kde-format
@@ -238,45 +229,45 @@ msgstr "Aplanko „%1“ savybės"
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
-msgstr[0] "Pašalinti aplanką"
-msgstr[1] "Pašalinti %1 aplankus"
-msgstr[2] "Pašalinti %1 aplankų"
-msgstr[3] "Pašalinti %1 aplanką"
+msgstr[0] "Ištrinti aplanką"
+msgstr[1] "Ištrinti %1 aplankus"
+msgstr[2] "Ištrinti %1 aplankų"
+msgstr[3] "Ištrinti %1 aplanką"
 
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
 #, kde-format
 msgid "Delete the selected folders from the account."
-msgstr "Pašalinti pažymėtus aplankus iš paskyros."
+msgstr "Ištrinti pažymėtus aplankus iš paskyros."
 
 #: standardmailactionmanager.cpp:146
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
 "Do you really want to delete %1 folders and all their sub-folders?"
-msgstr[0] "Ar tikrai norite šalinti šį aplanką ir visus jo poaplankius?"
-msgstr[1] "Ar tikrai norite šalinti %1 aplankus ir visus jų poaplankius?"
-msgstr[2] "Ar tikrai norite šalinti %1 aplankų ir visus jų poaplankius?"
-msgstr[3] "Ar tikrai norite šalinti %1 aplanką ir visus jų poaplankius?"
+msgstr[0] "Ar tikrai norite ištrinti šį aplanką ir visus jo poaplankius?"
+msgstr[1] "Ar tikrai norite ištrinti %1 aplankus ir visus jų poaplankius?"
+msgstr[2] "Ar tikrai norite ištrinti %1 aplankų ir visus jų poaplankius?"
+msgstr[3] "Ar tikrai norite ištrinti %1 aplanką ir visus jų poaplankius?"
 
 #: standardmailactionmanager.cpp:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
 msgid_plural "Delete folders?"
-msgstr[0] "Pašalinti aplanką?"
-msgstr[1] "Pašalinti aplankus?"
-msgstr[2] "Pašalinti aplankus?"
-msgstr[3] "Pašalinti aplankus?"
+msgstr[0] "Ištrinti aplanką?"
+msgstr[1] "Ištrinti aplankus?"
+msgstr[2] "Ištrinti aplankus?"
+msgstr[3] "Ištrinti aplankus?"
 
 #: standardmailactionmanager.cpp:155
 #, kde-format
 msgid "Could not delete folder: %1"
-msgstr "Nepavyksta pašalinti aplanko %1"
+msgstr "Nepavyko ištrinti aplanko: %1"
 
 #: standardmailactionmanager.cpp:157
 #, kde-format
 msgid "Folder deletion failed"
-msgstr "Aplanko pašalinti nepavyko"
+msgstr "Aplanko ištrinti nepavyko"
 
 #: standardmailactionmanager.cpp:161
 #, kde-format
@@ -307,10 +298,9 @@ msgid "Cut the selected folders from the account."
 msgstr "Iškirpti pažymėtus aplankus iš paskyros."
 
 #: standardmailactionmanager.cpp:172
-#, fuzzy, kde-format
-#| msgid "Folder Properties..."
+#, kde-format
 msgid "Folder Properties"
-msgstr "Aplanko savybės..."
+msgstr "Aplanko savybės"
 
 #: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
 #, kde-format
@@ -329,7 +319,7 @@ msgstr[3] "Kopijuoti %1 laišką"
 #: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
-msgstr "Kopijuoti parinktus el. laiškus į iškarpinę."
+msgstr "Kopijuoti pažymėtus el. laiškus į iškarpinę."
 
 #: standardmailactionmanager.cpp:184
 #, kde-format
@@ -343,16 +333,16 @@ msgstr[3] "Ištrinti %1 laišką"
 #: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
 #, kde-format
 msgid "Delete the selected messages from the folder."
-msgstr "Pašalinti pažymėtus el. laiškus iš aplanko."
+msgstr "Ištrinti pažymėtus el. laiškus iš aplanko."
 
 #: standardmailactionmanager.cpp:189
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
 msgstr[0] "Ar tikrai norite ištrinti pažymėtą el. laišką?"
-msgstr[1] "Ar tikrai norite ištrinti pažymėtus %1 el. laiškus?"
-msgstr[2] "Ar tikrai norite ištrinti pažymėtų %1 el. laiškų?"
-msgstr[3] "Ar tikrai norite ištrinti pažymėtus %1 el. laišką?"
+msgstr[1] "Ar tikrai norite ištrinti %1 pažymėtus el. laiškus?"
+msgstr[2] "Ar tikrai norite ištrinti %1 pažymėtų el. laiškų?"
+msgstr[3] "Ar tikrai norite ištrinti %1 pažymėtą el. laišką?"
 
 #: standardmailactionmanager.cpp:193
 #, kde-format
@@ -360,19 +350,19 @@ msgctxt "@title:window"
 msgid "Delete Message?"
 msgid_plural "Delete Messages?"
 msgstr[0] "Ištrinti laišką?"
-msgstr[1] "Ištrinti laiškus"
-msgstr[2] "Ištrinti laiškus"
-msgstr[3] "Ištrinti laiškus"
+msgstr[1] "Ištrinti laiškus?"
+msgstr[2] "Ištrinti laiškus?"
+msgstr[3] "Ištrinti laiškus?"
 
 #: standardmailactionmanager.cpp:195
 #, kde-format
 msgid "Could not delete message: %1"
-msgstr "Nepavyko pašalinti el. laiško: %1"
+msgstr "Nepavyko ištrinti laiško: %1"
 
 #: standardmailactionmanager.cpp:197
 #, kde-format
 msgid "Message deletion failed"
-msgstr "El. laiško pašalinimas nepavyko"
+msgstr "Laiško ištrinti nepavyko"
 
 #: standardmailactionmanager.cpp:200
 #, kde-format
@@ -391,7 +381,7 @@ msgstr "Iškirpti pažymėtus el. laiškus iš aplanko."
 #: standardmailactionmanager.cpp:205
 #, kde-format
 msgid "Add &Account..."
-msgstr "Pridėti paskyrą..."
+msgstr "Pridėti p&askyrą..."
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -399,8 +389,8 @@ msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr ""
-"Pridėti naują paskyrą<p>Jus pasitiks dialogas kur galėsite pasirinkti tipą "
-"paskyros, kuri turi būti pridėta.</p>"
+"Pridėti naują paskyrą<p>Jums bus pateiktas dialogas, kuriame galėsite "
+"pasirinkti paskyros, kuri turi būti pridėta, tipą.</p>"
 
 #: standardmailactionmanager.cpp:210
 #, kde-format
@@ -411,21 +401,21 @@ msgstr "Pridėti paskyrą"
 #: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Could not create account: %1"
-msgstr "Negalima sukurti paskyros: %1"
+msgstr "Nepavyko sukurti paskyros: %1"
 
 #: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Account creation failed"
-msgstr "Paskyros kūrimas nepavyko"
+msgstr "Paskyros sukūrimas patyrė nesėkmę"
 
 #: standardmailactionmanager.cpp:219
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
-msgstr[0] "Pa&šalinti paskyrą"
-msgstr[1] "Pašalinti %1 paskyras"
-msgstr[2] "Pašalinti %1 paskyrų"
-msgstr[3] "Pašalinti %1 paskyrą"
+msgstr[0] "Iš&trinti paskyrą"
+msgstr[1] "Iš&trinti %1 paskyras"
+msgstr[2] "Iš&trinti %1 paskyrų"
+msgstr[3] "Iš&trinti %1 paskyrą"
 
 #: standardmailactionmanager.cpp:221
 #, kde-format
@@ -433,37 +423,37 @@ msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr ""
-"Šalinti parinktas paskyras<p>Dabar pasirinktos paskyros bus pašalintos, "
-"kartu su visais el. laiškais, kuriuos jos turi.</p>"
+"Ištrinti pažymėtas paskyras<p>Šiuo metu pažymėtos paskyros bus ištrintos "
+"kartu su visais jose esančiais el. laiškais.</p>"
 
 #: standardmailactionmanager.cpp:226
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
-msgstr[0] "Ar tikrai norite pašalinti šią paskyrą?"
-msgstr[1] "Ar tikrai norite pašalinti %1 paskyras?"
-msgstr[2] "Ar tikrai norite pašalinti %1 paskyrų?"
-msgstr[3] "Ar tikrai norite pašalinti %1 paskyrą?"
+msgstr[0] "Ar tikrai norite ištrinti šią paskyrą?"
+msgstr[1] "Ar tikrai norite ištrinti %1 paskyras?"
+msgstr[2] "Ar tikrai norite ištrinti %1 paskyrų?"
+msgstr[3] "Ar tikrai norite ištrinti %1 paskyrą?"
 
 #: standardmailactionmanager.cpp:230
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
-msgstr[0] "Pašalinti paskyrą?"
-msgstr[1] "Pašalinti paskyras?"
-msgstr[2] "Pašalinti paskyras?"
-msgstr[3] "Pašalinti paskyras?"
+msgstr[0] "Ištrinti paskyrą?"
+msgstr[1] "Ištrinti paskyras?"
+msgstr[2] "Ištrinti paskyras?"
+msgstr[3] "Ištrinti paskyras?"
 
 #: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Account Properties..."
-msgstr "Sąskaitos savybės..."
+msgstr "Paskyros savybės..."
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
-msgstr "Atverti dialogą pasirinktos paskyros savybėms keisti."
+msgstr "Atverti dialogą pažymėtoms paskyros savybėms keisti."
 
 #: standardmailactionmanager.cpp:238
 #, kde-format
@@ -477,7 +467,7 @@ msgstr[3] "Atnaujinti %1 paskyrą"
 #: standardmailactionmanager.cpp:240
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
-msgstr "Naujinti visų pasirinktų paskyrų turinį."
+msgstr "Atnaujina pažymėtų paskyrų visų aplankų turinį."
 
 #: standardmailactionmanager.cpp:244
 #, kde-format
@@ -491,12 +481,12 @@ msgstr[3] "Atnaujinti šiuos aplankus ir visus jų poaplankius"
 #: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
-msgstr "Atnaujinti turinį pažymėtų aplankų ir visų jų poaplankių."
+msgstr "Atnaujinti pažymėtų aplankų ir visų jų poaplankių turinį."
 
 #: standardmailactionmanager.cpp:252
 #, kde-format
 msgid "Could not paste message: %1"
-msgstr "Nepavyko įklijuoti el. laiško: %1"
+msgstr "Nepavyko įdėti el. laiško: %1"
 
 #: standardmailactionmanager.cpp:254
 #, kde-format
@@ -506,57 +496,57 @@ msgstr "Įdėti nepavyko"
 #: standardmailactionmanager.cpp:320
 #, kde-format
 msgid "Remove Important Mark"
-msgstr "Naikinti žymę „&Svarbus“"
+msgstr "Šalinti svarbumo žymę"
 
 #: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
 #, kde-format
 msgid "&Mark Message as Important"
-msgstr "Žymėti el. laišką svarbiu"
+msgstr "Ž&ymėti laišką kaip svarbų"
 
 #: standardmailactionmanager.cpp:333
 #, kde-format
 msgid "Remove Action Item Mark"
-msgstr "Pašalinti veiksmo elemento ženkliuką"
+msgstr "Šalinti veiksmo elemento piktogramą"
 
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
 #, kde-format
 msgid "&Mark Message as Action Item"
-msgstr "Žymėti el. laišką kaip veiksmo elementą"
+msgstr "Ž&ymėti laišką kaip veiksmo elementą"
 
 #: standardmailactionmanager.cpp:694
 #, kde-format
 msgid "&Mark Message as Read"
-msgstr "Žymėti el. laišką skaitytu"
+msgstr "Ž&ymėti laišką kaip skaitytą"
 
 #: standardmailactionmanager.cpp:695
 #, kde-format
 msgid "Mark as Read"
-msgstr "Žymėti &skaityta"
+msgstr "Žymėti kaip skaitytą"
 
 #: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
 #, kde-format
 msgid "Mark selected messages as read."
-msgstr "Žymėti pažymėtus el. laiškus skaitytais"
+msgstr "Žymėti pažymėtus el. laiškus skaitytais."
 
 #: standardmailactionmanager.cpp:709
 #, kde-format
 msgid "&Mark Message as Unread"
-msgstr "Žymėti el. laišką neskaitytu"
+msgstr "Ž&ymėti laišką kaip neskaitytą"
 
 #: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "Mark as Unread"
-msgstr "Žymėti &neskaityta"
+msgstr "Žymėti kaip neskaitytą"
 
 #: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
 #, kde-format
 msgid "Mark selected messages as unread."
-msgstr "Žymėti pažymėtus el. laiškus skaitytais"
+msgstr "Žymėti pažymėtus el. laiškus neskaitytais."
 
 #: standardmailactionmanager.cpp:725
 #, kde-format
 msgid "Mark as Important"
-msgstr "Žymėti s&varbiu"
+msgstr "Žymėti kaip svarbų"
 
 #: standardmailactionmanager.cpp:726
 #, kde-format
@@ -571,65 +561,62 @@ msgstr "Žymėti kaip veiksmo elementą"
 #: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
 #, kde-format
 msgid "Mark selected messages as action items."
-msgstr "Žymėti pažymėtus el. laiškus veiksmo elementais."
+msgstr "Žymėti pažymėtus el. laiškus kaip veiksmo elementus."
 
 #: standardmailactionmanager.cpp:752
 #, kde-format
 msgid "Mark &All Messages as Read"
-msgstr "Žymėti &visus el. laiškus skaitytais"
+msgstr "Žymėti &visus laiškus kaip skaitytus"
 
 #: standardmailactionmanager.cpp:753
 #, kde-format
 msgid "Mark All as Read"
-msgstr "Žymėti viską &skaityta"
+msgstr "Žymėti visus kaip skaitytus"
 
 #: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
 #, kde-format
 msgid "Mark all messages as read."
-msgstr "Žymėti pažymėtus el. laiškus skaitytais."
+msgstr "Žymėti visus el. laiškus skaitytais."
 
 #: standardmailactionmanager.cpp:766
-#, fuzzy, kde-format
-#| msgid "Mark &All Messages as Read"
+#, kde-format
 msgid "Mark &All Messages as Read Recursively"
-msgstr "Žymėti &visus el. laiškus skaitytais"
+msgstr "Žymėti &visus laiškus kartu su poaplankiais kaip skaitytus"
 
 #: standardmailactionmanager.cpp:767
-#, fuzzy, kde-format
-#| msgid "Mark All as Read"
+#, kde-format
 msgid "Mark All as Read Recursively"
-msgstr "Žymėti viską &skaityta"
+msgstr "Žymėti visus kartu su poaplankiais kaip skaitytus"
 
 #: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
-#, fuzzy, kde-format
-#| msgid "Mark all messages as read."
+#, kde-format
 msgid "Mark all messages as read recursively."
-msgstr "Žymėti pažymėtus el. laiškus skaitytais."
+msgstr "Žymėti visus el. laiškus kartu su poaplankiais skaitytais."
 
 #: standardmailactionmanager.cpp:780
 #, kde-format
 msgid "Mark &All Messages as Unread"
-msgstr "Žymėti &visus el. laiškus neskaitytais"
+msgstr "Žymėti &visus laiškus kaip neskaitytus"
 
 #: standardmailactionmanager.cpp:781
 #, kde-format
 msgid "Mark All as Unread"
-msgstr "Žymėti viską &neskaityta"
+msgstr "Žymėti visus kaip neskaitytus"
 
 #: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
 #, kde-format
 msgid "Mark all messages as unread."
-msgstr "Žymėti pažymėtus el. laiškus neskaitytais."
+msgstr "Žymėti visus el. laiškus neskaitytais."
 
 #: standardmailactionmanager.cpp:794
 #, kde-format
 msgid "Mark &All Messages as Important"
-msgstr "Žymėti &visus el. laiškus svarbiais"
+msgstr "Žymėti &visus el. laiškus kaip svarbius"
 
 #: standardmailactionmanager.cpp:795
 #, kde-format
 msgid "Mark All as Important"
-msgstr "Žymėti visus svarbiais"
+msgstr "Žymėti visus kaip svarbius"
 
 #: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
 #, kde-format
@@ -649,32 +636,32 @@ msgstr "Žymėti &visus el. laiškus kaip veiksmo elementus"
 #: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark all messages as action items."
-msgstr "Žymėti pažymėtus el. laiškus veiksmo elementais."
+msgstr "Žymėti visus el. laiškus veiksmo elementais."
 
 #: standardmailactionmanager.cpp:822
 #, kde-format
 msgid "Move to &Trash"
-msgstr "Perkelti į šiukšlinę"
+msgstr "Perkelti į ši&ukšlinę"
 
 #: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
 #, kde-format
 msgid "Move selected messages to the trash folder."
-msgstr "Perkelti pažymėtus laiškus į šiukšlinės aplanką."
+msgstr "Perkelti pažymėtus el. laiškus į šiukšlinės aplanką."
 
 #: standardmailactionmanager.cpp:835
 #, kde-format
 msgid "Move All to &Trash"
-msgstr "Perkelti viską į &šiukšlinę"
+msgstr "Perkelti visus į ši&ukšlinę"
 
 #: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
 #, kde-format
 msgid "Move all messages to the trash folder."
-msgstr "Perkelti visus laiškus į šiukšlinės aplanką."
+msgstr "Perkelti visus el. laiškus į šiukšlinės aplanką."
 
 #: standardmailactionmanager.cpp:846
 #, kde-format
 msgid "Remove &Duplicate Messages"
-msgstr "Pašalinti dubliuotus laiškus"
+msgstr "Šalinti &dubliuotus laiškus"
 
 #: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
 #, kde-format
@@ -684,23 +671,22 @@ msgstr "Pašalinti dubliuotus laiškus."
 #: standardmailactionmanager.cpp:858
 #, kde-format
 msgid "Empty All &Trash Folders"
-msgstr "Ištuštinti visus šiukšlinių aplankus"
+msgstr "Išvalyti visus šiukšlinių aplankus"
 
 #: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
-msgstr ""
-"Visam laikui pašalinti visus ištrintus laiškus iš visų šiukšlinių aplankų."
+msgstr "Visam laikui ištrinti visus laiškus iš visų šiukšlinių aplankų."
 
 #: standardmailactionmanager.cpp:869
 #, kde-format
 msgid "E&mpty Trash"
-msgstr "Iš&tuštinti šiukšlinę"
+msgstr "Iš&valyti šiukšlinę"
 
 #: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
-msgstr "Visam laikui pašalinti visus ištrintus laiškus iš šiukšlinės aplanko."
+msgstr "Visam laikui ištrinti visus laiškus iš šiukšlinės aplanko."
 
 #~ msgctxt "@label"
 #~ msgid ""
