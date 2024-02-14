@@ -15,7 +15,6 @@
 #include <Akonadi/AgentType>
 #include <akonadi/qtest_akonadi.h>
 #include <control.h>
-//#include <localfolders.h>
 
 #define TIMEOUT_SECONDS 20
 #define MAXCOUNT 10
