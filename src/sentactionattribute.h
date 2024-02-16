@@ -123,12 +123,12 @@ public:
     /**
      * Returns the list of actions.
      */
-    Action::List actions() const;
+    [[nodiscard]] Action::List actions() const;
 
     /* reimpl */
     SentActionAttribute *clone() const override;
-    QByteArray type() const override;
-    QByteArray serialized() const override;
+    [[nodiscard]] QByteArray type() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
 private:

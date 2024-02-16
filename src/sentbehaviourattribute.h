@@ -51,15 +51,15 @@ public:
 
     /* reimpl */
     SentBehaviourAttribute *clone() const override;
-    QByteArray type() const override;
-    QByteArray serialized() const override;
+    [[nodiscard]] QByteArray type() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
     /**
       Returns the sent-behaviour of the message.
       @see SentBehaviour.
     */
-    SentBehaviour sentBehaviour() const;
+    [[nodiscard]] SentBehaviour sentBehaviour() const;
 
     /**
       Sets the sent-behaviour of the message.
@@ -72,7 +72,7 @@ public:
       Returns the collection to which the item should be moved after it is sent.
       Only valid if sentBehaviour() is MoveToCollection.
     */
-    Akonadi::Collection moveToCollection() const;
+    [[nodiscard]] Akonadi::Collection moveToCollection() const;
 
     /**
       Sets the collection to which the item should be moved after it is sent.
@@ -86,7 +86,7 @@ public:
      * Returns whether a notification should be shown after the email is sent.
      * @since 5.4
      */
-    bool sendSilently() const;
+    [[nodiscard]] bool sendSilently() const;
 
     /**
      * Set whether a notification should be shown after the email is sent.

@@ -65,7 +65,7 @@ public:
     /**
      * Reimplemented from Attribute
      */
-    QByteArray type() const override;
+    [[nodiscard]] QByteArray type() const override;
 
     /**
      * Reimplemented from Attribute
@@ -75,7 +75,7 @@ public:
     /**
      * Reimplemented from Attribute
      */
-    QByteArray serialized() const override;
+    [[nodiscard]] QByteArray serialized() const override;
 
     /**
      * Reimplemented from Attribute
@@ -90,7 +90,7 @@ public:
     /**
      * Returns the MDN state.
      */
-    MDNStateAttribute::MDNSentState mdnState() const;
+    [[nodiscard]] MDNStateAttribute::MDNSentState mdnState() const;
 
     bool operator==(const MDNStateAttribute &other) const;
 

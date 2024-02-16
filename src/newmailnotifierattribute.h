@@ -23,11 +23,11 @@ public:
 
     /* reimpl */
     NewMailNotifierAttribute *clone() const override;
-    QByteArray type() const override;
-    QByteArray serialized() const override;
+    [[nodiscard]] QByteArray type() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
-    bool ignoreNewMail() const;
+    [[nodiscard]] bool ignoreNewMail() const;
     void setIgnoreNewMail(bool b);
     bool operator==(const NewMailNotifierAttribute &other) const;
 

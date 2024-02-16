@@ -47,7 +47,7 @@ public:
 
       @return true if the folder contains outbound messages
     */
-    bool isOutboundFolder() const;
+    [[nodiscard]] bool isOutboundFolder() const;
 
     /**
       Set if the folder should be considered as containing mostly outbound messages.
@@ -55,9 +55,9 @@ public:
     void setOutboundFolder(bool outbound);
 
     // reimpl.
-    QByteArray type() const override;
+    [[nodiscard]] QByteArray type() const override;
     MessageFolderAttribute *clone() const override;
-    QByteArray serialized() const override;
+    [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
 private:
