@@ -79,12 +79,12 @@ public:
         /**
          * Returns the type of the action.
          */
-        Type type() const;
+        [[nodiscard]] Type type() const;
 
         /**
          * Returns the argument value of the action.
          */
-        QVariant value() const;
+        [[nodiscard]] QVariant value() const;
 
         /**
          * @internal

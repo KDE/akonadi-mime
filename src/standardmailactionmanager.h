@@ -115,13 +115,13 @@ public:
      * Returns the action of the given type, 0 if it has not been created (yet).
      * @param type action type
      */
-    QAction *action(Type type) const;
+    [[nodiscard]] QAction *action(Type type) const;
 
     /**
      * Returns the action of the given type, 0 if it has not been created (yet).
      * @param type action type
      */
-    QAction *action(StandardActionManager::Type type) const;
+    [[nodiscard]] QAction *action(StandardActionManager::Type type) const;
 
     /**
      * Sets the label of the action @p type to @p text, which is used during
@@ -191,7 +191,7 @@ public:
 
     void setCollectionPropertiesPageNames(const QStringList &names);
 
-    Akonadi::StandardActionManager *standardActionManager() const;
+    [[nodiscard]] Akonadi::StandardActionManager *standardActionManager() const;
 
     void markItemsAs(const QByteArray &typeStr, const Akonadi::Item::List &items, bool checkIntercept = true);
     void markAllItemsAs(const QByteArray &typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true);
