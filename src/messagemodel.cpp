@@ -15,7 +15,7 @@
 
 #include <KLocalizedString>
 
-#include <KIO/Global>
+#include <KFormat>
 #include <QLocale>
 
 #include <KLazyLocalizedString>
@@ -90,7 +90,8 @@ QVariant MessageModel::entityData(const Item &item, int column, int role) const
             if (item.size() == 0) {
                 return i18nc("@label No size available", "-");
             } else {
-                return KIO::convertSize(item.size());
+                KFormat format;
+                return format.formatByteSize(item.size());
             }
         default:
             return {};
