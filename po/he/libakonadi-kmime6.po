@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2024-03-19 08:41+0200\n"
+"PO-Revision-Date: 2024-03-22 08:30+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -187,156 +187,176 @@ msgstr "הוספת תיקייה חדשה לחשבון הנבחר."
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
-msgstr ""
+msgstr "תיקייה חדשה"
 
 #: standardmailactionmanager.cpp:127
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr ""
+msgstr "לא ניתן ליצור את התיקייה: %1"
 
 #: standardmailactionmanager.cpp:129
 #, kde-format
 msgid "Folder creation failed"
-msgstr ""
+msgstr "יצירת התיקייה נכשלה"
 
 #: standardmailactionmanager.cpp:133
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "העתקת התיקייה"
+msgstr[1] "העתקת שתי התיקיות"
+msgstr[2] "העתקת %1 התיקיות"
+msgstr[3] "העתקת %1 התיקיות"
 
 #: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
-msgstr ""
+msgstr "העתקת התיקיות הנבחרות ללוח הגזירים."
 
 #: standardmailactionmanager.cpp:138
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
-msgstr ""
+msgstr "מאפייני התיקייה %1"
 
 #: standardmailactionmanager.cpp:141
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "מחיקת התיקייה"
+msgstr[1] "מחיקת שתי התיקיות"
+msgstr[2] "מחיקת %1 התיקיות"
+msgstr[3] "מחיקת %1 התיקיות"
 
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
 #, kde-format
 msgid "Delete the selected folders from the account."
-msgstr ""
+msgstr "מחיקת התיקיות הנבחרות מהחשבון."
 
 #: standardmailactionmanager.cpp:146
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
 "Do you really want to delete %1 folders and all their sub-folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "למחוק את התיקייה על תת־תיקיותיה?"
+msgstr[1] "למחוק את שתי התיקיות על תת־תיקיותיהן?"
+msgstr[2] "למחוק את %1 התיקיות על תת־תיקיותיהן?"
+msgstr[3] "למחוק את %1 התיקיות על תת־תיקיותיהן?"
 
 #: standardmailactionmanager.cpp:151
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
 msgid_plural "Delete folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "למחוק את התיקייה?"
+msgstr[1] "למחוק את התיקיות?"
+msgstr[2] "למחוק את התיקיות?"
+msgstr[3] "למחוק את התיקיות?"
 
 #: standardmailactionmanager.cpp:155
 #, kde-format
 msgid "Could not delete folder: %1"
-msgstr ""
+msgstr "לא ניתן למחוק את התיקייה: %1"
 
 #: standardmailactionmanager.cpp:157
 #, kde-format
 msgid "Folder deletion failed"
-msgstr ""
+msgstr "מחיקת התיקייה נכשלה"
 
 #: standardmailactionmanager.cpp:161
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "עדכון התיקייה"
+msgstr[1] "עדכון התיקיות"
+msgstr[2] "עדכון התיקיות"
+msgstr[3] "עדכון התיקיות"
 
 #: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
 #, kde-format
 msgid "Update the contents of the selected folders."
-msgstr ""
+msgstr "עדכון תוכן התיקיות הנבחרות."
 
 #: standardmailactionmanager.cpp:167
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "גזירת התיקייה"
+msgstr[1] "גזירת  שתי התיקיות"
+msgstr[2] "גזירת %1 התיקיות"
+msgstr[3] "גזירת %1 התיקיות"
 
 #: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
 #, kde-format
 msgid "Cut the selected folders from the account."
-msgstr ""
+msgstr "לגזור את התיקיות הנבחרות מהחשבון."
 
 #: standardmailactionmanager.cpp:172
 #, kde-format
 msgid "Folder Properties"
-msgstr ""
+msgstr "מאפייני התיקייה"
 
 #: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
-msgstr ""
+msgstr "פתיחת חלונית לעריכת המאפיינים של התיקייה הנבחרת."
 
 #: standardmailactionmanager.cpp:179
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "העתקת ההודעה"
+msgstr[1] "העתקת שתי הודעות"
+msgstr[2] "העתקת %1 הודעות"
+msgstr[3] "העתקת %1 הודעות"
 
 #: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
-msgstr ""
+msgstr "העתקת ההודעות הנבחרות ללוח הגזירים."
 
 #: standardmailactionmanager.cpp:184
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "מחיקת ההודעה"
+msgstr[1] "מחיקת שתי ההודעות"
+msgstr[2] "מחיקת %1 ההודעות"
+msgstr[3] "מחיקת %1 ההודעות"
 
 #: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
 #, kde-format
 msgid "Delete the selected messages from the folder."
-msgstr ""
+msgstr "מחיקת ההודעות הנבחרות מהתיקייה."
 
 #: standardmailactionmanager.cpp:189
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "למחוק את ההודעה הנבחרת?"
+msgstr[1] "למחוק את שתי ההודעות הנבחרות?"
+msgstr[2] "למחוק את %1 ההודעות הנבחרות?"
+msgstr[3] "למחוק את %1 ההודעות הנבחרות?"
 
 #: standardmailactionmanager.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
 msgid_plural "Delete Messages?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "למחוק את ההודעה?"
+msgstr[1] "למחוק את ההודעות?"
+msgstr[2] "למחוק את ההודעות?"
+msgstr[3] "למחוק את ההודעות?"
 
 #: standardmailactionmanager.cpp:195
 #, kde-format
 msgid "Could not delete message: %1"
-msgstr ""
+msgstr "לא ניתן למחוק את ההודעה: %1"
 
 #: standardmailactionmanager.cpp:197
 #, kde-format
 msgid "Message deletion failed"
-msgstr ""
+msgstr "מחיקת ההודעה נכשלה"
 
 #: standardmailactionmanager.cpp:200
 #, kde-format
@@ -344,6 +364,8 @@ msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
 #, kde-format
@@ -353,30 +375,30 @@ msgstr ""
 #: standardmailactionmanager.cpp:205
 #, kde-format
 msgid "Add &Account..."
-msgstr ""
+msgstr "הוספת &חשבון…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
-msgstr ""
+msgstr "הוספת חשבון חדש<p>תוצג חלונית בה ניתן לבחור את סוג החשבון להוספה.</p>"
 
 #: standardmailactionmanager.cpp:210
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
-msgstr ""
+msgstr "הוספת חשבון"
 
 #: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Could not create account: %1"
-msgstr ""
+msgstr "לא ניתן ליצור חשבון: %1"
 
 #: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Account creation failed"
-msgstr ""
+msgstr "יצירת החשבון נכשלה"
 
 #: standardmailactionmanager.cpp:219
 #, kde-format
@@ -384,6 +406,8 @@ msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: standardmailactionmanager.cpp:221
 #, kde-format
@@ -398,6 +422,8 @@ msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: standardmailactionmanager.cpp:230
 #, kde-format
@@ -406,11 +432,13 @@ msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Account Properties..."
-msgstr ""
+msgstr "מאפייני חשבון…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
@@ -423,6 +451,8 @@ msgid "Update Account"
 msgid_plural "Update %1 Accounts"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: standardmailactionmanager.cpp:240
 #, kde-format
@@ -435,36 +465,38 @@ msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
 
 #: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
-msgstr ""
+msgstr "עדכון תוכן התיקיות הנבחרות וכל תת־התיקיות שלהן."
 
 #: standardmailactionmanager.cpp:252
 #, kde-format
 msgid "Could not paste message: %1"
-msgstr ""
+msgstr "לא ניתן להדביק הודעה: %1"
 
 #: standardmailactionmanager.cpp:254
 #, kde-format
 msgid "Paste failed"
-msgstr ""
+msgstr "ההדבקה נכשלה"
 
 #: standardmailactionmanager.cpp:320
 #, kde-format
 msgid "Remove Important Mark"
-msgstr ""
+msgstr "הסרת סימון חשוב"
 
 #: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
 #, kde-format
 msgid "&Mark Message as Important"
-msgstr ""
+msgstr "&סימון ההודעה כחשובה"
 
 #: standardmailactionmanager.cpp:333
 #, kde-format
 msgid "Remove Action Item Mark"
-msgstr ""
+msgstr "הסרת סימון פריט משימה"
 
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
 #, kde-format
@@ -584,64 +616,64 @@ msgstr ""
 #: standardmailactionmanager.cpp:807
 #, kde-format
 msgid "Mark All as Action Item"
-msgstr ""
+msgstr "סימון כל פריטי המשימה"
 
 #: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark &All Messages as Action Item"
-msgstr ""
+msgstr "סימון כל ההודעות כ&פריטי משימה"
 
 #: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark all messages as action items."
-msgstr ""
+msgstr "סימון כל ההודעות כפריטי משימה."
 
 #: standardmailactionmanager.cpp:822
 #, kde-format
 msgid "Move to &Trash"
-msgstr ""
+msgstr "העברה ל&אשפה"
 
 #: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
 #, kde-format
 msgid "Move selected messages to the trash folder."
-msgstr ""
+msgstr "העברת ההודעות הנבחרות לתיקיית האשפה."
 
 #: standardmailactionmanager.cpp:835
 #, kde-format
 msgid "Move All to &Trash"
-msgstr ""
+msgstr "העברה של ה&כול לאשפה"
 
 #: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
 #, kde-format
 msgid "Move all messages to the trash folder."
-msgstr ""
+msgstr "העברת כל ההודעות לתיקיית האשפה."
 
 #: standardmailactionmanager.cpp:846
 #, kde-format
 msgid "Remove &Duplicate Messages"
-msgstr ""
+msgstr "הסרת הודעות &כפולות"
 
 #: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
 #, kde-format
 msgid "Remove duplicate messages."
-msgstr ""
+msgstr "הסרת הודעות כפולות."
 
 #: standardmailactionmanager.cpp:858
 #, kde-format
 msgid "Empty All &Trash Folders"
-msgstr ""
+msgstr "פינוי כל &תיקיות האשפה"
 
 #: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
-msgstr ""
+msgstr "למחוק לצמיתות את כל ההודעות מכל תיקיות האשפה."
 
 #: standardmailactionmanager.cpp:869
 #, kde-format
 msgid "E&mpty Trash"
-msgstr ""
+msgstr "&פינוי האשפה"
 
 #: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
-msgstr ""
+msgstr "למחוק לצמיתות את כל ההודעות מתיקיית האשפה."
