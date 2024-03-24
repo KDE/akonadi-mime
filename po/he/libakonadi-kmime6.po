@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2024-03-22 08:30+0200\n"
+"PO-Revision-Date: 2024-03-23 14:03+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -362,15 +362,15 @@ msgstr "מחיקת ההודעה נכשלה"
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "גזירת ההודעה"
+msgstr[1] "גזירת שתי הודעות"
+msgstr[2] "גזירת %1 הודעות"
+msgstr[3] "גזירת %1 הודעות"
 
 #: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
 #, kde-format
 msgid "Cut the selected message from the folder."
-msgstr ""
+msgstr "גזירת ההודעה הנבחרת מהתיקייה."
 
 #: standardmailactionmanager.cpp:205
 #, kde-format
@@ -404,10 +404,10 @@ msgstr "יצירת החשבון נכשלה"
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "מ&חיקת חשבון"
+msgstr[1] "מ&חיקת שני חשבונות"
+msgstr[2] "מ&חיקת %1 חשבונות"
+msgstr[3] "מ&חיקת %1 חשבונות"
 
 #: standardmailactionmanager.cpp:221
 #, kde-format
@@ -415,25 +415,27 @@ msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr ""
+"מחיקת החשבונות הנבחרים<p>החשבונות הנבחרים יימחקו, על כל ההודעות שהם מכילים.</"
+"p>"
 
 #: standardmailactionmanager.cpp:226
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "למחוק את החשבון הזה?"
+msgstr[1] "למחוק את שני החשבונות האלה?"
+msgstr[2] "למחוק את %1 החשבונות האלה?"
+msgstr[3] "למחוק את %1 החשבונות האלה?"
 
 #: standardmailactionmanager.cpp:230
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "למחוק את החשבון?"
+msgstr[1] "למחוק את החשבונות?"
+msgstr[2] "למחוק את החשבונות?"
+msgstr[3] "למחוק את החשבונות?"
 
 #: standardmailactionmanager.cpp:233
 #, kde-format
@@ -443,30 +445,30 @@ msgstr "מאפייני חשבון…"
 #: standardmailactionmanager.cpp:235
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
-msgstr ""
+msgstr "יש לפתוח את החלונית כדי לערוך את מאפייני החשבון הנבחר."
 
 #: standardmailactionmanager.cpp:238
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "עדכון חשבון"
+msgstr[1] "עדכון שני חשבונות"
+msgstr[2] "עדכון %1 חשבונות"
+msgstr[3] "עדכון %1 חשבונות"
 
 #: standardmailactionmanager.cpp:240
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
-msgstr ""
+msgstr "מעדכן את תוכן כל התיקיות בחשבון הנבחר."
 
 #: standardmailactionmanager.cpp:244
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "עדכון התיקייה הזאת על תת־תיקיותיה"
+msgstr[1] "עדכון התיקיות האלו על תת־תיקיותיהן"
+msgstr[2] "עדכון התיקיות האלו על תת־תיקיותיהן"
+msgstr[3] "עדכון התיקיות האלו על תת־תיקיותיהן"
 
 #: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
 #, kde-format
@@ -501,57 +503,57 @@ msgstr "הסרת סימון פריט משימה"
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
 #, kde-format
 msgid "&Mark Message as Action Item"
-msgstr ""
+msgstr "&סימון ההודעה כפריט משימה"
 
 #: standardmailactionmanager.cpp:694
 #, kde-format
 msgid "&Mark Message as Read"
-msgstr ""
+msgstr "&סימון ההודעה כנקראה"
 
 #: standardmailactionmanager.cpp:695
 #, kde-format
 msgid "Mark as Read"
-msgstr ""
+msgstr "סימון כנקראה"
 
 #: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
 #, kde-format
 msgid "Mark selected messages as read."
-msgstr ""
+msgstr "סימון ההודעה הנבחרת כנקראה."
 
 #: standardmailactionmanager.cpp:709
 #, kde-format
 msgid "&Mark Message as Unread"
-msgstr ""
+msgstr "&סימון ההודעה כלא נקראה"
 
 #: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "Mark as Unread"
-msgstr ""
+msgstr "סימון כלא נקראה"
 
 #: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
 #, kde-format
 msgid "Mark selected messages as unread."
-msgstr ""
+msgstr "סימון ההודעה הנבחרת כלא נקראה."
 
 #: standardmailactionmanager.cpp:725
 #, kde-format
 msgid "Mark as Important"
-msgstr ""
+msgstr "סימון כחשובה"
 
 #: standardmailactionmanager.cpp:726
 #, kde-format
 msgid "Mark selected messages as important."
-msgstr ""
+msgstr "סימון ההודעות הנבחרות כחשובות."
 
 #: standardmailactionmanager.cpp:739
 #, kde-format
 msgid "Mark as Action Item"
-msgstr ""
+msgstr "סימון כפריט משימה"
 
 #: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
 #, kde-format
 msgid "Mark selected messages as action items."
-msgstr ""
+msgstr "סימון ההודעות הנבחרות כפריטי משימה."
 
 #: standardmailactionmanager.cpp:752
 #, kde-format
