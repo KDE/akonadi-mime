@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-09-21 00:45+0000\n"
-"PO-Revision-Date: 2024-03-23 14:03+0200\n"
+"PO-Revision-Date: 2024-03-24 10:30+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -558,62 +558,62 @@ msgstr "סימון ההודעות הנבחרות כפריטי משימה."
 #: standardmailactionmanager.cpp:752
 #, kde-format
 msgid "Mark &All Messages as Read"
-msgstr ""
+msgstr "סימון &כל ההודעות כנקראו"
 
 #: standardmailactionmanager.cpp:753
 #, kde-format
 msgid "Mark All as Read"
-msgstr ""
+msgstr "סימון הכול כנקראו"
 
 #: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
 #, kde-format
 msgid "Mark all messages as read."
-msgstr ""
+msgstr "סימון כל ההודעות כנקראו."
 
 #: standardmailactionmanager.cpp:766
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
-msgstr ""
+msgstr "סימון &כל ההודעות כנקראו בנסיגה"
 
 #: standardmailactionmanager.cpp:767
 #, kde-format
 msgid "Mark All as Read Recursively"
-msgstr ""
+msgstr "סימון הכול כנקראו בנסיגה"
 
 #: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
 #, kde-format
 msgid "Mark all messages as read recursively."
-msgstr ""
+msgstr "סימון כל ההודעות כנקראו בנסיגה."
 
 #: standardmailactionmanager.cpp:780
 #, kde-format
 msgid "Mark &All Messages as Unread"
-msgstr ""
+msgstr "סימון &כל ההודעות כלא נקראו"
 
 #: standardmailactionmanager.cpp:781
 #, kde-format
 msgid "Mark All as Unread"
-msgstr ""
+msgstr "סימון הכול כלא נקראו"
 
 #: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
 #, kde-format
 msgid "Mark all messages as unread."
-msgstr ""
+msgstr "סימון כל ההודעות כלא נקראו."
 
 #: standardmailactionmanager.cpp:794
 #, kde-format
 msgid "Mark &All Messages as Important"
-msgstr ""
+msgstr "סימון &כל ההודעות כחשובות"
 
 #: standardmailactionmanager.cpp:795
 #, kde-format
 msgid "Mark All as Important"
-msgstr ""
+msgstr "סימון הכול כחשובות"
 
 #: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
 #, kde-format
 msgid "Mark all messages as important."
-msgstr ""
+msgstr "סימון כל ההודעות כחשובות."
 
 #: standardmailactionmanager.cpp:807
 #, kde-format
