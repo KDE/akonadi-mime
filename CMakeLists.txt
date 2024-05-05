@@ -67,7 +67,7 @@ set_package_properties(LibXslt PROPERTIES
 ########### Targets ###########
 
 add_definitions(-DQT_NO_CONTEXTLESS_CONNECT)
-ecm_set_disabled_deprecation_versions(QT 6.6
+ecm_set_disabled_deprecation_versions(QT 6.7
      KF 6.2.0
 )
 
