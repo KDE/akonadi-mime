@@ -65,7 +65,7 @@ MessageQueuer::MessageQueuer()
     b = new QPushButton(QStringLiteral("Send &Queued"), this);
     vbox->addWidget(b);
     connect(b, &QPushButton::clicked, this, &MessageQueuer::sendQueuedClicked);
-    b = new QPushButton(QStringLiteral("Send on &Date..."), this);
+    b = new QPushButton(QStringLiteral("Send on &Date…"), this);
     vbox->addWidget(b);
     connect(b, &QPushButton::clicked, this, &MessageQueuer::sendOnDateClicked);
 }

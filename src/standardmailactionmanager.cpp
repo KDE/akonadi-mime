@@ -116,7 +116,7 @@ public:
         switch (type) {
         case Akonadi::StandardActionManager::CreateCollection: {
             QAction *act = mGenericManager->action(Akonadi::StandardActionManager::CreateCollection);
-            act->setText(i18n("Add Folder..."));
+            act->setText(i18n("Add Folder…"));
             act->setWhatsThis(i18n("Add a new folder to the currently selected account."));
             setHelpText(act, i18n("Add a new folder to the currently selected account."));
 
@@ -202,7 +202,7 @@ public:
             setHelpText(mGenericManager->action(Akonadi::StandardActionManager::CutItems), i18n("Cut the selected message from the folder."));
             break;
         case Akonadi::StandardActionManager::CreateResource:
-            mGenericManager->action(Akonadi::StandardActionManager::CreateResource)->setText(i18n("Add &Account..."));
+            mGenericManager->action(Akonadi::StandardActionManager::CreateResource)->setText(i18n("Add &Account…"));
             mGenericManager->action(Akonadi::StandardActionManager::CreateResource)
                 ->setWhatsThis(i18n("Add a new account<p>"
                                     "You will be presented with a dialog where you can select "
@@ -230,7 +230,7 @@ public:
                                             ki18ncp("@title:window", "Delete Account?", "Delete Accounts?"));
             break;
         case Akonadi::StandardActionManager::ResourceProperties:
-            mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)->setText(i18n("Account Properties..."));
+            mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)->setText(i18n("Account Properties…"));
             mGenericManager->action(Akonadi::StandardActionManager::ResourceProperties)
                 ->setWhatsThis(i18n("Open a dialog to edit properties of the selected account."));
             break;
