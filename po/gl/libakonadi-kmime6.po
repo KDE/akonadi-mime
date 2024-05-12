@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-06-24 10:34+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -121,18 +121,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "O cartafol de saída da mensaxe é incorrecto."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Obtendo os elementos…"
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Buscando duplicados…"
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Retirando duplicados…"
 
 #: specialmailcollections.cpp:122
@@ -178,8 +181,9 @@ msgid "Local Folders"
 msgstr "Cartafoles locais"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Engadir un cartafol…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -357,9 +361,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Recortar do cartafol as mensaxes escollidas."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Eng&adir unha conta…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Engadir unha conta"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -418,8 +424,9 @@ msgstr[0] "Eliminar esta conta?"
 msgstr[1] "Eliminar estas contas?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Propiedades da conta…"
 
 #: standardmailactionmanager.cpp:235
@@ -659,6 +666,9 @@ msgstr "&Baleirar o lixo"
 msgid "Permanently delete all messages from the trash folder."
 msgstr ""
 "Eliminar permanentemente todas as mensaxes eliminadas do cartafol de lixo."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Eng&adir unha conta…"
 
 #~ msgctxt "@label"
 #~ msgid ""

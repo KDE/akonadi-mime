@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-04-06 09:44+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -120,18 +120,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "الرسالة لديها مجلد إرسال غير صحيح."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "يجلب العناصر..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "يبحث عن التكرارات..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "يزيل التكرارات..."
 
 #: specialmailcollections.cpp:122
@@ -177,8 +180,9 @@ msgid "Local Folders"
 msgstr "المجلدات المحليّة"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "أضف مجلدًا..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -398,9 +402,11 @@ msgid "Cut the selected message from the folder."
 msgstr "قصّ الرسالة المحدّدة من المجلد."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "أضف &حسابًا..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "أضف حسابًا"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -470,8 +476,9 @@ msgstr[4] "هل احذف الحسابات؟"
 msgstr[5] "هل احذف الحسابات؟"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "خصائص الحساب..."
 
 #: standardmailactionmanager.cpp:235
@@ -715,6 +722,9 @@ msgstr "أ&فرغ المهملات"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "أزل كلّ الرسائل من مجلدات المهملات للأبد"
+
+#~ msgid "Add &Account..."
+#~ msgstr "أضف &حسابًا..."
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

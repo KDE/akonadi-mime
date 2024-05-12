@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-04-03 11:20+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -122,19 +122,22 @@ msgid "Message has invalid sent-mail folder."
 msgstr "El missatge té una carpeta no vàlida de correu enviat."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
-msgstr "S'estan recuperant elements..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
+msgstr "S'estan recuperant elements…"
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
-msgstr "S'estan buscant els duplicats..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
+msgstr "S'estan buscant els duplicats…"
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
-msgstr "S'estan eliminant els duplicats..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
+msgstr "S'estan eliminant els duplicats…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -179,9 +182,10 @@ msgid "Local Folders"
 msgstr "Carpetes locals"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
-msgstr "Afig una carpeta..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
+msgstr "Afig una carpeta…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -357,9 +361,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Retalla els missatges seleccionats de la carpeta."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Afi&g un compte..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Afig un compte"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -418,9 +424,10 @@ msgstr[0] "Voleu suprimir el compte?"
 msgstr[1] "Voleu suprimir els comptes?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
-msgstr "Propietats del compte..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
+msgstr "Propietats del compte…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
@@ -659,3 +666,6 @@ msgstr "Buida la &paperera"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Suprimix permanentment tots els missatges de la carpeta paperera."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Afi&g un compte…"

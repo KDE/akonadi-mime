@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-07-30 10:37+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -118,18 +118,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Brevet har ogiltig korg för skickade brev."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Hämtar objekt..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Söker efter dubbletter..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Ta bort dubbletter..."
 
 #: specialmailcollections.cpp:122
@@ -175,8 +178,9 @@ msgid "Local Folders"
 msgstr "Lokala korgar"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Lägg till korg..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -353,9 +357,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Klipp ut markerade brev från korgen."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Lägg till &konto..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Lägg till konto"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -414,8 +420,9 @@ msgstr[0] "Ta bort konto?"
 msgstr[1] "Ta bort konton?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Kontoegenskaper..."
 
 #: standardmailactionmanager.cpp:235
@@ -652,6 +659,9 @@ msgstr "Töm &papperskorgen"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Ta bort alla brev från papperskorgen permanent."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Lägg till &konto..."
 
 #~ msgctxt "@label"
 #~ msgid ""

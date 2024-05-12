@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2014-08-14 00:08+0200\n"
 "Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
 "Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
@@ -130,18 +130,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr ""
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Indrääg warrt haalt..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Bi to söken na Dubbels ..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Bi to Dubbels wegmaken..."
 
 #: specialmailcollections.cpp:122
@@ -187,8 +190,9 @@ msgid "Local Folders"
 msgstr "Lokale Ornern"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Orner tofögen..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -367,9 +371,11 @@ msgid "Cut the selected message from the folder."
 msgstr "De utsöchten Narichten ut den Orner knippen"
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Konto &tofögen..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Konto tofögen"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -428,8 +434,9 @@ msgstr[0] "Konto wegmaken?"
 msgstr[1] "Kontos wegmaken?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Konto-Egenschappen..."
 
 #: standardmailactionmanager.cpp:235
@@ -670,6 +677,9 @@ msgstr "Affalltünn &leddig maken"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "All Narichten duerhaftig ut de Affalltünn wegmaken"
+
+#~ msgid "Add &Account..."
+#~ msgstr "Konto &tofögen..."
 
 #~ msgctxt "@label"
 #~ msgid ""

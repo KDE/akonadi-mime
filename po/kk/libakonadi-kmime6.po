@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2013-07-11 04:17+0600\n"
 "Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
 "Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
@@ -127,18 +127,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr ""
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Аталымдарды өндіріп алу"
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Қайталанғандарды іздеу"
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Қайталанғандарды өшіру..."
 
 #: specialmailcollections.cpp:122
@@ -184,8 +187,9 @@ msgid "Local Folders"
 msgstr "Жергілікті қапшықтар"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Қапшықты қосу..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -351,9 +355,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Қапшықтан таңдалған хаттарды қиып алу."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Тіркелгіні қ&осу.."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Тіркелгіні қосу"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -409,8 +415,9 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "Тіркелгілер өшірілсін бе?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Тіркелгінің қа&сиеттері..."
 
 #: standardmailactionmanager.cpp:235
@@ -649,6 +656,9 @@ msgstr "Шелегін б&осату"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Бүкіл хаттарды шелегінен мүлдем өшіру."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Тіркелгіні қ&осу.."
 
 #~ msgctxt "@label"
 #~ msgid ""

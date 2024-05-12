@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-04-12 12:52+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -122,18 +122,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Viestillä on virheellinen lähtevän postin kansio."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Noudetaan kohteita…"
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Etsitään kaksoiskappaleita…"
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Poistetaan kaksoiskappaleita…"
 
 # Oletan, että inbox...templates viittaavat IMAP-kansionnimiin, joita ei ole mielekästä lokalisoida
@@ -180,8 +183,9 @@ msgid "Local Folders"
 msgstr "Paikalliset kansiot"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Lisää kansio…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -357,9 +361,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Leikkaa valitut viestit leikepöydälle."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Lisää &tili…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Lisää tili"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -417,8 +423,9 @@ msgstr[0] "Poistetaanko tili?"
 msgstr[1] "Poistetaanko tilit?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Tilin ominaisuudet…"
 
 #: standardmailactionmanager.cpp:235
@@ -654,6 +661,9 @@ msgstr "T&yhjennä roskakori"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Poista kaikki viestit roskakorikansiosta pysyvästi."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Lisää &tili…"
 
 #~ msgctxt "@label"
 #~ msgid ""

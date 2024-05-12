@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2016-04-11 00:10+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -128,18 +128,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr ""
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Добављам ставке..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Тражим дупликате..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Уклањам дупликате..."
 
 #: specialmailcollections.cpp:122
@@ -185,8 +188,9 @@ msgid "Local Folders"
 msgstr "Локалне фасцикле"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Додај фасциклу..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -384,9 +388,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Исијеца изабране поруке из фасцикле."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Додај &налог..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Додавање налога"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -451,8 +457,9 @@ msgstr[2] "Обрисати налоге?"
 msgstr[3] "Обрисати налог?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Својства налога..."
 
 #: standardmailactionmanager.cpp:235
@@ -692,3 +699,6 @@ msgstr "&Испразни смеће"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Трајно уклони све поруке из фасцикле смећа"
+
+#~ msgid "Add &Account..."
+#~ msgstr "Додај &налог..."

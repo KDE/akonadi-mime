@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2020-03-31 10:41+0300\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -120,18 +120,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr ""
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Elementide tõmbamine..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Duplikaatide otsing..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Duplikaatide eemaldamine..."
 
 #: specialmailcollections.cpp:122
@@ -177,8 +180,9 @@ msgid "Local Folders"
 msgstr "Kohalikud kaustad"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Lisa kaust..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -354,9 +358,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Valitud kirja lõikamine kaustast."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Lis&a konto..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Konto lisamine"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -415,8 +421,9 @@ msgstr[0] "Kas kustutada konto?"
 msgstr[1] "Kas kustutada kontod?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Konto omadused..."
 
 #: standardmailactionmanager.cpp:235
@@ -652,6 +659,9 @@ msgstr "Tühjenda &prügikast"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Kõigi kirjade jäädav kustutamine prügikastist."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Lis&a konto..."
 
 #~ msgctxt "@label"
 #~ msgid ""

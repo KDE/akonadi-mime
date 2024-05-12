@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2024-01-27 18:10+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -124,18 +124,21 @@ msgstr "Для письма указана недопустимая папка �
 
 # BUGME: are these always email messages? --aspotashev
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Получение писем..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Поиск дубликатов..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Удаление дубликатов..."
 
 #: specialmailcollections.cpp:122
@@ -181,8 +184,9 @@ msgid "Local Folders"
 msgstr "Локальные папки"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "&Создать папку..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -380,9 +384,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Вырезать выбранные письма из папки."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Добавить почтовый &ящик..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Добавление почтового ящика"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -447,8 +453,9 @@ msgstr[2] "Удаление почтовых ящиков"
 msgstr[3] "Удаление почтового ящика"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Свойства почтового ящика..."
 
 #: standardmailactionmanager.cpp:235
@@ -693,6 +700,9 @@ msgstr "О&чистить корзину"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Навсегда удалить все письма из этой папки-корзины."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Добавить почтовый &ящик..."
 
 #~ msgctxt "@label"
 #~ msgid ""

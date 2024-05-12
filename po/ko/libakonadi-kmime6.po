@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-04-21 23:10+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -116,18 +116,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "메시지의 보낸 편지함 폴더가 잘못되었습니다."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "항목 가져오는 중..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "중복 항목 검사 중..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "중복 항목 삭제 중..."
 
 #: specialmailcollections.cpp:122
@@ -173,8 +176,9 @@ msgid "Local Folders"
 msgstr "로컬 폴더"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "폴더 추가..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -339,9 +343,11 @@ msgid "Cut the selected message from the folder."
 msgstr "선택한 메시지를 폴더에서 잘라냅니다."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "계정 추가(&A)..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "계정 추가"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -394,8 +400,9 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "계정 삭제?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "계정 속성..."
 
 #: standardmailactionmanager.cpp:235
@@ -629,6 +636,9 @@ msgstr "휴지통 비우기(&M)"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "휴지통 폴더의 메시지를 영구적으로 삭제합니다."
+
+#~ msgid "Add &Account..."
+#~ msgstr "계정 추가(&A)..."
 
 #~ msgctxt "@label"
 #~ msgid ""

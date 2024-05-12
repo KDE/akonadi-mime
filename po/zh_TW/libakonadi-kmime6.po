@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-12-13 03:18+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -119,18 +119,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "信件的寄件備份資料夾是無效的。"
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "取得項目中..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "搜尋重複的項目中..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "刪除重複的項目中..."
 
 #: specialmailcollections.cpp:122
@@ -176,8 +179,9 @@ msgid "Local Folders"
 msgstr "本地資料夾"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "新增資料夾..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -342,9 +346,11 @@ msgid "Cut the selected message from the folder."
 msgstr "從資料夾內剪下選取的郵件。"
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "新增帳號(&A)..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "新增帳號"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -396,8 +402,9 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "要刪除帳號嗎？"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "帳號內容..."
 
 #: standardmailactionmanager.cpp:235
@@ -631,6 +638,9 @@ msgstr "清空垃圾桶(&M)"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "永久刪除垃圾桶裡的所有信件。"
+
+#~ msgid "Add &Account..."
+#~ msgstr "新增帳號(&A)..."
 
 #~ msgctxt "@label"
 #~ msgid ""

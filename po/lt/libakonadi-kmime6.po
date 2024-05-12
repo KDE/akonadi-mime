@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2024-02-05 23:44+0200\n"
 "Last-Translator: Mindaugas Baranauskas <opensuse.lietuviu.kalba@gmail.com>\n"
 "Language-Team: lt <kde-i18n-lt@kde.org>\n"
@@ -123,18 +123,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Laiškas turi neteisingą išsiųstų laiškų aplanką."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Gaunami elementai..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Ieškoti dublikatų..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Šalinami dublikatai..."
 
 #: specialmailcollections.cpp:122
@@ -180,8 +183,9 @@ msgid "Local Folders"
 msgstr "Vietiniai aplankai"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Pridėti aplanką..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -379,9 +383,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Iškirpti pažymėtus el. laiškus iš aplanko."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Pridėti p&askyrą..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Pridėti paskyrą"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -446,8 +452,9 @@ msgstr[2] "Ištrinti paskyras?"
 msgstr[3] "Ištrinti paskyras?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Paskyros savybės..."
 
 #: standardmailactionmanager.cpp:235
@@ -687,6 +694,9 @@ msgstr "Iš&valyti šiukšlinę"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Visam laikui ištrinti visus laiškus iš šiukšlinės aplanko."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Pridėti p&askyrą..."
 
 #~ msgctxt "@label"
 #~ msgid ""

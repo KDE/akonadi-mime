@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2022-11-10 13:13+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Intelingue <kde-i18n-doc@kde.org>\n"
@@ -120,17 +120,17 @@ msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, fuzzy, kde-format
-msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Obtenente li servicies…"
 
 #: removeduplicatesjob.cpp:59
 #, fuzzy, kde-format
-msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Sercha"
 
 #: removeduplicatesjob.cpp:118
 #, fuzzy, kde-format
-msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Duplicates:"
 
 #: specialmailcollections.cpp:122
@@ -176,8 +176,9 @@ msgid "Local Folders"
 msgstr "Local fólderes"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Adjunter un fólder..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -353,9 +354,11 @@ msgid "Cut the selected message from the folder."
 msgstr ""
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "&Adjunter un conto..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Adjunter un conto"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -410,8 +413,9 @@ msgstr[0] ""
 msgstr[1] ""
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Proprietás del conto..."
 
 #: standardmailactionmanager.cpp:235
@@ -647,3 +651,6 @@ msgstr "&Vacuar li Paper-corb"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr ""
+
+#~ msgid "Add &Account..."
+#~ msgstr "&Adjunter un conto..."

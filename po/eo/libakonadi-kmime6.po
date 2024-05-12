@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-09-28 22:13+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -119,18 +119,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Mesaĝo havas nevalidan dosierujon de senditaj retpoŝtoj."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Prenante erojn..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Serĉante duplikatojn..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Forigante duplikatojn..."
 
 #: specialmailcollections.cpp:122
@@ -176,8 +179,9 @@ msgid "Local Folders"
 msgstr "Lokaj Dosierujoj"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Aldoni Dosierujon..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -355,9 +359,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Tondi la elektitan mesaĝon el la dosierujo."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "&Aldoni Konton..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Aldoni Konton"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -416,8 +422,9 @@ msgstr[0] "Ĉu Forigi Konton?"
 msgstr[1] "Ĉu Forigi Kontojn?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Kontaj Proprecoj..."
 
 #: standardmailactionmanager.cpp:235
@@ -654,3 +661,6 @@ msgstr "&Malplenigi Rubujon"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Konstante forigi ĉiujn mesaĝojn el la rubujo."
+
+#~ msgid "Add &Account..."
+#~ msgstr "&Aldoni Konton..."

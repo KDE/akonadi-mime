@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-10-15 11:50+0200\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -118,18 +118,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Správa má neplatný priečinok odoslanej pošty."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Získavam položky..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Hľadám duplikáty..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Odstraňujem duplikáty..."
 
 #: specialmailcollections.cpp:122
@@ -175,8 +178,9 @@ msgid "Local Folders"
 msgstr "Miestne priečinky"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Pridať priečinok..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -363,9 +367,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Vystrihnúť vybrané správy z priečinka."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Pridať účet..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Pridať účet"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -427,8 +433,9 @@ msgstr[1] "Vymazať účty?"
 msgstr[2] "Vymazať účty?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Vlastnosti &účtu..."
 
 #: standardmailactionmanager.cpp:235
@@ -666,6 +673,9 @@ msgstr "Vyprázdniť &kôš"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Trvalo vymazať všetky správy z koša."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Pridať účet..."
 
 #~ msgctxt "@label"
 #~ msgid ""

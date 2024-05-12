@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepimlibs-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2024-03-17 02:28+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -125,18 +125,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "İletinin gönderilen posta klasörü geçersiz."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Ögeler alınıyor…"
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Yinelenenler aranıyor…"
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Yinelenmiş iletiler kaldırılıyor…"
 
 #: specialmailcollections.cpp:122
@@ -182,8 +185,9 @@ msgid "Local Folders"
 msgstr "Yerel Klasörler"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Klasör Ekle…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -361,9 +365,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Klasörden seçili iletiyi kesin."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "&Hesap Ekle…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Hesap Ekle"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -422,8 +428,9 @@ msgstr[0] "Hesap Silinsin mi?"
 msgstr[1] "Hesaplar Silinsin mi?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Hesap Özellikleri…"
 
 #: standardmailactionmanager.cpp:235
@@ -659,3 +666,6 @@ msgstr "&Çöp Kutusunu Boşalt"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Çöp kutusu klasöründen tüm iletileri kalıcı olarak silin."
+
+#~ msgid "Add &Account..."
+#~ msgstr "&Hesap Ekle…"

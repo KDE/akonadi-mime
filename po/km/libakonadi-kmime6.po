@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2012-07-11 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -129,18 +129,19 @@ msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
-msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr ""
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Remove &Duplicate Mails"
+msgid "Searching for duplicates…"
+msgstr "យក​អ៊ីមែល​ស្ទួន​ចេញ"
 
 #: removeduplicatesjob.cpp:118
 #, fuzzy, kde-format
 #| msgid "Remove &Duplicate Mails"
-msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "យក​អ៊ីមែល​ស្ទួន​ចេញ"
 
 #: specialmailcollections.cpp:122
@@ -186,8 +187,9 @@ msgid "Local Folders"
 msgstr "ថត​មូលដ្ឋាន"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "បន្ថែម​ថត..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -366,9 +368,11 @@ msgid "Cut the selected message from the folder."
 msgstr "កាត់​អ៊ីមែល​ដែល​បាន​ជ្រើស​ពី​ថត ។"
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "បន្ថែម​គណនី..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "បន្ថែម​គណនី"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -426,8 +430,9 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "លុប​គណនី ?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "លក្ខណសម្បត្តិ​គណនី..."
 
 #: standardmailactionmanager.cpp:235
@@ -690,6 +695,9 @@ msgstr "សម្អាត​ធុងសំរាម"
 #| msgid "Mark selected messages as read"
 msgid "Permanently delete all messages from the trash folder."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
+
+#~ msgid "Add &Account..."
+#~ msgstr "បន្ថែម​គណនី..."
 
 #~ msgctxt "@label"
 #~ msgid ""

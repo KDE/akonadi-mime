@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2013-04-12 14:48+0530\n"
 "Last-Translator: Chetan Khona <chetan@kompkin.com>\n"
 "Language-Team: Marathi <kde-i18n-doc@kde.org>\n"
@@ -122,17 +122,19 @@ msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
-msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr ""
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "प्रतिरूप शोधत आहे..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "प्रतिरूप काढून टाकत आहे ..."
 
 #: specialmailcollections.cpp:122
@@ -178,8 +180,9 @@ msgid "Local Folders"
 msgstr ""
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "संचयीका जोडा..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -362,9 +365,11 @@ msgid "Cut the selected message from the folder."
 msgstr "निवडलेल्या इमेल्स संचयीकेतून कापा."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "खाते जोडा (&A)..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "खाते जोडा"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -420,7 +425,7 @@ msgstr[1] ""
 
 #: standardmailactionmanager.cpp:233
 #, kde-format
-msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr ""
 
 #: standardmailactionmanager.cpp:235
@@ -672,6 +677,9 @@ msgstr "कचरापेटी रिकामी करा (&M)"
 #| msgid "Cut the selected emails from the folder."
 msgid "Permanently delete all messages from the trash folder."
 msgstr "निवडलेल्या इमेल्स संचयीकेतून कापा."
+
+#~ msgid "Add &Account..."
+#~ msgstr "खाते जोडा (&A)..."
 
 #, fuzzy
 #~| msgid "Cut Email"

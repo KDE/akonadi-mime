@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2024-03-24 10:30+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -117,18 +117,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "להודעה יש תיקיית דוא״ל שנשלח שגויה."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "הפריטים מתקבלים…"
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "מתבצע חיפוש אחר כפילויות…"
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "מבצעת הסרת כפילויות…"
 
 #: specialmailcollections.cpp:122
@@ -174,8 +177,9 @@ msgid "Local Folders"
 msgstr "תיקיות מקומיות"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "הוספת תיקייה…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -373,9 +377,11 @@ msgid "Cut the selected message from the folder."
 msgstr "גזירת ההודעה הנבחרת מהתיקייה."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "הוספת &חשבון…"
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "הוספת חשבון"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -438,8 +444,9 @@ msgstr[2] "למחוק את החשבונות?"
 msgstr[3] "למחוק את החשבונות?"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "מאפייני חשבון…"
 
 #: standardmailactionmanager.cpp:235
@@ -679,3 +686,6 @@ msgstr "&פינוי האשפה"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "למחוק לצמיתות את כל ההודעות מתיקיית האשפה."
+
+#~ msgid "Add &Account..."
+#~ msgstr "הוספת &חשבון…"

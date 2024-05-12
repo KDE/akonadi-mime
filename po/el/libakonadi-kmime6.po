@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2023-07-24 12:50+0300\n"
 "Last-Translator: George Stefanakis <george.stefanakis@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -123,18 +123,21 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Το μήνυμα έχει λανθασμένο φάκελο αποσταλμένης-αλληλογραφίας."
 
 #: removeduplicatesjob.cpp:41
-#, kde-format
-msgid "Retrieving items..."
+#, fuzzy, kde-format
+#| msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr "Ανάκτηση αντικειμένων..."
 
 #: removeduplicatesjob.cpp:59
-#, kde-format
-msgid "Searching for duplicates..."
+#, fuzzy, kde-format
+#| msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr "Αναζήτηση για αντίγραφα..."
 
 #: removeduplicatesjob.cpp:118
-#, kde-format
-msgid "Removing duplicates..."
+#, fuzzy, kde-format
+#| msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr "Αφαίρεση αντιγράφων..."
 
 #: specialmailcollections.cpp:122
@@ -180,8 +183,9 @@ msgid "Local Folders"
 msgstr "Τοπικοί φάκελοι"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "Προσθήκη φακέλου..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -361,9 +365,11 @@ msgid "Cut the selected message from the folder."
 msgstr "Αποκοπή των επιλεγμένων μηνυμάτων από τον φάκελο."
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr "Προσ&θήκη λογαριασμού..."
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "Προσθήκη λογαριασμού"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -422,8 +428,9 @@ msgstr[0] "Διαγραφή του λογαριασμού;"
 msgstr[1] "Διαγραφή των λογαριασμών;"
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
+#, fuzzy, kde-format
+#| msgid "Account Properties..."
+msgid "Account Properties…"
 msgstr "Ιδιότητες λογαριασμού..."
 
 #: standardmailactionmanager.cpp:235
@@ -665,6 +672,9 @@ msgstr "Ά&δειασμα απορριμμάτων"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Μόνιμη διαγραφή όλων των μηνυμάτων από τον φάκελο απορριμάτων."
+
+#~ msgid "Add &Account..."
+#~ msgstr "Προσ&θήκη λογαριασμού..."
 
 #~ msgctxt "@label"
 #~ msgid ""

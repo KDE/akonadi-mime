@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-09-21 00:45+0000\n"
+"POT-Creation-Date: 2024-05-12 00:39+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -124,17 +124,17 @@ msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
-msgid "Retrieving items..."
+msgid "Retrieving items…"
 msgstr ""
 
 #: removeduplicatesjob.cpp:59
 #, kde-format
-msgid "Searching for duplicates..."
+msgid "Searching for duplicates…"
 msgstr ""
 
 #: removeduplicatesjob.cpp:118
 #, kde-format
-msgid "Removing duplicates..."
+msgid "Removing duplicates…"
 msgstr ""
 
 #: specialmailcollections.cpp:122
@@ -180,8 +180,9 @@ msgid "Local Folders"
 msgstr "يەرلىك قىسقۇچلار"
 
 #: standardmailactionmanager.cpp:119
-#, kde-format
-msgid "Add Folder..."
+#, fuzzy, kde-format
+#| msgid "Add Folder..."
+msgid "Add Folder…"
 msgstr "قىسقۇچ قوش…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
@@ -347,9 +348,11 @@ msgid "Cut the selected message from the folder."
 msgstr ""
 
 #: standardmailactionmanager.cpp:205
-#, kde-format
-msgid "Add &Account..."
-msgstr ""
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Add Account"
+msgid "Add &Account…"
+msgstr "ھېسابات قوشۇش"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -401,9 +404,10 @@ msgid_plural "Delete Accounts?"
 msgstr[0] ""
 
 #: standardmailactionmanager.cpp:233
-#, kde-format
-msgid "Account Properties..."
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Folder Properties..."
+msgid "Account Properties…"
+msgstr "قىسقۇچ خاسلىقى…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
