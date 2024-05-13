@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-04 06:51+0200\n"
+"PO-Revision-Date: 2024-05-12 03:26+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -121,22 +121,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "შეტყობინების sent-mail საქაღალდე არასწორია."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "ჩანაწერების მიღება..."
+msgstr "ელემენტების მიღება…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "დუბლიკატების ძებნა..."
+msgstr "დუბლიკატების ძებნა…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "დუბლიკატების წაშლა..."
+msgstr "დუბლიკატების წაშლა…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -181,8 +178,7 @@ msgid "Local Folders"
 msgstr "ლოკალური საქაღალდეები"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "საქაღალდის დამატება…"
 
@@ -359,11 +355,9 @@ msgid "Cut the selected message from the folder."
 msgstr "მონიშნული შეტყობინების საქაღალდიდან ამოჭრა."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "ანგარიშის დამატება"
+msgstr "&ანგარიშის დამატება…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -422,10 +416,9 @@ msgstr[0] "წავშალო ანგარიში?"
 msgstr[1] "წავშალო ანგარიშები?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "ანგარიშის თვისებები..."
+msgstr "ანგარიშის თვისებები…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format

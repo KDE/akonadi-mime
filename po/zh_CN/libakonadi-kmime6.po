@@ -116,22 +116,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "信件的发件夹字段无效。"
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "获取项目..."
+msgstr ""
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "搜索重复项目..."
+msgstr ""
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "删除重复项..."
+msgstr ""
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -176,10 +173,9 @@ msgid "Local Folders"
 msgstr "本地文件夹"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "添加文件夹..."
+msgstr ""
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -343,11 +339,9 @@ msgid "Cut the selected message from the folder."
 msgstr "从文件夹中剪切选中的信件。"
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "添加账户"
+msgstr ""
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -399,10 +393,9 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "删除账户吗？"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "账户属性..."
+msgstr ""
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
@@ -635,6 +628,3 @@ msgstr "清空废件夹(&M)"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "从废件箱彻底删除所有信件。"
-
-#~ msgid "Add &Account..."
-#~ msgstr "添加账户(&A)..."

@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2020, 2021, 2022, 2023, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-23 12:29+0200\n"
+"PO-Revision-Date: 2024-05-12 08:06+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -118,22 +118,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Wiadomość ma nieprawidłowy katalog poczty wysłanej."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "Pobieranie elementów..."
+msgstr "Pobieranie rzeczy…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "Znajdywanie powieleń..."
+msgstr "Szukanie powieleń…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "Usuwanie powieleń..."
+msgstr "Usuwanie powieleń…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -169,7 +166,7 @@ msgstr "robocze"
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
-msgstr "szablony"
+msgstr "wzorce"
 
 #: specialmailcollectionsrequestjob.cpp:46
 #, kde-format
@@ -178,15 +175,14 @@ msgid "Local Folders"
 msgstr "Katalogi lokalne"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Dodaj katalog..."
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
 msgid "Add a new folder to the currently selected account."
-msgstr "Dodaj nowy katalog do obecnie wybranego konta."
+msgstr "Dodaj nowy katalog do obecnie zaznaczonego konta."
 
 #: standardmailactionmanager.cpp:123
 #, kde-format
@@ -202,7 +198,7 @@ msgstr "Nie można utworzyć katalogu: %1"
 #: standardmailactionmanager.cpp:129
 #, kde-format
 msgid "Folder creation failed"
-msgstr "Nieudane tworzenie katalogu"
+msgstr "Nie udało się utworzyć katalogu"
 
 #: standardmailactionmanager.cpp:133
 #, kde-format
@@ -215,7 +211,7 @@ msgstr[2] "Skopiuj %1 katalogów"
 #: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
-msgstr "Skopiuj wybrane katalogi do schowka."
+msgstr "Skopiuj zaznaczone katalogi do schowka."
 
 #: standardmailactionmanager.cpp:138
 #, kde-format
@@ -367,11 +363,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Wytnij wybraną wiadomość z katalogu."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Dodaj konto"
+msgstr "Dod&aj konto…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -396,7 +390,7 @@ msgstr "Nie można utworzyć konta: %1"
 #: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Account creation failed"
-msgstr "Nieudane tworzenie konta"
+msgstr "Nie udało się utworzyć konta"
 
 #: standardmailactionmanager.cpp:219
 #, kde-format
@@ -412,7 +406,7 @@ msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr ""
-"Usuń wybrane konta<p>Obecnie wybrane konta zostaną usunięte wraz z "
+"Usuń zaznaczone konta<p>Obecnie zaznaczone konta zostaną usunięte wraz ze "
 "wszystkimi wiadomościami, które zawierają.</p>"
 
 #: standardmailactionmanager.cpp:226
@@ -433,10 +427,9 @@ msgstr[1] "Czy usunąć konta?"
 msgstr[2] "Czy usunąć konta?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "Właściwości konta..."
+msgstr "Właściwości konta…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format

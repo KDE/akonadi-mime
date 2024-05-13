@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2024-03-08 21:24+0530\n"
+"PO-Revision-Date: 2024-05-12 15:27+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.0\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -118,22 +118,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr ""
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "உருப்படிகள் பெறப்படுகின்றன..."
+msgstr "உருப்படிகள் பெறப்படுகின்றன…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "நகலாயுள்ளவை கண்டுபிடிக்கப்படுகின்றன..."
+msgstr "நகலாயுள்ளவை கண்டுபிடிக்கப்படுகின்றன…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "நகலாயுள்ளவை கண்டுபிடிக்கப்படுகின்றன..."
+msgstr "நகலாயுள்ளவை நீக்கப்படுகின்றன…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -178,10 +175,9 @@ msgid "Local Folders"
 msgstr "உள்ளமை அடைவுகள்"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "அடைவை சேர்..."
+msgstr "அடைவை சேர்…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -358,7 +354,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:205
 #, kde-format
 msgid "Add &Account…"
-msgstr ""
+msgstr "&கணக்கைச் சேர்…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -415,7 +411,7 @@ msgstr[1] ""
 #: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Account Properties…"
-msgstr ""
+msgstr "கணக்கின் பண்புகள்…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format

@@ -3,13 +3,13 @@
 #
 # Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>, 2010.
 # Javier Vinal <fjvinal@gmail.com>, 2011, 2012, 2013, 2014, 2015, 2016.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-04 03:33+0200\n"
+"PO-Revision-Date: 2024-05-12 12:05+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.03.80\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -120,20 +120,17 @@ msgid "Message has invalid sent-mail folder."
 msgstr "El mensaje tiene una carpeta de «correo enviado» no válida."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "Recuperando elementos..."
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
 msgstr "Buscando duplicados..."
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
 msgstr "Eliminando duplicados..."
 
@@ -180,8 +177,7 @@ msgid "Local Folders"
 msgstr "Carpetas locales"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Añadir carpeta..."
 
@@ -359,11 +355,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Cortar el mensaje seleccionado de la carpeta."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Añadir cuenta"
+msgstr "&Añadir cuenta..."
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -422,8 +416,7 @@ msgstr[0] "¿Borrar cuenta?"
 msgstr[1] "¿Borrar cuentas?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
 msgstr "Propiedades de la cuenta..."
 
