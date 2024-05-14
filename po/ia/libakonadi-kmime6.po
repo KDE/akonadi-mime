@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2011, 2012, 2013, 2020, 2021, 2023.
+# g.sora <g.sora@tiscali.it>, 2011, 2012, 2013, 2020, 2021, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-09 22:10+0200\n"
+"PO-Revision-Date: 2024-05-13 11:21+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.03.90\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -118,20 +118,17 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Message ha dossier invalide de posta inviate."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "Recuperante elementos..."
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
 msgstr "Cercante duplicatos..."
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
 msgstr "Removente duplicatos..."
 
@@ -178,8 +175,7 @@ msgid "Local Folders"
 msgstr "Dossieres local"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Adde Dossier..."
 
@@ -356,11 +352,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Talia le seligite messages  ex le dossier."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Adde conto"
+msgstr "&Adde conto..."
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -419,8 +413,7 @@ msgstr[0] "Dele conto?"
 msgstr[1] "Dele contos?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
 msgstr "Proprietate de conto..."
 

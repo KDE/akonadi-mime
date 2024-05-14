@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the akonadi-mime package.
 #
-# Mincho Kondarev <mkondarev@yahoo.de>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-06 18:17+0200\n"
+"PO-Revision-Date: 2024-05-13 22:47+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -118,22 +118,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Съобщението има невалидна папка Изпратени."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "Извличане на елементи.."
+msgstr "Извличане на елементи…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "Търсене на дубликати..."
+msgstr "Търсене на дубликати…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "Премахване на дубликати..."
+msgstr "Премахване на дубликати…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -178,10 +175,9 @@ msgid "Local Folders"
 msgstr "Локални папки"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "Добавяне на папка..."
+msgstr "Добавяне на папка…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -358,11 +354,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Изрязване на избраното съобщение от папката."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Добавяне на акаунт"
+msgstr "Добавяне на &акаунт…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -421,10 +415,9 @@ msgstr[0] "Да се изтрие ли акаунта?"
 msgstr[1] "Да се изтрият ли акаунтите?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "Свойства на акаунт..."
+msgstr "Свойства на акаунт…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
