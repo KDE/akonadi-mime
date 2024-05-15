@@ -4,7 +4,7 @@
 # Joëlle Cornavin <jcornavin@laposte.net>, 2010, 2011.
 # Ludovic Grossard <grossard@kde.org>, 2012, 2014.
 # Geoffray Levasseur <geoffray.levasseurbrandin@numericable.fr>, 2013.
-# Xavier Besnard <xavier.besnard@kde.org>, 2013, 2021.
+# SPDX-FileCopyrightText: 2013, 2021, 2024 Xavier Besnard <xavier.besnard@kde.org>
 # Vincent Pinon <vpinon@kde.org>, 2017.
 # Simon Depiets <sdepiets@gmail.com>, 2020.
 # Xavier Besnard <xavier.besnard@kde.org>, 2023.
@@ -14,15 +14,15 @@ msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-04 16:43+0200\n"
-"Last-Translator: Xavier BESNARD <xavier.besnard@kde.org>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2024-05-13 09:02+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -128,20 +128,17 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Le message possède un dossier non valable d'envoi de messagerie."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "Réception des éléments..."
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
 msgstr "Recherche de doublons..."
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
 msgstr "Suppression des doublons..."
 
@@ -188,8 +185,7 @@ msgid "Local Folders"
 msgstr "Dossiers locaux"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Ajouter un dossier..."
 
@@ -370,11 +366,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Coupe du dossier les messages sélectionnés."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Ajouter un compte"
+msgstr "&Ajouter un compte..."
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -433,8 +427,7 @@ msgstr[0] "Supprimer le compte ?"
 msgstr[1] "Supprimer les comptes ?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
 msgstr "Propriétés du compte..."
 

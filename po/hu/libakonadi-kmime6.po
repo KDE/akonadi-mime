@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2024-01-03 20:47+0100\n"
+"PO-Revision-Date: 2024-05-14 11:35+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.07.70\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -120,20 +120,17 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Az üzenetnek érvénytelen elküldött levelek mappája van."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "Elemek letöltése…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
 msgstr "Másolatok keresése…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
 msgstr "Másolatok eltávolítása…"
 
@@ -180,15 +177,14 @@ msgid "Local Folders"
 msgstr "Helyi mappák"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Mappa hozzáadása…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
 msgid "Add a new folder to the currently selected account."
-msgstr "Új mappa hozzáadása a kijelölt felhasználói fiókhoz."
+msgstr "Új mappa hozzáadása a kijelölt fiókhoz."
 
 #: standardmailactionmanager.cpp:123
 #, kde-format
@@ -234,7 +230,7 @@ msgstr[1] "%1 mappa törlése"
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
 #, kde-format
 msgid "Delete the selected folders from the account."
-msgstr "A kijelölt mappák törlése a felhasználói fiókból."
+msgstr "A kijelölt mappák törlése a fiókból."
 
 #: standardmailactionmanager.cpp:146
 #, kde-format
@@ -285,7 +281,7 @@ msgstr[1] "%1 mappa kivágása"
 #: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
 #, kde-format
 msgid "Cut the selected folders from the account."
-msgstr "A kijelölt mappák kivágása a felhasználói fiókból."
+msgstr "A kijelölt mappák kivágása a fiókból."
 
 #: standardmailactionmanager.cpp:172
 #, kde-format
@@ -360,11 +356,9 @@ msgid "Cut the selected message from the folder."
 msgstr "A kijelölt üzenet kivágása a mappából."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Felhasználói fiók hozzáadása"
+msgstr "&Fiók hozzáadása…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -372,31 +366,31 @@ msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr ""
-"Új felhasználói fiók hozzáadása<p>A megjelenő párbeszédablakban "
-"kiválaszthatja a hozzáadandó felhasználói fiók típusát.</p>"
+"Új fiók hozzáadása<p>A megjelenő párbeszédablakban kiválaszthatja a "
+"hozzáadandó fiók típusát.</p>"
 
 #: standardmailactionmanager.cpp:210
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
-msgstr "Felhasználói fiók hozzáadása"
+msgstr "Fiók hozzáadása"
 
 #: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Could not create account: %1"
-msgstr "Nem hozható létre a felhasználói fiók: %1"
+msgstr "Nem hozható létre a fiók: %1"
 
 #: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Account creation failed"
-msgstr "Nem sikerült létrehozni a felhasználói fiókot"
+msgstr "Nem sikerült létrehozni a fiókot"
 
 #: standardmailactionmanager.cpp:219
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
-msgstr[0] "Felhasználói fiók &törlése"
-msgstr[1] "%1 felhasználói fiók &törlése"
+msgstr[0] "Fiók &törlése"
+msgstr[1] "%1 fiók &törlése"
 
 #: standardmailactionmanager.cpp:221
 #, kde-format
@@ -404,15 +398,15 @@ msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr ""
-"A kijelölt felhasználói fiókok törlése<p>A jelenleg kijelölt felhasználói "
-"fiókok, és az összes bennük található üzenet törölve lesz.</p>"
+"A kijelölt fiókok törlése<p>A jelenleg kijelölt fiókok, és az összes bennük "
+"található üzenet törölve lesz.</p>"
 
 #: standardmailactionmanager.cpp:226
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
-msgstr[0] "Biztos, hogy törölni akarja ezt a felhasználói fiókot?"
-msgstr[1] "Biztos, hogy törölni akarja a(z) %1 felhasználói fiókot?"
+msgstr[0] "Biztos, hogy törölni akarja ezt a fiókot?"
+msgstr[1] "Biztos, hogy törölni akarja a(z) %1 fiókot?"
 
 #: standardmailactionmanager.cpp:230
 #, kde-format
@@ -423,29 +417,27 @@ msgstr[0] "Törli a fiókot?"
 msgstr[1] "Törli a fiókokat?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "Felhasználói fiók tulajdonságai…"
+msgstr "Fióktulajdonságok…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr ""
-"Párbeszédablak megnyitása a kijelölt felhasználói fiók tulajdonságainak "
-"szerkesztéséhez."
+"Párbeszédablak megnyitása a kijelölt fiók tulajdonságainak szerkesztéséhez."
 
 #: standardmailactionmanager.cpp:238
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
-msgstr[0] "Felhasználói fiók frissítése"
-msgstr[1] "%1 felhasználói fiók frissítése"
+msgstr[0] "Fiók frissítése"
+msgstr[1] "%1 fiók frissítése"
 
 #: standardmailactionmanager.cpp:240
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
-msgstr "A kijelölt felhasználói fiók összes mappája tartalmának frissítése."
+msgstr "A kijelölt fiók összes mappája tartalmának frissítése."
 
 #: standardmailactionmanager.cpp:244
 #, kde-format
