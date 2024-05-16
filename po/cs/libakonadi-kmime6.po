@@ -121,22 +121,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Zpráva má neplatnou složku odeslané pošty."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "Získávání položek..."
+msgstr ""
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "Hledám duplicity..."
+msgstr ""
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "Odstraňuji duplicity..."
+msgstr ""
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -181,10 +178,9 @@ msgid "Local Folders"
 msgstr "Lokální složky"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "Přidat složku..."
+msgstr "Přidat složku…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -370,11 +366,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Vyjmout vybranou zprávu ze složky."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Přidat účet"
+msgstr ""
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -436,10 +430,9 @@ msgstr[1] "Smazat účty?"
 msgstr[2] "Smazat účty?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "Vlastnosti účtu..."
+msgstr ""
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
@@ -676,6 +669,3 @@ msgstr "V&yprázdnit koš"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Permanentně smazat všechny zprávy ze složky koše."
-
-#~ msgid "Add &Account..."
-#~ msgstr "Přid&at účet..."

@@ -660,6 +660,3 @@ msgstr "&Tøm papirkorga"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Slett alle meldingar frå papirkorga for alltid."
-
-#~ msgid "Add &Account..."
-#~ msgstr "Legg til &konto …"

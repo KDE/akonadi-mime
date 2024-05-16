@@ -659,6 +659,3 @@ msgstr "Tø&m papirkurven"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Slett permanent alle meldinger fra papirkurvmappa."
-
-#~ msgid "Add &Account..."
-#~ msgstr "L&egg til konto …"
