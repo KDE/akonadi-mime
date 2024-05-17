@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
-# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-04-06 09:44+0400\n"
+"PO-Revision-Date: 2024-05-16 12:17+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -120,22 +120,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "الرسالة لديها مجلد إرسال غير صحيح."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "يجلب العناصر..."
+msgstr "يجلب العناصر…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "يبحث عن التكرارات..."
+msgstr "يبحث عن التكرارات…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "يزيل التكرارات..."
+msgstr "يزيل المُكرَّرات…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -180,10 +177,9 @@ msgid "Local Folders"
 msgstr "المجلدات المحليّة"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "أضف مجلدًا..."
+msgstr "أضف مجلدًا…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -402,11 +398,9 @@ msgid "Cut the selected message from the folder."
 msgstr "قصّ الرسالة المحدّدة من المجلد."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "أضف حسابًا"
+msgstr "أضف حسابًا…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -476,10 +470,9 @@ msgstr[4] "هل احذف الحسابات؟"
 msgstr[5] "هل احذف الحسابات؟"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "خصائص الحساب..."
+msgstr "خصائص الحساب…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
