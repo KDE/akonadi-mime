@@ -4,13 +4,13 @@
 # Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2012, 2013.
 # pan93412 <pan93412@gmail.com>, 2019.
 # Jeff Huang <s8321414@gmail.com>, 2020.
-# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2024 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-12-13 03:18+0900\n"
+"PO-Revision-Date: 2024-05-18 17:40+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.04.70\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -119,22 +119,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "信件的寄件備份資料夾是無效的。"
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "取得項目中..."
+msgstr "取得項目中…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "搜尋重複的項目中..."
+msgstr "搜尋重複項目中…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "刪除重複的項目中..."
+msgstr "刪除重複項目中…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -179,10 +176,9 @@ msgid "Local Folders"
 msgstr "本地資料夾"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "新增資料夾..."
+msgstr "新增資料夾…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -346,11 +342,9 @@ msgid "Cut the selected message from the folder."
 msgstr "從資料夾內剪下選取的郵件。"
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "新增帳號"
+msgstr "新增帳號(&A)…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -402,10 +396,9 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "要刪除帳號嗎？"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "帳號內容..."
+msgstr "帳號屬性…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
