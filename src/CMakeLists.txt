@@ -133,6 +133,7 @@ target_link_libraries(KPim6AkonadiMime
     KF6::KIOCore
     KF6::I18n
     KF6::XmlGui
+    Qt::DBus
     )
 
 set_target_properties(KPim6AkonadiMime PROPERTIES
