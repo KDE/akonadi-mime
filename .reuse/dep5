@@ -3,6 +3,6 @@ Upstream-Name: akonadi-mime
 Upstream-Contact: Montel Laurent <montel@kde.org>
 Source: https://invent.kde.org/pim/akonadi-mime
 
-Files: autotests/unittestenv/* autotests/messagetests/mails/*
+Files: autotests/unittestenv/* autotests/messagetests/mails/* readme-build-ftime.txt
 Copyright: none
 License: CC0-1.0
