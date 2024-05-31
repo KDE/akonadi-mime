@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2024-05-13 22:47+0200\n"
+"PO-Revision-Date: 2024-05-30 20:42+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.0\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -364,8 +364,8 @@ msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr ""
-"Добавяне на нов акаунт <p> Ще ви се покаже диалогов прозорец, където можете "
-"да изберете типа на акаунта, който ще бъде добавен. </p>"
+"Добавяне на нов акаунт<p>Ще ви се покаже диалогов прозорец, където можете да "
+"изберете типа на акаунта, който ще бъде добавен.</p>"
 
 #: standardmailactionmanager.cpp:210
 #, kde-format
@@ -396,8 +396,8 @@ msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr ""
-"Изтриване на избраните акаунти <p> Текущо избраните акаунти ще бъдат "
-"изтрити, заедно с всички съобщения, които те съдържат. </p>"
+"Изтриване на избраните акаунти<p>Текущо избраните акаунти ще бъдат изтрити, "
+"заедно с всички съобщения, които те съдържат.</p>"
 
 #: standardmailactionmanager.cpp:226
 #, kde-format
@@ -654,6 +654,3 @@ msgstr "Из&празване на кошчето"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Необратимо изтриване на всички съобщения от папката на кошчето."
-
-#~ msgid "Add &Account..."
-#~ msgstr "&Добавяне на акаунт..."
