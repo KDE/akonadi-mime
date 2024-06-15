@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2024-02-13 11:17+0200\n"
-"Last-Translator: Māris Nartišs <maris.kde@gmail.com>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-05-28 09:55+0300\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -119,22 +119,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Vēstulei ir nederīga nosūtītā e-pasta mape."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "Iegūst vienības..."
+msgstr "Iegūst vienumus…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "Meklē dublikātus"
+msgstr "Meklē dublikātus…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "Noņem dublikātus..."
+msgstr "Noņem dublikātus…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -179,10 +176,9 @@ msgid "Local Folders"
 msgstr "Lokālās mapes"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "Pievienot mapi..."
+msgstr "Pievienot mapi…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -368,11 +364,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Izgriezt atlasītās vēstules šajā mapē."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Pievienot kontu"
+msgstr "Pievienot &kontu…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -434,10 +428,9 @@ msgstr[1] "Dzēst kontus?"
 msgstr[2] "Dzēst kontus?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "Konta īpašības..."
+msgstr "Konta īpašības…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
