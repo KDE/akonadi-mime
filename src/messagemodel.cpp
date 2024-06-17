@@ -11,7 +11,7 @@
 #include <Akonadi/Monitor>
 #include <Akonadi/Session>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KLocalizedString>
 

@@ -15,7 +15,7 @@
 #include <Akonadi/ItemFetchScope>
 
 #include "akonadi/messageparts.h"
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 using namespace Akonadi;
 

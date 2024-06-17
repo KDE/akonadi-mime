@@ -16,7 +16,7 @@
 #include <QDebug>
 #include <QTimer>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KAboutData>
 #include <KLocalizedString>

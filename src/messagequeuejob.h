@@ -21,7 +21,7 @@
 #include <Akonadi/AddressAttribute>
 #include <Akonadi/Collection>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <memory>
 

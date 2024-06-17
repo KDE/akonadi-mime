@@ -29,7 +29,7 @@
 #include <Akonadi/SubscriptionDialog>
 
 #include "messagestatus.h"
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KActionCollection>
 #include <QAction>

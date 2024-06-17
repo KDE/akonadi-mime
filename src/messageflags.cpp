@@ -8,7 +8,7 @@
 #include "messageflags.h"
 
 #include <Akonadi/Item>
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 #include <KMime/Util>
 
 const char Akonadi::MessageFlags::Seen[] = "\\SEEN";

@@ -12,7 +12,7 @@
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
 
-#include <KMime/KMimeMessage>
+#include <KMime/Message>
 
 #include <KLocalizedString>
 
