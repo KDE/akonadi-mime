@@ -92,7 +92,7 @@ public:
      */
     [[nodiscard]] MDNStateAttribute::MDNSentState mdnState() const;
 
-    bool operator==(const MDNStateAttribute &other) const;
+    [[nodiscard]] bool operator==(const MDNStateAttribute &other) const;
 
 private:
     //@cond PRIVATE

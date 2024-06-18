@@ -31,10 +31,10 @@ private Q_SLOTS:
 private:
     void slotFetchDone(KJob *job);
     void moveMessages();
-    Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
-    Akonadi::Collection trashCollectionFolder();
-    Akonadi::Collection findTrashFolder(const Akonadi::Collection &folder);
-    Akonadi::Collection collectionFromId(Collection::Id id) const;
+    [[nodiscard]] Akonadi::Collection trashCollectionFromResource(const Akonadi::Collection &col);
+    [[nodiscard]] Akonadi::Collection trashCollectionFolder();
+    [[nodiscard]] Akonadi::Collection findTrashFolder(const Akonadi::Collection &folder);
+    [[nodiscard]] Akonadi::Collection collectionFromId(Collection::Id id) const;
 
     Akonadi::Collection::List mFolders;
     Akonadi::Item::List mMessages;
