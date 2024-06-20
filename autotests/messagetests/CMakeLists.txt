@@ -11,8 +11,8 @@ macro(ADD_AKONADIMIME_TEST)
       Qt::Test
       KPim6::AkonadiCore
       KPim6::AkonadiMime
-    )
-    set_target_properties(${_testName} PROPERTIES COMPILE_FLAGS -DTEST_DATA_DIR="\\"${CMAKE_CURRENT_SOURCE_DIR}/\\"" )
+   )
+    set_target_properties(${_testName} PROPERTIES COMPILE_FLAGS -DTEST_DATA_DIR="\\"${CMAKE_CURRENT_SOURCE_DIR}/\\"")
     ecm_mark_as_test(${_testName})
   endforeach()
 endmacro()

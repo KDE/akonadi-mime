@@ -9,7 +9,7 @@ macro(kcfg_generate_dbus_interface _kcfg _name)
         ${KF5Akonadi_DATA_DIR}/kcfg2dbus.xsl
         ${_kcfg}
         > ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
-        )
+       )
 endmacro()
 
 macro(add_resource_iface _kcfgFile _ifaceName _className)
@@ -17,7 +17,7 @@ macro(add_resource_iface _kcfgFile _ifaceName _className)
     set_source_files_properties( ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml PROPERTIES INCLUDE "metatype.h")
     qt_add_dbus_interface(akonadimime_SRCS
         ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_className}
-        )
+       )
 endmacro()
 
 ########### next target ###############
@@ -92,29 +92,29 @@ set(akonadimime_SRCS
     dispatchmodeattribute.h
     dispatcherinterface.h
 
-    )
+   )
 
 
 add_resource_iface(imapresource.kcfg
     org.kde.Akonadi.Imap.Settings imapsettings)
 
 # TODO: add the necessary API in SpecialCollections
-#if (BUILD_TESTING)
+#if(BUILD_TESTING)
 #    list(APPEND akonadimime_SRCS specialmailcollectionstesting.cpp)
 #endif()
 
 kconfig_add_kcfg_files(akonadimime_SRCS
     specialmailcollectionssettings.kcfgc
-    )
+   )
 
 install(FILES
     specialmailcollections.kcfg
     DESTINATION ${KDE_INSTALL_KCFGDIR}
-    )
+   )
 
 add_library(KPim6AkonadiMime ${akonadimime_SRCS})
 ecm_qt_declare_logging_category(KPim6AkonadiMime HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)
-if (COMPILE_WITH_UNITY_CMAKE_SUPPORT)
+if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
     set_target_properties(KPim6AkonadiMime PROPERTIES UNITY_BUILD ON)
 endif()
 generate_export_header(KPim6AkonadiMime BASE_NAME akonadi-mime)
@@ -134,18 +134,18 @@ target_link_libraries(KPim6AkonadiMime
     KF6::I18n
     KF6::XmlGui
     Qt::DBus
-    )
+   )
 
 set_target_properties(KPim6AkonadiMime PROPERTIES
     VERSION ${AKONADIMIME_VERSION}
     SOVERSION ${AKONADIMIME_SOVERSION}
     EXPORT_NAME AkonadiMime
-    )
+   )
 
 install(TARGETS
     KPim6AkonadiMime
     EXPORT KPim6AkonadiMimeTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-    )
+   )
 
 
 ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
@@ -179,23 +179,23 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
 
     REQUIRED_HEADERS AkonadiMime_HEADERS
     PREFIX Akonadi
-    )
+   )
 
 install(FILES
     ${AkonadiMime_CamelCase_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime/Akonadi
     COMPONENT Devel
-    )
+   )
 
 install(FILES
     ${AkonadiMime_HEADERS}
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_export.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime/akonadi
     COMPONENT Devel
-    )
+   )
 
 
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_add_qch(
         KPim6AkonadiMime_QCH
         NAME KPim6AkonadiMime
@@ -217,7 +217,7 @@ if (BUILD_QCH)
         TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
         COMPONENT Devel
-    )
+   )
 endif()
 
 ## install the MIME type spec file for KDEPIM specific MIME types

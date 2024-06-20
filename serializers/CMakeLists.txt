@@ -15,7 +15,7 @@ ecm_qt_declare_logging_category(akonadi_serializer_mail
         DESCRIPTION "akonadi-mime (akonadi_serializer_mail)"
         CATEGORY_NAME org.kde.pim.akonadi_serializer_mail
         EXPORT AKONADIMIME
-    )
+   )
 
 target_link_libraries(akonadi_serializer_mail
     KPim6::Mime

@@ -42,7 +42,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
     PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfigVersion.cmake"
     SOVERSION 6
-    )
+   )
 
 ########### Find packages ###########
 find_package(KF6KIO ${KF_MIN_VERSION} CONFIG REQUIRED)
@@ -53,7 +53,7 @@ find_package(KF6ItemModels ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 
-set( SharedMimeInfo_MINIMUM_VERSION "1.3" )
+set(SharedMimeInfo_MINIMUM_VERSION "1.3")
 find_package(SharedMimeInfo ${SharedMimeInfo_MINIMUM_VERSION} REQUIRED)
 
 find_package(LibXslt)
@@ -62,7 +62,7 @@ set_package_properties(LibXslt PROPERTIES
     URL "http://xmlsoft.org/XSLT/"
     TYPE REQUIRED
     PURPOSE "Needed to generate D-Bus interface specifications"
-    )
+   )
 
 ########### Targets ###########
 
@@ -74,7 +74,7 @@ ecm_set_disabled_deprecation_versions(QT 6.7
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
-if (USE_UNITY_CMAKE_SUPPORT)
+if(USE_UNITY_CMAKE_SUPPORT)
     set(COMPILE_WITH_UNITY_CMAKE_SUPPORT ON)
 endif()
 if(BUILD_TESTING)
@@ -93,13 +93,13 @@ endif()
 
 ########### CMake Config Files ###########
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KPim6AkonadiMime")
-if (BUILD_QCH)
+if(BUILD_QCH)
     ecm_install_qch_export(
         TARGETS KPim6AkonadiMime_QCH
         FILE KPim6AkonadiMimeQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
-    )
+   )
     set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6AkonadiMimeQchTargets.cmake\")")
 endif()
 
@@ -107,27 +107,27 @@ configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/KPimAkonadiMimeConfig.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfig.cmake"
     INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
-    )
+   )
 
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/KPim6AkonadiMimeConfigVersion.cmake"
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
     COMPONENT Devel
-    )
+   )
 
 install(EXPORT KPim6AkonadiMimeTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KPim6AkonadiMimeTargets.cmake NAMESPACE KPim6::)
 
 install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime COMPONENT Devel
-    )
+   )
 
 ecm_qt_install_logging_categories(
         EXPORT AKONADIMIME
         FILE akonadi-mime.categories
         DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
-        )
+       )
 
 
 kde_configure_git_pre_commit_hook(CHECKS CLANG_FORMAT)

@@ -6,7 +6,7 @@ find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Test Widgets)
 
 add_subdirectory(messagetests)
 
-set( EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR} )
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
 
 include_directories(
     ${CMAKE_SOURCE_DIR}/serializers
@@ -14,11 +14,11 @@ include_directories(
 )
 
 # for racetest
-set(requester_exe_string "QLatin1StringView( \\\"${CMAKE_CURRENT_BINARY_DIR}/requester\\\" )" )
-add_definitions( -DREQUESTER_EXE="${requester_exe_string}" )
+set(requester_exe_string "QLatin1StringView( \\\"${CMAKE_CURRENT_BINARY_DIR}/requester\\\")" )
+add_definitions(-DREQUESTER_EXE="${requester_exe_string}")
 
 #macro(add_akonadi_isolated_test _source)
-#  kconfig_add_kcfg_files( _srcList ../src/specialmailcollectionssettings.kcfgc )
+#  kconfig_add_kcfg_files( _srcList ../src/specialmailcollectionssettings.kcfgc)
 
 ### TODO: add the necessary API in SpecialCollections
 #add_akonadi_isolated_test(SOURCE localfolderstest.cpp LINK_LIBRARIES "KF6::ConfigGui;KF6::AkonadiMime;KF6::I18n")
