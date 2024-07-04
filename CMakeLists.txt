@@ -53,7 +53,7 @@ find_package(KF6ItemModels ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
 
-set(SharedMimeInfo_MINIMUM_VERSION "1.3")
+set(SharedMimeInfo_MINIMUM_VERSION "1.8")
 find_package(SharedMimeInfo ${SharedMimeInfo_MINIMUM_VERSION} REQUIRED)
 
 find_package(LibXslt)
