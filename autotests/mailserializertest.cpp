@@ -167,16 +167,16 @@ void MailSerializerTest::testEnvelopeSerialize()
     i.setMimeType(QStringLiteral("message/rfc822"));
     auto msg = new Message();
     msg->date()->setDateTime(date);
-    msg->subject()->fromUnicodeString(subject, "UTF-8");
-    msg->from()->fromUnicodeString(from, "UTF-8");
-    msg->sender()->fromUnicodeString(sender, "UTF-8");
-    msg->replyTo()->fromUnicodeString(replyTo, "UTF-8");
-    msg->to()->fromUnicodeString(to, "UTF-8");
-    msg->cc()->fromUnicodeString(cc, "UTF-8");
-    msg->bcc()->fromUnicodeString(bcc, "UTF-8");
-    msg->inReplyTo()->fromUnicodeString(inReplyTo, "UTF-8");
-    msg->messageID()->fromUnicodeString(messageId, "UTF-8");
-    msg->references()->fromUnicodeString(references, "UTF-8");
+    msg->subject()->fromUnicodeString(subject);
+    msg->from()->fromUnicodeString(from);
+    msg->sender()->fromUnicodeString(sender);
+    msg->replyTo()->fromUnicodeString(replyTo);
+    msg->to()->fromUnicodeString(to);
+    msg->cc()->fromUnicodeString(cc);
+    msg->bcc()->fromUnicodeString(bcc);
+    msg->inReplyTo()->fromUnicodeString(inReplyTo);
+    msg->messageID()->fromUnicodeString(messageId);
+    msg->references()->fromUnicodeString(references);
     i.setPayload(KMime::Message::Ptr(msg));
 
     auto serializer = new SerializerPluginMail();

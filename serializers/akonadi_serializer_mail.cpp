@@ -176,18 +176,18 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
             stream >> dt;
             msg->date()->setDateTime(dt);
             stream >> str;
-            msg->subject()->fromUnicodeString(str, QByteArrayLiteral("UTF-8"));
+            msg->subject()->fromUnicodeString(str);
 
             QString inReplyTo;
             stream >> inReplyTo;
-            msg->inReplyTo()->fromUnicodeString(inReplyTo, QByteArrayLiteral("UTF-8"));
+            msg->inReplyTo()->fromUnicodeString(inReplyTo);
             stream >> str;
-            msg->messageID()->fromUnicodeString(str, QByteArrayLiteral("UTF-8"));
+            msg->messageID()->fromUnicodeString(str);
             stream >> str;
             if (str == inReplyTo) {
                 msg->references()->fromIdent(msg->inReplyTo());
             } else {
-                msg->references()->fromUnicodeString(str, QByteArrayLiteral("UTF-8"));
+                msg->references()->fromUnicodeString(str);
             }
 
             parseAddrList(stream, msg->from(), version, m_stringPool);
