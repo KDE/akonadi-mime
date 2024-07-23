@@ -659,6 +659,3 @@ msgstr "Buida la &paperera"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Suprimeix permanentment tots els missatges de la carpeta paperera."
-
-#~ msgid "Add &Account..."
-#~ msgstr "&Afegeix un compte..."
