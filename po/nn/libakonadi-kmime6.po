@@ -1,12 +1,11 @@
 # Translation of libakonadi-kmime6 to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2023-07-29 12:34+0200\n"
+"PO-Revision-Date: 2024-07-26 15:05+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -14,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 24.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -120,22 +119,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Meldinga har ei ugyldig «sende meldingar»-mappe."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "Hentar element …"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "Søkjer etter duplikatar …"
+msgstr "Søkjer etter duplikat …"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "Fjernar duplikatar …"
+msgstr "Fjernar duplikat …"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -180,8 +176,7 @@ msgid "Local Folders"
 msgstr "Lokale mapper"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Legg til mappe …"
 
@@ -359,11 +354,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Klipp ut meldinga frå mappa."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Legg til konto"
+msgstr "Legg til &konto …"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -422,8 +415,7 @@ msgstr[0] "Sletta kontoen?"
 msgstr[1] "Sletta kontoane?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
 msgstr "Kontoeigenskapar …"
 
