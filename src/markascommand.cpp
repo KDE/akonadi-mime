@@ -119,7 +119,7 @@ void MarkAsCommand::execute()
     if (d->mRecursive && !d->mFolders.isEmpty()) {
         if (KMessageBox::questionTwoActions(qobject_cast<QWidget *>(parent()),
                                             i18n("Are you sure you want to mark all messages in this folder and all its subfolders?"),
-                                            i18n("Mark All Recursively"),
+                                            i18nc("@title:window", "Mark All Recursively"),
                                             KGuiItem(i18nc("@action:button", "Mark All")),
                                             KStandardGuiItem::cancel())
             == KMessageBox::ButtonCode::PrimaryAction) {

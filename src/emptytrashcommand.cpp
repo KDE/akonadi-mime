@@ -43,7 +43,7 @@ void EmptyTrashCommand::execute()
     }
 
     if (!mFolder.isValid()) { // expunge all
-        const QString title = i18n("Empty Trash");
+        const QString title = i18nc("@title:window", "Empty Trash");
         const QString text = i18n("Are you sure you want to empty the trash folders of all accounts?");
         if (KMessageBox::warningContinueCancel(nullptr,
                                                text,
