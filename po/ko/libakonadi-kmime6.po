@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-12 00:39+0000\n"
+"POT-Creation-Date: 2024-08-02 00:40+0000\n"
 "PO-Revision-Date: 2023-04-21 23:10+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -18,7 +18,9 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 
 #: emptytrashcommand.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Trash"
+msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "휴지통 비우기"
 
@@ -35,7 +37,9 @@ msgid ""
 msgstr "이 폴더와 모든 하위 폴더의 메시지를 표시하시겠습니까?"
 
 #: markascommand.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark All Recursively"
+msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "재귀적으로 모두 표시"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-12 00:39+0000\n"
+"POT-Creation-Date: 2024-08-02 00:40+0000\n"
 "PO-Revision-Date: 2024-06-16 17:50+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -19,7 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: emptytrashcommand.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Trash"
+msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Töm papperskorgen"
 
@@ -37,7 +39,9 @@ msgstr ""
 "Är du säker på att du vill markera alla brev i korgen och dess underkorgar?"
 
 #: markascommand.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark All Recursively"
+msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Markera alla rekursivt"
 

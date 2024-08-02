@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-12 00:39+0000\n"
+"POT-Creation-Date: 2024-08-02 00:40+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -18,7 +18,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: emptytrashcommand.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Trash"
+msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "ئەخلەتخانىنى تازىلاش"
 
@@ -38,9 +40,11 @@ msgid ""
 msgstr "قىسقۇچ %1 ۋە ئۇنىڭ ئىچىدىكى بارلىق تارماق قىسقۇچلارنى ئۆچۈرەمسىز؟"
 
 #: markascommand.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark as Read"
+msgctxt "@title:window"
 msgid "Mark All Recursively"
-msgstr ""
+msgstr "ئوقۇلدى بەلگىسى قوي"
 
 #: markascommand.cpp:123
 #, kde-format

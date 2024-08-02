@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-12 00:39+0000\n"
+"POT-Creation-Date: 2024-08-02 00:40+0000\n"
 "PO-Revision-Date: 2023-04-12 12:52+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -22,7 +22,9 @@ msgstr ""
 "X-Generator: Lokalize 22.12.3\n"
 
 #: emptytrashcommand.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Trash"
+msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Tyhjennä roskakori"
 
@@ -41,7 +43,9 @@ msgstr ""
 "viestit?"
 
 #: markascommand.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark All Recursively"
+msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Merkitse kaikki alikansioistakin"
 

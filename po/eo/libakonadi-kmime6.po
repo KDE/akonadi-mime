@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-12 00:39+0000\n"
+"POT-Creation-Date: 2024-08-02 00:40+0000\n"
 "PO-Revision-Date: 2024-05-30 07:49+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -19,7 +19,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: emptytrashcommand.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Trash"
+msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Malplenigi Rubujon"
 
@@ -38,7 +40,9 @@ msgstr ""
 "ĝiaj subdosierujoj?"
 
 #: markascommand.cpp:122
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Mark All Recursively"
+msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Marki Ĉiujn Rekursie"
 

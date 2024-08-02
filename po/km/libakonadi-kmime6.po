@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-12 00:39+0000\n"
+"POT-Creation-Date: 2024-08-02 00:40+0000\n"
 "PO-Revision-Date: 2012-07-11 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Language: km-KH\n"
 
 #: emptytrashcommand.cpp:46
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Empty Trash"
+msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "សម្អាត​ធុង​សំរាម"
 
@@ -42,6 +44,7 @@ msgstr "តើ​អ្នក​ពិតជា​ចង់​លុប​ថត
 #: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
+msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "សម្គាល់​ទាំងអស់​ថា​បាន​អាន"
 
