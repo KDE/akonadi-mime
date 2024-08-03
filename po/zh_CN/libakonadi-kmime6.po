@@ -18,11 +18,10 @@ msgstr ""
 "X-Crowdin-File-ID: 48988\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
-msgstr "清空废件夹"
+msgstr ""
 
 #: emptytrashcommand.cpp:47
 #, kde-format
@@ -37,11 +36,10 @@ msgid ""
 msgstr "您确定要将文件夹及其子文件夹中的所有信件标记为已读吗？"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
-msgstr "递归标记全部"
+msgstr ""
 
 #: markascommand.cpp:123
 #, kde-format
