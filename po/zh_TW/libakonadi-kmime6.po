@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-02 00:40+0000\n"
-"PO-Revision-Date: 2024-05-18 17:40+0900\n"
+"PO-Revision-Date: 2024-08-06 05:25+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -21,8 +21,7 @@ msgstr ""
 "X-Generator: Lokalize 24.04.70\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "清空垃圾桶"
@@ -40,8 +39,7 @@ msgid ""
 msgstr "確定標記此資料夾以及其子資料夾中的所有信件？"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "遞迴標記全部"
