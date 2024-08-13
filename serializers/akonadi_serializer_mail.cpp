@@ -31,54 +31,110 @@ QString StringPool::sharedValue(const QString &value)
     return value;
 }
 
-template<typename T>
-static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, T *hdr, int version, StringPool &pool)
+// v1 format or older
+[[nodiscard]] static std::optional<KMime::Types::Mailbox> parseMailbox(const QByteArray &addrString, int version, StringPool &pool)
 {
-    hdr->clear();
-    const int count = addrList.count();
     QVarLengthArray<QByteArray, 16> addr;
-    for (int i = 0; i < count; ++i) {
-        ImapParser::parseParenthesizedList(addrList[i], addr);
-        if (addr.count() != 4) {
-            qCWarning(AKONADI_SERIALIZER_MAIL_LOG) << "Error parsing envelope address field: " << addrList[i];
-            continue;
-        }
-        KMime::Types::Mailbox addrField;
-        if (version == 0) {
-            addrField.setNameFrom7Bit(addr[0]);
-        } else if (version == 1) {
-            addrField.setName(pool.sharedValue(QString::fromUtf8(addr[0])));
-        }
-        KMime::Types::AddrSpec addrSpec;
-        addrSpec.localPart = pool.sharedValue(QString::fromUtf8(addr[2]));
-        addrSpec.domain = pool.sharedValue(QString::fromUtf8(addr[3]));
-        addrField.setAddress(addrSpec);
-        hdr->addAddress(addrField);
+    ImapParser::parseParenthesizedList(addrString, addr);
+    if (addr.count() != 4) {
+        qCWarning(AKONADI_SERIALIZER_MAIL_LOG) << "Error parsing envelope address field: " << addrString;
+        return {};
     }
+    KMime::Types::Mailbox addrField;
+    if (version == 0) {
+        addrField.setNameFrom7Bit(addr[0]);
+    } else if (version == 1) {
+        addrField.setName(pool.sharedValue(QString::fromUtf8(addr[0])));
+    }
+    KMime::Types::AddrSpec addrSpec;
+    addrSpec.localPart = pool.sharedValue(QString::fromUtf8(addr[2]));
+    addrSpec.domain = pool.sharedValue(QString::fromUtf8(addr[3]));
+    addrField.setAddress(addrSpec);
+    return addrField;
 }
 
-template<typename T>
-static void parseAddrList(QDataStream &stream, T *hdr, int version, StringPool &pool)
+static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime::Headers::Generics::MailboxList *hdr, int version, StringPool &pool)
+{
+    const int count = addrList.count();
+    KMime::Types::Mailbox::List mboxList;
+    mboxList.reserve(count);
+
+    for (int i = 0; i < count; ++i) {
+        auto addrField = parseMailbox(addrList[i], version, pool);
+        if (addrField) {
+            mboxList.push_back(std::move(*addrField));
+        }
+    }
+
+    hdr->setMailboxes(mboxList);
+}
+
+static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime::Headers::Generics::AddressList *hdr, int version, StringPool &pool)
+{
+    const int count = addrList.count();
+    KMime::Types::AddressList addressList;
+    addressList.reserve(count);
+
+    for (int i = 0; i < count; ++i) {
+        auto addrField = parseMailbox(addrList[i], version, pool);
+        if (addrField) {
+            KMime::Types::Address addr;
+            addr.mailboxList.push_back(std::move(*addrField));
+            addressList.push_back(std::move(addr));
+        }
+    }
+
+    hdr->setAddressList(addressList);
+}
+
+// v2 format
+[[nodiscard]] static KMime::Types::Mailbox parseMailbox(QDataStream &stream, StringPool &pool)
+{
+    QString str;
+    KMime::Types::Mailbox mbox;
+    KMime::Types::AddrSpec addrSpec;
+    stream >> str;
+    mbox.setName(pool.sharedValue(str));
+    stream >> str;
+    addrSpec.localPart = pool.sharedValue(str);
+    stream >> str;
+    addrSpec.domain = pool.sharedValue(str);
+    mbox.setAddress(addrSpec);
+    return mbox;
+}
+
+static void parseAddrList(QDataStream &stream, KMime::Headers::Generics::MailboxList *hdr, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
-    hdr->clear();
     int count = 0;
     stream >> count;
-    for (int i = 0; i < count; ++i) {
-        QString str;
-        KMime::Types::Mailbox mbox;
-        KMime::Types::AddrSpec addrSpec;
-        stream >> str;
-        mbox.setName(pool.sharedValue(str));
-        stream >> str;
-        addrSpec.localPart = pool.sharedValue(str);
-        stream >> str;
-        addrSpec.domain = pool.sharedValue(str);
-        mbox.setAddress(addrSpec);
+    KMime::Types::Mailbox::List mboxList;
+    mboxList.reserve(count);
 
-        hdr->addAddress(mbox);
+    for (int i = 0; i < count; ++i) {
+        mboxList.push_back(parseMailbox(stream, pool));
     }
+
+    hdr->setMailboxes(mboxList);
+}
+
+static void parseAddrList(QDataStream &stream, KMime::Headers::Generics::AddressList *hdr, int version, StringPool &pool)
+{
+    Q_UNUSED(version)
+
+    int count = 0;
+    stream >> count;
+    KMime::Types::AddressList addrList;
+    addrList.reserve(count);
+
+    for (int i = 0; i < count; ++i) {
+        KMime::Types::Address addr;
+        addr.mailboxList.push_back(parseMailbox(stream, pool));
+        addrList.push_back(std::move(addr));
+    }
+
+    hdr->setAddressList(addrList);
 }
 
 bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIODevice &data, int version)
