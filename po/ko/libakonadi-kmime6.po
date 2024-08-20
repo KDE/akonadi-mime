@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Shinjo Park <kde@peremen.name>, 2014, 2015, 2016, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2020, 2021, 2023, 2024 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-02 00:40+0000\n"
-"PO-Revision-Date: 2023-04-21 23:10+0200\n"
+"PO-Revision-Date: 2024-08-19 21:42+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,11 +15,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "휴지통 비우기"
@@ -37,8 +36,7 @@ msgid ""
 msgstr "이 폴더와 모든 하위 폴더의 메시지를 표시하시겠습니까?"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "재귀적으로 모두 표시"
@@ -120,20 +118,17 @@ msgid "Message has invalid sent-mail folder."
 msgstr "메시지의 보낸 편지함 폴더가 잘못되었습니다."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "항목 가져오는 중..."
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
 msgstr "중복 항목 검사 중..."
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
 msgstr "중복 항목 삭제 중..."
 
@@ -180,8 +175,7 @@ msgid "Local Folders"
 msgstr "로컬 폴더"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "폴더 추가..."
 
@@ -347,11 +341,9 @@ msgid "Cut the selected message from the folder."
 msgstr "선택한 메시지를 폴더에서 잘라냅니다."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "계정 추가"
+msgstr "계정 추가(&A)…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -404,8 +396,7 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "계정 삭제?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
 msgstr "계정 속성..."
 
