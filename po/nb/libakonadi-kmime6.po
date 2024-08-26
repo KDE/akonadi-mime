@@ -119,19 +119,16 @@ msgstr ""
 
 #: removeduplicatesjob.cpp:41
 #, fuzzy, kde-format
-#| msgid "Retrieving items..."
 msgid "Retrieving items…"
 msgstr "Henter elementer  …"
 
 #: removeduplicatesjob.cpp:59
 #, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
 msgid "Searching for duplicates…"
 msgstr "Søker etter duplikater …"
 
 #: removeduplicatesjob.cpp:118
 #, fuzzy, kde-format
-#| msgid "Removing duplicates..."
 msgid "Removing duplicates…"
 msgstr "Fjerner duplikater …"
 
@@ -179,7 +176,6 @@ msgstr "Lokale mapper"
 
 #: standardmailactionmanager.cpp:119
 #, fuzzy, kde-format
-#| msgid "Add Folder..."
 msgid "Add Folder…"
 msgstr "Legg til mappe …"
 
@@ -359,8 +355,6 @@ msgstr "Klipp ut de valgte e-postene fra mappa."
 
 #: standardmailactionmanager.cpp:205
 #, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
 msgid "Add &Account…"
 msgstr "Legg til konto"
 
@@ -422,7 +416,6 @@ msgstr[1] "Slett kontoer?"
 
 #: standardmailactionmanager.cpp:233
 #, fuzzy, kde-format
-#| msgid "Account Properties..."
 msgid "Account Properties…"
 msgstr "Kontoegenskaper …"
 
