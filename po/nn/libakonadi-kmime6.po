@@ -20,7 +20,6 @@ msgstr ""
 
 #: emptytrashcommand.cpp:46
 #, fuzzy, kde-format
-#| msgid "Empty Trash"
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Tøm papirkorga"
@@ -41,7 +40,6 @@ msgstr ""
 
 #: markascommand.cpp:122
 #, fuzzy, kde-format
-#| msgid "Mark All Recursively"
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Merk alle rekursivt"
