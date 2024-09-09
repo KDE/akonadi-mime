@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-12 00:39+0000\n"
-"PO-Revision-Date: 2024-05-12 15:27+0530\n"
+"PO-Revision-Date: 2024-09-08 13:28+0200\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -193,7 +193,7 @@ msgstr "புதிய அடைவு"
 #: standardmailactionmanager.cpp:127
 #, kde-format
 msgid "Could not create folder: %1"
-msgstr ""
+msgstr "அடைவை உருவாக்க முடியவில்லை: %1"
 
 #: standardmailactionmanager.cpp:129
 #, kde-format
@@ -204,26 +204,26 @@ msgstr "அடைவை உருவாக்குவது தோல்வி�
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அடைவை நகலெடு"
+msgstr[1] "%1 அடைவுகளை நகலெடு"
 
 #: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள அடைவுகளை பிடிப்புப்பலகைக்கு நகலெடுக்கும்."
 
 #: standardmailactionmanager.cpp:138
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
-msgstr ""
+msgstr "%1 அடைவின் பண்புகள்"
 
 #: standardmailactionmanager.cpp:141
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அடைவை நீக்கு"
+msgstr[1] "%1 அடைவுகளை நீக்கு"
 
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
 #, kde-format
@@ -243,13 +243,13 @@ msgstr[1] ""
 msgctxt "@title:window"
 msgid "Delete folder?"
 msgid_plural "Delete folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அடைவை நீக்கலாமா?"
+msgstr[1] "அடைவுகளை நீக்கலாமா?"
 
 #: standardmailactionmanager.cpp:155
 #, kde-format
 msgid "Could not delete folder: %1"
-msgstr ""
+msgstr "அடைவை நீக்க முடியவில்லை: %1"
 
 #: standardmailactionmanager.cpp:157
 #, kde-format
