@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-02 00:40+0000\n"
-"PO-Revision-Date: 2024-05-14 11:35+0200\n"
+"PO-Revision-Date: 2024-09-09 20:31+0200\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -17,11 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.08.0\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Kuka ürítése"
@@ -41,8 +40,7 @@ msgstr ""
 "almappáiban?"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Összes megjelölése rekurzívan"
