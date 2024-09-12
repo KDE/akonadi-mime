@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "akonadi-mime"
+SPDX-PackageSupplier = "Montel Laurent <montel@kde.org>"
+SPDX-PackageDownloadLocation = "https://invent.kde.org/pim/akonadi-mime"
+
+[[annotations]]
+path = ["autotests/unittestenv/**", "autotests/messagetests/mails/**", "readme-build-ftime.txt"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "none"
+SPDX-License-Identifier = "CC0-1.0"
