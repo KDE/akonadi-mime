@@ -21,8 +21,7 @@ msgstr ""
 "X-Generator: Lokalize 23.04.3\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Άδειασμα απορριμμάτων"
@@ -44,8 +43,7 @@ msgstr ""
 "και σε όλους τους υποφακέλους;"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Να σημειωθούν όλα αναδρομικά"
@@ -127,22 +125,19 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Το μήνυμα έχει λανθασμένο φάκελο αποσταλμένης-αλληλογραφίας."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
-msgstr "Ανάκτηση αντικειμένων..."
+msgstr "Ανάκτηση αντικειμένων…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
-msgstr "Αναζήτηση για αντίγραφα..."
+msgstr "Αναζήτηση για αντίγραφα…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
-msgstr "Αφαίρεση αντιγράφων..."
+msgstr "Αφαίρεση αντιγράφων…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -187,10 +182,9 @@ msgid "Local Folders"
 msgstr "Τοπικοί φάκελοι"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
-msgstr "Προσθήκη φακέλου..."
+msgstr "Προσθήκη φακέλου…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -369,11 +363,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Αποκοπή των επιλεγμένων μηνυμάτων από τον φάκελο."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Προσθήκη λογαριασμού"
+msgstr "Π&ροσθήκη λογαριασμού…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -432,10 +424,9 @@ msgstr[0] "Διαγραφή του λογαριασμού;"
 msgstr[1] "Διαγραφή των λογαριασμών;"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "Ιδιότητες λογαριασμού..."
+msgstr "Ιδιότητες λογαριασμού…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
