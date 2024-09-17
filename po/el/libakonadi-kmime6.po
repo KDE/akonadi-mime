@@ -545,7 +545,7 @@ msgstr "Σημείωση των επιλεγμένων μηνυμάτων για
 #: standardmailactionmanager.cpp:752
 #, kde-format
 msgid "Mark &All Messages as Read"
-msgstr "Σημείωση &όλων των μηνυμάτων ως αναγνωσμένα"
+msgstr "Σημ&είωση όλων των μηνυμάτων ως αναγνωσμένα"
 
 #: standardmailactionmanager.cpp:753
 #, kde-format
@@ -575,7 +575,7 @@ msgstr "Να σημειωθούν όλα τα μηνύματα αναδρομι�
 #: standardmailactionmanager.cpp:780
 #, kde-format
 msgid "Mark &All Messages as Unread"
-msgstr "Σημείωση &όλων των μηνυμάτων ως μη αναγνωσμένα"
+msgstr "Σημείωση όλων των μηνυμάτων ως μη ανα&γνωσμένα"
 
 #: standardmailactionmanager.cpp:781
 #, kde-format
@@ -610,7 +610,7 @@ msgstr "Σημείωση όλων για ενέργεια"
 #: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark &All Messages as Action Item"
-msgstr "Σημείωση &όλων των μηνυμάτων για ενέργεια"
+msgstr "Σ&ημείωση όλων των μηνυμάτων για ενέργεια"
 
 #: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
 #, kde-format
