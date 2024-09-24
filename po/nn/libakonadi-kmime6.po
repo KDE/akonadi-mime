@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-02 00:40+0000\n"
-"PO-Revision-Date: 2024-08-26 22:15+0200\n"
+"PO-Revision-Date: 2024-09-23 20:08+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Text-Markup: kde4\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Tøm papirkorga"
