@@ -90,7 +90,7 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
 // v2 format
 [[nodiscard]] static KMime::Types::Mailbox parseMailbox(QDataStream &stream, StringPool &pool)
 {
-    QString str;
+    static thread_local QString str;
     KMime::Types::Mailbox mbox;
     KMime::Types::AddrSpec addrSpec;
     stream >> str;
