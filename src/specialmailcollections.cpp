@@ -136,6 +136,9 @@ void SpecialMailCollections::verifyI18nDefaultCollection(Type type)
     case SpecialMailCollections::Templates:
         defaultI18n = i18nc("local mail folder", "templates");
         break;
+    case SpecialMailCollections::Spam:
+        defaultI18n = i18nc("local mail folder", "spam");
+        break;
     default:
         break;
     }

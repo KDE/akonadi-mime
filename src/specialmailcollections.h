@@ -70,6 +70,7 @@ public:
         Trash, ///< The trash collection.
         Drafts, ///< The drafts collection.
         Templates, ///< The templates collection.
+        Spam, ///< The spam collection.
         LastType ///< @internal marker
     };
 

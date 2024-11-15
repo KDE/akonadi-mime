@@ -384,7 +384,8 @@ public:
                                           || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::SentMail)
                                           || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Trash)
                                           || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Drafts)
-                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Templates));
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Templates)
+                                          || collection == SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Spam));
                     }
                     // We will not change after that.
                     if (enableMarkAllAsRead && enableMarkAllAsUnread && !canDeleteItem && isSystemFolder) {

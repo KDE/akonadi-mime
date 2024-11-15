@@ -32,6 +32,8 @@ static inline QByteArray enumToType(SpecialMailCollections::Type type)
         return "drafts";
     case SpecialMailCollections::Templates:
         return "templates";
+    case SpecialMailCollections::Spam:
+        return "spam";
     case SpecialMailCollections::LastType: // fallthrough
     default:
         return {};
