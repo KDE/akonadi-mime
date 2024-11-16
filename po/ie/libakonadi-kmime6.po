@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-02 00:40+0000\n"
+"POT-Creation-Date: 2024-11-16 00:41+0000\n"
 "PO-Revision-Date: 2022-11-10 13:13+0700\n"
 "Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
 "Language-Team: Intelingue <kde-i18n-doc@kde.org>\n"
@@ -172,7 +172,13 @@ msgctxt "local mail folder"
 msgid "templates"
 msgstr "modelles"
 
-#: specialmailcollectionsrequestjob.cpp:46
+#: specialmailcollections.cpp:140
+#, kde-format
+msgctxt "local mail folder"
+msgid "spam"
+msgstr ""
+
+#: specialmailcollectionsrequestjob.cpp:48
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"
@@ -465,7 +471,7 @@ msgstr "Collation ne successat"
 msgid "Remove Important Mark"
 msgstr "_Marcar"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:725
 #, fuzzy, kde-format
 msgid "&Mark Message as Important"
 msgstr "_Marcar"
@@ -475,182 +481,182 @@ msgstr "_Marcar"
 msgid "Remove Action Item Mark"
 msgstr "Remover li selectet action."
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:739
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr ""
 
-#: standardmailactionmanager.cpp:694
+#: standardmailactionmanager.cpp:695
 #, fuzzy, kde-format
 msgid "&Mark Message as Read"
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:695
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "Mark as Read"
 msgstr "Marcar quam leet"
 
-#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
 #, fuzzy, kde-format
 msgid "Mark selected messages as read."
 msgstr "leet missages"
 
-#: standardmailactionmanager.cpp:709
+#: standardmailactionmanager.cpp:710
 #, fuzzy, kde-format
 msgid "&Mark Message as Unread"
 msgstr "Ínleet missage"
 
-#: standardmailactionmanager.cpp:710
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Marcar quam ínleet"
 
-#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
 #, fuzzy, kde-format
 msgid "Mark selected messages as unread."
 msgstr "ínleet missages"
 
-#: standardmailactionmanager.cpp:725
+#: standardmailactionmanager.cpp:726
 #, kde-format
 msgid "Mark as Important"
 msgstr "Marcar quam important"
 
-#: standardmailactionmanager.cpp:726
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr ""
 
-#: standardmailactionmanager.cpp:739
+#: standardmailactionmanager.cpp:740
 #, fuzzy, kde-format
 msgid "Mark as Action Item"
 msgstr "Element"
 
-#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr ""
 
-#: standardmailactionmanager.cpp:752
+#: standardmailactionmanager.cpp:753
 #, fuzzy, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:753
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
 #, fuzzy, kde-format
 msgid "Mark all messages as read."
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:766
+#: standardmailactionmanager.cpp:767
 #, fuzzy, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:767
+#: standardmailactionmanager.cpp:768
 #, fuzzy, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
 #, fuzzy, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Marcar omni quam leet"
 
-#: standardmailactionmanager.cpp:780
+#: standardmailactionmanager.cpp:781
 #, fuzzy, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "ínleet missages"
 
-#: standardmailactionmanager.cpp:781
+#: standardmailactionmanager.cpp:782
 #, fuzzy, kde-format
 msgid "Mark All as Unread"
 msgstr "Marcar quam ínleet"
 
-#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
 #, fuzzy, kde-format
 msgid "Mark all messages as unread."
 msgstr "ínleet missages"
 
-#: standardmailactionmanager.cpp:794
+#: standardmailactionmanager.cpp:795
 #, fuzzy, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "omni missages"
 
-#: standardmailactionmanager.cpp:795
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Marcar omni quam important"
 
-#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
 #, fuzzy, kde-format
 msgid "Mark all messages as important."
 msgstr "omni missages"
 
-#: standardmailactionmanager.cpp:807
+#: standardmailactionmanager.cpp:808
 #, fuzzy, kde-format
 msgid "Mark All as Action Item"
 msgstr "Marcar omni possibil actualisamentes"
 
-#: standardmailactionmanager.cpp:808
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr ""
 
-#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr ""
 
-#: standardmailactionmanager.cpp:822
+#: standardmailactionmanager.cpp:823
 #, kde-format
 msgid "Move to &Trash"
 msgstr "&Mover al Paper-corb"
 
-#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
 #, fuzzy, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Mover li selectet image in li Paper-corb"
 
-#: standardmailactionmanager.cpp:835
+#: standardmailactionmanager.cpp:836
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Mover omni al Paper-cor&b"
 
-#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
 #, fuzzy, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Ne successat mover li fólder in li Paper-corb"
 
-#: standardmailactionmanager.cpp:846
+#: standardmailactionmanager.cpp:847
 #, fuzzy, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Controlar e remover duplicat elementes de medie"
 
-#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
 #, fuzzy, kde-format
 msgid "Remove duplicate messages."
 msgstr "Controlar e remover duplicat elementes de medie"
 
-#: standardmailactionmanager.cpp:858
+#: standardmailactionmanager.cpp:859
 #, fuzzy, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Esque remover omni elementes ex li Paper-corb?"
 
-#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr ""
 
-#: standardmailactionmanager.cpp:869
+#: standardmailactionmanager.cpp:870
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "&Vacuar li Paper-corb"
 
-#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr ""

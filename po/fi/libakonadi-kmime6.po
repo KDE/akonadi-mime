@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-02 00:40+0000\n"
+"POT-Creation-Date: 2024-11-16 00:41+0000\n"
 "PO-Revision-Date: 2023-04-12 12:52+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -180,7 +180,13 @@ msgctxt "local mail folder"
 msgid "templates"
 msgstr "templates"
 
-#: specialmailcollectionsrequestjob.cpp:46
+#: specialmailcollections.cpp:140
+#, kde-format
+msgctxt "local mail folder"
+msgid "spam"
+msgstr ""
+
+#: specialmailcollectionsrequestjob.cpp:48
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"
@@ -476,7 +482,7 @@ msgstr "Liittäminen epäonnistui"
 msgid "Remove Important Mark"
 msgstr "Poista tärkeän viestin merkki"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:724
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:725
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Merkitse viesti tärkeäksi"
@@ -486,182 +492,182 @@ msgstr "&Merkitse viesti tärkeäksi"
 msgid "Remove Action Item Mark"
 msgstr "Poista tehtävän merkki"
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:738
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:739
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Merkitse viesti tehtäväksi"
 
-#: standardmailactionmanager.cpp:694
+#: standardmailactionmanager.cpp:695
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Merkitse viesti luetuksi"
 
-#: standardmailactionmanager.cpp:695
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "Mark as Read"
 msgstr "Merkitse luetuksi"
 
-#: standardmailactionmanager.cpp:696 standardmailactionmanager.cpp:697
+#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Merkitse valitut viestit luetuiksi."
 
-#: standardmailactionmanager.cpp:709
+#: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Merkitse viesti lukemattomaksi"
 
-#: standardmailactionmanager.cpp:710
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Merkitse lukemattomaksi"
 
-#: standardmailactionmanager.cpp:711 standardmailactionmanager.cpp:712
+#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Merkitse valitut viestit lukemattomiksi."
 
-#: standardmailactionmanager.cpp:725
+#: standardmailactionmanager.cpp:726
 #, kde-format
 msgid "Mark as Important"
 msgstr "Merkitse tärkeäksi"
 
-#: standardmailactionmanager.cpp:726
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Merkitse valitut viestit tärkeiksi."
 
-#: standardmailactionmanager.cpp:739
+#: standardmailactionmanager.cpp:740
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Merkitse tehtäväksi"
 
-#: standardmailactionmanager.cpp:740 standardmailactionmanager.cpp:741
+#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Merkitse valitut viestit tehtäviksi."
 
-#: standardmailactionmanager.cpp:752
+#: standardmailactionmanager.cpp:753
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Merkitse k&aikki viestit luetuiksi"
 
-#: standardmailactionmanager.cpp:753
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Merkitse kaikki luetuiksi"
 
-#: standardmailactionmanager.cpp:754 standardmailactionmanager.cpp:755
+#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Merkitse kaikki viestit luetuiksi."
 
-#: standardmailactionmanager.cpp:766
+#: standardmailactionmanager.cpp:767
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Merkitse k&aikki viestit luetuiksi alikansioistakin"
 
-#: standardmailactionmanager.cpp:767
+#: standardmailactionmanager.cpp:768
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Merkitse kaikki luetuiksi alikansioistakin"
 
-#: standardmailactionmanager.cpp:768 standardmailactionmanager.cpp:769
+#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Merkitse kaikki viestit luetuiksi alikansioistakin."
 
-#: standardmailactionmanager.cpp:780
+#: standardmailactionmanager.cpp:781
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Merkitse k&aikki viestit lukemattomiksi"
 
-#: standardmailactionmanager.cpp:781
+#: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Merkitse kaikki lukemattomiksi"
 
-#: standardmailactionmanager.cpp:782 standardmailactionmanager.cpp:783
+#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Merkitse kaikki viestit lukemattomiksi."
 
-#: standardmailactionmanager.cpp:794
+#: standardmailactionmanager.cpp:795
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Merkitse k&aikki viestit tärkeiksi"
 
-#: standardmailactionmanager.cpp:795
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Merkitse kaikki tärkeiksi"
 
-#: standardmailactionmanager.cpp:796 standardmailactionmanager.cpp:797
+#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Merkitse kaikki viestit tärkeiksi."
 
-#: standardmailactionmanager.cpp:807
+#: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Merkitse kaikki tehtäviksi"
 
-#: standardmailactionmanager.cpp:808
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Merkitse k&aikki viestit tehtäviksi"
 
-#: standardmailactionmanager.cpp:810 standardmailactionmanager.cpp:811
+#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Merkitse kaikki viestit tehtäviksi."
 
-#: standardmailactionmanager.cpp:822
+#: standardmailactionmanager.cpp:823
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Siirrä r&oskakoriin"
 
-#: standardmailactionmanager.cpp:824 standardmailactionmanager.cpp:825
+#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Siirrä valitut viestit roskakorikansioon."
 
-#: standardmailactionmanager.cpp:835
+#: standardmailactionmanager.cpp:836
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Siirrä k&aikki roskakoriin"
 
-#: standardmailactionmanager.cpp:836 standardmailactionmanager.cpp:837
+#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Siirrä kaikki viestit roskakorikansioon."
 
-#: standardmailactionmanager.cpp:846
+#: standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Poista &monistuneet viestit"
 
-#: standardmailactionmanager.cpp:847 standardmailactionmanager.cpp:848
+#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Poista monistuneet viestit."
 
-#: standardmailactionmanager.cpp:858
+#: standardmailactionmanager.cpp:859
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Tyhjennä &kaikki roskakorit"
 
-#: standardmailactionmanager.cpp:859 standardmailactionmanager.cpp:860
+#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Poista kaikki viestit kaikista roskakorikansioista pysyvästi."
 
-#: standardmailactionmanager.cpp:869
+#: standardmailactionmanager.cpp:870
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "T&yhjennä roskakori"
 
-#: standardmailactionmanager.cpp:870 standardmailactionmanager.cpp:871
+#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Poista kaikki viestit roskakorikansiosta pysyvästi."
