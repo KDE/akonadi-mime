@@ -103,12 +103,16 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
     return mbox;
 }
 
-static void parseAddrList(QDataStream &stream, KMime::Headers::Generics::MailboxList *hdr, int version, StringPool &pool)
+template<typename T>
+static void parseMailboxList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
     int count = 0;
     stream >> count;
+    if (count == 0) {
+        return;
+    }
     KMime::Types::Mailbox::List mboxList;
     mboxList.reserve(count);
 
@@ -116,15 +120,19 @@ static void parseAddrList(QDataStream &stream, KMime::Headers::Generics::Mailbox
         mboxList.push_back(parseMailbox(stream, pool));
     }
 
-    hdr->setMailboxes(mboxList);
+    (msg.get()->*(hdrFunc))(true)->setMailboxes(mboxList);
 }
 
-static void parseAddrList(QDataStream &stream, KMime::Headers::Generics::AddressList *hdr, int version, StringPool &pool)
+template<typename T>
+static void parseAddrList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
     int count = 0;
     stream >> count;
+    if (count == 0) {
+        return;
+    }
     KMime::Types::AddressList addrList;
     addrList.reserve(count);
 
@@ -134,7 +142,7 @@ static void parseAddrList(QDataStream &stream, KMime::Headers::Generics::Address
         addrList.push_back(std::move(addr));
     }
 
-    hdr->setAddressList(addrList);
+    (msg.get()->*(hdrFunc))(true)->setAddressList(addrList);
 }
 
 bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIODevice &data, int version)
@@ -217,7 +225,9 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
                 parseAddrList(addrList, msg->bcc(), version, m_stringPool);
             }
             // in-reply-to
-            msg->inReplyTo()->from7BitString(env[8]);
+            if (!env[8].isEmpty()) {
+                msg->inReplyTo()->from7BitString(env[8]);
+            }
             // message id
             msg->messageID()->from7BitString(env[9]);
             // references
@@ -236,22 +246,26 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
 
             QString inReplyTo;
             stream >> inReplyTo;
-            msg->inReplyTo()->fromUnicodeString(inReplyTo);
+            if (!inReplyTo.isEmpty()) {
+                msg->inReplyTo()->fromUnicodeString(inReplyTo);
+            }
             stream >> str;
             msg->messageID()->fromUnicodeString(str);
             stream >> str;
-            if (str == inReplyTo) {
-                msg->references()->fromIdent(msg->inReplyTo());
-            } else {
-                msg->references()->fromUnicodeString(str);
+            if (!str.isEmpty()) {
+                if (str == inReplyTo) {
+                    msg->references()->fromIdent(msg->inReplyTo());
+                } else {
+                    msg->references()->fromUnicodeString(str);
+                }
             }
 
-            parseAddrList(stream, msg->from(), version, m_stringPool);
-            parseAddrList(stream, msg->sender(), version, m_stringPool);
-            parseAddrList(stream, msg->replyTo(), version, m_stringPool);
-            parseAddrList(stream, msg->to(), version, m_stringPool);
-            parseAddrList(stream, msg->cc(), version, m_stringPool);
-            parseAddrList(stream, msg->bcc(), version, m_stringPool);
+            parseMailboxList(stream, qOverload<bool>(&KMime::Message::from), msg, version, m_stringPool);
+            parseMailboxList(stream, qOverload<bool>(&KMime::Message::sender), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<bool>(&KMime::Message::replyTo), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<bool>(&KMime::Message::to), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<bool>(&KMime::Message::cc), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<bool>(&KMime::Message::bcc), msg, version, m_stringPool);
 
             if (stream.status() == QDataStream::ReadCorruptData || stream.status() == QDataStream::ReadPastEnd) {
                 qCWarning(AKONADI_SERIALIZER_MAIL_LOG) << "Akonadi KMime Deserializer: Got invalid envelope";
