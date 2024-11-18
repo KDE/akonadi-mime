@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:41+0000\n"
-"PO-Revision-Date: 2024-08-03 13:09+0100\n"
+"PO-Revision-Date: 2024-11-16 12:58+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: British English\n"
 "Language: en_GB\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -174,7 +174,7 @@ msgstr "templates"
 #, kde-format
 msgctxt "local mail folder"
 msgid "spam"
-msgstr ""
+msgstr "spam"
 
 #: specialmailcollectionsrequestjob.cpp:48
 #, kde-format
