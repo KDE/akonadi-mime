@@ -48,7 +48,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
 set(AKONADI_VERSION "6.3.40")
-set(KPIM_MIME_VERSION "6.3.40")
+set(KPIM_MIME_VERSION "6.3.41")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"

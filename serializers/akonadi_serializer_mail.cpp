@@ -69,6 +69,25 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
     hdr->setMailboxes(mboxList);
 }
 
+static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime::Headers::Generics::SingleMailbox *hdr, int version, StringPool &pool)
+{
+    const int count = addrList.count();
+    if (count != 1) {
+        return;
+    }
+    KMime::Types::Mailbox::List mboxList;
+    mboxList.reserve(count);
+
+    for (int i = 0; i < count; ++i) {
+        auto addrField = parseMailbox(addrList[i], version, pool);
+        if (addrField) {
+            mboxList.push_back(std::move(*addrField));
+        }
+    }
+
+    hdr->setMailbox(mboxList[0]);
+}
+
 static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime::Headers::Generics::AddressList *hdr, int version, StringPool &pool)
 {
     const int count = addrList.count();
@@ -121,6 +140,25 @@ static void parseMailboxList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr
     }
 
     (msg.get()->*(hdrFunc))(true)->setMailboxes(mboxList);
+}
+
+template<typename T>
+static void parseSingleMailbox(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &msg, int version, StringPool &pool)
+{
+    Q_UNUSED(version)
+
+    int count = 0;
+    stream >> count;
+    if (count == 0) {
+        return;
+    }
+
+    // we need to consume the entire stream, even if it contains more than one element...
+    for (int i = 0; i < count; ++i) {
+        if (!i) {
+            (msg.get()->*(hdrFunc))(true)->setMailbox(parseMailbox(stream, pool));
+        }
+    }
 }
 
 template<typename T>
@@ -261,7 +299,7 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
             }
 
             parseMailboxList(stream, qOverload<bool>(&KMime::Message::from), msg, version, m_stringPool);
-            parseMailboxList(stream, qOverload<bool>(&KMime::Message::sender), msg, version, m_stringPool);
+            parseSingleMailbox(stream, qOverload<bool>(&KMime::Message::sender), msg, version, m_stringPool);
             parseAddrList(stream, qOverload<bool>(&KMime::Message::replyTo), msg, version, m_stringPool);
             parseAddrList(stream, qOverload<bool>(&KMime::Message::to), msg, version, m_stringPool);
             parseAddrList(stream, qOverload<bool>(&KMime::Message::cc), msg, version, m_stringPool);
@@ -287,6 +325,13 @@ static void serializeAddrList(QDataStream &stream, T *hdr)
     }
 }
 
+static void serializeAddr(QDataStream &stream, KMime::Headers::Generics::SingleMailbox *hdr)
+{
+    stream << (qint32)1;
+    const auto mbox = hdr->mailbox();
+    stream << mbox.name() << mbox.addrSpec().localPart << mbox.addrSpec().domain;
+}
+
 void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, QIODevice &data, int &version)
 {
     version = 1;
@@ -300,7 +345,7 @@ void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, 
         stream << m->date()->dateTime() << m->subject()->asUnicodeString() << m->inReplyTo()->asUnicodeString() << m->messageID()->asUnicodeString()
                << m->references()->asUnicodeString();
         serializeAddrList(stream, m->from());
-        serializeAddrList(stream, m->sender());
+        serializeAddr(stream, m->sender());
         serializeAddrList(stream, m->replyTo());
         serializeAddrList(stream, m->to());
         serializeAddrList(stream, m->cc());
