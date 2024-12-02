@@ -1,6 +1,6 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Tommi Nieminen <translator@legisign.org>, 2011, 2013, 2016, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2011, 2013, 2016, 2020, 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 # Lasse Liehu <lasse.liehu@gmail.com>, 2012, 2013, 2014, 2015.
 #
 # KDE Finnish translation sprint participants:
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-02 00:40+0000\n"
-"PO-Revision-Date: 2023-04-12 12:52+0300\n"
+"PO-Revision-Date: 2024-10-16 18:19+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -18,12 +18,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-POT-Import-Date: 2012-12-01 22:25:19+0000\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Tyhjennä roskakori"
@@ -43,8 +41,7 @@ msgstr ""
 "viestit?"
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark All Recursively"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Merkitse kaikki alikansioistakin"
@@ -126,20 +123,17 @@ msgid "Message has invalid sent-mail folder."
 msgstr "Viestillä on virheellinen lähtevän postin kansio."
 
 #: removeduplicatesjob.cpp:41
-#, fuzzy, kde-format
-#| msgid "Retrieving items..."
+#, kde-format
 msgid "Retrieving items…"
 msgstr "Noudetaan kohteita…"
 
 #: removeduplicatesjob.cpp:59
-#, fuzzy, kde-format
-#| msgid "Searching for duplicates..."
+#, kde-format
 msgid "Searching for duplicates…"
 msgstr "Etsitään kaksoiskappaleita…"
 
 #: removeduplicatesjob.cpp:118
-#, fuzzy, kde-format
-#| msgid "Removing duplicates..."
+#, kde-format
 msgid "Removing duplicates…"
 msgstr "Poistetaan kaksoiskappaleita…"
 
@@ -187,8 +181,7 @@ msgid "Local Folders"
 msgstr "Paikalliset kansiot"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "Lisää kansio…"
 
@@ -365,11 +358,9 @@ msgid "Cut the selected message from the folder."
 msgstr "Leikkaa valitut viestit leikepöydälle."
 
 #: standardmailactionmanager.cpp:205
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "Lisää tili"
+msgstr "Lisää &tili…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -427,8 +418,7 @@ msgstr[0] "Poistetaanko tili?"
 msgstr[1] "Poistetaanko tilit?"
 
 #: standardmailactionmanager.cpp:233
-#, fuzzy, kde-format
-#| msgid "Account Properties..."
+#, kde-format
 msgid "Account Properties…"
 msgstr "Tilin ominaisuudet…"
 
