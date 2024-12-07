@@ -318,6 +318,11 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
 template<typename T>
 static void serializeAddrList(QDataStream &stream, T *hdr)
 {
+    if (!hdr) {
+        stream << (qint32)0;
+        return;
+    }
+
     const KMime::Types::Mailbox::List mb = hdr->mailboxes();
     stream << (qint32)mb.size();
     for (const KMime::Types::Mailbox &mbox : mb) {
@@ -327,9 +332,20 @@ static void serializeAddrList(QDataStream &stream, T *hdr)
 
 static void serializeAddr(QDataStream &stream, KMime::Headers::Generics::SingleMailbox *hdr)
 {
+    if (!hdr) {
+        stream << (qint32)0;
+        return;
+    }
+
     stream << (qint32)1;
     const auto mbox = hdr->mailbox();
     stream << mbox.name() << mbox.addrSpec().localPart << mbox.addrSpec().domain;
+}
+
+template<typename T>
+static QString asUnicodeString(T *hdr)
+{
+    return hdr ? hdr->asUnicodeString() : QString();
 }
 
 void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, QIODevice &data, int &version)
@@ -342,14 +358,14 @@ void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, 
     } else if (label == MessagePart::Envelope) {
         version = 2;
         QDataStream stream(&data);
-        stream << m->date()->dateTime() << m->subject()->asUnicodeString() << m->inReplyTo()->asUnicodeString() << m->messageID()->asUnicodeString()
-               << m->references()->asUnicodeString();
-        serializeAddrList(stream, m->from());
-        serializeAddr(stream, m->sender());
-        serializeAddrList(stream, m->replyTo());
-        serializeAddrList(stream, m->to());
-        serializeAddrList(stream, m->cc());
-        serializeAddrList(stream, m->bcc());
+        stream << m->date()->dateTime() << asUnicodeString(m->subject(false)) << asUnicodeString(m->inReplyTo(false)) << asUnicodeString(m->messageID(false))
+               << asUnicodeString(m->references(false));
+        serializeAddrList(stream, m->from(false));
+        serializeAddr(stream, m->sender(false));
+        serializeAddrList(stream, m->replyTo(false));
+        serializeAddrList(stream, m->to(false));
+        serializeAddrList(stream, m->cc(false));
+        serializeAddrList(stream, m->bcc(false));
     } else if (label == MessagePart::Header) {
         data.write(m->head());
     }
