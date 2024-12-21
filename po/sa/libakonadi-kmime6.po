@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:41+0000\n"
-"PO-Revision-Date: 2024-12-14 01:48+0530\n"
+"PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -78,31 +78,31 @@ msgstr "आकृति"
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
-msgstr "(न विषयः) २."
+msgstr "(न विषयः)"
 
 #: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
-msgstr "(न प्रेषकः) २."
+msgstr "(न प्रेषकः)"
 
 #: messagemodel.cpp:81
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
-msgstr "(न ग्राहकः) २."
+msgstr "(न ग्राहकः)"
 
 #: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
-msgstr "(तिथिः नास्ति) २."
+msgstr "(तिथिः नास्ति)"
 
 #: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
-msgstr "- ९."
+msgstr "-"
 
 #: messagequeuejob.cpp:58
 #, kde-format
