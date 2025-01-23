@@ -9,10 +9,8 @@ portingAid: false
 deprecated: false
 release: false
 libraries:
- - cmake: "KPim6::AkonadiMime"
+    - cmake: "KPim6::AkonadiMime"
 cmakename: KPim6AkonadiMime
 
 public_lib: true
 group: kdepim
-platforms:
-    - name: Linux
