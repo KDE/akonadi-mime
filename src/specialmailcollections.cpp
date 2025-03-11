@@ -32,7 +32,7 @@ using Settings = SpecialMailCollectionsSettings;
 Q_GLOBAL_STATIC(SpecialMailCollectionsPrivate, sInstance)
 
 static const char s_specialCollectionTypes[SpecialMailCollections::LastType][11] =
-    {"local-mail", "inbox", "outbox", "sent-mail", "trash", "drafts", "templates"};
+    {"local-mail", "inbox", "outbox", "sent-mail", "trash", "drafts", "templates", "spam"};
 
 static const int s_numTypes = sizeof s_specialCollectionTypes / sizeof *s_specialCollectionTypes;
 
