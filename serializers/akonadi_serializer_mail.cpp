@@ -15,7 +15,7 @@
 #include <KMime/Message>
 
 #include <Akonadi/Item>
-#include <akonadi/private/imapparser_p.h>
+#include <private/imapparser_p.h>
 
 using namespace Akonadi;
 using namespace KMime;
