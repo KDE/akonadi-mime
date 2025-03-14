@@ -1,0 +1,51 @@
+/*
+  SPDX-FileCopyrightText: 2009 Kevin Ottens <ervin@kde.org>
+
+  SPDX-License-Identifier: LGPL-2.0-or-later
+*/
+
+// THIS file should not exist and is only a copy of
+// kdepim-runtime/resources/shared/singlefileresource
+
+// Any improvements should be done at kdepim-runtime and
+// than afterwards copy the new version
+
+#pragma once
+
+#include "akonadi-mime_export.h"
+
+#include <Akonadi/Attribute>
+
+#include <KIMAP/Acl>
+
+#include <QMap>
+
+#include <memory>
+namespace PimCommon
+{
+class ImapAclAttributePrivate;
+/**
+ * @brief The ImapAclAttribute class
+ */
+class AKONADI_MIME_EXPORT ImapAclAttribute : public Akonadi::Attribute
+{
+public:
+    ImapAclAttribute();
+    ImapAclAttribute(const QMap<QByteArray, KIMAP::Acl::Rights> &rights, const QMap<QByteArray, KIMAP::Acl::Rights> &oldRights);
+    ~ImapAclAttribute() override;
+    void setRights(const QMap<QByteArray, KIMAP::Acl::Rights> &rights);
+    [[nodiscard]] QMap<QByteArray, KIMAP::Acl::Rights> rights() const;
+    [[nodiscard]] QMap<QByteArray, KIMAP::Acl::Rights> oldRights() const;
+    void setMyRights(KIMAP::Acl::Rights rights);
+    [[nodiscard]] KIMAP::Acl::Rights myRights() const;
+    [[nodiscard]] QByteArray type() const override;
+    ImapAclAttribute *clone() const override;
+    [[nodiscard]] QByteArray serialized() const override;
+    void deserialize(const QByteArray &data) override;
+
+    bool operator==(const ImapAclAttribute &other) const;
+
+private:
+    std::unique_ptr<ImapAclAttributePrivate> const d;
+};
+}

@@ -36,6 +36,7 @@ set(akonadimime_SRCS
     messagestatus.cpp
     newmailnotifierattribute.cpp
     pop3resourceattribute.cpp
+    imapaclattribute.cpp
 
     commandbase.cpp
     util.cpp
@@ -68,6 +69,7 @@ set(akonadimime_SRCS
     specialmailcollections.h
     metatype.h
     messageparts.h
+    imapaclattribute.h
 
     mdnstateattribute.h
     mdnstateattribute.cpp
@@ -127,6 +129,7 @@ target_include_directories(KPim6AkonadiMime PUBLIC "$<BUILD_INTERFACE:${Akonadi-
 target_link_libraries(KPim6AkonadiMime
     PUBLIC
     KPim6::AkonadiCore
+    KPim6::IMAP
     PRIVATE
     KPim6::Mime
     KPim6::AkonadiWidgets
@@ -175,6 +178,7 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
     DispatchModeAttribute
     ErrorAttribute
     SentActionAttribute
+    ImapAclAttribute
 
 
     REQUIRED_HEADERS AkonadiMime_HEADERS

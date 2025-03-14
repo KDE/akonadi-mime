@@ -57,3 +57,7 @@ ecm_add_test(mdnstateattributetest.cpp mdnstateattributetest.h
     TEST_NAME mdnstateattributetest
 )
 
+ecm_add_test(imapaclattributetest.cpp imapaclattributetest.h
+    LINK_LIBRARIES KPim6::AkonadiMime KPim6::AkonadiCore Qt::Test
+    TEST_NAME imapaclattributetest
+)

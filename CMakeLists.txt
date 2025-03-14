@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
 
-set(PIM_VERSION "6.4.41")
+set(PIM_VERSION "6.4.42")
 project(Akonadi-Mime VERSION ${PIM_VERSION})
 
 # ECM setup
@@ -48,6 +48,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
 set(AKONADI_VERSION "6.4.40")
 set(KPIM_MIME_VERSION "6.4.40")
+set(KIMAP_LIB_VERSION "6.4.40")
 
 ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h"
@@ -63,6 +64,7 @@ find_package(KPim6Mime ${KPIM_MIME_VERSION} CONFIG REQUIRED)
 find_package(KF6ItemModels ${KF_MIN_VERSION} CONFIG REQUIRED)
 
 find_package(KPim6Akonadi ${AKONADI_VERSION} CONFIG REQUIRED)
+find_package(KPim6IMAP ${KIMAP_LIB_VERSION} CONFIG REQUIRED)
 
 set(SharedMimeInfo_MINIMUM_VERSION "1.10")
 find_package(SharedMimeInfo ${SharedMimeInfo_MINIMUM_VERSION} REQUIRED)
