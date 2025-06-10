@@ -5,8 +5,9 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime6-serializer\")
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 add_library(akonadi_serializer_mail MODULE)
-target_sources(akonadi_serializer_mail PRIVATE
-    akonadi_serializer_mail.cpp akonadi_serializer_mail.h
+target_sources(
+    akonadi_serializer_mail
+    PRIVATE akonadi_serializer_mail.cpp akonadi_serializer_mail.h
 )
 
 ecm_qt_declare_logging_category(akonadi_serializer_mail
@@ -15,17 +16,17 @@ ecm_qt_declare_logging_category(akonadi_serializer_mail
         DESCRIPTION "akonadi-mime (akonadi_serializer_mail)"
         CATEGORY_NAME org.kde.pim.akonadi_serializer_mail
         EXPORT AKONADIMIME
-   )
+)
 
-target_link_libraries(akonadi_serializer_mail
+target_link_libraries(
+    akonadi_serializer_mail
     KPim6::Mime
     KPim6::AkonadiCore
     KPim6::AkonadiMime
     KPim6::AkonadiPrivate
 )
-install(TARGETS akonadi_serializer_mail
-    DESTINATION ${KDE_INSTALL_PLUGINDIR}
-)
-install(FILES akonadi_serializer_mail.desktop
+install(TARGETS akonadi_serializer_mail DESTINATION ${KDE_INSTALL_PLUGINDIR})
+install(
+    FILES akonadi_serializer_mail.desktop
     DESTINATION ${KDE_INSTALL_DATADIR}/akonadi/plugins/serializer
 )

@@ -9,15 +9,21 @@ target_link_libraries(requester KPim6::AkonadiMime KF6::I18n Qt::Widgets)
 
 # convenience macro to add akonadi demo application
 macro(add_akonadimime_demo _source)
-  set(_test ${_source})
-  get_filename_component(_name ${_source} NAME_WE)
-  add_executable(${_name} ${_test})
-  target_link_libraries(${_name}  KPim6AkonadiMime KPim6::Mime KPim6::AkonadiCore KF6::I18n Qt::Widgets)
+    set(_test ${_source})
+    get_filename_component(_name ${_source} NAME_WE)
+    add_executable(${_name} ${_test})
+    target_link_libraries(
+        ${_name}
+        KPim6AkonadiMime
+        KPim6::Mime
+        KPim6::AkonadiCore
+        KF6::I18n
+        Qt::Widgets
+    )
 endmacro()
 
 # demo applications
 add_akonadimime_demo(headfetcher.cpp)
-
 
 #Laurent : Look at how to readd it => depend against kmailtransport
 #find_package(KF6TextWidgets ${KF_MIN_VERSION} CONFIG REQUIRED)

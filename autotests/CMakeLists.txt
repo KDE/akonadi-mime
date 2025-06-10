@@ -14,7 +14,9 @@ include_directories(
 )
 
 # for racetest
-set(requester_exe_string "QLatin1StringView( \\\"${CMAKE_CURRENT_BINARY_DIR}/requester\\\")" )
+set(requester_exe_string
+    "QLatin1StringView( \\\"${CMAKE_CURRENT_BINARY_DIR}/requester\\\")"
+)
 add_definitions(-DREQUESTER_EXE="${requester_exe_string}")
 
 #macro(add_akonadi_isolated_test _source)
@@ -56,4 +58,3 @@ ecm_add_test(mdnstateattributetest.cpp mdnstateattributetest.h
     LINK_LIBRARIES KPim6::AkonadiMime KPim6::AkonadiCore Qt::Test
     TEST_NAME mdnstateattributetest
 )
-
