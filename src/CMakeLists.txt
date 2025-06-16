@@ -114,6 +114,8 @@ if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
 endif()
 generate_export_header(KPim6AkonadiMime BASE_NAME akonadi-mime)
 
+qt_extract_metatypes(KPim6AkonadiMime)
+
 add_library(KPim6::AkonadiMime ALIAS KPim6AkonadiMime)
 
 target_include_directories(
@@ -227,3 +229,5 @@ endif()
 ## install the MIME type spec file for KDEPIM specific MIME types
 install(FILES x-vnd.kde.contactgroup.xml DESTINATION ${KDE_INSTALL_MIMEDIR})
 update_xdg_mimetypes(${KDE_INSTALL_MIMEDIR})
+
+add_subdirectory(quick)
