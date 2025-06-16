@@ -18,6 +18,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 
 include(GenerateExportHeader)
 include(ECMGenerateHeaders)
+include(ECMQmlModule)
 
 include(ECMSetupVersion)
 file(
@@ -74,6 +75,7 @@ ecm_setup_version(PROJECT VARIABLE_PREFIX AKONADIMIME
 )
 
 ########### Find packages ###########
+find_package(Qt6QmlIntegration ${QT_REQUIRED_VERSION} REQUIRED)
 find_package(KF6KIO ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6I18n ${KF_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF6XmlGui ${KF_MIN_VERSION} CONFIG REQUIRED)
