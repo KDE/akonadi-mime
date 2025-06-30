@@ -1,15 +1,16 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
+# Spanish translations for libakonadi-kmime6.po package.
+# Copyright (C) 2010-2025 This file is copyright:
 # This file is distributed under the same license as the akonadi-mime package.
 #
 # SPDX-FileCopyrightText: 2010 Cristina Yenyxe González García <the.blue.valkyrie@gmail.com>
 # SPDX-FileCopyrightText: 2011, 2012, 2013, 2014, 2015, 2016 Javier Vinal <fjvinal@gmail.com>
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime6\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:41+0000\n"
-"PO-Revision-Date: 2024-11-16 14:27+0100\n"
+"PO-Revision-Date: 2025-06-29 13:42+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -124,17 +125,17 @@ msgstr "El mensaje tiene una carpeta de «correo enviado» no válida."
 #: removeduplicatesjob.cpp:41
 #, kde-format
 msgid "Retrieving items…"
-msgstr "Recuperando elementos..."
+msgstr "Recuperando elementos…"
 
 #: removeduplicatesjob.cpp:59
 #, kde-format
 msgid "Searching for duplicates…"
-msgstr "Buscando duplicados..."
+msgstr "Buscando duplicados…"
 
 #: removeduplicatesjob.cpp:118
 #, kde-format
 msgid "Removing duplicates…"
-msgstr "Eliminando duplicados..."
+msgstr "Eliminando duplicados…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -187,7 +188,7 @@ msgstr "Carpetas locales"
 #: standardmailactionmanager.cpp:119
 #, kde-format
 msgid "Add Folder…"
-msgstr "Añadir carpeta..."
+msgstr "Añadir carpeta…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -365,7 +366,7 @@ msgstr "Cortar el mensaje seleccionado de la carpeta."
 #: standardmailactionmanager.cpp:205
 #, kde-format
 msgid "Add &Account…"
-msgstr "&Añadir cuenta..."
+msgstr "&Añadir cuenta…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -426,7 +427,7 @@ msgstr[1] "¿Borrar cuentas?"
 #: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Account Properties…"
-msgstr "Propiedades de la cuenta..."
+msgstr "Propiedades de la cuenta…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
@@ -665,14 +666,3 @@ msgstr "&Vaciar la papelera"
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Borrar permanentemente todos los mensajes de la papelera."
-
-#~ msgid "Add &Account..."
-#~ msgstr "&Añadir cuenta..."
-
-#~ msgctxt "@label"
-#~ msgid ""
-#~ "This model can only handle email folders. The current collection holds "
-#~ "mimetypes: %1"
-#~ msgstr ""
-#~ "Este modelo solo puede manejar carpetas de correo. La colección actual "
-#~ "contiene los tipos MIME: %1"
