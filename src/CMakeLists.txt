@@ -4,11 +4,11 @@ add_definitions(-DTRANSLATION_DOMAIN=\"libakonadi-kmime6\")
 # generates a D-Bus interface description from a KConfigXT file
 macro(kcfg_generate_dbus_interface _kcfg _name)
     add_custom_command(
-        OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
-        COMMAND
-            ${LIBXSLT_XSLTPROC_EXECUTABLE} --stringparam interfaceName ${_name}
-            ${KF5Akonadi_DATA_DIR}/kcfg2dbus.xsl ${_kcfg} >
+        OUTPUT
             ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
+        COMMAND
+            ${LIBXSLT_XSLTPROC_EXECUTABLE} --stringparam interfaceName ${_name} ${KF5Akonadi_DATA_DIR}/kcfg2dbus.xsl
+            ${_kcfg} > ${CMAKE_CURRENT_BINARY_DIR}/${_name}.xml
     )
 endmacro()
 
@@ -16,7 +16,9 @@ macro(add_resource_iface _kcfgFile _ifaceName _className)
     kcfg_generate_dbus_interface(${CMAKE_CURRENT_SOURCE_DIR}/${_kcfgFile} ${_ifaceName})
     set_source_files_properties(
         ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml
-        PROPERTIES INCLUDE "metatype.h"
+        PROPERTIES
+            INCLUDE
+                "metatype.h"
     )
     qt_add_dbus_interface(akonadimime_SRCS
         ${CMAKE_CURRENT_BINARY_DIR}/${_ifaceName}.xml ${_className}
@@ -110,7 +112,12 @@ install(FILES specialmailcollections.kcfg DESTINATION ${KDE_INSTALL_KCFGDIR})
 add_library(KPim6AkonadiMime ${akonadimime_SRCS})
 ecm_qt_declare_logging_category(KPim6AkonadiMime HEADER akonadi_mime_debug.h IDENTIFIER AKONADIMIME_LOG CATEGORY_NAME log_akonadi_mime)
 if(COMPILE_WITH_UNITY_CMAKE_SUPPORT)
-    set_target_properties(KPim6AkonadiMime PROPERTIES UNITY_BUILD ON)
+    set_target_properties(
+        KPim6AkonadiMime
+        PROPERTIES
+            UNITY_BUILD
+                ON
+    )
 endif()
 generate_export_header(KPim6AkonadiMime BASE_NAME akonadi-mime)
 
@@ -118,7 +125,8 @@ add_library(KPim6::AkonadiMime ALIAS KPim6AkonadiMime)
 
 target_include_directories(
     KPim6AkonadiMime
-    INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime>"
+    INTERFACE
+        "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime>"
 )
 target_include_directories(
     KPim6AkonadiMime
@@ -128,7 +136,8 @@ target_include_directories(
 
 target_link_libraries(
     KPim6AkonadiMime
-    PUBLIC KPim6::AkonadiCore
+    PUBLIC
+        KPim6::AkonadiCore
     PRIVATE
         KPim6::Mime
         KPim6::AkonadiWidgets
@@ -141,16 +150,15 @@ target_link_libraries(
 set_target_properties(
     KPim6AkonadiMime
     PROPERTIES
-        VERSION ${AKONADIMIME_VERSION}
-        SOVERSION ${AKONADIMIME_SOVERSION}
-        EXPORT_NAME AkonadiMime
+        VERSION
+            ${AKONADIMIME_VERSION}
+        SOVERSION
+            ${AKONADIMIME_SOVERSION}
+        EXPORT_NAME
+            AkonadiMime
 )
 
-install(
-    TARGETS KPim6AkonadiMime
-    EXPORT KPim6AkonadiMimeTargets
-    ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
-)
+install(TARGETS KPim6AkonadiMime EXPORT KPim6AkonadiMimeTargets ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
     HEADER_NAMES
@@ -186,7 +194,8 @@ ecm_generate_headers(AkonadiMime_CamelCase_HEADERS
 )
 
 install(
-    FILES ${AkonadiMime_CamelCase_HEADERS}
+    FILES
+        ${AkonadiMime_CamelCase_HEADERS}
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime/Akonadi
     COMPONENT Devel
 )

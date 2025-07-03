@@ -31,4 +31,8 @@ target_link_libraries(
     Qt::DBus
 )
 
-install(TARGETS akonadi_benchmarker ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
+install(
+    TARGETS
+        akonadi_benchmarker
+        ${KDE_INSTALL_TARGETS_DEFAULT_ARGS}
+)

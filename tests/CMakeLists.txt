@@ -1,11 +1,28 @@
 # SPDX-FileCopyrightText: none
 # SPDX-License-Identifier: BSD-3-Clause
-find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Test Widgets)
+find_package(
+    Qt6
+    ${QT_REQUIRED_VERSION}
+    CONFIG
+    REQUIRED
+    COMPONENTS
+        Test
+        Widgets
+)
 
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR})
 
-add_executable(requester foldersrequester.cpp foldersrequester.h)
-target_link_libraries(requester KPim6::AkonadiMime KF6::I18n Qt::Widgets)
+add_executable(
+    requester
+    foldersrequester.cpp
+    foldersrequester.h
+)
+target_link_libraries(
+    requester
+    KPim6::AkonadiMime
+    KF6::I18n
+    Qt::Widgets
+)
 
 # convenience macro to add akonadi demo application
 macro(add_akonadimime_demo _source)
@@ -33,17 +50,38 @@ add_akonadimime_demo(headfetcher.cpp)
 #ecm_mark_as_test(queuer)
 #target_link_libraries(queuer KPim6::AkonadiMime Qt::Widgets KF6::I18n KF6::ConfigGui KF6::TextWidgets)
 
-set(sendqueued_srcs sendqueued.cpp sendqueued.h)
+set(sendqueued_srcs
+    sendqueued.cpp
+    sendqueued.h
+)
 add_executable(sendqueued ${sendqueued_srcs})
 ecm_mark_as_test(sendqueued)
-target_link_libraries(sendqueued KPim6::AkonadiMime Qt::Widgets)
+target_link_libraries(
+    sendqueued
+    KPim6::AkonadiMime
+    Qt::Widgets
+)
 
-set(clearerror_srcs clearerror.cpp clearerror.h)
+set(clearerror_srcs
+    clearerror.cpp
+    clearerror.h
+)
 add_executable(clearerror ${clearerror_srcs})
 ecm_mark_as_test(clearerror)
-target_link_libraries(clearerror KPim6::AkonadiMime Qt::Widgets)
+target_link_libraries(
+    clearerror
+    KPim6::AkonadiMime
+    Qt::Widgets
+)
 
-set(abort_srcs abort.cpp abort.h)
+set(abort_srcs
+    abort.cpp
+    abort.h
+)
 add_executable(abort ${abort_srcs})
 ecm_mark_as_test(abort)
-target_link_libraries(abort KPim6::AkonadiMime Qt::Widgets)
+target_link_libraries(
+    abort
+    KPim6::AkonadiMime
+    Qt::Widgets
+)

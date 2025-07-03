@@ -55,11 +55,7 @@ ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_CLANG_FORMAT_SOURC
 
 include(ECMAddQch)
 
-option(
-    BUILD_QCH
-    "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)"
-    OFF
-)
+option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(
     QCH
     ${BUILD_QCH}
@@ -92,10 +88,14 @@ find_package(LibXslt)
 set_package_properties(
     LibXslt
     PROPERTIES
-        DESCRIPTION "xsltproc"
-        URL "http://xmlsoft.org/XSLT/"
-        TYPE REQUIRED
-        PURPOSE "Needed to generate D-Bus interface specifications"
+        DESCRIPTION
+            "xsltproc"
+        URL
+            "http://xmlsoft.org/XSLT/"
+        TYPE
+            REQUIRED
+        PURPOSE
+            "Needed to generate D-Bus interface specifications"
 )
 
 ########### Targets ###########
@@ -105,11 +105,7 @@ ecm_set_disabled_deprecation_versions(QT 6.10.0
      KF 6.15.0
 )
 
-option(
-    USE_UNITY_CMAKE_SUPPORT
-    "Use UNITY cmake support (speedup compile time)"
-    OFF
-)
+option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
 
 set(COMPILE_WITH_UNITY_CMAKE_SUPPORT OFF)
 if(USE_UNITY_CMAKE_SUPPORT)
@@ -118,10 +114,7 @@ endif()
 if(BUILD_TESTING)
     set(AKONADI_MIME_TEST_EXPORT AKONADI_MIME_EXPORT)
 endif()
-configure_file(
-    akonadi-mimeprivate_export.h.in
-    "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mimeprivate_export.h"
-)
+configure_file(akonadi-mimeprivate_export.h.in "${CMAKE_CURRENT_BINARY_DIR}/akonadi-mimeprivate_export.h")
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
 add_subdirectory(src)
@@ -141,9 +134,7 @@ if(BUILD_QCH)
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS
-        "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6AkonadiMimeQchTargets.cmake\")"
-    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KPim6AkonadiMimeQchTargets.cmake\")")
 endif()
 
 configure_package_config_file(
@@ -168,7 +159,8 @@ install(
 )
 
 install(
-    FILES ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
+    FILES
+        ${CMAKE_CURRENT_BINARY_DIR}/akonadi-mime_version.h
     DESTINATION ${KDE_INSTALL_INCLUDEDIR}/KPim6/AkonadiMime
     COMPONENT Devel
 )

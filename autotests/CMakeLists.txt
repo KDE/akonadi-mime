@@ -2,7 +2,15 @@
 # SPDX-License-Identifier: BSD-3-Clause
 include(ECMAddTests)
 
-find_package(Qt6 ${QT_REQUIRED_VERSION} CONFIG REQUIRED COMPONENTS Test Widgets)
+find_package(
+    Qt6
+    ${QT_REQUIRED_VERSION}
+    CONFIG
+    REQUIRED
+    COMPONENTS
+        Test
+        Widgets
+)
 
 add_subdirectory(messagetests)
 
@@ -14,9 +22,7 @@ include_directories(
 )
 
 # for racetest
-set(requester_exe_string
-    "QLatin1StringView( \\\"${CMAKE_CURRENT_BINARY_DIR}/requester\\\")"
-)
+set(requester_exe_string "QLatin1StringView( \\\"${CMAKE_CURRENT_BINARY_DIR}/requester\\\")")
 add_definitions(-DREQUESTER_EXE="${requester_exe_string}")
 
 #macro(add_akonadi_isolated_test _source)
