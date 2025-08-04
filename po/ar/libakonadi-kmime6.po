@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2014.
-# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2022, 2023, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:41+0000\n"
-"PO-Revision-Date: 2024-11-28 12:03+0400\n"
+"PO-Revision-Date: 2025-08-03 11:13+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -80,25 +80,25 @@ msgstr "الحجم"
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
-msgstr "(بدون موضوع)"
+msgstr "(بلا موضوع)"
 
 #: messagemodel.cpp:75
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
-msgstr "(بدون المُرسِل)"
+msgstr "(بلا مُرسِل)"
 
 #: messagemodel.cpp:81
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
-msgstr "(بدون المُستقبِل)"
+msgstr "(بلا مُستقبِل)"
 
 #: messagemodel.cpp:87
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
-msgstr "(بدون تاريخ)"
+msgstr "(بلا تاريخ)"
 
 #: messagemodel.cpp:91
 #, kde-format
@@ -114,7 +114,7 @@ msgstr "رسالة فارغة."
 #: messagequeuejob.cpp:65
 #, kde-format
 msgid "Message has no recipients."
-msgstr "الرسالة بدون مستلمين."
+msgstr "الرسالة بلا مستلمين."
 
 #: messagequeuejob.cpp:72
 #, kde-format
