@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: 2020 Carl Schwan <carl@carlschwan.eu>
-# SPDX-License-Identifier: BSD-2-Clause
+# SPDX-License-Identifier: BSD-3-Clause
 
 ecm_add_qml_module(akonadi_mime_quick_plugin
     URI "org.kde.akonadi.mime"
