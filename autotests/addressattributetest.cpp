@@ -33,7 +33,7 @@ void AddressAttributeTest::shouldDeserializeValues()
     const QByteArray ba = attr.serialized();
     Akonadi::AddressAttribute result;
     result.deserialize(ba);
-    QVERIFY(attr == result);
+    QCOMPARE(attr, result);
 }
 
 #include "moc_addressattributetest.cpp"

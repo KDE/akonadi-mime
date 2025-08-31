@@ -21,10 +21,10 @@ void MessageTest::testCopyFlags()
         Akonadi::Item item;
         Akonadi::MessageFlags::copyMessageFlags(*msg, item);
 
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::Signed) == false);
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::Encrypted) == true);
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::HasInvitation) == false);
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::HasAttachment) == false);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::Signed), false);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::Encrypted), true);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::HasInvitation), false);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::HasAttachment), false);
     }
 
     {
@@ -33,10 +33,10 @@ void MessageTest::testCopyFlags()
         Akonadi::Item item;
         Akonadi::MessageFlags::copyMessageFlags(*msg, item);
 
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::Signed) == true);
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::Encrypted) == false);
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::HasInvitation) == true);
-        QVERIFY(item.hasFlag(Akonadi::MessageFlags::HasAttachment) == true);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::Signed), true);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::Encrypted), false);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::HasInvitation), true);
+        QCOMPARE(item.hasFlag(Akonadi::MessageFlags::HasAttachment), true);
     }
 }
 

@@ -41,7 +41,7 @@ void Pop3ResourceAttributeTest::shouldDeserializeValue()
     const QByteArray ba = attr.serialized();
     Akonadi::Pop3ResourceAttribute result;
     result.deserialize(ba);
-    QVERIFY(attr == result);
+    QCOMPARE(attr, result);
 }
 
 void Pop3ResourceAttributeTest::shouldCloneAttribute()
@@ -50,7 +50,7 @@ void Pop3ResourceAttributeTest::shouldCloneAttribute()
     QString accountName = QStringLiteral("foo");
     attr.setPop3AccountName(accountName);
     Akonadi::Pop3ResourceAttribute *result = attr.clone();
-    QVERIFY(attr == *result);
+    QCOMPARE(attr, *result);
     delete result;
 }
 

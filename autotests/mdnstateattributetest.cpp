@@ -36,7 +36,7 @@ void MDNStateAttributeTest::shouldSerializedAttribute()
     const QByteArray ba = attr.serialized();
     Akonadi::MDNStateAttribute result;
     result.deserialize(ba);
-    QVERIFY(attr == result);
+    QCOMPARE(attr, result);
 }
 
 void MDNStateAttributeTest::shouldCloneAttribute()
@@ -45,7 +45,7 @@ void MDNStateAttributeTest::shouldCloneAttribute()
     attr.setMDNState(Akonadi::MDNStateAttribute::MDNDenied);
 
     Akonadi::MDNStateAttribute *result = attr.clone();
-    QVERIFY(attr == *result);
+    QCOMPARE(attr, *result);
     delete result;
 }
 

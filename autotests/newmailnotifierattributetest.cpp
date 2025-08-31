@@ -39,7 +39,7 @@ void NewMailNotifierAttributeTest::shouldSerializedData()
     QByteArray ba = attr.serialized();
     NewMailNotifierAttribute result;
     result.deserialize(ba);
-    QVERIFY(attr == result);
+    QCOMPARE(attr, result);
 }
 
 void NewMailNotifierAttributeTest::shouldCloneAttribute()
@@ -47,7 +47,7 @@ void NewMailNotifierAttributeTest::shouldCloneAttribute()
     NewMailNotifierAttribute attr;
     attr.setIgnoreNewMail(true);
     NewMailNotifierAttribute *result = attr.clone();
-    QVERIFY(attr == *result);
+    QCOMPARE(attr, *result);
     delete result;
 }
 
