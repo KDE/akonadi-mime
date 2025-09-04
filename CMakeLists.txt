@@ -54,6 +54,7 @@ include(ECMCheckOutboundLicense)
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_CLANG_FORMAT_SOURCE_FILES})
 
 include(ECMAddQch)
+set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
 
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(
