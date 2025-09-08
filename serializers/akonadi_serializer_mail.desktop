@@ -55,7 +55,6 @@ Name[sr@latin]=Serijalizator pošte
 Name[sv]=E-postserialisering
 Name[tr]=E-posta Sıralandırıcı
 Name[uk]=Серіалізатор пошти
-Name[x-test]=xxMail Serializerxx
 Name[zh_CN]=邮件序列化器
 Name[zh_TW]=信件序列器
 Comment=An Akonadi serializer plugin for mail objects
@@ -114,7 +113,6 @@ Comment[sr@latin]=Akonadijev priključak serijalizatora za objekte pošte
 Comment[sv]=Ett insticksprogram till Akonadi för serialisering av e-postobjekt
 Comment[tr]=E-posta nesneleri için bir Akonadi sıralandırıcısı
 Comment[uk]=Додаток серіалізації Akonadi для об'єктів пошти
-Comment[x-test]=xxAn Akonadi serializer plugin for mail objectsxx
 Comment[zh_CN]=对邮件对象进行序列化的 Akonadi 插件
 Comment[zh_TW]=信件物件的 Akonadi 序列器外掛程式
 
