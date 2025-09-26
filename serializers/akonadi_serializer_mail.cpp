@@ -330,7 +330,7 @@ static void serializeAddrList(QDataStream &stream, T *hdr)
     }
 }
 
-static void serializeAddr(QDataStream &stream, KMime::Headers::Generics::SingleMailbox *hdr)
+static void serializeAddr(QDataStream &stream, const KMime::Headers::Generics::SingleMailbox *hdr)
 {
     if (!hdr) {
         stream << (qint32)0;
@@ -352,20 +352,21 @@ void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, 
 {
     version = 1;
 
-    auto m = item.payload<KMime::Message::Ptr>();
+    auto m = item.payload<QSharedPointer<const KMime::Message>>();
     if (label == MessagePart::Body) {
         data.write(m->encodedContent());
     } else if (label == MessagePart::Envelope) {
         version = 2;
         QDataStream stream(&data);
-        stream << m->date()->dateTime() << asUnicodeString(m->subject(false)) << asUnicodeString(m->inReplyTo(false)) << asUnicodeString(m->messageID(false))
-               << asUnicodeString(m->references(false));
-        serializeAddrList(stream, m->from(false));
-        serializeAddr(stream, m->sender(false));
-        serializeAddrList(stream, m->replyTo(false));
-        serializeAddrList(stream, m->to(false));
-        serializeAddrList(stream, m->cc(false));
-        serializeAddrList(stream, m->bcc(false));
+        const auto dtHdr = m->date();
+        stream << (dtHdr ? dtHdr->dateTime() : QDateTime()) << asUnicodeString(m->subject()) << asUnicodeString(m->inReplyTo())
+               << asUnicodeString(m->messageID()) << asUnicodeString(m->references());
+        serializeAddrList(stream, m->from());
+        serializeAddr(stream, m->sender());
+        serializeAddrList(stream, m->replyTo());
+        serializeAddrList(stream, m->to());
+        serializeAddrList(stream, m->cc());
+        serializeAddrList(stream, m->bcc());
     } else if (label == MessagePart::Header) {
         data.write(m->head());
     }
@@ -399,8 +400,8 @@ QString SerializerPluginMail::extractGid(const Item &item) const
     if (!item.hasPayload<KMime::Message::Ptr>()) {
         return {};
     }
-    const auto msg = item.payload<KMime::Message::Ptr>();
-    KMime::Headers::MessageID *mid = msg->messageID(false);
+    const auto msg = item.payload<QSharedPointer<const KMime::Message>>();
+    const KMime::Headers::MessageID *mid = msg->messageID();
     if (mid) {
         return mid->asUnicodeString();
     } else if (KMime::Headers::Base *uid = msg->headerByType("X-Akonotes-UID")) {

@@ -55,33 +55,33 @@ int MessageModel::entityColumnCount(HeaderGroup group) const
 
 QVariant MessageModel::entityData(const Item &item, int column, int role) const
 {
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<const KMime::Message>>()) {
         return {};
     }
 
-    const auto msg = item.payload<KMime::Message::Ptr>();
+    const auto msg = item.payload<QSharedPointer<const KMime::Message>>();
     if (role == Qt::DisplayRole) {
         switch (column) {
         case Subject:
-            if (auto s = msg->subject(false)) {
+            if (auto s = msg->subject()) {
                 return s->asUnicodeString();
             } else {
                 return i18nc("@label Alternative text when email subject is missing", "(No subject)");
             }
         case Sender:
-            if (auto s = msg->from(false)) {
+            if (auto s = msg->from()) {
                 return s->asUnicodeString();
             } else {
                 return i18nc("@label Alternative text when email sender is missing", "(No sender)");
             }
         case Receiver:
-            if (auto s = msg->to(false)) {
+            if (auto s = msg->to()) {
                 return s->asUnicodeString();
             } else {
                 return i18nc("@label Alternative text when email recipient is missing", "(No receiver)");
             }
         case Date:
-            if (auto s = msg->date(false)) {
+            if (auto s = msg->date()) {
                 return QLocale().toString(s->dateTime());
             } else {
                 return i18nc("@label Alternative text when email date/time is missing", "(No date)");
@@ -98,14 +98,22 @@ QVariant MessageModel::entityData(const Item &item, int column, int role) const
         }
     } else if (role == Qt::EditRole) {
         switch (column) {
-        case Subject:
-            return msg->subject()->asUnicodeString();
-        case Sender:
-            return msg->from()->asUnicodeString();
-        case Receiver:
-            return msg->to()->asUnicodeString();
-        case Date:
-            return msg->date()->dateTime() /*.dateTime()*/;
+        case Subject: {
+            const auto h = msg->subject();
+            return h ? h->asUnicodeString() : QString();
+        }
+        case Sender: {
+            const auto h = msg->from();
+            return h ? h->asUnicodeString() : QString();
+        }
+        case Receiver: {
+            const auto h = msg->to();
+            return h ? h->asUnicodeString() : QString();
+        }
+        case Date: {
+            const auto h = msg->date();
+            return h ? h->dateTime() : QDateTime();
+        }
         case Size:
             return item.size();
         default:
