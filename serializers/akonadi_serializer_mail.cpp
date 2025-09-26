@@ -292,7 +292,7 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
             stream >> str;
             if (!str.isEmpty()) {
                 if (str == inReplyTo) {
-                    msg->references()->fromIdent(msg->inReplyTo());
+                    msg->references()->fromIdent(*msg->inReplyTo());
                 } else {
                     msg->references()->fromUnicodeString(str);
                 }
