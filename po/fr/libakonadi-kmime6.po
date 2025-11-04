@@ -148,13 +148,13 @@ msgstr "Suppression des doublons..."
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
-msgstr "boîte de réception"
+msgstr "boite de réception"
 
 #: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
-msgstr "boîte d'envoi"
+msgstr "boite d'envoi"
 
 #: specialmailcollections.cpp:128
 #, kde-format
@@ -309,7 +309,7 @@ msgstr "Propriétés du dossier"
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr ""
-"Ouvrir une boîte de dialogue pour modifier les propriétés du dossier "
+"Ouvrir une boite de dialogue pour modifier les propriétés du dossier "
 "sélectionné."
 
 #: standardmailactionmanager.cpp:179
@@ -384,7 +384,7 @@ msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr ""
-"Ajoute un nouveau compte<p>Une boîte de dialogue apparaît, dans laquelle "
+"Ajoute un nouveau compte<p>Une boite de dialogue apparait, dans laquelle "
 "vous pouvez sélectionner le type du compte devant être ajouté.</p>"
 
 #: standardmailactionmanager.cpp:210
@@ -443,7 +443,7 @@ msgstr "Propriétés du compte..."
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr ""
-"Ouvre une boîte de dialogue pour modifier les propriétés du compte "
+"Ouvre une boite de dialogue pour modifier les propriétés du compte "
 "sélectionné."
 
 #: standardmailactionmanager.cpp:238
