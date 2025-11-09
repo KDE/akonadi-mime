@@ -7,20 +7,21 @@
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016.
 # Aracele Torres <araceletorres@gmail.com>, 2010.
 # Frederico Gonçalves Guimarães <frederico@teia.bio.br>, 2021.
+# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-16 00:41+0000\n"
-"PO-Revision-Date: 2025-07-23 11:15-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+"PO-Revision-Date: 2025-11-08 21:16-0300\n"
+"Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -126,17 +127,17 @@ msgstr "Mensagem com pasta de e-mail enviado inválida."
 #: removeduplicatesjob.cpp:41
 #, kde-format
 msgid "Retrieving items…"
-msgstr "Obtendo os itens..."
+msgstr "Obtendo os itens…"
 
 #: removeduplicatesjob.cpp:59
 #, kde-format
 msgid "Searching for duplicates…"
-msgstr "Procurando duplicadas..."
+msgstr "Procurando duplicadas…"
 
 #: removeduplicatesjob.cpp:118
 #, kde-format
 msgid "Removing duplicates…"
-msgstr "Removendo duplicadas..."
+msgstr "Removendo duplicadas…"
 
 #: specialmailcollections.cpp:122
 #, kde-format
@@ -189,7 +190,7 @@ msgstr "Pastas locais"
 #: standardmailactionmanager.cpp:119
 #, kde-format
 msgid "Add Folder…"
-msgstr "Adicionar pasta..."
+msgstr "Adicionar pasta…"
 
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
@@ -366,7 +367,7 @@ msgstr "Recorta as mensagens selecionadas da pasta."
 #: standardmailactionmanager.cpp:205
 #, kde-format
 msgid "Add &Account…"
-msgstr "Adicionar &conta..."
+msgstr "Adicionar &conta…"
 
 #: standardmailactionmanager.cpp:207
 #, kde-format
@@ -427,7 +428,7 @@ msgstr[1] "Excluir as contas?"
 #: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Account Properties…"
-msgstr "Propriedades da conta..."
+msgstr "Propriedades da conta…"
 
 #: standardmailactionmanager.cpp:235
 #, kde-format
