@@ -24,7 +24,7 @@ MarkAsCommandHelper::~MarkAsCommandHelper() = default;
 void MarkAsCommandHelper::start()
 {
     if (mItemsToModify.isEmpty()) {
-        emitResult(Akonadi::CommandBase::OK);
+        Q_EMIT emitResult(Akonadi::CommandBase::OK);
         deleteLater();
     } else {
         mIndex = 0;
@@ -57,11 +57,11 @@ void MarkAsCommandHelper::slotModifyItemDone(KJob *job)
 {
     if (job && job->error()) {
         qCDebug(AKONADIMIME_LOG) << " Error trying to set item status:" << job->errorText();
-        emitResult(Akonadi::CommandBase::Failed);
+        Q_EMIT emitResult(Akonadi::CommandBase::Failed);
     }
     if (mIndex > mItemsToModify.count()) {
         qCDebug(AKONADIMIME_LOG) << " finish";
-        emitResult(Akonadi::CommandBase::OK);
+        Q_EMIT emitResult(Akonadi::CommandBase::OK);
         deleteLater();
     } else {
         // Modify more messages
