@@ -11,6 +11,7 @@
 
 #include "messageflags.h"
 
+#include <QDebug>
 #include <QString>
 
 /** The message status format. These can be or'd together.
