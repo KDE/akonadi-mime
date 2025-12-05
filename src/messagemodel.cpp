@@ -41,7 +41,7 @@ MessageModel::MessageModel(Monitor *monitor, QObject *parent)
 {
     // Make sure we have an envelope
     monitor->itemFetchScope().fetchPayloadPart(MessagePart::Envelope);
-    setCollectionFetchStrategy(InvisibleCollectionFetch);
+    setCollectionFetchStrategy(FetchCollectionsMerged);
 }
 
 int MessageModel::entityColumnCount(HeaderGroup group) const
