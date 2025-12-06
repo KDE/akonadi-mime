@@ -326,6 +326,8 @@ public:
 
     /** Return a special status that expresses Unread.
         This status can only be used for comparison with other states.
+        Unread is special because search is performed using a simple bit-mask comparison, which
+        cannot return nonzero for an *un*set flag. This special flag works around that.
     */
     static const MessageStatus statusUnread();
 
