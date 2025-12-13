@@ -16,5 +16,5 @@ private Q_SLOTS:
     void testCopyFlags();
 
 private:
-    KMime::Message::Ptr readAndParseMail(const QString &mailFile) const;
+    QSharedPointer<KMime::Message> readAndParseMail(const QString &mailFile) const;
 };

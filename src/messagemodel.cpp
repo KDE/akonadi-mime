@@ -20,7 +20,7 @@
 
 #include <KLazyLocalizedString>
 #include <array>
-using MessagePtr = KMime::Message::Ptr;
+using MessagePtr = QSharedPointer<KMime::Message>;
 
 using namespace Akonadi;
 

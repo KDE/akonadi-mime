@@ -33,7 +33,7 @@ public:
 
     MessageQueueJob *const q;
 
-    Message::Ptr message;
+    QSharedPointer<Message> message;
     TransportAttribute transportAttribute;
     DispatchModeAttribute dispatchModeAttribute;
     SentBehaviourAttribute sentBehaviourAttribute;
@@ -104,7 +104,7 @@ void MessageQueueJobPrivate::outboxRequestResult(KJob *job)
     // Create item.
     Item item;
     item.setMimeType(QStringLiteral("message/rfc822"));
-    item.setPayload<Message::Ptr>(message);
+    item.setPayload<QSharedPointer<Message>>(message);
 
     // Set attributes.
     item.addAttribute(addressAttribute.clone());
@@ -132,7 +132,7 @@ MessageQueueJob::MessageQueueJob(QObject *parent)
 
 MessageQueueJob::~MessageQueueJob() = default;
 
-Message::Ptr MessageQueueJob::message() const
+QSharedPointer<Message> MessageQueueJob::message() const
 {
     return d->message;
 }
@@ -162,7 +162,7 @@ SentActionAttribute &MessageQueueJob::sentActionAttribute()
     return d->sentActionAttribute;
 }
 
-void MessageQueueJob::setMessage(const Message::Ptr &message)
+void MessageQueueJob::setMessage(const QSharedPointer<Message> &message)
 {
     d->message = message;
 }

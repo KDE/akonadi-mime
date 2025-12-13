@@ -91,7 +91,7 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
 static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime::Headers::Generics::AddressList *hdr, int version, StringPool &pool)
 {
     const int count = addrList.count();
-    KMime::Types::AddressList addressList;
+    QList<KMime::Types::Address> addressList;
     addressList.reserve(count);
 
     for (int i = 0; i < count; ++i) {
@@ -123,7 +123,7 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
 }
 
 template<typename T>
-static void parseMailboxList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &msg, int version, StringPool &pool)
+static void parseMailboxList(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::Message> &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -143,7 +143,7 @@ static void parseMailboxList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr
 }
 
 template<typename T>
-static void parseSingleMailbox(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &msg, int version, StringPool &pool)
+static void parseSingleMailbox(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::Message> &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -162,7 +162,7 @@ static void parseSingleMailbox(QDataStream &stream, T hdrFunc, KMime::Message::P
 }
 
 template<typename T>
-static void parseAddrList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &msg, int version, StringPool &pool)
+static void parseAddrList(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::Message> &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -171,7 +171,7 @@ static void parseAddrList(QDataStream &stream, T hdrFunc, KMime::Message::Ptr &m
     if (count == 0) {
         return;
     }
-    KMime::Types::AddressList addrList;
+    QList<KMime::Types::Address> addrList;
     addrList.reserve(count);
 
     for (int i = 0; i < count; ++i) {
@@ -189,13 +189,13 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
         return false;
     }
 
-    KMime::Message::Ptr msg;
+    QSharedPointer<KMime::Message> msg;
     if (!item.hasPayload()) {
         auto m = new Message();
-        msg = KMime::Message::Ptr(m);
+        msg = QSharedPointer<KMime::Message>(m);
         item.setPayload(msg);
     } else {
-        msg = item.payload<KMime::Message::Ptr>();
+        msg = item.payload<QSharedPointer<KMime::Message>>();
     }
 
     if (label == MessagePart::Body) {
@@ -376,11 +376,11 @@ QSet<QByteArray> SerializerPluginMail::parts(const Item &item) const
 {
     QSet<QByteArray> set;
 
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
         return set;
     }
 
-    auto msg = item.payload<KMime::Message::Ptr>();
+    auto msg = item.payload<QSharedPointer<KMime::Message>>();
     if (!msg) {
         return set;
     }
@@ -397,7 +397,7 @@ QSet<QByteArray> SerializerPluginMail::parts(const Item &item) const
 
 QString SerializerPluginMail::extractGid(const Item &item) const
 {
-    if (!item.hasPayload<KMime::Message::Ptr>()) {
+    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
         return {};
     }
     const auto msg = item.payload<QSharedPointer<const KMime::Message>>();

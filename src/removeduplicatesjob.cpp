@@ -69,9 +69,9 @@ public:
         const int numberOfItems(items.size());
         for (int i = 0; i < numberOfItems; ++i) {
             Akonadi::Item item = items.at(i);
-            if (item.hasPayload<KMime::Message::Ptr>()) {
-                auto message = item.payload<KMime::Message::Ptr>();
-                const QByteArray idStr = message->messageID()->as7BitString(false);
+            if (item.hasPayload<QSharedPointer<KMime::Message>>()) {
+                auto message = item.payload<QSharedPointer<KMime::Message>>();
+                const QByteArray idStr = message->messageID()->as7BitString();
                 // TODO: Maybe do some more check in case of idStr.isEmpty()
                 // like when the first message's body is different from the 2nd,
                 // but the 2nd is the same as the 3rd, etc.
@@ -80,7 +80,7 @@ public:
                     if (messageIds.contains(idStr)) {
                         const uint mainId = messageIds.value(idStr);
                         if (!bodyHashes.contains(mainId)) {
-                            bodyHashes.insert(mainId, qHash(items.value(mainId).payload<KMime::Message::Ptr>()->encodedContent()));
+                            bodyHashes.insert(mainId, qHash(items.value(mainId).payload<QSharedPointer<KMime::Message>>()->encodedContent()));
                         }
                         const uint hash = qHash(message->encodedContent());
                         qCDebug(AKONADIMIME_LOG) << idStr << bodyHashes.value(mainId) << hash;

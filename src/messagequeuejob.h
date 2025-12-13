@@ -92,7 +92,7 @@ public:
     /**
       Returns the message to be sent.
     */
-    [[nodiscard]] KMime::Message::Ptr message() const;
+    [[nodiscard]] QSharedPointer<KMime::Message> message() const;
 
     /**
       Returns a reference to the dispatch mode attribute for this message.
@@ -129,7 +129,7 @@ public:
     /**
       Sets the message to be sent.
     */
-    void setMessage(const KMime::Message::Ptr &message);
+    void setMessage(const QSharedPointer<KMime::Message> &message);
 
     /**
       Creates the item and places it in the outbox.
