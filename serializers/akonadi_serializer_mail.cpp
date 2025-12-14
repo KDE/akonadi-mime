@@ -139,7 +139,7 @@ static void parseMailboxList(QDataStream &stream, T hdrFunc, QSharedPointer<KMim
         mboxList.push_back(parseMailbox(stream, pool));
     }
 
-    (msg.get()->*(hdrFunc))(true)->setMailboxes(mboxList);
+    (msg.get()->*(hdrFunc))(KMime::Create)->setMailboxes(mboxList);
 }
 
 template<typename T>
@@ -156,7 +156,7 @@ static void parseSingleMailbox(QDataStream &stream, T hdrFunc, QSharedPointer<KM
     // we need to consume the entire stream, even if it contains more than one element...
     for (int i = 0; i < count; ++i) {
         if (!i) {
-            (msg.get()->*(hdrFunc))(true)->setMailbox(parseMailbox(stream, pool));
+            (msg.get()->*(hdrFunc))(KMime::Create)->setMailbox(parseMailbox(stream, pool));
         }
     }
 }
@@ -180,7 +180,7 @@ static void parseAddrList(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::
         addrList.push_back(std::move(addr));
     }
 
-    (msg.get()->*(hdrFunc))(true)->setAddressList(addrList);
+    (msg.get()->*(hdrFunc))(KMime::Create)->setAddressList(addrList);
 }
 
 bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIODevice &data, int version)
@@ -298,12 +298,12 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
                 }
             }
 
-            parseMailboxList(stream, qOverload<bool>(&KMime::Message::from), msg, version, m_stringPool);
-            parseSingleMailbox(stream, qOverload<bool>(&KMime::Message::sender), msg, version, m_stringPool);
-            parseAddrList(stream, qOverload<bool>(&KMime::Message::replyTo), msg, version, m_stringPool);
-            parseAddrList(stream, qOverload<bool>(&KMime::Message::to), msg, version, m_stringPool);
-            parseAddrList(stream, qOverload<bool>(&KMime::Message::cc), msg, version, m_stringPool);
-            parseAddrList(stream, qOverload<bool>(&KMime::Message::bcc), msg, version, m_stringPool);
+            parseMailboxList(stream, qOverload<KMime::CreatePolicy>(&KMime::Message::from), msg, version, m_stringPool);
+            parseSingleMailbox(stream, qOverload<KMime::CreatePolicy>(&KMime::Message::sender), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<KMime::CreatePolicy>(&KMime::Message::replyTo), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<KMime::CreatePolicy>(&KMime::Message::to), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<KMime::CreatePolicy>(&KMime::Message::cc), msg, version, m_stringPool);
+            parseAddrList(stream, qOverload<KMime::CreatePolicy>(&KMime::Message::bcc), msg, version, m_stringPool);
 
             if (stream.status() == QDataStream::ReadCorruptData || stream.status() == QDataStream::ReadPastEnd) {
                 qCWarning(AKONADI_SERIALIZER_MAIL_LOG) << "Akonadi KMime Deserializer: Got invalid envelope";
