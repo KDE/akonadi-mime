@@ -18,9 +18,7 @@ class Akonadi::SentActionAttributeActionPrivate : public QSharedData
 public:
     SentActionAttributeActionPrivate() = default;
 
-    SentActionAttributeActionPrivate(const SentActionAttributeActionPrivate &other)
-
-        = default;
+    SentActionAttributeActionPrivate(const SentActionAttributeActionPrivate &other) = default;
 
     SentActionAttribute::Action::Type mType = SentActionAttribute::Action::Invalid;
     QVariant mValue;
