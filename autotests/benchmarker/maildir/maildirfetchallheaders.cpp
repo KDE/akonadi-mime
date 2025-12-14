@@ -39,7 +39,7 @@ void MailDirFetchAllHeaders::runTest()
         QString a;
         const auto items = ifj->items();
         for (const Item &item : items) {
-            a = item.payload<QSharedPointer<KMime::Message>>()->subject()->asUnicodeString();
+            a = item.payload<std::shared_ptr<KMime::Message>>()->subject()->asUnicodeString();
         }
     }
     outputStats(QStringLiteral("fullheaderlist"));

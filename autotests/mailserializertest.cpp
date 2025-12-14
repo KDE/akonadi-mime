@@ -102,9 +102,9 @@ void MailSerializerTest::testEnvelopeDeserialize()
         buffer.seek(0);
         serializer->deserialize(i, MessagePart::Envelope, buffer, version);
     }
-    QVERIFY(i.hasPayload<QSharedPointer<KMime::Message>>());
+    QVERIFY(i.hasPayload<std::shared_ptr<KMime::Message>>());
 
-    auto msg = i.payload<QSharedPointer<KMime::Message>>();
+    auto msg = i.payload<std::shared_ptr<KMime::Message>>();
     QCOMPARE(msg->date()->dateTime(), date);
     QCOMPARE(msg->subject()->asUnicodeString(), subject);
     QCOMPARE(msg->from()->asUnicodeString(), from);
@@ -177,7 +177,7 @@ void MailSerializerTest::testEnvelopeSerialize()
     msg->inReplyTo()->fromUnicodeString(inReplyTo);
     msg->messageID()->fromUnicodeString(messageId);
     msg->references()->fromUnicodeString(references);
-    i.setPayload(QSharedPointer<KMime::Message>(msg));
+    i.setPayload(std::shared_ptr<KMime::Message>(msg));
 
     auto serializer = new SerializerPluginMail();
 
@@ -201,7 +201,7 @@ void MailSerializerTest::testParts()
     Item item;
     item.setMimeType(QStringLiteral("message/rfc822"));
     auto m = new Message;
-    QSharedPointer<KMime::Message> msg(m);
+    std::shared_ptr<KMime::Message> msg(m);
     item.setPayload(msg);
 
     auto serializer = new SerializerPluginMail();
@@ -248,9 +248,9 @@ void MailSerializerTest::testHeaderFetch()
     buffer.open(QIODevice::ReadOnly);
     buffer.seek(0);
     serializer->deserialize(i, MessagePart::Header, buffer, 0);
-    QVERIFY(i.hasPayload<QSharedPointer<KMime::Message>>());
+    QVERIFY(i.hasPayload<std::shared_ptr<KMime::Message>>());
 
-    auto msg = i.payload<QSharedPointer<KMime::Message>>();
+    auto msg = i.payload<std::shared_ptr<KMime::Message>>();
     QCOMPARE(msg->subject()->asUnicodeString(), expectedSubject);
     QCOMPARE(msg->from()->asUnicodeString(), expectedFrom);
     QCOMPARE(msg->to()->asUnicodeString(), expectedTo);
@@ -291,9 +291,9 @@ void MailSerializerTest::testMultiDeserialize()
     buffer.open(QIODevice::ReadOnly);
     buffer.seek(0);
     serializer->deserialize(i, MessagePart::Body, buffer, 0);
-    QVERIFY(i.hasPayload<QSharedPointer<KMime::Message>>());
+    QVERIFY(i.hasPayload<std::shared_ptr<KMime::Message>>());
 
-    auto msg = i.payload<QSharedPointer<KMime::Message>>();
+    auto msg = i.payload<std::shared_ptr<KMime::Message>>();
     QCOMPARE(msg->subject()->asUnicodeString(), expectedSubject);
     QCOMPARE(msg->from()->asUnicodeString(), expectedFrom);
     QCOMPARE(msg->to()->asUnicodeString(), expectedTo);
@@ -317,9 +317,9 @@ void MailSerializerTest::testMultiDeserialize()
     buffer.seek(0);
 
     serializer->deserialize(i, MessagePart::Header, buffer, 0);
-    QVERIFY(i.hasPayload<QSharedPointer<KMime::Message>>());
+    QVERIFY(i.hasPayload<std::shared_ptr<KMime::Message>>());
 
-    msg = i.payload<QSharedPointer<KMime::Message>>();
+    msg = i.payload<std::shared_ptr<KMime::Message>>();
     QCOMPARE(msg->subject()->asUnicodeString(), expectedSubject);
     QCOMPARE(msg->from()->asUnicodeString(), expectedFrom);
     QCOMPARE(msg->to()->asUnicodeString(), expectedTo);

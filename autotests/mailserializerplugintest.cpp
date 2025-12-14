@@ -34,8 +34,8 @@ void MailSerializerPluginTest::testMailPlugin()
     item.setMimeType(QStringLiteral("message/rfc822"));
     item.setPayloadFromData(serialized);
 
-    QVERIFY(item.hasPayload<QSharedPointer<KMime::Message>>());
-    auto msg = item.payload<QSharedPointer<KMime::Message>>();
+    QVERIFY(item.hasPayload<std::shared_ptr<KMime::Message>>());
+    auto msg = item.payload<std::shared_ptr<KMime::Message>>();
     QVERIFY(msg != nullptr);
 
     QCOMPARE(msg->to()->asUnicodeString(), QStringLiteral("receiver@test.org"));
@@ -65,8 +65,8 @@ void MailSerializerPluginTest::testMessageIntegrity()
     item.setMimeType(QStringLiteral("message/rfc822"));
     item.setPayloadFromData(serialized);
 
-    QVERIFY(item.hasPayload<QSharedPointer<KMime::Message>>());
-    auto msg = item.payload<QSharedPointer<KMime::Message>>();
+    QVERIFY(item.hasPayload<std::shared_ptr<KMime::Message>>());
+    auto msg = item.payload<std::shared_ptr<KMime::Message>>();
     QVERIFY(msg != nullptr);
 
     qDebug() << "original data:" << serialized;

@@ -20,7 +20,7 @@
 
 #include <KLazyLocalizedString>
 #include <array>
-using MessagePtr = QSharedPointer<KMime::Message>;
+using MessagePtr = std::shared_ptr<KMime::Message>;
 
 using namespace Akonadi;
 
@@ -55,11 +55,11 @@ int MessageModel::entityColumnCount(HeaderGroup group) const
 
 QVariant MessageModel::entityData(const Item &item, int column, int role) const
 {
-    if (!item.hasPayload<QSharedPointer<const KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<const KMime::Message>>()) {
         return {};
     }
 
-    const auto msg = item.payload<QSharedPointer<const KMime::Message>>();
+    const auto msg = item.payload<std::shared_ptr<const KMime::Message>>();
     if (role == Qt::DisplayRole) {
         switch (column) {
         case Subject:

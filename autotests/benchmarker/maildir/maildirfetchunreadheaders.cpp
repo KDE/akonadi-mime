@@ -41,7 +41,7 @@ void MailDirFetchUnreadHeaders::runTest()
         for (const Item &item : items) {
             // filter read messages
             if (!item.hasFlag("\\SEEN")) {
-                a = item.payload<QSharedPointer<KMime::Message>>()->subject()->asUnicodeString();
+                a = item.payload<std::shared_ptr<KMime::Message>>()->subject()->asUnicodeString();
             }
         }
     }

@@ -16,7 +16,7 @@ QTEST_GUILESS_MAIN(MessageTest)
 void MessageTest::testCopyFlags()
 {
     {
-        QSharedPointer<KMime::Message> msg = readAndParseMail(QStringLiteral("x-pkcs7.mbox"));
+        std::shared_ptr<KMime::Message> msg = readAndParseMail(QStringLiteral("x-pkcs7.mbox"));
 
         Akonadi::Item item;
         Akonadi::MessageFlags::copyMessageFlags(*msg, item);
@@ -28,7 +28,7 @@ void MessageTest::testCopyFlags()
     }
 
     {
-        QSharedPointer<KMime::Message> msg = readAndParseMail(QStringLiteral("signed.mbox"));
+        std::shared_ptr<KMime::Message> msg = readAndParseMail(QStringLiteral("signed.mbox"));
 
         Akonadi::Item item;
         Akonadi::MessageFlags::copyMessageFlags(*msg, item);
@@ -40,7 +40,7 @@ void MessageTest::testCopyFlags()
     }
 }
 
-QSharedPointer<KMime::Message> MessageTest::readAndParseMail(const QString &mailFile) const
+std::shared_ptr<KMime::Message> MessageTest::readAndParseMail(const QString &mailFile) const
 {
     QFile file(QLatin1StringView(TEST_DATA_DIR) + QLatin1StringView("/mails/") + mailFile);
     const bool ok = file.open(QIODevice::ReadOnly);
@@ -50,7 +50,7 @@ QSharedPointer<KMime::Message> MessageTest::readAndParseMail(const QString &mail
     Q_ASSERT(ok);
     const QByteArray data = KMime::CRLFtoLF(file.readAll());
     Q_ASSERT(!data.isEmpty());
-    QSharedPointer<KMime::Message> msg(new KMime::Message);
+    std::shared_ptr<KMime::Message> msg(new KMime::Message);
     msg->setContent(data);
     msg->parse();
     return msg;

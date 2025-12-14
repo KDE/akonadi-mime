@@ -123,7 +123,7 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
 }
 
 template<typename T>
-static void parseMailboxList(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::Message> &msg, int version, StringPool &pool)
+static void parseMailboxList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -143,7 +143,7 @@ static void parseMailboxList(QDataStream &stream, T hdrFunc, QSharedPointer<KMim
 }
 
 template<typename T>
-static void parseSingleMailbox(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::Message> &msg, int version, StringPool &pool)
+static void parseSingleMailbox(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -162,7 +162,7 @@ static void parseSingleMailbox(QDataStream &stream, T hdrFunc, QSharedPointer<KM
 }
 
 template<typename T>
-static void parseAddrList(QDataStream &stream, T hdrFunc, QSharedPointer<KMime::Message> &msg, int version, StringPool &pool)
+static void parseAddrList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, int version, StringPool &pool)
 {
     Q_UNUSED(version)
 
@@ -189,13 +189,13 @@ bool SerializerPluginMail::deserialize(Item &item, const QByteArray &label, QIOD
         return false;
     }
 
-    QSharedPointer<KMime::Message> msg;
+    std::shared_ptr<KMime::Message> msg;
     if (!item.hasPayload()) {
         auto m = new Message();
-        msg = QSharedPointer<KMime::Message>(m);
+        msg = std::shared_ptr<KMime::Message>(m);
         item.setPayload(msg);
     } else {
-        msg = item.payload<QSharedPointer<KMime::Message>>();
+        msg = item.payload<std::shared_ptr<KMime::Message>>();
     }
 
     if (label == MessagePart::Body) {
@@ -352,7 +352,7 @@ void SerializerPluginMail::serialize(const Item &item, const QByteArray &label, 
 {
     version = 1;
 
-    auto m = item.payload<QSharedPointer<const KMime::Message>>();
+    auto m = item.payload<std::shared_ptr<const KMime::Message>>();
     if (label == MessagePart::Body) {
         data.write(m->encodedContent());
     } else if (label == MessagePart::Envelope) {
@@ -376,11 +376,11 @@ QSet<QByteArray> SerializerPluginMail::parts(const Item &item) const
 {
     QSet<QByteArray> set;
 
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return set;
     }
 
-    auto msg = item.payload<QSharedPointer<KMime::Message>>();
+    auto msg = item.payload<std::shared_ptr<KMime::Message>>();
     if (!msg) {
         return set;
     }
@@ -397,10 +397,10 @@ QSet<QByteArray> SerializerPluginMail::parts(const Item &item) const
 
 QString SerializerPluginMail::extractGid(const Item &item) const
 {
-    if (!item.hasPayload<QSharedPointer<KMime::Message>>()) {
+    if (!item.hasPayload<std::shared_ptr<KMime::Message>>()) {
         return {};
     }
-    const auto msg = item.payload<QSharedPointer<const KMime::Message>>();
+    const auto msg = item.payload<std::shared_ptr<const KMime::Message>>();
     const KMime::Headers::MessageID *mid = msg->messageID();
     if (mid) {
         return mid->asUnicodeString();
