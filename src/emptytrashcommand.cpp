@@ -55,7 +55,7 @@ void EmptyTrashCommand::execute()
             emitResult(OK);
             return;
         }
-        Akonadi::Collection trash = trashCollectionFolder();
+        const Akonadi::Collection trash = trashCollectionFolder();
         QList<Akonadi::Collection> trashFolder;
         trashFolder << trash;
 
