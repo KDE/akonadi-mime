@@ -45,7 +45,7 @@ void EmptyTrashCommand::execute()
     if (!mFolder.isValid()) { // expunge all
         const QString title = i18nc("@title:window", "Empty Trash");
         const QString text = i18n("Are you sure you want to empty the trash folders of all accounts?");
-        if (KMessageBox::warningContinueCancel(nullptr,
+        if (KMessageBox::warningContinueCancel(mParentWidget,
                                                text,
                                                title,
                                                KStandardGuiItem::cont(),
@@ -86,6 +86,11 @@ void EmptyTrashCommand::execute()
             emitResult(OK);
         }
     }
+}
+
+void EmptyTrashCommand::setParentWidget(QWidget *parentWidget)
+{
+    mParentWidget = parentWidget;
 }
 
 void EmptyTrashCommand::expunge(const Akonadi::Collection &col)

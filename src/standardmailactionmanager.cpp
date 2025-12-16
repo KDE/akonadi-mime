@@ -604,6 +604,7 @@ public:
         }
 
         auto command = new EmptyTrashCommand(const_cast<QAbstractItemModel *>(mCollectionSelectionModel->model()), mParent);
+        command->setParentWidget(mParentWidget);
         command->execute();
     }
 

@@ -11,7 +11,7 @@
 
 #include <Akonadi/AgentInstance>
 #include <Akonadi/Collection>
-
+#include <QPointer>
 class QAbstractItemModel;
 namespace Akonadi
 {
@@ -23,7 +23,7 @@ public:
     EmptyTrashCommand(const QAbstractItemModel *model, QObject *parent);
     EmptyTrashCommand(const Akonadi::Collection &folder, QObject *parent);
     void execute() override;
-
+    void setParentWidget(QWidget *parentWidget);
 protected Q_SLOTS:
     void emitResult(Akonadi::CommandBase::Result result) override;
 
@@ -37,6 +37,7 @@ private:
     const QAbstractItemModel *const mModel;
     Akonadi::Collection::Id the_trashCollectionFolder;
     Akonadi::Collection mFolder;
+    QPointer<QWidget> mParentWidget;
     int mNumberOfTrashToEmpty = 0;
 };
 }
