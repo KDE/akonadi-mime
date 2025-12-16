@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-12-16 13:25+0000\n"
 "PO-Revision-Date: 2024-11-29 00:56+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -448,7 +448,7 @@ msgstr "붙여넣기 실패"
 msgid "Remove Important Mark"
 msgstr "중요함 표시 삭제"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:725
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:726
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "메시지를 중요한 것으로 표시(&M)"
@@ -458,182 +458,182 @@ msgstr "메시지를 중요한 것으로 표시(&M)"
 msgid "Remove Action Item Mark"
 msgstr "동작 항목 표시 삭제"
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:739
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:740
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "메시지를 동작 항목으로 표시(&M)"
 
-#: standardmailactionmanager.cpp:695
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "메시지를 읽은 상태로 표시(&M)"
 
-#: standardmailactionmanager.cpp:696
+#: standardmailactionmanager.cpp:697
 #, kde-format
 msgid "Mark as Read"
 msgstr "읽은 상태로 표시(&K)"
 
-#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:698 standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "선택한 메시지를 읽은 상태로 표시합니다."
 
-#: standardmailactionmanager.cpp:710
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "메시지를 읽지 않은 상태로 표시(&M)"
 
-#: standardmailactionmanager.cpp:711
+#: standardmailactionmanager.cpp:712
 #, kde-format
 msgid "Mark as Unread"
 msgstr "읽지 않은 상태로 표시"
 
-#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:713 standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "선택한 메시지를 읽지 않은 상태로 표시합니다."
 
-#: standardmailactionmanager.cpp:726
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark as Important"
 msgstr "중요한 것으로 표시"
 
-#: standardmailactionmanager.cpp:727
+#: standardmailactionmanager.cpp:728
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "선택한 메시지를 중요한 것으로 표시합니다."
 
-#: standardmailactionmanager.cpp:740
+#: standardmailactionmanager.cpp:741
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "동작 항목으로 표시"
 
-#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:742 standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "선택한 메시지를 동작 항목으로 표시합니다."
 
-#: standardmailactionmanager.cpp:753
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "모든 메시지를 읽은 것으로 표시(&A)"
 
-#: standardmailactionmanager.cpp:754
+#: standardmailactionmanager.cpp:755
 #, kde-format
 msgid "Mark All as Read"
 msgstr "모두 읽은 것으로 표시"
 
-#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:756 standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "모든 메시지를 읽은 것으로 표시합니다."
 
-#: standardmailactionmanager.cpp:767
+#: standardmailactionmanager.cpp:768
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "재귀적으로 모든 메시지를 읽은 것으로 표시(&A)"
 
-#: standardmailactionmanager.cpp:768
+#: standardmailactionmanager.cpp:769
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "재귀적으로 모두 읽은 것으로 표시"
 
-#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:770 standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "재귀적으로 모든 메시지를 읽은 것으로 표시합니다."
 
-#: standardmailactionmanager.cpp:781
+#: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "모든 메시지를 읽지 않은 것으로 표시(&A)"
 
-#: standardmailactionmanager.cpp:782
+#: standardmailactionmanager.cpp:783
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "모두 읽지 않은 것으로 표시"
 
-#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:784 standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "모든 메시지를 읽지 않은 것으로 표시합니다."
 
-#: standardmailactionmanager.cpp:795
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "모든 메시지를 중요한 것으로 표시(&A)"
 
-#: standardmailactionmanager.cpp:796
+#: standardmailactionmanager.cpp:797
 #, kde-format
 msgid "Mark All as Important"
 msgstr "모두 중요한 것으로 표시"
 
-#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:798 standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "모든 메시지를 중요한 것으로 표시합니다."
 
-#: standardmailactionmanager.cpp:808
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "모두 동작 항목으로 표시"
 
-#: standardmailactionmanager.cpp:809
+#: standardmailactionmanager.cpp:810
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "모든 메시지를 동작 항목으로 표시(&A)"
 
-#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:812 standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "모든 메시지를 동작 항목으로 표시합니다."
 
-#: standardmailactionmanager.cpp:823
+#: standardmailactionmanager.cpp:824
 #, kde-format
 msgid "Move to &Trash"
 msgstr "휴지통으로 이동(&T)"
 
-#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
+#: standardmailactionmanager.cpp:826 standardmailactionmanager.cpp:827
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "선택한 메시지를 휴지통으로 이동합니다."
 
-#: standardmailactionmanager.cpp:836
+#: standardmailactionmanager.cpp:837
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "모두 휴지통으로 이동(&T)"
 
-#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
+#: standardmailactionmanager.cpp:838 standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "모든 메시지를 휴지통 폴더로 이동합니다."
 
-#: standardmailactionmanager.cpp:847
+#: standardmailactionmanager.cpp:848
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "중복된 메시지 삭제(&D)"
 
-#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
+#: standardmailactionmanager.cpp:849 standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "중복된 메시지를 삭제합니다."
 
-#: standardmailactionmanager.cpp:859
+#: standardmailactionmanager.cpp:860
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "모든 휴지통 폴더 비우기(&T)"
 
-#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
+#: standardmailactionmanager.cpp:861 standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "모든 휴지통 폴더의 메시지를 영구적으로 삭제합니다."
 
-#: standardmailactionmanager.cpp:870
+#: standardmailactionmanager.cpp:871
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "휴지통 비우기(&M)"
 
-#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
+#: standardmailactionmanager.cpp:872 standardmailactionmanager.cpp:873
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "휴지통 폴더의 메시지를 영구적으로 삭제합니다."

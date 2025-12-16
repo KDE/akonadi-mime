@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-12-16 13:25+0000\n"
 "PO-Revision-Date: 2024-11-16 05:50+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -472,7 +472,7 @@ msgstr "ჩასმის შეცდომა"
 msgid "Remove Important Mark"
 msgstr "მნიშვნელოვნობის ნიშნის მოცილება"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:725
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:726
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "შეტყობინების მნიშვნელოვნად მონიშვნა"
@@ -482,182 +482,182 @@ msgstr "შეტყობინების მნიშვნელოვნ�
 msgid "Remove Action Item Mark"
 msgstr "ქმედების ჩანაწერის ნიშნის მოცილება"
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:739
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:740
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "შეტყობინების, როგორც ქმედების ჩანაწერის მონიშვნა"
 
-#: standardmailactionmanager.cpp:695
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "წაკითხულად &მონიშვნა"
 
-#: standardmailactionmanager.cpp:696
+#: standardmailactionmanager.cpp:697
 #, kde-format
 msgid "Mark as Read"
 msgstr "მონიშნე როგორც წაკითხული"
 
-#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:698 standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "მონიშნული შეტყობინებების წაუკითხავად დაყენება."
 
-#: standardmailactionmanager.cpp:710
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "წაუკთხავად &მონიშვნა"
 
-#: standardmailactionmanager.cpp:711
+#: standardmailactionmanager.cpp:712
 #, kde-format
 msgid "Mark as Unread"
 msgstr "მონიშნე როგორც წაუკითხავი"
 
-#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:713 standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "მონიშნული შეტყობინებების წაკითხულად დაყენება."
 
-#: standardmailactionmanager.cpp:726
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark as Important"
 msgstr "მნიშვნელოვნად მონიშვნა"
 
-#: standardmailactionmanager.cpp:727
+#: standardmailactionmanager.cpp:728
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "მონიშნული შეტყობინებების მნიშვნელოვნად დაყენება."
 
-#: standardmailactionmanager.cpp:740
+#: standardmailactionmanager.cpp:741
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "ქმედების ჩანაწერად მონიშვნა"
 
-#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:742 standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "მონიშნული შეტყობინებების ქმედების ჩანაწერებად მონიშვნა."
 
-#: standardmailactionmanager.cpp:753
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "ყველა შეტყობინების წაკითხულად &დაყენება"
 
-#: standardmailactionmanager.cpp:754
+#: standardmailactionmanager.cpp:755
 #, kde-format
 msgid "Mark All as Read"
 msgstr "ყველას წაკითხულად დაყენება"
 
-#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:756 standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "ყველა შეტყობინების წაკითხულად დაყენება."
 
-#: standardmailactionmanager.cpp:767
+#: standardmailactionmanager.cpp:768
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "ყველა შეტყობინების წაკითხულად დაყენება რეკურსიულად"
 
-#: standardmailactionmanager.cpp:768
+#: standardmailactionmanager.cpp:769
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "ყველა შეტყობინების წაკითხულად დაყენება რეკურსიულად"
 
-#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:770 standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "ყველა შეტყობინების წაკითხულად დაყენება რეკურსიულად."
 
-#: standardmailactionmanager.cpp:781
+#: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "ყველა &შეტყობინების წაუკითხავად დაყენება"
 
-#: standardmailactionmanager.cpp:782
+#: standardmailactionmanager.cpp:783
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "ყველას წაუკითხავად მონიშვნა"
 
-#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:784 standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "ყველა შეტყობინების წაუკითხავად დაყენება."
 
-#: standardmailactionmanager.cpp:795
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "ყველა შეტყობინების მნიშვნელოვნად დაყენება"
 
-#: standardmailactionmanager.cpp:796
+#: standardmailactionmanager.cpp:797
 #, kde-format
 msgid "Mark All as Important"
 msgstr "ყველას მნიშვნელოვნად მონიშვნა"
 
-#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:798 standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "ყველა შეტყობინების მნიშვნელოვნად დაყენება."
 
-#: standardmailactionmanager.cpp:808
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "ყველას ქმედების ჩანაწერად მონიშვნა"
 
-#: standardmailactionmanager.cpp:809
+#: standardmailactionmanager.cpp:810
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "&ყველას ქმედების ჩანაწერად მონიშვნა"
 
-#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:812 standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "ყველას ქმედების ჩანაწერად მონიშვნა."
 
-#: standardmailactionmanager.cpp:823
+#: standardmailactionmanager.cpp:824
 #, kde-format
 msgid "Move to &Trash"
 msgstr "სანაგვე ყუთში გადა&ტანა"
 
-#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
+#: standardmailactionmanager.cpp:826 standardmailactionmanager.cpp:827
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "ყველა მონიშნული შეტყობინების ნაგვის ყუთში გადატანა."
 
-#: standardmailactionmanager.cpp:836
+#: standardmailactionmanager.cpp:837
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "ყველას ნაგვის &ყუთში გადატანა"
 
-#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
+#: standardmailactionmanager.cpp:838 standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "ყველა შეტყობინების ნაგვის ყუთში გადატანა."
 
-#: standardmailactionmanager.cpp:847
+#: standardmailactionmanager.cpp:848
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "დუბლიკატი შეტყობინებების &წაშლა"
 
-#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
+#: standardmailactionmanager.cpp:849 standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "დუბლიკატი შეტყობინებების წაშლა."
 
-#: standardmailactionmanager.cpp:859
+#: standardmailactionmanager.cpp:860
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "ყველა ნაგვის ყუთის გასუფთავება"
 
-#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
+#: standardmailactionmanager.cpp:861 standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "ყველა ნაგვის ყუთში ყველაფრის სამუდამოდ წაშლა."
 
-#: standardmailactionmanager.cpp:870
+#: standardmailactionmanager.cpp:871
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "ნაგვის ყუთის &გასუფთავება"
 
-#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
+#: standardmailactionmanager.cpp:872 standardmailactionmanager.cpp:873
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "ნაგვის ყუთიდან ყველაფრის წაშლა."

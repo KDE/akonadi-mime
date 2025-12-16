@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:52+0000\n"
+"POT-Creation-Date: 2025-12-16 13:25+0000\n"
 "PO-Revision-Date: 2024-11-19 10:39+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -469,7 +469,7 @@ msgstr "Il falleva a collar"
 msgid "Remove Important Mark"
 msgstr "Remove marca de importante"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:725
+#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:726
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Marca message como importante"
@@ -479,182 +479,182 @@ msgstr "&Marca message como importante"
 msgid "Remove Action Item Mark"
 msgstr "Remove marca de elemento de action"
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:739
+#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:740
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Marca message como elemento de action"
 
-#: standardmailactionmanager.cpp:695
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Marca message como legite"
 
-#: standardmailactionmanager.cpp:696
+#: standardmailactionmanager.cpp:697
 #, kde-format
 msgid "Mark as Read"
 msgstr "Marca como legite"
 
-#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:698 standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Marca messages seligite como legite."
 
-#: standardmailactionmanager.cpp:710
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Marca message  como non legite"
 
-#: standardmailactionmanager.cpp:711
+#: standardmailactionmanager.cpp:712
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Marca como non legite"
 
-#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:713 standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Marca messages seligite como non legite."
 
-#: standardmailactionmanager.cpp:726
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark as Important"
 msgstr "Marca como importante"
 
-#: standardmailactionmanager.cpp:727
+#: standardmailactionmanager.cpp:728
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Marca messages seligite como importante"
 
-#: standardmailactionmanager.cpp:740
+#: standardmailactionmanager.cpp:741
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Marca  como elemento de action"
 
-#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:742 standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Marca messages seligite como elementos de action."
 
-#: standardmailactionmanager.cpp:753
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Marca &Tote messages  como legite"
 
-#: standardmailactionmanager.cpp:754
+#: standardmailactionmanager.cpp:755
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Marca toto como legite"
 
-#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:756 standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Marca tote messages seligite como legite"
 
-#: standardmailactionmanager.cpp:767
+#: standardmailactionmanager.cpp:768
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Marca &Tote messages  como legite recursivemente"
 
-#: standardmailactionmanager.cpp:768
+#: standardmailactionmanager.cpp:769
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Marca toto como legite recursivemente"
 
-#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:770 standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Marca tote messages como legite recursivemente."
 
-#: standardmailactionmanager.cpp:781
+#: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Marca &Tote messages  como non legite"
 
-#: standardmailactionmanager.cpp:782
+#: standardmailactionmanager.cpp:783
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Marca toto como non legite"
 
-#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:784 standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Marca tote messages  como non legite."
 
-#: standardmailactionmanager.cpp:795
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Marca t&ote messages como importante"
 
-#: standardmailactionmanager.cpp:796
+#: standardmailactionmanager.cpp:797
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Marca toto como importante"
 
-#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:798 standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Marca tote messages  como importante"
 
-#: standardmailactionmanager.cpp:808
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Marca  toto como elemento de action"
 
-#: standardmailactionmanager.cpp:809
+#: standardmailactionmanager.cpp:810
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Marca  tot&e messages  como elemento de action"
 
-#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:812 standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Marca  tote messages como elemento de action"
 
-#: standardmailactionmanager.cpp:823
+#: standardmailactionmanager.cpp:824
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Move a &corbe"
 
-#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
+#: standardmailactionmanager.cpp:826 standardmailactionmanager.cpp:827
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Move messages seligite al dossier de corbe."
 
-#: standardmailactionmanager.cpp:836
+#: standardmailactionmanager.cpp:837
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Move &toto a corbe"
 
-#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
+#: standardmailactionmanager.cpp:838 standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Move omne message al dossier de corbe"
 
-#: standardmailactionmanager.cpp:847
+#: standardmailactionmanager.cpp:848
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Remove messages &duplicate"
 
-#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
+#: standardmailactionmanager.cpp:849 standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Remove messages duplicate"
 
-#: standardmailactionmanager.cpp:859
+#: standardmailactionmanager.cpp:860
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Vacua omne dossieres de &corbe"
 
-#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
+#: standardmailactionmanager.cpp:861 standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Dele permanentemente tote messages ex omne dossieres de corbe."
 
-#: standardmailactionmanager.cpp:870
+#: standardmailactionmanager.cpp:871
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Vacua  cor&be"
 
-#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
+#: standardmailactionmanager.cpp:872 standardmailactionmanager.cpp:873
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Dele permanentemente tote messages seligite ex le dossier de corbe."
