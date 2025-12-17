@@ -47,7 +47,7 @@ HeadFetcher::HeadFetcher(bool multipart)
         qDebug() << "  Listing" << ifj->items().count() << "item headers.";
         const auto items = ifj->items();
         for (const Item &item : items) {
-            qDebug() << item.payload<QSharedPointer<KMime::Message>>()->subject()->asUnicodeString();
+            qDebug() << item.payload<std::shared_ptr<KMime::Message>>()->subject()->asUnicodeString();
         }
     }
 
