@@ -19,36 +19,36 @@ namespace Akonadi
 {
 class RemoveDuplicatesJobPrivate;
 
-/**
- * @short Job that finds and removes duplicate messages in given collection
+/*!
+ * \brief Job that finds and removes duplicate messages in given collection
  *
  * This jobs compares all messages in given collections by their Message-Id
  * headers and hashes of their bodies and removes duplicates.
  *
- * @since 4.10
+ * \since 4.10
  */
 class AKONADI_MIME_EXPORT RemoveDuplicatesJob : public Akonadi::Job
 {
     Q_OBJECT
 
 public:
-    /**
-     * Creates a new job that will remove duplicates in @p folder.
+    /*!
+     * Creates a new job that will remove duplicates in \a folder.
      *
-     * @param folder The folder where to search for duplicates
-     * @param parent The parent object
+     * \a folder The folder where to search for duplicates
+     * \a parent The parent object
      */
     explicit RemoveDuplicatesJob(const Akonadi::Collection &folder, QObject *parent = nullptr);
 
-    /**
-     * Creates a new job that will remove duplicates in all @p folders.
+    /*!
+     * Creates a new job that will remove duplicates in all \a folders.
      *
-     * @param folders Folders where to search for duplicates
-     * @param parent The parent object
+     * \a folders Folders where to search for duplicates
+     * \a parent The parent object
      */
     RemoveDuplicatesJob(const Akonadi::Collection::List &folders, QObject *parent);
 
-    /**
+    /*!
      * Destroys the job.
      */
     ~RemoveDuplicatesJob() override;

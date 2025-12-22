@@ -12,7 +12,7 @@
 
 namespace Akonadi
 {
-/**
+/*!
  * A flat self-updating message model.
  */
 class AKONADI_MIME_EXPORT MessageModel : public Akonadi::EntityTreeModel
@@ -20,25 +20,25 @@ class AKONADI_MIME_EXPORT MessageModel : public Akonadi::EntityTreeModel
     Q_OBJECT
 
 public:
-    /**
+    /*!
       Column types.
     */
     enum Column {
-        Subject, /**< Subject column. */
-        Sender, /**< Sender column. */
-        Receiver, /**< Receiver column. */
-        Date, /**< Date column. */
-        Size /**< Size column. */
+        Subject, /*!< Subject column. */
+        Sender, /*!< Sender column. */
+        Receiver, /*!< Receiver column. */
+        Date, /*!< Date column. */
+        Size /*!< Size column. */
     };
 
-    /**
+    /*!
       Creates a new message model.
 
-      @param parent The parent object.
+      \a parent The parent object.
     */
     explicit MessageModel(Monitor *monitor, QObject *parent = nullptr);
 
-    /**
+    /*!
       Deletes the message model.
     */
     ~MessageModel() override = default;

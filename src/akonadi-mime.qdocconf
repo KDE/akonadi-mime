@@ -1,0 +1,33 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = AkonadiMime
+description = Akonadi Mime library.
+
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+outputformats = HTML
+
+depends += \
+    qtcore
+
+navigation.landingpage = "AkonadiMime"
+
+qhp.projects            = AkonadiMime
+
+qhp.AkonadiMime.file                = akonadimime.qhp
+qhp.AkonadiMime.namespace           = org.kde.akonadimime.$QT_VERSION_TAG
+qhp.AkonadiMime.virtualFolder       = akonadimime
+qhp.AkonadiMime.indexTitle          = AkonadiMime
+qhp.AkonadiMime.indexRoot           =
+
+qhp.AkonadiMime.subprojects         = classes
+qhp.AkonadiMime.subprojects.classes.title = C++ Classes
+qhp.AkonadiMime.subprojects.classes.indexTitle = AkonadiMime C++ Classes
+qhp.AkonadiMime.subprojects.classes.selectors = class fake:headerfile
+qhp.AkonadiMime.subprojects.classes.sortPages = true
+
+tagfile = kmbox.tags

@@ -18,35 +18,35 @@ namespace Akonadi
 {
 class ErrorAttributePrivate;
 
-/**
- * @short An Attribute to mark messages that failed to be sent.
+/*!
+ * \brief An Attribute to mark messages that failed to be sent.
  *
  * This attribute contains the error message encountered.
  *
  * @author Constantin Berzan <exit3219@gmail.com>
- * @since 4.4
+ * \since 4.4
  */
 class AKONADI_MIME_EXPORT ErrorAttribute : public Akonadi::Attribute
 {
 public:
-    /**
+    /*!
      * Creates a new error attribute.
      *
-     * @param msg The i18n'ed error message.
+     * \a msg The i18n'ed error message.
      */
     explicit ErrorAttribute(const QString &msg = QString());
 
-    /**
+    /*!
      * Destroys the error attribute.
      */
     ~ErrorAttribute() override;
 
-    /**
+    /*!
      * Returns the i18n'ed error message.
      */
     [[nodiscard]] QString message() const;
 
-    /**
+    /*!
      * Sets the i18n'ed error message.
      */
     void setMessage(const QString &msg);
@@ -58,8 +58,6 @@ public:
     void deserialize(const QByteArray &data) override;
 
 private:
-    //@cond PRIVATE
     std::unique_ptr<ErrorAttributePrivate> const d;
-    //@endcond
 };
 }

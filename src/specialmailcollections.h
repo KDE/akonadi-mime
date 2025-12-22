@@ -14,8 +14,8 @@ namespace Akonadi
 {
 class SpecialMailCollectionsPrivate;
 
-/**
-  @short Interface to special mail collections such as inbox, outbox etc.
+/*!
+  \brief Interface to special mail collections such as inbox, outbox etc.
 
   This class is the central interface to the local mail folders. These folders
   can either be in the default resource (stored in ~/.local/share/local-mail)
@@ -38,24 +38,24 @@ class SpecialMailCollectionsPrivate;
   the special mail collections for a resource change (i.e. some became available or some
   become unavailable).
 
-  @code
+  \code
   if ( SpecialMailCollections::self()->hasDefaultCollection( SpecialMailCollections::Outbox ) ) {
     const Collection col = SpecialMailCollections::self()->defaultCollection( SpecialMailCollections::Outbox );
     // ...
   } else {
     // ... use SpecialMailCollectionsRequestJob to request the collection...
   }
-  @endcode
+  \endcode
 
   @author Constantin Berzan <exit3219@gmail.com>
-  @since 4.4
+  \since 4.4
 */
 class AKONADI_MIME_EXPORT SpecialMailCollections : public SpecialCollections
 {
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Describes the possible types of special mail collections.
      *
      * Generally, there may not be two special mail collections of
@@ -71,60 +71,60 @@ public:
         Drafts, ///< The drafts collection.
         Templates, ///< The templates collection.
         Spam, ///< The spam collection.
-        LastType ///< @internal marker
+        LastType ///< \internal marker
     };
 
-    /**
+    /*!
      * Returns the global SpecialMailCollections instance.
      */
     static SpecialMailCollections *self();
 
-    /**
-     * Returns whether the given agent @p instance has a special collection of
-     * the given @p type.
+    /*!
+     * Returns whether the given agent \a instance has a special collection of
+     * the given \a type.
      */
     [[nodiscard]] bool hasCollection(Type type, const AgentInstance &instance) const;
 
-    /**
-     * Returns the special mail collection of the given @p type in the given agent
-     * @p instance, or an invalid collection if such a collection is unknown.
+    /*!
+     * Returns the special mail collection of the given \a type in the given agent
+     * \a instance, or an invalid collection if such a collection is unknown.
      */
     [[nodiscard]] Akonadi::Collection collection(Type type, const AgentInstance &instance) const;
 
-    /**
+    /*!
      * Returns the special collection type for a given collection, or empty if the collection
      * doesn't have a special type.
-     * @since 4.11
+     * \since 4.11
      */
     [[nodiscard]] static Type specialCollectionType(const Akonadi::Collection &collection);
 
-    /**
-     * Registers the given @p collection as a special mail collection
-     * with the given @p type.
-     * @param type the type of collection
-     * @param collection the collection to register
+    /*!
+     * Registers the given \a collection as a special mail collection
+     * with the given \a type.
+     * \a type the type of collection
+     * \a collection the collection to register
      * The collection must be owned by a valid resource.
      * Registering a new collection of a previously registered type forgets the
      * old collection.
      */
     [[nodiscard]] bool registerCollection(Type type, const Akonadi::Collection &collection);
 
-    /**
-     * Unregisters the given @p collection as a special mail collection
-     * @param collection the collection to unregister
+    /*!
+     * Unregisters the given \a collection as a special mail collection
+     * \a collection the collection to unregister
      * The collection must be owned by a valid resource.
-     * @since 4.12
+     * \since 4.12
      */
     [[nodiscard]] bool unregisterCollection(const Collection &collection);
 
-    /**
+    /*!
      * Returns whether the default resource has a special mail collection of
-     * the given @p type.
+     * the given \a type.
      */
     [[nodiscard]] bool hasDefaultCollection(Type type) const;
 
-    /**
-     * Returns the special mail collection of given @p type in the default
+    /*!
+     * Returns the special mail collection of given \a type in the default
      * resource, or an invalid collection if such a collection is unknown.
      */
     [[nodiscard]] Akonadi::Collection defaultCollection(Type type) const;
@@ -134,7 +134,6 @@ private Q_SLOTS:
     void slotCollectionModified(KJob *job);
 
 private:
-    //@cond PRIVATE
     friend class SpecialMailCollectionsPrivate;
 
 #if 1 // TODO do this only if building tests:
@@ -145,6 +144,5 @@ private:
     SpecialMailCollections(SpecialMailCollectionsPrivate *dd);
 
     SpecialMailCollectionsPrivate *const d;
-    //@endcond
 };
 } // namespace Akonadi

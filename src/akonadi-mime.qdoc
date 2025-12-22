@@ -1,0 +1,9 @@
+/*!
+    \module AkonadiMime
+    \title AkonadiMime C++ Classes
+    \ingroup modules
+    \cmakepackage KPim6
+    \cmakecomponent AkonadiMime
+
+    \brief Akonadi Mime library.
+*/

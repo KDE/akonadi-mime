@@ -18,38 +18,38 @@ namespace Akonadi
 {
 class MessageFolderAttributePrivate;
 
-/**
+/*!
   Message folder information. Used eg. by mail clients to decide how to display the content of such collections
-  @since 4.4
+  \since 4.4
 */
 class AKONADI_MIME_EXPORT MessageFolderAttribute : public Attribute
 {
 public:
-    /**
+    /*!
       Creates an empty folder attribute.
     */
     MessageFolderAttribute();
 
-    /**
+    /*!
       Copy constructor.
     */
     MessageFolderAttribute(const MessageFolderAttribute &other);
 
-    /**
+    /*!
       Destructor.
     */
     ~MessageFolderAttribute() override;
 
-    /**
+    /*!
       Indicates if the folder is supposed to contain mostly outbound messages.
       In such a case mail clients display the recipient address, otherwise they
       display the sender address.
 
-      @return true if the folder contains outbound messages
+      Returns true if the folder contains outbound messages
     */
     [[nodiscard]] bool isOutboundFolder() const;
 
-    /**
+    /*!
       Set if the folder should be considered as containing mostly outbound messages.
      */
     void setOutboundFolder(bool outbound);

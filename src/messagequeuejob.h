@@ -29,8 +29,8 @@ namespace Akonadi
 {
 class MessageQueueJobPrivate;
 
-/**
-  @short Provides an interface for sending email.
+/*!
+  \brief Provides an interface for sending email.
 
   This class takes a KMime::Message and some related info such as sender and
   recipient addresses, and places the message in the outbox.  The mail
@@ -48,7 +48,7 @@ class MessageQueueJobPrivate;
   attribute.
 
   Example:
-  @code
+  \code
 
   MessageQueueJob *job = new MessageQueueJob( this );
   job->setMessage( msg ); // msg is a Message::Ptr
@@ -60,85 +60,85 @@ class MessageQueueJobPrivate;
   connect( job, SIGNAL(result(KJob*)), this, SLOT(jobResult(KJob*)) );
   job->start();
 
-  @endcode
+  \endcode
 
-  @see DispatchModeAttribute
-  @see SentActionAttribute
-  @see SentBehaviourAttribute
-  @see TransportAttribute
-  @see AddressAttribute
+  \sa DispatchModeAttribute
+  \sa SentActionAttribute
+  \sa SentBehaviourAttribute
+  \sa TransportAttribute
+  \sa AddressAttribute
 
   @author Constantin Berzan <exit3219@gmail.com>
-  @since 4.4
+  \since 4.4
 */
 class AKONADI_MIME_EXPORT MessageQueueJob : public KCompositeJob
 {
     Q_OBJECT
 
 public:
-    /**
+    /*!
       Creates a new MessageQueueJob.
-      @param parent the QObject parent
+      \a parent the QObject parent
       This is not an autostarting job; you need to call start() yourself.
     */
     explicit MessageQueueJob(QObject *parent = nullptr);
 
-    /**
+    /*!
       Destroys the MessageQueueJob.
       This job deletes itself after finishing.
     */
     ~MessageQueueJob() override;
 
-    /**
+    /*!
       Returns the message to be sent.
     */
     [[nodiscard]] std::shared_ptr<KMime::Message> message() const;
 
-    /**
+    /*!
       Returns a reference to the dispatch mode attribute for this message.
       Modify the returned attribute to change the dispatch mode.
     */
     DispatchModeAttribute &dispatchModeAttribute();
 
-    /**
+    /*!
       Returns a reference to the address attribute for this message.
       Modify the returned attribute to change the receivers or the from
       address.
     */
     Akonadi::AddressAttribute &addressAttribute();
 
-    /**
+    /*!
       Returns a reference to the transport attribute for this message.
       Modify the returned attribute to change the transport used for
       sending the mail.
     */
     TransportAttribute &transportAttribute();
 
-    /**
+    /*!
       Returns a reference to the sent behaviour attribute for this message.
       Modify the returned attribute to change the sent behaviour.
     */
     SentBehaviourAttribute &sentBehaviourAttribute();
 
-    /**
+    /*!
       Returns a reference to the sent action attribute for this message.
       Modify the returned attribute to change the sent actions.
     */
     SentActionAttribute &sentActionAttribute();
 
-    /**
+    /*!
       Sets the message to be sent.
     */
     void setMessage(const std::shared_ptr<KMime::Message> &message);
 
-    /**
+    /*!
       Creates the item and places it in the outbox.
       It is now queued for sending by the mail dispatcher agent.
     */
     void start() override;
 
 protected Q_SLOTS:
-    /**
+    /*!
       Called when the ItemCreateJob subjob finishes.
 
       (reimplemented from KCompositeJob)

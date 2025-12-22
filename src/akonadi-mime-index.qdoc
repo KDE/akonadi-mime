@@ -1,0 +1,20 @@
+/*!
+    \page akonadi-mime-index.html
+    \title AkonadiMime
+
+    Akonadi Mime library.
+
+    \section1 Using the Module
+
+    \include {module-use.qdocinc} {using the c++ api}
+
+    \section2 Building with CMake
+
+    \include {module-use.qdocinc} {building with cmake} {KPim6} {AkonadiMime} {KPim6::AkonadiMime}
+
+    \section1 API Reference
+
+    \list
+        \li \l{AkonadiMime C++ Classes}
+    \endlist
+*/

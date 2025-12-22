@@ -1,4 +1,4 @@
-/******************************************************************************
+/*!****************************************************************************
  *
  *  SPDX-FileCopyrightText: 2010 Leo Franchi <lfranchi@kde.org>
  *  SPDX-FileCopyrightText: 2010 KDAB
@@ -15,20 +15,20 @@
 
 namespace Akonadi
 {
-/**
- * @short An Attribute that keeps track of the MDN state of a mail message.
+/*!
+ * \brief An Attribute that keeps track of the MDN state of a mail message.
  *
  * Once a mail that contains a Message Disposition Notification is processed,
  * the outcome of the user action will be stored in this attribute.
  *
  * @author Leo Franchi <lfranchi@kde.org>
- * @see Akonadi::Attribute
- * @since 4.6
+ * \sa Akonadi::Attribute
+ * \since 4.6
  */
 class AKONADI_MIME_EXPORT MDNStateAttribute : public Akonadi::Attribute
 {
 public:
-    /**
+    /*!
      * Describes the "MDN sent" state.
      */
     enum MDNSentState {
@@ -43,51 +43,51 @@ public:
         MDNFailed ///< A failure occurred that prevented the proper generation of an MDN.
     };
 
-    /**
+    /*!
      * Creates a new MDN state attribute.
      *
-     * @param state The state the attribute will have.
+     * \a state The state the attribute will have.
      */
     explicit MDNStateAttribute(MDNSentState state = MDNStateUnknown);
 
-    /**
+    /*!
      * Creates a new MDN state attribute.
      *
-     * @param state The string representation of the state the attribute will have.
+     * \a state The string representation of the state the attribute will have.
      */
     explicit MDNStateAttribute(const QByteArray &state);
 
-    /**
+    /*!
      * Destroys the MDN state attribute.
      */
     ~MDNStateAttribute() override;
 
-    /**
+    /*!
      * Reimplemented from Attribute
      */
     [[nodiscard]] QByteArray type() const override;
 
-    /**
+    /*!
      * Reimplemented from Attribute
      */
     MDNStateAttribute *clone() const override;
 
-    /**
+    /*!
      * Reimplemented from Attribute
      */
     [[nodiscard]] QByteArray serialized() const override;
 
-    /**
+    /*!
      * Reimplemented from Attribute
      */
     void deserialize(const QByteArray &data) override;
 
-    /**
-     * Sets the MDN @p state.
+    /*!
+     * Sets the MDN \a state.
      */
     void setMDNState(MDNSentState state);
 
-    /**
+    /*!
      * Returns the MDN state.
      */
     [[nodiscard]] MDNStateAttribute::MDNSentState mdnState() const;
@@ -95,9 +95,7 @@ public:
     [[nodiscard]] bool operator==(const MDNStateAttribute &other) const;
 
 private:
-    //@cond PRIVATE
     class MDNStateAttributePrivate;
     std::unique_ptr<MDNStateAttributePrivate> const d;
-    //@endcond
 };
 }

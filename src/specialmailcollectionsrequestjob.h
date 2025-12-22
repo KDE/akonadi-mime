@@ -17,8 +17,8 @@ namespace Akonadi
 {
 class SpecialMailCollectionsRequestJobPrivate;
 
-/**
- * @short A job to request SpecialMailCollections.
+/*!
+ * \brief A job to request SpecialMailCollections.
  *
  * Use this job to request the SpecialMailCollections you need. You can request both
  * default SpecialMailCollections and SpecialMailCollections in a given resource. The default
@@ -32,7 +32,7 @@ class SpecialMailCollectionsRequestJobPrivate;
  *
  * Example:
  *
- * @code
+ * \code
  *
  * SpecialMailCollectionsRequestJob *job = new SpecialMailCollectionsRequestJob( this );
  * job->requestDefaultCollection( SpecialMailCollections::Outbox );
@@ -52,41 +52,39 @@ class SpecialMailCollectionsRequestJobPrivate;
  *   ...
  * }
  *
- * @endcode
+ * \endcode
  *
  * @author Constantin Berzan <exit3219@gmail.com>
- * @since 4.4
+ * \since 4.4
  */
 class AKONADI_MIME_EXPORT SpecialMailCollectionsRequestJob : public SpecialCollectionsRequestJob
 {
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Creates a new special mail collections request job.
      */
     explicit SpecialMailCollectionsRequestJob(QObject *parent = nullptr);
 
-    /**
+    /*!
      * Destroys the special mail collections request job.
      */
     ~SpecialMailCollectionsRequestJob() override;
 
-    /**
-     * Requests a special mail collection of the given @p type in the default resource.
+    /*!
+     * Requests a special mail collection of the given \a type in the default resource.
      */
     void requestDefaultCollection(SpecialMailCollections::Type type);
 
-    /**
-     * Requests a special mail collection of the given @p type in the given resource @p instance.
+    /*!
+     * Requests a special mail collection of the given \a type in the given resource \a instance.
      */
     void requestCollection(SpecialMailCollections::Type type, const AgentInstance &instance);
 
 private:
-    //@cond PRIVATE
     friend class SpecialMailCollectionsRequestJobPrivate;
 
     std::unique_ptr<SpecialMailCollectionsRequestJobPrivate> const d;
-    //@endcond
 };
 } // namespace Akonadi

@@ -21,25 +21,25 @@ namespace Akonadi
 class SentActionAttributePrivate;
 class SentActionAttributeActionPrivate;
 
-/**
- * @short An Attribute that stores the action to execute after sending.
+/*!
+ * \brief An Attribute that stores the action to execute after sending.
  *
  * This attribute stores the action that will be executed by the mail dispatcher
  * after a mail has successfully be sent.
  *
  * @author Tobias Koenig <tokoe@kdab.com>
- * @since 4.6
+ * \since 4.6
  */
 class AKONADI_MIME_EXPORT SentActionAttribute : public Akonadi::Attribute
 {
 public:
-    /**
-     * @short A sent action.
+    /*!
+     * \brief A sent action.
      */
     class AKONADI_MIME_EXPORT Action
     {
     public:
-        /**
+        /*!
          * Describes the action type.
          */
         enum Type {
@@ -48,79 +48,77 @@ public:
             MarkAsForwarded ///< The message will be marked as forwarded.
         };
 
-        /**
+        /*!
          * Describes a list of sent actions.
          */
         using List = QList<Action>;
 
-        /**
+        /*!
          * Creates a new invalid action.
          */
         Action();
 
-        /**
+        /*!
          * Creates a new action.
          *
-         * @param type The type of action that shall be executed.
-         * @param value The action specific argument.
+         * \a type The type of action that shall be executed.
+         * \a value The action specific argument.
          */
         Action(Type type, const QVariant &value);
 
-        /**
-         * Creates an action from an @p other action.
+        /*!
+         * Creates an action from an \a other action.
          */
         Action(const Action &other);
 
-        /**
+        /*!
          * Destroys the action.
          */
         ~Action();
 
-        /**
+        /*!
          * Returns the type of the action.
          */
         [[nodiscard]] Type type() const;
 
-        /**
+        /*!
          * Returns the argument value of the action.
          */
         [[nodiscard]] QVariant value() const;
 
-        /**
-         * @internal
+        /*!
+         * \internal
          */
         Action &operator=(const Action &other);
 
-        /**
-         * @internal
+        /*!
+         * \internal
          */
         bool operator==(const Action &other) const;
 
     private:
-        //@cond PRIVATE
         QSharedDataPointer<SentActionAttributeActionPrivate> d;
-        //@endcond
     };
 
-    /**
+    /*!
      * Creates a new sent action attribute.
      */
     explicit SentActionAttribute();
 
-    /**
+    /*!
      * Destroys the sent action attribute.
      */
     ~SentActionAttribute() override;
 
-    /**
+    /*!
      * Adds a new action to the attribute.
      *
-     * @param type The type of the action that shall be executed.
-     * @param value The action specific argument.
+     * \a type The type of the action that shall be executed.
+     * \a value The action specific argument.
      */
     void addAction(Action::Type type, const QVariant &value);
 
-    /**
+    /*!
      * Returns the list of actions.
      */
     [[nodiscard]] Action::List actions() const;
@@ -132,9 +130,7 @@ public:
     void deserialize(const QByteArray &data) override;
 
 private:
-    //@cond PRIVATE
     std::unique_ptr<SentActionAttributePrivate> const d;
-    //@endcond
 };
 }
 Q_DECLARE_TYPEINFO(Akonadi::SentActionAttribute::Action, Q_RELOCATABLE_TYPE);
