@@ -149,6 +149,12 @@ void SpecialMailCollections::verifyI18nDefaultCollection(Type type)
                 auto job = new Akonadi::CollectionModifyJob(collection, this);
                 connect(job, &Akonadi::CollectionModifyJob::result, this, &SpecialMailCollections::slotCollectionModified);
             }
+        } else {
+            auto attr = new EntityDisplayAttribute;
+            attr->setDisplayName(defaultI18n);
+            collection.addAttribute(attr);
+            auto job = new Akonadi::CollectionModifyJob(collection, this);
+            connect(job, &Akonadi::CollectionModifyJob::result, this, &SpecialMailCollections::slotCollectionModified);
         }
     }
 }
