@@ -68,7 +68,7 @@ class MessageQueueJobPrivate;
   \sa TransportAttribute
   \sa AddressAttribute
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT MessageQueueJob : public KCompositeJob

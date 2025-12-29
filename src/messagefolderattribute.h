@@ -19,9 +19,13 @@ namespace Akonadi
 class MessageFolderAttributePrivate;
 
 /*!
-  Message folder information. Used eg. by mail clients to decide how to display the content of such collections
-  \since 4.4
-*/
+ * \class Akonadi::MessageFolderAttribute
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MessageFolderAttribute
+ *
+ * Message folder information. Used eg. by mail clients to decide how to display the content of such collections
+ * \since 4.4
+ */
 class AKONADI_MIME_EXPORT MessageFolderAttribute : public Attribute
 {
 public:

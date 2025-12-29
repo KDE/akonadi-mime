@@ -54,7 +54,7 @@ class SpecialMailCollectionsRequestJobPrivate;
  *
  * \endcode
  *
- * @author Constantin Berzan <exit3219@gmail.com>
+ * \author Constantin Berzan <exit3219@gmail.com>
  * \since 4.4
  */
 class AKONADI_MIME_EXPORT SpecialMailCollectionsRequestJob : public SpecialCollectionsRequestJob

@@ -15,9 +15,16 @@
 namespace Akonadi
 {
 class NewMailNotifierAttributePrivate;
+/*!
+ * \class Akonadi::NewMailNotifierAttribute
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/NewMailNotifierAttribute
+ */
 class AKONADI_MIME_EXPORT NewMailNotifierAttribute : public Akonadi::Attribute
 {
 public:
+    /*!
+     */
     explicit NewMailNotifierAttribute();
     ~NewMailNotifierAttribute() override;
 
@@ -27,7 +34,12 @@ public:
     [[nodiscard]] QByteArray serialized() const override;
     void deserialize(const QByteArray &data) override;
 
+    /*!
+     */
     [[nodiscard]] bool ignoreNewMail() const;
+
+    /*!
+     */
     void setIgnoreNewMail(bool b);
     bool operator==(const NewMailNotifierAttribute &other) const;
 

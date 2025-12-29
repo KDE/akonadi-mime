@@ -20,9 +20,13 @@ namespace Akonadi
 class AddressAttributePrivate;
 
 /*!
+  \class Akonadi::AddressAttribute
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/AddressAttribute
+
   Attribute storing the From, To, Cc, Bcc addresses of a message.
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT AddressAttribute : public Akonadi::Attribute
@@ -90,7 +94,12 @@ public:
      */
     void setBcc(const QStringList &bcc);
 
+    /*!
+     * \brief setDeliveryStatusNotification
+     */
     void setDeliveryStatusNotification(bool b);
+    /*!
+     */
     [[nodiscard]] bool deliveryStatusNotification() const;
 
     bool operator==(const AddressAttribute &other) const;

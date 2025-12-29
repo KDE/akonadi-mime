@@ -18,12 +18,23 @@ class KJob;
 namespace Akonadi
 {
 class MoveCommandPrivate;
+/*!
+ * \class Akonadi::MoveCommand
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MoveCommand
+ */
 class AKONADI_MIME_EXPORT MoveCommand : public CommandBase
 {
     Q_OBJECT
 public:
+    /*!
+     */
     MoveCommand(const Akonadi::Collection &destFolder, const Akonadi::Item::List &msgList, QObject *parent = nullptr);
+    /*!
+     */
     ~MoveCommand() override;
+    /*!
+     */
     void execute() override;
 
 private:

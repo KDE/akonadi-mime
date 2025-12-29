@@ -15,6 +15,10 @@
 namespace Akonadi
 {
 /*!
+  \class Akonadi::DispatcherInterface
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/DispatcherInterface
+
   \brief An interface for applications to interact with the dispatcher agent.
 
   This class provides methods such as send queued messages (\sa
@@ -23,7 +27,7 @@ namespace Akonadi
   This class also takes care of registering the attributes that the mail
   dispatcher agent and MailTransport use.
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT DispatcherInterface

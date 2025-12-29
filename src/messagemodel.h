@@ -13,6 +13,10 @@
 namespace Akonadi
 {
 /*!
+ * \class Akonadi::MessageModel
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MessageModel
+ *
  * A flat self-updating message model.
  */
 class AKONADI_MIME_EXPORT MessageModel : public Akonadi::EntityTreeModel

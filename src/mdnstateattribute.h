@@ -16,12 +16,17 @@
 namespace Akonadi
 {
 /*!
+ * \class Akonadi::MDNStateAttribute
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MDNStateAttribute
+ *
+ *
  * \brief An Attribute that keeps track of the MDN state of a mail message.
  *
  * Once a mail that contains a Message Disposition Notification is processed,
  * the outcome of the user action will be stored in this attribute.
  *
- * @author Leo Franchi <lfranchi@kde.org>
+ * \author Leo Franchi <lfranchi@kde.org>
  * \sa Akonadi::Attribute
  * \since 4.6
  */

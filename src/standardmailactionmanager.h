@@ -27,9 +27,13 @@ class Item;
 class StandardMailActionManagerPrivate;
 
 /*!
+ * \class Akonadi::StandardMailActionManager
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/StandardMailActionManager
+ *
  * \brief Manages emails specific actions for collection and item views.
  *
- * @author Andras Mantia <amantia@kde.org>
+ * \author Andras Mantia <amantia@kde.org>
  * \since 4.6
  */
 class AKONADI_MIME_EXPORT StandardMailActionManager : public QObject
@@ -189,13 +193,23 @@ public:
      */
     void setFavoriteSelectionModel(QItemSelectionModel *selectionModel);
 
+    /*!
+     */
     void setCollectionPropertiesPageNames(const QStringList &names);
 
+    /*!
+     */
     [[nodiscard]] Akonadi::StandardActionManager *standardActionManager() const;
 
+    /*!
+     */
     void markItemsAs(const QByteArray &typeStr, const Akonadi::Item::List &items, bool checkIntercept = true);
+    /*!
+     */
     void markAllItemsAs(const QByteArray &typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true);
 
+    /*!
+     */
     void setItems(const Item::List &selectedItems);
 
 Q_SIGNALS:

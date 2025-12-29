@@ -14,10 +14,19 @@
 namespace Akonadi
 {
 class Pop3ResourceAttributePrivate;
+/*!
+ * \class Akonadi::Pop3ResourceAttribute
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/Pop3ResourceAttribute
+ */
 class AKONADI_MIME_EXPORT Pop3ResourceAttribute : public Akonadi::Attribute
 {
 public:
+    /*!
+     */
     explicit Pop3ResourceAttribute();
+    /*!
+     */
     ~Pop3ResourceAttribute() override;
 
     /* reimpl */

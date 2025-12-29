@@ -20,7 +20,7 @@ namespace Akonadi
 //---------------------------------------------------------------------------
 /*!
   \brief Akonadi KMime Message Status.
-  @author Andreas Gungl <a.gungl@gmx.de>
+  \author Andreas Gungl <a.gungl@gmx.de>
 
   The class encapsulates the handling of the different flags
   which describe the status of a message.

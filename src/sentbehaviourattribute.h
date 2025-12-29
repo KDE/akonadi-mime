@@ -22,7 +22,7 @@ class SentBehaviourAttributePrivate;
   message can be deleted from the Outbox, moved to the default sent-mail
   collection, or moved to a custom collection.
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT SentBehaviourAttribute : public Akonadi::Attribute

@@ -19,11 +19,15 @@ namespace Akonadi
 class DispatchModeAttributePrivate;
 
 /*!
+  \class Akonadi::DispatchModeAttribute
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/DispatchModeAttribute
+
   Attribute determining how and when a message from the outbox should be
   dispatched.  Messages can be sent immediately, sent only when the user
   explicitly requests it, or sent automatically at a certain date and time.
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT DispatchModeAttribute : public Akonadi::Attribute

@@ -19,11 +19,15 @@ namespace Akonadi
 class ErrorAttributePrivate;
 
 /*!
+ * \class Akonadi::ErrorAttribute
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/ErrorAttribute
+ *
  * \brief An Attribute to mark messages that failed to be sent.
  *
  * This attribute contains the error message encountered.
  *
- * @author Constantin Berzan <exit3219@gmail.com>
+ * \author Constantin Berzan <exit3219@gmail.com>
  * \since 4.4
  */
 class AKONADI_MIME_EXPORT ErrorAttribute : public Akonadi::Attribute

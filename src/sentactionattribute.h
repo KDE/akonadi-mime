@@ -22,12 +22,16 @@ class SentActionAttributePrivate;
 class SentActionAttributeActionPrivate;
 
 /*!
+ * \class Akonadi::SentActionAttribute
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/SentActionAttribute
+ *
  * \brief An Attribute that stores the action to execute after sending.
  *
  * This attribute stores the action that will be executed by the mail dispatcher
  * after a mail has successfully be sent.
  *
- * @author Tobias Koenig <tokoe@kdab.com>
+ * \author Tobias Koenig <tokoe@kdab.com>
  * \since 4.6
  */
 class AKONADI_MIME_EXPORT SentActionAttribute : public Akonadi::Attribute

@@ -20,6 +20,10 @@ namespace Akonadi
 class RemoveDuplicatesJobPrivate;
 
 /*!
+ * \class Akonadi::RemoveDuplicatesJob
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/RemoveDuplicatesJob
+ *
  * \brief Job that finds and removes duplicate messages in given collection
  *
  * This jobs compares all messages in given collections by their Message-Id

@@ -17,12 +17,16 @@ namespace Akonadi
 class TransportAttributePrivate;
 
 /*!
+ \class Akonadi::TransportAttribute
+ \inmodule AkonadiMime
+ \inheaderfile Akonadi/TransportAttribute
+
   Attribute determining which transport to use for sending a message.
 
   \sa mailtransport
   \sa TransportManager.
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT TransportAttribute : public Akonadi::Attribute

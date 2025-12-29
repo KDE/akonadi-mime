@@ -15,6 +15,10 @@ namespace Akonadi
 class SpecialMailCollectionsPrivate;
 
 /*!
+ \class Akonadi::SpecialMailCollections
+ \inmodule AkonadiMime
+ \inheaderfile Akonadi/SpecialMailCollections
+
   \brief Interface to special mail collections such as inbox, outbox etc.
 
   This class is the central interface to the local mail folders. These folders
@@ -47,7 +51,7 @@ class SpecialMailCollectionsPrivate;
   }
   \endcode
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   \since 4.4
 */
 class AKONADI_MIME_EXPORT SpecialMailCollections : public SpecialCollections

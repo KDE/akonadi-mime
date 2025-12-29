@@ -16,6 +16,8 @@ class AKONADI_MIME_EXPORT CommandBase : public QObject
     Q_OBJECT
 
 public:
+    /*!
+     */
     explicit CommandBase(QObject *parent = nullptr);
     virtual void execute() = 0;
 
@@ -27,6 +29,8 @@ public:
     };
 
 Q_SIGNALS:
+    /*!
+     */
     void result(Akonadi::CommandBase::Result);
 
 protected Q_SLOTS:

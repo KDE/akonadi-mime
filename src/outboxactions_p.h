@@ -23,7 +23,7 @@ namespace Akonadi
 
   @see FilterActionJob
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   @since 4.4
 */
 class SendQueuedAction : public Akonadi::FilterAction
@@ -50,7 +50,7 @@ public:
 
   @see FilterActionJob
 
-  @author Constantin Berzan <exit3219@gmail.com>
+  \author Constantin Berzan <exit3219@gmail.com>
   @since 4.4
 */
 class ClearErrorAction : public Akonadi::FilterAction
@@ -77,7 +77,7 @@ public:
 
   @see FilterActionJob
 
-  @author Torgny Nyblom <kde@nyblom.org>
+  \author Torgny Nyblom <kde@nyblom.org>
   @since 4.5
 */
 class DispatchManualTransportAction : public Akonadi::FilterAction

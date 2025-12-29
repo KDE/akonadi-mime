@@ -21,12 +21,23 @@ class KJob;
 namespace Akonadi
 {
 class MarkAsCommandPrivate;
+/*!
+ * \class Akonadi::MarkAsCommand
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MarkAsCommand
+ */
 class AKONADI_MIME_EXPORT MarkAsCommand : public CommandBase
 {
     Q_OBJECT
 public:
+    /*!
+     */
     MarkAsCommand(MessageStatus targetStatus, const Akonadi::Item::List &msgList, bool invert = false, QObject *parent = nullptr);
+    /*!
+     */
     MarkAsCommand(MessageStatus targetStatus, const Akonadi::Collection::List &folders, bool invert = false, bool recursive = false, QObject *parent = nullptr);
+    /*!
+     */
     ~MarkAsCommand() override;
     void execute() override;
 

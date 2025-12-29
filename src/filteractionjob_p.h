@@ -57,7 +57,7 @@ class FilterActionJob;
  *
  * \sa FilterActionJob
  *
- * @author Constantin Berzan <exit3219@gmail.com>
+ * \author Constantin Berzan <exit3219@gmail.com>
  * \since 4.4
  */
 class AKONADI_MIME_EXPORT FilterAction
@@ -113,7 +113,7 @@ class FilterActionJobPrivate;
  *
  * \sa FilterAction
  *
- * @author Constantin Berzan <exit3219@gmail.com>
+ * \author Constantin Berzan <exit3219@gmail.com>
  * \since 4.4
  */
 class AKONADI_MIME_EXPORT FilterActionJob : public TransactionSequence
