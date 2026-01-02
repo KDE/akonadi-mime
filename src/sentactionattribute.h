@@ -53,6 +53,8 @@ public:
         };
 
         /*!
+         * \typealias Akonadi::SentActionAttribute::List
+         *
          * Describes a list of sent actions.
          */
         using List = QList<Action>;
