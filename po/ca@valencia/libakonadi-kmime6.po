@@ -392,7 +392,7 @@ msgstr "No s'ha pogut crear el compte: %1"
 #: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Account creation failed"
-msgstr "No s'ha pogut crear el compte"
+msgstr "Ha fallat mentre es creava el compte"
 
 #: standardmailactionmanager.cpp:219
 #, kde-format
@@ -470,7 +470,7 @@ msgstr "No s'ha pogut apegar el missatge: %1"
 #: standardmailactionmanager.cpp:254
 #, kde-format
 msgid "Paste failed"
-msgstr "No s'ha pogut apegar"
+msgstr "Ha fallat mentre s'apegava"
 
 #: standardmailactionmanager.cpp:320
 #, kde-format
