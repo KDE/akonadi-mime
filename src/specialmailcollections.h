@@ -133,6 +133,8 @@ public:
      */
     [[nodiscard]] Akonadi::Collection defaultCollection(Type type) const;
 
+    /*!
+     */
     void verifyI18nDefaultCollection(Type type);
 private Q_SLOTS:
     void slotCollectionModified(KJob *job);

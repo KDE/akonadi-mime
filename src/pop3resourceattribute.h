@@ -31,13 +31,25 @@ public:
 
     /* reimpl */
     Pop3ResourceAttribute *clone() const override;
+    /*!
+     */
     [[nodiscard]] QByteArray type() const override;
+    /*!
+     */
     [[nodiscard]] QByteArray serialized() const override;
+    /*!
+     */
     void deserialize(const QByteArray &data) override;
 
+    /*!
+     */
     [[nodiscard]] QString pop3AccountName() const;
+    /*!
+     */
     void setPop3AccountName(const QString &accountName);
 
+    /*!
+     */
     bool operator==(const Pop3ResourceAttribute &other) const;
 
 private:
