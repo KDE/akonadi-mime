@@ -18,6 +18,8 @@ class Pop3ResourceAttributePrivate;
  * \class Akonadi::Pop3ResourceAttribute
  * \inmodule AkonadiMime
  * \inheaderfile Akonadi/Pop3ResourceAttribute
+ *
+ * \brief The Pop3ResourceAttribute class
  */
 class AKONADI_MIME_EXPORT Pop3ResourceAttribute : public Akonadi::Attribute
 {

@@ -19,6 +19,10 @@ namespace Akonadi
 {
 //---------------------------------------------------------------------------
 /*!
+  \class Akonadi::MessageStatus
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/MessageStatus
+
   \brief Akonadi KMime Message Status.
   \author Andreas Gungl <a.gungl@gmx.de>
 

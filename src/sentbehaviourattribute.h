@@ -18,6 +18,10 @@ namespace Akonadi
 class SentBehaviourAttributePrivate;
 
 /*!
+  \class Akonadi::SentBehaviourAttribute
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/SentBehaviourAttribute
+
   Attribute determining what will happen to a message after it is sent.  The
   message can be deleted from the Outbox, moved to the default sent-mail
   collection, or moved to a custom collection.

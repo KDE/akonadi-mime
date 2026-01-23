@@ -22,6 +22,10 @@ class Job;
 class FilterActionJob;
 
 /*!
+ * \class Akonadi::FilterAction
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/FilterAction
+ *
  * \brief Base class for a filter/action for FilterActionJob.
  *
  * Abstract class defining an interface for a filter and an action for

@@ -11,6 +11,14 @@
 #include <QObject>
 namespace Akonadi
 {
+/*!
+ * \class Akonadi::CommandBase
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/CommandBase
+ *
+ *
+ * \brief The CommandBase class
+ */
 class AKONADI_MIME_EXPORT CommandBase : public QObject
 {
     Q_OBJECT

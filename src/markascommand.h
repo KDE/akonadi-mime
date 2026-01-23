@@ -25,6 +25,8 @@ class MarkAsCommandPrivate;
  * \class Akonadi::MarkAsCommand
  * \inmodule AkonadiMime
  * \inheaderfile Akonadi/MarkAsCommand
+ *
+ * \brief The MarkAsCommand class
  */
 class AKONADI_MIME_EXPORT MarkAsCommand : public CommandBase
 {

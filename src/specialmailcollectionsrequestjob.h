@@ -18,6 +18,10 @@ namespace Akonadi
 class SpecialMailCollectionsRequestJobPrivate;
 
 /*!
+ * \class Akonadi::SpecialMailCollectionsRequestJob
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/SpecialMailCollectionsRequestJob
+ *
  * \brief A job to request SpecialMailCollections.
  *
  * Use this job to request the SpecialMailCollections you need. You can request both

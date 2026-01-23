@@ -19,6 +19,8 @@ class NewMailNotifierAttributePrivate;
  * \class Akonadi::NewMailNotifierAttribute
  * \inmodule AkonadiMime
  * \inheaderfile Akonadi/NewMailNotifierAttribute
+ *
+ * \brief The NewMailNotifierAttribute class
  */
 class AKONADI_MIME_EXPORT NewMailNotifierAttribute : public Akonadi::Attribute
 {

@@ -15,9 +15,9 @@ namespace Akonadi
 class SpecialMailCollectionsPrivate;
 
 /*!
- \class Akonadi::SpecialMailCollections
- \inmodule AkonadiMime
- \inheaderfile Akonadi/SpecialMailCollections
+  \class Akonadi::SpecialMailCollections
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/SpecialMailCollections
 
   \brief Interface to special mail collections such as inbox, outbox etc.
 

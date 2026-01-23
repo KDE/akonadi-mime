@@ -30,6 +30,10 @@ namespace Akonadi
 class MessageQueueJobPrivate;
 
 /*!
+  \class Akonadi::MessageQueueJob
+  \inmodule AkonadiMime
+  \inheaderfile Akonadi/MessageQueueJob
+
   \brief Provides an interface for sending email.
 
   This class takes a KMime::Message and some related info such as sender and

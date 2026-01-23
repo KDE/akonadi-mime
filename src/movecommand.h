@@ -22,6 +22,8 @@ class MoveCommandPrivate;
  * \class Akonadi::MoveCommand
  * \inmodule AkonadiMime
  * \inheaderfile Akonadi/MoveCommand
+ *
+ * \brief The MoveCommand class
  */
 class AKONADI_MIME_EXPORT MoveCommand : public CommandBase
 {
