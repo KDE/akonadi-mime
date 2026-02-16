@@ -194,21 +194,34 @@ public:
     void setFavoriteSelectionModel(QItemSelectionModel *selectionModel);
 
     /*!
+     * Sets the collection properties page names.
+     * \a names the list of property page names
      */
     void setCollectionPropertiesPageNames(const QStringList &names);
 
     /*!
+     * Returns the standard action manager instance.
      */
     [[nodiscard]] Akonadi::StandardActionManager *standardActionManager() const;
 
     /*!
+     * Marks the given items as having the specified message status.
+     * \a typeStr the message status type string
+     * \a items the items to mark
+     * \a checkIntercept whether to check if the action is intercepted
      */
     void markItemsAs(const QByteArray &typeStr, const Akonadi::Item::List &items, bool checkIntercept = true);
     /*!
+     * Marks all items in the given collections as having the specified message status.
+     * \a typeStr the message status type string
+     * \a collections the collections to mark
+     * \a checkIntercept whether to check if the action is intercepted
      */
     void markAllItemsAs(const QByteArray &typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true);
 
     /*!
+     * Sets the list of items that are currently selected.
+     * \a selectedItems the items to set as selected
      */
     void setItems(const Item::List &selectedItems);
 

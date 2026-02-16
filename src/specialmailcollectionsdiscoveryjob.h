@@ -22,7 +22,9 @@ class AKONADI_MIME_EXPORT SpecialMailCollectionsDiscoveryJob : public SpecialCol
     Q_OBJECT
 public:
     /*!
-     */
+      Creates a new special mail collections discovery job.
+      \a parent The parent object
+    */
     explicit SpecialMailCollectionsDiscoveryJob(QObject *parent = nullptr);
 };
 }

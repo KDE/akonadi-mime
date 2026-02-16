@@ -30,13 +30,19 @@ class AKONADI_MIME_EXPORT MoveCommand : public CommandBase
     Q_OBJECT
 public:
     /*!
-     */
+      Creates a new move command.
+      \a destFolder The destination folder for the messages
+      \a msgList The list of messages to move
+      \a parent The parent object
+    */
     MoveCommand(const Akonadi::Collection &destFolder, const Akonadi::Item::List &msgList, QObject *parent = nullptr);
     /*!
-     */
+      Destroys the move command.
+    */
     ~MoveCommand() override;
     /*!
-     */
+      Executes the move command.
+    */
     void execute() override;
 
 private:

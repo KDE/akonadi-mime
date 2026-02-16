@@ -26,23 +26,46 @@ class AKONADI_MIME_EXPORT NewMailNotifierAttribute : public Akonadi::Attribute
 {
 public:
     /*!
-     */
+      Creates a new NewMailNotifierAttribute.
+    */
     explicit NewMailNotifierAttribute();
+    /*!
+      Destroys the NewMailNotifierAttribute.
+    */
     ~NewMailNotifierAttribute() override;
 
-    /* reimpl */
+    /*!
+      Returns a copy of this attribute.
+    */
     NewMailNotifierAttribute *clone() const override;
+    /*!
+      Returns the type of the attribute.
+    */
     [[nodiscard]] QByteArray type() const override;
+    /*!
+      Returns the serialized representation of the attribute.
+    */
     [[nodiscard]] QByteArray serialized() const override;
+    /*!
+      Deserializes the attribute from the given data.
+      \a data the serialized data
+    */
     void deserialize(const QByteArray &data) override;
 
     /*!
-     */
+      Returns whether new mail notifications should be ignored.
+    */
     [[nodiscard]] bool ignoreNewMail() const;
 
     /*!
-     */
+      Sets whether new mail notifications should be ignored.
+      \a b the ignore new mail setting
+    */
     void setIgnoreNewMail(bool b);
+    /*!
+      Compares this attribute with another NewMailNotifierAttribute.
+      Returns true if both attributes are equal.
+    */
     bool operator==(const NewMailNotifierAttribute &other) const;
 
 private:

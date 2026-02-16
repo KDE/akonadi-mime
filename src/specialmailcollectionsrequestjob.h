@@ -68,6 +68,7 @@ class AKONADI_MIME_EXPORT SpecialMailCollectionsRequestJob : public SpecialColle
 public:
     /*!
      * Creates a new special mail collections request job.
+     * \a parent the parent object
      */
     explicit SpecialMailCollectionsRequestJob(QObject *parent = nullptr);
 

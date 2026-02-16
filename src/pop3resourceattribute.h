@@ -25,29 +25,40 @@ class AKONADI_MIME_EXPORT Pop3ResourceAttribute : public Akonadi::Attribute
 {
 public:
     /*!
-     */
+      Creates a new Pop3ResourceAttribute.
+    */
     explicit Pop3ResourceAttribute();
     /*!
-     */
+      Destroys the Pop3ResourceAttribute.
+    */
     ~Pop3ResourceAttribute() override;
 
-    /* reimpl */
+    /*!
+      Returns a copy of this attribute.
+    */
     Pop3ResourceAttribute *clone() const override;
     /*!
-     */
+      Returns the type of the attribute.
+    */
     [[nodiscard]] QByteArray type() const override;
     /*!
-     */
+      Returns the serialized representation of the attribute.
+    */
     [[nodiscard]] QByteArray serialized() const override;
     /*!
-     */
+      Deserializes the attribute data.
+      \a data the serialized data
+    */
     void deserialize(const QByteArray &data) override;
 
     /*!
-     */
+      Returns the POP3 account name.
+    */
     [[nodiscard]] QString pop3AccountName() const;
     /*!
-     */
+      Sets the POP3 account name.
+      \a accountName the name of the POP3 account
+    */
     void setPop3AccountName(const QString &accountName);
 
     /*!

@@ -45,10 +45,22 @@ public:
     */
     ~AddressAttribute() override;
 
-    /* reimpl */
+    /*!
+      Returns a copy of this attribute.
+    */
     [[nodiscard]] AddressAttribute *clone() const override;
+    /*!
+      Returns the type of the attribute.
+    */
     [[nodiscard]] QByteArray type() const override;
+    /*!
+      Returns the serialized representation of the attribute.
+    */
     [[nodiscard]] QByteArray serialized() const override;
+    /*!
+      Deserializes the attribute from the given data.
+      \a data the serialized data
+    */
     void deserialize(const QByteArray &data) override;
 
     /*!

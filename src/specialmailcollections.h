@@ -134,6 +134,8 @@ public:
     [[nodiscard]] Akonadi::Collection defaultCollection(Type type) const;
 
     /*!
+     * Verifies that the default i18n collection of the given \a type exists.
+     * \a type the type of collection to verify
      */
     void verifyI18nDefaultCollection(Type type);
 private Q_SLOTS:
