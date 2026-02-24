@@ -354,9 +354,10 @@ public:
         }
     }
 
-    void updateActions(const Collection::List &selectedCollections, const Collection::List &selectedFavoriteCollections, const Item::List &selectedItems)
+    void updateActions(const Collection::List &selectedCollections,
+                       [[maybe_unused]] const Collection::List &selectedFavoriteCollections,
+                       const Item::List &selectedItems)
     {
-        Q_UNUSED(selectedFavoriteCollections)
         const bool itemIsSelected = !selectedItems.isEmpty();
         const bool collectionIsSelected = !selectedCollections.isEmpty();
         updateActionsFromSelectedItems(selectedItems);

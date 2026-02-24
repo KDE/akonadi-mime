@@ -123,10 +123,8 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
 }
 
 template<typename T>
-static void parseMailboxList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, int version, StringPool &pool)
+static void parseMailboxList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, [[maybe_unused]] int version, StringPool &pool)
 {
-    Q_UNUSED(version)
-
     int count = 0;
     stream >> count;
     if (count == 0) {
@@ -143,10 +141,8 @@ static void parseMailboxList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMi
 }
 
 template<typename T>
-static void parseSingleMailbox(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, int version, StringPool &pool)
+static void parseSingleMailbox(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, [[maybe_unused]] int version, StringPool &pool)
 {
-    Q_UNUSED(version)
-
     int count = 0;
     stream >> count;
     if (count == 0) {
@@ -162,10 +158,8 @@ static void parseSingleMailbox(QDataStream &stream, T hdrFunc, std::shared_ptr<K
 }
 
 template<typename T>
-static void parseAddrList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, int version, StringPool &pool)
+static void parseAddrList(QDataStream &stream, T hdrFunc, std::shared_ptr<KMime::Message> &msg, [[maybe_unused]] int version, StringPool &pool)
 {
-    Q_UNUSED(version)
-
     int count = 0;
     stream >> count;
     if (count == 0) {

@@ -59,9 +59,8 @@ void MakeTest::configureDBusIface(const QString &name, const QString &dir)
     }
 }
 
-void MakeTest::instanceRemoved(const AgentInstance &instance)
+void MakeTest::instanceRemoved([[maybe_unused]] const AgentInstance &instance)
 {
-    Q_UNUSED(instance)
     done = true;
     // qDebug() << "agent removed:" << instance;
 }

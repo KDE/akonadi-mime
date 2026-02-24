@@ -153,15 +153,13 @@ void MessageQueuer::jobResult(KJob *job)
     }
 }
 
-void MessageQueuer::jobPercent(KJob *job, unsigned long percent)
+void MessageQueuer::jobPercent([[maybe_unused]] KJob *job, unsigned long percent)
 {
-    Q_UNUSED(job)
     qDebug() << percent << "%";
 }
 
-void MessageQueuer::jobInfoMessage(KJob *job, const QString &info, const QString &info2)
+void MessageQueuer::jobInfoMessage([[maybe_unused]] KJob *job, const QString &info, const QString &info2)
 {
-    Q_UNUSED(job)
     qDebug() << info;
     qDebug() << info2;
 }
