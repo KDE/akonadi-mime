@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the akonadi-mime package.
 #
-# SPDX-FileCopyrightText: 2024 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2026 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:40+0000\n"
-"PO-Revision-Date: 2024-09-08 13:28+0200\n"
+"PO-Revision-Date: 2026-02-28 12:23+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-i18n-doc@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 25.12.2\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -117,7 +117,7 @@ msgstr "இவ்வஞ்சலில் பெறுநர்கள் யா�
 #: messagequeuejob.cpp:72
 #, kde-format
 msgid "Message has invalid sent-mail folder."
-msgstr ""
+msgstr "அனுப்பிய அஞ்சலுக்கான அடைவு செல்லுபடியாகாதது."
 
 #: removeduplicatesjob.cpp:41
 #, kde-format
@@ -138,43 +138,43 @@ msgstr "நகலாயுள்ளவை நீக்கப்படுகி�
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
-msgstr ""
+msgstr "உள்வந்தவை"
 
 #: specialmailcollections.cpp:125
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
-msgstr ""
+msgstr "வெளிப்பெட்டி"
 
 #: specialmailcollections.cpp:128
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
-msgstr ""
+msgstr "அனுப்பியவை"
 
 #: specialmailcollections.cpp:131
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
-msgstr ""
+msgstr "அகற்றிடம்"
 
 #: specialmailcollections.cpp:134
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
-msgstr ""
+msgstr "வரைவுகள்"
 
 #: specialmailcollections.cpp:137
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
-msgstr ""
+msgstr "வார்ப்புருகள்"
 
 #: specialmailcollections.cpp:140
 #, kde-format
 msgctxt "local mail folder"
 msgid "spam"
-msgstr ""
+msgstr "ஸ்பேம்"
 
 #: specialmailcollectionsrequestjob.cpp:48
 #, kde-format
@@ -243,8 +243,8 @@ msgstr ""
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
 "Do you really want to delete %1 folders and all their sub-folders?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "இந்த அடைவையும் அதில் சார்ந்துள்ள அனைத்தையும் உறுதியாக நீக்க வேண்டுமா?"
+msgstr[1] "இந்த %1 அடைவுகளையும் அவற்றில் சார்ந்துள்ள அனைத்தையும் உறுதியாக நீக்க வேண்டுமா?"
 
 #: standardmailactionmanager.cpp:151
 #, kde-format
@@ -262,14 +262,14 @@ msgstr "அடைவை நீக்க முடியவில்லை: %1"
 #: standardmailactionmanager.cpp:157
 #, kde-format
 msgid "Folder deletion failed"
-msgstr ""
+msgstr "அடைவை நீக்குவது தோல்வியடைந்தது"
 
 #: standardmailactionmanager.cpp:161
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அடைவை புதுப்பி"
+msgstr[1] "அடைவுகளை புதுப்பி"
 
 #: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
 #, kde-format
@@ -280,8 +280,8 @@ msgstr ""
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அடைவை வெட்டு"
+msgstr[1] "%1 அடைவுகளை வெட்டு"
 
 #: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
 #, kde-format
@@ -291,7 +291,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:172
 #, kde-format
 msgid "Folder Properties"
-msgstr ""
+msgstr "அடைவின் பண்புகள்"
 
 #: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
 #, kde-format
@@ -302,8 +302,8 @@ msgstr ""
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அஞ்சலை நகலெடு"
+msgstr[1] "%1 அஞ்சல்களை நகலெடு"
 
 #: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
 #, kde-format
@@ -314,8 +314,8 @@ msgstr ""
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "அஞ்சலை நீக்கு"
+msgstr[1] "%1 அஞ்சல்களை நீக்கு"
 
 #: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
 #, kde-format
@@ -326,8 +326,8 @@ msgstr ""
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "தேர்ந்தெடுத்துள்ள அஞ்சலை உறுதியாக நீக்க வேண்டுமா?"
+msgstr[1] "தேர்ந்தெடுத்துள்ள %1 அஞ்சல்களை உறுதியாக நீக்க வேண்டுமா?"
 
 #: standardmailactionmanager.cpp:193
 #, kde-format
@@ -468,42 +468,42 @@ msgstr ""
 #: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:725
 #, kde-format
 msgid "&Mark Message as Important"
-msgstr ""
+msgstr "அஞ்சலை முக்கியமானதாக குறி"
 
 #: standardmailactionmanager.cpp:333
 #, kde-format
 msgid "Remove Action Item Mark"
-msgstr ""
+msgstr "செயலுக்கானதாக குறித்ததை நீக்கு"
 
 #: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:739
 #, kde-format
 msgid "&Mark Message as Action Item"
-msgstr ""
+msgstr "அஞ்சலை செயலுக்கானதாக குறி"
 
 #: standardmailactionmanager.cpp:695
 #, kde-format
 msgid "&Mark Message as Read"
-msgstr ""
+msgstr "அஞ்சலை படித்ததாக குறி"
 
 #: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "Mark as Read"
-msgstr ""
+msgstr "படித்த‍தாக‍ குறி"
 
 #: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
 #, kde-format
 msgid "Mark selected messages as read."
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள அஞ்சல்களை படித்தவையாக குறி"
 
 #: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "&Mark Message as Unread"
-msgstr ""
+msgstr "அஞ்சலை படிக்காததாக குறி"
 
 #: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "Mark as Unread"
-msgstr ""
+msgstr "படிக்காத‍தாக குறி"
 
 #: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
 #, kde-format
@@ -513,7 +513,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:726
 #, kde-format
 msgid "Mark as Important"
-msgstr ""
+msgstr "முக்கியமானதாக குறி"
 
 #: standardmailactionmanager.cpp:727
 #, kde-format
@@ -523,7 +523,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:740
 #, kde-format
 msgid "Mark as Action Item"
-msgstr ""
+msgstr "செயலுக்கானதாக குறி"
 
 #: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
 #, kde-format
@@ -533,17 +533,17 @@ msgstr ""
 #: standardmailactionmanager.cpp:753
 #, kde-format
 msgid "Mark &All Messages as Read"
-msgstr ""
+msgstr "அனைத்து அஞ்சல்களையும் படித்தவையாக குறி"
 
 #: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark All as Read"
-msgstr ""
+msgstr "அனைத்தையும் படித்ததாக குறி"
 
 #: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark all messages as read."
-msgstr ""
+msgstr "அனைத்து அஞ்சல்களையும் படித்ததாக குறி."
 
 #: standardmailactionmanager.cpp:767
 #, kde-format
@@ -568,7 +568,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark All as Unread"
-msgstr ""
+msgstr "அனைத்தையும் படிக்காததாக குறி"
 
 #: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
 #, kde-format
@@ -578,12 +578,12 @@ msgstr ""
 #: standardmailactionmanager.cpp:795
 #, kde-format
 msgid "Mark &All Messages as Important"
-msgstr ""
+msgstr "அனைத்து அஞ்சல்களையும் முக்கியமானவையாக குறி"
 
 #: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark All as Important"
-msgstr ""
+msgstr "அனைத்தையும் முக்கியமானவையாக குறி"
 
 #: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
 #, kde-format
@@ -593,12 +593,12 @@ msgstr ""
 #: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark All as Action Item"
-msgstr ""
+msgstr "அனைத்தையும் செயலுக்கானவையாக குறி"
 
 #: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark &All Messages as Action Item"
-msgstr ""
+msgstr "அனைத்து அஞ்சல்களையும் செயலுக்கானவையாக குறி"
 
 #: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
 #, kde-format
@@ -608,7 +608,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:823
 #, kde-format
 msgid "Move to &Trash"
-msgstr ""
+msgstr "அகற்றிடத்துக்கு நகர்த்து"
 
 #: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
 #, kde-format
@@ -618,7 +618,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:836
 #, kde-format
 msgid "Move All to &Trash"
-msgstr ""
+msgstr "அனைத்தையும் அகற்றிடத்திற்கு நகர்த்து"
 
 #: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
 #, kde-format
@@ -628,7 +628,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Remove &Duplicate Messages"
-msgstr ""
+msgstr "நகலாயுள்ள அஞ்சல்களை நீக்கு"
 
 #: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
 #, kde-format
@@ -638,7 +638,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:859
 #, kde-format
 msgid "Empty All &Trash Folders"
-msgstr ""
+msgstr "அனைத்து அகற்றிட அடைவுகளையும் காலியாக்கு"
 
 #: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
 #, kde-format
@@ -648,7 +648,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:870
 #, kde-format
 msgid "E&mpty Trash"
-msgstr ""
+msgstr "அகற்றிடத்தை காலியாக்கு"
 
 #: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
 #, kde-format
