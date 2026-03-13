@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-02-25 00:47+0000\n"
-"PO-Revision-Date: 2026-02-28 12:23+0530\n"
+"PO-Revision-Date: 2026-03-12 20:42+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-l10n-ta@kde.org>\n"
 "Language: ta\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
@@ -190,7 +190,7 @@ msgstr "அடைவை சேர்…"
 #: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
 #, kde-format
 msgid "Add a new folder to the currently selected account."
-msgstr ""
+msgstr "தேர்ந்தெடுக்கப்பட்டுள்ள கணக்கில் புதிய அடைவை சேர்க்கும்."
 
 #: standardmailactionmanager.cpp:123
 #, kde-format
@@ -236,7 +236,7 @@ msgstr[1] "%1 அடைவுகளை நீக்கு"
 #: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
 #, kde-format
 msgid "Delete the selected folders from the account."
-msgstr ""
+msgstr "தற்போதைய கணக்கிலிருந்து தேர்ந்தெடுத்துள்ள அடைவுகளை நீக்கும்."
 
 #: standardmailactionmanager.cpp:146
 #, kde-format
@@ -274,7 +274,7 @@ msgstr[1] "அடைவுகளை புதுப்பி"
 #: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
 #, kde-format
 msgid "Update the contents of the selected folders."
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள அடைவுகளை புதுப்பிக்கும்."
 
 #: standardmailactionmanager.cpp:167
 #, kde-format
@@ -286,7 +286,7 @@ msgstr[1] "%1 அடைவுகளை வெட்டு"
 #: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
 #, kde-format
 msgid "Cut the selected folders from the account."
-msgstr ""
+msgstr "தற்போதைய கணக்கிலிருந்து தேர்ந்தெடுத்துள்ள அடைவுகளை வெட்டும்."
 
 #: standardmailactionmanager.cpp:172
 #, kde-format
@@ -345,7 +345,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:197
 #, kde-format
 msgid "Message deletion failed"
-msgstr ""
+msgstr "அஞ்சலை நீக்குவது தோல்வியடைந்தது"
 
 #: standardmailactionmanager.cpp:200
 #, kde-format
@@ -375,24 +375,24 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
-msgstr ""
+msgstr "கணக்கைச் சேர்"
 
 #: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Could not create account: %1"
-msgstr ""
+msgstr "கணக்கை உருவாக்க முடியவில்லை: %1"
 
 #: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Account creation failed"
-msgstr ""
+msgstr "கணக்கை உருவாக்குவது தோல்வியடைந்தது"
 
 #: standardmailactionmanager.cpp:219
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "கணக்கை நீக்கு"
+msgstr[1] "%1 கணக்குகளை நீக்கு"
 
 #: standardmailactionmanager.cpp:221
 #, kde-format
@@ -405,16 +405,16 @@ msgstr ""
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "இக்கணக்கை உறுதியாக நீக்க வேண்டுமா?"
+msgstr[1] "இந்த %1 கணக்குகளை உறுதியாக நீக்க வேண்டுமா?"
 
 #: standardmailactionmanager.cpp:230
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "கணக்கை நீக்கலாமா?"
+msgstr[1] "கணக்குகளை நீக்கலாமா?"
 
 #: standardmailactionmanager.cpp:233
 #, kde-format
@@ -430,8 +430,8 @@ msgstr ""
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "கணக்கை புதுப்பி"
+msgstr[1] "%1 கணக்குகளை புதுப்பி"
 
 #: standardmailactionmanager.cpp:240
 #, kde-format
@@ -442,28 +442,28 @@ msgstr ""
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "இவ்வடைவையும் சார்ந்தவற்றையும் புதுப்பி"
+msgstr[1] "இவ்வடைவுகளையும் சார்ந்தவற்றையும் புதுப்பி"
 
 #: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
-msgstr ""
+msgstr "தேர்ந்தெடுத்துள்ள அடைவுகளையும் அவற்றில் சார்ந்த அடைவுகளையும் புதுப்பிக்கும்."
 
 #: standardmailactionmanager.cpp:252
 #, kde-format
 msgid "Could not paste message: %1"
-msgstr ""
+msgstr "அஞ்சலை ஒட்ட முடியவில்லை: %1"
 
 #: standardmailactionmanager.cpp:254
 #, kde-format
 msgid "Paste failed"
-msgstr ""
+msgstr "ஒட்டுவது தோல்வியடைந்தது"
 
 #: standardmailactionmanager.cpp:320
 #, kde-format
 msgid "Remove Important Mark"
-msgstr ""
+msgstr "முக்கியக்குறியை நீக்கு"
 
 #: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:727
 #, kde-format
@@ -563,7 +563,7 @@ msgstr ""
 #: standardmailactionmanager.cpp:783
 #, kde-format
 msgid "Mark &All Messages as Unread"
-msgstr ""
+msgstr "அனைத்து அஞ்சல்களையும் படிக்காததாக குறி"
 
 #: standardmailactionmanager.cpp:784
 #, kde-format
