@@ -44,7 +44,12 @@ void MoveToTrashCommand::slotFetchDone(KJob *job)
         return;
     }
 
-    auto fjob = static_cast<Akonadi::ItemFetchJob *>(job);
+    auto fjob = qobject_cast<Akonadi::ItemFetchJob *>(job);
+    if (!fjob) {
+        qCWarning(AKONADIMIME_LOG) << "Invalid job cast in slotFetchDone";
+        emitResult(Failed);
+        return;
+    }
 
     mMessages = fjob->items();
     moveMessages();
@@ -72,6 +77,11 @@ void MoveToTrashCommand::execute()
 
 void MoveToTrashCommand::moveMessages()
 {
+    if (mFolderListJobCount < 0 || mFolderListJobCount >= mFolders.size()) {
+        qCWarning(AKONADIMIME_LOG) << "Invalid folder list index" << mFolderListJobCount;
+        emitResult(Failed);
+        return;
+    }
     const Akonadi::Collection folder = mFolders.at(mFolderListJobCount);
     if (folder.isValid()) {
         auto moveCommand = new MoveCommand(findTrashFolder(folder), mMessages, this);
