@@ -6,6 +6,7 @@
 */
 
 #include "movetotrashcommand.h"
+#include "akonadi_mime_debug.h"
 #include "imapsettings.h"
 #include "movecommand.h"
 #include "specialmailcollections.h"
