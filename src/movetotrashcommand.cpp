@@ -58,7 +58,7 @@ void MoveToTrashCommand::slotFetchDone(KJob *job)
 
 void MoveToTrashCommand::execute()
 {
-    if (!mFolders.isEmpty()) {
+    if (!mFolders.isEmpty() && mFolderListJobCount > 0) {
         auto job = new Akonadi::ItemFetchJob(mFolders[mFolderListJobCount - 1], parent());
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
         connect(job, &Akonadi::ItemFetchJob::result, this, &MoveToTrashCommand::slotFetchDone);

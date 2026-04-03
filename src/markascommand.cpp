@@ -128,7 +128,7 @@ void MarkAsCommand::execute()
         } else {
             emitResult(Canceled);
         }
-    } else if (!d->mFolders.isEmpty()) {
+    } else if (!d->mFolders.isEmpty() && d->mFolderListJobCount > 0) {
         // yes, we go backwards, shouldn't matter
         auto job = new Akonadi::ItemFetchJob(d->mFolders[d->mFolderListJobCount - 1], parent());
         job->fetchScope().setAncestorRetrieval(Akonadi::ItemFetchScope::Parent);
