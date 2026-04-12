@@ -8,7 +8,7 @@ macro(ADD_AKONADIMIME_TEST)
         add_test(NAME akonadimime-${_testName} COMMAND ${_testName})
         target_link_libraries(
             ${_testName}
-            KPim6::Mime
+            KF6::Mime
             Qt::Test
             KPim6::AkonadiCore
             KPim6::AkonadiMime

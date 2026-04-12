@@ -32,7 +32,7 @@ macro(add_akonadimime_demo _source)
     target_link_libraries(
         ${_name}
         KPim6AkonadiMime
-        KPim6::Mime
+        KF6::Mime
         KPim6::AkonadiCore
         KF6::I18n
         Qt::Widgets

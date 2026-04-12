@@ -22,7 +22,7 @@ ecm_qt_declare_logging_category(akonadi_serializer_mail
 
 target_link_libraries(
     akonadi_serializer_mail
-    KPim6::Mime
+    KF6::Mime
     KPim6::AkonadiCore
     KPim6::AkonadiMime
     KPim6::AkonadiPrivate

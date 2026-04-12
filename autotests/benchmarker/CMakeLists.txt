@@ -23,7 +23,7 @@ add_executable(akonadi_benchmarker ${benchmarker_SRCS})
 target_link_libraries(
     akonadi_benchmarker
     KPim6::AkonadiMime
-    KPim6::Mime
+    KF6::Mime
     Qt::Test
     KPim6::AkonadiCore
     KF6::I18n

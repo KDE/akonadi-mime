@@ -141,7 +141,7 @@ target_link_libraries(
     PUBLIC
         KPim6::AkonadiCore
     PRIVATE
-        KPim6::Mime
+        KF6::Mime
         KPim6::AkonadiWidgets
         KF6::KIOCore
         KF6::I18n
