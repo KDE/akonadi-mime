@@ -8,7 +8,6 @@
 
 #include "akonadi-mime_export.h"
 
-#include <QString>
 #include <QStringList>
 
 #include <Akonadi/Attribute>
