@@ -149,7 +149,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
     string(APPEND CMAKE_CXX_FLAGS " -Wshadow")
 endif()
 ecm_set_disabled_deprecation_versions(QT 6.12.0
-     KF 6.25.0 KMIME 6.7.0
+     KF 6.26.0 KMIME 6.7.0
 )
 
 option(USE_UNITY_CMAKE_SUPPORT "Use UNITY cmake support (speedup compile time)" OFF)
