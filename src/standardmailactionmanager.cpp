@@ -120,13 +120,13 @@ public:
             act->setWhatsThis(i18n("Add a new folder to the currently selected account."));
             setHelpText(act, i18n("Add a new folder to the currently selected account."));
 
-            mGenericManager->setContextText(StandardActionManager::CreateCollection, StandardActionManager::DialogTitle, i18nc("@title:window", "New Folder"));
+            mGenericManager->setContextText(StandardActionManager::CreateCollection, StandardActionManager::DialogTitle, ki18nc("@title:window", "New Folder"));
 
             mGenericManager->setContextText(StandardActionManager::CreateCollection,
                                             StandardActionManager::ErrorMessageText,
                                             ki18n("Could not create folder: %1"));
 
-            mGenericManager->setContextText(StandardActionManager::CreateCollection, StandardActionManager::ErrorMessageTitle, i18n("Folder creation failed"));
+            mGenericManager->setContextText(StandardActionManager::CreateCollection, StandardActionManager::ErrorMessageTitle, ki18n("Folder creation failed"));
             break;
         }
         case Akonadi::StandardActionManager::CopyCollections:
@@ -154,7 +154,9 @@ public:
                                             StandardActionManager::ErrorMessageText,
                                             ki18n("Could not delete folder: %1"));
 
-            mGenericManager->setContextText(StandardActionManager::DeleteCollections, StandardActionManager::ErrorMessageTitle, i18n("Folder deletion failed"));
+            mGenericManager->setContextText(StandardActionManager::DeleteCollections,
+                                            StandardActionManager::ErrorMessageTitle,
+                                            ki18n("Folder deletion failed"));
 
             break;
         case Akonadi::StandardActionManager::SynchronizeCollections:
@@ -194,7 +196,7 @@ public:
 
             mGenericManager->setContextText(StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageText, ki18n("Could not delete message: %1"));
 
-            mGenericManager->setContextText(StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageTitle, i18n("Message deletion failed"));
+            mGenericManager->setContextText(StandardActionManager::DeleteItems, StandardActionManager::ErrorMessageTitle, ki18n("Message deletion failed"));
             break;
         case Akonadi::StandardActionManager::CutItems:
             mGenericManager->setActionText(Akonadi::StandardActionManager::CutItems, ki18np("Cut Message", "Cut %1 Messages"));
@@ -207,13 +209,13 @@ public:
                 ->setWhatsThis(i18n("Add a new account<p>"
                                     "You will be presented with a dialog where you can select "
                                     "the type of the account that shall be added.</p>"));
-            mGenericManager->setContextText(StandardActionManager::CreateResource, StandardActionManager::DialogTitle, i18nc("@title:window", "Add Account"));
+            mGenericManager->setContextText(StandardActionManager::CreateResource, StandardActionManager::DialogTitle, ki18nc("@title:window", "Add Account"));
 
             mGenericManager->setContextText(StandardActionManager::CreateResource,
                                             StandardActionManager::ErrorMessageText,
                                             ki18n("Could not create account: %1"));
 
-            mGenericManager->setContextText(StandardActionManager::CreateResource, StandardActionManager::ErrorMessageTitle, i18n("Account creation failed"));
+            mGenericManager->setContextText(StandardActionManager::CreateResource, StandardActionManager::ErrorMessageTitle, ki18n("Account creation failed"));
             break;
         case Akonadi::StandardActionManager::DeleteResources:
             mGenericManager->setActionText(Akonadi::StandardActionManager::DeleteResources, ki18np("&Delete Account", "&Delete %1 Accounts"));
@@ -251,7 +253,7 @@ public:
         case Akonadi::StandardActionManager::Paste:
             mGenericManager->setContextText(StandardActionManager::Paste, StandardActionManager::ErrorMessageText, ki18n("Could not paste message: %1"));
 
-            mGenericManager->setContextText(StandardActionManager::Paste, StandardActionManager::ErrorMessageTitle, i18n("Paste failed"));
+            mGenericManager->setContextText(StandardActionManager::Paste, StandardActionManager::ErrorMessageTitle, ki18n("Paste failed"));
             break;
         default:
             break;
