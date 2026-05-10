@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-25 00:47+0000\n"
+"POT-Creation-Date: 2026-05-10 00:44+0000\n"
 "PO-Revision-Date: 2024-11-16 14:59+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -264,77 +264,77 @@ msgstr[1] "Voleu suprimir les carpetes?"
 msgid "Could not delete folder: %1"
 msgstr "No s'ha pogut suprimir la carpeta: %1"
 
-#: standardmailactionmanager.cpp:157
+#: standardmailactionmanager.cpp:159
 #, kde-format
 msgid "Folder deletion failed"
 msgstr "No s'ha pogut fer l'eliminació de la carpeta"
 
-#: standardmailactionmanager.cpp:161
+#: standardmailactionmanager.cpp:163
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
 msgstr[0] "Actualitza la carpeta"
 msgstr[1] "Actualitza les carpetes"
 
-#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#: standardmailactionmanager.cpp:165 standardmailactionmanager.cpp:166
 #, kde-format
 msgid "Update the contents of the selected folders."
 msgstr "Actualitza el contingut de les carpetes seleccionades."
 
-#: standardmailactionmanager.cpp:167
+#: standardmailactionmanager.cpp:169
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
 msgstr[0] "Retalla la carpeta"
 msgstr[1] "Retalla %1 carpetes"
 
-#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#: standardmailactionmanager.cpp:170 standardmailactionmanager.cpp:171
 #, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "Retalla les carpetes seleccionades del compte."
 
-#: standardmailactionmanager.cpp:172
+#: standardmailactionmanager.cpp:174
 #, kde-format
 msgid "Folder Properties"
 msgstr "Propietats de la carpeta"
 
-#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#: standardmailactionmanager.cpp:176 standardmailactionmanager.cpp:178
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr "Obri un diàleg per a editar les propietats de la carpeta seleccionada."
 
-#: standardmailactionmanager.cpp:179
+#: standardmailactionmanager.cpp:181
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "Copia el missatge"
 msgstr[1] "Copia %1 missatges"
 
-#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#: standardmailactionmanager.cpp:182 standardmailactionmanager.cpp:183
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
 msgstr "Copia els missatges seleccionats a dins del porta-retalls."
 
-#: standardmailactionmanager.cpp:184
+#: standardmailactionmanager.cpp:186
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
 msgstr[0] "Suprimix el missatge"
 msgstr[1] "Suprimix %1 missatges"
 
-#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#: standardmailactionmanager.cpp:187 standardmailactionmanager.cpp:188
 #, kde-format
 msgid "Delete the selected messages from the folder."
 msgstr "Suprimix els missatges seleccionats de la carpeta."
 
-#: standardmailactionmanager.cpp:189
+#: standardmailactionmanager.cpp:191
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
 msgstr[0] "Segur que voleu suprimir el missatge seleccionat?"
 msgstr[1] "Segur que voleu suprimir %1 missatges?"
 
-#: standardmailactionmanager.cpp:193
+#: standardmailactionmanager.cpp:195
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
@@ -342,34 +342,34 @@ msgid_plural "Delete Messages?"
 msgstr[0] "Voleu suprimir el missatge?"
 msgstr[1] "Voleu suprimir els missatges?"
 
-#: standardmailactionmanager.cpp:195
+#: standardmailactionmanager.cpp:197
 #, kde-format
 msgid "Could not delete message: %1"
 msgstr "No s'ha pogut suprimir el missatge: %1"
 
-#: standardmailactionmanager.cpp:197
+#: standardmailactionmanager.cpp:199
 #, kde-format
 msgid "Message deletion failed"
 msgstr "No s'ha pogut fer l'eliminació del missatge"
 
-#: standardmailactionmanager.cpp:200
+#: standardmailactionmanager.cpp:202
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "Retalla el missatge"
 msgstr[1] "Retalla %1 missatges"
 
-#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#: standardmailactionmanager.cpp:203 standardmailactionmanager.cpp:204
 #, kde-format
 msgid "Cut the selected message from the folder."
 msgstr "Retalla els missatges seleccionats de la carpeta."
 
-#: standardmailactionmanager.cpp:205
+#: standardmailactionmanager.cpp:207
 #, kde-format
 msgid "Add &Account…"
 msgstr "Afig un &compte…"
 
-#: standardmailactionmanager.cpp:207
+#: standardmailactionmanager.cpp:209
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
@@ -378,30 +378,30 @@ msgstr ""
 "Afig un compte nou<p>Es presentarà un diàleg a on podreu seleccionar el "
 "tipus de compte que s'ha d'afegir.</p>"
 
-#: standardmailactionmanager.cpp:210
+#: standardmailactionmanager.cpp:212
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "Afig un compte"
 
-#: standardmailactionmanager.cpp:214
+#: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "No s'ha pogut crear el compte: %1"
 
-#: standardmailactionmanager.cpp:216
+#: standardmailactionmanager.cpp:218
 #, kde-format
 msgid "Account creation failed"
 msgstr "Ha fallat mentre es creava el compte"
 
-#: standardmailactionmanager.cpp:219
+#: standardmailactionmanager.cpp:221
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
 msgstr[0] "Sup&rimix el compte"
 msgstr[1] "Sup&rimix %1 comptes"
 
-#: standardmailactionmanager.cpp:221
+#: standardmailactionmanager.cpp:223
 #, kde-format
 msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
@@ -410,14 +410,14 @@ msgstr ""
 "Suprimix els comptes seleccionats<p>Se suprimiran els comptes seleccionats, "
 "juntament amb tots els missatges que contenen.</p>"
 
-#: standardmailactionmanager.cpp:226
+#: standardmailactionmanager.cpp:228
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
 msgstr[0] "Segur que voleu suprimir este compte?"
 msgstr[1] "Segur que voleu suprimir %1 comptes?"
 
-#: standardmailactionmanager.cpp:230
+#: standardmailactionmanager.cpp:232
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
@@ -425,245 +425,245 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "Voleu suprimir el compte?"
 msgstr[1] "Voleu suprimir els comptes?"
 
-#: standardmailactionmanager.cpp:233
+#: standardmailactionmanager.cpp:235
 #, kde-format
 msgid "Account Properties…"
 msgstr "Propietats del compte…"
 
-#: standardmailactionmanager.cpp:235
+#: standardmailactionmanager.cpp:237
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr "Obri un diàleg per a editar les propietats del compte seleccionat."
 
-#: standardmailactionmanager.cpp:238
+#: standardmailactionmanager.cpp:240
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
 msgstr[0] "Actualitza el compte"
 msgstr[1] "Actualitza %1 comptes"
 
-#: standardmailactionmanager.cpp:240
+#: standardmailactionmanager.cpp:242
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr ""
 "Actualitza el contingut de totes les carpetes dels comptes seleccionats."
 
-#: standardmailactionmanager.cpp:244
+#: standardmailactionmanager.cpp:246
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
 msgstr[0] "Actualitza esta carpeta i totes les seues subcarpetes"
 msgstr[1] "Actualitza estes carpetes i totes les seues subcarpetes"
 
-#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#: standardmailactionmanager.cpp:249 standardmailactionmanager.cpp:251
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr ""
 "Actualitza els continguts de les carpetes seleccionades i les seues "
 "subcarpetes."
 
-#: standardmailactionmanager.cpp:252
+#: standardmailactionmanager.cpp:254
 #, kde-format
 msgid "Could not paste message: %1"
 msgstr "No s'ha pogut apegar el missatge: %1"
 
-#: standardmailactionmanager.cpp:254
+#: standardmailactionmanager.cpp:256
 #, kde-format
 msgid "Paste failed"
 msgstr "Ha fallat mentre s'apegava"
 
-#: standardmailactionmanager.cpp:320
+#: standardmailactionmanager.cpp:322
 #, kde-format
 msgid "Remove Important Mark"
 msgstr "Elimina la marca d'important"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:727
+#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:729
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Marca el missatge com a important"
 
-#: standardmailactionmanager.cpp:333
+#: standardmailactionmanager.cpp:335
 #, kde-format
 msgid "Remove Action Item Mark"
 msgstr "Elimina la marca d'element d'acció"
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:741
+#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:743
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Marca el missatge com un element d'acció"
 
-#: standardmailactionmanager.cpp:697
+#: standardmailactionmanager.cpp:699
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Marca el missatge com a llegit"
 
-#: standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:700
 #, kde-format
 msgid "Mark as Read"
 msgstr "Marca com a llegit"
 
-#: standardmailactionmanager.cpp:699 standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:701 standardmailactionmanager.cpp:702
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Marca els missatges seleccionats com a llegits."
 
-#: standardmailactionmanager.cpp:712
+#: standardmailactionmanager.cpp:714
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Marca el missatge com a no llegit"
 
-#: standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:715
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Marca com a sense llegir"
 
-#: standardmailactionmanager.cpp:714 standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:716 standardmailactionmanager.cpp:717
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Marca els missatges seleccionats com a no llegits."
 
-#: standardmailactionmanager.cpp:728
+#: standardmailactionmanager.cpp:730
 #, kde-format
 msgid "Mark as Important"
 msgstr "Marca com a important"
 
-#: standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:731
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Marca els missatges seleccionats com a importants."
 
-#: standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:744
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Marca com un element d'acció"
 
-#: standardmailactionmanager.cpp:743 standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:745 standardmailactionmanager.cpp:746
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Marca els missatges seleccionats com a elements d'acció."
 
-#: standardmailactionmanager.cpp:755
+#: standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "M&arca tots els missatges com a llegits"
 
-#: standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:758
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Marca-ho tot com a llegit"
 
-#: standardmailactionmanager.cpp:757 standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:759 standardmailactionmanager.cpp:760
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Marca tots els missatges com a llegits."
 
-#: standardmailactionmanager.cpp:769
+#: standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "M&arca recursivament tots els missatges com a llegits"
 
-#: standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:772
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Marca'ls tots recursivament com a llegits"
 
-#: standardmailactionmanager.cpp:771 standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:773 standardmailactionmanager.cpp:774
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Marca recursivament tots els missatges com a llegits."
 
-#: standardmailactionmanager.cpp:783
+#: standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Marca &tots els missatges com a sense llegir"
 
-#: standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:786
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Marca-ho tot com a sense llegir"
 
-#: standardmailactionmanager.cpp:785 standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:787 standardmailactionmanager.cpp:788
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Marca tots els missatges com a sense llegir."
 
-#: standardmailactionmanager.cpp:797
+#: standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Marca &tots els missatges com a importants"
 
-#: standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:800
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Marca-ho tot com a important"
 
-#: standardmailactionmanager.cpp:799 standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:801 standardmailactionmanager.cpp:802
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Marca tots els missatges com a importants."
 
-#: standardmailactionmanager.cpp:810
+#: standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Marca-ho tot com a element d'acció"
 
-#: standardmailactionmanager.cpp:811
+#: standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Marca &tots els missatges com a elements d'acció"
 
-#: standardmailactionmanager.cpp:813 standardmailactionmanager.cpp:814
+#: standardmailactionmanager.cpp:815 standardmailactionmanager.cpp:816
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Marca tots els missatges com a elements d'acció."
 
-#: standardmailactionmanager.cpp:825
+#: standardmailactionmanager.cpp:827
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Mou cap a dins de la &paperera"
 
-#: standardmailactionmanager.cpp:827 standardmailactionmanager.cpp:828
+#: standardmailactionmanager.cpp:829 standardmailactionmanager.cpp:830
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Mou els missatges seleccionats cap a la carpeta paperera."
 
-#: standardmailactionmanager.cpp:838
+#: standardmailactionmanager.cpp:840
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Mou-ho tot cap a dins de la &paperera"
 
-#: standardmailactionmanager.cpp:839 standardmailactionmanager.cpp:840
+#: standardmailactionmanager.cpp:841 standardmailactionmanager.cpp:842
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Mou tots els missatges cap a la carpeta paperera."
 
-#: standardmailactionmanager.cpp:849
+#: standardmailactionmanager.cpp:851
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Elimina els missatges &duplicats"
 
-#: standardmailactionmanager.cpp:850 standardmailactionmanager.cpp:851
+#: standardmailactionmanager.cpp:852 standardmailactionmanager.cpp:853
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Elimina els missatges duplicats."
 
-#: standardmailactionmanager.cpp:861
+#: standardmailactionmanager.cpp:863
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Buida totes les carpetes de &paperera"
 
-#: standardmailactionmanager.cpp:862 standardmailactionmanager.cpp:863
+#: standardmailactionmanager.cpp:864 standardmailactionmanager.cpp:865
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr ""
 "Suprimix permanentment tots els missatges de totes les carpetes papereres."
 
-#: standardmailactionmanager.cpp:872
+#: standardmailactionmanager.cpp:874
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Buida la &paperera"
 
-#: standardmailactionmanager.cpp:873 standardmailactionmanager.cpp:874
+#: standardmailactionmanager.cpp:875 standardmailactionmanager.cpp:876
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Suprimix permanentment tots els missatges de la carpeta paperera."

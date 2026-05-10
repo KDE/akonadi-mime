@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-02-25 00:47+0000\n"
+"POT-Creation-Date: 2026-05-10 00:44+0000\n"
 "PO-Revision-Date: 2024-11-26 22:01+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -256,386 +256,386 @@ msgstr[0] "要刪除資料夾嗎？"
 msgid "Could not delete folder: %1"
 msgstr "無法刪除資料夾：%1"
 
-#: standardmailactionmanager.cpp:157
+#: standardmailactionmanager.cpp:159
 #, kde-format
 msgid "Folder deletion failed"
 msgstr "刪除資料夾失敗"
 
-#: standardmailactionmanager.cpp:161
+#: standardmailactionmanager.cpp:163
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
 msgstr[0] "更新資料夾"
 
-#: standardmailactionmanager.cpp:163 standardmailactionmanager.cpp:164
+#: standardmailactionmanager.cpp:165 standardmailactionmanager.cpp:166
 #, kde-format
 msgid "Update the contents of the selected folders."
 msgstr "更新選取的資料夾的內容"
 
-#: standardmailactionmanager.cpp:167
+#: standardmailactionmanager.cpp:169
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
 msgstr[0] "剪下 %1 個資料夾"
 
-#: standardmailactionmanager.cpp:168 standardmailactionmanager.cpp:169
+#: standardmailactionmanager.cpp:170 standardmailactionmanager.cpp:171
 #, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "從帳號內剪下選取的資料夾。"
 
-#: standardmailactionmanager.cpp:172
+#: standardmailactionmanager.cpp:174
 #, kde-format
 msgid "Folder Properties"
 msgstr "資料夾屬性"
 
-#: standardmailactionmanager.cpp:174 standardmailactionmanager.cpp:176
+#: standardmailactionmanager.cpp:176 standardmailactionmanager.cpp:178
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr "開啟對話框編輯選取的資料夾屬性。"
 
-#: standardmailactionmanager.cpp:179
+#: standardmailactionmanager.cpp:181
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "複製 %1 封信件"
 
-#: standardmailactionmanager.cpp:180 standardmailactionmanager.cpp:181
+#: standardmailactionmanager.cpp:182 standardmailactionmanager.cpp:183
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
 msgstr "將選取的郵件複製到剪貼簿。"
 
-#: standardmailactionmanager.cpp:184
+#: standardmailactionmanager.cpp:186
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
 msgstr[0] "刪除 %1 封信件"
 
-#: standardmailactionmanager.cpp:185 standardmailactionmanager.cpp:186
+#: standardmailactionmanager.cpp:187 standardmailactionmanager.cpp:188
 #, kde-format
 msgid "Delete the selected messages from the folder."
 msgstr "從資料夾內刪除選取的郵件。"
 
-#: standardmailactionmanager.cpp:189
+#: standardmailactionmanager.cpp:191
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
 msgstr[0] "您確定要刪除這 %1 封郵件嗎？"
 
-#: standardmailactionmanager.cpp:193
+#: standardmailactionmanager.cpp:195
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
 msgid_plural "Delete Messages?"
 msgstr[0] "要刪除信件嗎？"
 
-#: standardmailactionmanager.cpp:195
+#: standardmailactionmanager.cpp:197
 #, kde-format
 msgid "Could not delete message: %1"
 msgstr "無法刪除信件：%1"
 
-#: standardmailactionmanager.cpp:197
+#: standardmailactionmanager.cpp:199
 #, kde-format
 msgid "Message deletion failed"
 msgstr "刪除信件失敗"
 
-#: standardmailactionmanager.cpp:200
+#: standardmailactionmanager.cpp:202
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "剪下 %1 封信件"
 
-#: standardmailactionmanager.cpp:201 standardmailactionmanager.cpp:202
+#: standardmailactionmanager.cpp:203 standardmailactionmanager.cpp:204
 #, kde-format
 msgid "Cut the selected message from the folder."
 msgstr "從資料夾內剪下選取的郵件。"
 
-#: standardmailactionmanager.cpp:205
+#: standardmailactionmanager.cpp:207
 #, kde-format
 msgid "Add &Account…"
 msgstr "新增帳號(&A)…"
 
-#: standardmailactionmanager.cpp:207
+#: standardmailactionmanager.cpp:209
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr "建立新帳號<p>會跳出一個對話框，讓您選擇新增的帳號型態。</p>"
 
-#: standardmailactionmanager.cpp:210
+#: standardmailactionmanager.cpp:212
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "新增帳號"
 
-#: standardmailactionmanager.cpp:214
+#: standardmailactionmanager.cpp:216
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "無法建立帳號：%1"
 
-#: standardmailactionmanager.cpp:216
+#: standardmailactionmanager.cpp:218
 #, kde-format
 msgid "Account creation failed"
 msgstr "帳號建立失敗"
 
-#: standardmailactionmanager.cpp:219
+#: standardmailactionmanager.cpp:221
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
 msgstr[0] "刪除 %1 個帳號(&D)"
 
-#: standardmailactionmanager.cpp:221
+#: standardmailactionmanager.cpp:223
 #, kde-format
 msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
 "deleted, along with all the messages they contain.</p>"
 msgstr "刪除選取的帳號<p>目前選取的帳號將會被刪除，包括裡面所有的郵件。</p>"
 
-#: standardmailactionmanager.cpp:226
+#: standardmailactionmanager.cpp:228
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
 msgstr[0] "您確定要刪除這 %1 個帳號嗎？"
 
-#: standardmailactionmanager.cpp:230
+#: standardmailactionmanager.cpp:232
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
 msgstr[0] "要刪除帳號嗎？"
 
-#: standardmailactionmanager.cpp:233
+#: standardmailactionmanager.cpp:235
 #, kde-format
 msgid "Account Properties…"
 msgstr "帳號屬性…"
 
-#: standardmailactionmanager.cpp:235
+#: standardmailactionmanager.cpp:237
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr "開啟對話框編輯選取的帳號屬性。"
 
-#: standardmailactionmanager.cpp:238
+#: standardmailactionmanager.cpp:240
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
 msgstr[0] "更新 %1 個帳號"
 
-#: standardmailactionmanager.cpp:240
+#: standardmailactionmanager.cpp:242
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr "更新選取的帳號內所有資料夾的內容。"
 
-#: standardmailactionmanager.cpp:244
+#: standardmailactionmanager.cpp:246
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
 msgstr[0] "更新這些資料夾與所有子資料夾"
 
-#: standardmailactionmanager.cpp:247 standardmailactionmanager.cpp:249
+#: standardmailactionmanager.cpp:249 standardmailactionmanager.cpp:251
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr "更新選取的資料夾與其子資料夾的內容。"
 
-#: standardmailactionmanager.cpp:252
+#: standardmailactionmanager.cpp:254
 #, kde-format
 msgid "Could not paste message: %1"
 msgstr "無法貼上郵件：%1"
 
-#: standardmailactionmanager.cpp:254
+#: standardmailactionmanager.cpp:256
 #, kde-format
 msgid "Paste failed"
 msgstr "貼上失敗"
 
-#: standardmailactionmanager.cpp:320
+#: standardmailactionmanager.cpp:322
 #, kde-format
 msgid "Remove Important Mark"
 msgstr "移除重要標記"
 
-#: standardmailactionmanager.cpp:322 standardmailactionmanager.cpp:727
+#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:729
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "將郵件標為重要(&M)"
 
-#: standardmailactionmanager.cpp:333
+#: standardmailactionmanager.cpp:335
 #, kde-format
 msgid "Remove Action Item Mark"
 msgstr "移除動作項目標記"
 
-#: standardmailactionmanager.cpp:335 standardmailactionmanager.cpp:741
+#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:743
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "將郵件標為動作項目(&M)"
 
-#: standardmailactionmanager.cpp:697
+#: standardmailactionmanager.cpp:699
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "將郵件標為已讀(&M)"
 
-#: standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:700
 #, kde-format
 msgid "Mark as Read"
 msgstr "標記為已讀"
 
-#: standardmailactionmanager.cpp:699 standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:701 standardmailactionmanager.cpp:702
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "標記選擇的信件為已讀。"
 
-#: standardmailactionmanager.cpp:712
+#: standardmailactionmanager.cpp:714
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "將郵件標為未讀(&M)"
 
-#: standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:715
 #, kde-format
 msgid "Mark as Unread"
 msgstr "標記為未讀"
 
-#: standardmailactionmanager.cpp:714 standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:716 standardmailactionmanager.cpp:717
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "標記選擇的信件為未讀。"
 
-#: standardmailactionmanager.cpp:728
+#: standardmailactionmanager.cpp:730
 #, kde-format
 msgid "Mark as Important"
 msgstr "標記為重要"
 
-#: standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:731
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "標記選擇的信件為重要。"
 
-#: standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:744
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "標記為動作項目"
 
-#: standardmailactionmanager.cpp:743 standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:745 standardmailactionmanager.cpp:746
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "標記選擇的信件為動作項目。"
 
-#: standardmailactionmanager.cpp:755
+#: standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "將所有郵件標為已讀(&A)"
 
-#: standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:758
 #, kde-format
 msgid "Mark All as Read"
 msgstr "將全部標為已讀"
 
-#: standardmailactionmanager.cpp:757 standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:759 standardmailactionmanager.cpp:760
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "標記所有的信件為已讀。"
 
-#: standardmailactionmanager.cpp:769
+#: standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "對所有信件遞迴標記已讀(&A)"
 
-#: standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:772
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "將全部遞迴標記為已讀"
 
-#: standardmailactionmanager.cpp:771 standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:773 standardmailactionmanager.cpp:774
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "對所有信件遞迴標記已讀。"
 
-#: standardmailactionmanager.cpp:783
+#: standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "將所有郵件標為未讀(&A)"
 
-#: standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:786
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "將全部標為未讀"
 
-#: standardmailactionmanager.cpp:785 standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:787 standardmailactionmanager.cpp:788
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "標記所有的信件為未讀。"
 
-#: standardmailactionmanager.cpp:797
+#: standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "將所有郵件標為重要(&A)"
 
-#: standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:800
 #, kde-format
 msgid "Mark All as Important"
 msgstr "將所有郵件標為重要"
 
-#: standardmailactionmanager.cpp:799 standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:801 standardmailactionmanager.cpp:802
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "將所有郵件標為重要。"
 
-#: standardmailactionmanager.cpp:810
+#: standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "將所有郵件標為動作項目"
 
-#: standardmailactionmanager.cpp:811
+#: standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "將所有郵件標為動作項目(&A)"
 
-#: standardmailactionmanager.cpp:813 standardmailactionmanager.cpp:814
+#: standardmailactionmanager.cpp:815 standardmailactionmanager.cpp:816
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "將所有郵件標為動作項目。"
 
-#: standardmailactionmanager.cpp:825
+#: standardmailactionmanager.cpp:827
 #, kde-format
 msgid "Move to &Trash"
 msgstr "移到垃圾桶(&T)"
 
-#: standardmailactionmanager.cpp:827 standardmailactionmanager.cpp:828
+#: standardmailactionmanager.cpp:829 standardmailactionmanager.cpp:830
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "將選擇的信件移入垃圾桶。"
 
-#: standardmailactionmanager.cpp:838
+#: standardmailactionmanager.cpp:840
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "全部移入垃圾桶(&T)"
 
-#: standardmailactionmanager.cpp:839 standardmailactionmanager.cpp:840
+#: standardmailactionmanager.cpp:841 standardmailactionmanager.cpp:842
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "將所有的信件移入垃圾桶。"
 
-#: standardmailactionmanager.cpp:849
+#: standardmailactionmanager.cpp:851
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "刪除重複的信件(&D)"
 
-#: standardmailactionmanager.cpp:850 standardmailactionmanager.cpp:851
+#: standardmailactionmanager.cpp:852 standardmailactionmanager.cpp:853
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "刪除重複的信件。"
 
-#: standardmailactionmanager.cpp:861
+#: standardmailactionmanager.cpp:863
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "清空所有的垃圾桶(&T)"
 
-#: standardmailactionmanager.cpp:862 standardmailactionmanager.cpp:863
+#: standardmailactionmanager.cpp:864 standardmailactionmanager.cpp:865
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "永久刪除垃圾桶裡的所有信件。"
 
-#: standardmailactionmanager.cpp:872
+#: standardmailactionmanager.cpp:874
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "清空垃圾桶(&M)"
 
-#: standardmailactionmanager.cpp:873 standardmailactionmanager.cpp:874
+#: standardmailactionmanager.cpp:875 standardmailactionmanager.cpp:876
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "永久刪除垃圾桶裡的所有信件。"
