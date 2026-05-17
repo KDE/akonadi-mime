@@ -344,6 +344,11 @@ public:
                 action->setEnabled(false);
             }
 
+            action = mActions.value(Akonadi::StandardMailActionManager::MarkMailAsUnread);
+            if (action) {
+                action->setEnabled(false);
+            }
+
             action = mActions.value(Akonadi::StandardMailActionManager::MarkMailAsImportant);
             if (action) {
                 action->setEnabled(false);
