@@ -117,6 +117,7 @@ public:
             } else {
                 Q_EMIT mParent->description(mParent, i18n("Removing duplicates…"));
                 auto delCmd = new Akonadi::ItemDeleteJob(mDuplicateItems, mParent);
+                mCurrentJob = delCmd;
                 mParent->connect(delCmd, &ItemDeleteJob::result, mParent, [this](KJob *job) {
                     slotDeleteDone(job);
                 });
