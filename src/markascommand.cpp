@@ -187,6 +187,7 @@ void MarkAsCommand::slotHelperDone(Akonadi::CommandBase::Result result)
     d->mMarkJobCount--;
     if (result == Akonadi::CommandBase::Failed) {
         emitResult(Failed);
+        return;
     }
     slotModifyItemDone();
 }

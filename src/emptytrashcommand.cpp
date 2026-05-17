@@ -101,6 +101,7 @@ void EmptyTrashCommand::expunge(const Akonadi::Collection &col)
             if (jobDelete->error()) {
                 Util::showJobError(jobDelete);
                 emitResult(Failed);
+                return;
             }
             emitResult(OK);
         });
