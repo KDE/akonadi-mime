@@ -86,13 +86,15 @@ QVariant MessageModel::entityData(const Item &item, int column, int role) const
             } else {
                 return i18nc("@label Alternative text when email date/time is missing", "(No date)");
             }
-        case Size:
-            if (item.size() == 0) {
+        case Size: {
+            const auto itemSize = item.size();
+            if (itemSize == 0) {
                 return i18nc("@label No size available", "-");
             } else {
                 KFormat format;
-                return format.formatByteSize(item.size());
+                return format.formatByteSize(itemSize);
             }
+        }
         default:
             return {};
         }
