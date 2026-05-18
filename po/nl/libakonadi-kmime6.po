@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-10 00:44+0000\n"
+"POT-Creation-Date: 2026-05-18 00:44+0000\n"
 "PO-Revision-Date: 2024-11-16 10:48+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -470,7 +470,7 @@ msgstr "Plakken is mislukt"
 msgid "Remove Important Mark"
 msgstr "Markering als belangrijk verwijderen"
 
-#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:734
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "Bericht &markeren als belangrijk"
@@ -480,182 +480,182 @@ msgstr "Bericht &markeren als belangrijk"
 msgid "Remove Action Item Mark"
 msgstr "Markering van actie-item verwijderen"
 
-#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:743
+#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:748
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "Bericht &markeren als actie-item"
 
-#: standardmailactionmanager.cpp:699
+#: standardmailactionmanager.cpp:704
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "Bericht &markeren als gelezen"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:705
 #, kde-format
 msgid "Mark as Read"
 msgstr "Markeren als gelezen"
 
-#: standardmailactionmanager.cpp:701 standardmailactionmanager.cpp:702
+#: standardmailactionmanager.cpp:706 standardmailactionmanager.cpp:707
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Geselecteerde berichten markeren als gelezen."
 
-#: standardmailactionmanager.cpp:714
+#: standardmailactionmanager.cpp:719
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "Bericht &markeren als ongelezen"
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:720
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Markeren als ongelezen"
 
-#: standardmailactionmanager.cpp:716 standardmailactionmanager.cpp:717
+#: standardmailactionmanager.cpp:721 standardmailactionmanager.cpp:722
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Geselecteerde berichten markeren als ongelezen."
 
-#: standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:735
 #, kde-format
 msgid "Mark as Important"
 msgstr "Markeren als belangrijk"
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:736
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Geselecteerde berichten markeren als belangrijk."
 
-#: standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:749
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Als actie-item markeren"
 
-#: standardmailactionmanager.cpp:745 standardmailactionmanager.cpp:746
+#: standardmailactionmanager.cpp:750 standardmailactionmanager.cpp:751
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Geselecteerde berichten markeren als actie-items."
 
-#: standardmailactionmanager.cpp:757
+#: standardmailactionmanager.cpp:762
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "&Alle berichten als gelezen markeren"
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:763
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Alles markeren als gelezen"
 
-#: standardmailactionmanager.cpp:759 standardmailactionmanager.cpp:760
+#: standardmailactionmanager.cpp:764 standardmailactionmanager.cpp:765
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Alle berichten als gelezen markeren."
 
-#: standardmailactionmanager.cpp:771
+#: standardmailactionmanager.cpp:776
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "&Alle berichten recursief als gelezen markeren"
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:777
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Alles recursief markeren als gelezen"
 
-#: standardmailactionmanager.cpp:773 standardmailactionmanager.cpp:774
+#: standardmailactionmanager.cpp:778 standardmailactionmanager.cpp:779
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Alle berichten recursief als gelezen markeren."
 
-#: standardmailactionmanager.cpp:785
+#: standardmailactionmanager.cpp:790
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "&Alle berichten als ongelezen markeren"
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:791
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Alles als ongelezen markeren"
 
-#: standardmailactionmanager.cpp:787 standardmailactionmanager.cpp:788
+#: standardmailactionmanager.cpp:792 standardmailactionmanager.cpp:793
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Alle berichten als ongelezen markeren."
 
-#: standardmailactionmanager.cpp:799
+#: standardmailactionmanager.cpp:804
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "&Alle berichten als belangrijk markeren"
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:805
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Alles als markeren als belangrijk"
 
-#: standardmailactionmanager.cpp:801 standardmailactionmanager.cpp:802
+#: standardmailactionmanager.cpp:806 standardmailactionmanager.cpp:807
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Alle berichten als belangrijk markeren."
 
-#: standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:817
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Alles markeren als actie-item"
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:818
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "&Alle berichten als actie-item markeren"
 
-#: standardmailactionmanager.cpp:815 standardmailactionmanager.cpp:816
+#: standardmailactionmanager.cpp:820 standardmailactionmanager.cpp:821
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Alle berichten als actie-items markeren."
 
-#: standardmailactionmanager.cpp:827
+#: standardmailactionmanager.cpp:832
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Naar &prullenbak verplaatsen"
 
-#: standardmailactionmanager.cpp:829 standardmailactionmanager.cpp:830
+#: standardmailactionmanager.cpp:834 standardmailactionmanager.cpp:835
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Geselecteerde berichten naar de prullenbak verplaatsen."
 
-#: standardmailactionmanager.cpp:840
+#: standardmailactionmanager.cpp:845
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Alles naar de &prullenbak verplaatsen"
 
-#: standardmailactionmanager.cpp:841 standardmailactionmanager.cpp:842
+#: standardmailactionmanager.cpp:846 standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Alle berichten naar de prullenbak verplaatsen."
 
-#: standardmailactionmanager.cpp:851
+#: standardmailactionmanager.cpp:856
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Dubbele berichten verwijderen"
 
-#: standardmailactionmanager.cpp:852 standardmailactionmanager.cpp:853
+#: standardmailactionmanager.cpp:857 standardmailactionmanager.cpp:858
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Dubbele berichten verwijderen."
 
-#: standardmailactionmanager.cpp:863
+#: standardmailactionmanager.cpp:868
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "A&lle prullenbakken legen"
 
-#: standardmailactionmanager.cpp:864 standardmailactionmanager.cpp:865
+#: standardmailactionmanager.cpp:869 standardmailactionmanager.cpp:870
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Alle berichten uit alle prullenbakken permanent verwijderen."
 
-#: standardmailactionmanager.cpp:874
+#: standardmailactionmanager.cpp:879
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Prull&enbak legen"
 
-#: standardmailactionmanager.cpp:875 standardmailactionmanager.cpp:876
+#: standardmailactionmanager.cpp:880 standardmailactionmanager.cpp:881
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Alle berichten uit de prullenbak permanent verwijderen."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-10 00:44+0000\n"
+"POT-Creation-Date: 2026-05-18 00:44+0000\n"
 "PO-Revision-Date: 2024-10-01 18:36+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: https://t.me/Localizations_KDE_Indonesia\n"
@@ -472,7 +472,7 @@ msgstr "Gagal menempel"
 msgid "Remove Important Mark"
 msgstr "Hapus Tanda Penting"
 
-#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:734
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Tandai Pesan sebagai Penting"
@@ -482,182 +482,182 @@ msgstr "&Tandai Pesan sebagai Penting"
 msgid "Remove Action Item Mark"
 msgstr "Hapus Tanda Item Tindakan"
 
-#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:743
+#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:748
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Tandai Pesan sebagai Item Tindakan"
 
-#: standardmailactionmanager.cpp:699
+#: standardmailactionmanager.cpp:704
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Tandai Pesan sebagai Sudah Dibaca"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:705
 #, kde-format
 msgid "Mark as Read"
 msgstr "Tandai sebagai Sudah Dibaca"
 
-#: standardmailactionmanager.cpp:701 standardmailactionmanager.cpp:702
+#: standardmailactionmanager.cpp:706 standardmailactionmanager.cpp:707
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Tandai pesan yang dipilih sebagai sudah dibaca"
 
-#: standardmailactionmanager.cpp:714
+#: standardmailactionmanager.cpp:719
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Tandai Pesan sebagai Belum Dibaca"
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:720
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Tandai sebagai Belum Dibaca"
 
-#: standardmailactionmanager.cpp:716 standardmailactionmanager.cpp:717
+#: standardmailactionmanager.cpp:721 standardmailactionmanager.cpp:722
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Tandai pesan yang dipilih sebagai belum dibaca."
 
-#: standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:735
 #, kde-format
 msgid "Mark as Important"
 msgstr "Tandai sebagai Penting"
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:736
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Tandai pesan yang dipilih sebagai sudah penting."
 
-#: standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:749
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Tandai sebagai Item Tindakan"
 
-#: standardmailactionmanager.cpp:745 standardmailactionmanager.cpp:746
+#: standardmailactionmanager.cpp:750 standardmailactionmanager.cpp:751
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Tandai pesan yang dipilih sebagai item tindakan."
 
-#: standardmailactionmanager.cpp:757
+#: standardmailactionmanager.cpp:762
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Tandai &Semua Pesan sebagai Sudah Dibaca"
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:763
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Tandai Semua sebagai Dibaca"
 
-#: standardmailactionmanager.cpp:759 standardmailactionmanager.cpp:760
+#: standardmailactionmanager.cpp:764 standardmailactionmanager.cpp:765
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Tandai semua pesan sebagai sudah dibaca."
 
-#: standardmailactionmanager.cpp:771
+#: standardmailactionmanager.cpp:776
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Tandai &Semua Pesan sebagai Sudah Dibaca Secara Rekursif"
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:777
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Tandai Semua sebagai Sudah Dibaca Secara Rekursif"
 
-#: standardmailactionmanager.cpp:773 standardmailactionmanager.cpp:774
+#: standardmailactionmanager.cpp:778 standardmailactionmanager.cpp:779
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Tandai semua pesan sebagai sudah dibaca secara rekursif."
 
-#: standardmailactionmanager.cpp:785
+#: standardmailactionmanager.cpp:790
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Tandai &Semua Pesan sebagai Belum Dibaca"
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:791
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Tandai &Semua sebagai Belum Dibaca"
 
-#: standardmailactionmanager.cpp:787 standardmailactionmanager.cpp:788
+#: standardmailactionmanager.cpp:792 standardmailactionmanager.cpp:793
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Tandai &Semua Pesan sebagai belum dibaca."
 
-#: standardmailactionmanager.cpp:799
+#: standardmailactionmanager.cpp:804
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Tandai &Semua Pesan sebagai Penting"
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:805
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Tandai Semua sebagai Penting"
 
-#: standardmailactionmanager.cpp:801 standardmailactionmanager.cpp:802
+#: standardmailactionmanager.cpp:806 standardmailactionmanager.cpp:807
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Tandai semua pesan sebagai penting."
 
-#: standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:817
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Tandai Semua sebagai Item Tindakan"
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:818
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Tandai &Semua Pesan sebagai Item Tindakan"
 
-#: standardmailactionmanager.cpp:815 standardmailactionmanager.cpp:816
+#: standardmailactionmanager.cpp:820 standardmailactionmanager.cpp:821
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Tandai semua pesan sebagai item tindakan."
 
-#: standardmailactionmanager.cpp:827
+#: standardmailactionmanager.cpp:832
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Pindah ke &Tong Sampah"
 
-#: standardmailactionmanager.cpp:829 standardmailactionmanager.cpp:830
+#: standardmailactionmanager.cpp:834 standardmailactionmanager.cpp:835
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Pindahkan pesan yang dipilih ke folder tong sampah."
 
-#: standardmailactionmanager.cpp:840
+#: standardmailactionmanager.cpp:845
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Pindah Semua ke &Tong Sampah"
 
-#: standardmailactionmanager.cpp:841 standardmailactionmanager.cpp:842
+#: standardmailactionmanager.cpp:846 standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Pindahkan semua pesan ke folder tong sampah."
 
-#: standardmailactionmanager.cpp:851
+#: standardmailactionmanager.cpp:856
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Hapus Pesan &Duplikat"
 
-#: standardmailactionmanager.cpp:852 standardmailactionmanager.cpp:853
+#: standardmailactionmanager.cpp:857 standardmailactionmanager.cpp:858
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Hapus pesan duplikat."
 
-#: standardmailactionmanager.cpp:863
+#: standardmailactionmanager.cpp:868
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Kosongkan Semua Folder &Tong Sampah"
 
-#: standardmailactionmanager.cpp:864 standardmailactionmanager.cpp:865
+#: standardmailactionmanager.cpp:869 standardmailactionmanager.cpp:870
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Hapus secara permanen semua pesan dari folder tong sampah."
 
-#: standardmailactionmanager.cpp:874
+#: standardmailactionmanager.cpp:879
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "K&osongkan Tong Sampah"
 
-#: standardmailactionmanager.cpp:875 standardmailactionmanager.cpp:876
+#: standardmailactionmanager.cpp:880 standardmailactionmanager.cpp:881
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Hapus secara permanen semua pesan dari folder tong sampah."

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-10 00:44+0000\n"
+"POT-Creation-Date: 2026-05-18 00:44+0000\n"
 "PO-Revision-Date: 2023-07-24 12:50+0300\n"
 "Last-Translator: George Stefanakis <george.stefanakis@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -483,7 +483,7 @@ msgstr "Η επικόλληση απέτυχε"
 msgid "Remove Important Mark"
 msgstr "Αφαίρεση της σημείωσης σημαντικό"
 
-#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:734
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "Σημείωση μηνύματος ως &σημαντικό"
@@ -493,183 +493,183 @@ msgstr "Σημείωση μηνύματος ως &σημαντικό"
 msgid "Remove Action Item Mark"
 msgstr "Αφαίρεση της σημείωσης για ενέργεια"
 
-#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:743
+#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:748
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "Σημείωση μηνύματος για &ενέργεια"
 
-#: standardmailactionmanager.cpp:699
+#: standardmailactionmanager.cpp:704
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "Σημείωση μηνύματος ως &αναγνωσμένο"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:705
 #, kde-format
 msgid "Mark as Read"
 msgstr "Σημείωση ως αναγνωσμένο"
 
-#: standardmailactionmanager.cpp:701 standardmailactionmanager.cpp:702
+#: standardmailactionmanager.cpp:706 standardmailactionmanager.cpp:707
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Σημείωση των επιλεγμένων μηνυμάτων ως αναγνωσμένα."
 
-#: standardmailactionmanager.cpp:714
+#: standardmailactionmanager.cpp:719
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "Σημείωση μηνύματος ως &μη αναγνωσμένο"
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:720
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Σημείωση ως μη αναγνωσμένο"
 
-#: standardmailactionmanager.cpp:716 standardmailactionmanager.cpp:717
+#: standardmailactionmanager.cpp:721 standardmailactionmanager.cpp:722
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Σημείωση των επιλεγμένων μηνυμάτων ως μη αναγνωσμένα"
 
-#: standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:735
 #, kde-format
 msgid "Mark as Important"
 msgstr "Σημείωση ως σημαντικό"
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:736
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Σημείωση των επιλεγμένων μηνυμάτων ως σημαντικά."
 
-#: standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:749
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Σημείωση για ενέργεια"
 
-#: standardmailactionmanager.cpp:745 standardmailactionmanager.cpp:746
+#: standardmailactionmanager.cpp:750 standardmailactionmanager.cpp:751
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Σημείωση των επιλεγμένων μηνυμάτων για ενέργεια."
 
-#: standardmailactionmanager.cpp:757
+#: standardmailactionmanager.cpp:762
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Σημ&είωση όλων των μηνυμάτων ως αναγνωσμένα"
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:763
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Σημείωση όλων ως αναγνωσμένα"
 
-#: standardmailactionmanager.cpp:759 standardmailactionmanager.cpp:760
+#: standardmailactionmanager.cpp:764 standardmailactionmanager.cpp:765
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Σημείωση όλων των μηνυμάτων ως αναγνωσμένα."
 
-#: standardmailactionmanager.cpp:771
+#: standardmailactionmanager.cpp:776
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Να σημειωθούν όλ&α τα μηνύματα αναδρομικά ως αναγνωσμένα"
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:777
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Να σημειωθούν όλα αναδρομικά ως αναγνωσμένα"
 
-#: standardmailactionmanager.cpp:773 standardmailactionmanager.cpp:774
+#: standardmailactionmanager.cpp:778 standardmailactionmanager.cpp:779
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Να σημειωθούν όλα τα μηνύματα αναδρομικά ως αναγνωσμένα."
 
-#: standardmailactionmanager.cpp:785
+#: standardmailactionmanager.cpp:790
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Σημείωση όλων των μηνυμάτων ως μη ανα&γνωσμένα"
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:791
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Σημείωση όλων ως μη αναγνωσμένα"
 
-#: standardmailactionmanager.cpp:787 standardmailactionmanager.cpp:788
+#: standardmailactionmanager.cpp:792 standardmailactionmanager.cpp:793
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Σημείωση όλων των μηνυμάτων ως μη αναγνωσμένα."
 
-#: standardmailactionmanager.cpp:799
+#: standardmailactionmanager.cpp:804
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Σημείωση όλων των μηνυμάτων ως &σημαντικά"
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:805
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Σημείωση όλων ως σημαντικά"
 
-#: standardmailactionmanager.cpp:801 standardmailactionmanager.cpp:802
+#: standardmailactionmanager.cpp:806 standardmailactionmanager.cpp:807
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Σημείωση όλων των μηνυμάτων ως σημαντικά."
 
-#: standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:817
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Σημείωση όλων για ενέργεια"
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:818
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Σ&ημείωση όλων των μηνυμάτων για ενέργεια"
 
-#: standardmailactionmanager.cpp:815 standardmailactionmanager.cpp:816
+#: standardmailactionmanager.cpp:820 standardmailactionmanager.cpp:821
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Σημείωση όλων των μηνυμάτων για ενέργεια."
 
-#: standardmailactionmanager.cpp:827
+#: standardmailactionmanager.cpp:832
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Μετακίνηση στα α&πορρίμματα"
 
-#: standardmailactionmanager.cpp:829 standardmailactionmanager.cpp:830
+#: standardmailactionmanager.cpp:834 standardmailactionmanager.cpp:835
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Μετακίνηση των επιλεγμένων μηνυμάτων στα απορρίμματα."
 
-#: standardmailactionmanager.cpp:840
+#: standardmailactionmanager.cpp:845
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Μετακίνηση όλων στα α&πορρίμματα"
 
-#: standardmailactionmanager.cpp:841 standardmailactionmanager.cpp:842
+#: standardmailactionmanager.cpp:846 standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Μετακίνηση όλων των μηνυμάτων στα απορρίμματα."
 
-#: standardmailactionmanager.cpp:851
+#: standardmailactionmanager.cpp:856
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Αφαίρεση &διπλών μηνυμάτων"
 
-#: standardmailactionmanager.cpp:852 standardmailactionmanager.cpp:853
+#: standardmailactionmanager.cpp:857 standardmailactionmanager.cpp:858
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Αφαίρεση διπλών μηνυμάτων."
 
-#: standardmailactionmanager.cpp:863
+#: standardmailactionmanager.cpp:868
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Άδειασμα όλων των φακέλων απορριμάτων"
 
-#: standardmailactionmanager.cpp:864 standardmailactionmanager.cpp:865
+#: standardmailactionmanager.cpp:869 standardmailactionmanager.cpp:870
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr ""
 "Μόνιμη διαγραφή όλων των μηνυμάτων από όλους τους φακέλους απορριμάτων."
 
-#: standardmailactionmanager.cpp:874
+#: standardmailactionmanager.cpp:879
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Ά&δειασμα απορριμμάτων"
 
-#: standardmailactionmanager.cpp:875 standardmailactionmanager.cpp:876
+#: standardmailactionmanager.cpp:880 standardmailactionmanager.cpp:881
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Μόνιμη διαγραφή όλων των μηνυμάτων από τον φάκελο απορριμάτων."
