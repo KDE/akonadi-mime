@@ -36,9 +36,7 @@ SentActionAttribute::Action::Action(Type type, const QVariant &value)
     d->mValue = value;
 }
 
-SentActionAttribute::Action::Action(const Action &other)
-
-    = default;
+SentActionAttribute::Action::Action(const Action &other) = default;
 
 SentActionAttribute::Action::~Action() = default;
 
