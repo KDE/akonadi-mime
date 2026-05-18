@@ -14,7 +14,6 @@
 
 #include <Akonadi/AttributeFactory>
 
-#ifndef KDELIBS_STATIC_LIBS
 namespace
 {
 // Anonymous namespace; function is invisible outside this file.
@@ -32,18 +31,3 @@ bool messagefolder_dummy()
 // Called when this library is loaded.
 const bool registered = messagefolder_dummy();
 } // namespace
-
-#else
-
-extern bool ___AkonadiKMime____INIT()
-{
-    Akonadi::AttributeFactory::registerAttribute<Akonadi::MessageFolderAttribute>();
-    Akonadi::AttributeFactory::registerAttribute<Akonadi::DispatchModeAttribute>();
-    Akonadi::AttributeFactory::registerAttribute<Akonadi::ErrorAttribute>();
-    Akonadi::AttributeFactory::registerAttribute<Akonadi::SentActionAttribute>();
-    Akonadi::AttributeFactory::registerAttribute<Akonadi::SentBehaviourAttribute>();
-    Akonadi::AttributeFactory::registerAttribute<Akonadi::TransportAttribute>();
-    return true;
-}
-
-#endif
