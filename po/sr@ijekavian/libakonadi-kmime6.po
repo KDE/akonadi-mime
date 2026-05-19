@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:44+0000\n"
+"POT-Creation-Date: 2026-05-19 00:45+0000\n"
 "PO-Revision-Date: 2016-04-11 00:10+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -108,7 +108,7 @@ msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr ""
 
-#: messagemodel.cpp:91
+#: messagemodel.cpp:92
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"

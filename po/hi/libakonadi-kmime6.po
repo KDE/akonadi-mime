@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-18 00:44+0000\n"
+"POT-Creation-Date: 2026-05-19 00:45+0000\n"
 "PO-Revision-Date: 2024-12-15 19:32+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -99,7 +99,7 @@ msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(कोई तारीख नहीं)"
 
-#: messagemodel.cpp:91
+#: messagemodel.cpp:92
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
