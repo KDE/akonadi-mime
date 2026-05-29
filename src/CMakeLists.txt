@@ -140,9 +140,9 @@ target_link_libraries(
     KPim6AkonadiMime
     PUBLIC
         KPim6::AkonadiCore
-    PRIVATE
-        KF6::Mime
         KPim6::AkonadiWidgets
+        KF6::Mime
+    PRIVATE
         KF6::KIOCore
         KF6::I18n
         KF6::XmlGui
