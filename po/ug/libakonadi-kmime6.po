@@ -8,21 +8,21 @@ msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-19 00:45+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-28 16:56-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
 
 #: emptytrashcommand.cpp:46
-#, fuzzy, kde-format
-#| msgid "Empty Trash"
+#, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
-msgstr "ئەخلەتخانىنى تازىلاش"
+msgstr "ئەخلەتخانىنى بوشات"
 
 #: emptytrashcommand.cpp:47
 #, kde-format
@@ -30,21 +30,17 @@ msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
 
 #: markascommand.cpp:121
-#, fuzzy, kde-format
-#| msgid "Do you really want to delete this folder and all its sub-folders?"
-#| msgid_plural ""
-#| "Do you really want to delete %1 folders and all their sub-folders?"
+#, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
-msgstr "قىسقۇچ %1 ۋە ئۇنىڭ ئىچىدىكى بارلىق تارماق قىسقۇچلارنى ئۆچۈرەمسىز؟"
+msgstr ""
 
 #: markascommand.cpp:122
-#, fuzzy, kde-format
-#| msgid "Mark as Read"
+#, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
-msgstr "ئوقۇلدى بەلگىسى قوي"
+msgstr ""
 
 #: markascommand.cpp:123
 #, kde-format
@@ -55,7 +51,7 @@ msgstr ""
 #: messagemodel.cpp:32
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
-msgstr "تېما"
+msgstr "ماۋزۇ"
 
 #: messagemodel.cpp:33
 msgctxt "@title:column, sender of message (e.g. email)"
@@ -78,12 +74,10 @@ msgid "Size"
 msgstr "چوڭلۇقى"
 
 #: messagemodel.cpp:69
-#, fuzzy, kde-format
-#| msgctxt "@title:column, message (e.g. email) subject"
-#| msgid "Subject"
+#, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
-msgstr "تېما"
+msgstr ""
 
 #: messagemodel.cpp:75
 #, kde-format
@@ -92,12 +86,10 @@ msgid "(No sender)"
 msgstr ""
 
 #: messagemodel.cpp:81
-#, fuzzy, kde-format
-#| msgctxt "@title:column, receiver of message (e.g. email)"
-#| msgid "Receiver"
+#, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
-msgstr "قوبۇللىغۇچى"
+msgstr ""
 
 #: messagemodel.cpp:87
 #, kde-format
@@ -175,7 +167,7 @@ msgstr "دەسلەپكى نۇسخا"
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
-msgstr "قېلىپلار"
+msgstr "قېلىپ"
 
 #: specialmailcollections.cpp:140
 #, kde-format
@@ -187,11 +179,10 @@ msgstr ""
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"
-msgstr "يەرلىك قىسقۇچلار"
+msgstr "يەرلىك قىسقۇچ"
 
 #: standardmailactionmanager.cpp:119
-#, fuzzy, kde-format
-#| msgid "Add Folder..."
+#, kde-format
 msgid "Add Folder…"
 msgstr "قىسقۇچ قوش…"
 
@@ -231,7 +222,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
-msgstr "قىسقۇچ ‹%1› نىڭ خاسلىقى"
+msgstr "قىسقۇچ «%1» نىڭ خاسلىقى"
 
 #: standardmailactionmanager.cpp:141
 #, kde-format
@@ -291,10 +282,9 @@ msgid "Cut the selected folders from the account."
 msgstr ""
 
 #: standardmailactionmanager.cpp:174
-#, fuzzy, kde-format
-#| msgid "Folder Properties..."
+#, kde-format
 msgid "Folder Properties"
-msgstr "قىسقۇچ خاسلىقى…"
+msgstr "قىسقۇچ خاسلىقى"
 
 #: standardmailactionmanager.cpp:176 standardmailactionmanager.cpp:178
 #, kde-format
@@ -305,7 +295,7 @@ msgstr ""
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
-msgstr[0] ""
+msgstr[0] "%1 ئۇچۇر كۆچۈر"
 
 #: standardmailactionmanager.cpp:182 standardmailactionmanager.cpp:183
 #, kde-format
@@ -316,7 +306,7 @@ msgstr ""
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
-msgstr[0] ""
+msgstr[0] "%1 ئۇچۇر ئۆچۈر"
 
 #: standardmailactionmanager.cpp:187 standardmailactionmanager.cpp:188
 #, kde-format
@@ -334,7 +324,7 @@ msgstr[0] ""
 msgctxt "@title:window"
 msgid "Delete Message?"
 msgid_plural "Delete Messages?"
-msgstr[0] ""
+msgstr[0] "ئۇچۇرنى ئۆچۈرەمدۇ؟"
 
 #: standardmailactionmanager.cpp:197
 #, kde-format
@@ -358,11 +348,9 @@ msgid "Cut the selected message from the folder."
 msgstr ""
 
 #: standardmailactionmanager.cpp:207
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Add Account"
+#, kde-format
 msgid "Add &Account…"
-msgstr "ھېسابات قوشۇش"
+msgstr ""
 
 #: standardmailactionmanager.cpp:209
 #, kde-format
@@ -375,7 +363,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
-msgstr "ھېسابات قوشۇش"
+msgstr "ھېساب قوش"
 
 #: standardmailactionmanager.cpp:216
 #, kde-format
@@ -411,13 +399,12 @@ msgstr[0] ""
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
-msgstr[0] ""
+msgstr[0] "ھېسابنى ئۆچۈرەمدۇ؟"
 
 #: standardmailactionmanager.cpp:235
-#, fuzzy, kde-format
-#| msgid "Folder Properties..."
+#, kde-format
 msgid "Account Properties…"
-msgstr "قىسقۇچ خاسلىقى…"
+msgstr "ھېساب خاسلىقى…"
 
 #: standardmailactionmanager.cpp:237
 #, kde-format
@@ -547,10 +534,9 @@ msgid "Mark &All Messages as Read Recursively"
 msgstr ""
 
 #: standardmailactionmanager.cpp:777
-#, fuzzy, kde-format
-#| msgid "Mark as Read"
+#, kde-format
 msgid "Mark All as Read Recursively"
-msgstr "ئوقۇلدى بەلگىسى قوي"
+msgstr ""
 
 #: standardmailactionmanager.cpp:778 standardmailactionmanager.cpp:779
 #, kde-format
