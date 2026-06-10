@@ -94,7 +94,6 @@ include(ECMCheckOutboundLicense)
 ecm_check_outbound_license(LICENSES GPL-2.0-only  FILES ${ALL_CLANG_FORMAT_SOURCE_FILES})
 
 include(ECMGenerateQDoc)
-set(CMAKE_CXX_SCAN_FOR_MODULES OFF)
 
 set(AKONADI_MIME_VERSION ${PIM_VERSION})
 set(AKONADI_VERSION "6.7.40")
