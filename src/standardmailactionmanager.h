@@ -9,7 +9,7 @@
 #pragma once
 
 #include "akonadi-mime_export.h"
-
+#include "messagestatus.h"
 #include <Akonadi/StandardActionManager>
 
 #include <QObject>
@@ -225,6 +225,22 @@ public:
      */
     void setItems(const Item::List &selectedItems);
 
+    /*!
+     * \brief executeMarkAsCommand
+     * \param targetStatus
+     * \param items
+     * \param invert
+     */
+    virtual void executeMarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi::Item::List &items, bool invert);
+
+    /*!
+     * \brief executeMarkAsCommand
+     * \param targetStatus
+     * \param items
+     * \param invert
+     * \param recursive
+     */
+    virtual void executeMarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi::Collection::List &items, bool invert, bool recursive);
 Q_SIGNALS:
     /*!
      * This signal is emitted whenever the action state has been updated.

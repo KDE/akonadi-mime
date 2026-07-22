@@ -28,7 +28,6 @@
 #include <Akonadi/MimeTypeChecker>
 #include <Akonadi/SubscriptionDialog>
 
-#include "messagestatus.h"
 #include <KMime/Message>
 
 #include <KActionCollection>
@@ -475,8 +474,7 @@ public:
             return;
         }
 
-        auto command = new MarkAsCommand(targetStatus, items, invert, mParent);
-        command->execute();
+        mParent->executeMarkAsCommand(targetStatus, items, invert);
     }
 
     void slotMarkAs()
@@ -525,9 +523,7 @@ public:
         if (mInterceptedActions.contains(type) && checkIntercept) {
             return;
         }
-
-        auto command = new MarkAsCommand(targetStatus, collections, invert, recursive, mParent);
-        command->execute();
+        mParent->executeMarkAsCommand(targetStatus, collections, invert, recursive);
     }
 
     void slotMarkAllAs()
@@ -993,6 +989,21 @@ void StandardMailActionManager::markItemsAs(const QByteArray &typeStr, const Ite
 void StandardMailActionManager::markAllItemsAs(const QByteArray &typeStr, const Collection::List &collections, bool checkIntercept)
 {
     d->markAllItemsAs(typeStr, collections, checkIntercept);
+}
+
+void StandardMailActionManager::executeMarkAsCommand(Akonadi::MessageStatus targetStatus, const Akonadi::Item::List &items, bool invert)
+{
+    auto command = new MarkAsCommand(targetStatus, items, invert, this);
+    command->execute();
+}
+
+void StandardMailActionManager::executeMarkAsCommand(Akonadi::MessageStatus targetStatus,
+                                                     const Akonadi::Collection::List &collections,
+                                                     bool invert,
+                                                     bool recursive)
+{
+    auto command = new MarkAsCommand(targetStatus, collections, invert, recursive, this);
+    command->execute();
 }
 
 #include "moc_standardmailactionmanager.cpp"
