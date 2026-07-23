@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-19 00:45+0000\n"
+"POT-Creation-Date: 2026-07-23 00:44+0000\n"
 "PO-Revision-Date: 2023-04-22 12:18+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -187,64 +187,64 @@ msgctxt "local mail folder"
 msgid "Local Folders"
 msgstr "Yerli Qovluqlar"
 
-#: standardmailactionmanager.cpp:119
+#: standardmailactionmanager.cpp:118
 #, fuzzy, kde-format
 #| msgid "Add Folder..."
 msgid "Add Folder…"
 msgstr "Qovluq əlavə etmək..."
 
-#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#: standardmailactionmanager.cpp:119 standardmailactionmanager.cpp:120
 #, kde-format
 msgid "Add a new folder to the currently selected account."
 msgstr "Hazırda seçilmiş hesaba üçün qovluq yaratmaq."
 
-#: standardmailactionmanager.cpp:123
+#: standardmailactionmanager.cpp:122
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Yeni Qovluq"
 
-#: standardmailactionmanager.cpp:127
+#: standardmailactionmanager.cpp:126
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Qovluq yaradıla bilmədi: %1"
 
-#: standardmailactionmanager.cpp:129
+#: standardmailactionmanager.cpp:128
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Qovluq yaradılması baş tutmadı"
 
-#: standardmailactionmanager.cpp:133
+#: standardmailactionmanager.cpp:132
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
 msgstr[0] "Qovluğu kopyalamaq"
 msgstr[1] "%1 qovluğu kopyalamaq"
 
-#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#: standardmailactionmanager.cpp:133 standardmailactionmanager.cpp:134
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
 msgstr "Seçilmiş qovluqları mübadilə buferinə kopyalamaq."
 
-#: standardmailactionmanager.cpp:138
+#: standardmailactionmanager.cpp:137
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "%1 qovluğunun xüsusiyyətləri"
 
-#: standardmailactionmanager.cpp:141
+#: standardmailactionmanager.cpp:140
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
 msgstr[0] "Qovluğu silmək"
 msgstr[1] "%1 qovluğu silmək"
 
-#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#: standardmailactionmanager.cpp:141 standardmailactionmanager.cpp:142
 #, kde-format
 msgid "Delete the selected folders from the account."
 msgstr "Seçilmiş qovluğu hesabdan silmək."
 
-#: standardmailactionmanager.cpp:146
+#: standardmailactionmanager.cpp:145
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
@@ -254,7 +254,7 @@ msgstr[0] ""
 msgstr[1] ""
 "Siz %1 qovluğu və onun bütün alt qovluqlarını silmək istədiyinizə əminsiniz?"
 
-#: standardmailactionmanager.cpp:151
+#: standardmailactionmanager.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
@@ -262,82 +262,82 @@ msgid_plural "Delete folders?"
 msgstr[0] "Qovluq silinsin?"
 msgstr[1] "Qovluqlar silinsin?"
 
-#: standardmailactionmanager.cpp:155
+#: standardmailactionmanager.cpp:154
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr "Silinə bilməyən qovluq: %1"
 
-#: standardmailactionmanager.cpp:159
+#: standardmailactionmanager.cpp:158
 #, kde-format
 msgid "Folder deletion failed"
 msgstr "Qovluğun silinməsi baş tutmadı"
 
-#: standardmailactionmanager.cpp:163
+#: standardmailactionmanager.cpp:162
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
 msgstr[0] "Qovluğu yeniləmək"
 msgstr[1] "Qovluqları yeniləmək"
 
-#: standardmailactionmanager.cpp:165 standardmailactionmanager.cpp:166
+#: standardmailactionmanager.cpp:164 standardmailactionmanager.cpp:165
 #, kde-format
 msgid "Update the contents of the selected folders."
 msgstr "Seçilmiş qovluqların tərkiblərini yeniləmək."
 
-#: standardmailactionmanager.cpp:169
+#: standardmailactionmanager.cpp:168
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
 msgstr[0] "Qovluğu kəsmək"
 msgstr[1] "%1 qovluğu kəsmək"
 
-#: standardmailactionmanager.cpp:170 standardmailactionmanager.cpp:171
+#: standardmailactionmanager.cpp:169 standardmailactionmanager.cpp:170
 #, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "Seçilmiş qoivluğu hesabdan kəsmək."
 
-#: standardmailactionmanager.cpp:174
+#: standardmailactionmanager.cpp:173
 #, kde-format
 msgid "Folder Properties"
 msgstr "Qovluqların xüsusiyyətləri"
 
-#: standardmailactionmanager.cpp:176 standardmailactionmanager.cpp:178
+#: standardmailactionmanager.cpp:175 standardmailactionmanager.cpp:177
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr "Seçilmiş qovluğun xüsusiyyətlərinə düzəliş etmək üçün dilaqu açmaq."
 
-#: standardmailactionmanager.cpp:181
+#: standardmailactionmanager.cpp:180
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] "Məktubu Kopyalamaq"
 msgstr[1] "%1 Məktubu Kopyalamaq"
 
-#: standardmailactionmanager.cpp:182 standardmailactionmanager.cpp:183
+#: standardmailactionmanager.cpp:181 standardmailactionmanager.cpp:182
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
 msgstr "Seçilmiş məktubu mübadilə buferinə kopyalamaq."
 
-#: standardmailactionmanager.cpp:186
+#: standardmailactionmanager.cpp:185
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
 msgstr[0] "Məktubu Silmək"
 msgstr[1] "%1 Məktubu Silmək"
 
-#: standardmailactionmanager.cpp:187 standardmailactionmanager.cpp:188
+#: standardmailactionmanager.cpp:186 standardmailactionmanager.cpp:187
 #, kde-format
 msgid "Delete the selected messages from the folder."
 msgstr "Seçilmiş məktubları qovluqdan silmək"
 
-#: standardmailactionmanager.cpp:191
+#: standardmailactionmanager.cpp:190
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
 msgstr[0] "Seçilmiş məktubu silmək istədiyinizə əminsiniz?"
 msgstr[1] "%1 məktubu silmək istədiyinizə əminsiniz?"
 
-#: standardmailactionmanager.cpp:195
+#: standardmailactionmanager.cpp:194
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
@@ -345,36 +345,36 @@ msgid_plural "Delete Messages?"
 msgstr[0] "Məktub silinsin?"
 msgstr[1] "Məktublar silinsin?"
 
-#: standardmailactionmanager.cpp:197
+#: standardmailactionmanager.cpp:196
 #, kde-format
 msgid "Could not delete message: %1"
 msgstr "Silinə bilməyən məktub: %1"
 
-#: standardmailactionmanager.cpp:199
+#: standardmailactionmanager.cpp:198
 #, kde-format
 msgid "Message deletion failed"
 msgstr "Məktubun silinməsi baş tutmadı"
 
-#: standardmailactionmanager.cpp:202
+#: standardmailactionmanager.cpp:201
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] "Məktubu kəsmək"
 msgstr[1] "%1 məktubu kəsmək"
 
-#: standardmailactionmanager.cpp:203 standardmailactionmanager.cpp:204
+#: standardmailactionmanager.cpp:202 standardmailactionmanager.cpp:203
 #, kde-format
 msgid "Cut the selected message from the folder."
 msgstr "Seçilmiş məktubu qovluqdan kəsmək."
 
-#: standardmailactionmanager.cpp:207
+#: standardmailactionmanager.cpp:206
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Account"
 msgid "Add &Account…"
 msgstr "Hesab əlavə etmək"
 
-#: standardmailactionmanager.cpp:209
+#: standardmailactionmanager.cpp:208
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
@@ -383,30 +383,30 @@ msgstr ""
 "Yeni hesab əlavə etmək<p>Sizə əlavə ediləcək hesabın növünü seçə biləcəyiniz "
 "dilaoq təqdim ediləcək.</p>"
 
-#: standardmailactionmanager.cpp:212
+#: standardmailactionmanager.cpp:211
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "Hesab əlavə etmək"
 
-#: standardmailactionmanager.cpp:216
+#: standardmailactionmanager.cpp:215
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "Yaradla bilməyən hesab: %1"
 
-#: standardmailactionmanager.cpp:218
+#: standardmailactionmanager.cpp:217
 #, kde-format
 msgid "Account creation failed"
 msgstr "Hesabın yaradılması baş tutmadı"
 
-#: standardmailactionmanager.cpp:221
+#: standardmailactionmanager.cpp:220
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
 msgstr[0] "Hesabı &silin"
 msgstr[1] "%1 Hesabı &silin"
 
-#: standardmailactionmanager.cpp:223
+#: standardmailactionmanager.cpp:222
 #, kde-format
 msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
@@ -415,14 +415,14 @@ msgstr ""
 "Seçilmiş hesabları silmək<p>Tərkibləri ilə bərabər hazırda seçilmiş hesablar "
 "silinəcəkdir.</p>"
 
-#: standardmailactionmanager.cpp:228
+#: standardmailactionmanager.cpp:227
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
 msgstr[0] "Bu hesabı silmək istədiyinizə əminsiniz?"
 msgstr[1] "%1 hesabını silmək istədiyinizə əminsiniz?"
 
-#: standardmailactionmanager.cpp:232
+#: standardmailactionmanager.cpp:231
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
@@ -430,244 +430,244 @@ msgid_plural "Delete Accounts?"
 msgstr[0] "Hesab Silinsin?"
 msgstr[1] "Hesablar Silinisin"
 
-#: standardmailactionmanager.cpp:235
+#: standardmailactionmanager.cpp:234
 #, fuzzy, kde-format
 #| msgid "Account Properties..."
 msgid "Account Properties…"
 msgstr "Hesabın Xüsusiyyətləri..."
 
-#: standardmailactionmanager.cpp:237
+#: standardmailactionmanager.cpp:236
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr "Hesabın xüsusiyyətlərinə düzəliş etmək üçün dialoqu açmaq."
 
-#: standardmailactionmanager.cpp:240
+#: standardmailactionmanager.cpp:239
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
 msgstr[0] "Hesabı yeniləmək"
 msgstr[1] "%1 hesabı yeniləmək"
 
-#: standardmailactionmanager.cpp:242
+#: standardmailactionmanager.cpp:241
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr "Seçilmiş hesabların bütün qovluqlarını yeniləmək."
 
-#: standardmailactionmanager.cpp:246
+#: standardmailactionmanager.cpp:245
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
 msgstr[0] "Bu qovluğu və onun bütün alt qovluqlarını yeniləmək"
 msgstr[1] "Bu qovluqları və onların bütün alt qovluqlarını yeniləmək"
 
-#: standardmailactionmanager.cpp:249 standardmailactionmanager.cpp:251
+#: standardmailactionmanager.cpp:248 standardmailactionmanager.cpp:250
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr ""
 "Seçilmiş qovluqların və onların bütün alt qovluqlarının tərkiblərini "
 "yeniləmək."
 
-#: standardmailactionmanager.cpp:254
+#: standardmailactionmanager.cpp:253
 #, kde-format
 msgid "Could not paste message: %1"
 msgstr "Yerləşdirilə bilməyən məktub: %1"
 
-#: standardmailactionmanager.cpp:256
+#: standardmailactionmanager.cpp:255
 #, kde-format
 msgid "Paste failed"
 msgstr "Yerləşdirmə baş tutmadı"
 
-#: standardmailactionmanager.cpp:322
+#: standardmailactionmanager.cpp:321
 #, kde-format
 msgid "Remove Important Mark"
 msgstr "Vaciblik işarəsini silmək"
 
-#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:734
+#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:730
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "Məktubu vacib kimi işarələ&mək"
 
-#: standardmailactionmanager.cpp:335
+#: standardmailactionmanager.cpp:334
 #, kde-format
 msgid "Remove Action Item Mark"
 msgstr "Nəzarətdən çıxartmaq"
 
-#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:748
+#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:744
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Məktubu nəzarətə almaq"
 
-#: standardmailactionmanager.cpp:704
+#: standardmailactionmanager.cpp:700
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "Oxunmuş kimi işarələ&mək"
 
-#: standardmailactionmanager.cpp:705
+#: standardmailactionmanager.cpp:701
 #, kde-format
 msgid "Mark as Read"
 msgstr "Oxunmuş kimi işarələmək"
 
-#: standardmailactionmanager.cpp:706 standardmailactionmanager.cpp:707
+#: standardmailactionmanager.cpp:702 standardmailactionmanager.cpp:703
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Seçilmiş məktubları oxunmuş kimi işarələmək."
 
-#: standardmailactionmanager.cpp:719
+#: standardmailactionmanager.cpp:715
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "Oxunmamış kimi işarələ&mək"
 
-#: standardmailactionmanager.cpp:720
+#: standardmailactionmanager.cpp:716
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Oxunmamış kimi işarələmək"
 
-#: standardmailactionmanager.cpp:721 standardmailactionmanager.cpp:722
+#: standardmailactionmanager.cpp:717 standardmailactionmanager.cpp:718
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Seçilmiş məktubları oxunmamış kimi işarələmək"
 
-#: standardmailactionmanager.cpp:735
+#: standardmailactionmanager.cpp:731
 #, kde-format
 msgid "Mark as Important"
 msgstr "Vacib kimi işarələmək"
 
-#: standardmailactionmanager.cpp:736
+#: standardmailactionmanager.cpp:732
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Seçilmiş məktubları vacib kimi işarələmək"
 
-#: standardmailactionmanager.cpp:749
+#: standardmailactionmanager.cpp:745
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Nəzarətə alınan kimi işarələmək"
 
-#: standardmailactionmanager.cpp:750 standardmailactionmanager.cpp:751
+#: standardmailactionmanager.cpp:746 standardmailactionmanager.cpp:747
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Seçilmiş məktubları nəzarətə alınanlar kimi işarələmək."
 
-#: standardmailactionmanager.cpp:762
+#: standardmailactionmanager.cpp:758
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "&Bütün Məktubları Oxunmuş kimi İşarələmək"
 
-#: standardmailactionmanager.cpp:763
+#: standardmailactionmanager.cpp:759
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Hamısını oxunmuş kimi işarələmək"
 
-#: standardmailactionmanager.cpp:764 standardmailactionmanager.cpp:765
+#: standardmailactionmanager.cpp:760 standardmailactionmanager.cpp:761
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Bütün məktubları oxunmuş kimi işarələmək."
 
-#: standardmailactionmanager.cpp:776
+#: standardmailactionmanager.cpp:772
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "&Bütün məktubları rekursiv olaraq oxunmuş kimi işarələmək"
 
-#: standardmailactionmanager.cpp:777
+#: standardmailactionmanager.cpp:773
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Hamısını rekursiv oxunmuş kimi işarələmək"
 
-#: standardmailactionmanager.cpp:778 standardmailactionmanager.cpp:779
+#: standardmailactionmanager.cpp:774 standardmailactionmanager.cpp:775
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Bütün məktubları rekursiv olaraq oxunmuş kimi işarələmək."
 
-#: standardmailactionmanager.cpp:790
+#: standardmailactionmanager.cpp:786
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "&Bütün məktubları oxunmamış kimi işarələmək"
 
-#: standardmailactionmanager.cpp:791
+#: standardmailactionmanager.cpp:787
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Hamısını oxunmamış kimi işarələmək"
 
-#: standardmailactionmanager.cpp:792 standardmailactionmanager.cpp:793
+#: standardmailactionmanager.cpp:788 standardmailactionmanager.cpp:789
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Bütün məktubları oxunmamış kimi işarələmək."
 
-#: standardmailactionmanager.cpp:804
+#: standardmailactionmanager.cpp:800
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "&Bütün məktubları vacib kimi işarələmək"
 
-#: standardmailactionmanager.cpp:805
+#: standardmailactionmanager.cpp:801
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Hamısını vacib kimi işarələmək"
 
-#: standardmailactionmanager.cpp:806 standardmailactionmanager.cpp:807
+#: standardmailactionmanager.cpp:802 standardmailactionmanager.cpp:803
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Bütün məktubları vacib kimi işarələmək"
 
-#: standardmailactionmanager.cpp:817
+#: standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Hamısınə nəzarətə alınan kimi işarələmək"
 
-#: standardmailactionmanager.cpp:818
+#: standardmailactionmanager.cpp:814
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "&Bütün məktubları nəzarətə alınan kimi işarələmək"
 
-#: standardmailactionmanager.cpp:820 standardmailactionmanager.cpp:821
+#: standardmailactionmanager.cpp:816 standardmailactionmanager.cpp:817
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Bütün məktubları nəzarətə alınan kimi işarələmək."
 
-#: standardmailactionmanager.cpp:832
+#: standardmailactionmanager.cpp:828
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Səbət atmaq"
 
-#: standardmailactionmanager.cpp:834 standardmailactionmanager.cpp:835
+#: standardmailactionmanager.cpp:830 standardmailactionmanager.cpp:831
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Seçilmiş məktubları səbət qovluğuna köçürmək"
 
-#: standardmailactionmanager.cpp:845
+#: standardmailactionmanager.cpp:841
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Hamısını səbə&tə atmaq"
 
-#: standardmailactionmanager.cpp:846 standardmailactionmanager.cpp:847
+#: standardmailactionmanager.cpp:842 standardmailactionmanager.cpp:843
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Bütün məktubları səbət qovluğuna atmaq."
 
-#: standardmailactionmanager.cpp:856
+#: standardmailactionmanager.cpp:852
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Məktubların &dublikatlarını silmək"
 
-#: standardmailactionmanager.cpp:857 standardmailactionmanager.cpp:858
+#: standardmailactionmanager.cpp:853 standardmailactionmanager.cpp:854
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Məktubların dublikatlarını silmək"
 
-#: standardmailactionmanager.cpp:868
+#: standardmailactionmanager.cpp:864
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Bütün Səbə&t Qovluqlarını Boşaltmaq"
 
-#: standardmailactionmanager.cpp:869 standardmailactionmanager.cpp:870
+#: standardmailactionmanager.cpp:865 standardmailactionmanager.cpp:866
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Bütün səbət qovluqlarındakı bütün məktubları həmişəlik silmək."
 
-#: standardmailactionmanager.cpp:879
+#: standardmailactionmanager.cpp:875
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Səbəti Boşalt&maq"
 
-#: standardmailactionmanager.cpp:880 standardmailactionmanager.cpp:881
+#: standardmailactionmanager.cpp:876 standardmailactionmanager.cpp:877
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Səbətdəki bütün məktubları həmişəlik silmək."

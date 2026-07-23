@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-19 00:45+0000\n"
+"POT-Creation-Date: 2026-07-23 00:44+0000\n"
 "PO-Revision-Date: 2012-07-11 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -195,132 +195,132 @@ msgctxt "local mail folder"
 msgid "Local Folders"
 msgstr "ថត​មូលដ្ឋាន"
 
-#: standardmailactionmanager.cpp:119
+#: standardmailactionmanager.cpp:118
 #, fuzzy, kde-format
 #| msgid "Add Folder..."
 msgid "Add Folder…"
 msgstr "បន្ថែម​ថត..."
 
-#: standardmailactionmanager.cpp:120 standardmailactionmanager.cpp:121
+#: standardmailactionmanager.cpp:119 standardmailactionmanager.cpp:120
 #, kde-format
 msgid "Add a new folder to the currently selected account."
 msgstr "បន្ថែម​ថត​ថ្មី​ទៅកាន់​គណនី​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន ។"
 
-#: standardmailactionmanager.cpp:123
+#: standardmailactionmanager.cpp:122
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "ថត​ថ្មី"
 
-#: standardmailactionmanager.cpp:127
+#: standardmailactionmanager.cpp:126
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "មិន​អាច​បង្កើត​ថត​ថ្មី ៖ %1"
 
-#: standardmailactionmanager.cpp:129
+#: standardmailactionmanager.cpp:128
 #, kde-format
 msgid "Folder creation failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បង្កើត​ថត"
 
-#: standardmailactionmanager.cpp:133
+#: standardmailactionmanager.cpp:132
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
 msgstr[0] "ចម្លង​ថត %1"
 
-#: standardmailactionmanager.cpp:134 standardmailactionmanager.cpp:135
+#: standardmailactionmanager.cpp:133 standardmailactionmanager.cpp:134
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
 msgstr "ចម្លង​ថត​ដែល​បាន​ជ្រើស​ទៅ​ក្ដារតម្បៀតខ្ទាស់ ។"
 
-#: standardmailactionmanager.cpp:138
+#: standardmailactionmanager.cpp:137
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "លក្ខណសម្បត្តិ​ថត %1"
 
-#: standardmailactionmanager.cpp:141
+#: standardmailactionmanager.cpp:140
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
 msgstr[0] "លុប​ថត %1"
 
-#: standardmailactionmanager.cpp:142 standardmailactionmanager.cpp:143
+#: standardmailactionmanager.cpp:141 standardmailactionmanager.cpp:142
 #, kde-format
 msgid "Delete the selected folders from the account."
 msgstr "លុប​ថត​ដែល​បាន​ជ្រើស​ពី​គណនី ។"
 
-#: standardmailactionmanager.cpp:146
+#: standardmailactionmanager.cpp:145
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
 "Do you really want to delete %1 folders and all their sub-folders?"
 msgstr[0] "តើ​អ្នក​ពិតជា​ចង់​លុប​ថត %1 និង​ថត​រង​ទាំងអស់​របស់​វា​ឬ ?"
 
-#: standardmailactionmanager.cpp:151
+#: standardmailactionmanager.cpp:150
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
 msgid_plural "Delete folders?"
 msgstr[0] "លុប​ថត ?"
 
-#: standardmailactionmanager.cpp:155
+#: standardmailactionmanager.cpp:154
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr "មិន​អាច​លុប​ថត​បាន​ឡើយ ៖ %1"
 
-#: standardmailactionmanager.cpp:159
+#: standardmailactionmanager.cpp:158
 #, kde-format
 msgid "Folder deletion failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​លុប​ថត"
 
-#: standardmailactionmanager.cpp:163
+#: standardmailactionmanager.cpp:162
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
 msgstr[0] "ធ្វើបច្ចុប្បន្ន​ភាព​ថត"
 
-#: standardmailactionmanager.cpp:165 standardmailactionmanager.cpp:166
+#: standardmailactionmanager.cpp:164 standardmailactionmanager.cpp:165
 #, fuzzy, kde-format
 #| msgid "Update the content of the selected folders."
 msgid "Update the contents of the selected folders."
 msgstr "ធ្វើ​បច្ចុប្បន្ន​ភាព​មាតិកា​នៃ​ថត​ដែល​បាន​ជ្រើស ។"
 
-#: standardmailactionmanager.cpp:169
+#: standardmailactionmanager.cpp:168
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
 msgstr[0] "កាត់​ថត %1 "
 
-#: standardmailactionmanager.cpp:170 standardmailactionmanager.cpp:171
+#: standardmailactionmanager.cpp:169 standardmailactionmanager.cpp:170
 #, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "កាត់​ថត​ដែល​បាន​ជ្រើស​ពី​គណនី ។"
 
-#: standardmailactionmanager.cpp:174
+#: standardmailactionmanager.cpp:173
 #, fuzzy, kde-format
 #| msgid "Folder Properties..."
 msgid "Folder Properties"
 msgstr "លក្ខណសម្បត្តិ​ថត..."
 
-#: standardmailactionmanager.cpp:176 standardmailactionmanager.cpp:178
+#: standardmailactionmanager.cpp:175 standardmailactionmanager.cpp:177
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr "បើក​ប្រអប់ ដើម្បី​កែសម្រួល​លក្ខណសម្បត្តិ​របស់​ថត​ដែល​បាន​ជ្រើស ។"
 
-#: standardmailactionmanager.cpp:181
+#: standardmailactionmanager.cpp:180
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
 msgstr[0] ""
 
-#: standardmailactionmanager.cpp:182 standardmailactionmanager.cpp:183
+#: standardmailactionmanager.cpp:181 standardmailactionmanager.cpp:182
 #, fuzzy, kde-format
 #| msgid "Copy the selected emails to the clipboard."
 msgid "Copy the selected messages to the clipboard."
 msgstr "ចម្លង​អ៊ីមែល​ដែល​បាន​ជ្រើស​ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
 
-#: standardmailactionmanager.cpp:186
+#: standardmailactionmanager.cpp:185
 #, fuzzy, kde-format
 #| msgid "Delete Email"
 #| msgid_plural "Delete %1 Emails"
@@ -328,13 +328,13 @@ msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
 msgstr[0] "លុប​អ៊ីមែល %1"
 
-#: standardmailactionmanager.cpp:187 standardmailactionmanager.cpp:188
+#: standardmailactionmanager.cpp:186 standardmailactionmanager.cpp:187
 #, fuzzy, kde-format
 #| msgid "Delete the selected emails from the folder."
 msgid "Delete the selected messages from the folder."
 msgstr "លុប​អ៊ីមែល​ដែល​បាន​ជ្រើស​ពី​ថត ។"
 
-#: standardmailactionmanager.cpp:191
+#: standardmailactionmanager.cpp:190
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete the selected email?"
 #| msgid_plural "Do you really want to delete %1 emails?"
@@ -342,7 +342,7 @@ msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
 msgstr[0] "តើ​អ្នក​ពិតជា​ចង់​លុប​អ៊ីមែល %1 ឬ ?"
 
-#: standardmailactionmanager.cpp:195
+#: standardmailactionmanager.cpp:194
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Delete Email?"
@@ -352,38 +352,38 @@ msgid "Delete Message?"
 msgid_plural "Delete Messages?"
 msgstr[0] "លុប​អ៊ីមែល ?"
 
-#: standardmailactionmanager.cpp:197
+#: standardmailactionmanager.cpp:196
 #, fuzzy, kde-format
 #| msgid "Could not delete email: %1"
 msgid "Could not delete message: %1"
 msgstr "មិន​អាច​លុប​អ៊ីមែល​បាន​ឡើយ ៖ %1"
 
-#: standardmailactionmanager.cpp:199
+#: standardmailactionmanager.cpp:198
 #, fuzzy, kde-format
 #| msgid "Email deletion failed"
 msgid "Message deletion failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​លុប​អ៊ីមែល"
 
-#: standardmailactionmanager.cpp:202
+#: standardmailactionmanager.cpp:201
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
 msgstr[0] ""
 
-#: standardmailactionmanager.cpp:203 standardmailactionmanager.cpp:204
+#: standardmailactionmanager.cpp:202 standardmailactionmanager.cpp:203
 #, fuzzy, kde-format
 #| msgid "Cut the selected emails from the folder."
 msgid "Cut the selected message from the folder."
 msgstr "កាត់​អ៊ីមែល​ដែល​បាន​ជ្រើស​ពី​ថត ។"
 
-#: standardmailactionmanager.cpp:207
+#: standardmailactionmanager.cpp:206
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Add Account"
 msgid "Add &Account…"
 msgstr "បន្ថែម​គណនី"
 
-#: standardmailactionmanager.cpp:209
+#: standardmailactionmanager.cpp:208
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
@@ -391,29 +391,29 @@ msgid ""
 msgstr ""
 "បន្ថែម​គណនី​ថ្មី<p>អ្នក​នឹង​ត្រូវ​បាន​បង្ហាញ​ជាមួយ​ប្រអប់​ដែល​អ្នក​អាច​ជ្រើស​ប្រភេទ​គណនី​ដែល​នឹង​ត្រូវ​បន្ថែម ។</p>"
 
-#: standardmailactionmanager.cpp:212
+#: standardmailactionmanager.cpp:211
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "បន្ថែម​គណនី"
 
-#: standardmailactionmanager.cpp:216
+#: standardmailactionmanager.cpp:215
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "មិន​អាច​បង្កើត​គណនី ៖ %1"
 
-#: standardmailactionmanager.cpp:218
+#: standardmailactionmanager.cpp:217
 #, kde-format
 msgid "Account creation failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បង្កើត​គណនី"
 
-#: standardmailactionmanager.cpp:221
+#: standardmailactionmanager.cpp:220
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
 msgstr[0] "លុប​គណនី %1"
 
-#: standardmailactionmanager.cpp:223
+#: standardmailactionmanager.cpp:222
 #, fuzzy, kde-format
 #| msgid ""
 #| "Delete the selected accounts<p>The currently selected accounts will be "
@@ -425,42 +425,42 @@ msgstr ""
 "លុប​គណនី​ដែល​បាន​ជ្រើស<p>គណនី​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន​នឹង​ត្រូវ​បាន​លុប ព្រមគ្នា​នឹង​អ៊ីមែល​ទាំងអស់​នៅ​ក្នុង​នោះ ។"
 "</p>"
 
-#: standardmailactionmanager.cpp:228
+#: standardmailactionmanager.cpp:227
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
 msgstr[0] "តើ​អ្នក​ពិតជា​ចង់​លុប​គណនី %1 ឬ ?"
 
-#: standardmailactionmanager.cpp:232
+#: standardmailactionmanager.cpp:231
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgid_plural "Delete Accounts?"
 msgstr[0] "លុប​គណនី ?"
 
-#: standardmailactionmanager.cpp:235
+#: standardmailactionmanager.cpp:234
 #, fuzzy, kde-format
 #| msgid "Account Properties..."
 msgid "Account Properties…"
 msgstr "លក្ខណសម្បត្តិ​គណនី..."
 
-#: standardmailactionmanager.cpp:237
+#: standardmailactionmanager.cpp:236
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr "បើក​ប្រអប់ ដើម្បី​កែសម្រួល​លក្ខណសម្បត្តិ​គណនី​ដែល​បាន​ជ្រើស ។"
 
-#: standardmailactionmanager.cpp:240
+#: standardmailactionmanager.cpp:239
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
 msgstr[0] "ធ្វើ​បច្ចុប្បន្នភាព​គណនី %1"
 
-#: standardmailactionmanager.cpp:242
+#: standardmailactionmanager.cpp:241
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​មាតិកា​ថត​ទាំងអស់​នៃ​គណនី​ដែល​បាន​ជ្រើស ។"
 
-#: standardmailactionmanager.cpp:246
+#: standardmailactionmanager.cpp:245
 #, fuzzy, kde-format
 #| msgid "Update folder and its subfolders"
 #| msgid_plural "Update folders and their subfolders"
@@ -468,238 +468,238 @@ msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
 msgstr[0] "ធ្វើ​បច្ចុប្បន្នភាព​ថត និង​ថត​រង​របស់វា"
 
-#: standardmailactionmanager.cpp:249 standardmailactionmanager.cpp:251
+#: standardmailactionmanager.cpp:248 standardmailactionmanager.cpp:250
 #, fuzzy, kde-format
 #| msgid "Update the content of the selected folders and their subfolders."
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​មាតិកា​ថត និង​ថត​រង​ដែល​បាន​ជ្រើស​របស់វា ។"
 
-#: standardmailactionmanager.cpp:254
+#: standardmailactionmanager.cpp:253
 #, fuzzy, kde-format
 #| msgid "Could not paste email: %1"
 msgid "Could not paste message: %1"
 msgstr "មិន​អាច​បិទភ្ជាប់​អ៊ីមែល ៖ %1"
 
-#: standardmailactionmanager.cpp:256
+#: standardmailactionmanager.cpp:255
 #, kde-format
 msgid "Paste failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បិទភ្ជាប់"
 
-#: standardmailactionmanager.cpp:322
+#: standardmailactionmanager.cpp:321
 #, kde-format
 msgid "Remove Important Mark"
 msgstr "យក​សញ្ញាសម្គាល់​សំខាន់​ចេញ"
 
-#: standardmailactionmanager.cpp:324 standardmailactionmanager.cpp:734
+#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:730
 #, fuzzy, kde-format
 #| msgid "&Mark Mail as Important"
 msgid "&Mark Message as Important"
 msgstr "សម្គាល់​អ៊ីមែល​ជា​សំខាន់"
 
-#: standardmailactionmanager.cpp:335
+#: standardmailactionmanager.cpp:334
 #, kde-format
 msgid "Remove Action Item Mark"
 msgstr "យក​សញ្ញាសម្គាល់​ធាតុ​សកម្មភាព​ចេញ"
 
-#: standardmailactionmanager.cpp:337 standardmailactionmanager.cpp:748
+#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:744
 #, fuzzy, kde-format
 #| msgid "&Mark Mail as Action Item"
 msgid "&Mark Message as Action Item"
 msgstr "សម្គាល់​អ៊ីមែល​ជា​ធាតុ​សកម្មភាព"
 
-#: standardmailactionmanager.cpp:704
+#: standardmailactionmanager.cpp:700
 #, fuzzy, kde-format
 #| msgid "&Mark Mail as Read"
 msgid "&Mark Message as Read"
 msgstr "សម្គាល់​អ៊ីមែល​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:705
+#: standardmailactionmanager.cpp:701
 #, kde-format
 msgid "Mark as Read"
 msgstr "សម្គាល់​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:706 standardmailactionmanager.cpp:707
+#: standardmailactionmanager.cpp:702 standardmailactionmanager.cpp:703
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark selected messages as read."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:719
+#: standardmailactionmanager.cpp:715
 #, fuzzy, kde-format
 #| msgid "&Mark Mail as Unread"
 msgid "&Mark Message as Unread"
 msgstr "សម្គាល់​អ៊ីមែល​ថា​មិន​ទាន់​បាន​អាន"
 
-#: standardmailactionmanager.cpp:720
+#: standardmailactionmanager.cpp:716
 #, kde-format
 msgid "Mark as Unread"
 msgstr "សម្គាល់​ថា​មិន​ទាន់​បាន​អាន"
 
-#: standardmailactionmanager.cpp:721 standardmailactionmanager.cpp:722
+#: standardmailactionmanager.cpp:717 standardmailactionmanager.cpp:718
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark selected messages as unread."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:735
+#: standardmailactionmanager.cpp:731
 #, kde-format
 msgid "Mark as Important"
 msgstr "សម្គាល់​ថា​សំខាន់"
 
-#: standardmailactionmanager.cpp:736
+#: standardmailactionmanager.cpp:732
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark selected messages as important."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:749
+#: standardmailactionmanager.cpp:745
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "សម្គាល់​ជា​ធាតុ​សកម្មភាព"
 
-#: standardmailactionmanager.cpp:750 standardmailactionmanager.cpp:751
+#: standardmailactionmanager.cpp:746 standardmailactionmanager.cpp:747
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark selected messages as action items."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:762
+#: standardmailactionmanager.cpp:758
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Read"
 msgid "Mark &All Messages as Read"
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:763
+#: standardmailactionmanager.cpp:759
 #, kde-format
 msgid "Mark All as Read"
 msgstr "សម្គាល់​ទាំងអស់​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:764 standardmailactionmanager.cpp:765
+#: standardmailactionmanager.cpp:760 standardmailactionmanager.cpp:761
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark all messages as read."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:776
+#: standardmailactionmanager.cpp:772
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Read"
 msgid "Mark &All Messages as Read Recursively"
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:777
+#: standardmailactionmanager.cpp:773
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All as Read Recursively"
 msgstr "សម្គាល់​ទាំងអស់​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:778 standardmailactionmanager.cpp:779
+#: standardmailactionmanager.cpp:774 standardmailactionmanager.cpp:775
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark all messages as read recursively."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:790
+#: standardmailactionmanager.cpp:786
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Unread"
 msgid "Mark &All Messages as Unread"
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ថា​មិនទាន់​បាន​អាន"
 
-#: standardmailactionmanager.cpp:791
+#: standardmailactionmanager.cpp:787
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "សម្គាល់​ទាំងអស់​ថា​មិន​ទាន់​អាន"
 
-#: standardmailactionmanager.cpp:792 standardmailactionmanager.cpp:793
+#: standardmailactionmanager.cpp:788 standardmailactionmanager.cpp:789
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Mark all messages as unread."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:804
+#: standardmailactionmanager.cpp:800
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Important"
 msgid "Mark &All Messages as Important"
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ថា​សំខាន់"
 
-#: standardmailactionmanager.cpp:805
+#: standardmailactionmanager.cpp:801
 #, kde-format
 msgid "Mark All as Important"
 msgstr "សម្គាល់​ទាំងអស់​ថា​សំខាន់"
 
-#: standardmailactionmanager.cpp:806 standardmailactionmanager.cpp:807
+#: standardmailactionmanager.cpp:802 standardmailactionmanager.cpp:803
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Important"
 msgid "Mark all messages as important."
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ថា​សំខាន់"
 
-#: standardmailactionmanager.cpp:817
+#: standardmailactionmanager.cpp:813
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "សម្គាល់​ទាំងអស់​ជា​ធាតុ​សកម្មភាព"
 
-#: standardmailactionmanager.cpp:818
+#: standardmailactionmanager.cpp:814
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Action Item"
 msgid "Mark &All Messages as Action Item"
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ជា​ធាតុ​សកម្មភាព"
 
-#: standardmailactionmanager.cpp:820 standardmailactionmanager.cpp:821
+#: standardmailactionmanager.cpp:816 standardmailactionmanager.cpp:817
 #, fuzzy, kde-format
 #| msgid "Mark &All Mails as Action Item"
 msgid "Mark all messages as action items."
 msgstr "សម្គាល់​អ៊ីមែល​ទាំងអស់​ជា​ធាតុ​សកម្មភាព"
 
-#: standardmailactionmanager.cpp:832
+#: standardmailactionmanager.cpp:828
 #, kde-format
 msgid "Move to &Trash"
 msgstr "ផ្លាស់ទី​ទៅ​ធុងសំរាម"
 
-#: standardmailactionmanager.cpp:834 standardmailactionmanager.cpp:835
+#: standardmailactionmanager.cpp:830 standardmailactionmanager.cpp:831
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Move selected messages to the trash folder."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:845
+#: standardmailactionmanager.cpp:841
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "ផ្លាស់ទី​ទាំងអស់​ទៅ​ធុងសំរាម"
 
-#: standardmailactionmanager.cpp:846 standardmailactionmanager.cpp:847
+#: standardmailactionmanager.cpp:842 standardmailactionmanager.cpp:843
 #, fuzzy, kde-format
 #| msgid "Move message to trashcan"
 msgid "Move all messages to the trash folder."
 msgstr "ផ្លាស់ទី​សារ​ទៅ​ធុងសំរាម"
 
-#: standardmailactionmanager.cpp:856
+#: standardmailactionmanager.cpp:852
 #, fuzzy, kde-format
 #| msgid "Remove &Duplicate Mails"
 msgid "Remove &Duplicate Messages"
 msgstr "យក​អ៊ីមែល​ស្ទួន​ចេញ"
 
-#: standardmailactionmanager.cpp:857 standardmailactionmanager.cpp:858
+#: standardmailactionmanager.cpp:853 standardmailactionmanager.cpp:854
 #, fuzzy, kde-format
 #| msgid "Remove &Duplicate Mails"
 msgid "Remove duplicate messages."
 msgstr "យក​អ៊ីមែល​ស្ទួន​ចេញ"
 
-#: standardmailactionmanager.cpp:868
+#: standardmailactionmanager.cpp:864
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "សម្អាត​ថត​ធុងសំរាម​ទាំងអស់"
 
-#: standardmailactionmanager.cpp:869 standardmailactionmanager.cpp:870
+#: standardmailactionmanager.cpp:865 standardmailactionmanager.cpp:866
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Permanently delete all messages from all trash folders."
 msgstr "សម្គាល់​សារ​ដែល​បាន​ជ្រើស​ថា​បាន​អាន"
 
-#: standardmailactionmanager.cpp:879
+#: standardmailactionmanager.cpp:875
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "សម្អាត​ធុងសំរាម"
 
-#: standardmailactionmanager.cpp:880 standardmailactionmanager.cpp:881
+#: standardmailactionmanager.cpp:876 standardmailactionmanager.cpp:877
 #, fuzzy, kde-format
 #| msgid "Mark selected messages as read"
 msgid "Permanently delete all messages from the trash folder."
