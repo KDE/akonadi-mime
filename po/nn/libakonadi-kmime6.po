@@ -1,5 +1,6 @@
 # Translation of libakonadi-kmime6 to Norwegian Nynorsk
 #
+# Karl Ove Hufthammer <karl@huftis.org>, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
