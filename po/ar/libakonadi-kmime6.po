@@ -43,7 +43,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
-msgstr "علّم الكلّ تكرارياً"
+msgstr "علّم الكلّ تكراريًا"
 
 #: markascommand.cpp:123
 #, kde-format
@@ -416,7 +416,7 @@ msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
 "the type of the account that shall be added.</p>"
 msgstr ""
-"أضف حساباً جديدًا<p> سيُعرض حواريّ يمكنك منه اختيار نوع الحساب الذي سيُضاف.</p>"
+"أضف حسابًا جديدًا<p> سيُعرض حواريّ يمكنك منه اختيار نوع الحساب الذي سيُضاف.</p>"
 
 #: standardmailactionmanager.cpp:211
 #, kde-format
@@ -462,8 +462,8 @@ msgstr[0] "أتريد حقًّا حذف هذا الحساب؟"
 msgstr[1] "أتريد حقًّا حذف هذا الحساب؟"
 msgstr[2] "أتريد حقًّا حذف هذين الحسابين؟"
 msgstr[3] "أتريد حقًّا حذف %1 الحسابات هذه؟"
-msgstr[4] "أتريد حقاً حذف %1 حساباً؟"
-msgstr[5] "أتريد حقاً حذف %1 حساب؟"
+msgstr[4] "أتريد حقًا حذف %1 حسابًا؟"
+msgstr[5] "أتريد حقًا حذف %1 حساب؟"
 
 #: standardmailactionmanager.cpp:231
 #, kde-format
@@ -495,7 +495,7 @@ msgstr[0] "حدّث الحساب"
 msgstr[1] "حدّث الحساب"
 msgstr[2] "حدّث الحسابين"
 msgstr[3] "حدّث %1 الحسابات"
-msgstr[4] "حدّث %1 حساباً"
+msgstr[4] "حدّث %1 حسابًا"
 msgstr[5] "حدّث %1 حساب"
 
 #: standardmailactionmanager.cpp:241
