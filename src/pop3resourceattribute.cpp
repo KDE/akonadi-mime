@@ -50,7 +50,7 @@ void Pop3ResourceAttribute::deserialize(const QByteArray &data)
     QDataStream s(data);
     QString value;
     s >> value;
-    d->accountName = value;
+    d->accountName = std::move(value);
 }
 
 QString Pop3ResourceAttribute::pop3AccountName() const

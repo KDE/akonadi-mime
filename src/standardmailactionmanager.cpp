@@ -486,9 +486,9 @@ public:
         const QAction *action = qobject_cast<QAction *>(mParent->sender());
         Q_ASSERT(action);
 
-        const QByteArray typeStr = action->data().toByteArray();
+        QByteArray typeStr = action->data().toByteArray();
 
-        markItemsAs(typeStr, items, true);
+        markItemsAs(std::move(typeStr), items, true);
     }
 
     void markAllItemsAs(QByteArray typeStr, const Akonadi::Collection::List &collections, bool checkIntercept = true)
@@ -535,8 +535,8 @@ public:
 
         const QAction *action = qobject_cast<QAction *>(mParent->sender());
         Q_ASSERT(action);
-        const QByteArray typeStr = action->data().toByteArray();
-        markAllItemsAs(typeStr, collections, true);
+        QByteArray typeStr = action->data().toByteArray();
+        markAllItemsAs(std::move(typeStr), collections, true);
     }
 
     void slotMoveToTrash()

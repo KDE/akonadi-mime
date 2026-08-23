@@ -161,12 +161,12 @@ void MarkAsCommand::markMessages()
         if (d->mInvertMark) {
             if (item.hasFlag(flag)) {
                 item.clearFlag(flag);
-                itemsToModify.push_back(item);
+                itemsToModify.push_back(std::move(item));
             }
         } else {
             if (!item.hasFlag(flag)) {
                 item.setFlag(flag);
-                itemsToModify.push_back(item);
+                itemsToModify.push_back(std::move(item));
             }
         }
     }
