@@ -42,6 +42,16 @@ enum Status {
     StatusHasError = 0x00080000
 };
 
+namespace
+{
+/** Case-insensitive comparison of an Akonadi flag against one of the
+    Akonadi::MessageFlags constants, without allocating a temporary. */
+[[nodiscard]] inline bool isFlag(const QByteArray &flag, const char *messageFlag)
+{
+    return flag.compare(messageFlag, Qt::CaseInsensitive) == 0;
+}
+}
+
 Akonadi::MessageStatus::MessageStatus()
 {
     mStatus = StatusUnknown;
@@ -620,44 +630,43 @@ void Akonadi::MessageStatus::setStatusFromFlags(const QSet<QByteArray> &flags)
     mStatus = StatusUnknown;
 
     for (const QByteArray &flag : flags) {
-        const QByteArray &upperedFlag = flag.toUpper();
-        if (upperedFlag == Akonadi::MessageFlags::Deleted) {
+        if (isFlag(flag, Akonadi::MessageFlags::Deleted)) {
             setDeleted();
-        } else if (upperedFlag == Akonadi::MessageFlags::Seen) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Seen)) {
             setRead();
-        } else if (upperedFlag == Akonadi::MessageFlags::Answered) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Answered)) {
             setReplied();
-        } else if (upperedFlag == Akonadi::MessageFlags::Flagged) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Flagged)) {
             setImportant();
 
             // non standard flags
-        } else if (upperedFlag == Akonadi::MessageFlags::Sent) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Sent)) {
             setSent();
-        } else if (upperedFlag == Akonadi::MessageFlags::Queued) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Queued)) {
             setQueued();
-        } else if (upperedFlag == Akonadi::MessageFlags::Replied) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Replied)) {
             setReplied();
-        } else if (upperedFlag == Akonadi::MessageFlags::Forwarded) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Forwarded)) {
             setForwarded();
-        } else if (upperedFlag == Akonadi::MessageFlags::ToAct) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::ToAct)) {
             setToAct();
-        } else if (upperedFlag == Akonadi::MessageFlags::Watched) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Watched)) {
             setWatched();
-        } else if (upperedFlag == Akonadi::MessageFlags::Ignored) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Ignored)) {
             setIgnored();
-        } else if (upperedFlag == Akonadi::MessageFlags::HasAttachment) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::HasAttachment)) {
             setHasAttachment();
-        } else if (upperedFlag == Akonadi::MessageFlags::HasInvitation) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::HasInvitation)) {
             setHasInvitation();
-        } else if (upperedFlag == Akonadi::MessageFlags::Signed) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Signed)) {
             setSigned();
-        } else if (upperedFlag == Akonadi::MessageFlags::Encrypted) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Encrypted)) {
             setEncrypted();
-        } else if (upperedFlag == Akonadi::MessageFlags::Spam) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Spam)) {
             setSpam();
-        } else if (upperedFlag == Akonadi::MessageFlags::Ham) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::Ham)) {
             setHam();
-        } else if (upperedFlag == Akonadi::MessageFlags::HasError) {
+        } else if (isFlag(flag, Akonadi::MessageFlags::HasError)) {
             setHasError();
         }
     }
