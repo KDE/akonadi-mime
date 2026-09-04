@@ -9,7 +9,6 @@
 
 #include <Akonadi/ItemFetchScope>
 #include <Akonadi/Monitor>
-#include <Akonadi/Session>
 
 #include <KMime/Message>
 

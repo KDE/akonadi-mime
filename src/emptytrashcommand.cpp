@@ -17,7 +17,6 @@
 #include <Akonadi/AgentManager>
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/ItemDeleteJob>
-#include <Akonadi/ItemFetchJob>
 #include <KMime/Message>
 using namespace Akonadi;
 EmptyTrashCommand::EmptyTrashCommand(const QAbstractItemModel *model, QObject *parent)

@@ -16,7 +16,6 @@
 #include <Akonadi/DispatcherInterface>
 
 using namespace Akonadi;
-using namespace Akonadi;
 
 Runner::Runner()
 {

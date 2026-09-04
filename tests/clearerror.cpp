@@ -16,7 +16,6 @@
 #include <Akonadi/SpecialMailCollectionsRequestJob>
 
 using namespace Akonadi;
-using namespace Akonadi;
 
 Runner::Runner()
 {
