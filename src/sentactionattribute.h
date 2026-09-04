@@ -53,7 +53,7 @@ public:
         };
 
         /*!
-         * \typealias Akonadi::SentActionAttribute::List
+         * \typealias Akonadi::SentActionAttribute::Action::List
          *
          * Describes a list of sent actions.
          */
