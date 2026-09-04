@@ -12,7 +12,7 @@
 using namespace Akonadi;
 namespace
 {
-static int sNumberMaxElement = 500;
+constexpr int sNumberMaxElement = 500;
 }
 MarkAsCommandHelper::MarkAsCommandHelper(QObject *parent)
     : QObject{parent}
