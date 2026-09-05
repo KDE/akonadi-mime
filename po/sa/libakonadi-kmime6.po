@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-23 00:44+0000\n"
+"POT-Creation-Date: 2026-09-05 00:46+0000\n"
 "PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -19,13 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n>2);\n"
 "X-Generator: Lokalize 24.08.2\n"
 
-#: emptytrashcommand.cpp:46
+#: emptytrashcommand.cpp:45
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "रिक्त कचरा"
 
-#: emptytrashcommand.cpp:47
+#: emptytrashcommand.cpp:46
 #, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "किं भवान् निश्चयेन सर्वेषां खातानां कचरापुटं रिक्तं कर्तुम् इच्छति?"
@@ -49,56 +49,56 @@ msgctxt "@action:button"
 msgid "Mark All"
 msgstr "मार्क आल्"
 
-#: messagemodel.cpp:32
+#: messagemodel.cpp:31
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "विषयः"
 
-#: messagemodel.cpp:33
+#: messagemodel.cpp:32
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "प्रेषकः"
 
-#: messagemodel.cpp:34
+#: messagemodel.cpp:33
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "ग्राहकः"
 
-#: messagemodel.cpp:35
+#: messagemodel.cpp:34
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "दिनाङ्कः"
 
-#: messagemodel.cpp:36
+#: messagemodel.cpp:35
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "आकृति"
 
-#: messagemodel.cpp:69
+#: messagemodel.cpp:68
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "(न विषयः)"
 
-#: messagemodel.cpp:75
+#: messagemodel.cpp:74
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr "(न प्रेषकः)"
 
-#: messagemodel.cpp:81
+#: messagemodel.cpp:80
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "(न ग्राहकः)"
 
-#: messagemodel.cpp:87
+#: messagemodel.cpp:86
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(तिथिः नास्ति)"
 
-#: messagemodel.cpp:92
+#: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"

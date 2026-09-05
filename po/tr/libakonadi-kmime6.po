@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepimlibs-kde4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-23 00:44+0000\n"
+"POT-Creation-Date: 2026-09-05 00:46+0000\n"
 "PO-Revision-Date: 2024-11-16 21:22+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -22,13 +22,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 25.03.70\n"
 
-#: emptytrashcommand.cpp:46
+#: emptytrashcommand.cpp:45
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Çöp Kutusunu Boşalt"
 
-#: emptytrashcommand.cpp:47
+#: emptytrashcommand.cpp:46
 #, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
@@ -56,56 +56,56 @@ msgctxt "@action:button"
 msgid "Mark All"
 msgstr "Tümünü İmle"
 
-#: messagemodel.cpp:32
+#: messagemodel.cpp:31
 msgctxt "@title:column, message (e.g. email) subject"
 msgid "Subject"
 msgstr "Konu"
 
-#: messagemodel.cpp:33
+#: messagemodel.cpp:32
 msgctxt "@title:column, sender of message (e.g. email)"
 msgid "Sender"
 msgstr "Gönderen"
 
-#: messagemodel.cpp:34
+#: messagemodel.cpp:33
 msgctxt "@title:column, receiver of message (e.g. email)"
 msgid "Receiver"
 msgstr "Alıcı"
 
-#: messagemodel.cpp:35
+#: messagemodel.cpp:34
 msgctxt "@title:column, message (e.g. email) timestamp"
 msgid "Date"
 msgstr "Tarih"
 
-#: messagemodel.cpp:36
+#: messagemodel.cpp:35
 msgctxt "@title:column, message (e.g. email) size"
 msgid "Size"
 msgstr "Boyut"
 
-#: messagemodel.cpp:69
+#: messagemodel.cpp:68
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
 msgstr "(Konu yok)"
 
-#: messagemodel.cpp:75
+#: messagemodel.cpp:74
 #, kde-format
 msgctxt "@label Alternative text when email sender is missing"
 msgid "(No sender)"
 msgstr "(Gönderici yok)"
 
-#: messagemodel.cpp:81
+#: messagemodel.cpp:80
 #, kde-format
 msgctxt "@label Alternative text when email recipient is missing"
 msgid "(No receiver)"
 msgstr "(Alıcı yok)"
 
-#: messagemodel.cpp:87
+#: messagemodel.cpp:86
 #, kde-format
 msgctxt "@label Alternative text when email date/time is missing"
 msgid "(No date)"
 msgstr "(Tarih yok)"
 
-#: messagemodel.cpp:92
+#: messagemodel.cpp:91
 #, kde-format
 msgctxt "@label No size available"
 msgid "-"
