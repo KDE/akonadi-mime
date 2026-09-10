@@ -85,7 +85,9 @@ static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime
         }
     }
 
-    hdr->setMailbox(mboxList[0]);
+    if (!mboxList.isEmpty()) {
+        hdr->setMailbox(mboxList[0]);
+    }
 }
 
 static void parseAddrList(const QVarLengthArray<QByteArray, 16> &addrList, KMime::Headers::Generics::AddressList *hdr, int version, StringPool &pool)
