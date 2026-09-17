@@ -122,7 +122,7 @@ bool AddressAttribute::deliveryStatusNotification() const
 
 bool AddressAttribute::operator==(const AddressAttribute &other) const
 {
-    return d->mDSN == other.deliveryStatusNotification() && d->mBcc == other.bcc() && d->mTo == other.to() && d->mCc == other.cc() && d->mFrom == other.from();
+    return d->mDSN == other.d->mDSN && d->mBcc == other.d->mBcc && d->mTo == other.d->mTo && d->mCc == other.d->mCc && d->mFrom == other.d->mFrom;
 }
 
 void AddressAttribute::setDeliveryStatusNotification(bool b)
