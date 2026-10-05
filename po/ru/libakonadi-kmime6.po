@@ -84,7 +84,7 @@ msgstr "Размер"
 #, kde-format
 msgctxt "@label Alternative text when email subject is missing"
 msgid "(No subject)"
-msgstr "(Тема отсуствует)"
+msgstr "(Тема отсутствует)"
 
 #: messagemodel.cpp:75
 #, kde-format
@@ -367,7 +367,7 @@ msgstr[3] "Удаление письма"
 #: standardmailactionmanager.cpp:197
 #, kde-format
 msgid "Could not delete message: %1"
-msgstr "Удалить письмо не получилось: %1"
+msgstr "Не удалось удалить письмо: %1"
 
 #: standardmailactionmanager.cpp:199
 #, kde-format
@@ -555,7 +555,7 @@ msgstr "Отметить как непрочитанные"
 #: standardmailactionmanager.cpp:721 standardmailactionmanager.cpp:722
 #, kde-format
 msgid "Mark selected messages as unread."
-msgstr "Отметить выбранные письма как прочитанные"
+msgstr "Отметить выбранные письма как непрочитанные."
 
 #: standardmailactionmanager.cpp:735
 #, kde-format
@@ -565,7 +565,7 @@ msgstr "Отметить как важные"
 #: standardmailactionmanager.cpp:736
 #, kde-format
 msgid "Mark selected messages as important."
-msgstr "Отметить выбранные письма как прочитанные"
+msgstr "Отметить выбранные письма как важные."
 
 #: standardmailactionmanager.cpp:749
 #, kde-format
