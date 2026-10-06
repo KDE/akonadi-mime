@@ -6,7 +6,7 @@ Dependencies:
    'require':
     'frameworks/extra-cmake-modules': 'Frameworks/6.24'
     'pim/akonadi': '@same'
-    'pim/kmime': '@same'
+    'pim/kmime': 'release/25.12'
     'frameworks/kio': 'Frameworks/6.24'
 
 Options:
