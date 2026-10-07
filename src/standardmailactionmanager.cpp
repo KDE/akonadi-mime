@@ -635,7 +635,6 @@ public:
     QWidget *const mParentWidget;
     StandardActionManager *mGenericManager = nullptr;
     QItemSelectionModel *mCollectionSelectionModel = nullptr;
-    QItemSelectionModel *mItemSelectionModel = nullptr;
     QHash<StandardMailActionManager::Type, QAction *> mActions;
     QSet<StandardMailActionManager::Type> mInterceptedActions;
     StandardMailActionManager *const mParent;
@@ -672,7 +671,6 @@ void StandardMailActionManager::setItems(const Item::List &selectedItems)
 
 void StandardMailActionManager::setItemSelectionModel(QItemSelectionModel *selectionModel)
 {
-    d->mItemSelectionModel = selectionModel;
     d->mGenericManager->setItemSelectionModel(selectionModel);
 
     // connecting to QItemSelectionModel::selectionChanged is done by mGenericManager
