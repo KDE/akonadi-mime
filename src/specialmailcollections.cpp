@@ -143,9 +143,9 @@ void SpecialMailCollections::verifyI18nDefaultCollection(Type type)
         break;
     }
     if (!defaultI18n.isEmpty()) {
-        if (collection.hasAttribute<Akonadi::EntityDisplayAttribute>()) {
-            if (collection.attribute<Akonadi::EntityDisplayAttribute>()->displayName() != defaultI18n) {
-                collection.attribute<Akonadi::EntityDisplayAttribute>()->setDisplayName(defaultI18n);
+        if (auto *displayAttr = collection.attribute<Akonadi::EntityDisplayAttribute>()) {
+            if (displayAttr->displayName() != defaultI18n) {
+                displayAttr->setDisplayName(defaultI18n);
                 auto job = new Akonadi::CollectionModifyJob(collection, this);
                 connect(job, &Akonadi::CollectionModifyJob::result, this, &SpecialMailCollections::slotCollectionModified);
             }
@@ -169,11 +169,10 @@ void SpecialMailCollections::slotCollectionModified(KJob *job)
 
 SpecialMailCollections::Type SpecialMailCollections::specialCollectionType(const Akonadi::Collection &collection)
 {
-    if (!collection.hasAttribute<SpecialCollectionAttribute>()) {
-        return Invalid;
-    } else {
-        return typeToEnum(collection.attribute<SpecialCollectionAttribute>()->collectionType());
+    if (const auto *attr = collection.attribute<SpecialCollectionAttribute>()) {
+        return typeToEnum(attr->collectionType());
     }
+    return Invalid;
 }
 
 #include "moc_specialmailcollections.cpp"

@@ -31,12 +31,13 @@ ItemFetchScope SendQueuedAction::fetchScope() const
 
 bool SendQueuedAction::itemAccepted(const Item &item) const
 {
-    if (!item.hasAttribute<DispatchModeAttribute>()) {
+    const auto *dispatchModeAttr = item.attribute<DispatchModeAttribute>();
+    if (!dispatchModeAttr) {
         qCWarning(AKONADIMIME_LOG) << "Item doesn't have DispatchModeAttribute.";
         return false;
     }
 
-    return item.attribute<DispatchModeAttribute>()->dispatchMode() == DispatchModeAttribute::Manual;
+    return dispatchModeAttr->dispatchMode() == DispatchModeAttribute::Manual;
 }
 
 Job *SendQueuedAction::itemAction(const Item &item, FilterActionJob *parent) const
@@ -96,7 +97,8 @@ ItemFetchScope DispatchManualTransportAction::fetchScope() const
 
 bool DispatchManualTransportAction::itemAccepted(const Item &item) const
 {
-    if (!item.hasAttribute<DispatchModeAttribute>()) {
+    const auto *dispatchModeAttr = item.attribute<DispatchModeAttribute>();
+    if (!dispatchModeAttr) {
         qCWarning(AKONADIMIME_LOG) << "Item doesn't have DispatchModeAttribute.";
         return false;
     }
@@ -106,7 +108,7 @@ bool DispatchManualTransportAction::itemAccepted(const Item &item) const
         return false;
     }
 
-    return item.attribute<DispatchModeAttribute>()->dispatchMode() == DispatchModeAttribute::Manual;
+    return dispatchModeAttr->dispatchMode() == DispatchModeAttribute::Manual;
 }
 
 Job *DispatchManualTransportAction::itemAction(const Item &item, FilterActionJob *parent) const
