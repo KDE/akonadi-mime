@@ -43,7 +43,7 @@ AgentInstance DispatcherInterface::dispatcherInstance() const
 
 void DispatcherInterface::dispatchManually()
 {
-    Collection outbox = SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox);
+    const Collection outbox = SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox);
     if (!outbox.isValid()) {
         //    qCritical() << "Could not access Outbox.";
         return;
@@ -55,7 +55,7 @@ void DispatcherInterface::dispatchManually()
 
 void DispatcherInterface::retryDispatching()
 {
-    Collection outbox = SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox);
+    const Collection outbox = SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox);
     if (!outbox.isValid()) {
         //    qCritical() << "Could not access Outbox.";
         return;
@@ -67,7 +67,7 @@ void DispatcherInterface::retryDispatching()
 
 void DispatcherInterface::dispatchManualTransport(int transportId)
 {
-    Collection outbox = SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox);
+    const Collection outbox = SpecialMailCollections::self()->defaultCollection(SpecialMailCollections::Outbox);
     if (!outbox.isValid()) {
         //    qCritical() << "Could not access Outbox.";
         return;
