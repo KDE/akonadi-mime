@@ -74,4 +74,4 @@ public:
 private:
     std::unique_ptr<TransportAttributePrivate> const d;
 };
-} // namespace MailTransport
+} // namespace Akonadi

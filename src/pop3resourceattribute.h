@@ -66,7 +66,6 @@ public:
     bool operator==(const Pop3ResourceAttribute &other) const;
 
 private:
-    friend class Pop3ResourceAttributePrivate;
     std::unique_ptr<Pop3ResourceAttributePrivate> const d;
 };
 }

@@ -11,7 +11,6 @@
 #include <Akonadi/CollectionFetchJob>
 #include <Akonadi/ItemFetchJob>
 #include <Akonadi/ItemFetchScope>
-#include <Akonadi/ItemModifyJob>
 
 #include <KLocalizedString>
 #include <KMessageBox>

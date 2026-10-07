@@ -69,7 +69,6 @@ public:
     bool operator==(const NewMailNotifierAttribute &other) const;
 
 private:
-    friend class NewMailNotifierAttributePrivate;
     std::unique_ptr<NewMailNotifierAttributePrivate> const d;
 };
 }

@@ -99,4 +99,4 @@ public:
 private:
     std::unique_ptr<DispatchModeAttributePrivate> const d;
 };
-} // namespace MailTransport
+} // namespace Akonadi
