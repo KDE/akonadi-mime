@@ -52,6 +52,7 @@ SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *pare
     displayNameMap.insert("trash", /*i18nc( "local mail folder", */ QStringLiteral("trash"));
     displayNameMap.insert("drafts", /*i18nc( "local mail folder", */ QStringLiteral("drafts"));
     displayNameMap.insert("templates", /*i18nc( "local mail folder", */ QStringLiteral("templates"));
+    displayNameMap.insert("spam", /*i18nc( "local mail folder", */ QStringLiteral("spam"));
 
     static QMap<QByteArray, QString> iconNameMap;
     iconNameMap.insert("local-mail", QStringLiteral("folder"));
@@ -61,6 +62,7 @@ SpecialMailCollectionsRequestJob::SpecialMailCollectionsRequestJob(QObject *pare
     iconNameMap.insert("trash", QStringLiteral("user-trash"));
     iconNameMap.insert("drafts", QStringLiteral("document-properties"));
     iconNameMap.insert("templates", QStringLiteral("document-new"));
+    iconNameMap.insert("spam", QStringLiteral("mail-mark-junk"));
 
     QVariantMap options;
     options.insert(QStringLiteral("Name"), displayNameMap.value("local-mail"));
