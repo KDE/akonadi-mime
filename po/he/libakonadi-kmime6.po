@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-05 00:46+0000\n"
+"POT-Creation-Date: 2026-10-08 00:46+0000\n"
 "PO-Revision-Date: 2025-10-05 12:15+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -29,20 +29,20 @@ msgstr "פינוי אשפה"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "לפנות את תיקיות האשפה בכל החשבונות?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:120
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
 "subfolders?"
 msgstr "לסמן את כל ההודעות בתיקייה הזאת על תת־התיקיות שלה?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:121
 #, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "לסמן הכול מהכול"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:122
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"
@@ -498,7 +498,7 @@ msgstr "ההדבקה נכשלה"
 msgid "Remove Important Mark"
 msgstr "הסרת סימון חשוב"
 
-#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:728
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&סימון ההודעה כחשובה"
@@ -508,182 +508,182 @@ msgstr "&סימון ההודעה כחשובה"
 msgid "Remove Action Item Mark"
 msgstr "הסרת סימון פריט משימה"
 
-#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&סימון ההודעה כפריט משימה"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:698
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&סימון ההודעה כנקראה"
 
-#: standardmailactionmanager.cpp:701
+#: standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark as Read"
 msgstr "סימון כנקראה"
 
-#: standardmailactionmanager.cpp:702 standardmailactionmanager.cpp:703
+#: standardmailactionmanager.cpp:700 standardmailactionmanager.cpp:701
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "סימון ההודעה הנבחרת כנקראה."
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:713
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&סימון ההודעה כלא נקראה"
 
-#: standardmailactionmanager.cpp:716
+#: standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark as Unread"
 msgstr "סימון כלא נקראה"
 
-#: standardmailactionmanager.cpp:717 standardmailactionmanager.cpp:718
+#: standardmailactionmanager.cpp:715 standardmailactionmanager.cpp:716
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "סימון ההודעה הנבחרת כלא נקראה."
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:729
 #, kde-format
 msgid "Mark as Important"
 msgstr "סימון כחשובה"
 
-#: standardmailactionmanager.cpp:732
+#: standardmailactionmanager.cpp:730
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "סימון ההודעות הנבחרות כחשובות."
 
-#: standardmailactionmanager.cpp:745
+#: standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "סימון כפריט משימה"
 
-#: standardmailactionmanager.cpp:746 standardmailactionmanager.cpp:747
+#: standardmailactionmanager.cpp:744 standardmailactionmanager.cpp:745
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "סימון ההודעות הנבחרות כפריטי משימה."
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "סימון &כל ההודעות כנקראו"
 
-#: standardmailactionmanager.cpp:759
+#: standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark All as Read"
 msgstr "סימון הכול כנקראו"
 
-#: standardmailactionmanager.cpp:760 standardmailactionmanager.cpp:761
+#: standardmailactionmanager.cpp:758 standardmailactionmanager.cpp:759
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "סימון כל ההודעות כנקראו."
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:770
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "סימון &כל ההודעות כנקראו בנסיגה"
 
-#: standardmailactionmanager.cpp:773
+#: standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "סימון הכול כנקראו בנסיגה"
 
-#: standardmailactionmanager.cpp:774 standardmailactionmanager.cpp:775
+#: standardmailactionmanager.cpp:772 standardmailactionmanager.cpp:773
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "סימון כל ההודעות כנקראו בנסיגה."
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "סימון &כל ההודעות כלא נקראו"
 
-#: standardmailactionmanager.cpp:787
+#: standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "סימון הכול כלא נקראו"
 
-#: standardmailactionmanager.cpp:788 standardmailactionmanager.cpp:789
+#: standardmailactionmanager.cpp:786 standardmailactionmanager.cpp:787
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "סימון כל ההודעות כלא נקראו."
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "סימון &כל ההודעות כחשובות"
 
-#: standardmailactionmanager.cpp:801
+#: standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark All as Important"
 msgstr "סימון הכול כחשובות"
 
-#: standardmailactionmanager.cpp:802 standardmailactionmanager.cpp:803
+#: standardmailactionmanager.cpp:800 standardmailactionmanager.cpp:801
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "סימון כל ההודעות כחשובות."
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "סימון כל פריטי המשימה"
 
-#: standardmailactionmanager.cpp:814
+#: standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "סימון כל ההודעות כ&פריטי משימה"
 
-#: standardmailactionmanager.cpp:816 standardmailactionmanager.cpp:817
+#: standardmailactionmanager.cpp:814 standardmailactionmanager.cpp:815
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "סימון כל ההודעות כפריטי משימה."
 
-#: standardmailactionmanager.cpp:828
+#: standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move to &Trash"
 msgstr "העברה ל&אשפה"
 
-#: standardmailactionmanager.cpp:830 standardmailactionmanager.cpp:831
+#: standardmailactionmanager.cpp:828 standardmailactionmanager.cpp:829
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "העברת ההודעות הנבחרות לתיקיית האשפה."
 
-#: standardmailactionmanager.cpp:841
+#: standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "העברה של ה&כול לאשפה"
 
-#: standardmailactionmanager.cpp:842 standardmailactionmanager.cpp:843
+#: standardmailactionmanager.cpp:840 standardmailactionmanager.cpp:841
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "העברת כל ההודעות לתיקיית האשפה."
 
-#: standardmailactionmanager.cpp:852
+#: standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "הסרת הודעות &כפולות"
 
-#: standardmailactionmanager.cpp:853 standardmailactionmanager.cpp:854
+#: standardmailactionmanager.cpp:851 standardmailactionmanager.cpp:852
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "הסרת הודעות כפולות."
 
-#: standardmailactionmanager.cpp:864
+#: standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "פינוי כל &תיקיות האשפה"
 
-#: standardmailactionmanager.cpp:865 standardmailactionmanager.cpp:866
+#: standardmailactionmanager.cpp:863 standardmailactionmanager.cpp:864
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "למחוק לצמיתות את כל ההודעות מכל תיקיות האשפה."
 
-#: standardmailactionmanager.cpp:875
+#: standardmailactionmanager.cpp:873
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "&פינוי האשפה"
 
-#: standardmailactionmanager.cpp:876 standardmailactionmanager.cpp:877
+#: standardmailactionmanager.cpp:874 standardmailactionmanager.cpp:875
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "למחוק לצמיתות את כל ההודעות מתיקיית האשפה."

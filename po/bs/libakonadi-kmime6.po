@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdepimlibs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-05 00:46+0000\n"
+"POT-Creation-Date: 2026-10-08 00:46+0000\n"
 "PO-Revision-Date: 2013-10-18 20:27+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr ""
 "Da li ste sigurni da želite isprazniti direktorije sa smećem za sve račune?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:120
 #, fuzzy, kde-format
 #| msgid "Do you really want to delete this folder and all its sub-folders?"
 #| msgid_plural ""
@@ -44,14 +44,14 @@ msgid ""
 msgstr ""
 "Želite li zaista da obrišete %1 direktorij i sve njihove poddirektorije?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:121
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Označi sve kao pročitano"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"
@@ -511,7 +511,7 @@ msgstr "Neuspjelo umetanje"
 msgid "Remove Important Mark"
 msgstr "Ukloni oznaku važnosti"
 
-#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:728
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Označi poruku kao važnu"
@@ -521,185 +521,185 @@ msgstr "&Označi poruku kao važnu"
 msgid "Remove Action Item Mark"
 msgstr "Ukloni oznaku akcijske stavke"
 
-#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Označi poruk kao akcijsku stavku"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:698
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Označi poruku kao pročitanu"
 
-#: standardmailactionmanager.cpp:701
+#: standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark as Read"
 msgstr "Označi pročitanim"
 
-#: standardmailactionmanager.cpp:702 standardmailactionmanager.cpp:703
+#: standardmailactionmanager.cpp:700 standardmailactionmanager.cpp:701
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Označi izabrane poruke kao pročitane"
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:713
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Označi poruku kao nepročitanu"
 
-#: standardmailactionmanager.cpp:716
+#: standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Označi kao nepročitanu"
 
-#: standardmailactionmanager.cpp:717 standardmailactionmanager.cpp:718
+#: standardmailactionmanager.cpp:715 standardmailactionmanager.cpp:716
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Označi izabrane poruke kao nepročitane"
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:729
 #, kde-format
 msgid "Mark as Important"
 msgstr "Označi kao važnu"
 
-#: standardmailactionmanager.cpp:732
+#: standardmailactionmanager.cpp:730
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Označi izabrane poruke kao važne"
 
-#: standardmailactionmanager.cpp:745
+#: standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Označi kao akcijsku stavku"
 
-#: standardmailactionmanager.cpp:746 standardmailactionmanager.cpp:747
+#: standardmailactionmanager.cpp:744 standardmailactionmanager.cpp:745
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Označi izabrane poruke kao akcijske stavke"
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Označi &sve poruke kao pročitane"
 
-#: standardmailactionmanager.cpp:759
+#: standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Označi sve kao pročitano"
 
-#: standardmailactionmanager.cpp:760 standardmailactionmanager.cpp:761
+#: standardmailactionmanager.cpp:758 standardmailactionmanager.cpp:759
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Označi sveporuke kao pročitane"
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:770
 #, fuzzy, kde-format
 #| msgid "Mark &All Messages as Read"
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Označi &sve poruke kao pročitane"
 
-#: standardmailactionmanager.cpp:773
+#: standardmailactionmanager.cpp:771
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgid "Mark All as Read Recursively"
 msgstr "Označi sve kao pročitano"
 
-#: standardmailactionmanager.cpp:774 standardmailactionmanager.cpp:775
+#: standardmailactionmanager.cpp:772 standardmailactionmanager.cpp:773
 #, fuzzy, kde-format
 #| msgid "Mark all messages as read."
 msgid "Mark all messages as read recursively."
 msgstr "Označi sveporuke kao pročitane"
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Označi &sve poruke kao nepročitane"
 
-#: standardmailactionmanager.cpp:787
+#: standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Označi sve kao nepročitano"
 
-#: standardmailactionmanager.cpp:788 standardmailactionmanager.cpp:789
+#: standardmailactionmanager.cpp:786 standardmailactionmanager.cpp:787
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Označi sve poruke kao nepročitane"
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Označi &sve poruke kao važne"
 
-#: standardmailactionmanager.cpp:801
+#: standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Označi sve kao važno"
 
-#: standardmailactionmanager.cpp:802 standardmailactionmanager.cpp:803
+#: standardmailactionmanager.cpp:800 standardmailactionmanager.cpp:801
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Označi &sve poruke kao važne"
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Označi sve kao akcijsku stavku"
 
-#: standardmailactionmanager.cpp:814
+#: standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Označi &sve poruke kao akcijske stavke"
 
-#: standardmailactionmanager.cpp:816 standardmailactionmanager.cpp:817
+#: standardmailactionmanager.cpp:814 standardmailactionmanager.cpp:815
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Označi sve poruke kao akcijske stavke"
 
-#: standardmailactionmanager.cpp:828
+#: standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Premjes&ti u smeće"
 
-#: standardmailactionmanager.cpp:830 standardmailactionmanager.cpp:831
+#: standardmailactionmanager.cpp:828 standardmailactionmanager.cpp:829
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Premjesti odabrane poruke u fasciklu smeća"
 
-#: standardmailactionmanager.cpp:841
+#: standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Premjes&ti sve u smeće"
 
-#: standardmailactionmanager.cpp:842 standardmailactionmanager.cpp:843
+#: standardmailactionmanager.cpp:840 standardmailactionmanager.cpp:841
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Premjesti sve poruke u fasciklu smeća"
 
-#: standardmailactionmanager.cpp:852
+#: standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Ukloni &duple poruke"
 
-#: standardmailactionmanager.cpp:853 standardmailactionmanager.cpp:854
+#: standardmailactionmanager.cpp:851 standardmailactionmanager.cpp:852
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Ukloni duple poruke"
 
-#: standardmailactionmanager.cpp:864
+#: standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Sa&bij sve fascikle"
 
-#: standardmailactionmanager.cpp:865 standardmailactionmanager.cpp:866
+#: standardmailactionmanager.cpp:863 standardmailactionmanager.cpp:864
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Trajno obriši sve poruke iz fascikli s smećem"
 
-#: standardmailactionmanager.cpp:875
+#: standardmailactionmanager.cpp:873
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "&Isprazni smeće"
 
-#: standardmailactionmanager.cpp:876 standardmailactionmanager.cpp:877
+#: standardmailactionmanager.cpp:874 standardmailactionmanager.cpp:875
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Trajno obriši sve poruke iz fascikle s smećem."

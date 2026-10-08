@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-05 00:46+0000\n"
+"POT-Creation-Date: 2026-10-08 00:46+0000\n"
 "PO-Revision-Date: 2024-12-15 19:32+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
@@ -30,7 +30,7 @@ msgstr "कचरा खाली करें"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "क्या आप वाकई सभी खातों के ट्रैश फ़ोल्डर खाली करना चाहते हैं?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:120
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -38,13 +38,13 @@ msgid ""
 msgstr ""
 "क्या आप वाकई इस फ़ोल्डर और इसके सभी सबफ़ोल्डर्स के सभी संदेशों को चिह्नित करना चाहते हैं?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:121
 #, kde-format
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "सभी को पुनरावर्ती रूप से चिह्नित करें"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:122
 #, kde-format
 msgctxt "@action:button"
 msgid "Mark All"
@@ -470,7 +470,7 @@ msgstr "पेस्ट करना विफल"
 msgid "Remove Important Mark"
 msgstr "महत्वपूर्ण चिह्न हटाएं"
 
-#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:728
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "संदेश को महत्वपूर्ण के रूप में चिह्नित करें"
@@ -480,182 +480,182 @@ msgstr "संदेश को महत्वपूर्ण के रूप �
 msgid "Remove Action Item Mark"
 msgstr "कार्रवाई आइटम चिह्न हटाएँ"
 
-#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "संदेश को कार्रवाई आइटम के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:698
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "संदेश को पढ़ा हुआ चिह्नित करें"
 
-#: standardmailactionmanager.cpp:701
+#: standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark as Read"
 msgstr "पढ़े हुए का चिह्न"
 
-#: standardmailactionmanager.cpp:702 standardmailactionmanager.cpp:703
+#: standardmailactionmanager.cpp:700 standardmailactionmanager.cpp:701
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "चयनित संदेशों को पढ़ा हुआ चिह्नित करें."
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:713
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "संदेश को अपठित के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:716
+#: standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark as Unread"
 msgstr "अपठित के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:717 standardmailactionmanager.cpp:718
+#: standardmailactionmanager.cpp:715 standardmailactionmanager.cpp:716
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "चयनित संदेशों को अपठित के रूप में चिह्नित करें."
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:729
 #, kde-format
 msgid "Mark as Important"
 msgstr "महत्वपूर्ण के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:732
+#: standardmailactionmanager.cpp:730
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "चयनित संदेशों को महत्वपूर्ण के रूप में चिह्नित करें."
 
-#: standardmailactionmanager.cpp:745
+#: standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "कार्रवाई आइटम के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:746 standardmailactionmanager.cpp:747
+#: standardmailactionmanager.cpp:744 standardmailactionmanager.cpp:745
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "चयनित संदेशों को कार्रवाई आइटम के रूप में चिह्नित करें."
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "सभी संदेशों को पढ़ा हुआ चिह्नित करें"
 
-#: standardmailactionmanager.cpp:759
+#: standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark All as Read"
 msgstr "सभी को पढ़ा हुआ मार्क करें"
 
-#: standardmailactionmanager.cpp:760 standardmailactionmanager.cpp:761
+#: standardmailactionmanager.cpp:758 standardmailactionmanager.cpp:759
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "सभी संदेशों को पढ़ा हुआ चिह्नित करें."
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:770
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "सभी संदेशों को पुनरावर्ती रूप से पढ़ा हुआ चिह्नित करें"
 
-#: standardmailactionmanager.cpp:773
+#: standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "सभी को पुनरावर्ती रूप से पढ़ा हुआ चिह्नित करें"
 
-#: standardmailactionmanager.cpp:774 standardmailactionmanager.cpp:775
+#: standardmailactionmanager.cpp:772 standardmailactionmanager.cpp:773
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "सभी संदेशों को पुनरावर्ती रूप से पढ़ा हुआ चिह्नित करें।"
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "सभी संदेशों को अपठित के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:787
+#: standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "सभी को अपठित के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:788 standardmailactionmanager.cpp:789
+#: standardmailactionmanager.cpp:786 standardmailactionmanager.cpp:787
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "सभी संदेशों को अपठित के रूप में चिह्नित करें."
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "सभी संदेशों को महत्वपूर्ण के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:801
+#: standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark All as Important"
 msgstr "सभी को महत्वपूर्ण के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:802 standardmailactionmanager.cpp:803
+#: standardmailactionmanager.cpp:800 standardmailactionmanager.cpp:801
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "सभी संदेशों को महत्वपूर्ण के रूप में चिह्नित करें."
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "सभी को कार्रवाई आइटम के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:814
+#: standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "सभी संदेशों को कार्रवाई आइटम के रूप में चिह्नित करें"
 
-#: standardmailactionmanager.cpp:816 standardmailactionmanager.cpp:817
+#: standardmailactionmanager.cpp:814 standardmailactionmanager.cpp:815
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "सभी संदेशों को कार्रवाई आइटम के रूप में चिह्नित करें."
 
-#: standardmailactionmanager.cpp:828
+#: standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move to &Trash"
 msgstr "ट्रैश में ले जाएं"
 
-#: standardmailactionmanager.cpp:830 standardmailactionmanager.cpp:831
+#: standardmailactionmanager.cpp:828 standardmailactionmanager.cpp:829
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "चयनित संदेशों को ट्रैश फ़ोल्डर में ले जाएं."
 
-#: standardmailactionmanager.cpp:841
+#: standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "सभी को &Trash में ले जाएं"
 
-#: standardmailactionmanager.cpp:842 standardmailactionmanager.cpp:843
+#: standardmailactionmanager.cpp:840 standardmailactionmanager.cpp:841
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "सभी संदेशों को ट्रैश फ़ोल्डर में ले जाएं."
 
-#: standardmailactionmanager.cpp:852
+#: standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "संदेश हटाएं &डुप्लिकेट करें"
 
-#: standardmailactionmanager.cpp:853 standardmailactionmanager.cpp:854
+#: standardmailactionmanager.cpp:851 standardmailactionmanager.cpp:852
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "डुप्लिकेट संदेश हटाएँ."
 
-#: standardmailactionmanager.cpp:864
+#: standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "सभी &Trash फ़ोल्डर खाली करें"
 
-#: standardmailactionmanager.cpp:865 standardmailactionmanager.cpp:866
+#: standardmailactionmanager.cpp:863 standardmailactionmanager.cpp:864
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "सभी ट्रैश फ़ोल्डरों से सभी संदेशों को स्थायी रूप से हटाएँ।"
 
-#: standardmailactionmanager.cpp:875
+#: standardmailactionmanager.cpp:873
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "कचरा खाली करें"
 
-#: standardmailactionmanager.cpp:876 standardmailactionmanager.cpp:877
+#: standardmailactionmanager.cpp:874 standardmailactionmanager.cpp:875
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "ट्रैश फ़ोल्डर से सभी संदेशों को स्थायी रूप से हटाएँ."

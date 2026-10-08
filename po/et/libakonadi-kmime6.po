@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-09-05 00:46+0000\n"
+"POT-Creation-Date: 2026-10-08 00:46+0000\n"
 "PO-Revision-Date: 2020-03-31 10:41+0300\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -29,7 +29,7 @@ msgstr "Tühjenda prügikast"
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Kas tõesti tühjendada kõigi kontode prügikastid?"
 
-#: markascommand.cpp:121
+#: markascommand.cpp:120
 #, kde-format
 msgid ""
 "Are you sure you want to mark all messages in this folder and all its "
@@ -37,14 +37,14 @@ msgid ""
 msgstr ""
 "Kas tõesti märkida kõik selle kausta ja kõigi selle alamkaustade kirjad?"
 
-#: markascommand.cpp:122
+#: markascommand.cpp:121
 #, fuzzy, kde-format
 #| msgid "Mark All Recursively"
 msgctxt "@title:window"
 msgid "Mark All Recursively"
 msgstr "Märgi kõik rekursiivselt"
 
-#: markascommand.cpp:123
+#: markascommand.cpp:122
 #, fuzzy, kde-format
 #| msgid "Mark All as Read"
 msgctxt "@action:button"
@@ -480,7 +480,7 @@ msgstr "Asetamine nurjus"
 msgid "Remove Important Mark"
 msgstr "Eemalda tähtsa kirja märge"
 
-#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:728
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Märgi kiri tähtsaks"
@@ -490,182 +490,182 @@ msgstr "&Märgi kiri tähtsaks"
 msgid "Remove Action Item Mark"
 msgstr "Eemalda ülesande märge"
 
-#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:744
+#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Märgi kiri ülesandeks"
 
-#: standardmailactionmanager.cpp:700
+#: standardmailactionmanager.cpp:698
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Märgi kiri loetuks"
 
-#: standardmailactionmanager.cpp:701
+#: standardmailactionmanager.cpp:699
 #, kde-format
 msgid "Mark as Read"
 msgstr "Märgi loetud kirjaks"
 
-#: standardmailactionmanager.cpp:702 standardmailactionmanager.cpp:703
+#: standardmailactionmanager.cpp:700 standardmailactionmanager.cpp:701
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Valitud kirjade märkimine loetuks."
 
-#: standardmailactionmanager.cpp:715
+#: standardmailactionmanager.cpp:713
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Märgi kiri lugemata kirjaks"
 
-#: standardmailactionmanager.cpp:716
+#: standardmailactionmanager.cpp:714
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Märgi lugemata kirjaks"
 
-#: standardmailactionmanager.cpp:717 standardmailactionmanager.cpp:718
+#: standardmailactionmanager.cpp:715 standardmailactionmanager.cpp:716
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Valitud kirjade märkimine lugemata kirjadeks."
 
-#: standardmailactionmanager.cpp:731
+#: standardmailactionmanager.cpp:729
 #, kde-format
 msgid "Mark as Important"
 msgstr "Märgi tähtsaks"
 
-#: standardmailactionmanager.cpp:732
+#: standardmailactionmanager.cpp:730
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Valitud kirjade märkimine tähtsaks."
 
-#: standardmailactionmanager.cpp:745
+#: standardmailactionmanager.cpp:743
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Märgi ülesandeks"
 
-#: standardmailactionmanager.cpp:746 standardmailactionmanager.cpp:747
+#: standardmailactionmanager.cpp:744 standardmailactionmanager.cpp:745
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Valitud kirjade märkimine ülesandeks."
 
-#: standardmailactionmanager.cpp:758
+#: standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Mä&rgi kõik kirjad loetuks"
 
-#: standardmailactionmanager.cpp:759
+#: standardmailactionmanager.cpp:757
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Märgi kõik kui loetud"
 
-#: standardmailactionmanager.cpp:760 standardmailactionmanager.cpp:761
+#: standardmailactionmanager.cpp:758 standardmailactionmanager.cpp:759
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Kõigi kirjade märkimine loetuks."
 
-#: standardmailactionmanager.cpp:772
+#: standardmailactionmanager.cpp:770
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Mä&rgi kõik kirjad rekursiivselt loetuks"
 
-#: standardmailactionmanager.cpp:773
+#: standardmailactionmanager.cpp:771
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Märgi kõik rekursiivselt kui loetud"
 
-#: standardmailactionmanager.cpp:774 standardmailactionmanager.cpp:775
+#: standardmailactionmanager.cpp:772 standardmailactionmanager.cpp:773
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Kõigi kirjade rekursiivne märkimine loetuks."
 
-#: standardmailactionmanager.cpp:786
+#: standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Märg&i kõik lugemata kirjadeks"
 
-#: standardmailactionmanager.cpp:787
+#: standardmailactionmanager.cpp:785
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Märgi kõik kui lugemata"
 
-#: standardmailactionmanager.cpp:788 standardmailactionmanager.cpp:789
+#: standardmailactionmanager.cpp:786 standardmailactionmanager.cpp:787
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Kõigi kirjade märkimine lugemata kirjadeks."
 
-#: standardmailactionmanager.cpp:800
+#: standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Mä&rgi kõik kirjad tähtsaks"
 
-#: standardmailactionmanager.cpp:801
+#: standardmailactionmanager.cpp:799
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Märgi kõik tähtsaks"
 
-#: standardmailactionmanager.cpp:802 standardmailactionmanager.cpp:803
+#: standardmailactionmanager.cpp:800 standardmailactionmanager.cpp:801
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Kõigi kirjade märkimine tähtsaks."
 
-#: standardmailactionmanager.cpp:813
+#: standardmailactionmanager.cpp:811
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Märgi kõik ülesandeks"
 
-#: standardmailactionmanager.cpp:814
+#: standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Mä&rgi kõik kirjad ülesandeks"
 
-#: standardmailactionmanager.cpp:816 standardmailactionmanager.cpp:817
+#: standardmailactionmanager.cpp:814 standardmailactionmanager.cpp:815
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Kõigi kirjade märkimine ülesandeks."
 
-#: standardmailactionmanager.cpp:828
+#: standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Viska &prügikasti"
 
-#: standardmailactionmanager.cpp:830 standardmailactionmanager.cpp:831
+#: standardmailactionmanager.cpp:828 standardmailactionmanager.cpp:829
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Valitud kirjade viskamine prügikasti."
 
-#: standardmailactionmanager.cpp:841
+#: standardmailactionmanager.cpp:839
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Viska kõik &prügikasti"
 
-#: standardmailactionmanager.cpp:842 standardmailactionmanager.cpp:843
+#: standardmailactionmanager.cpp:840 standardmailactionmanager.cpp:841
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Kõigi kirjade viskamine prügikasti."
 
-#: standardmailactionmanager.cpp:852
+#: standardmailactionmanager.cpp:850
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Eemal&da topeltkirjad"
 
-#: standardmailactionmanager.cpp:853 standardmailactionmanager.cpp:854
+#: standardmailactionmanager.cpp:851 standardmailactionmanager.cpp:852
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Topeltkirjade eemaldamine."
 
-#: standardmailactionmanager.cpp:864
+#: standardmailactionmanager.cpp:862
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Tüh&jenda kõik prügikastid"
 
-#: standardmailactionmanager.cpp:865 standardmailactionmanager.cpp:866
+#: standardmailactionmanager.cpp:863 standardmailactionmanager.cpp:864
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Kõigi kirjade jäädav kustutamine kõigist prügikastidest."
 
-#: standardmailactionmanager.cpp:875
+#: standardmailactionmanager.cpp:873
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Tühjenda &prügikast"
 
-#: standardmailactionmanager.cpp:876 standardmailactionmanager.cpp:877
+#: standardmailactionmanager.cpp:874 standardmailactionmanager.cpp:875
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Kõigi kirjade jäädav kustutamine prügikastist."
