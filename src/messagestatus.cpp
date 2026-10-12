@@ -57,11 +57,6 @@ Akonadi::MessageStatus::MessageStatus()
     mStatus = StatusUnknown;
 }
 
-bool Akonadi::MessageStatus::operator==(Akonadi::MessageStatus other) const
-{
-    return mStatus == other.mStatus;
-}
-
 bool Akonadi::MessageStatus::operator!=(Akonadi::MessageStatus other) const
 {
     return mStatus != other.mStatus;

@@ -69,7 +69,7 @@ public:
         Returns true if the stati are equal, false if different.
         \a other message status to compare with current object
     */
-    bool operator==(MessageStatus other) const;
+    bool operator==(const MessageStatus &other) const = default;
 
     /*! Compare the status with that from another instance.
         Returns true if the stati are equal, false if different.
