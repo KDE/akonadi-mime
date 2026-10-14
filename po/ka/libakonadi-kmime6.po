@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-05-19 00:45+0000\n"
-"PO-Revision-Date: 2024-11-16 05:50+0100\n"
+"PO-Revision-Date: 2026-10-13 14:58+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.9\n"
 
 #: emptytrashcommand.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
-msgstr "ნაგვის დაცარიელება"
+msgstr "ნაგვის ყუთის დაცარიელება"
 
 #: emptytrashcommand.cpp:47
 #, kde-format
@@ -159,7 +159,7 @@ msgstr "გაგზავნილი ელფოსტა"
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
-msgstr "ნაგავი"
+msgstr "ნაგვის ყუთი"
 
 #: specialmailcollections.cpp:134
 #, kde-format
@@ -615,7 +615,7 @@ msgstr "ყველას ქმედების ჩანაწერად 
 #: standardmailactionmanager.cpp:832
 #, kde-format
 msgid "Move to &Trash"
-msgstr "სანაგვე ყუთში გადა&ტანა"
+msgstr "ნაგვის ყუთში გადა&ტანა"
 
 #: standardmailactionmanager.cpp:834 standardmailactionmanager.cpp:835
 #, kde-format
