@@ -48,7 +48,7 @@ void RaceTest::testMultipleProcesses_data()
     QTest::newRow("2-longdelay") << 2 << 1000;
     QTest::newRow("5-longdelay") << 5 << 1000;
     QTest::newRow("5-verylongdelay") << 5 << 4000;
-    Q_ASSERT(10 <= MAXCOUNT);
+    static_assert(10 <= MAXCOUNT);
 }
 
 void RaceTest::testMultipleProcesses()
