@@ -6,12 +6,7 @@
 
 #pragma once
 
-#include "akonadi-mime_export.h"
 #include "filteractionjob_p.h"
-#include "transportattribute.h"
-
-#include <Akonadi/ItemFetchScope>
-#include <Akonadi/Job>
 
 namespace Akonadi
 {

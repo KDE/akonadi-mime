@@ -9,6 +9,7 @@
 #pragma once
 
 #include "akonadi-mime_export.h"
+#include <QByteArray>
 #include <QMetaType>
 #include <QSet>
 

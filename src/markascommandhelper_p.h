@@ -10,6 +10,7 @@
 #include "commandbase.h"
 #include <Akonadi/Item>
 #include <QObject>
+class KJob;
 namespace Akonadi
 {
 /*!

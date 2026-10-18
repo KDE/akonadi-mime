@@ -11,10 +11,10 @@
 
 #include "akonadi_mime_debug.h"
 
-#include "transportattribute.h"
 #include <Akonadi/AgentManager>
 #include <Akonadi/Collection>
 #include <Akonadi/SpecialMailCollections>
+#include <KJob>
 
 using namespace Akonadi;
 

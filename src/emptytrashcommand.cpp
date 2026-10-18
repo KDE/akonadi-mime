@@ -18,6 +18,7 @@
 #include <Akonadi/EntityTreeModel>
 #include <Akonadi/ItemDeleteJob>
 #include <KMime/Message>
+#include <QScopedPointer>
 using namespace Akonadi;
 EmptyTrashCommand::EmptyTrashCommand(const QAbstractItemModel *model, QObject *parent)
     : CommandBase(parent)

@@ -9,7 +9,9 @@
 #include "akonadi_mime_debug.h"
 #include "dispatchmodeattribute.h"
 #include "errorattribute.h"
+#include "transportattribute.h"
 
+#include <Akonadi/ItemFetchScope>
 #include <Akonadi/ItemModifyJob>
 #include <Akonadi/MessageFlags>
 

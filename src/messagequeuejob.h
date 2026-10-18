@@ -13,8 +13,6 @@
 #include <Akonadi/SentBehaviourAttribute>
 #include <Akonadi/TransportAttribute>
 
-#include <QStringList>
-
 #include <KCompositeJob>
 
 #include <Akonadi/AddressAttribute>

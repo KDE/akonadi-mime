@@ -7,9 +7,10 @@
 
 #pragma once
 
+#include <QString>
+
 class OrgKdeAkonadiImapSettingsInterface;
 class KJob;
-class QString;
 #define IMAP_RESOURCE_IDENTIFIER QStringLiteral("akonadi_imap_resource")
 
 namespace Util

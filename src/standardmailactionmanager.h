@@ -18,12 +18,13 @@
 
 class QAction;
 class KActionCollection;
+class KLocalizedString;
 class QItemSelectionModel;
 class QWidget;
 
 namespace Akonadi
 {
-class Item;
+class FavoriteCollectionsModel;
 class StandardMailActionManagerPrivate;
 
 /*!

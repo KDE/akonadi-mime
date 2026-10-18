@@ -8,7 +8,6 @@
 
 #include <QByteArray>
 #include <QDataStream>
-#include <QIODevice>
 namespace Akonadi
 {
 class Pop3ResourceAttributePrivate
@@ -40,7 +39,7 @@ QByteArray Pop3ResourceAttribute::type() const
 QByteArray Pop3ResourceAttribute::serialized() const
 {
     QByteArray result;
-    QDataStream s(&result, QIODevice::WriteOnly);
+    QDataStream s(&result, QIODeviceBase::WriteOnly);
     s << pop3AccountName();
     return result;
 }

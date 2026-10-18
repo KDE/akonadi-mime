@@ -6,8 +6,6 @@
 
 #include "messagequeuejob.h"
 
-#include "transportattribute.h"
-
 #include "akonadi_mime_debug.h"
 #include <KLocalizedString>
 

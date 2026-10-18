@@ -13,6 +13,7 @@
 #include <Akonadi/Collection>
 #include <QPointer>
 class QAbstractItemModel;
+class QWidget;
 namespace Akonadi
 {
 class EmptyTrashCommand : public CommandBase

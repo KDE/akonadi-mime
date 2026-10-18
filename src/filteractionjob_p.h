@@ -15,9 +15,7 @@
 
 namespace Akonadi
 {
-class Collection;
 class ItemFetchScope;
-class Job;
 
 class FilterActionJob;
 

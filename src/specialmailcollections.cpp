@@ -8,7 +8,6 @@
 #include "akonadi_mime_debug.h"
 #include "specialmailcollectionssettings.h"
 
-#include <Akonadi/AgentInstance>
 #include <Akonadi/CollectionModifyJob>
 #include <Akonadi/EntityDisplayAttribute>
 #include <Akonadi/ServerManager>

@@ -10,6 +10,8 @@
 
 #include <Akonadi/SpecialCollections>
 
+class KJob;
+
 namespace Akonadi
 {
 class SpecialMailCollectionsPrivate;

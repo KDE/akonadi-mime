@@ -8,9 +8,9 @@
 
 #include "specialmailcollections.h"
 #include "specialmailcollectionsrequestjob.h"
-#include <Akonadi/Collection>
 #include <Akonadi/Control>
 #include <KAboutData>
+#include <KJob>
 #include <KLocalizedString>
 #include <QApplication>
 #include <QCommandLineParser>

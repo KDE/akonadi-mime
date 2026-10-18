@@ -8,6 +8,7 @@
 
 #include <QMutex>
 #include <QObject>
+#include <QSet>
 
 #include <Akonadi/GidExtractorInterface>
 #include <Akonadi/ItemSerializerPlugin>

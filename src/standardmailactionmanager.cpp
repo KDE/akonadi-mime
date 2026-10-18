@@ -18,15 +18,7 @@
 #include "specialmailcollections.h"
 #include "util_p.h"
 
-#include <Akonadi/AgentFilterProxyModel>
-#include <Akonadi/AgentInstance>
-#include <Akonadi/AgentInstanceCreateJob>
-#include <Akonadi/AgentManager>
-#include <Akonadi/AgentTypeDialog>
 #include <Akonadi/CollectionStatistics>
-#include <Akonadi/EntityTreeModel>
-#include <Akonadi/MimeTypeChecker>
-#include <Akonadi/SubscriptionDialog>
 
 #include <KMime/Message>
 
@@ -35,7 +27,12 @@
 
 #include <KLocalizedString>
 
+#include <KJob>
+#include <QHash>
+#include <QIcon>
 #include <QItemSelectionModel>
+#include <QKeySequence>
+#include <QSet>
 
 using namespace Akonadi;
 

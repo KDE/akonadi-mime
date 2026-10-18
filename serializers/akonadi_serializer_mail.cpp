@@ -9,13 +9,15 @@
 #include "messageparts.h"
 
 #include <QDataStream>
+#include <QDateTime>
 #include <QIODevice>
-#include <qplugin.h>
 
 #include <KMime/Message>
 
 #include <Akonadi/Item>
 #include <private/imapparser_p.h>
+
+#include <optional>
 
 using namespace Akonadi;
 using namespace KMime;

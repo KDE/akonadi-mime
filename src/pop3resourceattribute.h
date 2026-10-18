@@ -8,6 +8,7 @@
 
 #include "akonadi-mime_export.h"
 #include <Akonadi/Attribute>
+#include <QString>
 
 #include <memory>
 

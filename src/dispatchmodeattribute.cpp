@@ -8,8 +8,6 @@
 
 #include "akonadi_mime_debug.h"
 
-#include <Akonadi/AttributeFactory>
-
 using namespace Akonadi;
 
 class Akonadi::DispatchModeAttributePrivate

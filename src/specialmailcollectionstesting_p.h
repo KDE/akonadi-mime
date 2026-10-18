@@ -7,7 +7,7 @@
 #pragma once
 
 #include "akonadi-mimeprivate_export.h"
-#include "specialmailcollections.h"
+#include <QString>
 
 namespace Akonadi
 {
