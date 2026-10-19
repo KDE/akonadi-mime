@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-08 00:46+0000\n"
+"POT-Creation-Date: 2026-10-19 00:47+0000\n"
 "PO-Revision-Date: 2024-11-16 07:07+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -22,13 +22,13 @@ msgstr ""
 "Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "X-Generator: Poedit 3.5\n"
 
-#: emptytrashcommand.cpp:45
+#: emptytrashcommand.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Izprazni smeti"
 
-#: emptytrashcommand.cpp:46
+#: emptytrashcommand.cpp:47
 #, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Ali res želite izprazniti mape s smetmi za vse račune?"
@@ -109,17 +109,17 @@ msgctxt "@label No size available"
 msgid "-"
 msgstr "–"
 
-#: messagequeuejob.cpp:58
+#: messagequeuejob.cpp:56
 #, kde-format
 msgid "Empty message."
 msgstr "Prazno sporočilo."
 
-#: messagequeuejob.cpp:65
+#: messagequeuejob.cpp:63
 #, kde-format
 msgid "Message has no recipients."
 msgstr "Sporočilo nima naslovnikov."
 
-#: messagequeuejob.cpp:72
+#: messagequeuejob.cpp:70
 #, kde-format
 msgid "Message has invalid sent-mail folder."
 msgstr "Sporočilo ima neveljavno mapo poslanih sporočil."
@@ -139,43 +139,43 @@ msgstr "Iskanje dvojnikov ……"
 msgid "Removing duplicates…"
 msgstr "Odstranjevanje dvojnikov…"
 
-#: specialmailcollections.cpp:122
+#: specialmailcollections.cpp:121
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "prispelo"
 
-#: specialmailcollections.cpp:125
+#: specialmailcollections.cpp:124
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "oddano"
 
-#: specialmailcollections.cpp:128
+#: specialmailcollections.cpp:127
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "poslana pošta"
 
-#: specialmailcollections.cpp:131
+#: specialmailcollections.cpp:130
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "smeti"
 
-#: specialmailcollections.cpp:134
+#: specialmailcollections.cpp:133
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "osnutki"
 
-#: specialmailcollections.cpp:137
+#: specialmailcollections.cpp:136
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
 msgstr "predloge"
 
-#: specialmailcollections.cpp:140
+#: specialmailcollections.cpp:139
 #, kde-format
 msgctxt "local mail folder"
 msgid "spam"
@@ -187,33 +187,33 @@ msgctxt "local mail folder"
 msgid "Local Folders"
 msgstr "Krajevne mape"
 
-#: standardmailactionmanager.cpp:118
+#: standardmailactionmanager.cpp:115
 #, kde-format
 msgid "Add Folder…"
 msgstr "Dodaj mapo…"
 
-#: standardmailactionmanager.cpp:119 standardmailactionmanager.cpp:120
+#: standardmailactionmanager.cpp:116 standardmailactionmanager.cpp:117
 #, kde-format
 msgid "Add a new folder to the currently selected account."
 msgstr "Trenutno izbranemu računu dodaj novo mapo."
 
-#: standardmailactionmanager.cpp:122
+#: standardmailactionmanager.cpp:119
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Nova mapa"
 
-#: standardmailactionmanager.cpp:126
+#: standardmailactionmanager.cpp:123
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Ni bilo mogoče ustvariti mape: %1"
 
-#: standardmailactionmanager.cpp:128
+#: standardmailactionmanager.cpp:125
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Ustvarjanje mape ni uspelo"
 
-#: standardmailactionmanager.cpp:132
+#: standardmailactionmanager.cpp:129
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
@@ -222,18 +222,18 @@ msgstr[1] "Kopiraj %1 mapo"
 msgstr[2] "Kopiraj %1 mapi"
 msgstr[3] "Kopiraj %1 mape"
 
-#: standardmailactionmanager.cpp:133 standardmailactionmanager.cpp:134
+#: standardmailactionmanager.cpp:130 standardmailactionmanager.cpp:131
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
 msgstr "Kopiraj izbrane mape na odložišče."
 
-#: standardmailactionmanager.cpp:137
+#: standardmailactionmanager.cpp:134
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "Lastnosti mape %1"
 
-#: standardmailactionmanager.cpp:140
+#: standardmailactionmanager.cpp:137
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
@@ -242,12 +242,12 @@ msgstr[1] "Izbriši %1 mapo"
 msgstr[2] "Izbriši %1 mapi"
 msgstr[3] "Izbriši %1 mape"
 
-#: standardmailactionmanager.cpp:141 standardmailactionmanager.cpp:142
+#: standardmailactionmanager.cpp:138 standardmailactionmanager.cpp:139
 #, kde-format
 msgid "Delete the selected folders from the account."
 msgstr "Izbriši izbrane mape iz računa."
 
-#: standardmailactionmanager.cpp:145
+#: standardmailactionmanager.cpp:142
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
@@ -257,7 +257,7 @@ msgstr[1] "Ali resnično želite izbrisati %1 mapo in vse podmape?"
 msgstr[2] "Ali resnično želite izbrisati %1 mapi in vse podmape?"
 msgstr[3] "Ali resnično želite izbrisati %1 mape in vse podmape?"
 
-#: standardmailactionmanager.cpp:150
+#: standardmailactionmanager.cpp:147
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
@@ -267,17 +267,17 @@ msgstr[1] "Izbrišem mapo?"
 msgstr[2] "Izbrišem mapi?"
 msgstr[3] "Izbrišem mape?"
 
-#: standardmailactionmanager.cpp:154
+#: standardmailactionmanager.cpp:151
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr "Ni bilo mogoče izbrisati mape: %1"
 
-#: standardmailactionmanager.cpp:158
+#: standardmailactionmanager.cpp:155
 #, kde-format
 msgid "Folder deletion failed"
 msgstr "Brisanje mape ni uspelo"
 
-#: standardmailactionmanager.cpp:162
+#: standardmailactionmanager.cpp:159
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
@@ -286,12 +286,12 @@ msgstr[1] "Posodobi mapo"
 msgstr[2] "Posodobi mapi"
 msgstr[3] "Posodobi mape"
 
-#: standardmailactionmanager.cpp:164 standardmailactionmanager.cpp:165
+#: standardmailactionmanager.cpp:161 standardmailactionmanager.cpp:162
 #, kde-format
 msgid "Update the contents of the selected folders."
 msgstr "Posodobi vsebino izbranih map."
 
-#: standardmailactionmanager.cpp:168
+#: standardmailactionmanager.cpp:165
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
@@ -300,22 +300,22 @@ msgstr[1] "Izreži %1 mapo"
 msgstr[2] "Izreži %1 mapi"
 msgstr[3] "Izreži %1 mape"
 
-#: standardmailactionmanager.cpp:169 standardmailactionmanager.cpp:170
+#: standardmailactionmanager.cpp:166 standardmailactionmanager.cpp:167
 #, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "Izreži izbrane mape iz računa."
 
-#: standardmailactionmanager.cpp:173
+#: standardmailactionmanager.cpp:170
 #, kde-format
 msgid "Folder Properties"
 msgstr "Lastnosti mape"
 
-#: standardmailactionmanager.cpp:175 standardmailactionmanager.cpp:177
+#: standardmailactionmanager.cpp:172 standardmailactionmanager.cpp:174
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr "Odpri pogovorno okno za urejanje lastnosti izbrane mape."
 
-#: standardmailactionmanager.cpp:180
+#: standardmailactionmanager.cpp:177
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
@@ -324,12 +324,12 @@ msgstr[1] "Kopiraj %1 sporočilo"
 msgstr[2] "Kopiraj %1 sporočili"
 msgstr[3] "Kopiraj %1 sporočila"
 
-#: standardmailactionmanager.cpp:181 standardmailactionmanager.cpp:182
+#: standardmailactionmanager.cpp:178 standardmailactionmanager.cpp:179
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
 msgstr "Kopiraj izbrana sporočila na odložišče."
 
-#: standardmailactionmanager.cpp:185
+#: standardmailactionmanager.cpp:182
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
@@ -338,12 +338,12 @@ msgstr[1] "Izbriši %1 sporočilo"
 msgstr[2] "Izbriši %1 sporočili"
 msgstr[3] "Izbriši %1 sporočila"
 
-#: standardmailactionmanager.cpp:186 standardmailactionmanager.cpp:187
+#: standardmailactionmanager.cpp:183 standardmailactionmanager.cpp:184
 #, kde-format
 msgid "Delete the selected messages from the folder."
 msgstr "Izbriši izbrana sporočila iz mape."
 
-#: standardmailactionmanager.cpp:190
+#: standardmailactionmanager.cpp:187
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
@@ -352,7 +352,7 @@ msgstr[1] "Ali resnično želite izbrisati %1 sporočilo?"
 msgstr[2] "Ali resnično želite izbrisati %1 sporočili?"
 msgstr[3] "Ali resnično želite izbrisati %1 sporočila?"
 
-#: standardmailactionmanager.cpp:194
+#: standardmailactionmanager.cpp:191
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
@@ -362,17 +362,17 @@ msgstr[1] "Izbrišem sporočilo?"
 msgstr[2] "Izbrišem sporočili?"
 msgstr[3] "Izbrišem sporočila?"
 
-#: standardmailactionmanager.cpp:196
+#: standardmailactionmanager.cpp:193
 #, kde-format
 msgid "Could not delete message: %1"
 msgstr "Ni bilo mogoče izbrisati sporočila: %1"
 
-#: standardmailactionmanager.cpp:198
+#: standardmailactionmanager.cpp:195
 #, kde-format
 msgid "Message deletion failed"
 msgstr "Brisanje sporočil ni uspelo"
 
-#: standardmailactionmanager.cpp:201
+#: standardmailactionmanager.cpp:198
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -381,17 +381,17 @@ msgstr[1] "Izreži %1 sporočilo"
 msgstr[2] "Izreži %1 sporočili"
 msgstr[3] "Izreži %1 sporočila"
 
-#: standardmailactionmanager.cpp:202 standardmailactionmanager.cpp:203
+#: standardmailactionmanager.cpp:199 standardmailactionmanager.cpp:200
 #, kde-format
 msgid "Cut the selected message from the folder."
 msgstr "Izreži izbrana sporočila iz mape."
 
-#: standardmailactionmanager.cpp:206
+#: standardmailactionmanager.cpp:203
 #, kde-format
 msgid "Add &Account…"
 msgstr "Dod&aj račun…"
 
-#: standardmailactionmanager.cpp:208
+#: standardmailactionmanager.cpp:205
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
@@ -400,23 +400,23 @@ msgstr ""
 "Dodaj nov račun<p>Odprlo se bo pogovorno okno, kjer boste lahko izbrali "
 "vrsto dodanega računa.</p>"
 
-#: standardmailactionmanager.cpp:211
+#: standardmailactionmanager.cpp:208
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "Dodaj račun"
 
-#: standardmailactionmanager.cpp:215
+#: standardmailactionmanager.cpp:212
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "Računa ni bilo mogoče ustvariti: %1"
 
-#: standardmailactionmanager.cpp:217
+#: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Account creation failed"
 msgstr "Ustvarjanje računa ni uspelo"
 
-#: standardmailactionmanager.cpp:220
+#: standardmailactionmanager.cpp:217
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
@@ -425,7 +425,7 @@ msgstr[1] "Izbriši %1 račun"
 msgstr[2] "Izbriši %1 računa"
 msgstr[3] "Izbriši %1 račune"
 
-#: standardmailactionmanager.cpp:222
+#: standardmailactionmanager.cpp:219
 #, kde-format
 msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
@@ -434,7 +434,7 @@ msgstr ""
 "Izbriši izbrane račune<p>Trenutno izbrani računi bodo izbrisani skupaj z "
 "vsemi vsebovanimi sporočili.</p>"
 
-#: standardmailactionmanager.cpp:227
+#: standardmailactionmanager.cpp:224
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
@@ -443,7 +443,7 @@ msgstr[1] "Ali resnično želite izbrisati %1 račun?"
 msgstr[2] "Ali resnično želite izbrisati %1 računa?"
 msgstr[3] "Ali resnično želite izbrisati %1 račune?"
 
-#: standardmailactionmanager.cpp:231
+#: standardmailactionmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
@@ -453,17 +453,17 @@ msgstr[1] "Izbrišem račun?"
 msgstr[2] "Izbrišem računa?"
 msgstr[3] "Izbrišem račune?"
 
-#: standardmailactionmanager.cpp:234
+#: standardmailactionmanager.cpp:231
 #, kde-format
 msgid "Account Properties…"
 msgstr "Lastnosti računa…"
 
-#: standardmailactionmanager.cpp:236
+#: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr "Odpri pogovorno okno za urejanje lastnosti izbranega računa."
 
-#: standardmailactionmanager.cpp:239
+#: standardmailactionmanager.cpp:236
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
@@ -472,12 +472,12 @@ msgstr[1] "Posodobi %1 račun"
 msgstr[2] "Posodobi %1 računa"
 msgstr[3] "Posodobi %1 račune"
 
-#: standardmailactionmanager.cpp:241
+#: standardmailactionmanager.cpp:238
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr "Posodobi vsebino vseh map izbranih računov."
 
-#: standardmailactionmanager.cpp:245
+#: standardmailactionmanager.cpp:242
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
@@ -486,212 +486,212 @@ msgstr[1] "Posodobi mapo in vse podmape"
 msgstr[2] "Posodobi mapi in vse podmape"
 msgstr[3] "Posodobi mape in vse podmape"
 
-#: standardmailactionmanager.cpp:248 standardmailactionmanager.cpp:250
+#: standardmailactionmanager.cpp:245 standardmailactionmanager.cpp:247
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr "Posodobi vsebino izbranih map in njihovih podmap."
 
-#: standardmailactionmanager.cpp:253
+#: standardmailactionmanager.cpp:250
 #, kde-format
 msgid "Could not paste message: %1"
 msgstr "Sporočila ni bilo mogoče prilepiti: %1"
 
-#: standardmailactionmanager.cpp:255
+#: standardmailactionmanager.cpp:252
 #, kde-format
 msgid "Paste failed"
 msgstr "Lepljenje ni uspelo"
 
-#: standardmailactionmanager.cpp:321
+#: standardmailactionmanager.cpp:318
 #, kde-format
 msgid "Remove Important Mark"
 msgstr "Odstrani oznako »pomembno«"
 
-#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:728
+#: standardmailactionmanager.cpp:320 standardmailactionmanager.cpp:725
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "Označi sporočilo kot pomembno"
 
-#: standardmailactionmanager.cpp:334
+#: standardmailactionmanager.cpp:331
 #, kde-format
 msgid "Remove Action Item Mark"
 msgstr "Odstrani oznako »opravilo«"
 
-#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:333 standardmailactionmanager.cpp:739
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "Označi sporočilo kot opravilo"
 
-#: standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:695
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "Označi sporočilo kot prebrano"
 
-#: standardmailactionmanager.cpp:699
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "Mark as Read"
 msgstr "Označi kot prebrano"
 
-#: standardmailactionmanager.cpp:700 standardmailactionmanager.cpp:701
+#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Označi izbrana sporočila kot prebrana."
 
-#: standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "Označi sporočilo kot neprebrano"
 
-#: standardmailactionmanager.cpp:714
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Označi kot neprebrano"
 
-#: standardmailactionmanager.cpp:715 standardmailactionmanager.cpp:716
+#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Označi izbrana sporočila kot neprebrana."
 
-#: standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:726
 #, kde-format
 msgid "Mark as Important"
 msgstr "Označi kot pomembno"
 
-#: standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Označi izbrana sporočila kot pomembna."
 
-#: standardmailactionmanager.cpp:743
+#: standardmailactionmanager.cpp:740
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Označi kot opravilo"
 
-#: standardmailactionmanager.cpp:744 standardmailactionmanager.cpp:745
+#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Označi izbrana sporočila kot opravila."
 
-#: standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:753
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Označi vs&a sporočila kot prebrana"
 
-#: standardmailactionmanager.cpp:757
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Označi vse kot prebrano"
 
-#: standardmailactionmanager.cpp:758 standardmailactionmanager.cpp:759
+#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Označi vsa sporočila kot prebrana."
 
-#: standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:767
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Rekurzivno označi vs&a sporočila kot prebrana"
 
-#: standardmailactionmanager.cpp:771
+#: standardmailactionmanager.cpp:768
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Rekurzivno označi vsa sporočila kot prebrana"
 
-#: standardmailactionmanager.cpp:772 standardmailactionmanager.cpp:773
+#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Rekurzivno označi vsa sporočila kot prebrana."
 
-#: standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:781
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Označi vs&a sporočila kot neprebrana"
 
-#: standardmailactionmanager.cpp:785
+#: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Označi vse kot neprebrano"
 
-#: standardmailactionmanager.cpp:786 standardmailactionmanager.cpp:787
+#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Označi vsa sporočila kot neprebrana."
 
-#: standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:795
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Označi vs&a sporočila kot pomembna"
 
-#: standardmailactionmanager.cpp:799
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Označi vse kot pomembno"
 
-#: standardmailactionmanager.cpp:800 standardmailactionmanager.cpp:801
+#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Označi vsa sporočila kot pomembna."
 
-#: standardmailactionmanager.cpp:811
+#: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Označi vse kot opravilo"
 
-#: standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Označi vs&a sporočila kot opravila"
 
-#: standardmailactionmanager.cpp:814 standardmailactionmanager.cpp:815
+#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Označi vsa sporočila kot opravila."
 
-#: standardmailactionmanager.cpp:826
+#: standardmailactionmanager.cpp:823
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Premakni v sme&ti"
 
-#: standardmailactionmanager.cpp:828 standardmailactionmanager.cpp:829
+#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Premakni izbrana sporočila v mapo s smetmi."
 
-#: standardmailactionmanager.cpp:839
+#: standardmailactionmanager.cpp:836
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Premakni vse v sme&ti"
 
-#: standardmailactionmanager.cpp:840 standardmailactionmanager.cpp:841
+#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Premakni vsa sporočila v mapo s smetmi."
 
-#: standardmailactionmanager.cpp:850
+#: standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Odstrani po&dvojena sporočila"
 
-#: standardmailactionmanager.cpp:851 standardmailactionmanager.cpp:852
+#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Odstrani podvojena sporočila."
 
-#: standardmailactionmanager.cpp:862
+#: standardmailactionmanager.cpp:859
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Izprazni vse mape s sme&tmi"
 
-#: standardmailactionmanager.cpp:863 standardmailactionmanager.cpp:864
+#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Trajno izbriši vsa sporočila iz vseh map s smetmi."
 
-#: standardmailactionmanager.cpp:873
+#: standardmailactionmanager.cpp:870
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "Izprazni smeti"
 
-#: standardmailactionmanager.cpp:874 standardmailactionmanager.cpp:875
+#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Trajno izbriši vsa sporočila iz mape s smetmi."

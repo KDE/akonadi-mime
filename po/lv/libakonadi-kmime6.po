@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-08 00:46+0000\n"
+"POT-Creation-Date: 2026-10-19 00:47+0000\n"
 "PO-Revision-Date: 2025-01-27 17:36+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -19,13 +19,13 @@ msgstr ""
 "2);\n"
 "X-Generator: Lokalize 24.12.1\n"
 
-#: emptytrashcommand.cpp:45
+#: emptytrashcommand.cpp:46
 #, kde-format
 msgctxt "@title:window"
 msgid "Empty Trash"
 msgstr "Iztukšot atkritni"
 
-#: emptytrashcommand.cpp:46
+#: emptytrashcommand.cpp:47
 #, kde-format
 msgid "Are you sure you want to empty the trash folders of all accounts?"
 msgstr "Vai tiešām vēlaties iztukšot atkritni visiem kontiem?"
@@ -105,17 +105,17 @@ msgctxt "@label No size available"
 msgid "-"
 msgstr "—"
 
-#: messagequeuejob.cpp:58
+#: messagequeuejob.cpp:56
 #, kde-format
 msgid "Empty message."
 msgstr "Tukša vēstule."
 
-#: messagequeuejob.cpp:65
+#: messagequeuejob.cpp:63
 #, kde-format
 msgid "Message has no recipients."
 msgstr "Vēstulei nav saņēmēju"
 
-#: messagequeuejob.cpp:72
+#: messagequeuejob.cpp:70
 #, kde-format
 msgid "Message has invalid sent-mail folder."
 msgstr "Vēstulei ir nederīga nosūtītā e-pasta mape."
@@ -135,43 +135,43 @@ msgstr "Meklē dublikātus…"
 msgid "Removing duplicates…"
 msgstr "Noņem dublikātus…"
 
-#: specialmailcollections.cpp:122
+#: specialmailcollections.cpp:121
 #, kde-format
 msgctxt "local mail folder"
 msgid "inbox"
 msgstr "iesūtne"
 
-#: specialmailcollections.cpp:125
+#: specialmailcollections.cpp:124
 #, kde-format
 msgctxt "local mail folder"
 msgid "outbox"
 msgstr "izsūtne"
 
-#: specialmailcollections.cpp:128
+#: specialmailcollections.cpp:127
 #, kde-format
 msgctxt "local mail folder"
 msgid "sent-mail"
 msgstr "nosūtītais pasts"
 
-#: specialmailcollections.cpp:131
+#: specialmailcollections.cpp:130
 #, kde-format
 msgctxt "local mail folder"
 msgid "trash"
 msgstr "atkritne"
 
-#: specialmailcollections.cpp:134
+#: specialmailcollections.cpp:133
 #, kde-format
 msgctxt "local mail folder"
 msgid "drafts"
 msgstr "melnraksti"
 
-#: specialmailcollections.cpp:137
+#: specialmailcollections.cpp:136
 #, kde-format
 msgctxt "local mail folder"
 msgid "templates"
 msgstr "veidnes"
 
-#: specialmailcollections.cpp:140
+#: specialmailcollections.cpp:139
 #, kde-format
 msgctxt "local mail folder"
 msgid "spam"
@@ -183,33 +183,33 @@ msgctxt "local mail folder"
 msgid "Local Folders"
 msgstr "Lokālās mapes"
 
-#: standardmailactionmanager.cpp:118
+#: standardmailactionmanager.cpp:115
 #, kde-format
 msgid "Add Folder…"
 msgstr "Pievienot mapi…"
 
-#: standardmailactionmanager.cpp:119 standardmailactionmanager.cpp:120
+#: standardmailactionmanager.cpp:116 standardmailactionmanager.cpp:117
 #, kde-format
 msgid "Add a new folder to the currently selected account."
 msgstr "Atlasītajam kontam pievienot jaunu mapi."
 
-#: standardmailactionmanager.cpp:122
+#: standardmailactionmanager.cpp:119
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "Jauna mape"
 
-#: standardmailactionmanager.cpp:126
+#: standardmailactionmanager.cpp:123
 #, kde-format
 msgid "Could not create folder: %1"
 msgstr "Nevarēja izveidot mapi: %1"
 
-#: standardmailactionmanager.cpp:128
+#: standardmailactionmanager.cpp:125
 #, kde-format
 msgid "Folder creation failed"
 msgstr "Mapes izveidošana neizdevās"
 
-#: standardmailactionmanager.cpp:132
+#: standardmailactionmanager.cpp:129
 #, kde-format
 msgid "Copy Folder"
 msgid_plural "Copy %1 Folders"
@@ -217,18 +217,18 @@ msgstr[0] "Kopēt %1 mapi"
 msgstr[1] "Kopēt %1 mapes"
 msgstr[2] "Kopēt %1 mapju"
 
-#: standardmailactionmanager.cpp:133 standardmailactionmanager.cpp:134
+#: standardmailactionmanager.cpp:130 standardmailactionmanager.cpp:131
 #, kde-format
 msgid "Copy the selected folders to the clipboard."
 msgstr "Atlasītās mapes kopēt starpliktuvē."
 
-#: standardmailactionmanager.cpp:137
+#: standardmailactionmanager.cpp:134
 #, kde-format
 msgctxt "@title:window"
 msgid "Properties of Folder %1"
 msgstr "Mapes „%1“ īpašības"
 
-#: standardmailactionmanager.cpp:140
+#: standardmailactionmanager.cpp:137
 #, kde-format
 msgid "Delete Folder"
 msgid_plural "Delete %1 Folders"
@@ -236,12 +236,12 @@ msgstr[0] "Dzēst %1 mapi"
 msgstr[1] "Dzēst %1 mapes"
 msgstr[2] "Dzēst %1 mapju"
 
-#: standardmailactionmanager.cpp:141 standardmailactionmanager.cpp:142
+#: standardmailactionmanager.cpp:138 standardmailactionmanager.cpp:139
 #, kde-format
 msgid "Delete the selected folders from the account."
 msgstr "Dzēst atlasītās konta mapes."
 
-#: standardmailactionmanager.cpp:145
+#: standardmailactionmanager.cpp:142
 #, kde-format
 msgid "Do you really want to delete this folder and all its sub-folders?"
 msgid_plural ""
@@ -250,7 +250,7 @@ msgstr[0] "Vai tiešām vēlaties dzēst šo %1 mapi un visas tās apakšmapes"
 msgstr[1] "Vai tiešām vēlaties dzēst šīs %1 mapes un visas tās apakšmapes"
 msgstr[2] "Vai tiešām vēlaties dzēst šīs %1 mapes un visas tās apakšmapes"
 
-#: standardmailactionmanager.cpp:150
+#: standardmailactionmanager.cpp:147
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete folder?"
@@ -259,17 +259,17 @@ msgstr[0] "Vai dzēst mapi?"
 msgstr[1] "Vai dzēst mapes?"
 msgstr[2] "Vai dzēst mapes?"
 
-#: standardmailactionmanager.cpp:154
+#: standardmailactionmanager.cpp:151
 #, kde-format
 msgid "Could not delete folder: %1"
 msgstr "Neizdevās dzēst mapi: %1"
 
-#: standardmailactionmanager.cpp:158
+#: standardmailactionmanager.cpp:155
 #, kde-format
 msgid "Folder deletion failed"
 msgstr "Mapes dzēšana neizdevās"
 
-#: standardmailactionmanager.cpp:162
+#: standardmailactionmanager.cpp:159
 #, kde-format
 msgid "Update Folder"
 msgid_plural "Update Folders"
@@ -277,12 +277,12 @@ msgstr[0] "Atjaunināt mapi"
 msgstr[1] "Atjaunināt mapes"
 msgstr[2] "Atjaunināt mapes"
 
-#: standardmailactionmanager.cpp:164 standardmailactionmanager.cpp:165
+#: standardmailactionmanager.cpp:161 standardmailactionmanager.cpp:162
 #, kde-format
 msgid "Update the contents of the selected folders."
 msgstr "Atjaunināt atlasītās mapes saturu."
 
-#: standardmailactionmanager.cpp:168
+#: standardmailactionmanager.cpp:165
 #, kde-format
 msgid "Cut Folder"
 msgid_plural "Cut %1 Folders"
@@ -290,22 +290,22 @@ msgstr[0] "Izgriezt %1 mapi"
 msgstr[1] "Izgriezt %1 mapes"
 msgstr[2] "Izgriezt %1 mapju"
 
-#: standardmailactionmanager.cpp:169 standardmailactionmanager.cpp:170
+#: standardmailactionmanager.cpp:166 standardmailactionmanager.cpp:167
 #, kde-format
 msgid "Cut the selected folders from the account."
 msgstr "Izgriezt atlasītās konta mapes"
 
-#: standardmailactionmanager.cpp:173
+#: standardmailactionmanager.cpp:170
 #, kde-format
 msgid "Folder Properties"
 msgstr "Mapes īpašības"
 
-#: standardmailactionmanager.cpp:175 standardmailactionmanager.cpp:177
+#: standardmailactionmanager.cpp:172 standardmailactionmanager.cpp:174
 #, kde-format
 msgid "Open a dialog to edit the properties of the selected folder."
 msgstr "Atvērt lodziņu, kurā rediģēt atlasītās mapes īpašības."
 
-#: standardmailactionmanager.cpp:180
+#: standardmailactionmanager.cpp:177
 #, kde-format
 msgid "Copy Message"
 msgid_plural "Copy %1 Messages"
@@ -313,12 +313,12 @@ msgstr[0] "Kopēt %1 vēstuli"
 msgstr[1] "Kopēt %1 vēstules"
 msgstr[2] "Kopēt %1 vēstuļu"
 
-#: standardmailactionmanager.cpp:181 standardmailactionmanager.cpp:182
+#: standardmailactionmanager.cpp:178 standardmailactionmanager.cpp:179
 #, kde-format
 msgid "Copy the selected messages to the clipboard."
 msgstr "Kopēt atlasītās vēstules starpliktuvē."
 
-#: standardmailactionmanager.cpp:185
+#: standardmailactionmanager.cpp:182
 #, kde-format
 msgid "Delete Message"
 msgid_plural "Delete %1 Messages"
@@ -326,12 +326,12 @@ msgstr[0] "Dzēst %1 vēstuli"
 msgstr[1] "Dzēst %1 vēstules"
 msgstr[2] "Dzēst %1 vēstuļu"
 
-#: standardmailactionmanager.cpp:186 standardmailactionmanager.cpp:187
+#: standardmailactionmanager.cpp:183 standardmailactionmanager.cpp:184
 #, kde-format
 msgid "Delete the selected messages from the folder."
 msgstr "Izdzēst atlasītās vēstules šajā mapē."
 
-#: standardmailactionmanager.cpp:190
+#: standardmailactionmanager.cpp:187
 #, kde-format
 msgid "Do you really want to delete the selected message?"
 msgid_plural "Do you really want to delete %1 messages?"
@@ -339,7 +339,7 @@ msgstr[0] "Vai tiešām vēlaties dzēst %1 atlasīto vēstuli"
 msgstr[1] "Vai tiešām vēlaties dzēst %1 atlasītās vēstules"
 msgstr[2] "Vai tiešām vēlaties dzēst %1 atlasīto vēstuļu"
 
-#: standardmailactionmanager.cpp:194
+#: standardmailactionmanager.cpp:191
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Message?"
@@ -348,17 +348,17 @@ msgstr[0] "Vai dzēst vēstuli?"
 msgstr[1] "Vai dzēst vēstules?"
 msgstr[2] "Vai dzēst vēstules?"
 
-#: standardmailactionmanager.cpp:196
+#: standardmailactionmanager.cpp:193
 #, kde-format
 msgid "Could not delete message: %1"
 msgstr "Neizdevās izdzēst vēstuli: %1"
 
-#: standardmailactionmanager.cpp:198
+#: standardmailactionmanager.cpp:195
 #, kde-format
 msgid "Message deletion failed"
 msgstr "Vēstules dzēšana neizdevās"
 
-#: standardmailactionmanager.cpp:201
+#: standardmailactionmanager.cpp:198
 #, kde-format
 msgid "Cut Message"
 msgid_plural "Cut %1 Messages"
@@ -366,17 +366,17 @@ msgstr[0] "Izgriezt %1 vēstuli"
 msgstr[1] "Izgriezt %1 vēstules"
 msgstr[2] "Izgriezt %1 vēstuļu"
 
-#: standardmailactionmanager.cpp:202 standardmailactionmanager.cpp:203
+#: standardmailactionmanager.cpp:199 standardmailactionmanager.cpp:200
 #, kde-format
 msgid "Cut the selected message from the folder."
 msgstr "Izgriezt atlasītās vēstules šajā mapē."
 
-#: standardmailactionmanager.cpp:206
+#: standardmailactionmanager.cpp:203
 #, kde-format
 msgid "Add &Account…"
 msgstr "Pievienot &kontu…"
 
-#: standardmailactionmanager.cpp:208
+#: standardmailactionmanager.cpp:205
 #, kde-format
 msgid ""
 "Add a new account<p>You will be presented with a dialog where you can select "
@@ -385,23 +385,23 @@ msgstr ""
 "Pievienot jaunu kontu<p>Atvērsies lodziņš, kurā varēsiet izvēlēties "
 "pievienojamā konta veidu.</p>"
 
-#: standardmailactionmanager.cpp:211
+#: standardmailactionmanager.cpp:208
 #, kde-format
 msgctxt "@title:window"
 msgid "Add Account"
 msgstr "Pievienot kontu"
 
-#: standardmailactionmanager.cpp:215
+#: standardmailactionmanager.cpp:212
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "Neizdevās izveidot kontu: %1"
 
-#: standardmailactionmanager.cpp:217
+#: standardmailactionmanager.cpp:214
 #, kde-format
 msgid "Account creation failed"
 msgstr "Konta izveide neizdevās"
 
-#: standardmailactionmanager.cpp:220
+#: standardmailactionmanager.cpp:217
 #, kde-format
 msgid "&Delete Account"
 msgid_plural "&Delete %1 Accounts"
@@ -409,7 +409,7 @@ msgstr[0] "&Dzēst %1 kontu"
 msgstr[1] "&Dzēst %1 kontus"
 msgstr[2] "&Dzēst %1 kontu"
 
-#: standardmailactionmanager.cpp:222
+#: standardmailactionmanager.cpp:219
 #, kde-format
 msgid ""
 "Delete the selected accounts<p>The currently selected accounts will be "
@@ -418,7 +418,7 @@ msgstr ""
 "Dzēst atlasītos kontus<p>Šobrīd atlasīto konti tiks dzēsti kopā ar visām "
 "tajos esošajām vēstulēm.</p>"
 
-#: standardmailactionmanager.cpp:227
+#: standardmailactionmanager.cpp:224
 #, kde-format
 msgid "Do you really want to delete this account?"
 msgid_plural "Do you really want to delete %1 accounts?"
@@ -426,7 +426,7 @@ msgstr[0] "Vai tiešām vēlaties dzēst šo %1 kontu?"
 msgstr[1] "Vai tiešām vēlaties dzēst šos %1 kontus?"
 msgstr[2] "Vai tiešām vēlaties dzēst šos %1 kontus?"
 
-#: standardmailactionmanager.cpp:231
+#: standardmailactionmanager.cpp:228
 #, kde-format
 msgctxt "@title:window"
 msgid "Delete Account?"
@@ -435,17 +435,17 @@ msgstr[0] "Dzēst kontu?"
 msgstr[1] "Dzēst kontus?"
 msgstr[2] "Dzēst kontus?"
 
-#: standardmailactionmanager.cpp:234
+#: standardmailactionmanager.cpp:231
 #, kde-format
 msgid "Account Properties…"
 msgstr "Konta īpašības…"
 
-#: standardmailactionmanager.cpp:236
+#: standardmailactionmanager.cpp:233
 #, kde-format
 msgid "Open a dialog to edit properties of the selected account."
 msgstr "Atvērt lodziņu, lai rediģētu atlasītā konta īpašības."
 
-#: standardmailactionmanager.cpp:239
+#: standardmailactionmanager.cpp:236
 #, kde-format
 msgid "Update Account"
 msgid_plural "Update %1 Accounts"
@@ -453,12 +453,12 @@ msgstr[0] "Atjaunināt %1 kontu"
 msgstr[1] "Atjaunināt %1 kontus"
 msgstr[2] "Atjaunināt %1 kontu"
 
-#: standardmailactionmanager.cpp:241
+#: standardmailactionmanager.cpp:238
 #, kde-format
 msgid "Updates the content of all folders of the selected accounts."
 msgstr "Atjaunina visu atlasītā konta mapju saturu."
 
-#: standardmailactionmanager.cpp:245
+#: standardmailactionmanager.cpp:242
 #, kde-format
 msgid "Update This Folder and All Its Subfolders"
 msgid_plural "Update These Folders and All Their Subfolders"
@@ -466,212 +466,212 @@ msgstr[0] "Atjaunināt šo mapi un visas tās apakšmapes"
 msgstr[1] "Atjaunināt šīs mapes un visas tās apakšmapes"
 msgstr[2] "Atjaunināt šīs mapes un visas tās apakšmapes"
 
-#: standardmailactionmanager.cpp:248 standardmailactionmanager.cpp:250
+#: standardmailactionmanager.cpp:245 standardmailactionmanager.cpp:247
 #, kde-format
 msgid "Update the contents of the selected folders and all their subfolders."
 msgstr "Atjaunināt atlasīto mapju un visu to apakšmapju saturu."
 
-#: standardmailactionmanager.cpp:253
+#: standardmailactionmanager.cpp:250
 #, kde-format
 msgid "Could not paste message: %1"
 msgstr "Neizdevās ielīmēt vēstules: %1"
 
-#: standardmailactionmanager.cpp:255
+#: standardmailactionmanager.cpp:252
 #, kde-format
 msgid "Paste failed"
 msgstr "Ielīmēšana neizdevās"
 
-#: standardmailactionmanager.cpp:321
+#: standardmailactionmanager.cpp:318
 #, kde-format
 msgid "Remove Important Mark"
 msgstr "Noņemt atzīmi „Svarīgi“"
 
-#: standardmailactionmanager.cpp:323 standardmailactionmanager.cpp:728
+#: standardmailactionmanager.cpp:320 standardmailactionmanager.cpp:725
 #, kde-format
 msgid "&Mark Message as Important"
 msgstr "&Atzīmē vēstuli kā svarīgu"
 
-#: standardmailactionmanager.cpp:334
+#: standardmailactionmanager.cpp:331
 #, kde-format
 msgid "Remove Action Item Mark"
 msgstr "Noņemt „Veicamas darbības“ atzīmi"
 
-#: standardmailactionmanager.cpp:336 standardmailactionmanager.cpp:742
+#: standardmailactionmanager.cpp:333 standardmailactionmanager.cpp:739
 #, kde-format
 msgid "&Mark Message as Action Item"
 msgstr "&Atzīmēt vēstuli ar „Veicama darbība“ atzīmi"
 
-#: standardmailactionmanager.cpp:698
+#: standardmailactionmanager.cpp:695
 #, kde-format
 msgid "&Mark Message as Read"
 msgstr "&Atzīmēt vēstuli kā lasītu"
 
-#: standardmailactionmanager.cpp:699
+#: standardmailactionmanager.cpp:696
 #, kde-format
 msgid "Mark as Read"
 msgstr "Atzīmēt kā lasītu"
 
-#: standardmailactionmanager.cpp:700 standardmailactionmanager.cpp:701
+#: standardmailactionmanager.cpp:697 standardmailactionmanager.cpp:698
 #, kde-format
 msgid "Mark selected messages as read."
 msgstr "Atzīmēt atlasītās vēstules kā lasītas."
 
-#: standardmailactionmanager.cpp:713
+#: standardmailactionmanager.cpp:710
 #, kde-format
 msgid "&Mark Message as Unread"
 msgstr "&Atzīmēt vēstuli kā nelasītu"
 
-#: standardmailactionmanager.cpp:714
+#: standardmailactionmanager.cpp:711
 #, kde-format
 msgid "Mark as Unread"
 msgstr "Atzīmēt kā nelasītu"
 
-#: standardmailactionmanager.cpp:715 standardmailactionmanager.cpp:716
+#: standardmailactionmanager.cpp:712 standardmailactionmanager.cpp:713
 #, kde-format
 msgid "Mark selected messages as unread."
 msgstr "Atzīmēt atlasītās vēstules kā nelasītas."
 
-#: standardmailactionmanager.cpp:729
+#: standardmailactionmanager.cpp:726
 #, kde-format
 msgid "Mark as Important"
 msgstr "Atzīmēt kā svarīgu"
 
-#: standardmailactionmanager.cpp:730
+#: standardmailactionmanager.cpp:727
 #, kde-format
 msgid "Mark selected messages as important."
 msgstr "Atzīmēt atlasītās vēstules kā svarīgas"
 
-#: standardmailactionmanager.cpp:743
+#: standardmailactionmanager.cpp:740
 #, kde-format
 msgid "Mark as Action Item"
 msgstr "Atzīmēt kā „Veicama darbībā“"
 
-#: standardmailactionmanager.cpp:744 standardmailactionmanager.cpp:745
+#: standardmailactionmanager.cpp:741 standardmailactionmanager.cpp:742
 #, kde-format
 msgid "Mark selected messages as action items."
 msgstr "Atzīmēt atlasītās vēstules kā tādas, ar kurām veicamas darbības."
 
-#: standardmailactionmanager.cpp:756
+#: standardmailactionmanager.cpp:753
 #, kde-format
 msgid "Mark &All Messages as Read"
 msgstr "Atzīmēt &visas vēstules kā lasītas"
 
-#: standardmailactionmanager.cpp:757
+#: standardmailactionmanager.cpp:754
 #, kde-format
 msgid "Mark All as Read"
 msgstr "Atzīmēt visas kā lasītas"
 
-#: standardmailactionmanager.cpp:758 standardmailactionmanager.cpp:759
+#: standardmailactionmanager.cpp:755 standardmailactionmanager.cpp:756
 #, kde-format
 msgid "Mark all messages as read."
 msgstr "Atzīmēt visas vēstules kā lasītas."
 
-#: standardmailactionmanager.cpp:770
+#: standardmailactionmanager.cpp:767
 #, kde-format
 msgid "Mark &All Messages as Read Recursively"
 msgstr "Atzīmēt &visas vēstules kā lasītas rekursīvi"
 
-#: standardmailactionmanager.cpp:771
+#: standardmailactionmanager.cpp:768
 #, kde-format
 msgid "Mark All as Read Recursively"
 msgstr "Atzīmēt visas vēstules kā lasītas rekursīvi"
 
-#: standardmailactionmanager.cpp:772 standardmailactionmanager.cpp:773
+#: standardmailactionmanager.cpp:769 standardmailactionmanager.cpp:770
 #, kde-format
 msgid "Mark all messages as read recursively."
 msgstr "Atzīmēt visas vēstules kā lasītas rekursīvi."
 
-#: standardmailactionmanager.cpp:784
+#: standardmailactionmanager.cpp:781
 #, kde-format
 msgid "Mark &All Messages as Unread"
 msgstr "Atzīmēt &visas vēstules kā nelasītas"
 
-#: standardmailactionmanager.cpp:785
+#: standardmailactionmanager.cpp:782
 #, kde-format
 msgid "Mark All as Unread"
 msgstr "Atzīmēt visas kā nelasītas"
 
-#: standardmailactionmanager.cpp:786 standardmailactionmanager.cpp:787
+#: standardmailactionmanager.cpp:783 standardmailactionmanager.cpp:784
 #, kde-format
 msgid "Mark all messages as unread."
 msgstr "Atzīmēt visas vēstules kā nelasītas."
 
-#: standardmailactionmanager.cpp:798
+#: standardmailactionmanager.cpp:795
 #, kde-format
 msgid "Mark &All Messages as Important"
 msgstr "Atzīmēt &visas vēstules kā svarīgas"
 
-#: standardmailactionmanager.cpp:799
+#: standardmailactionmanager.cpp:796
 #, kde-format
 msgid "Mark All as Important"
 msgstr "Atzīmēt visas kā svarīgas"
 
-#: standardmailactionmanager.cpp:800 standardmailactionmanager.cpp:801
+#: standardmailactionmanager.cpp:797 standardmailactionmanager.cpp:798
 #, kde-format
 msgid "Mark all messages as important."
 msgstr "Atzīmēt visas vēstules kā svarīgas."
 
-#: standardmailactionmanager.cpp:811
+#: standardmailactionmanager.cpp:808
 #, kde-format
 msgid "Mark All as Action Item"
 msgstr "Atzīmēt visas kā darbības"
 
-#: standardmailactionmanager.cpp:812
+#: standardmailactionmanager.cpp:809
 #, kde-format
 msgid "Mark &All Messages as Action Item"
 msgstr "Atzīmēt &visas vēstules kā tādas, kurām nepieciešama darbība"
 
-#: standardmailactionmanager.cpp:814 standardmailactionmanager.cpp:815
+#: standardmailactionmanager.cpp:811 standardmailactionmanager.cpp:812
 #, kde-format
 msgid "Mark all messages as action items."
 msgstr "Atzīmēt visas vēstules kā darbības"
 
-#: standardmailactionmanager.cpp:826
+#: standardmailactionmanager.cpp:823
 #, kde-format
 msgid "Move to &Trash"
 msgstr "Pārvietot &uz atkritni"
 
-#: standardmailactionmanager.cpp:828 standardmailactionmanager.cpp:829
+#: standardmailactionmanager.cpp:825 standardmailactionmanager.cpp:826
 #, kde-format
 msgid "Move selected messages to the trash folder."
 msgstr "Pārvietot atlasītās vēstules uz atkritnes mapi."
 
-#: standardmailactionmanager.cpp:839
+#: standardmailactionmanager.cpp:836
 #, kde-format
 msgid "Move All to &Trash"
 msgstr "Pārvietot visas &uz atkritni"
 
-#: standardmailactionmanager.cpp:840 standardmailactionmanager.cpp:841
+#: standardmailactionmanager.cpp:837 standardmailactionmanager.cpp:838
 #, kde-format
 msgid "Move all messages to the trash folder."
 msgstr "Pārvietot visas vēstules uz atkritnes mapi."
 
-#: standardmailactionmanager.cpp:850
+#: standardmailactionmanager.cpp:847
 #, kde-format
 msgid "Remove &Duplicate Messages"
 msgstr "Noņemt &dublējošās vēstules"
 
-#: standardmailactionmanager.cpp:851 standardmailactionmanager.cpp:852
+#: standardmailactionmanager.cpp:848 standardmailactionmanager.cpp:849
 #, kde-format
 msgid "Remove duplicate messages."
 msgstr "Noņemt dublējošās vēstules."
 
-#: standardmailactionmanager.cpp:862
+#: standardmailactionmanager.cpp:859
 #, kde-format
 msgid "Empty All &Trash Folders"
 msgstr "Iztukšot visas &atkritnes mapes"
 
-#: standardmailactionmanager.cpp:863 standardmailactionmanager.cpp:864
+#: standardmailactionmanager.cpp:860 standardmailactionmanager.cpp:861
 #, kde-format
 msgid "Permanently delete all messages from all trash folders."
 msgstr "Neatgriezeniski dzēst visas vēstules no atkritnes mapēm."
 
-#: standardmailactionmanager.cpp:873
+#: standardmailactionmanager.cpp:870
 #, kde-format
 msgid "E&mpty Trash"
 msgstr "I&ztukšot atkritni"
 
-#: standardmailactionmanager.cpp:874 standardmailactionmanager.cpp:875
+#: standardmailactionmanager.cpp:871 standardmailactionmanager.cpp:872
 #, kde-format
 msgid "Permanently delete all messages from the trash folder."
 msgstr "Neatgriezeniski dzēst visas atkritnes mapē esošās vēstules."
