@@ -50,14 +50,7 @@ QVariant SentActionAttribute::Action::value() const
     return d->mValue;
 }
 
-SentActionAttribute::Action &SentActionAttribute::Action::operator=(const Action &other)
-{
-    if (this != &other) {
-        d = other.d;
-    }
-
-    return *this;
-}
+SentActionAttribute::Action &SentActionAttribute::Action::operator=(const Action &other) = default;
 
 bool SentActionAttribute::Action::operator==(const Action &other) const
 {
