@@ -67,7 +67,7 @@ void EmptyTrashCommand::execute()
                 }
                 QScopedPointer<OrgKdeAkonadiImapSettingsInterface> iface{Util::createImapSettingsInterface(type.identifier())};
                 if (iface->isValid()) {
-                    const int trashImap = iface->trashCollection();
+                    const auto trashImap = iface->trashCollection();
                     if (trashImap != trash.id()) {
                         trashFolder << Akonadi::Collection(trashImap);
                     }
