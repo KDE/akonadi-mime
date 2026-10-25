@@ -59,8 +59,8 @@ Q_SIGNALS:
     void emitResult(Akonadi::CommandBase::Result result);
 
 private:
-    void modifyMessages();
-    void slotModifyItemDone(KJob *job);
+    AKONADI_MIME_NO_EXPORT void modifyMessages();
+    AKONADI_MIME_NO_EXPORT void slotModifyItemDone(KJob *job);
     Akonadi::Item::List mItemsToModify;
     int mIndex = 0;
 };

@@ -141,7 +141,7 @@ public:
      */
     void verifyI18nDefaultCollection(Type type);
 private Q_SLOTS:
-    void slotCollectionModified(KJob *job);
+    AKONADI_MIME_NO_EXPORT void slotCollectionModified(KJob *job);
 
 private:
     friend class SpecialMailCollectionsPrivate;
