@@ -30,4 +30,4 @@ qhp.AkonadiMime.subprojects.classes.indexTitle = AkonadiMime C++ Classes
 qhp.AkonadiMime.subprojects.classes.selectors = class fake:headerfile
 qhp.AkonadiMime.subprojects.classes.sortPages = true
 
-tagfile = kmbox.tags
+tagfile = akonadimime.tags

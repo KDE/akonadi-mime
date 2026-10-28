@@ -215,4 +215,4 @@ install(FILES x-vnd.kde.contactgroup.xml DESTINATION ${KDE_INSTALL_MIMEDIR})
 update_xdg_mimetypes(${KDE_INSTALL_MIMEDIR})
 
 add_subdirectory(quick)
-ecm_generate_qdoc(KPim6AkonadiMime akonadi-mime.qdocconf)
+ecm_generate_qdoc(KPim6AkonadiMime akonadimime.qdocconf)
