@@ -1,6 +1,7 @@
 include($KDE_DOCS/global/qt-module-defaults.qdocconf)
 
 project = AkonadiMime
+moduleheader = akonadimime_qdocmoduleheader.h
 description = Akonadi Mime library.
 
 

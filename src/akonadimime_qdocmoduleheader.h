@@ -1,0 +1,41 @@
+/*
+  SPDX-FileCopyrightText: 2026 Laurent Montel <montel@kde.org>
+
+  SPDX-License-Identifier: LGPL-2.0-or-later
+*/
+
+// Module header for qdoc PCH
+#include "addressattribute.h"
+#include "commandbase.h"
+#include "dispatcherinterface.h"
+#include "dispatcherinterface_p.h"
+#include "dispatchmodeattribute.h"
+#include "emptytrashcommand.h"
+#include "errorattribute.h"
+#include "filteractionjob_p.h"
+#include "markascommand.h"
+#include "markascommandhelper_p.h"
+#include "mdnstateattribute.h"
+#include "messageflags.h"
+#include "messagefolderattribute.h"
+#include "messagemodel.h"
+#include "messageparts.h"
+#include "messagequeuejob.h"
+#include "messagestatus.h"
+#include "metatype.h"
+#include "movecommand.h"
+#include "movetotrashcommand.h"
+#include "newmailnotifierattribute.h"
+#include "outboxactions_p.h"
+#include "pop3resourceattribute.h"
+#include "quick/types.h"
+#include "removeduplicatesjob.h"
+#include "sentactionattribute.h"
+#include "sentbehaviourattribute.h"
+#include "specialmailcollections.h"
+#include "specialmailcollectionsdiscoveryjob.h"
+#include "specialmailcollectionsrequestjob.h"
+#include "specialmailcollectionstesting_p.h"
+#include "standardmailactionmanager.h"
+#include "transportattribute.h"
+#include "util_p.h"
