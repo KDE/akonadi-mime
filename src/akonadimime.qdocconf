@@ -7,7 +7,32 @@ description = Akonadi Mime library.
 
 documentationinheaders = true
 
-headerdirs += .
+headers += \
+    addressattribute.h \
+    akonadimime_qdocmoduleheader.h \
+    commandbase.h \
+    dispatcherinterface.h \
+    dispatchmodeattribute.h \
+    errorattribute.h \
+    markascommand.h \
+    mdnstateattribute.h \
+    messageflags.h \
+    messagefolderattribute.h \
+    messagemodel.h \
+    messageparts.h \
+    messagequeuejob.h \
+    messagestatus.h \
+    movecommand.h \
+    newmailnotifierattribute.h \
+    pop3resourceattribute.h \
+    removeduplicatesjob.h \
+    sentactionattribute.h \
+    sentbehaviourattribute.h \
+    specialmailcollections.h \
+    specialmailcollectionsdiscoveryjob.h \
+    specialmailcollectionsrequestjob.h \
+    standardmailactionmanager.h \
+    transportattribute.h
 sourcedirs += .
 
 outputformats = HTML
