@@ -51,14 +51,9 @@ int SpecialMailCollectionsTesting::_t_knownFolderCount() const
     const SpecialCollectionsPrivate *d = static_cast<SpecialCollections *>(SpecialMailCollections::self())->d;
     int ret = 0;
 
-    QHashIterator<QString, QHash<QByteArray, Collection>> resourceIt(d->mFoldersForResource);
-    while (resourceIt.hasNext()) {
-        resourceIt.next();
-
-        QHashIterator<QByteArray, Collection> it(resourceIt.value());
-        while (it.hasNext()) {
-            it.next();
-            if (it.value().isValid()) {
+    for (const QHash<QByteArray, Collection> &folders : std::as_const(d->mFoldersForResource)) {
+        for (const Collection &collection : folders) {
+            if (collection.isValid()) {
                 ret++;
             }
         }
