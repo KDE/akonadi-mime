@@ -15,6 +15,7 @@
 #include <KMime/Message>
 
 #include <KLocalizedString>
+#include <QMap>
 
 class Akonadi::RemoveDuplicatesJobPrivate
 {

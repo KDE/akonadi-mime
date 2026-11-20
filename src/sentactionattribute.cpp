@@ -9,6 +9,7 @@
 
 #include <QDataStream>
 #include <QIODevice>
+#include <QMap>
 #include <QSharedData>
 
 using namespace Akonadi;

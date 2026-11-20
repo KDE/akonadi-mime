@@ -7,6 +7,7 @@
 #include "specialmailcollectionsrequestjob.h"
 
 #include <KLocalizedString>
+#include <QMap>
 #include <QStandardPaths>
 
 using namespace Akonadi;
