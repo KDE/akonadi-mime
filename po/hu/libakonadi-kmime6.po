@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-19 00:47+0000\n"
+"POT-Creation-Date: 2026-11-21 01:11+0000\n"
 "PO-Revision-Date: 2024-11-17 20:37+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -121,17 +121,17 @@ msgstr "Az üzenetnek nincsenek címzettjei."
 msgid "Message has invalid sent-mail folder."
 msgstr "Az üzenetnek érvénytelen elküldött levelek mappája van."
 
-#: removeduplicatesjob.cpp:41
+#: removeduplicatesjob.cpp:42
 #, kde-format
 msgid "Retrieving items…"
 msgstr "Elemek letöltése…"
 
-#: removeduplicatesjob.cpp:59
+#: removeduplicatesjob.cpp:60
 #, kde-format
 msgid "Searching for duplicates…"
 msgstr "Másolatok keresése…"
 
-#: removeduplicatesjob.cpp:118
+#: removeduplicatesjob.cpp:119
 #, kde-format
 msgid "Removing duplicates…"
 msgstr "Másolatok eltávolítása…"
@@ -178,7 +178,7 @@ msgctxt "local mail folder"
 msgid "spam"
 msgstr "levélszemét"
 
-#: specialmailcollectionsrequestjob.cpp:48
+#: specialmailcollectionsrequestjob.cpp:49
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"

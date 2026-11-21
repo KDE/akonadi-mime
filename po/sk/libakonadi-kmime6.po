@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-19 00:47+0000\n"
+"POT-Creation-Date: 2026-11-21 01:11+0000\n"
 "PO-Revision-Date: 2023-10-15 11:50+0200\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -119,17 +119,17 @@ msgstr "Správa nemá žiadnych príjemcov."
 msgid "Message has invalid sent-mail folder."
 msgstr "Správa má neplatný priečinok odoslanej pošty."
 
-#: removeduplicatesjob.cpp:41
+#: removeduplicatesjob.cpp:42
 #, kde-format
 msgid "Retrieving items…"
 msgstr "Získavam položky..."
 
-#: removeduplicatesjob.cpp:59
+#: removeduplicatesjob.cpp:60
 #, kde-format
 msgid "Searching for duplicates…"
 msgstr "Hľadám duplikáty..."
 
-#: removeduplicatesjob.cpp:118
+#: removeduplicatesjob.cpp:119
 #, kde-format
 msgid "Removing duplicates…"
 msgstr "Odstraňujem duplikáty..."
@@ -176,7 +176,7 @@ msgctxt "local mail folder"
 msgid "spam"
 msgstr "nevyžiadaná pošta"
 
-#: specialmailcollectionsrequestjob.cpp:48
+#: specialmailcollectionsrequestjob.cpp:49
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"

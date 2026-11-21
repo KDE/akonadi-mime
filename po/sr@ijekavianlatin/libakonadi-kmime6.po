@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi-kmime5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-19 00:47+0000\n"
+"POT-Creation-Date: 2026-11-21 01:11+0000\n"
 "PO-Revision-Date: 2016-04-11 00:10+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -131,19 +131,19 @@ msgstr ""
 msgid "Message has invalid sent-mail folder."
 msgstr ""
 
-#: removeduplicatesjob.cpp:41
+#: removeduplicatesjob.cpp:42
 #, fuzzy, kde-format
 #| msgid "Retrieving items..."
 msgid "Retrieving items…"
 msgstr "Dobavljam stavke..."
 
-#: removeduplicatesjob.cpp:59
+#: removeduplicatesjob.cpp:60
 #, fuzzy, kde-format
 #| msgid "Searching for duplicates..."
 msgid "Searching for duplicates…"
 msgstr "Tražim duplikate..."
 
-#: removeduplicatesjob.cpp:118
+#: removeduplicatesjob.cpp:119
 #, fuzzy, kde-format
 #| msgid "Removing duplicates..."
 msgid "Removing duplicates…"
@@ -191,7 +191,7 @@ msgctxt "local mail folder"
 msgid "spam"
 msgstr ""
 
-#: specialmailcollectionsrequestjob.cpp:48
+#: specialmailcollectionsrequestjob.cpp:49
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"

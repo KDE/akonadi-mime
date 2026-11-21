@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-19 00:47+0000\n"
+"POT-Creation-Date: 2026-11-21 01:11+0000\n"
 "PO-Revision-Date: 2023-07-24 12:50+0300\n"
 "Last-Translator: George Stefanakis <george.stefanakis@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-doc@kde.org>\n"
@@ -124,17 +124,17 @@ msgstr "Το μήνυμα δεν έχει παραλήπτες."
 msgid "Message has invalid sent-mail folder."
 msgstr "Το μήνυμα έχει λανθασμένο φάκελο αποσταλμένης-αλληλογραφίας."
 
-#: removeduplicatesjob.cpp:41
+#: removeduplicatesjob.cpp:42
 #, kde-format
 msgid "Retrieving items…"
 msgstr "Ανάκτηση αντικειμένων…"
 
-#: removeduplicatesjob.cpp:59
+#: removeduplicatesjob.cpp:60
 #, kde-format
 msgid "Searching for duplicates…"
 msgstr "Αναζήτηση για αντίγραφα…"
 
-#: removeduplicatesjob.cpp:118
+#: removeduplicatesjob.cpp:119
 #, kde-format
 msgid "Removing duplicates…"
 msgstr "Αφαίρεση αντιγράφων…"
@@ -181,7 +181,7 @@ msgctxt "local mail folder"
 msgid "spam"
 msgstr ""
 
-#: specialmailcollectionsrequestjob.cpp:48
+#: specialmailcollectionsrequestjob.cpp:49
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"

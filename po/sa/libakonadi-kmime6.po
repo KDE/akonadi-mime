@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-mime\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-19 00:47+0000\n"
+"POT-Creation-Date: 2026-11-21 01:11+0000\n"
 "PO-Revision-Date: 2024-12-20 22:01+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -119,17 +119,17 @@ msgstr "सन्देशस्य ग्राहकाः नास्ति�
 msgid "Message has invalid sent-mail folder."
 msgstr "सन्देशे अमान्यं प्रेषित-मेलपुटम् अस्ति ।"
 
-#: removeduplicatesjob.cpp:41
+#: removeduplicatesjob.cpp:42
 #, kde-format
 msgid "Retrieving items…"
 msgstr "वस्तूनि पुनः प्राप्तुं…"
 
-#: removeduplicatesjob.cpp:59
+#: removeduplicatesjob.cpp:60
 #, kde-format
 msgid "Searching for duplicates…"
 msgstr "डुप्लिकेट् अन्वेष्य…"
 
-#: removeduplicatesjob.cpp:118
+#: removeduplicatesjob.cpp:119
 #, kde-format
 msgid "Removing duplicates…"
 msgstr "डुप्लिकेटं निष्कासयन्…"
@@ -176,7 +176,7 @@ msgctxt "local mail folder"
 msgid "spam"
 msgstr "अनिष्ट"
 
-#: specialmailcollectionsrequestjob.cpp:48
+#: specialmailcollectionsrequestjob.cpp:49
 #, kde-format
 msgctxt "local mail folder"
 msgid "Local Folders"
