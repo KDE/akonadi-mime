@@ -12,6 +12,9 @@
 namespace Akonadi
 {
 /*!
+ * \namespace Akonadi::MessagePart
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MessageParts
  * \brief Contains predefined part identifiers.
  *
  * This namespace contains identifiers of item parts that are used for

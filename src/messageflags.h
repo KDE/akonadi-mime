@@ -19,6 +19,9 @@ namespace Akonadi
 class Item;
 
 /*!
+ * \namespace Akonadi::MessageFlags
+ * \inmodule AkonadiMime
+ * \inheaderfile Akonadi/MessageFlags
  * \brief Contains predefined message flag identifiers.
  *
  * This namespace contains identifiers of message flags that

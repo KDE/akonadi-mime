@@ -38,6 +38,9 @@ class AKONADI_MIME_EXPORT SentActionAttribute : public Akonadi::Attribute
 {
 public:
     /*!
+     * \class Akonadi::SentActionAttribute::Action
+     * \inmodule AkonadiMime
+     * \inheaderfile Akonadi/SentActionAttribute
      * \brief A sent action.
      */
     class AKONADI_MIME_EXPORT Action

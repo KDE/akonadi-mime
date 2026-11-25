@@ -48,8 +48,14 @@ public:
     ~MessageModel() override = default;
 
 protected:
+    /*!
+     */
     [[nodiscard]] int entityColumnCount(HeaderGroup headerGroup) const override;
+    /*!
+     */
     [[nodiscard]] QVariant entityHeaderData(int section, Qt::Orientation orientation, int role, HeaderGroup headerGroup) const override;
+    /*!
+     */
     [[nodiscard]] QVariant entityData(const Item &item, int column, int role = Qt::DisplayRole) const override;
 };
 }

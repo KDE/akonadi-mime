@@ -97,6 +97,8 @@ public:
      */
     [[nodiscard]] MDNStateAttribute::MDNSentState mdnState() const;
 
+    /*!
+     */
     [[nodiscard]] bool operator==(const MDNStateAttribute &other) const;
 
 private:

@@ -27,8 +27,12 @@ public:
     /*!
      */
     explicit CommandBase(QObject *parent = nullptr);
+    /*!
+     */
     virtual void execute() = 0;
 
+    /*!
+     */
     enum Result {
         Undefined,
         OK,
@@ -42,6 +46,8 @@ Q_SIGNALS:
     void result(Akonadi::CommandBase::Result);
 
 protected Q_SLOTS:
+    /*!
+     */
     virtual void emitResult(Akonadi::CommandBase::Result result);
 };
 }

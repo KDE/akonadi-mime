@@ -113,6 +113,8 @@ public:
      */
     [[nodiscard]] bool deliveryStatusNotification() const;
 
+    /*!
+     */
     bool operator==(const AddressAttribute &other) const;
 
 private:

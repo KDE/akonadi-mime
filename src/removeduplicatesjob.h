@@ -58,7 +58,11 @@ public:
     ~RemoveDuplicatesJob() override;
 
 protected:
+    /*!
+     */
     void doStart() override;
+    /*!
+     */
     bool doKill() override;
 
 private:
